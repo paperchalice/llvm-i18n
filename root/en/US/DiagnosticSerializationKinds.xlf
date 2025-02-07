@@ -116,13 +116,13 @@
       <unit id="919" name="err_module_odr_violation_different_instantiations">
         <segment>
           <source>instantiation of %q0 is different in different modules</source>
-          <target>instantiation of %q0 is different in different modules</target>
+          <target>instantiation of {$arg0} is different in different modules</target>
         </segment>
       </unit>
       <unit id="920" name="err_module_odr_violation_missing_decl">
         <segment>
           <source>%q0 from module '%1' is not present in definition of %q2%select{ in module '%4'| provided earlier}3</source>
-          <target>%q0 from module '${arg1}' is not present in definition of %q2%select{ in module '${arg4}'| provided earlier}3</target>
+          <target>{$arg0} from module '${arg1}' is not present in definition of {$arg2}%select{ in module '${arg4}'| provided earlier}3</target>
         </segment>
       </unit>
       <unit id="921" name="err_module_unable_to_hash_content">

@@ -1178,7 +1178,7 @@
       <unit id="1616" name="err_missing_end_of_definition">
         <segment>
           <source>missing '}' at end of definition of %q0</source>
-          <target>missing '}' at end of definition of %q0</target>
+          <target>missing '}' at end of definition of {$arg0}</target>
         </segment>
       </unit>
       <unit id="1617" name="err_missing_param">
@@ -2972,7 +2972,7 @@
       <unit id="1915" name="note_missing_end_of_definition_before">
         <segment>
           <source>still within definition of %q0 here</source>
-          <target>still within definition of %q0 here</target>
+          <target>still within definition of {$arg0} here</target>
         </segment>
       </unit>
       <unit id="1916" name="note_missing_selector_name">

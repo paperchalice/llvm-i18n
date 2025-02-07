@@ -1562,7 +1562,7 @@
       <unit id="2880" name="err_attribute_dll_deleted">
         <segment>
           <source>attribute %q0 cannot be applied to a deleted function</source>
-          <target>attribute %q0 cannot be applied to a deleted function</target>
+          <target>attribute {$arg0} cannot be applied to a deleted function</target>
         </segment>
       </unit>
       <unit id="2881" name="err_attribute_dll_lambda">
@@ -1574,25 +1574,25 @@
       <unit id="2882" name="err_attribute_dll_member_of_dll_class">
         <segment>
           <source>attribute %q0 cannot be applied to member of %q1 class</source>
-          <target>attribute %q0 cannot be applied to member of %q1 class</target>
+          <target>attribute {$arg0} cannot be applied to member of {$arg1} class</target>
         </segment>
       </unit>
       <unit id="2883" name="err_attribute_dll_not_extern">
         <segment>
           <source>%q0 must have external linkage when declared %q1</source>
-          <target>%q0 must have external linkage when declared %q1</target>
+          <target>{$arg0} must have external linkage when declared {$arg1}</target>
         </segment>
       </unit>
       <unit id="2884" name="err_attribute_dll_redeclaration">
         <segment>
           <source>redeclaration of %q0 cannot add %q1 attribute</source>
-          <target>redeclaration of %q0 cannot add %q1 attribute</target>
+          <target>redeclaration of {$arg0} cannot add {$arg1} attribute</target>
         </segment>
       </unit>
       <unit id="2885" name="err_attribute_dll_thread_local">
         <segment>
           <source>%q0 cannot be thread local when declared %q1</source>
-          <target>%q0 cannot be thread local when declared %q1</target>
+          <target>{$arg0} cannot be thread local when declared {$arg1}</target>
         </segment>
       </unit>
       <unit id="2886" name="err_attribute_dllimport_data_definition">
@@ -2624,7 +2624,7 @@
       <unit id="3057" name="err_builtin_move_forward_unsupported">
         <segment>
           <source>unsupported signature for %q0</source>
-          <target>unsupported signature for %q0</target>
+          <target>unsupported signature for {$arg0}</target>
         </segment>
       </unit>
       <unit id="3058" name="err_builtin_non_vector_type">
@@ -4118,7 +4118,7 @@
       <unit id="3306" name="err_deduction_guide_wrong_scope">
         <segment>
           <source>deduction guide must be declared in the same scope as template %q0</source>
-          <target>deduction guide must be declared in the same scope as template %q0</target>
+          <target>deduction guide must be declared in the same scope as template {$arg0}</target>
         </segment>
       </unit>
       <unit id="3307" name="err_deep_exception_specs_differ">
@@ -4862,7 +4862,7 @@
       <unit id="3430" name="err_explicit_instantiation_data_member_not_instantiated">
         <segment>
           <source>explicit instantiation refers to static data member %q0 that is not an instantiation</source>
-          <target>explicit instantiation refers to static data member %q0 that is not an instantiation</target>
+          <target>explicit instantiation refers to static data member {$arg0} that is not an instantiation</target>
         </segment>
       </unit>
       <unit id="3431" name="err_explicit_instantiation_declaration_after_definition">
@@ -4904,7 +4904,7 @@
       <unit id="3437" name="err_explicit_instantiation_member_function_not_instantiated">
         <segment>
           <source>explicit instantiation refers to member function %q0 that is not an instantiation</source>
-          <target>explicit instantiation refers to member function %q0 that is not an instantiation</target>
+          <target>explicit instantiation refers to member function {$arg0} that is not an instantiation</target>
         </segment>
       </unit>
       <unit id="3438" name="err_explicit_instantiation_must_be_global">
@@ -4964,19 +4964,19 @@
       <unit id="3447" name="err_explicit_instantiation_undefined_var_template">
         <segment>
           <source>explicit instantiation of undefined variable template %q0</source>
-          <target>explicit instantiation of undefined variable template %q0</target>
+          <target>explicit instantiation of undefined variable template {$arg0}</target>
         </segment>
       </unit>
       <unit id="3448" name="err_explicit_instantiation_unqualified_wrong_namespace">
         <segment>
           <source>explicit instantiation of %q0 must occur in namespace %1</source>
-          <target>explicit instantiation of %q0 must occur in namespace ${arg1}</target>
+          <target>explicit instantiation of {$arg0} must occur in namespace ${arg1}</target>
         </segment>
       </unit>
       <unit id="3449" name="err_explicit_instantiation_without_template_id">
         <segment>
           <source>explicit instantiation of %q0 must specify a template argument list</source>
-          <target>explicit instantiation of %q0 must specify a template argument list</target>
+          <target>explicit instantiation of {$arg0} must specify a template argument list</target>
         </segment>
       </unit>
       <unit id="3450" name="err_explicit_non_ctor_or_conv_function">
@@ -5516,7 +5516,7 @@
       <unit id="3539" name="err_function_member_spec_ambiguous">
         <segment>
           <source>ambiguous member function specialization %q0 of %q1</source>
-          <target>ambiguous member function specialization %q0 of %q1</target>
+          <target>ambiguous member function specialization {$arg0} of {$arg1}</target>
         </segment>
       </unit>
       <unit id="3540" name="err_function_parameter_pack_without_parameter_packs">
@@ -5912,7 +5912,7 @@
       <unit id="3605" name="err_implied_std_coroutine_traits_promise_type_not_found">
         <segment>
           <source>this function cannot be a coroutine: %q0 has no member named 'promise_type'</source>
-          <target>this function cannot be a coroutine: %q0 has no member named 'promise_type'</target>
+          <target>this function cannot be a coroutine: {$arg0} has no member named 'promise_type'</target>
         </segment>
       </unit>
       <unit id="3606" name="err_implied_std_initializer_list_not_found">
@@ -6314,7 +6314,7 @@
       <unit id="3672" name="err_invalid_consteval_call">
         <segment>
           <source>call to %select{immediate|consteval}1 function %q0 is not a constant expression</source>
-          <target>call to %select{immediate|consteval}1 function %q0 is not a constant expression</target>
+          <target>call to %select{immediate|consteval}1 function {$arg0} is not a constant expression</target>
         </segment>
       </unit>
       <unit id="3673" name="err_invalid_consteval_decl_kind">
@@ -7064,7 +7064,7 @@
       <unit id="3797" name="err_member_def_does_not_match_ret_type">
         <segment>
           <source>return type of out-of-line definition of %q0 differs from that in the declaration</source>
-          <target>return type of out-of-line definition of %q0 differs from that in the declaration</target>
+          <target>return type of out-of-line definition of {$arg0} differs from that in the declaration</target>
         </segment>
       </unit>
       <unit id="3798" name="err_member_def_undefined_record">
@@ -7538,7 +7538,7 @@
       <unit id="3876" name="err_multiple_final_overriders">
         <segment>
           <source>virtual function %q0 has more than one final overrider in %1</source>
-          <target>virtual function %q0 has more than one final overrider in ${arg1}</target>
+          <target>virtual function {$arg0} has more than one final overrider in ${arg1}</target>
         </segment>
       </unit>
       <unit id="3877" name="err_multiple_mem_initialization">
@@ -10004,7 +10004,7 @@
       <unit id="4287" name="err_omp_var_scope">
         <segment>
           <source>'#pragma omp %0' must appear in the scope of the %q1 variable declaration</source>
-          <target>'#pragma omp ${arg0}' must appear in the scope of the %q1 variable declaration</target>
+          <target>'#pragma omp ${arg0}' must appear in the scope of the {$arg1} variable declaration</target>
         </segment>
       </unit>
       <unit id="4288" name="err_omp_var_thread_local">
@@ -10016,7 +10016,7 @@
       <unit id="4289" name="err_omp_var_used">
         <segment>
           <source>'#pragma omp %0' must precede all references to variable %q1</source>
-          <target>'#pragma omp ${arg0}' must precede all references to variable %q1</target>
+          <target>'#pragma omp ${arg0}' must precede all references to variable {$arg1}</target>
         </segment>
       </unit>
       <unit id="4290" name="err_omp_variable_in_given_clause_and_dsa">
@@ -11414,7 +11414,7 @@
       <unit id="4522" name="err_qualified_member_of_unrelated">
         <segment>
           <source>%q0 is not a member of class %1</source>
-          <target>%q0 is not a member of class ${arg1}</target>
+          <target>{$arg0} is not a member of class ${arg1}</target>
         </segment>
       </unit>
       <unit id="4523" name="err_qualified_objc_access">
@@ -12062,7 +12062,7 @@
       <unit id="4630" name="err_spec_member_not_instantiated">
         <segment>
           <source>specialization of member %q0 does not specialize an instantiated member</source>
-          <target>specialization of member %q0 does not specialize an instantiated member</target>
+          <target>specialization of member {$arg0} does not specialize an instantiated member</target>
         </segment>
       </unit>
       <unit id="4631" name="err_specialization_after_instantiation">
@@ -14108,13 +14108,13 @@
       <unit id="4971" name="err_undefined_inline_var">
         <segment>
           <source>inline variable %q0 is not defined</source>
-          <target>inline variable %q0 is not defined</target>
+          <target>inline variable {$arg0} is not defined</target>
         </segment>
       </unit>
       <unit id="4972" name="err_undefined_internal_type">
         <segment>
           <source>%select{function|variable}0 %q1 is used but not defined in this translation unit, and cannot be defined in any other translation unit because its type does not have linkage</source>
-          <target>%select{function|variable}0 %q1 is used but not defined in this translation unit, and cannot be defined in any other translation unit because its type does not have linkage</target>
+          <target>%select{function|variable}0 {$arg1} is used but not defined in this translation unit, and cannot be defined in any other translation unit because its type does not have linkage</target>
         </segment>
       </unit>
       <unit id="4973" name="err_underlying_type_of_incomplete_enum">
@@ -15284,7 +15284,7 @@
       <unit id="5167" name="ext_explicit_instantiation_without_qualified_id">
         <segment>
           <source>qualifier in explicit instantiation of %q0 requires a template-id (a typedef is not permitted)</source>
-          <target>qualifier in explicit instantiation of %q0 requires a template-id (a typedef is not permitted)</target>
+          <target>qualifier in explicit instantiation of {$arg0} requires a template-id (a typedef is not permitted)</target>
         </segment>
       </unit>
       <unit id="5168" name="ext_explicit_specialization_storage_class">
@@ -16286,7 +16286,7 @@
       <unit id="5334" name="ext_undefined_internal_type">
         <segment>
           <source>ISO C++ requires a definition in this translation unit for %select{function|variable}0 %q1 because its type does not have linkage</source>
-          <target>ISO C++ requires a definition in this translation unit for %select{function|variable}0 %q1 because its type does not have linkage</target>
+          <target>ISO C++ requires a definition in this translation unit for %select{function|variable}0 {$arg1} because its type does not have linkage</target>
         </segment>
       </unit>
       <unit id="5335" name="ext_unelaborated_friend_type">
@@ -16514,7 +16514,7 @@
       <unit id="5372" name="note_ambiguous_candidate">
         <segment>
           <source>candidate found by name lookup is %q0</source>
-          <target>candidate found by name lookup is %q0</target>
+          <target>candidate found by name lookup is {$arg0}</target>
         </segment>
       </unit>
       <unit id="5373" name="note_ambiguous_inherited_constructor_using">
@@ -17504,7 +17504,7 @@
       <unit id="5537" name="note_evaluating_exception_spec_here">
         <segment>
           <source>in evaluation of exception specification for %q0 needed here</source>
-          <target>in evaluation of exception specification for %q0 needed here</target>
+          <target>in evaluation of exception specification for {$arg0} needed here</target>
         </segment>
       </unit>
       <unit id="5538" name="note_exits___block">
@@ -17642,7 +17642,7 @@
       <unit id="5560" name="note_explicit_instantiation_candidate">
         <segment>
           <source>explicit instantiation candidate function %q0 template here %1</source>
-          <target>explicit instantiation candidate function %q0 template here ${arg1}</target>
+          <target>explicit instantiation candidate function {$arg0} template here ${arg1}</target>
         </segment>
       </unit>
       <unit id="5561" name="note_explicit_instantiation_definition_here">
@@ -17756,7 +17756,7 @@
       <unit id="5579" name="note_final_overrider">
         <segment>
           <source>final overrider of %q0 in %1</source>
-          <target>final overrider of %q0 in ${arg1}</target>
+          <target>final overrider of {$arg0} in ${arg1}</target>
         </segment>
       </unit>
       <unit id="5580" name="note_flexible_array_counted_by_attr_field">
@@ -17864,13 +17864,13 @@
       <unit id="5597" name="note_function_template_spec_here">
         <segment>
           <source>in instantiation of function template specialization %q0 requested here</source>
-          <target>in instantiation of function template specialization %q0 requested here</target>
+          <target>in instantiation of function template specialization {$arg0} requested here</target>
         </segment>
       </unit>
       <unit id="5598" name="note_function_template_spec_matched">
         <segment>
           <source>function template %q0 matches specialization %1</source>
-          <target>function template %q0 matches specialization ${arg1}</target>
+          <target>function template {$arg0} matches specialization ${arg1}</target>
         </segment>
       </unit>
       <unit id="5599" name="note_function_to_function_call">
@@ -17912,7 +17912,7 @@
       <unit id="5605" name="note_hidden_overloaded_virtual_declared_here">
         <segment>
           <source>hidden overloaded virtual function %q0 declared here%select{|: different classes%diff{ ($ vs $)|}2,3|: different number of parameters (%2 vs %3)|: type mismatch at %ordinal2 parameter%diff{ ($ vs $)|}3,4|: different return type%diff{ ($ vs $)|}2,3|: different qualifiers (%2 vs %3)|: different exception specifications}1</source>
-          <target>hidden overloaded virtual function %q0 declared here%select{|: different classes%diff{ ($ vs $)|}2,3|: different number of parameters (${arg2} vs ${arg3})|: type mismatch at %ordinal2 parameter%diff{ ($ vs $)|}3,4|: different return type%diff{ ($ vs $)|}2,3|: different qualifiers (${arg2} vs ${arg3})|: different exception specifications}1</target>
+          <target>hidden overloaded virtual function {$arg0} declared here%select{|: different classes%diff{ ($ vs $)|}2,3|: different number of parameters (${arg2} vs ${arg3})|: type mismatch at %ordinal2 parameter%diff{ ($ vs $)|}3,4|: different return type%diff{ ($ vs $)|}2,3|: different qualifiers (${arg2} vs ${arg3})|: different exception specifications}1</target>
         </segment>
       </unit>
       <unit id="5606" name="note_hidden_tag">
@@ -18092,7 +18092,7 @@
       <unit id="5635" name="note_inst_declaration_hint">
         <segment>
           <source>add an explicit instantiation declaration to suppress this warning if %q0 is explicitly instantiated in another translation unit</source>
-          <target>add an explicit instantiation declaration to suppress this warning if %q0 is explicitly instantiated in another translation unit</target>
+          <target>add an explicit instantiation declaration to suppress this warning if {$arg0} is explicitly instantiated in another translation unit</target>
         </segment>
       </unit>
       <unit id="5636" name="note_instantiation_contexts_suppressed">
@@ -19256,7 +19256,7 @@
       <unit id="5829" name="note_ovl_candidate_non_deduced_mismatch_qualified">
         <segment>
           <source>candidate template ignored: could not match %q0 against %q1</source>
-          <target>candidate template ignored: could not match %q0 against %q1</target>
+          <target>candidate template ignored: could not match {$arg0} against {$arg1}</target>
         </segment>
       </unit>
       <unit id="5830" name="note_ovl_candidate_substitution_failure">
@@ -20066,7 +20066,7 @@
       <unit id="5964" name="note_template_class_instantiation_here">
         <segment>
           <source>in instantiation of template class %q0 requested here</source>
-          <target>in instantiation of template class %q0 requested here</target>
+          <target>in instantiation of template class {$arg0} requested here</target>
         </segment>
       </unit>
       <unit id="5965" name="note_template_class_instantiation_was_here">
@@ -20102,7 +20102,7 @@
       <unit id="5970" name="note_template_enum_def_here">
         <segment>
           <source>in instantiation of enumeration %q0 requested here</source>
-          <target>in instantiation of enumeration %q0 requested here</target>
+          <target>in instantiation of enumeration {$arg0} requested here</target>
         </segment>
       </unit>
       <unit id="5971" name="note_template_exception_spec_instantiation_here">
@@ -20120,13 +20120,13 @@
       <unit id="5973" name="note_template_member_class_here">
         <segment>
           <source>in instantiation of member class %q0 requested here</source>
-          <target>in instantiation of member class %q0 requested here</target>
+          <target>in instantiation of member class {$arg0} requested here</target>
         </segment>
       </unit>
       <unit id="5974" name="note_template_member_function_here">
         <segment>
           <source>in instantiation of member function %q0 requested here</source>
-          <target>in instantiation of member function %q0 requested here</target>
+          <target>in instantiation of member function {$arg0} requested here</target>
         </segment>
       </unit>
       <unit id="5975" name="note_template_nontype_parm_different_type">
@@ -20144,7 +20144,7 @@
       <unit id="5977" name="note_template_nsdmi_here">
         <segment>
           <source>in instantiation of default member initializer %q0 requested here</source>
-          <target>in instantiation of default member initializer %q0 requested here</target>
+          <target>in instantiation of default member initializer {$arg0} requested here</target>
         </segment>
       </unit>
       <unit id="5978" name="note_template_param_different_kind">
@@ -20222,7 +20222,7 @@
       <unit id="5990" name="note_template_static_data_member_def_here">
         <segment>
           <source>in instantiation of static data member %q0 requested here</source>
-          <target>in instantiation of static data member %q0 requested here</target>
+          <target>in instantiation of static data member {$arg0} requested here</target>
         </segment>
       </unit>
       <unit id="5991" name="note_template_type_alias_instantiation_here">
@@ -20240,7 +20240,7 @@
       <unit id="5993" name="note_template_variable_def_here">
         <segment>
           <source>in instantiation of variable template specialization %q0 requested here</source>
-          <target>in instantiation of variable template specialization %q0 requested here</target>
+          <target>in instantiation of variable template specialization {$arg0} requested here</target>
         </segment>
       </unit>
       <unit id="5994" name="note_thread_warning_in_fun">
@@ -20294,7 +20294,7 @@
       <unit id="6002" name="note_typecheck_assign_const">
         <segment>
           <source>%select{function %1 which returns const-qualified type %2 declared here|variable %1 declared const here|%select{non-|}1static data member %2 declared const here|member function %q1 is declared const here|%select{|nested }1data member %2 declared const here}0</source>
-          <target>%select{function ${arg1} which returns const-qualified type ${arg2} declared here|variable ${arg1} declared const here|%select{non-|}1static data member ${arg2} declared const here|member function %q1 is declared const here|%select{|nested }1data member ${arg2} declared const here}0</target>
+          <target>%select{function ${arg1} which returns const-qualified type ${arg2} declared here|variable ${arg1} declared const here|%select{non-|}1static data member ${arg2} declared const here|member function {$arg1} is declared const here|%select{|nested }1data member ${arg2} declared const here}0</target>
         </segment>
       </unit>
       <unit id="6003" name="note_typecheck_invalid_operands_converted">
@@ -21026,7 +21026,7 @@
       <unit id="6124" name="warn_attribute_dll_redeclaration">
         <segment>
           <source>redeclaration of %q0 should not add %q1 attribute</source>
-          <target>redeclaration of %q0 should not add %q1 attribute</target>
+          <target>redeclaration of {$arg0} should not add {$arg1} attribute</target>
         </segment>
       </unit>
       <unit id="6125" name="warn_attribute_dllexport_explicit_instantiation_decl">
@@ -21356,7 +21356,7 @@
       <unit id="6179" name="warn_base_class_is_uninit">
         <segment>
           <source>base class %0 is uninitialized when used here to access %q1</source>
-          <target>base class ${arg0} is uninitialized when used here to access %q1</target>
+          <target>base class ${arg0} is uninitialized when used here to access {$arg1}</target>
         </segment>
       </unit>
       <unit id="6180" name="warn_bind_ref_member_to_parameter">
@@ -22742,7 +22742,7 @@
       <unit id="6410" name="warn_dllimport_dropped_from_inline_function">
         <segment>
           <source>%q0 redeclared inline; %1 attribute ignored</source>
-          <target>%q0 redeclared inline; ${arg1} attribute ignored</target>
+          <target>{$arg0} redeclared inline; ${arg1} attribute ignored</target>
         </segment>
       </unit>
       <unit id="6411" name="warn_double_const_requires_fp64">
@@ -22916,7 +22916,7 @@
       <unit id="6439" name="warn_explicit_instantiation_unqualified_wrong_namespace_0x">
         <segment>
           <source>explicit instantiation of %q0 must occur in namespace %1</source>
-          <target>explicit instantiation of %q0 must occur in namespace ${arg1}</target>
+          <target>explicit instantiation of {$arg0} must occur in namespace ${arg1}</target>
         </segment>
       </unit>
       <unit id="6440" name="warn_extern_init">
@@ -23234,7 +23234,7 @@
       <unit id="6492" name="warn_func_template_missing">
         <segment>
           <source>instantiation of function %q0 required here, but no definition is available</source>
-          <target>instantiation of function %q0 required here, but no definition is available</target>
+          <target>instantiation of function {$arg0} required here, but no definition is available</target>
         </segment>
       </unit>
       <unit id="6493" name="warn_function_attribute_ignored_in_stmt">
@@ -24818,7 +24818,7 @@
       <unit id="6756" name="warn_overloaded_virtual">
         <segment>
           <source>%q0 hides overloaded virtual %select{function|functions}1</source>
-          <target>%q0 hides overloaded virtual %select{function|functions}1</target>
+          <target>{$arg0} hides overloaded virtual %select{function|functions}1</target>
         </segment>
       </unit>
       <unit id="6757" name="warn_overriding_method_missing_noescape">
@@ -25256,13 +25256,13 @@
       <unit id="6829" name="warn_redeclaration_without_attribute_prev_attribute_ignored">
         <segment>
           <source>%q0 redeclared without %1 attribute: previous %1 ignored</source>
-          <target>%q0 redeclared without ${arg1} attribute: previous ${arg1} ignored</target>
+          <target>{$arg0} redeclared without ${arg1} attribute: previous ${arg1} ignored</target>
         </segment>
       </unit>
       <unit id="6830" name="warn_redeclaration_without_import_attribute">
         <segment>
           <source>%q0 redeclared without 'dllimport' attribute: 'dllexport' attribute added</source>
-          <target>%q0 redeclared without 'dllimport' attribute: 'dllexport' attribute added</target>
+          <target>{$arg0} redeclared without 'dllimport' attribute: 'dllexport' attribute added</target>
         </segment>
       </unit>
       <unit id="6831" name="warn_redefine_extname_not_applied">
@@ -25814,7 +25814,7 @@
       <unit id="6922" name="warn_taking_address_of_packed_member">
         <segment>
           <source>taking address of packed member %0 of class or structure %q1 may result in an unaligned pointer value</source>
-          <target>taking address of packed member ${arg0} of class or structure %q1 may result in an unaligned pointer value</target>
+          <target>taking address of packed member ${arg0} of class or structure {$arg1} may result in an unaligned pointer value</target>
         </segment>
       </unit>
       <unit id="6923" name="warn_target_clone_duplicate_options">
@@ -26144,13 +26144,13 @@
       <unit id="6977" name="warn_undefined_inline">
         <segment>
           <source>inline function %q0 is not defined</source>
-          <target>inline function %q0 is not defined</target>
+          <target>inline function {$arg0} is not defined</target>
         </segment>
       </unit>
       <unit id="6978" name="warn_undefined_internal">
         <segment>
           <source>%select{function|variable}0 %q1 has internal linkage but is not defined</source>
-          <target>%select{function|variable}0 %q1 has internal linkage but is not defined</target>
+          <target>%select{function|variable}0 {$arg1} has internal linkage but is not defined</target>
         </segment>
       </unit>
       <unit id="6979" name="warn_undefined_reinterpret_cast">
@@ -26618,7 +26618,7 @@
       <unit id="7056" name="warn_var_template_missing">
         <segment>
           <source>instantiation of variable %q0 required here, but no definition is available</source>
-          <target>instantiation of variable %q0 required here, but no definition is available</target>
+          <target>instantiation of variable {$arg0} required here, but no definition is available</target>
         </segment>
       </unit>
       <unit id="7057" name="warn_variable_requires_any_lock">

@@ -44,49 +44,49 @@
       <unit id="2127" name="err_module_odr_violation_definition_data">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%4 base %plural{1:class|:classes}4|%4 virtual base %plural{1:class|:classes}4|%ordinal4 base class with type %5|%ordinal4 %select{non-virtual|virtual}5 base class %6|%ordinal4 base class %5 with %select{public|protected|private|no}6 access specifier}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{${arg4} base %plural{1:class|:classes}4|${arg4} virtual base %plural{1:class|:classes}4|%ordinal4 base class with type ${arg5}|%ordinal4 %select{non-virtual|virtual}5 base class ${arg6}|%ordinal4 base class ${arg5} with %select{public|protected|private|no}6 access specifier}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{${arg4} base %plural{1:class|:classes}4|${arg4} virtual base %plural{1:class|:classes}4|%ordinal4 base class with type ${arg5}|%ordinal4 %select{non-virtual|virtual}5 base class ${arg6}|%ordinal4 base class ${arg5} with %select{public|protected|private|no}6 access specifier}3</target>
         </segment>
       </unit>
       <unit id="2128" name="err_module_odr_violation_different_definitions">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2' is here|defined here}1</source>
-          <target>%q0 has different definitions in different modules; %select{definition in module '${arg2}' is here|defined here}1</target>
+          <target>{$arg0} has different definitions in different modules; %select{definition in module '${arg2}' is here|defined here}1</target>
         </segment>
       </unit>
       <unit id="2129" name="err_module_odr_violation_enum">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2'|defined here}1 first difference is %select{enum that is %select{not scoped|scoped}4|enum scoped with keyword %select{struct|class}4|enum %select{without|with}4 specified type|enum with specified type %4|enum with %4 element%s4|%ordinal4 element has name %5|%ordinal4 element %5 %select{has|does not have}6 an initializer|%ordinal4 element %5 has an initializer|}3</source>
-          <target>%q0 has different definitions in different modules; %select{definition in module '${arg2}'|defined here}1 first difference is %select{enum that is %select{not scoped|scoped}4|enum scoped with keyword %select{struct|class}4|enum %select{without|with}4 specified type|enum with specified type ${arg4}|enum with ${arg4} element%s4|%ordinal4 element has name ${arg5}|%ordinal4 element ${arg5} %select{has|does not have}6 an initializer|%ordinal4 element ${arg5} has an initializer|}3</target>
+          <target>{$arg0} has different definitions in different modules; %select{definition in module '${arg2}'|defined here}1 first difference is %select{enum that is %select{not scoped|scoped}4|enum scoped with keyword %select{struct|class}4|enum %select{without|with}4 specified type|enum with specified type ${arg4}|enum with ${arg4} element%s4|%ordinal4 element has name ${arg5}|%ordinal4 element ${arg5} %select{has|does not have}6 an initializer|%ordinal4 element ${arg5} has an initializer|}3</target>
         </segment>
       </unit>
       <unit id="2130" name="err_module_odr_violation_field">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{field %4|field %4 with type %5|%select{non-|}5bitfield %4|bitfield %4 with one width expression|%select{non-|}5mutable field %4|field %4 with %select{no|an}5 initializer|field %4 with an initializer}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{field ${arg4}|field ${arg4} with type ${arg5}|%select{non-|}5bitfield ${arg4}|bitfield ${arg4} with one width expression|%select{non-|}5mutable field ${arg4}|field ${arg4} with %select{no|an}5 initializer|field ${arg4} with an initializer}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{field ${arg4}|field ${arg4} with type ${arg5}|%select{non-|}5bitfield ${arg4}|bitfield ${arg4} with one width expression|%select{non-|}5mutable field ${arg4}|field ${arg4} with %select{no|an}5 initializer|field ${arg4} with an initializer}3</target>
         </segment>
       </unit>
       <unit id="2131" name="err_module_odr_violation_function">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2'|defined here}1 first difference is %select{return type is %4|%ordinal4 parameter with name %5|%ordinal4 parameter with type %5%select{| decayed from %7}6|%ordinal4 parameter with%select{out|}5 a default argument|%ordinal4 parameter with a default argument|function body}3</source>
-          <target>%q0 has different definitions in different modules; %select{definition in module '${arg2}'|defined here}1 first difference is %select{return type is ${arg4}|%ordinal4 parameter with name ${arg5}|%ordinal4 parameter with type ${arg5}%select{| decayed from ${arg7}}6|%ordinal4 parameter with%select{out|}5 a default argument|%ordinal4 parameter with a default argument|function body}3</target>
+          <target>{$arg0} has different definitions in different modules; %select{definition in module '${arg2}'|defined here}1 first difference is %select{return type is ${arg4}|%ordinal4 parameter with name ${arg5}|%ordinal4 parameter with type ${arg5}%select{| decayed from ${arg7}}6|%ordinal4 parameter with%select{out|}5 a default argument|%ordinal4 parameter with a default argument|function body}3</target>
         </segment>
       </unit>
       <unit id="2132" name="err_module_odr_violation_method_params">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{method %5|constructor|destructor}4 that has %6 parameter%s6|%select{method %5|constructor|destructor}4 with %ordinal6 parameter of type %7%select{| decayed from %9}8|%select{method %5|constructor|destructor}4 with %ordinal6 parameter named %7}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{%select{method ${arg5}|constructor|destructor}4 that has ${arg6} parameter%s6|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter of type ${arg7}%select{| decayed from ${arg9}}8|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter named ${arg7}}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{%select{method ${arg5}|constructor|destructor}4 that has ${arg6} parameter%s6|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter of type ${arg7}%select{| decayed from ${arg9}}8|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter named ${arg7}}3</target>
         </segment>
       </unit>
       <unit id="2133" name="err_module_odr_violation_mismatch_decl">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}3</target>
         </segment>
       </unit>
       <unit id="2134" name="err_module_odr_violation_mismatch_decl_unknown">
         <segment>
           <source>%q0 %select{with definition in module '%2'|defined here}1 has different definitions in different modules; first difference is this %select{||||static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property|unexpected decl}3</source>
-          <target>%q0 %select{with definition in module '${arg2}'|defined here}1 has different definitions in different modules; first difference is this %select{||||static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property|unexpected decl}3</target>
+          <target>{$arg0} %select{with definition in module '${arg2}'|defined here}1 has different definitions in different modules; first difference is this %select{||||static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property|unexpected decl}3</target>
         </segment>
       </unit>
       <unit id="2135" name="err_module_odr_violation_objc_interface">
@@ -98,43 +98,43 @@
       <unit id="2136" name="err_module_odr_violation_objc_method">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{method %4 with return type %5|%select{class|instance}5 method %4|%select{no|'required'|'optional'}4 method control|method %4 with %select{no designated initializer|designated initializer}5|%select{regular|direct}5 method %4|method %4}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{method ${arg4} with return type ${arg5}|%select{class|instance}5 method ${arg4}|%select{no|'required'|'optional'}4 method control|method ${arg4} with %select{no designated initializer|designated initializer}5|%select{regular|direct}5 method ${arg4}|method ${arg4}}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{method ${arg4} with return type ${arg5}|%select{class|instance}5 method ${arg4}|%select{no|'required'|'optional'}4 method control|method ${arg4} with %select{no designated initializer|designated initializer}5|%select{regular|direct}5 method ${arg4}|method ${arg4}}3</target>
         </segment>
       </unit>
       <unit id="2137" name="err_module_odr_violation_objc_property">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{property %4|property %4 with type %5|%select{no|'required'|'optional'}4 property control|property %4 with %select{default |}6'%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}5' attribute}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{property ${arg4}|property ${arg4} with type ${arg5}|%select{no|'required'|'optional'}4 property control|property ${arg4} with %select{default |}6'%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}5' attribute}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{property ${arg4}|property ${arg4} with type ${arg5}|%select{no|'required'|'optional'}4 property control|property ${arg4} with %select{default |}6'%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}5' attribute}3</target>
         </segment>
       </unit>
       <unit id="2138" name="err_module_odr_violation_record">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{static assert with condition|static assert with message|static assert with %select{|no }4message|%select{method %5|constructor|destructor}4|%select{method %5|constructor|destructor}4 is %select{not deleted|deleted}6|%select{method %5|constructor|destructor}4 is %select{not defaulted|defaulted}6|%select{method %5|constructor|destructor}4 is %select{|pure }6%select{not virtual|virtual}7|%select{method %5|constructor|destructor}4 is %select{not static|static}6|%select{method %5|constructor|destructor}4 is %select{not volatile|volatile}6|%select{method %5|constructor|destructor}4 is %select{not const|const}6|%select{method %5|constructor|destructor}4 is %select{not inline|inline}6|%select{method %5|constructor|destructor}4 with %ordinal6 parameter with%select{out|}7 a default argument|%select{method %5|constructor|destructor}4 with %ordinal6 parameter with a default argument|%select{method %5|constructor|destructor}4 with %select{no |}6template arguments|%select{method %5|constructor|destructor}4 with %6 template argument%s6|%select{method %5|constructor|destructor}4 with %6 for %ordinal7 template argument|%select{method %5|constructor|destructor}4 with %select{no body|body}6|%select{method %5|constructor|destructor}4 with body|friend %select{class|function}4|friend %4|friend function %4|function template %4 with %5 template parameter%s5|function template %4 with %ordinal5 template parameter being a %select{type|non-type|template}6 template parameter|function template %4 with %ordinal5 template parameter %select{with no name|named %7}6|function template %4 with %ordinal5 template parameter with %select{no |}6default argument|function template %4 with %ordinal5 template parameter with default argument %6|function template %4 with %ordinal5 template parameter with one type|function template %4 with %ordinal5 template parameter %select{not |}6being a template parameter pack|}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{static assert with condition|static assert with message|static assert with %select{|no }4message|%select{method ${arg5}|constructor|destructor}4|%select{method ${arg5}|constructor|destructor}4 is %select{not deleted|deleted}6|%select{method ${arg5}|constructor|destructor}4 is %select{not defaulted|defaulted}6|%select{method ${arg5}|constructor|destructor}4 is %select{|pure }6%select{not virtual|virtual}7|%select{method ${arg5}|constructor|destructor}4 is %select{not static|static}6|%select{method ${arg5}|constructor|destructor}4 is %select{not volatile|volatile}6|%select{method ${arg5}|constructor|destructor}4 is %select{not const|const}6|%select{method ${arg5}|constructor|destructor}4 is %select{not inline|inline}6|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter with%select{out|}7 a default argument|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter with a default argument|%select{method ${arg5}|constructor|destructor}4 with %select{no |}6template arguments|%select{method ${arg5}|constructor|destructor}4 with ${arg6} template argument%s6|%select{method ${arg5}|constructor|destructor}4 with ${arg6} for %ordinal7 template argument|%select{method ${arg5}|constructor|destructor}4 with %select{no body|body}6|%select{method ${arg5}|constructor|destructor}4 with body|friend %select{class|function}4|friend ${arg4}|friend function ${arg4}|function template ${arg4} with ${arg5} template parameter%s5|function template ${arg4} with %ordinal5 template parameter being a %select{type|non-type|template}6 template parameter|function template ${arg4} with %ordinal5 template parameter %select{with no name|named ${arg7}}6|function template ${arg4} with %ordinal5 template parameter with %select{no |}6default argument|function template ${arg4} with %ordinal5 template parameter with default argument ${arg6}|function template ${arg4} with %ordinal5 template parameter with one type|function template ${arg4} with %ordinal5 template parameter %select{not |}6being a template parameter pack|}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{static assert with condition|static assert with message|static assert with %select{|no }4message|%select{method ${arg5}|constructor|destructor}4|%select{method ${arg5}|constructor|destructor}4 is %select{not deleted|deleted}6|%select{method ${arg5}|constructor|destructor}4 is %select{not defaulted|defaulted}6|%select{method ${arg5}|constructor|destructor}4 is %select{|pure }6%select{not virtual|virtual}7|%select{method ${arg5}|constructor|destructor}4 is %select{not static|static}6|%select{method ${arg5}|constructor|destructor}4 is %select{not volatile|volatile}6|%select{method ${arg5}|constructor|destructor}4 is %select{not const|const}6|%select{method ${arg5}|constructor|destructor}4 is %select{not inline|inline}6|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter with%select{out|}7 a default argument|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter with a default argument|%select{method ${arg5}|constructor|destructor}4 with %select{no |}6template arguments|%select{method ${arg5}|constructor|destructor}4 with ${arg6} template argument%s6|%select{method ${arg5}|constructor|destructor}4 with ${arg6} for %ordinal7 template argument|%select{method ${arg5}|constructor|destructor}4 with %select{no body|body}6|%select{method ${arg5}|constructor|destructor}4 with body|friend %select{class|function}4|friend ${arg4}|friend function ${arg4}|function template ${arg4} with ${arg5} template parameter%s5|function template ${arg4} with %ordinal5 template parameter being a %select{type|non-type|template}6 template parameter|function template ${arg4} with %ordinal5 template parameter %select{with no name|named ${arg7}}6|function template ${arg4} with %ordinal5 template parameter with %select{no |}6default argument|function template ${arg4} with %ordinal5 template parameter with default argument ${arg6}|function template ${arg4} with %ordinal5 template parameter with one type|function template ${arg4} with %ordinal5 template parameter %select{not |}6being a template parameter pack|}3</target>
         </segment>
       </unit>
       <unit id="2139" name="err_module_odr_violation_referenced_protocols">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%4 referenced %plural{1:protocol|:protocols}4|%ordinal4 referenced protocol with name %5}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{${arg4} referenced %plural{1:protocol|:protocols}4|%ordinal4 referenced protocol with name ${arg5}}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{${arg4} referenced %plural{1:protocol|:protocols}4|%ordinal4 referenced protocol with name ${arg5}}3</target>
         </segment>
       </unit>
       <unit id="2140" name="err_module_odr_violation_template_parameter">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{unnamed template parameter|template parameter %5|template parameter with %select{no |}4default argument|template parameter with default argument}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{unnamed template parameter|template parameter ${arg5}|template parameter with %select{no |}4default argument|template parameter with default argument}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{unnamed template parameter|template parameter ${arg5}|template parameter with %select{no |}4default argument|template parameter with default argument}3</target>
         </segment>
       </unit>
       <unit id="2141" name="err_module_odr_violation_typedef">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{typedef|type alias}4 name %5|%select{typedef|type alias}4 %5 with underlying type %6}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{%select{typedef|type alias}4 name ${arg5}|%select{typedef|type alias}4 ${arg5} with underlying type ${arg6}}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{%select{typedef|type alias}4 name ${arg5}|%select{typedef|type alias}4 ${arg5} with underlying type ${arg6}}3</target>
         </segment>
       </unit>
       <unit id="2142" name="err_module_odr_violation_variable">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{data member with name %4|data member %4 with type %5|data member %4 with%select{out|}5 an initializer|data member %4 with an initializer|data member %4 %select{is constexpr|is not constexpr}5}3</source>
-          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{data member with name ${arg4}|data member ${arg4} with type ${arg5}|data member ${arg4} with%select{out|}5 an initializer|data member ${arg4} with an initializer|data member ${arg4} %select{is constexpr|is not constexpr}5}3</target>
+          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{data member with name ${arg4}|data member ${arg4} with type ${arg5}|data member ${arg4} with%select{out|}5 an initializer|data member ${arg4} with an initializer|data member ${arg4} %select{is constexpr|is not constexpr}5}3</target>
         </segment>
       </unit>
       <unit id="2143" name="err_odr_different_num_template_parameters">
@@ -650,7 +650,7 @@
       <unit id="2228" name="note_constexpr_mem_pointer_weak_comparison">
         <segment>
           <source>comparison against pointer to weak member %q0 can only be performed at runtime</source>
-          <target>comparison against pointer to weak member %q0 can only be performed at runtime</target>
+          <target>comparison against pointer to weak member {$arg0} can only be performed at runtime</target>
         </segment>
       </unit>
       <unit id="2229" name="note_constexpr_memchr_unsupported">
@@ -932,7 +932,7 @@
       <unit id="2275" name="note_constexpr_pure_virtual_call">
         <segment>
           <source>pure virtual function %q0 called</source>
-          <target>pure virtual function %q0 called</target>
+          <target>pure virtual function {$arg0} called</target>
         </segment>
       </unit>
       <unit id="2276" name="note_constexpr_static_local">
