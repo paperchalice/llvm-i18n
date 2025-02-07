@@ -20,8 +20,13 @@ TXT_TEMPLATE = '''// Automatically generated file, do not edit directly!
 '''
 
 def process_str(s):
-  s = s.replace('"', '\\"').replace('\\', '\\\\').replace('\n', '"\n    "')
-  return f'"{s}"'
+  lines = s.splitlines()
+  for idx, line in enumerate(lines):
+    line = line.encode('unicode-escape').decode('utf-8')
+    line = line.replace('"', r'\"')
+    line = f'"{line}"'
+    lines[idx] = line
+  return f'{str.join('\n    ', lines)}'
 
 class Converter:
   def __init__(self, component):
