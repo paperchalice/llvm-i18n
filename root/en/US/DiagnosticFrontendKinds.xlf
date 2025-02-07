@@ -14,7 +14,7 @@
       <unit id="702" name="err_alias_to_undefined">
         <segment>
           <source>%select{alias|ifunc}0 must point to a defined %select{variable or |}1function</source>
-          <target>%select{alias|ifunc}0 must point to a defined %select{variable or |}1function</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="703" name="err_ast_action_on_llvm_ir">
@@ -26,7 +26,7 @@
       <unit id="704" name="err_avx_calling_convention">
         <segment>
           <source>AVX vector %select{return|argument}0 of type %1 without '%2' enabled changes the ABI</source>
-          <target>AVX vector %select{return|argument}0 of type {$arg1} without '{$arg2}' enabled changes the ABI</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="705" name="err_builtin_needs_feature">
@@ -38,7 +38,7 @@
       <unit id="706" name="err_cyclic_alias">
         <segment>
           <source>%select{alias|ifunc}0 definition is part of a cycle</source>
-          <target>%select{alias|ifunc}0 definition is part of a cycle</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="707" name="err_duplicate_mangled_name">
@@ -152,7 +152,7 @@
       <unit id="725" name="err_fe_invalid_exception_model">
         <segment>
           <source>invalid exception model '%select{none|sjlj|seh|dwarf|wasm}0' for target '%1'</source>
-          <target>invalid exception model '%select{none|sjlj|seh|dwarf|wasm}0' for target '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="726" name="err_fe_invalid_multiple_actions">
@@ -278,7 +278,7 @@
       <unit id="746" name="err_incompatible_fp_eval_method_options">
         <segment>
           <source>option 'ffp-eval-method' cannot be used with option %select{'fapprox-func'|'mreassociate'|'freciprocal'}0</source>
-          <target>option 'ffp-eval-method' cannot be used with option %select{'fapprox-func'|'mreassociate'|'freciprocal'}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="747" name="err_invalid_vfs_overlay">
@@ -386,7 +386,7 @@
       <unit id="764" name="err_verify_inconsistent_diags">
         <segment>
           <source>'%0' diagnostics %select{expected|seen}1 but not %select{seen|expected}1: %2</source>
-          <target>'{$arg0}' diagnostics %select{expected|seen}1 but not %select{seen|expected}1: {$arg2}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="765" name="err_verify_invalid_content">
@@ -398,7 +398,7 @@
       <unit id="766" name="err_verify_invalid_no_diags">
         <segment>
           <source>%select{expected|'%0-no-diagnostics'}1 directive cannot follow %select{'%0-no-diagnostics' directive|other expected directives}1</source>
-          <target>%select{expected|'{$arg0}-no-diagnostics'}1 directive cannot follow %select{'{$arg0}-no-diagnostics' directive|other expected directives}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="767" name="err_verify_invalid_range">
@@ -464,7 +464,7 @@
       <unit id="777" name="note_alias_requires_mangled_name">
         <segment>
           <source>the %select{function or variable|function}0 specified in an %select{alias|ifunc}1 must refer to its mangled name</source>
-          <target>the %select{function or variable|function}0 specified in an %select{alias|ifunc}1 must refer to its mangled name</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="778" name="note_fe_backend_frame_larger_than">
@@ -548,7 +548,7 @@
       <unit id="791" name="note_module_def_undef_here">
         <segment>
           <source>macro was %select{defined|#undef'd}0 here</source>
-          <target>macro was %select{defined|#undef'd}0 here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="792" name="note_module_import_here">
@@ -626,13 +626,13 @@
       <unit id="804" name="warn_alias_to_weak_alias">
         <segment>
           <source>%select{alias|ifunc}2 will always resolve to %0 even if weak definition of %1 is overridden</source>
-          <target>%select{alias|ifunc}2 will always resolve to {$arg0} even if weak definition of {$arg1} is overridden</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="805" name="warn_alias_with_section">
         <segment>
           <source>%select{alias|ifunc}1 will not be in section '%0' but in the same section as the %select{aliasee|resolver}2</source>
-          <target>%select{alias|ifunc}1 will not be in section '{$arg0}' but in the same section as the %select{aliasee|resolver}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="806" name="warn_atomic_op_misaligned">
@@ -650,7 +650,7 @@
       <unit id="808" name="warn_avx_calling_convention">
         <segment>
           <source>AVX vector %select{return|argument}0 of type %1 without '%2' enabled changes the ABI</source>
-          <target>AVX vector %select{return|argument}0 of type {$arg1} without '{$arg2}' enabled changes the ABI</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="809" name="warn_eagerly_load_for_standard_cplusplus_modules">
@@ -824,7 +824,7 @@
       <unit id="837" name="warn_module_config_macro_undef">
         <segment>
           <source>%select{definition|#undef}0 of configuration macro '%1' has no effect on the import of '%2'; pass '%select{-D%1=...|-U%1}0' on the command line to configure the module</source>
-          <target>%select{definition|#undef}0 of configuration macro '{$arg1}' has no effect on the import of '{$arg2}'; pass '%select{-D{$arg1}=...|-U{$arg1}}0' on the command line to configure the module</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="838" name="warn_module_config_mismatch">
@@ -884,7 +884,7 @@
       <unit id="847" name="warn_unknown_diag_option">
         <segment>
           <source>unknown %select{warning|remark}0 option '%1'%select{|; did you mean '%3'?}2</source>
-          <target>unknown %select{warning|remark}0 option '{$arg1}'%select{|; did you mean '{$arg3}'?}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="848" name="warn_unknown_warning_specifier">

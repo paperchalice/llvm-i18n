@@ -44,97 +44,97 @@
       <unit id="2127" name="err_module_odr_violation_definition_data">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%4 base %plural{1:class|:classes}4|%4 virtual base %plural{1:class|:classes}4|%ordinal4 base class with type %5|%ordinal4 %select{non-virtual|virtual}5 base class %6|%ordinal4 base class %5 with %select{public|protected|private|no}6 access specifier}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{{$arg4} base %plural{1:class|:classes}4|{$arg4} virtual base %plural{1:class|:classes}4|%ordinal4 base class with type {$arg5}|%ordinal4 %select{non-virtual|virtual}5 base class {$arg6}|%ordinal4 base class {$arg5} with %select{public|protected|private|no}6 access specifier}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2128" name="err_module_odr_violation_different_definitions">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2' is here|defined here}1</source>
-          <target>{$arg0} has different definitions in different modules; %select{definition in module '{$arg2}' is here|defined here}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2129" name="err_module_odr_violation_enum">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2'|defined here}1 first difference is %select{enum that is %select{not scoped|scoped}4|enum scoped with keyword %select{struct|class}4|enum %select{without|with}4 specified type|enum with specified type %4|enum with %4 element%s4|%ordinal4 element has name %5|%ordinal4 element %5 %select{has|does not have}6 an initializer|%ordinal4 element %5 has an initializer|}3</source>
-          <target>{$arg0} has different definitions in different modules; %select{definition in module '{$arg2}'|defined here}1 first difference is %select{enum that is %select{not scoped|scoped}4|enum scoped with keyword %select{struct|class}4|enum %select{without|with}4 specified type|enum with specified type {$arg4}|enum with {$arg4} element%s4|%ordinal4 element has name {$arg5}|%ordinal4 element {$arg5} %select{has|does not have}6 an initializer|%ordinal4 element {$arg5} has an initializer|}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2130" name="err_module_odr_violation_field">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{field %4|field %4 with type %5|%select{non-|}5bitfield %4|bitfield %4 with one width expression|%select{non-|}5mutable field %4|field %4 with %select{no|an}5 initializer|field %4 with an initializer}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{field {$arg4}|field {$arg4} with type {$arg5}|%select{non-|}5bitfield {$arg4}|bitfield {$arg4} with one width expression|%select{non-|}5mutable field {$arg4}|field {$arg4} with %select{no|an}5 initializer|field {$arg4} with an initializer}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2131" name="err_module_odr_violation_function">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2'|defined here}1 first difference is %select{return type is %4|%ordinal4 parameter with name %5|%ordinal4 parameter with type %5%select{| decayed from %7}6|%ordinal4 parameter with%select{out|}5 a default argument|%ordinal4 parameter with a default argument|function body}3</source>
-          <target>{$arg0} has different definitions in different modules; %select{definition in module '{$arg2}'|defined here}1 first difference is %select{return type is {$arg4}|%ordinal4 parameter with name {$arg5}|%ordinal4 parameter with type {$arg5}%select{| decayed from {$arg7}}6|%ordinal4 parameter with%select{out|}5 a default argument|%ordinal4 parameter with a default argument|function body}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2132" name="err_module_odr_violation_method_params">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{method %5|constructor|destructor}4 that has %6 parameter%s6|%select{method %5|constructor|destructor}4 with %ordinal6 parameter of type %7%select{| decayed from %9}8|%select{method %5|constructor|destructor}4 with %ordinal6 parameter named %7}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{%select{method {$arg5}|constructor|destructor}4 that has {$arg6} parameter%s6|%select{method {$arg5}|constructor|destructor}4 with %ordinal6 parameter of type {$arg7}%select{| decayed from {$arg9}}8|%select{method {$arg5}|constructor|destructor}4 with %ordinal6 parameter named {$arg7}}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2133" name="err_module_odr_violation_mismatch_decl">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2134" name="err_module_odr_violation_mismatch_decl_unknown">
         <segment>
           <source>%q0 %select{with definition in module '%2'|defined here}1 has different definitions in different modules; first difference is this %select{||||static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property|unexpected decl}3</source>
-          <target>{$arg0} %select{with definition in module '{$arg2}'|defined here}1 has different definitions in different modules; first difference is this %select{||||static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property|unexpected decl}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2135" name="err_module_odr_violation_objc_interface">
         <segment>
           <source>%0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{no super class|super class with type %5}4|instance variable '%4' access control is %select{|@private|@protected|@public|@package}5}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{%select{no super class|super class with type {$arg5}}4|instance variable '{$arg4}' access control is %select{|@private|@protected|@public|@package}5}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2136" name="err_module_odr_violation_objc_method">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{method %4 with return type %5|%select{class|instance}5 method %4|%select{no|'required'|'optional'}4 method control|method %4 with %select{no designated initializer|designated initializer}5|%select{regular|direct}5 method %4|method %4}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{method {$arg4} with return type {$arg5}|%select{class|instance}5 method {$arg4}|%select{no|'required'|'optional'}4 method control|method {$arg4} with %select{no designated initializer|designated initializer}5|%select{regular|direct}5 method {$arg4}|method {$arg4}}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2137" name="err_module_odr_violation_objc_property">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{property %4|property %4 with type %5|%select{no|'required'|'optional'}4 property control|property %4 with %select{default |}6'%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}5' attribute}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{property {$arg4}|property {$arg4} with type {$arg5}|%select{no|'required'|'optional'}4 property control|property {$arg4} with %select{default |}6'%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}5' attribute}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2138" name="err_module_odr_violation_record">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{static assert with condition|static assert with message|static assert with %select{|no }4message|%select{method %5|constructor|destructor}4|%select{method %5|constructor|destructor}4 is %select{not deleted|deleted}6|%select{method %5|constructor|destructor}4 is %select{not defaulted|defaulted}6|%select{method %5|constructor|destructor}4 is %select{|pure }6%select{not virtual|virtual}7|%select{method %5|constructor|destructor}4 is %select{not static|static}6|%select{method %5|constructor|destructor}4 is %select{not volatile|volatile}6|%select{method %5|constructor|destructor}4 is %select{not const|const}6|%select{method %5|constructor|destructor}4 is %select{not inline|inline}6|%select{method %5|constructor|destructor}4 with %ordinal6 parameter with%select{out|}7 a default argument|%select{method %5|constructor|destructor}4 with %ordinal6 parameter with a default argument|%select{method %5|constructor|destructor}4 with %select{no |}6template arguments|%select{method %5|constructor|destructor}4 with %6 template argument%s6|%select{method %5|constructor|destructor}4 with %6 for %ordinal7 template argument|%select{method %5|constructor|destructor}4 with %select{no body|body}6|%select{method %5|constructor|destructor}4 with body|friend %select{class|function}4|friend %4|friend function %4|function template %4 with %5 template parameter%s5|function template %4 with %ordinal5 template parameter being a %select{type|non-type|template}6 template parameter|function template %4 with %ordinal5 template parameter %select{with no name|named %7}6|function template %4 with %ordinal5 template parameter with %select{no |}6default argument|function template %4 with %ordinal5 template parameter with default argument %6|function template %4 with %ordinal5 template parameter with one type|function template %4 with %ordinal5 template parameter %select{not |}6being a template parameter pack|}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{static assert with condition|static assert with message|static assert with %select{|no }4message|%select{method {$arg5}|constructor|destructor}4|%select{method {$arg5}|constructor|destructor}4 is %select{not deleted|deleted}6|%select{method {$arg5}|constructor|destructor}4 is %select{not defaulted|defaulted}6|%select{method {$arg5}|constructor|destructor}4 is %select{|pure }6%select{not virtual|virtual}7|%select{method {$arg5}|constructor|destructor}4 is %select{not static|static}6|%select{method {$arg5}|constructor|destructor}4 is %select{not volatile|volatile}6|%select{method {$arg5}|constructor|destructor}4 is %select{not const|const}6|%select{method {$arg5}|constructor|destructor}4 is %select{not inline|inline}6|%select{method {$arg5}|constructor|destructor}4 with %ordinal6 parameter with%select{out|}7 a default argument|%select{method {$arg5}|constructor|destructor}4 with %ordinal6 parameter with a default argument|%select{method {$arg5}|constructor|destructor}4 with %select{no |}6template arguments|%select{method {$arg5}|constructor|destructor}4 with {$arg6} template argument%s6|%select{method {$arg5}|constructor|destructor}4 with {$arg6} for %ordinal7 template argument|%select{method {$arg5}|constructor|destructor}4 with %select{no body|body}6|%select{method {$arg5}|constructor|destructor}4 with body|friend %select{class|function}4|friend {$arg4}|friend function {$arg4}|function template {$arg4} with {$arg5} template parameter%s5|function template {$arg4} with %ordinal5 template parameter being a %select{type|non-type|template}6 template parameter|function template {$arg4} with %ordinal5 template parameter %select{with no name|named {$arg7}}6|function template {$arg4} with %ordinal5 template parameter with %select{no |}6default argument|function template {$arg4} with %ordinal5 template parameter with default argument {$arg6}|function template {$arg4} with %ordinal5 template parameter with one type|function template {$arg4} with %ordinal5 template parameter %select{not |}6being a template parameter pack|}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2139" name="err_module_odr_violation_referenced_protocols">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%4 referenced %plural{1:protocol|:protocols}4|%ordinal4 referenced protocol with name %5}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{{$arg4} referenced %plural{1:protocol|:protocols}4|%ordinal4 referenced protocol with name {$arg5}}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2140" name="err_module_odr_violation_template_parameter">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{unnamed template parameter|template parameter %5|template parameter with %select{no |}4default argument|template parameter with default argument}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{unnamed template parameter|template parameter {$arg5}|template parameter with %select{no |}4default argument|template parameter with default argument}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2141" name="err_module_odr_violation_typedef">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{typedef|type alias}4 name %5|%select{typedef|type alias}4 %5 with underlying type %6}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{%select{typedef|type alias}4 name {$arg5}|%select{typedef|type alias}4 {$arg5} with underlying type {$arg6}}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2142" name="err_module_odr_violation_variable">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{data member with name %4|data member %4 with type %5|data member %4 with%select{out|}5 an initializer|data member %4 with an initializer|data member %4 %select{is constexpr|is not constexpr}5}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is %select{definition in module '{$arg2}'|defined here}1 found %select{data member with name {$arg4}|data member {$arg4} with type {$arg5}|data member {$arg4} with%select{out|}5 an initializer|data member {$arg4} with an initializer|data member {$arg4} %select{is constexpr|is not constexpr}5}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2143" name="err_odr_different_num_template_parameters">
@@ -176,31 +176,31 @@
       <unit id="2149" name="err_odr_objc_method_num_params_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has a different number of parameters in different translation units (%2 vs. %3)</source>
-          <target>%select{class|instance}0 method {$arg1} has a different number of parameters in different translation units ({$arg2} vs. {$arg3})</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2150" name="err_odr_objc_method_param_type_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has a parameter with a different types in different translation units (%2 vs. %3)</source>
-          <target>%select{class|instance}0 method {$arg1} has a parameter with a different types in different translation units ({$arg2} vs. {$arg3})</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2151" name="err_odr_objc_method_result_type_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has incompatible result types in different translation units (%2 vs. %3)</source>
-          <target>%select{class|instance}0 method {$arg1} has incompatible result types in different translation units ({$arg2} vs. {$arg3})</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2152" name="err_odr_objc_method_variadic_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 is variadic in one translation unit and not variadic in another</source>
-          <target>%select{class|instance}0 method {$arg1} is variadic in one translation unit and not variadic in another</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2153" name="err_odr_objc_property_impl_kind_inconsistent">
         <segment>
           <source>property %0 is implemented with %select{@synthesize|@dynamic}1 in one translation but %select{@dynamic|@synthesize}1 in another translation unit</source>
-          <target>property {$arg0} is implemented with %select{@synthesize|@dynamic}1 in one translation but %select{@dynamic|@synthesize}1 in another translation unit</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2154" name="err_odr_objc_property_type_inconsistent">
@@ -224,7 +224,7 @@
       <unit id="2157" name="err_odr_parameter_pack_non_pack">
         <segment>
           <source>parameter kind mismatch; parameter is %select{not a|a}0 parameter pack</source>
-          <target>parameter kind mismatch; parameter is %select{not a|a}0 parameter pack</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2158" name="err_odr_tag_type_inconsistent">
@@ -260,73 +260,73 @@
       <unit id="2163" name="note_consteval_address_accessible">
         <segment>
           <source>%select{pointer|reference}0 to a consteval declaration is not a constant expression</source>
-          <target>%select{pointer|reference}0 to a consteval declaration is not a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2164" name="note_constexpr_access_deleted_object">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 heap allocated object that has been deleted</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 heap allocated object that has been deleted</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2165" name="note_constexpr_access_inactive_union_member">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of subobject of|destruction of}0 member %1 of union with %select{active member %3|no active member}2 is not allowed in a constant expression</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of subobject of|destruction of}0 member {$arg1} of union with %select{active member {$arg3}|no active member}2 is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2166" name="note_constexpr_access_mutable">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 mutable member %1 is not allowed in a constant expression</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 mutable member {$arg1} is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2167" name="note_constexpr_access_null">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 dereferenced null pointer is not allowed in a constant expression</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 dereferenced null pointer is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2168" name="note_constexpr_access_past_end">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 dereferenced one-past-the-end pointer is not allowed in a constant expression</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 dereferenced one-past-the-end pointer is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2169" name="note_constexpr_access_static_temporary">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|reconstruction of|destruction of}0 temporary is not allowed in a constant expression outside the expression that created the temporary</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|reconstruction of|destruction of}0 temporary is not allowed in a constant expression outside the expression that created the temporary</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2170" name="note_constexpr_access_uninit">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of subobject of|destruction of}0 %select{object outside its lifetime|uninitialized object}1 is not allowed in a constant expression</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of subobject of|destruction of}0 %select{object outside its lifetime|uninitialized object}1 is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2171" name="note_constexpr_access_unreadable_object">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 object '%1' whose value is not known</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 object '{$arg1}' whose value is not known</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2172" name="note_constexpr_access_unsized_array">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 element of array without known bound is not allowed in a constant expression</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 element of array without known bound is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2173" name="note_constexpr_access_volatile_obj">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;}0 volatile %select{temporary|object %2|member %2}1 is not allowed in a constant expression</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;}0 volatile %select{temporary|object {$arg2}|member {$arg2}}1 is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2174" name="note_constexpr_access_volatile_type">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;}0 volatile-qualified type %1 is not allowed in a constant expression</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;}0 volatile-qualified type {$arg1} is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2175" name="note_constexpr_alignment_adjust">
@@ -350,7 +350,7 @@
       <unit id="2178" name="note_constexpr_array_index">
         <segment>
           <source>cannot refer to element %0 of %select{array of %2 element%plural{1:|:s}2|non-array object}1 in a constant expression</source>
-          <target>cannot refer to element {$arg0} of %select{array of {$arg2} element%plural{1:|:s}2|non-array object}1 in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2179" name="note_constexpr_assumption_failed">
@@ -362,7 +362,7 @@
       <unit id="2180" name="note_constexpr_baa_insufficient_alignment">
         <segment>
           <source>%select{alignment of|offset of the aligned pointer from}0 the base pointee object (%1 %plural{1:byte|:bytes}1) is %select{less than|not a multiple of}0 the asserted %2 %plural{1:byte|:bytes}2</source>
-          <target>%select{alignment of|offset of the aligned pointer from}0 the base pointee object ({$arg1} %plural{1:byte|:bytes}1) is %select{less than|not a multiple of}0 the asserted {$arg2} %plural{1:byte|:bytes}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2181" name="note_constexpr_baa_value_insufficient_alignment">
@@ -374,19 +374,19 @@
       <unit id="2182" name="note_constexpr_bit_cast_indet_dest">
         <segment>
           <source>indeterminate value can only initialize an object of type 'unsigned char'%select{, 'char',|}1 or 'std::byte'; %0 is invalid</source>
-          <target>indeterminate value can only initialize an object of type 'unsigned char'%select{, 'char',|}1 or 'std::byte'; {$arg0} is invalid</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2183" name="note_constexpr_bit_cast_invalid_subtype">
         <segment>
           <source>invalid type %0 is a %select{member|base}1 of %2</source>
-          <target>invalid type {$arg0} is a %select{member|base}1 of {$arg2}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2184" name="note_constexpr_bit_cast_invalid_type">
         <segment>
           <source>bit_cast %select{from|to}0 a %select{|type with a }1%select{union|pointer|member pointer|volatile|reference}2 %select{type|member}1 is not allowed in a constant expression</source>
-          <target>bit_cast %select{from|to}0 a %select{|type with a }1%select{union|pointer|member pointer|volatile|reference}2 %select{type|member}1 is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2185" name="note_constexpr_bit_cast_invalid_vector">
@@ -470,7 +470,7 @@
       <unit id="2198" name="note_constexpr_delete_subobject">
         <segment>
           <source>delete of pointer%select{ to subobject|}1 '%0' %select{|that does not point to complete object}1</source>
-          <target>delete of pointer%select{ to subobject|}1 '{$arg0}' %select{|that does not point to complete object}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2199" name="note_constexpr_depth_limit_exceeded">
@@ -506,7 +506,7 @@
       <unit id="2204" name="note_constexpr_dynamic_alloc">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1heap-allocated object is not a constant expression</source>
-          <target>%select{pointer|reference}0 to %select{|subobject of }1heap-allocated object is not a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2205" name="note_constexpr_dynamic_alloc_here">
@@ -518,7 +518,7 @@
       <unit id="2206" name="note_constexpr_dynamic_cast_to_reference_failed">
         <segment>
           <source>reference dynamic_cast failed: %select{static type %1 of operand is a non-public base class of dynamic type %2|dynamic type %2 of operand does not have a base class of type %3|%3 is an ambiguous base class of dynamic type %2 of operand|%3 is a non-public base class of dynamic type %2 of operand}0</source>
-          <target>reference dynamic_cast failed: %select{static type {$arg1} of operand is a non-public base class of dynamic type {$arg2}|dynamic type {$arg2} of operand does not have a base class of type {$arg3}|{$arg3} is an ambiguous base class of dynamic type {$arg2} of operand|{$arg3} is a non-public base class of dynamic type {$arg2} of operand}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2207" name="note_constexpr_dynamic_rounding">
@@ -530,7 +530,7 @@
       <unit id="2208" name="note_constexpr_float_arithmetic">
         <segment>
           <source>floating point arithmetic produces %select{an infinity|a NaN}0</source>
-          <target>floating point arithmetic produces %select{an infinity|a NaN}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2209" name="note_constexpr_float_arithmetic_strict">
@@ -566,7 +566,7 @@
       <unit id="2214" name="note_constexpr_invalid_cast">
         <segment>
           <source>%select{reinterpret_cast|dynamic_cast|%select{this conversion|cast that performs the conversions of a reinterpret_cast}1|cast from %1}0 is not allowed in a constant expression%select{| in C++ standards before C++20||}0</source>
-          <target>%select{reinterpret_cast|dynamic_cast|%select{this conversion|cast that performs the conversions of a reinterpret_cast}1|cast from {$arg1}}0 is not allowed in a constant expression%select{| in C++ standards before C++20||}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2215" name="note_constexpr_invalid_downcast">
@@ -578,7 +578,7 @@
       <unit id="2216" name="note_constexpr_invalid_function">
         <segment>
           <source>%select{non-constexpr|undefined}0 %select{function|constructor}1 %2 cannot be used in a constant expression</source>
-          <target>%select{non-constexpr|undefined}0 %select{function|constructor}1 {$arg2} cannot be used in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2217" name="note_constexpr_invalid_inhctor">
@@ -590,7 +590,7 @@
       <unit id="2218" name="note_constexpr_invalid_void_star_cast">
         <segment>
           <source>cast from %0 is not allowed in a constant expression %select{in C++ standards before C++2c|because the pointed object type %2 is not similar to the target type %3}1</source>
-          <target>cast from {$arg0} is not allowed in a constant expression %select{in C++ standards before C++2c|because the pointed object type {$arg2} is not similar to the target type {$arg3}}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2219" name="note_constexpr_large_shift">
@@ -602,7 +602,7 @@
       <unit id="2220" name="note_constexpr_lifetime_ended">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 %select{temporary|variable}1 whose %plural{8:storage duration|:lifetime}0 has ended</source>
-          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 %select{temporary|variable}1 whose %plural{8:storage duration|:lifetime}0 has ended</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2221" name="note_constexpr_literal_comparison">
@@ -668,37 +668,37 @@
       <unit id="2231" name="note_constexpr_memcpy_incomplete_type">
         <segment>
           <source>cannot constant evaluate '%select{memcpy|memmove}0' between objects of incomplete type %1</source>
-          <target>cannot constant evaluate '%select{memcpy|memmove}0' between objects of incomplete type {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2232" name="note_constexpr_memcpy_nontrivial">
         <segment>
           <source>cannot constant evaluate '%select{memcpy|memmove}0' between objects of non-trivially-copyable type %1</source>
-          <target>cannot constant evaluate '%select{memcpy|memmove}0' between objects of non-trivially-copyable type {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2233" name="note_constexpr_memcpy_null">
         <segment>
           <source>%select{source|destination}2 of '%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' is %3</source>
-          <target>%select{source|destination}2 of '%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' is {$arg3}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2234" name="note_constexpr_memcpy_overlap">
         <segment>
           <source>'%select{memcpy|wmemcpy}0' between overlapping memory regions</source>
-          <target>'%select{memcpy|wmemcpy}0' between overlapping memory regions</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2235" name="note_constexpr_memcpy_type_pun">
         <segment>
           <source>cannot constant evaluate '%select{memcpy|memmove}0' from object of type %1 to object of type %2</source>
-          <target>cannot constant evaluate '%select{memcpy|memmove}0' from object of type {$arg1} to object of type {$arg2}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2236" name="note_constexpr_memcpy_unsupported">
         <segment>
           <source>'%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' not supported: %select{size to copy (%4) is not a multiple of size of element type %3 (%5)|source is not a contiguous array of at least %4 elements of type %3|destination is not a contiguous array of at least %4 elements of type %3}2</source>
-          <target>'%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' not supported: %select{size to copy ({$arg4}) is not a multiple of size of element type {$arg3} ({$arg5})|source is not a contiguous array of at least {$arg4} elements of type {$arg3}|destination is not a contiguous array of at least {$arg4} elements of type {$arg3}}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2237" name="note_constexpr_memory_leak">
@@ -734,7 +734,7 @@
       <unit id="2242" name="note_constexpr_new_delete_mismatch">
         <segment>
           <source>%plural{2:'delete' used to delete pointer to object allocated with 'std::allocator&lt;...&gt;::allocate'|:%select{non-array delete|array delete|'std::allocator&lt;...&gt;::deallocate'}0 used to delete pointer to %select{array object of type %2|non-array object of type %2|object allocated with 'new'}0}1</source>
-          <target>%plural{2:'delete' used to delete pointer to object allocated with 'std::allocator&lt;...&gt;::allocate'|:%select{non-array delete|array delete|'std::allocator&lt;...&gt;::deallocate'}0 used to delete pointer to %select{array object of type {$arg2}|non-array object of type {$arg2}|object allocated with 'new'}0}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2243" name="note_constexpr_new_exceeds_limits">
@@ -752,13 +752,13 @@
       <unit id="2245" name="note_constexpr_new_non_replaceable">
         <segment>
           <source>call to %select{placement|class-specific}0 %1</source>
-          <target>call to %select{placement|class-specific}0 {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2246" name="note_constexpr_new_not_complete_object_type">
         <segment>
           <source>cannot allocate memory of %select{incomplete|function}0 type %1</source>
-          <target>cannot allocate memory of %select{incomplete|function}0 type {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2247" name="note_constexpr_new_placement">
@@ -800,7 +800,7 @@
       <unit id="2253" name="note_constexpr_non_global">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{temporary|%3}2 is not a constant expression</source>
-          <target>%select{pointer|reference}0 to %select{|subobject of }1%select{temporary|{$arg3}}2 is not a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2254" name="note_constexpr_nonliteral">
@@ -824,7 +824,7 @@
       <unit id="2257" name="note_constexpr_null_subobject">
         <segment>
           <source>cannot %select{access base class of|access derived class of|access field of|access array element of|perform pointer arithmetic on|access real component of|access imaginary component of}0 null pointer</source>
-          <target>cannot %select{access base class of|access derived class of|access field of|access array element of|perform pointer arithmetic on|access real component of|access imaginary component of}0 null pointer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2258" name="note_constexpr_operator_new_bad_size">
@@ -842,13 +842,13 @@
       <unit id="2260" name="note_constexpr_past_end">
         <segment>
           <source>dereferenced pointer past the end of %select{|subobject of }0%select{temporary|%2}1 is not a constant expression</source>
-          <target>dereferenced pointer past the end of %select{|subobject of }0%select{temporary|{$arg2}}1 is not a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2261" name="note_constexpr_past_end_subobject">
         <segment>
           <source>cannot %select{access base class of|access derived class of|access field of|access array element of|ERROR|access real component of|access imaginary component of}0 pointer past the end of object</source>
-          <target>cannot %select{access base class of|access derived class of|access field of|access array element of|ERROR|access real component of|access imaginary component of}0 pointer past the end of object</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2262" name="note_constexpr_placement_new_wrong_type">
@@ -920,7 +920,7 @@
       <unit id="2273" name="note_constexpr_polymorphic_unknown_dynamic_type">
         <segment>
           <source>%select{|||||virtual function called on|dynamic_cast applied to|typeid applied to|construction of|destruction of}0 object '%1' whose dynamic type is not constant</source>
-          <target>%select{|||||virtual function called on|dynamic_cast applied to|typeid applied to|construction of|destruction of}0 object '{$arg1}' whose dynamic type is not constant</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2274" name="note_constexpr_pseudo_destructor">
@@ -938,7 +938,7 @@
       <unit id="2276" name="note_constexpr_static_local">
         <segment>
           <source>control flows through the definition of a %select{static|thread_local}0 variable</source>
-          <target>control flows through the definition of a %select{static|thread_local}0 variable</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2277" name="note_constexpr_step_limit_exceeded">
@@ -968,7 +968,7 @@
       <unit id="2281" name="note_constexpr_this">
         <segment>
           <source>%select{|implicit }0use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function</source>
-          <target>%select{|implicit }0use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2282" name="note_constexpr_typeid_polymorphic">
@@ -980,7 +980,7 @@
       <unit id="2283" name="note_constexpr_uninitialized">
         <segment>
           <source>subobject %select{of type |}0%1 is not initialized</source>
-          <target>subobject %select{of type |}0{$arg1} is not initialized</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2284" name="note_constexpr_uninitialized_base">
@@ -1076,7 +1076,7 @@
       <unit id="2299" name="note_constexpr_volatile_here">
         <segment>
           <source>volatile %select{temporary created|object declared|member declared}0 here</source>
-          <target>volatile %select{temporary created|object declared|member declared}0 here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2300" name="note_covariant_thunk">
@@ -1100,7 +1100,7 @@
       <unit id="2303" name="note_module_odr_violation_definition_data">
         <segment>
           <source>but in '%0' found %select{%2 base %plural{1:class|:classes}2|%2 virtual base %plural{1:class|:classes}2|%ordinal2 base class with different type %3|%ordinal2 %select{non-virtual|virtual}3 base class %4|%ordinal2 base class %3 with %select{public|protected|private|no}4 access specifier}1</source>
-          <target>but in '{$arg0}' found %select{{$arg2} base %plural{1:class|:classes}2|{$arg2} virtual base %plural{1:class|:classes}2|%ordinal2 base class with different type {$arg3}|%ordinal2 %select{non-virtual|virtual}3 base class {$arg4}|%ordinal2 base class {$arg3} with %select{public|protected|private|no}4 access specifier}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2304" name="note_module_odr_violation_different_definitions">
@@ -1112,85 +1112,85 @@
       <unit id="2305" name="note_module_odr_violation_enum">
         <segment>
           <source>but in '%0' found %select{enum that is %select{not scoped|scoped}2|enum scoped with keyword %select{struct|class}2|enum %select{without|with}2 specified type|enum with specified type %2|enum with %2 element%s2|%ordinal2 element has name %3|%ordinal2 element %3 %select{has|does not have}4 an initializer|%ordinal2 element %3 has different initializer|}1</source>
-          <target>but in '{$arg0}' found %select{enum that is %select{not scoped|scoped}2|enum scoped with keyword %select{struct|class}2|enum %select{without|with}2 specified type|enum with specified type {$arg2}|enum with {$arg2} element%s2|%ordinal2 element has name {$arg3}|%ordinal2 element {$arg3} %select{has|does not have}4 an initializer|%ordinal2 element {$arg3} has different initializer|}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2306" name="note_module_odr_violation_field">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{field %3|field %3 with type %4|%select{non-|}4bitfield %3|bitfield %3 with different width expression|%select{non-|}4mutable field %3|field %3 with %select{no|an}4 initializer|field %3 with a different initializer}2</source>
-          <target>but in %select{'{$arg1}'|definition here}0 found %select{field {$arg3}|field {$arg3} with type {$arg4}|%select{non-|}4bitfield {$arg3}|bitfield {$arg3} with different width expression|%select{non-|}4mutable field {$arg3}|field {$arg3} with %select{no|an}4 initializer|field {$arg3} with a different initializer}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2307" name="note_module_odr_violation_function">
         <segment>
           <source>but in '%0' found %select{different return type %2|%ordinal2 parameter with name %3|%ordinal2 parameter with type %3%select{| decayed from %5}4|%ordinal2 parameter with%select{out|}3 a default argument|%ordinal2 parameter with a different default argument|a different body}1</source>
-          <target>but in '{$arg0}' found %select{different return type {$arg2}|%ordinal2 parameter with name {$arg3}|%ordinal2 parameter with type {$arg3}%select{| decayed from {$arg5}}4|%ordinal2 parameter with%select{out|}3 a default argument|%ordinal2 parameter with a different default argument|a different body}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2308" name="note_module_odr_violation_method_params">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{%select{method %4|constructor|destructor}3 that has %5 parameter%s5|%select{method %4|constructor|destructor}3 with %ordinal5 parameter of type %6%select{| decayed from %8}7|%select{method %4|constructor|destructor}3 with %ordinal5 parameter named %6}2</source>
-          <target>but in %select{'{$arg1}'|definition here}0 found %select{%select{method {$arg4}|constructor|destructor}3 that has {$arg5} parameter%s5|%select{method {$arg4}|constructor|destructor}3 with %ordinal5 parameter of type {$arg6}%select{| decayed from {$arg8}}7|%select{method {$arg4}|constructor|destructor}3 with %ordinal5 parameter named {$arg6}}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2309" name="note_module_odr_violation_mismatch_decl">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}2</source>
-          <target>but in %select{'{$arg1}'|definition here}0 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2310" name="note_module_odr_violation_mismatch_decl_unknown">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{||||different static assert|different field|different method|different type alias|different typedef|different data member|different friend declaration|different function template|different method|different instance variable|different property|another unexpected decl}2</source>
-          <target>but in %select{'{$arg1}'|definition here}0 found %select{||||different static assert|different field|different method|different type alias|different typedef|different data member|different friend declaration|different function template|different method|different instance variable|different property|another unexpected decl}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2311" name="note_module_odr_violation_objc_interface">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{%select{no super class|super class with type %4}3|instance variable '%3' access control is %select{|@private|@protected|@public|@package}4}2</source>
-          <target>but in %select{'{$arg1}'|definition here}0 found %select{%select{no super class|super class with type {$arg4}}3|instance variable '{$arg3}' access control is %select{|@private|@protected|@public|@package}4}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2312" name="note_module_odr_violation_objc_method">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{method %3 with different return type %4|method %3 as %select{class|instance}4 method|%select{no|'required'|'optional'}3 method control|method %3 with %select{no designated initializer|designated initializer}4|%select{regular|direct}4 method %3|different method %3}2</source>
-          <target>but in %select{'{$arg1}'|definition here}0 found %select{method {$arg3} with different return type {$arg4}|method {$arg3} as %select{class|instance}4 method|%select{no|'required'|'optional'}3 method control|method {$arg3} with %select{no designated initializer|designated initializer}4|%select{regular|direct}4 method {$arg3}|different method {$arg3}}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2313" name="note_module_odr_violation_objc_property">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{property %3|property %3 with type %4|%select{no|'required'|'optional'}3 property control|property %3 with different '%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}4' attribute}2</source>
-          <target>but in %select{'{$arg1}'|definition here}0 found %select{property {$arg3}|property {$arg3} with type {$arg4}|%select{no|'required'|'optional'}3 property control|property {$arg3} with different '%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}4' attribute}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2314" name="note_module_odr_violation_record">
         <segment>
           <source>but in '%0' found %select{static assert with different condition|static assert with different message|static assert with %select{|no }2message|%select{method %3|constructor|destructor}2|%select{method %3|constructor|destructor}2 is %select{not deleted|deleted}4|%select{method %3|constructor|destructor}2 is %select{not defaulted|defaulted}4|%select{method %3|constructor|destructor}2 is %select{|pure }4%select{not virtual|virtual}5|%select{method %3|constructor|destructor}2 is %select{not static|static}4|%select{method %3|constructor|destructor}2 is %select{not volatile|volatile}4|%select{method %3|constructor|destructor}2 is %select{not const|const}4|%select{method %3|constructor|destructor}2 is %select{not inline|inline}4|%select{method %3|constructor|destructor}2 with %ordinal4 parameter with%select{out|}5 a default argument|%select{method %3|constructor|destructor}2 with %ordinal4 parameter with a different default argument|%select{method %3|constructor|destructor}2 with %select{no |}4template arguments|%select{method %3|constructor|destructor}2 with %4 template argument%s4|%select{method %3|constructor|destructor}2 with %4 for %ordinal5 template argument|%select{method %3|constructor|destructor}2 with %select{no body|body}4|%select{method %3|constructor|destructor}2 with different body|friend %select{class|function}2|friend %2|friend function %2|function template %2 with %3 template parameter%s3|function template %2 with %ordinal3 template paramter being a %select{type|non-type|template}4 template parameter|function template %2 with %ordinal3 template parameter %select{with no name|named %5}4|function template %2 with %ordinal3 template parameter with %select{no |}4default argument|function template %2 with %ordinal3 template parameter with default argument %4|function template %2 with %ordinal3 template parameter with different type|function template %2 with %ordinal3 template parameter %select{not |}4being a template parameter pack|}1</source>
-          <target>but in '{$arg0}' found %select{static assert with different condition|static assert with different message|static assert with %select{|no }2message|%select{method {$arg3}|constructor|destructor}2|%select{method {$arg3}|constructor|destructor}2 is %select{not deleted|deleted}4|%select{method {$arg3}|constructor|destructor}2 is %select{not defaulted|defaulted}4|%select{method {$arg3}|constructor|destructor}2 is %select{|pure }4%select{not virtual|virtual}5|%select{method {$arg3}|constructor|destructor}2 is %select{not static|static}4|%select{method {$arg3}|constructor|destructor}2 is %select{not volatile|volatile}4|%select{method {$arg3}|constructor|destructor}2 is %select{not const|const}4|%select{method {$arg3}|constructor|destructor}2 is %select{not inline|inline}4|%select{method {$arg3}|constructor|destructor}2 with %ordinal4 parameter with%select{out|}5 a default argument|%select{method {$arg3}|constructor|destructor}2 with %ordinal4 parameter with a different default argument|%select{method {$arg3}|constructor|destructor}2 with %select{no |}4template arguments|%select{method {$arg3}|constructor|destructor}2 with {$arg4} template argument%s4|%select{method {$arg3}|constructor|destructor}2 with {$arg4} for %ordinal5 template argument|%select{method {$arg3}|constructor|destructor}2 with %select{no body|body}4|%select{method {$arg3}|constructor|destructor}2 with different body|friend %select{class|function}2|friend {$arg2}|friend function {$arg2}|function template {$arg2} with {$arg3} template parameter%s3|function template {$arg2} with %ordinal3 template paramter being a %select{type|non-type|template}4 template parameter|function template {$arg2} with %ordinal3 template parameter %select{with no name|named {$arg5}}4|function template {$arg2} with %ordinal3 template parameter with %select{no |}4default argument|function template {$arg2} with %ordinal3 template parameter with default argument {$arg4}|function template {$arg2} with %ordinal3 template parameter with different type|function template {$arg2} with %ordinal3 template parameter %select{not |}4being a template parameter pack|}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2315" name="note_module_odr_violation_referenced_protocols">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{%3 referenced %plural{1:protocol|:protocols}3|%ordinal3 referenced protocol with different name %4}2</source>
-          <target>but in %select{'{$arg1}'|definition here}0 found %select{{$arg3} referenced %plural{1:protocol|:protocols}3|%ordinal3 referenced protocol with different name {$arg4}}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2316" name="note_module_odr_violation_template_parameter">
         <segment>
           <source>but in '%0' found %select{unnamed template parameter %2|template parameter %3|template parameter with %select{no |}2default argument|template parameter with different default argument}1</source>
-          <target>but in '{$arg0}' found %select{unnamed template parameter {$arg2}|template parameter {$arg3}|template parameter with %select{no |}2default argument|template parameter with different default argument}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2317" name="note_module_odr_violation_typedef">
         <segment>
           <source>but in '%0' found %select{%select{typedef|type alias}2 name %3|%select{typedef|type alias}2 %3 with different underlying type %4}1</source>
-          <target>but in '{$arg0}' found %select{%select{typedef|type alias}2 name {$arg3}|%select{typedef|type alias}2 {$arg3} with different underlying type {$arg4}}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2318" name="note_module_odr_violation_variable">
         <segment>
           <source>but in '%0' found %select{data member with name %2|data member %2 with different type %3|data member %2 with%select{out|}3 an initializer|data member %2 with a different initializer|data member %2 %select{is constexpr|is not constexpr}3}1</source>
-          <target>but in '{$arg0}' found %select{data member with name {$arg2}|data member {$arg2} with different type {$arg3}|data member {$arg2} with%select{out|}3 an initializer|data member {$arg2} with a different initializer|data member {$arg2} %select{is constexpr|is not constexpr}3}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2319" name="note_non_null_attribute_failed">
@@ -1262,7 +1262,7 @@
       <unit id="2330" name="note_odr_objc_method_here">
         <segment>
           <source>%select{class|instance}0 method %1 also declared here</source>
-          <target>%select{class|instance}0 method {$arg1} also declared here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2331" name="note_odr_objc_missing_superclass">
@@ -1274,7 +1274,7 @@
       <unit id="2332" name="note_odr_objc_property_impl_kind">
         <segment>
           <source>property %0 is implemented with %select{@synthesize|@dynamic}1 here</source>
-          <target>property {$arg0} is implemented with %select{@synthesize|@dynamic}1 here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2333" name="note_odr_objc_superclass">
@@ -1292,13 +1292,13 @@
       <unit id="2335" name="note_odr_parameter_pack_non_pack">
         <segment>
           <source>%select{parameter|parameter pack}0 declared here</source>
-          <target>%select{parameter|parameter pack}0 declared here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2336" name="note_odr_tag_kind_here">
         <segment>
           <source>%0 is a %select{struct|interface|union|class|enum}1 here</source>
-          <target>{$arg0} is a %select{struct|interface|union|class|enum}1 here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2337" name="note_odr_template_parameter_here">
@@ -1322,7 +1322,7 @@
       <unit id="2340" name="note_odr_virtual_base">
         <segment>
           <source>%select{non-virtual|virtual}0 derivation here</source>
-          <target>%select{non-virtual|virtual}0 derivation here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2341" name="note_second_module_difference">
@@ -1346,7 +1346,7 @@
       <unit id="2344" name="remark_sanitize_address_insert_extra_padding_rejected">
         <segment>
           <source>-fsanitize-address-field-padding ignored for %0 because it %select{is not C++|is packed|is a union|is trivially copyable|has trivial destructor|is standard layout|is in a ignorelisted file|is ignorelisted}1</source>
-          <target>-fsanitize-address-field-padding ignored for {$arg0} because it %select{is not C++|is packed|is a union|is trivially copyable|has trivial destructor|is standard layout|is in a ignorelisted file|is ignorelisted}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2345" name="warn_constexpr_unscoped_enum_out_of_range">
@@ -1418,31 +1418,31 @@
       <unit id="2356" name="warn_odr_objc_method_num_params_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has a different number of parameters in different translation units (%2 vs. %3)</source>
-          <target>%select{class|instance}0 method {$arg1} has a different number of parameters in different translation units ({$arg2} vs. {$arg3})</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2357" name="warn_odr_objc_method_param_type_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has a parameter with a different types in different translation units (%2 vs. %3)</source>
-          <target>%select{class|instance}0 method {$arg1} has a parameter with a different types in different translation units ({$arg2} vs. {$arg3})</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2358" name="warn_odr_objc_method_result_type_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has incompatible result types in different translation units (%2 vs. %3)</source>
-          <target>%select{class|instance}0 method {$arg1} has incompatible result types in different translation units ({$arg2} vs. {$arg3})</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2359" name="warn_odr_objc_method_variadic_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 is variadic in one translation unit and not variadic in another</source>
-          <target>%select{class|instance}0 method {$arg1} is variadic in one translation unit and not variadic in another</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2360" name="warn_odr_objc_property_impl_kind_inconsistent">
         <segment>
           <source>property %0 is implemented with %select{@synthesize|@dynamic}1 in one translation but %select{@dynamic|@synthesize}1 in another translation unit</source>
-          <target>property {$arg0} is implemented with %select{@synthesize|@dynamic}1 in one translation but %select{@dynamic|@synthesize}1 in another translation unit</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2361" name="warn_odr_objc_property_type_inconsistent">
@@ -1466,7 +1466,7 @@
       <unit id="2364" name="warn_odr_parameter_pack_non_pack">
         <segment>
           <source>parameter kind mismatch; parameter is %select{not a|a}0 parameter pack</source>
-          <target>parameter kind mismatch; parameter is %select{not a|a}0 parameter pack</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2365" name="warn_odr_tag_type_inconsistent">
@@ -1490,31 +1490,31 @@
       <unit id="2368" name="warn_padded_struct_anon_bitfield">
         <segment>
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align anonymous bit-field</source>
-          <target>padding %select{struct|interface|class}0 {$arg1} with {$arg2} %select{byte|bit}3%s2 to align anonymous bit-field</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2369" name="warn_padded_struct_anon_field">
         <segment>
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align anonymous field</source>
-          <target>padding %select{struct|interface|class}0 {$arg1} with {$arg2} %select{byte|bit}3%s2 to align anonymous field</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2370" name="warn_padded_struct_bitfield">
         <segment>
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align %4</source>
-          <target>padding %select{struct|interface|class}0 {$arg1} with {$arg2} %select{byte|bit}3%s2 to align {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2371" name="warn_padded_struct_field">
         <segment>
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align %4</source>
-          <target>padding %select{struct|interface|class}0 {$arg1} with {$arg2} %select{byte|bit}3%s2 to align {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2372" name="warn_padded_struct_size">
         <segment>
           <source>padding size of %0 with %1 %select{byte|bit}2%s1 to alignment boundary</source>
-          <target>padding size of {$arg0} with {$arg1} %select{byte|bit}2%s1 to alignment boundary</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2373" name="warn_unaligned_access">

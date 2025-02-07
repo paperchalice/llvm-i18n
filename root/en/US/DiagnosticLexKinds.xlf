@@ -38,7 +38,7 @@
       <unit id="1026" name="err_character_not_allowed_identifier">
         <segment>
           <source>character &lt;U+%0&gt; not allowed %select{in|at the start of}1 an identifier</source>
-          <target>character &lt;U+{$arg0}&gt; not allowed %select{in|at the start of}1 an identifier</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1027" name="err_character_too_large">
@@ -98,7 +98,7 @@
       <unit id="1036" name="err_digit_separator_not_between_digits">
         <segment>
           <source>digit separator cannot appear at %select{start|end}0 of digit sequence</source>
-          <target>digit separator cannot appear at %select{start|end}0 of digit sequence</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1037" name="err_embedded_directive">
@@ -110,7 +110,7 @@
       <unit id="1038" name="err_escape_too_large">
         <segment>
           <source>%select{hex|octal}0 escape sequence out of range</source>
-          <target>%select{hex|octal}0 escape sequence out of range</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1039" name="err_expected_id_building_module">
@@ -146,7 +146,7 @@
       <unit id="1044" name="err_hex_constant_requires">
         <segment>
           <source>hexadecimal floating %select{constant|literal}0 requires %select{an exponent|a significand}1</source>
-          <target>hexadecimal floating %select{constant|literal}0 requires %select{an exponent|a significand}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1045" name="err_hex_escape_no_digits">
@@ -176,7 +176,7 @@
       <unit id="1049" name="err_invalid_digit">
         <segment>
           <source>invalid digit '%0' in %select{decimal|octal|binary}1 constant</source>
-          <target>invalid digit '{$arg0}' in %select{decimal|octal|binary}1 constant</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1050" name="err_invalid_newline_raw_delim">
@@ -188,7 +188,7 @@
       <unit id="1051" name="err_invalid_suffix_constant">
         <segment>
           <source>invalid suffix '%0' on %select{integer|floating|fixed-point}1 constant</source>
-          <target>invalid suffix '{$arg0}' on %select{integer|floating|fixed-point}1 constant</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1052" name="err_invalid_ucn_name">
@@ -290,7 +290,7 @@
       <unit id="1068" name="err_mmap_expected_inferred_member">
         <segment>
           <source>expected %select{module exclusion with 'exclude'|'export *'}0</source>
-          <target>expected %select{module exclusion with 'exclude'|'export *'}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1069" name="err_mmap_expected_lbrace">
@@ -308,7 +308,7 @@
       <unit id="1071" name="err_mmap_expected_library_name">
         <segment>
           <source>expected %select{library|framework}0 name as a string</source>
-          <target>expected %select{library|framework}0 name as a string</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1072" name="err_mmap_expected_member">
@@ -404,7 +404,7 @@
       <unit id="1087" name="err_mmap_missing_parent_module">
         <segment>
           <source>no module named '%0' %select{found|in '%2'}1, parent module must be defined before the submodule</source>
-          <target>no module named '{$arg0}' %select{found|in '{$arg2}'}1, parent module must be defined before the submodule</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1088" name="err_mmap_module_id">
@@ -458,7 +458,7 @@
       <unit id="1096" name="err_multichar_character_literal">
         <segment>
           <source>%select{wide|Unicode}0 character literals may not contain multiple characters</source>
-          <target>%select{wide|Unicode}0 character literals may not contain multiple characters</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1097" name="err_pascal_string_too_long">
@@ -608,7 +608,7 @@
       <unit id="1121" name="err_pp_expected_module_name">
         <segment>
           <source>expected %select{identifier after '.' in |}0module name</source>
-          <target>expected %select{identifier after '.' in |}0module name</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1122" name="err_pp_expected_rparen">
@@ -656,7 +656,7 @@
       <unit id="1129" name="err_pp_file_not_found_angled_include_not_fatal">
         <segment>
           <source>'%0' file not found with &lt;angled&gt; %select{include|import}1; use "quotes" instead</source>
-          <target>'{$arg0}' file not found with &lt;angled&gt; %select{include|import}1; use "quotes" instead</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1130" name="err_pp_file_not_found_typo_not_fatal">
@@ -692,13 +692,13 @@
       <unit id="1135" name="err_pp_include_in_arc_cf_code_audited">
         <segment>
           <source>cannot %select{#include files|import headers}0 inside '#pragma clang arc_cf_code_audited'</source>
-          <target>cannot %select{#include files|import headers}0 inside '#pragma clang arc_cf_code_audited'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1136" name="err_pp_include_in_assume_nonnull">
         <segment>
           <source>cannot %select{#include files|import headers}0 inside '#pragma clang assume_nonnull'</source>
-          <target>cannot %select{#include files|import headers}0 inside '#pragma clang assume_nonnull'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1137" name="err_pp_include_too_deep">
@@ -716,7 +716,7 @@
       <unit id="1139" name="err_pp_invalid_directive">
         <segment>
           <source>invalid preprocessing directive%select{|, did you mean '#%1'?}0</source>
-          <target>invalid preprocessing directive%select{|, did you mean '#{$arg1}'?}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1140" name="err_pp_invalid_poison">
@@ -734,13 +734,13 @@
       <unit id="1142" name="err_pp_invalid_udl">
         <segment>
           <source>%select{character|integer}0 literal with user-defined suffix cannot be used in preprocessor constant expression</source>
-          <target>%select{character|integer}0 literal with user-defined suffix cannot be used in preprocessor constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1143" name="err_pp_line_digit_sequence">
         <segment>
           <source>%select{#line|GNU line marker}0 directive requires a simple digit sequence</source>
-          <target>%select{#line|GNU line marker}0 directive requires a simple digit sequence</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1144" name="err_pp_line_invalid_filename">
@@ -830,7 +830,7 @@
       <unit id="1158" name="err_pp_module_begin_wrong_module">
         <segment>
           <source>must specify '-fmodule-name=%0' to enter %select{|submodule of }1this module%select{ (current module is %3)|}2</source>
-          <target>must specify '-fmodule-name={$arg0}' to enter %select{|submodule of }1this module%select{ (current module is {$arg3})|}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1159" name="err_pp_module_build_missing_end">
@@ -878,7 +878,7 @@
       <unit id="1166" name="err_pp_stringize_not_parameter">
         <segment>
           <source>'%select{#|#@}0' is not followed by a macro parameter</source>
-          <target>'%select{#|#@}0' is not followed by a macro parameter</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1167" name="err_pp_through_header_not_found">
@@ -890,7 +890,7 @@
       <unit id="1168" name="err_pp_through_header_not_seen">
         <segment>
           <source>#include of '%0' not seen while attempting to %select{create|use}1 precompiled header</source>
-          <target>#include of '{$arg0}' not seen while attempting to %select{create|use}1 precompiled header</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1169" name="err_pp_unclosed_pragma_unsafe_buffer_usage">
@@ -902,7 +902,7 @@
       <unit id="1170" name="err_pp_unknown_parameter">
         <segment>
           <source>unknown%select{ | embed}0 preprocessor parameter '%1'</source>
-          <target>unknown%select{ | embed}0 preprocessor parameter '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1171" name="err_pp_unmatched_end_begin_pragma_unsafe_buffer_usage">
@@ -956,7 +956,7 @@
       <unit id="1179" name="err_pragma_message_malformed">
         <segment>
           <source>pragma %select{message|warning|error}0 requires parenthesized string</source>
-          <target>pragma %select{message|warning|error}0 requires parenthesized string</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1180" name="err_pragma_push_pop_macro_malformed">
@@ -1106,7 +1106,7 @@
       <unit id="1204" name="ext_c23_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is a C23 extension</source>
-          <target>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is a C23 extension</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1205" name="ext_c99_whitespace_required_after_macro_name">
@@ -1142,7 +1142,7 @@
       <unit id="1210" name="ext_cxx23_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is a C++23 extension</source>
-          <target>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is a C++23 extension</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1211" name="ext_cxx26_raw_string_literal_character_set">
@@ -1160,7 +1160,7 @@
       <unit id="1213" name="ext_delimited_escape_sequence">
         <segment>
           <source>%select{delimited|named}0 escape sequences are a %select{Clang|C++23}1 extension</source>
-          <target>%select{delimited|named}0 escape sequences are a %select{Clang|C++23}1 extension</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1214" name="ext_dollar_in_identifier">
@@ -1286,7 +1286,7 @@
       <unit id="1234" name="ext_pp_embed_directive">
         <segment>
           <source>#embed is a %select{C23|Clang}0 extension</source>
-          <target>#embed is a %select{C23|Clang}0 extension</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1235" name="ext_pp_extra_tokens_at_eol">
@@ -1370,7 +1370,7 @@
       <unit id="1248" name="ext_pp_warning_directive">
         <segment>
           <source>#warning is a %select{C23|C++23}0 extension</source>
-          <target>#warning is a %select{C23|C++23}0 extension</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1249" name="ext_pragma_syntax_eod">
@@ -1388,7 +1388,7 @@
       <unit id="1251" name="ext_string_too_long">
         <segment>
           <source>string literal of length %0 exceeds maximum length %1 that %select{C90|ISO C99|C++}2 compilers are required to support</source>
-          <target>string literal of length {$arg0} exceeds maximum length {$arg1} that %select{C90|ISO C99|C++}2 compilers are required to support</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1252" name="ext_token_used">
@@ -1412,7 +1412,7 @@
       <unit id="1255" name="ext_unterminated_char_or_string">
         <segment>
           <source>missing terminating %select{'|'"'}0 character</source>
-          <target>missing terminating %select{'|'"'}0 character</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1256" name="ext_variadic_macro">
@@ -1514,7 +1514,7 @@
       <unit id="1272" name="note_pp_macro_annotation">
         <segment>
           <source>macro marked '%select{deprecated|restrict_expansion|final}0' here</source>
-          <target>macro marked '%select{deprecated|restrict_expansion|final}0' here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1273" name="note_pp_module_begin_here">
@@ -1538,7 +1538,7 @@
       <unit id="1276" name="null_in_char_or_string">
         <segment>
           <source>null character(s) preserved in %select{char|string}0 literal</source>
-          <target>null character(s) preserved in %select{char|string}0 literal</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1277" name="null_in_file">
@@ -1556,13 +1556,13 @@
       <unit id="1279" name="pp_err_elif_after_else">
         <segment>
           <source>%select{#elif|#elifdef|#elifndef}0 after #else</source>
-          <target>%select{#elif|#elifdef|#elifndef}0 after #else</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1280" name="pp_err_elif_without_if">
         <segment>
           <source>%select{#elif|#elifdef|#elifndef}0 without #if</source>
-          <target>%select{#elif|#elifdef|#elifndef}0 without #if</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1281" name="pp_err_else_after_else">
@@ -1652,7 +1652,7 @@
       <unit id="1295" name="remark_pp_include_directive_modular_translation">
         <segment>
           <source>treating #%select{include|import|include_next|__include_macros}0 as an import of module '%1'</source>
-          <target>treating #%select{include|import|include_next|__include_macros}0 as an import of module '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1296" name="remark_pp_search_path_usage">
@@ -1730,7 +1730,7 @@
       <unit id="1308" name="warn_c23_compat_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is incompatible with C standards before C23</source>
-          <target>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is incompatible with C standards before C23</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1309" name="warn_c23_compat_warning_directive">
@@ -1748,7 +1748,7 @@
       <unit id="1311" name="warn_c99_compat_unicode_id">
         <segment>
           <source>%select{using this character in an identifier|starting an identifier with this character}0 is incompatible with C99</source>
-          <target>%select{using this character in an identifier|starting an identifier with this character}0 is incompatible with C99</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1312" name="warn_c99_compat_unicode_literal">
@@ -1844,7 +1844,7 @@
       <unit id="1327" name="warn_cxx23_compat_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is incompatible with C++ standards before C++23</source>
-          <target>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is incompatible with C++ standards before C++23</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1328" name="warn_cxx23_compat_warning_directive">
@@ -1856,7 +1856,7 @@
       <unit id="1329" name="warn_cxx23_delimited_escape_sequence">
         <segment>
           <source>%select{delimited|named}0 escape sequences are incompatible with C++ standards before C++23</source>
-          <target>%select{delimited|named}0 escape sequences are incompatible with C++ standards before C++23</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1330" name="warn_cxx26_compat_raw_string_literal_character_set">
@@ -1946,7 +1946,7 @@
       <unit id="1344" name="warn_deprecated_module_dot_map">
         <segment>
           <source>'%0' as a module map name is deprecated, rename it to %select{module.modulemap|module.private.modulemap}1%select{| in the 'Modules' directory of the framework}2</source>
-          <target>'{$arg0}' as a module map name is deprecated, rename it to %select{module.modulemap|module.private.modulemap}1%select{| in the 'Modules' directory of the framework}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1345" name="warn_four_char_character_literal">
@@ -2066,7 +2066,7 @@
       <unit id="1364" name="warn_pp_convert_to_positive">
         <segment>
           <source>%select{left|right}0 side of operator converted from negative value to unsigned: %1</source>
-          <target>%select{left|right}0 side of operator converted from negative value to unsigned: {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1365" name="warn_pp_date_time">
@@ -2096,13 +2096,13 @@
       <unit id="1369" name="warn_pp_invalid_directive">
         <segment>
           <source>invalid preprocessing directive%select{|, did you mean '#%1'?}0</source>
-          <target>invalid preprocessing directive%select{|, did you mean '#{$arg1}'?}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1370" name="warn_pp_line_decimal">
         <segment>
           <source>%select{#line|GNU line marker}0 directive interprets number as decimal, not octal</source>
-          <target>%select{#line|GNU line marker}0 directive interprets number as decimal, not octal</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1371" name="warn_pp_macro_def_mismatch_with_pch">
@@ -2162,7 +2162,7 @@
       <unit id="1380" name="warn_pragma_deprecated_macro_use">
         <segment>
           <source>macro %0 has been marked as deprecated%select{|: %2}1</source>
-          <target>macro {$arg0} has been marked as deprecated%select{|: {$arg2}}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1381" name="warn_pragma_diagnostic_cannot_pop">
@@ -2216,7 +2216,7 @@
       <unit id="1389" name="warn_pragma_final_macro">
         <segment>
           <source>macro %0 has been marked as final and should not be %select{undefined|redefined}1</source>
-          <target>macro {$arg0} has been marked as final and should not be %select{undefined|redefined}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1390" name="warn_pragma_ignored">
@@ -2264,7 +2264,7 @@
       <unit id="1397" name="warn_pragma_restrict_expansion_macro_use">
         <segment>
           <source>macro %0 has been marked as unsafe for use in headers%select{|: %2}1</source>
-          <target>macro {$arg0} has been marked as unsafe for use in headers%select{|: {$arg2}}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1398" name="warn_pragma_warning_expected">
@@ -2336,7 +2336,7 @@
       <unit id="1409" name="warn_unevaluated_string_prefix">
         <segment>
           <source>encoding prefix '%0' on an unevaluated string literal has no effect%select{| and is incompatible with c++2c}1</source>
-          <target>encoding prefix '{$arg0}' on an unevaluated string literal has no effect%select{| and is incompatible with c++2c}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1410" name="warn_use_of_private_header_outside_module">

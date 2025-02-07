@@ -98,7 +98,7 @@
       <unit id="316" name="err_cmse_pi_are_incompatible">
         <segment>
           <source>cmse is not compatible with %select{RWPI|ROPI}0</source>
-          <target>cmse is not compatible with %select{RWPI|ROPI}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="317" name="err_cpu_unsupported_isa">
@@ -218,7 +218,7 @@
       <unit id="336" name="err_drv_clang_unsupported_opt_pg_darwin">
         <segment>
           <source>the clang compiler does not support -pg option on %select{Darwin|versions of OS X 10.9 and later}0</source>
-          <target>the clang compiler does not support -pg option on %select{Darwin|versions of OS X 10.9 and later}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="337" name="err_drv_command_failed">
@@ -350,7 +350,7 @@
       <unit id="358" name="err_drv_force_crash">
         <segment>
           <source>failing because %select{environment variable 'FORCE_CLANG_DIAGNOSTICS_CRASH' is set|'-gen-reproducer' is used}0</source>
-          <target>failing because %select{environment variable 'FORCE_CLANG_DIAGNOSTICS_CRASH' is set|'-gen-reproducer' is used}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="359" name="err_drv_gnustep_objc_runtime_incompatible_binary">
@@ -374,19 +374,19 @@
       <unit id="362" name="err_drv_hlsl_16bit_types_unsupported">
         <segment>
           <source>'%0' option requires target HLSL Version &gt;= 2018%select{| and shader model &gt;= 6.2}1, but HLSL Version is '%2'%select{| and shader model is '%3'}1</source>
-          <target>'{$arg0}' option requires target HLSL Version &gt;= 2018%select{| and shader model &gt;= 6.2}1, but HLSL Version is '{$arg2}'%select{| and shader model is '{$arg3}'}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="363" name="err_drv_hlsl_bad_shader_required_in_target">
         <segment>
           <source>%select{shader model|Vulkan environment|shader stage}0 is required as %select{OS|environment}1 in target '%2' for HLSL code generation</source>
-          <target>%select{shader model|Vulkan environment|shader stage}0 is required as %select{OS|environment}1 in target '{$arg2}' for HLSL code generation</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="364" name="err_drv_hlsl_bad_shader_unsupported">
         <segment>
           <source>%select{shader model|Vulkan environment|shader stage}0 '%1' in target '%2' is invalid for HLSL code generation</source>
-          <target>%select{shader model|Vulkan environment|shader stage}0 '{$arg1}' in target '{$arg2}' is invalid for HLSL code generation</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="365" name="err_drv_hlsl_unsupported_target">
@@ -572,7 +572,7 @@
       <unit id="395" name="err_drv_invalid_riscv_cpu_name_for_target">
         <segment>
           <source>cpu '%0' does not support rv%select{32|64}1</source>
-          <target>cpu '{$arg0}' does not support rv%select{32|64}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="396" name="err_drv_invalid_rtlib_name">
@@ -638,7 +638,7 @@
       <unit id="406" name="err_drv_loongarch_wrong_fpu_width">
         <segment>
           <source>wrong fpu width; %select{LSX|LASX}0 depends on 64-bit FPU</source>
-          <target>wrong fpu width; %select{LSX|LASX}0 depends on 64-bit FPU</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="407" name="err_drv_lto_without_lld">
@@ -770,7 +770,7 @@
       <unit id="428" name="err_drv_no_hipspv_device_lib">
         <segment>
           <source>cannot find HIP device library%select{| for %1}0; provide its path via '--hip-path' or '--hip-device-lib-path', or pass '-nogpulib' to build without HIP device library</source>
-          <target>cannot find HIP device library%select{| for {$arg1}}0; provide its path via '--hip-path' or '--hip-device-lib-path', or pass '-nogpulib' to build without HIP device library</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="429" name="err_drv_no_hipstdpar_lib">
@@ -818,7 +818,7 @@
       <unit id="436" name="err_drv_no_rocm_device_lib">
         <segment>
           <source>cannot find ROCm device library%select{| for %1|for ABI version %1}0; provide its path via '--rocm-path' or '--rocm-device-lib-path', or pass '-nogpulib' to build without ROCm device library</source>
-          <target>cannot find ROCm device library%select{| for {$arg1}|for ABI version {$arg1}}0; provide its path via '--rocm-path' or '--rocm-device-lib-path', or pass '-nogpulib' to build without ROCm device library</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="437" name="err_drv_no_such_file">
@@ -920,7 +920,7 @@
       <unit id="453" name="err_drv_print_header_env_var">
         <segment>
           <source>environment variable CC_PRINT_HEADERS_%select{FORMAT|FILTERING}0 has invalid value %1</source>
-          <target>environment variable CC_PRINT_HEADERS_%select{FORMAT|FILTERING}0 has invalid value {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="454" name="err_drv_print_header_env_var_combination">
@@ -1280,7 +1280,7 @@
       <unit id="513" name="note_drv_use_standard">
         <segment>
           <source>use '%0'%select{| or '%3'|, '%3', or '%4'|, '%3', '%4', or '%5'}2 for '%1' standard</source>
-          <target>use '{$arg0}'%select{| or '{$arg3}'|, '{$arg3}', or '{$arg4}'|, '{$arg3}', '{$arg4}', or '{$arg5}'}2 for '{$arg1}' standard</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="514" name="note_drv_verify_prefix_spelling">
@@ -1388,7 +1388,7 @@
       <unit id="531" name="warn_drv_deprecated_arg">
         <segment>
           <source>argument '%0' is deprecated%select{|, use '%2' instead}1</source>
-          <target>argument '{$arg0}' is deprecated%select{|, use '{$arg2}' instead}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="532" name="warn_drv_deprecated_arg_no_relaxed_template_template_args">
@@ -1460,7 +1460,7 @@
       <unit id="543" name="warn_drv_fraw_string_literals_in_cxx11">
         <segment>
           <source>ignoring '-f%select{no-|}0raw-string-literals', which is only valid for C and C++ standards before C++11</source>
-          <target>ignoring '-f%select{no-|}0raw-string-literals', which is only valid for C and C++ standards before C++11</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="544" name="warn_drv_fuse_ld_path">
@@ -1484,7 +1484,7 @@
       <unit id="547" name="warn_drv_input_file_unused">
         <segment>
           <source>%0: '%1' input unused%select{ when '%3' is present|}2</source>
-          <target>{$arg0}: '{$arg1}' input unused%select{ when '{$arg3}' is present|}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="548" name="warn_drv_input_file_unused_by_cpp">
@@ -1496,7 +1496,7 @@
       <unit id="549" name="warn_drv_invalid_arch_name_with_suggestion">
         <segment>
           <source>ignoring invalid /arch: argument '%0'; for %select{64|32}1-bit expected one of %2</source>
-          <target>ignoring invalid /arch: argument '{$arg0}'; for %select{64|32}1-bit expected one of {$arg2}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="550" name="warn_drv_jmc_requires_debuginfo">
@@ -1592,7 +1592,7 @@
       <unit id="565" name="warn_drv_new_cuda_version">
         <segment>
           <source>CUDA version%0 is newer than the latest%select{| partially}1 supported version %2</source>
-          <target>CUDA version{$arg0} is newer than the latest%select{| partially}1 supported version {$arg2}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="566" name="warn_drv_no_floating_point_registers">
@@ -1658,7 +1658,7 @@
       <unit id="576" name="warn_drv_preprocessed_input_file_unused">
         <segment>
           <source>%0: previously preprocessed input%select{ unused when '%2' is present|}1</source>
-          <target>{$arg0}: previously preprocessed input%select{ unused when '{$arg2}' is present|}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="577" name="warn_drv_ps_force_pic">
@@ -1718,13 +1718,13 @@
       <unit id="586" name="warn_drv_unsupported_gpopt">
         <segment>
           <source>ignoring '-mgpopt' option as it cannot be used with %select{|the implicit usage of }0-mabicalls</source>
-          <target>ignoring '-mgpopt' option as it cannot be used with %select{|the implicit usage of }0-mabicalls</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="587" name="warn_drv_unsupported_longcalls">
         <segment>
           <source>ignoring '-mlong-calls' option as it is not currently supported with %select{|the implicit usage of }0-mabicalls</source>
-          <target>ignoring '-mlong-calls' option as it is not currently supported with %select{|the implicit usage of }0-mabicalls</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="588" name="warn_drv_unsupported_openmp_library">
@@ -1766,7 +1766,7 @@
       <unit id="594" name="warn_drv_unsupported_pic_with_mabicalls">
         <segment>
           <source>ignoring '%0' option as it cannot be used with %select{implicit usage of|}1 -mabicalls and the N64 ABI</source>
-          <target>ignoring '{$arg0}' option as it cannot be used with %select{implicit usage of|}1 -mabicalls and the N64 ABI</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="595" name="warn_drv_unsupported_sdata">

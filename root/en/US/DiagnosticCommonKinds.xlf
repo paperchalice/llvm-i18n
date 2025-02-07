@@ -26,7 +26,7 @@
       <unit id="3" name="err_asm_invalid_type">
         <segment>
           <source>invalid type %0 in asm %select{input|output}1</source>
-          <target>invalid type {$arg0} in asm %select{input|output}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4" name="err_asm_invalid_type_in_input">
@@ -38,7 +38,7 @@
       <unit id="5" name="err_attribute_not_type_attr">
         <segment>
           <source>%0%select{ attribute|}1 cannot be applied to types</source>
-          <target>{$arg0}%select{ attribute|}1 cannot be applied to types</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6" name="err_attribute_uuid_malformed_guid">
@@ -56,7 +56,7 @@
       <unit id="8" name="err_constexpr_invalid_template_arg">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '%3' variable}2 is not allowed in a template argument</source>
-          <target>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '{$arg3}' variable}2 is not allowed in a template argument</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="9" name="err_cxx23_size_t_suffix">
@@ -68,7 +68,7 @@
       <unit id="10" name="err_default_special_members">
         <segment>
           <source>only special member functions %select{|and comparison operators }0may be defaulted</source>
-          <target>only special member functions %select{|and comparison operators }0may be defaulted</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="11" name="err_deleted_non_function">
@@ -122,7 +122,7 @@
       <unit id="19" name="err_expected_string_literal">
         <segment>
           <source>expected string literal %select{in %1|for diagnostic message in static_assert|for optional message in 'availability' attribute|for %select{language name|source container name|USR}1 in 'external_source_symbol' attribute|as argument of '%1' attribute}0</source>
-          <target>expected string literal %select{in {$arg1}|for diagnostic message in static_assert|for optional message in 'availability' attribute|for %select{language name|source container name|USR}1 in 'external_source_symbol' attribute|as argument of '{$arg1}' attribute}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="20" name="err_file_modified">
@@ -146,7 +146,7 @@
       <unit id="23" name="err_integer_literal_too_large">
         <segment>
           <source>integer literal is too large to be represented in any %select{signed |}0integer type</source>
-          <target>integer literal is too large to be represented in any %select{signed |}0integer type</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="24" name="err_invalid_character_udl">
@@ -164,7 +164,7 @@
       <unit id="26" name="err_invalid_member_in_interface">
         <segment>
           <source>%select{data member |non-public member function |static member function |user-declared constructor|user-declared destructor|operator |nested class }0%1 is not permitted within an interface type</source>
-          <target>%select{data member |non-public member function |static member function |user-declared constructor|user-declared destructor|operator |nested class }0{$arg1} is not permitted within an interface type</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="27" name="err_invalid_numeric_udl">
@@ -224,7 +224,7 @@
       <unit id="36" name="err_module_header_missing">
         <segment>
           <source>%select{|umbrella }0header '%1' not found</source>
-          <target>%select{|umbrella }0header '{$arg1}' not found</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="37" name="err_module_not_built">
@@ -260,7 +260,7 @@
       <unit id="42" name="err_module_unavailable">
         <segment>
           <source>module '%0' %select{is incompatible with|requires}1 feature '%2'</source>
-          <target>module '{$arg0}' %select{is incompatible with|requires}1 feature '{$arg2}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="43" name="err_ms_asm_bitfield_unsupported">
@@ -284,7 +284,7 @@
       <unit id="46" name="err_omp_more_one_clause">
         <segment>
           <source>directive '#pragma omp %0' cannot contain more than one '%1' clause%select{| with '%3' name modifier| with 'source' dependence}2</source>
-          <target>directive '#pragma omp {$arg0}' cannot contain more than one '{$arg1}' clause%select{| with '{$arg3}' name modifier| with 'source' dependence}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="47" name="err_omp_required_clause">
@@ -308,7 +308,7 @@
       <unit id="50" name="err_opencl_unknown_type_specifier">
         <segment>
           <source>%0 does not support the '%1' %select{type qualifier|storage class specifier}2</source>
-          <target>{$arg0} does not support the '{$arg1}' %select{type qualifier|storage class specifier}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="51" name="err_openclcxx_not_supported">
@@ -350,13 +350,13 @@
       <unit id="57" name="err_ppc_impossible_musttail">
         <segment>
           <source>'musttail' attribute for this call is impossible because %select{long calls can not be tail called on PPC|indirect calls can not be tail called on PPC|external calls can not be tail called on PPC}0</source>
-          <target>'musttail' attribute for this call is impossible because %select{long calls can not be tail called on PPC|indirect calls can not be tail called on PPC|external calls can not be tail called on PPC}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="58" name="err_requires_positive_value">
         <segment>
           <source>%select{invalid value '%0'; must be positive|value '%0' is too large}1</source>
-          <target>%select{invalid value '{$arg0}'; must be positive|value '{$arg0}' is too large}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="59" name="err_seh___except_block">
@@ -386,7 +386,7 @@
       <unit id="63" name="err_size_t_literal_too_large">
         <segment>
           <source>%select{signed |}0'size_t' literal is out of range of possible %select{signed |}0'size_t' values</source>
-          <target>%select{signed |}0'size_t' literal is out of range of possible %select{signed |}0'size_t' values</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="64" name="err_sloc_space_too_large">
@@ -518,7 +518,7 @@
       <unit id="85" name="err_use_of_tag_name_without_tag">
         <segment>
           <source>must use '%1' tag to refer to type %0%select{| in this scope}2</source>
-          <target>must use '{$arg1}' tag to refer to type {$arg0}%select{| in this scope}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="86" name="ext_c23_bitint_suffix">
@@ -584,7 +584,7 @@
       <unit id="96" name="ext_old_implicitly_unsigned_long_cxx">
         <segment>
           <source>integer literal is too large to be represented in type 'long' and is subject to undefined behavior under C++98, interpreting as 'unsigned long'; this literal will %select{have type 'long long'|be ill-formed}0 in C++11 onwards</source>
-          <target>integer literal is too large to be represented in type 'long' and is subject to undefined behavior under C++98, interpreting as 'unsigned long'; this literal will %select{have type 'long long'|be ill-formed}0 in C++11 onwards</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="97" name="ext_variadic_templates">
@@ -620,7 +620,7 @@
       <unit id="102" name="note_constexpr_invalid_template_arg">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '%3' variable}2 is not allowed in a template argument</source>
-          <target>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '{$arg3}' variable}2 is not allowed in a template argument</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="103" name="note_decl_hiding_tag_type">
@@ -854,7 +854,7 @@
       <unit id="141" name="warn_fp_nan_inf_when_disabled">
         <segment>
           <source>use of %select{infinity|NaN}0%select{| via a macro}1 is undefined behavior due to the currently enabled floating-point options</source>
-          <target>use of %select{infinity|NaN}0%select{| via a macro}1 is undefined behavior due to the currently enabled floating-point options</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="142" name="warn_ignored_hip_only_option">
@@ -914,19 +914,19 @@
       <unit id="151" name="warn_old_implicitly_unsigned_long">
         <segment>
           <source>integer literal is too large to be represented in type 'long', interpreting as 'unsigned long' per C89; this literal will %select{have type 'long long'|be ill-formed}0 in C99 onwards</source>
-          <target>integer literal is too large to be represented in type 'long', interpreting as 'unsigned long' per C89; this literal will %select{have type 'long long'|be ill-formed}0 in C99 onwards</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="152" name="warn_old_implicitly_unsigned_long_cxx">
         <segment>
           <source>integer literal is too large to be represented in type 'long', interpreting as 'unsigned long' per C++98; this literal will %select{have type 'long long'|be ill-formed}0 in C++11 onwards</source>
-          <target>integer literal is too large to be represented in type 'long', interpreting as 'unsigned long' per C++98; this literal will %select{have type 'long long'|be ill-formed}0 in C++11 onwards</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="153" name="warn_opencl_unsupported_core_feature">
         <segment>
           <source>%0 is a core feature in %select{OpenCL C|C++ for OpenCL}1 version %2 but not supported on this target</source>
-          <target>{$arg0} is a core feature in %select{OpenCL C|C++ for OpenCL}1 version {$arg2} but not supported on this target</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="154" name="warn_poison_system_directories">

@@ -32,7 +32,7 @@
       <unit id="8225" name="err_cannot_find_reexport">
         <segment>
           <source>cannot find re-exported %select{framework|library}0: '%1'</source>
-          <target>cannot find re-exported %select{framework|library}0: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8226" name="err_cannot_read_input_list">
@@ -68,13 +68,13 @@
       <unit id="8231" name="err_dylib_symbol_flags_mismatch">
         <segment>
           <source>dynamic library symbol '%0' is %select{weak defined|thread local}1, but its declaration is not</source>
-          <target>dynamic library symbol '{$arg0}' is %select{weak defined|thread local}1, but its declaration is not</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8232" name="err_header_availability_mismatch">
         <segment>
           <source>declaration '%0' is marked %select{available|unavailable}1, but symbol is %select{not |}2exported in dynamic library</source>
-          <target>declaration '{$arg0}' is marked %select{available|unavailable}1, but symbol is %select{not |}2exported in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8233" name="err_header_hidden_symbol">
@@ -86,7 +86,7 @@
       <unit id="8234" name="err_header_symbol_flags_mismatch">
         <segment>
           <source>declaration '%0' is %select{weak defined|thread local}1, but symbol is not in dynamic library</source>
-          <target>declaration '{$arg0}' is %select{weak defined|thread local}1, but symbol is not in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8235" name="err_header_symbol_missing">
@@ -146,13 +146,13 @@
       <unit id="8244" name="err_no_such_header_file">
         <segment>
           <source>no such %select{public|private|project}1 header file: '%0'</source>
-          <target>no such %select{public|private|project}1 header file: '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8245" name="err_no_such_umbrella_header_file">
         <segment>
           <source>%select{public|private|project}1 umbrella header file not found in input: '%0'</source>
-          <target>%select{public|private|project}1 umbrella header file not found in input: '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8246" name="err_no_twolevel_namespace">
@@ -218,7 +218,7 @@
       <unit id="8256" name="warn_dylib_symbol_flags_mismatch">
         <segment>
           <source>dynamic library symbol '%0' is %select{weak defined|thread local}1, but its declaration is not</source>
-          <target>dynamic library symbol '{$arg0}' is %select{weak defined|thread local}1, but its declaration is not</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8257" name="warn_glob_did_not_match">
@@ -230,7 +230,7 @@
       <unit id="8258" name="warn_header_availability_mismatch">
         <segment>
           <source>declaration '%0' is marked %select{available|unavailable}1, but symbol is %select{not |}2exported in dynamic library</source>
-          <target>declaration '{$arg0}' is marked %select{available|unavailable}1, but symbol is %select{not |}2exported in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8259" name="warn_header_hidden_symbol">
@@ -242,7 +242,7 @@
       <unit id="8260" name="warn_header_symbol_flags_mismatch">
         <segment>
           <source>declaration '%0' is %select{weak defined|thread local}1, but symbol is not in dynamic library</source>
-          <target>declaration '{$arg0}' is %select{weak defined|thread local}1, but symbol is not in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8261" name="warn_header_symbol_missing">
@@ -266,7 +266,7 @@
       <unit id="8264" name="warn_no_such_excluded_header_file">
         <segment>
           <source>no such excluded %select{public|private}0 header file: '%1'</source>
-          <target>no such excluded %select{public|private}0 header file: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8265" name="warn_platform_mismatch">
