@@ -80,7 +80,7 @@
       <unit id="1033" name="err_delimited_escape_missing_brace">
         <segment>
           <source>expected '{' after '\%0' escape sequence</source>
-          <target>expected '\{' after '\{$arg0}' escape sequence</target>
+          <target>expected '\{' after '\\{$arg0}' escape sequence</target>
         </segment>
       </unit>
       <unit id="1034" name="err_dep_source_scanner_missing_semi_after_at_import">
@@ -152,7 +152,7 @@
       <unit id="1045" name="err_hex_escape_no_digits">
         <segment>
           <source>\%0 used with no following hex digits</source>
-          <target>\{$arg0} used with no following hex digits</target>
+          <target>\\{$arg0} used with no following hex digits</target>
         </segment>
       </unit>
       <unit id="1046" name="err_illegal_use_of_flt_eval_macro">
@@ -1244,7 +1244,7 @@
       <unit id="1227" name="ext_nonstandard_escape">
         <segment>
           <source>use of non-standard escape character '\%0'</source>
-          <target>use of non-standard escape character '\{$arg0}'</target>
+          <target>use of non-standard escape character '\\{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1228" name="ext_on_off_switch_syntax">
@@ -1406,7 +1406,7 @@
       <unit id="1254" name="ext_unknown_escape">
         <segment>
           <source>unknown escape sequence '\%0'</source>
-          <target>unknown escape sequence '\{$arg0}'</target>
+          <target>unknown escape sequence '\\{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1255" name="ext_unterminated_char_or_string">
@@ -2306,7 +2306,7 @@
       <unit id="1404" name="warn_ucn_escape_no_digits">
         <segment>
           <source>\%0 used with no following hex digits; treating as '\' followed by identifier</source>
-          <target>\{$arg0} used with no following hex digits; treating as '\' followed by identifier</target>
+          <target>\\{$arg0} used with no following hex digits; treating as '\' followed by identifier</target>
         </segment>
       </unit>
       <unit id="1405" name="warn_ucn_escape_surrogate">
