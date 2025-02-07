@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser(description='Example argparse script.')
 parser.add_argument('--clang-prefix', type=Path, help='clang prefix directory.')
 parser.add_argument('--llvm-prefix', type=Path, help='LLVM prefix directory')
 parser.add_argument('--trg-lang', required=True, type=str, help='target language')
-parser.add_argument('--inreplace', '-i', help='Inreplace mode, without backup.')
+parser.add_argument('--inreplace', '-i', action='store_true', help='Inreplace mode, without backup.')
 args = parser.parse_args()
 
 class Updater:
@@ -66,7 +66,8 @@ class Updater:
         source = ET.SubElement(segment, 'source')
         source.text = e.desc
         ET.SubElement(segment, 'target')
-    os.rename(self.file_name, f'{self.file_name}-{int(time.time())}.bak')
+    if not args.inreplace:
+      os.rename(self.file_name, f'{self.file_name}-{int(time.time())}.bak')
     with open(self.file_name, "wb") as xml_file:
         ET.indent(xlf_copy)
         xlf_copy.write(xml_file, encoding="UTF-8", xml_declaration=True, short_empty_elements=False)
