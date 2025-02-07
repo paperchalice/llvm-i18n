@@ -16874,7 +16874,7 @@
       <unit id="5432" name="note_cocoa_naming_declare_family">
         <segment>
           <source>explicitly declare getter %objcinstance0 with '%1' to return an 'unowned' object</source>
-          <target>explicitly declare getter %objcinstance0 with '${arg1}' to return an 'unowned' object</target>
+          <target>explicitly declare getter {$arg0 :objcinstance} with '${arg1}' to return an 'unowned' object</target>
         </segment>
       </unit>
       <unit id="5433" name="note_collapse_loop_count">
@@ -21608,13 +21608,13 @@
       <unit id="6221" name="warn_class_method_not_found">
         <segment>
           <source>class method %objcclass0 not found (return type defaults to 'id')</source>
-          <target>class method %objcclass0 not found (return type defaults to 'id')</target>
+          <target>class method {$arg0 :objcclass} not found (return type defaults to 'id')</target>
         </segment>
       </unit>
       <unit id="6222" name="warn_class_method_not_found_with_typo">
         <segment>
           <source>class method %objcclass0 not found (return type defaults to 'id'); did you mean %objcclass2?</source>
-          <target>class method %objcclass0 not found (return type defaults to 'id'); did you mean %objcclass2?</target>
+          <target>class method {$arg0 :objcclass} not found (return type defaults to 'id'); did you mean {$arg2 :objcclass}?</target>
         </segment>
       </unit>
       <unit id="6223" name="warn_cleanup_ext">
@@ -23750,13 +23750,13 @@
       <unit id="6578" name="warn_inst_method_not_found">
         <segment>
           <source>instance method %objcinstance0 not found (return type defaults to 'id')</source>
-          <target>instance method %objcinstance0 not found (return type defaults to 'id')</target>
+          <target>instance method {$arg0 :objcinstance} not found (return type defaults to 'id')</target>
         </segment>
       </unit>
       <unit id="6579" name="warn_instance_method_not_found_with_typo">
         <segment>
           <source>instance method %objcinstance0 not found (return type defaults to 'id'); did you mean %objcinstance2?</source>
-          <target>instance method %objcinstance0 not found (return type defaults to 'id'); did you mean %objcinstance2?</target>
+          <target>instance method {$arg0 :objcinstance} not found (return type defaults to 'id'); did you mean {$arg2 :objcinstance}?</target>
         </segment>
       </unit>
       <unit id="6580" name="warn_instance_method_on_class_found">
@@ -24500,7 +24500,7 @@
       <unit id="6703" name="warn_objc_implementation_missing_designated_init_override">
         <segment>
           <source>method override for the designated initializer of the superclass %objcinstance0 not found</source>
-          <target>method override for the designated initializer of the superclass %objcinstance0 not found</target>
+          <target>method override for the designated initializer of the superclass {$arg0 :objcinstance} not found</target>
         </segment>
       </unit>
       <unit id="6704" name="warn_objc_invalid_bridge">
