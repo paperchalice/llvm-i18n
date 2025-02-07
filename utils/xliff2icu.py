@@ -48,7 +48,7 @@ class Converter:
       if tgt.text:
         string_list.append(process_str(tgt.text))
       else:
-        string_list.append("")
+        string_list.append('""')
     return string_list
 
 def handle_component(component):
