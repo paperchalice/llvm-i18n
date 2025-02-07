@@ -8,1531 +8,1531 @@
       <unit id="2121" name="err_asm_empty_symbolic_operand_name">
         <segment>
           <source>empty symbolic operand name in inline assembly string</source>
-          <target></target>
+          <target>empty symbolic operand name in inline assembly string</target>
         </segment>
       </unit>
       <unit id="2122" name="err_asm_invalid_escape">
         <segment>
           <source>invalid %% escape in inline assembly string</source>
-          <target></target>
+          <target>invalid % escape in inline assembly string</target>
         </segment>
       </unit>
       <unit id="2123" name="err_asm_invalid_operand_number">
         <segment>
           <source>invalid operand number in inline asm string</source>
-          <target></target>
+          <target>invalid operand number in inline asm string</target>
         </segment>
       </unit>
       <unit id="2124" name="err_asm_unknown_symbolic_operand_name">
         <segment>
           <source>unknown symbolic operand name in inline assembly string</source>
-          <target></target>
+          <target>unknown symbolic operand name in inline assembly string</target>
         </segment>
       </unit>
       <unit id="2125" name="err_asm_unterminated_symbolic_operand_name">
         <segment>
           <source>unterminated symbolic operand name in inline assembly string</source>
-          <target></target>
+          <target>unterminated symbolic operand name in inline assembly string</target>
         </segment>
       </unit>
       <unit id="2126" name="err_experimental_clang_interp_failed">
         <segment>
           <source>the experimental clang interpreter failed to evaluate an expression</source>
-          <target></target>
+          <target>the experimental clang interpreter failed to evaluate an expression</target>
         </segment>
       </unit>
       <unit id="2127" name="err_module_odr_violation_definition_data">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%4 base %plural{1:class|:classes}4|%4 virtual base %plural{1:class|:classes}4|%ordinal4 base class with type %5|%ordinal4 %select{non-virtual|virtual}5 base class %6|%ordinal4 base class %5 with %select{public|protected|private|no}6 access specifier}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{${arg4} base %plural{1:class|:classes}4|${arg4} virtual base %plural{1:class|:classes}4|%ordinal4 base class with type ${arg5}|%ordinal4 %select{non-virtual|virtual}5 base class ${arg6}|%ordinal4 base class ${arg5} with %select{public|protected|private|no}6 access specifier}3</target>
         </segment>
       </unit>
       <unit id="2128" name="err_module_odr_violation_different_definitions">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2' is here|defined here}1</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; %select{definition in module '${arg2}' is here|defined here}1</target>
         </segment>
       </unit>
       <unit id="2129" name="err_module_odr_violation_enum">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2'|defined here}1 first difference is %select{enum that is %select{not scoped|scoped}4|enum scoped with keyword %select{struct|class}4|enum %select{without|with}4 specified type|enum with specified type %4|enum with %4 element%s4|%ordinal4 element has name %5|%ordinal4 element %5 %select{has|does not have}6 an initializer|%ordinal4 element %5 has an initializer|}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; %select{definition in module '${arg2}'|defined here}1 first difference is %select{enum that is %select{not scoped|scoped}4|enum scoped with keyword %select{struct|class}4|enum %select{without|with}4 specified type|enum with specified type ${arg4}|enum with ${arg4} element%s4|%ordinal4 element has name ${arg5}|%ordinal4 element ${arg5} %select{has|does not have}6 an initializer|%ordinal4 element ${arg5} has an initializer|}3</target>
         </segment>
       </unit>
       <unit id="2130" name="err_module_odr_violation_field">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{field %4|field %4 with type %5|%select{non-|}5bitfield %4|bitfield %4 with one width expression|%select{non-|}5mutable field %4|field %4 with %select{no|an}5 initializer|field %4 with an initializer}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{field ${arg4}|field ${arg4} with type ${arg5}|%select{non-|}5bitfield ${arg4}|bitfield ${arg4} with one width expression|%select{non-|}5mutable field ${arg4}|field ${arg4} with %select{no|an}5 initializer|field ${arg4} with an initializer}3</target>
         </segment>
       </unit>
       <unit id="2131" name="err_module_odr_violation_function">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2'|defined here}1 first difference is %select{return type is %4|%ordinal4 parameter with name %5|%ordinal4 parameter with type %5%select{| decayed from %7}6|%ordinal4 parameter with%select{out|}5 a default argument|%ordinal4 parameter with a default argument|function body}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; %select{definition in module '${arg2}'|defined here}1 first difference is %select{return type is ${arg4}|%ordinal4 parameter with name ${arg5}|%ordinal4 parameter with type ${arg5}%select{| decayed from ${arg7}}6|%ordinal4 parameter with%select{out|}5 a default argument|%ordinal4 parameter with a default argument|function body}3</target>
         </segment>
       </unit>
       <unit id="2132" name="err_module_odr_violation_method_params">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{method %5|constructor|destructor}4 that has %6 parameter%s6|%select{method %5|constructor|destructor}4 with %ordinal6 parameter of type %7%select{| decayed from %9}8|%select{method %5|constructor|destructor}4 with %ordinal6 parameter named %7}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{%select{method ${arg5}|constructor|destructor}4 that has ${arg6} parameter%s6|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter of type ${arg7}%select{| decayed from ${arg9}}8|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter named ${arg7}}3</target>
         </segment>
       </unit>
       <unit id="2133" name="err_module_odr_violation_mismatch_decl">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}3</target>
         </segment>
       </unit>
       <unit id="2134" name="err_module_odr_violation_mismatch_decl_unknown">
         <segment>
           <source>%q0 %select{with definition in module '%2'|defined here}1 has different definitions in different modules; first difference is this %select{||||static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property|unexpected decl}3</source>
-          <target></target>
+          <target>%q0 %select{with definition in module '${arg2}'|defined here}1 has different definitions in different modules; first difference is this %select{||||static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property|unexpected decl}3</target>
         </segment>
       </unit>
       <unit id="2135" name="err_module_odr_violation_objc_interface">
         <segment>
           <source>%0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{no super class|super class with type %5}4|instance variable '%4' access control is %select{|@private|@protected|@public|@package}5}3</source>
-          <target></target>
+          <target>${arg0} has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{%select{no super class|super class with type ${arg5}}4|instance variable '${arg4}' access control is %select{|@private|@protected|@public|@package}5}3</target>
         </segment>
       </unit>
       <unit id="2136" name="err_module_odr_violation_objc_method">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{method %4 with return type %5|%select{class|instance}5 method %4|%select{no|'required'|'optional'}4 method control|method %4 with %select{no designated initializer|designated initializer}5|%select{regular|direct}5 method %4|method %4}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{method ${arg4} with return type ${arg5}|%select{class|instance}5 method ${arg4}|%select{no|'required'|'optional'}4 method control|method ${arg4} with %select{no designated initializer|designated initializer}5|%select{regular|direct}5 method ${arg4}|method ${arg4}}3</target>
         </segment>
       </unit>
       <unit id="2137" name="err_module_odr_violation_objc_property">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{property %4|property %4 with type %5|%select{no|'required'|'optional'}4 property control|property %4 with %select{default |}6'%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}5' attribute}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{property ${arg4}|property ${arg4} with type ${arg5}|%select{no|'required'|'optional'}4 property control|property ${arg4} with %select{default |}6'%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}5' attribute}3</target>
         </segment>
       </unit>
       <unit id="2138" name="err_module_odr_violation_record">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{static assert with condition|static assert with message|static assert with %select{|no }4message|%select{method %5|constructor|destructor}4|%select{method %5|constructor|destructor}4 is %select{not deleted|deleted}6|%select{method %5|constructor|destructor}4 is %select{not defaulted|defaulted}6|%select{method %5|constructor|destructor}4 is %select{|pure }6%select{not virtual|virtual}7|%select{method %5|constructor|destructor}4 is %select{not static|static}6|%select{method %5|constructor|destructor}4 is %select{not volatile|volatile}6|%select{method %5|constructor|destructor}4 is %select{not const|const}6|%select{method %5|constructor|destructor}4 is %select{not inline|inline}6|%select{method %5|constructor|destructor}4 with %ordinal6 parameter with%select{out|}7 a default argument|%select{method %5|constructor|destructor}4 with %ordinal6 parameter with a default argument|%select{method %5|constructor|destructor}4 with %select{no |}6template arguments|%select{method %5|constructor|destructor}4 with %6 template argument%s6|%select{method %5|constructor|destructor}4 with %6 for %ordinal7 template argument|%select{method %5|constructor|destructor}4 with %select{no body|body}6|%select{method %5|constructor|destructor}4 with body|friend %select{class|function}4|friend %4|friend function %4|function template %4 with %5 template parameter%s5|function template %4 with %ordinal5 template parameter being a %select{type|non-type|template}6 template parameter|function template %4 with %ordinal5 template parameter %select{with no name|named %7}6|function template %4 with %ordinal5 template parameter with %select{no |}6default argument|function template %4 with %ordinal5 template parameter with default argument %6|function template %4 with %ordinal5 template parameter with one type|function template %4 with %ordinal5 template parameter %select{not |}6being a template parameter pack|}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{static assert with condition|static assert with message|static assert with %select{|no }4message|%select{method ${arg5}|constructor|destructor}4|%select{method ${arg5}|constructor|destructor}4 is %select{not deleted|deleted}6|%select{method ${arg5}|constructor|destructor}4 is %select{not defaulted|defaulted}6|%select{method ${arg5}|constructor|destructor}4 is %select{|pure }6%select{not virtual|virtual}7|%select{method ${arg5}|constructor|destructor}4 is %select{not static|static}6|%select{method ${arg5}|constructor|destructor}4 is %select{not volatile|volatile}6|%select{method ${arg5}|constructor|destructor}4 is %select{not const|const}6|%select{method ${arg5}|constructor|destructor}4 is %select{not inline|inline}6|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter with%select{out|}7 a default argument|%select{method ${arg5}|constructor|destructor}4 with %ordinal6 parameter with a default argument|%select{method ${arg5}|constructor|destructor}4 with %select{no |}6template arguments|%select{method ${arg5}|constructor|destructor}4 with ${arg6} template argument%s6|%select{method ${arg5}|constructor|destructor}4 with ${arg6} for %ordinal7 template argument|%select{method ${arg5}|constructor|destructor}4 with %select{no body|body}6|%select{method ${arg5}|constructor|destructor}4 with body|friend %select{class|function}4|friend ${arg4}|friend function ${arg4}|function template ${arg4} with ${arg5} template parameter%s5|function template ${arg4} with %ordinal5 template parameter being a %select{type|non-type|template}6 template parameter|function template ${arg4} with %ordinal5 template parameter %select{with no name|named ${arg7}}6|function template ${arg4} with %ordinal5 template parameter with %select{no |}6default argument|function template ${arg4} with %ordinal5 template parameter with default argument ${arg6}|function template ${arg4} with %ordinal5 template parameter with one type|function template ${arg4} with %ordinal5 template parameter %select{not |}6being a template parameter pack|}3</target>
         </segment>
       </unit>
       <unit id="2139" name="err_module_odr_violation_referenced_protocols">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%4 referenced %plural{1:protocol|:protocols}4|%ordinal4 referenced protocol with name %5}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{${arg4} referenced %plural{1:protocol|:protocols}4|%ordinal4 referenced protocol with name ${arg5}}3</target>
         </segment>
       </unit>
       <unit id="2140" name="err_module_odr_violation_template_parameter">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{unnamed template parameter|template parameter %5|template parameter with %select{no |}4default argument|template parameter with default argument}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{unnamed template parameter|template parameter ${arg5}|template parameter with %select{no |}4default argument|template parameter with default argument}3</target>
         </segment>
       </unit>
       <unit id="2141" name="err_module_odr_violation_typedef">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{typedef|type alias}4 name %5|%select{typedef|type alias}4 %5 with underlying type %6}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{%select{typedef|type alias}4 name ${arg5}|%select{typedef|type alias}4 ${arg5} with underlying type ${arg6}}3</target>
         </segment>
       </unit>
       <unit id="2142" name="err_module_odr_violation_variable">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{data member with name %4|data member %4 with type %5|data member %4 with%select{out|}5 an initializer|data member %4 with an initializer|data member %4 %select{is constexpr|is not constexpr}5}3</source>
-          <target></target>
+          <target>%q0 has different definitions in different modules; first difference is %select{definition in module '${arg2}'|defined here}1 found %select{data member with name ${arg4}|data member ${arg4} with type ${arg5}|data member ${arg4} with%select{out|}5 an initializer|data member ${arg4} with an initializer|data member ${arg4} %select{is constexpr|is not constexpr}5}3</target>
         </segment>
       </unit>
       <unit id="2143" name="err_odr_different_num_template_parameters">
         <segment>
           <source>template parameter lists have a different number of parameters (%0 vs %1)</source>
-          <target></target>
+          <target>template parameter lists have a different number of parameters (${arg0} vs ${arg1})</target>
         </segment>
       </unit>
       <unit id="2144" name="err_odr_different_template_parameter_kind">
         <segment>
           <source>template parameter has different kinds in different translation units</source>
-          <target></target>
+          <target>template parameter has different kinds in different translation units</target>
         </segment>
       </unit>
       <unit id="2145" name="err_odr_field_type_inconsistent">
         <segment>
           <source>field %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>field ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2146" name="err_odr_function_type_inconsistent">
         <segment>
           <source>external function %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>external function ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2147" name="err_odr_ivar_type_inconsistent">
         <segment>
           <source>instance variable %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>instance variable ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2148" name="err_odr_non_type_parameter_type_inconsistent">
         <segment>
           <source>non-type template parameter declared with incompatible types in different translation units (%0 vs. %1)</source>
-          <target></target>
+          <target>non-type template parameter declared with incompatible types in different translation units (${arg0} vs. ${arg1})</target>
         </segment>
       </unit>
       <unit id="2149" name="err_odr_objc_method_num_params_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has a different number of parameters in different translation units (%2 vs. %3)</source>
-          <target></target>
+          <target>%select{class|instance}0 method ${arg1} has a different number of parameters in different translation units (${arg2} vs. ${arg3})</target>
         </segment>
       </unit>
       <unit id="2150" name="err_odr_objc_method_param_type_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has a parameter with a different types in different translation units (%2 vs. %3)</source>
-          <target></target>
+          <target>%select{class|instance}0 method ${arg1} has a parameter with a different types in different translation units (${arg2} vs. ${arg3})</target>
         </segment>
       </unit>
       <unit id="2151" name="err_odr_objc_method_result_type_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has incompatible result types in different translation units (%2 vs. %3)</source>
-          <target></target>
+          <target>%select{class|instance}0 method ${arg1} has incompatible result types in different translation units (${arg2} vs. ${arg3})</target>
         </segment>
       </unit>
       <unit id="2152" name="err_odr_objc_method_variadic_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 is variadic in one translation unit and not variadic in another</source>
-          <target></target>
+          <target>%select{class|instance}0 method ${arg1} is variadic in one translation unit and not variadic in another</target>
         </segment>
       </unit>
       <unit id="2153" name="err_odr_objc_property_impl_kind_inconsistent">
         <segment>
           <source>property %0 is implemented with %select{@synthesize|@dynamic}1 in one translation but %select{@dynamic|@synthesize}1 in another translation unit</source>
-          <target></target>
+          <target>property ${arg0} is implemented with %select{@synthesize|@dynamic}1 in one translation but %select{@dynamic|@synthesize}1 in another translation unit</target>
         </segment>
       </unit>
       <unit id="2154" name="err_odr_objc_property_type_inconsistent">
         <segment>
           <source>property %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>property ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2155" name="err_odr_objc_superclass_inconsistent">
         <segment>
           <source>class %0 has incompatible superclasses</source>
-          <target></target>
+          <target>class ${arg0} has incompatible superclasses</target>
         </segment>
       </unit>
       <unit id="2156" name="err_odr_objc_synthesize_ivar_inconsistent">
         <segment>
           <source>property %0 is synthesized to different ivars in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>property ${arg0} is synthesized to different ivars in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2157" name="err_odr_parameter_pack_non_pack">
         <segment>
           <source>parameter kind mismatch; parameter is %select{not a|a}0 parameter pack</source>
-          <target></target>
+          <target>parameter kind mismatch; parameter is %select{not a|a}0 parameter pack</target>
         </segment>
       </unit>
       <unit id="2158" name="err_odr_tag_type_inconsistent">
         <segment>
           <source>type %0 has incompatible definitions in different translation units</source>
-          <target></target>
+          <target>type ${arg0} has incompatible definitions in different translation units</target>
         </segment>
       </unit>
       <unit id="2159" name="err_odr_variable_multiple_def">
         <segment>
           <source>external variable %0 defined in multiple translation units</source>
-          <target></target>
+          <target>external variable ${arg0} defined in multiple translation units</target>
         </segment>
       </unit>
       <unit id="2160" name="err_odr_variable_type_inconsistent">
         <segment>
           <source>external variable %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>external variable ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2161" name="err_unsupported_ast_node">
         <segment>
           <source>cannot import unsupported AST node %0</source>
-          <target></target>
+          <target>cannot import unsupported AST node ${arg0}</target>
         </segment>
       </unit>
       <unit id="2162" name="err_vftable_ambiguous_component">
         <segment>
           <source>ambiguous vftable component for %0 introduced via covariant thunks; this is an inherent limitation of the ABI</source>
-          <target></target>
+          <target>ambiguous vftable component for ${arg0} introduced via covariant thunks; this is an inherent limitation of the ABI</target>
         </segment>
       </unit>
       <unit id="2163" name="note_consteval_address_accessible">
         <segment>
           <source>%select{pointer|reference}0 to a consteval declaration is not a constant expression</source>
-          <target></target>
+          <target>%select{pointer|reference}0 to a consteval declaration is not a constant expression</target>
         </segment>
       </unit>
       <unit id="2164" name="note_constexpr_access_deleted_object">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 heap allocated object that has been deleted</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 heap allocated object that has been deleted</target>
         </segment>
       </unit>
       <unit id="2165" name="note_constexpr_access_inactive_union_member">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of subobject of|destruction of}0 member %1 of union with %select{active member %3|no active member}2 is not allowed in a constant expression</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of subobject of|destruction of}0 member ${arg1} of union with %select{active member ${arg3}|no active member}2 is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2166" name="note_constexpr_access_mutable">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 mutable member %1 is not allowed in a constant expression</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 mutable member ${arg1} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2167" name="note_constexpr_access_null">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 dereferenced null pointer is not allowed in a constant expression</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 dereferenced null pointer is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2168" name="note_constexpr_access_past_end">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 dereferenced one-past-the-end pointer is not allowed in a constant expression</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 dereferenced one-past-the-end pointer is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2169" name="note_constexpr_access_static_temporary">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|reconstruction of|destruction of}0 temporary is not allowed in a constant expression outside the expression that created the temporary</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|reconstruction of|destruction of}0 temporary is not allowed in a constant expression outside the expression that created the temporary</target>
         </segment>
       </unit>
       <unit id="2170" name="note_constexpr_access_uninit">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of subobject of|destruction of}0 %select{object outside its lifetime|uninitialized object}1 is not allowed in a constant expression</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of subobject of|destruction of}0 %select{object outside its lifetime|uninitialized object}1 is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2171" name="note_constexpr_access_unreadable_object">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 object '%1' whose value is not known</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 object '${arg1}' whose value is not known</target>
         </segment>
       </unit>
       <unit id="2172" name="note_constexpr_access_unsized_array">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 element of array without known bound is not allowed in a constant expression</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 element of array without known bound is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2173" name="note_constexpr_access_volatile_obj">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;}0 volatile %select{temporary|object %2|member %2}1 is not allowed in a constant expression</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;}0 volatile %select{temporary|object ${arg2}|member ${arg2}}1 is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2174" name="note_constexpr_access_volatile_type">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;}0 volatile-qualified type %1 is not allowed in a constant expression</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;}0 volatile-qualified type ${arg1} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2175" name="note_constexpr_alignment_adjust">
         <segment>
           <source>cannot constant evaluate the result of adjusting alignment to %0</source>
-          <target></target>
+          <target>cannot constant evaluate the result of adjusting alignment to ${arg0}</target>
         </segment>
       </unit>
       <unit id="2176" name="note_constexpr_alignment_compute">
         <segment>
           <source>cannot constant evaluate whether run-time alignment is at least %0</source>
-          <target></target>
+          <target>cannot constant evaluate whether run-time alignment is at least ${arg0}</target>
         </segment>
       </unit>
       <unit id="2177" name="note_constexpr_alignment_too_big">
         <segment>
           <source>requested alignment must be %0 or less for type %1; %2 is invalid</source>
-          <target></target>
+          <target>requested alignment must be ${arg0} or less for type ${arg1}; ${arg2} is invalid</target>
         </segment>
       </unit>
       <unit id="2178" name="note_constexpr_array_index">
         <segment>
           <source>cannot refer to element %0 of %select{array of %2 element%plural{1:|:s}2|non-array object}1 in a constant expression</source>
-          <target></target>
+          <target>cannot refer to element ${arg0} of %select{array of ${arg2} element%plural{1:|:s}2|non-array object}1 in a constant expression</target>
         </segment>
       </unit>
       <unit id="2179" name="note_constexpr_assumption_failed">
         <segment>
           <source>assumption evaluated to false</source>
-          <target></target>
+          <target>assumption evaluated to false</target>
         </segment>
       </unit>
       <unit id="2180" name="note_constexpr_baa_insufficient_alignment">
         <segment>
           <source>%select{alignment of|offset of the aligned pointer from}0 the base pointee object (%1 %plural{1:byte|:bytes}1) is %select{less than|not a multiple of}0 the asserted %2 %plural{1:byte|:bytes}2</source>
-          <target></target>
+          <target>%select{alignment of|offset of the aligned pointer from}0 the base pointee object (${arg1} %plural{1:byte|:bytes}1) is %select{less than|not a multiple of}0 the asserted ${arg2} %plural{1:byte|:bytes}2</target>
         </segment>
       </unit>
       <unit id="2181" name="note_constexpr_baa_value_insufficient_alignment">
         <segment>
           <source>value of the aligned pointer (%0) is not a multiple of the asserted %1 %plural{1:byte|:bytes}1</source>
-          <target></target>
+          <target>value of the aligned pointer (${arg0}) is not a multiple of the asserted ${arg1} %plural{1:byte|:bytes}1</target>
         </segment>
       </unit>
       <unit id="2182" name="note_constexpr_bit_cast_indet_dest">
         <segment>
           <source>indeterminate value can only initialize an object of type 'unsigned char'%select{, 'char',|}1 or 'std::byte'; %0 is invalid</source>
-          <target></target>
+          <target>indeterminate value can only initialize an object of type 'unsigned char'%select{, 'char',|}1 or 'std::byte'; ${arg0} is invalid</target>
         </segment>
       </unit>
       <unit id="2183" name="note_constexpr_bit_cast_invalid_subtype">
         <segment>
           <source>invalid type %0 is a %select{member|base}1 of %2</source>
-          <target></target>
+          <target>invalid type ${arg0} is a %select{member|base}1 of ${arg2}</target>
         </segment>
       </unit>
       <unit id="2184" name="note_constexpr_bit_cast_invalid_type">
         <segment>
           <source>bit_cast %select{from|to}0 a %select{|type with a }1%select{union|pointer|member pointer|volatile|reference}2 %select{type|member}1 is not allowed in a constant expression</source>
-          <target></target>
+          <target>bit_cast %select{from|to}0 a %select{|type with a }1%select{union|pointer|member pointer|volatile|reference}2 %select{type|member}1 is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2185" name="note_constexpr_bit_cast_invalid_vector">
         <segment>
           <source>bit_cast involving type %0 is not allowed in a constant expression; element size %1 * element count %2 is not a multiple of the byte size %3</source>
-          <target></target>
+          <target>bit_cast involving type ${arg0} is not allowed in a constant expression; element size ${arg1} * element count ${arg2} is not a multiple of the byte size ${arg3}</target>
         </segment>
       </unit>
       <unit id="2186" name="note_constexpr_bit_cast_unrepresentable_value">
         <segment>
           <source>value %1 cannot be represented in type %0</source>
-          <target></target>
+          <target>value ${arg1} cannot be represented in type ${arg0}</target>
         </segment>
       </unit>
       <unit id="2187" name="note_constexpr_bit_cast_unsupported_bitfield">
         <segment>
           <source>constexpr bit_cast involving bit-field is not yet supported</source>
-          <target></target>
+          <target>constexpr bit_cast involving bit-field is not yet supported</target>
         </segment>
       </unit>
       <unit id="2188" name="note_constexpr_bit_cast_unsupported_type">
         <segment>
           <source>constexpr bit cast involving type %0 is not yet supported</source>
-          <target></target>
+          <target>constexpr bit cast involving type ${arg0} is not yet supported</target>
         </segment>
       </unit>
       <unit id="2189" name="note_constexpr_call_here">
         <segment>
           <source>in call to '%0'</source>
-          <target></target>
+          <target>in call to '${arg0}'</target>
         </segment>
       </unit>
       <unit id="2190" name="note_constexpr_call_limit_exceeded">
         <segment>
           <source>constexpr evaluation hit maximum call limit</source>
-          <target></target>
+          <target>constexpr evaluation hit maximum call limit</target>
         </segment>
       </unit>
       <unit id="2191" name="note_constexpr_calls_suppressed">
         <segment>
           <source>(skipping %0 call%s0 in backtrace; use -fconstexpr-backtrace-limit=0 to see all)</source>
-          <target></target>
+          <target>(skipping ${arg0} call%s0 in backtrace; use -fconstexpr-backtrace-limit=0 to see all)</target>
         </segment>
       </unit>
       <unit id="2192" name="note_constexpr_compare_virtual_mem_ptr">
         <segment>
           <source>comparison of pointer to virtual member function %0 has unspecified value</source>
-          <target></target>
+          <target>comparison of pointer to virtual member function ${arg0} has unspecified value</target>
         </segment>
       </unit>
       <unit id="2193" name="note_constexpr_conditional_never_const">
         <segment>
           <source>both arms of conditional operator are unable to produce a constant expression</source>
-          <target></target>
+          <target>both arms of conditional operator are unable to produce a constant expression</target>
         </segment>
       </unit>
       <unit id="2194" name="note_constexpr_construct_complex_elem">
         <segment>
           <source>construction of individual component of complex number is not yet supported in constant expressions</source>
-          <target></target>
+          <target>construction of individual component of complex number is not yet supported in constant expressions</target>
         </segment>
       </unit>
       <unit id="2195" name="note_constexpr_deallocate_null">
         <segment>
           <source>'std::allocator&lt;...&gt;::deallocate' used to delete a null pointer</source>
-          <target></target>
+          <target>'std::allocator&lt;...&gt;::deallocate' used to delete a null pointer</target>
         </segment>
       </unit>
       <unit id="2196" name="note_constexpr_delete_base_nonvirt_dtor">
         <segment>
           <source>delete of object with dynamic type %1 through pointer to base class type %0 with non-virtual destructor</source>
-          <target></target>
+          <target>delete of object with dynamic type ${arg1} through pointer to base class type ${arg0} with non-virtual destructor</target>
         </segment>
       </unit>
       <unit id="2197" name="note_constexpr_delete_not_heap_alloc">
         <segment>
           <source>delete of pointer '%0' that does not point to a heap-allocated object</source>
-          <target></target>
+          <target>delete of pointer '${arg0}' that does not point to a heap-allocated object</target>
         </segment>
       </unit>
       <unit id="2198" name="note_constexpr_delete_subobject">
         <segment>
           <source>delete of pointer%select{ to subobject|}1 '%0' %select{|that does not point to complete object}1</source>
-          <target></target>
+          <target>delete of pointer%select{ to subobject|}1 '${arg0}' %select{|that does not point to complete object}1</target>
         </segment>
       </unit>
       <unit id="2199" name="note_constexpr_depth_limit_exceeded">
         <segment>
           <source>constexpr evaluation exceeded maximum depth of %0 calls</source>
-          <target></target>
+          <target>constexpr evaluation exceeded maximum depth of ${arg0} calls</target>
         </segment>
       </unit>
       <unit id="2200" name="note_constexpr_destroy_complex_elem">
         <segment>
           <source>destruction of individual component of complex number is not yet supported in constant expressions</source>
-          <target></target>
+          <target>destruction of individual component of complex number is not yet supported in constant expressions</target>
         </segment>
       </unit>
       <unit id="2201" name="note_constexpr_destroy_out_of_lifetime">
         <segment>
           <source>destroying object '%0' whose lifetime has already ended</source>
-          <target></target>
+          <target>destroying object '${arg0}' whose lifetime has already ended</target>
         </segment>
       </unit>
       <unit id="2202" name="note_constexpr_double_delete">
         <segment>
           <source>delete of pointer that has already been deleted</source>
-          <target></target>
+          <target>delete of pointer that has already been deleted</target>
         </segment>
       </unit>
       <unit id="2203" name="note_constexpr_double_destroy">
         <segment>
           <source>destruction of object that is already being destroyed</source>
-          <target></target>
+          <target>destruction of object that is already being destroyed</target>
         </segment>
       </unit>
       <unit id="2204" name="note_constexpr_dynamic_alloc">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1heap-allocated object is not a constant expression</source>
-          <target></target>
+          <target>%select{pointer|reference}0 to %select{|subobject of }1heap-allocated object is not a constant expression</target>
         </segment>
       </unit>
       <unit id="2205" name="note_constexpr_dynamic_alloc_here">
         <segment>
           <source>heap allocation performed here</source>
-          <target></target>
+          <target>heap allocation performed here</target>
         </segment>
       </unit>
       <unit id="2206" name="note_constexpr_dynamic_cast_to_reference_failed">
         <segment>
           <source>reference dynamic_cast failed: %select{static type %1 of operand is a non-public base class of dynamic type %2|dynamic type %2 of operand does not have a base class of type %3|%3 is an ambiguous base class of dynamic type %2 of operand|%3 is a non-public base class of dynamic type %2 of operand}0</source>
-          <target></target>
+          <target>reference dynamic_cast failed: %select{static type ${arg1} of operand is a non-public base class of dynamic type ${arg2}|dynamic type ${arg2} of operand does not have a base class of type ${arg3}|${arg3} is an ambiguous base class of dynamic type ${arg2} of operand|${arg3} is a non-public base class of dynamic type ${arg2} of operand}0</target>
         </segment>
       </unit>
       <unit id="2207" name="note_constexpr_dynamic_rounding">
         <segment>
           <source>cannot evaluate this expression if rounding mode is dynamic</source>
-          <target></target>
+          <target>cannot evaluate this expression if rounding mode is dynamic</target>
         </segment>
       </unit>
       <unit id="2208" name="note_constexpr_float_arithmetic">
         <segment>
           <source>floating point arithmetic produces %select{an infinity|a NaN}0</source>
-          <target></target>
+          <target>floating point arithmetic produces %select{an infinity|a NaN}0</target>
         </segment>
       </unit>
       <unit id="2209" name="note_constexpr_float_arithmetic_strict">
         <segment>
           <source>compile time floating point arithmetic suppressed in strict evaluation modes</source>
-          <target></target>
+          <target>compile time floating point arithmetic suppressed in strict evaluation modes</target>
         </segment>
       </unit>
       <unit id="2210" name="note_constexpr_function_param_value_unknown">
         <segment>
           <source>function parameter %0 with unknown value cannot be used in a constant expression</source>
-          <target></target>
+          <target>function parameter ${arg0} with unknown value cannot be used in a constant expression</target>
         </segment>
       </unit>
       <unit id="2211" name="note_constexpr_heap_alloc_limit_exceeded">
         <segment>
           <source>constexpr evaluation hit maximum heap allocation limit</source>
-          <target></target>
+          <target>constexpr evaluation hit maximum heap allocation limit</target>
         </segment>
       </unit>
       <unit id="2212" name="note_constexpr_inherited_ctor_call_here">
         <segment>
           <source>in implicit initialization for inherited constructor of %0</source>
-          <target></target>
+          <target>in implicit initialization for inherited constructor of ${arg0}</target>
         </segment>
       </unit>
       <unit id="2213" name="note_constexpr_invalid_alignment">
         <segment>
           <source>requested alignment %0 is not a positive power of two</source>
-          <target></target>
+          <target>requested alignment ${arg0} is not a positive power of two</target>
         </segment>
       </unit>
       <unit id="2214" name="note_constexpr_invalid_cast">
         <segment>
           <source>%select{reinterpret_cast|dynamic_cast|%select{this conversion|cast that performs the conversions of a reinterpret_cast}1|cast from %1}0 is not allowed in a constant expression%select{| in C++ standards before C++20||}0</source>
-          <target></target>
+          <target>%select{reinterpret_cast|dynamic_cast|%select{this conversion|cast that performs the conversions of a reinterpret_cast}1|cast from ${arg1}}0 is not allowed in a constant expression%select{| in C++ standards before C++20||}0</target>
         </segment>
       </unit>
       <unit id="2215" name="note_constexpr_invalid_downcast">
         <segment>
           <source>cannot cast object of dynamic type %0 to type %1</source>
-          <target></target>
+          <target>cannot cast object of dynamic type ${arg0} to type ${arg1}</target>
         </segment>
       </unit>
       <unit id="2216" name="note_constexpr_invalid_function">
         <segment>
           <source>%select{non-constexpr|undefined}0 %select{function|constructor}1 %2 cannot be used in a constant expression</source>
-          <target></target>
+          <target>%select{non-constexpr|undefined}0 %select{function|constructor}1 ${arg2} cannot be used in a constant expression</target>
         </segment>
       </unit>
       <unit id="2217" name="note_constexpr_invalid_inhctor">
         <segment>
           <source>constructor inherited from base class %0 cannot be used in a constant expression; derived class cannot be implicitly initialized</source>
-          <target></target>
+          <target>constructor inherited from base class ${arg0} cannot be used in a constant expression; derived class cannot be implicitly initialized</target>
         </segment>
       </unit>
       <unit id="2218" name="note_constexpr_invalid_void_star_cast">
         <segment>
           <source>cast from %0 is not allowed in a constant expression %select{in C++ standards before C++2c|because the pointed object type %2 is not similar to the target type %3}1</source>
-          <target></target>
+          <target>cast from ${arg0} is not allowed in a constant expression %select{in C++ standards before C++2c|because the pointed object type ${arg2} is not similar to the target type ${arg3}}1</target>
         </segment>
       </unit>
       <unit id="2219" name="note_constexpr_large_shift">
         <segment>
           <source>shift count %0 &gt;= width of type %1 (%2 bit%s2)</source>
-          <target></target>
+          <target>shift count ${arg0} &gt;= width of type ${arg1} (${arg2} bit%s2)</target>
         </segment>
       </unit>
       <unit id="2220" name="note_constexpr_lifetime_ended">
         <segment>
           <source>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 %select{temporary|variable}1 whose %plural{8:storage duration|:lifetime}0 has ended</source>
-          <target></target>
+          <target>%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of}0 %select{temporary|variable}1 whose %plural{8:storage duration|:lifetime}0 has ended</target>
         </segment>
       </unit>
       <unit id="2221" name="note_constexpr_literal_comparison">
         <segment>
           <source>comparison of addresses of literals has unspecified value</source>
-          <target></target>
+          <target>comparison of addresses of literals has unspecified value</target>
         </segment>
       </unit>
       <unit id="2222" name="note_constexpr_lshift_discards">
         <segment>
           <source>signed left shift discards bits</source>
-          <target></target>
+          <target>signed left shift discards bits</target>
         </segment>
       </unit>
       <unit id="2223" name="note_constexpr_lshift_of_negative">
         <segment>
           <source>left shift of negative value %0</source>
-          <target></target>
+          <target>left shift of negative value ${arg0}</target>
         </segment>
       </unit>
       <unit id="2224" name="note_constexpr_ltor_incomplete_type">
         <segment>
           <source>read of incomplete type %0 is not allowed in a constant expression</source>
-          <target></target>
+          <target>read of incomplete type ${arg0} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2225" name="note_constexpr_ltor_non_const_int">
         <segment>
           <source>read of non-const variable %0 is not allowed in a constant expression</source>
-          <target></target>
+          <target>read of non-const variable ${arg0} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2226" name="note_constexpr_ltor_non_constexpr">
         <segment>
           <source>read of non-constexpr variable %0 is not allowed in a constant expression</source>
-          <target></target>
+          <target>read of non-constexpr variable ${arg0} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2227" name="note_constexpr_ltor_non_integral">
         <segment>
           <source>read of variable %0 of non-integral, non-enumeration type %1 is not allowed in a constant expression</source>
-          <target></target>
+          <target>read of variable ${arg0} of non-integral, non-enumeration type ${arg1} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2228" name="note_constexpr_mem_pointer_weak_comparison">
         <segment>
           <source>comparison against pointer to weak member %q0 can only be performed at runtime</source>
-          <target></target>
+          <target>comparison against pointer to weak member %q0 can only be performed at runtime</target>
         </segment>
       </unit>
       <unit id="2229" name="note_constexpr_memchr_unsupported">
         <segment>
           <source>constant evaluation of %0 on array of type %1 is not supported; only arrays of narrow character types can be searched</source>
-          <target></target>
+          <target>constant evaluation of ${arg0} on array of type ${arg1} is not supported; only arrays of narrow character types can be searched</target>
         </segment>
       </unit>
       <unit id="2230" name="note_constexpr_memcmp_unsupported">
         <segment>
           <source>constant evaluation of %0 between arrays of types %1 and %2 is not supported; only arrays of narrow character types can be compared</source>
-          <target></target>
+          <target>constant evaluation of ${arg0} between arrays of types ${arg1} and ${arg2} is not supported; only arrays of narrow character types can be compared</target>
         </segment>
       </unit>
       <unit id="2231" name="note_constexpr_memcpy_incomplete_type">
         <segment>
           <source>cannot constant evaluate '%select{memcpy|memmove}0' between objects of incomplete type %1</source>
-          <target></target>
+          <target>cannot constant evaluate '%select{memcpy|memmove}0' between objects of incomplete type ${arg1}</target>
         </segment>
       </unit>
       <unit id="2232" name="note_constexpr_memcpy_nontrivial">
         <segment>
           <source>cannot constant evaluate '%select{memcpy|memmove}0' between objects of non-trivially-copyable type %1</source>
-          <target></target>
+          <target>cannot constant evaluate '%select{memcpy|memmove}0' between objects of non-trivially-copyable type ${arg1}</target>
         </segment>
       </unit>
       <unit id="2233" name="note_constexpr_memcpy_null">
         <segment>
           <source>%select{source|destination}2 of '%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' is %3</source>
-          <target></target>
+          <target>%select{source|destination}2 of '%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' is ${arg3}</target>
         </segment>
       </unit>
       <unit id="2234" name="note_constexpr_memcpy_overlap">
         <segment>
           <source>'%select{memcpy|wmemcpy}0' between overlapping memory regions</source>
-          <target></target>
+          <target>'%select{memcpy|wmemcpy}0' between overlapping memory regions</target>
         </segment>
       </unit>
       <unit id="2235" name="note_constexpr_memcpy_type_pun">
         <segment>
           <source>cannot constant evaluate '%select{memcpy|memmove}0' from object of type %1 to object of type %2</source>
-          <target></target>
+          <target>cannot constant evaluate '%select{memcpy|memmove}0' from object of type ${arg1} to object of type ${arg2}</target>
         </segment>
       </unit>
       <unit id="2236" name="note_constexpr_memcpy_unsupported">
         <segment>
           <source>'%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' not supported: %select{size to copy (%4) is not a multiple of size of element type %3 (%5)|source is not a contiguous array of at least %4 elements of type %3|destination is not a contiguous array of at least %4 elements of type %3}2</source>
-          <target></target>
+          <target>'%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' not supported: %select{size to copy (${arg4}) is not a multiple of size of element type ${arg3} (${arg5})|source is not a contiguous array of at least ${arg4} elements of type ${arg3}|destination is not a contiguous array of at least ${arg4} elements of type ${arg3}}2</target>
         </segment>
       </unit>
       <unit id="2237" name="note_constexpr_memory_leak">
         <segment>
           <source>allocation performed here was not deallocated%plural{0:|: (along with %0 other memory leak%s0)}0</source>
-          <target></target>
+          <target>allocation performed here was not deallocated%plural{0:|: (along with ${arg0} other memory leak%s0)}0</target>
         </segment>
       </unit>
       <unit id="2238" name="note_constexpr_modify_const_type">
         <segment>
           <source>modification of object of const-qualified type %0 is not allowed in a constant expression</source>
-          <target></target>
+          <target>modification of object of const-qualified type ${arg0} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2239" name="note_constexpr_modify_global">
         <segment>
           <source>a constant expression cannot modify an object that is visible outside that expression</source>
-          <target></target>
+          <target>a constant expression cannot modify an object that is visible outside that expression</target>
         </segment>
       </unit>
       <unit id="2240" name="note_constexpr_negative_shift">
         <segment>
           <source>negative shift count %0</source>
-          <target></target>
+          <target>negative shift count ${arg0}</target>
         </segment>
       </unit>
       <unit id="2241" name="note_constexpr_new">
         <segment>
           <source>dynamic memory allocation is not permitted in constant expressions until C++20</source>
-          <target></target>
+          <target>dynamic memory allocation is not permitted in constant expressions until C++20</target>
         </segment>
       </unit>
       <unit id="2242" name="note_constexpr_new_delete_mismatch">
         <segment>
           <source>%plural{2:'delete' used to delete pointer to object allocated with 'std::allocator&lt;...&gt;::allocate'|:%select{non-array delete|array delete|'std::allocator&lt;...&gt;::deallocate'}0 used to delete pointer to %select{array object of type %2|non-array object of type %2|object allocated with 'new'}0}1</source>
-          <target></target>
+          <target>%plural{2:'delete' used to delete pointer to object allocated with 'std::allocator&lt;...&gt;::allocate'|:%select{non-array delete|array delete|'std::allocator&lt;...&gt;::deallocate'}0 used to delete pointer to %select{array object of type ${arg2}|non-array object of type ${arg2}|object allocated with 'new'}0}1</target>
         </segment>
       </unit>
       <unit id="2243" name="note_constexpr_new_exceeds_limits">
         <segment>
           <source>cannot allocate array; evaluated array bound %0 exceeds the limit (%1); use '-fconstexpr-steps' to increase this limit</source>
-          <target></target>
+          <target>cannot allocate array; evaluated array bound ${arg0} exceeds the limit (${arg1}); use '-fconstexpr-steps' to increase this limit</target>
         </segment>
       </unit>
       <unit id="2244" name="note_constexpr_new_negative">
         <segment>
           <source>cannot allocate array; evaluated array bound %0 is negative</source>
-          <target></target>
+          <target>cannot allocate array; evaluated array bound ${arg0} is negative</target>
         </segment>
       </unit>
       <unit id="2245" name="note_constexpr_new_non_replaceable">
         <segment>
           <source>call to %select{placement|class-specific}0 %1</source>
-          <target></target>
+          <target>call to %select{placement|class-specific}0 ${arg1}</target>
         </segment>
       </unit>
       <unit id="2246" name="note_constexpr_new_not_complete_object_type">
         <segment>
           <source>cannot allocate memory of %select{incomplete|function}0 type %1</source>
-          <target></target>
+          <target>cannot allocate memory of %select{incomplete|function}0 type ${arg1}</target>
         </segment>
       </unit>
       <unit id="2247" name="note_constexpr_new_placement">
         <segment>
           <source>this placement new expression is not yet supported in constant expressions</source>
-          <target></target>
+          <target>this placement new expression is not yet supported in constant expressions</target>
         </segment>
       </unit>
       <unit id="2248" name="note_constexpr_new_too_large">
         <segment>
           <source>cannot allocate array; evaluated array bound %0 is too large</source>
-          <target></target>
+          <target>cannot allocate array; evaluated array bound ${arg0} is too large</target>
         </segment>
       </unit>
       <unit id="2249" name="note_constexpr_new_too_small">
         <segment>
           <source>cannot allocate array; evaluated array bound %0 is too small to hold %1 explicitly initialized elements</source>
-          <target></target>
+          <target>cannot allocate array; evaluated array bound ${arg0} is too small to hold ${arg1} explicitly initialized elements</target>
         </segment>
       </unit>
       <unit id="2250" name="note_constexpr_new_untyped">
         <segment>
           <source>cannot allocate untyped memory in a constant expression; use 'std::allocator&lt;T&gt;::allocate' to allocate memory of type 'T'</source>
-          <target></target>
+          <target>cannot allocate untyped memory in a constant expression; use 'std::allocator&lt;T&gt;::allocate' to allocate memory of type 'T'</target>
         </segment>
       </unit>
       <unit id="2251" name="note_constexpr_no_return">
         <segment>
           <source>control reached end of constexpr function</source>
-          <target></target>
+          <target>control reached end of constexpr function</target>
         </segment>
       </unit>
       <unit id="2252" name="note_constexpr_non_const_vectorelements">
         <segment>
           <source>cannot determine number of elements for sizeless vectors in a constant expression</source>
-          <target></target>
+          <target>cannot determine number of elements for sizeless vectors in a constant expression</target>
         </segment>
       </unit>
       <unit id="2253" name="note_constexpr_non_global">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{temporary|%3}2 is not a constant expression</source>
-          <target></target>
+          <target>%select{pointer|reference}0 to %select{|subobject of }1%select{temporary|${arg3}}2 is not a constant expression</target>
         </segment>
       </unit>
       <unit id="2254" name="note_constexpr_nonliteral">
         <segment>
           <source>non-literal type %0 cannot be used in a constant expression</source>
-          <target></target>
+          <target>non-literal type ${arg0} cannot be used in a constant expression</target>
         </segment>
       </unit>
       <unit id="2255" name="note_constexpr_not_static">
         <segment>
           <source>address of non-static constexpr variable %0 may differ on each invocation of the enclosing function; add 'static' to give it a constant address</source>
-          <target></target>
+          <target>address of non-static constexpr variable ${arg0} may differ on each invocation of the enclosing function; add 'static' to give it a constant address</target>
         </segment>
       </unit>
       <unit id="2256" name="note_constexpr_null_callee">
         <segment>
           <source>'%0' evaluates to a null function pointer</source>
-          <target></target>
+          <target>'${arg0}' evaluates to a null function pointer</target>
         </segment>
       </unit>
       <unit id="2257" name="note_constexpr_null_subobject">
         <segment>
           <source>cannot %select{access base class of|access derived class of|access field of|access array element of|perform pointer arithmetic on|access real component of|access imaginary component of}0 null pointer</source>
-          <target></target>
+          <target>cannot %select{access base class of|access derived class of|access field of|access array element of|perform pointer arithmetic on|access real component of|access imaginary component of}0 null pointer</target>
         </segment>
       </unit>
       <unit id="2258" name="note_constexpr_operator_new_bad_size">
         <segment>
           <source>allocated size %0 is not a multiple of size %1 of element type %2</source>
-          <target></target>
+          <target>allocated size ${arg0} is not a multiple of size ${arg1} of element type ${arg2}</target>
         </segment>
       </unit>
       <unit id="2259" name="note_constexpr_overflow">
         <segment>
           <source>value %0 is outside the range of representable values of type %1</source>
-          <target></target>
+          <target>value ${arg0} is outside the range of representable values of type ${arg1}</target>
         </segment>
       </unit>
       <unit id="2260" name="note_constexpr_past_end">
         <segment>
           <source>dereferenced pointer past the end of %select{|subobject of }0%select{temporary|%2}1 is not a constant expression</source>
-          <target></target>
+          <target>dereferenced pointer past the end of %select{|subobject of }0%select{temporary|${arg2}}1 is not a constant expression</target>
         </segment>
       </unit>
       <unit id="2261" name="note_constexpr_past_end_subobject">
         <segment>
           <source>cannot %select{access base class of|access derived class of|access field of|access array element of|ERROR|access real component of|access imaginary component of}0 pointer past the end of object</source>
-          <target></target>
+          <target>cannot %select{access base class of|access derived class of|access field of|access array element of|ERROR|access real component of|access imaginary component of}0 pointer past the end of object</target>
         </segment>
       </unit>
       <unit id="2262" name="note_constexpr_placement_new_wrong_type">
         <segment>
           <source>placement new would change type of storage from %0 to %1</source>
-          <target></target>
+          <target>placement new would change type of storage from ${arg0} to ${arg1}</target>
         </segment>
       </unit>
       <unit id="2263" name="note_constexpr_pointer_comparison_base_classes">
         <segment>
           <source>comparison of addresses of subobjects of different base classes has unspecified value</source>
-          <target></target>
+          <target>comparison of addresses of subobjects of different base classes has unspecified value</target>
         </segment>
       </unit>
       <unit id="2264" name="note_constexpr_pointer_comparison_base_field">
         <segment>
           <source>comparison of address of base class subobject %0 of class %1 to field %2 has unspecified value</source>
-          <target></target>
+          <target>comparison of address of base class subobject ${arg0} of class ${arg1} to field ${arg2} has unspecified value</target>
         </segment>
       </unit>
       <unit id="2265" name="note_constexpr_pointer_comparison_differing_access">
         <segment>
           <source>comparison of address of fields %0 and %2 of %4 with differing access specifiers (%1 vs %3) has unspecified value</source>
-          <target></target>
+          <target>comparison of address of fields ${arg0} and ${arg2} of ${arg4} with differing access specifiers (${arg1} vs ${arg3}) has unspecified value</target>
         </segment>
       </unit>
       <unit id="2266" name="note_constexpr_pointer_comparison_past_end">
         <segment>
           <source>comparison against pointer '%0' that points past the end of a complete object has unspecified value</source>
-          <target></target>
+          <target>comparison against pointer '${arg0}' that points past the end of a complete object has unspecified value</target>
         </segment>
       </unit>
       <unit id="2267" name="note_constexpr_pointer_comparison_unspecified">
         <segment>
           <source>comparison between '%0' and '%1' has unspecified value</source>
-          <target></target>
+          <target>comparison between '${arg0}' and '${arg1}' has unspecified value</target>
         </segment>
       </unit>
       <unit id="2268" name="note_constexpr_pointer_comparison_zero_sized">
         <segment>
           <source>comparison of pointers '%0' and '%1' to unrelated zero-sized objects</source>
-          <target></target>
+          <target>comparison of pointers '${arg0}' and '${arg1}' to unrelated zero-sized objects</target>
         </segment>
       </unit>
       <unit id="2269" name="note_constexpr_pointer_constant_comparison">
         <segment>
           <source>comparison of numeric address '%0' with pointer '%1' can only be performed at runtime</source>
-          <target></target>
+          <target>comparison of numeric address '${arg0}' with pointer '${arg1}' can only be performed at runtime</target>
         </segment>
       </unit>
       <unit id="2270" name="note_constexpr_pointer_subtraction_not_same_array">
         <segment>
           <source>subtracted pointers are not elements of the same array</source>
-          <target></target>
+          <target>subtracted pointers are not elements of the same array</target>
         </segment>
       </unit>
       <unit id="2271" name="note_constexpr_pointer_subtraction_zero_size">
         <segment>
           <source>subtraction of pointers to type %0 of zero size</source>
-          <target></target>
+          <target>subtraction of pointers to type ${arg0} of zero size</target>
         </segment>
       </unit>
       <unit id="2272" name="note_constexpr_pointer_weak_comparison">
         <segment>
           <source>comparison against address of weak declaration '%0' can only be performed at runtime</source>
-          <target></target>
+          <target>comparison against address of weak declaration '${arg0}' can only be performed at runtime</target>
         </segment>
       </unit>
       <unit id="2273" name="note_constexpr_polymorphic_unknown_dynamic_type">
         <segment>
           <source>%select{|||||virtual function called on|dynamic_cast applied to|typeid applied to|construction of|destruction of}0 object '%1' whose dynamic type is not constant</source>
-          <target></target>
+          <target>%select{|||||virtual function called on|dynamic_cast applied to|typeid applied to|construction of|destruction of}0 object '${arg1}' whose dynamic type is not constant</target>
         </segment>
       </unit>
       <unit id="2274" name="note_constexpr_pseudo_destructor">
         <segment>
           <source>pseudo-destructor call is not permitted in constant expressions until C++20</source>
-          <target></target>
+          <target>pseudo-destructor call is not permitted in constant expressions until C++20</target>
         </segment>
       </unit>
       <unit id="2275" name="note_constexpr_pure_virtual_call">
         <segment>
           <source>pure virtual function %q0 called</source>
-          <target></target>
+          <target>pure virtual function %q0 called</target>
         </segment>
       </unit>
       <unit id="2276" name="note_constexpr_static_local">
         <segment>
           <source>control flows through the definition of a %select{static|thread_local}0 variable</source>
-          <target></target>
+          <target>control flows through the definition of a %select{static|thread_local}0 variable</target>
         </segment>
       </unit>
       <unit id="2277" name="note_constexpr_step_limit_exceeded">
         <segment>
           <source>constexpr evaluation hit maximum step limit; possible infinite loop?</source>
-          <target></target>
+          <target>constexpr evaluation hit maximum step limit; possible infinite loop?</target>
         </segment>
       </unit>
       <unit id="2278" name="note_constexpr_stmt_expr_unsupported">
         <segment>
           <source>this use of statement expressions is not supported in a constant expression</source>
-          <target></target>
+          <target>this use of statement expressions is not supported in a constant expression</target>
         </segment>
       </unit>
       <unit id="2279" name="note_constexpr_subobject_declared_here">
         <segment>
           <source>subobject declared here</source>
-          <target></target>
+          <target>subobject declared here</target>
         </segment>
       </unit>
       <unit id="2280" name="note_constexpr_temporary_here">
         <segment>
           <source>temporary created here</source>
-          <target></target>
+          <target>temporary created here</target>
         </segment>
       </unit>
       <unit id="2281" name="note_constexpr_this">
         <segment>
           <source>%select{|implicit }0use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function</source>
-          <target></target>
+          <target>%select{|implicit }0use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function</target>
         </segment>
       </unit>
       <unit id="2282" name="note_constexpr_typeid_polymorphic">
         <segment>
           <source>typeid applied to expression of polymorphic type %0 is not allowed in a constant expression in C++ standards before C++20</source>
-          <target></target>
+          <target>typeid applied to expression of polymorphic type ${arg0} is not allowed in a constant expression in C++ standards before C++20</target>
         </segment>
       </unit>
       <unit id="2283" name="note_constexpr_uninitialized">
         <segment>
           <source>subobject %select{of type |}0%1 is not initialized</source>
-          <target></target>
+          <target>subobject %select{of type |}0${arg1} is not initialized</target>
         </segment>
       </unit>
       <unit id="2284" name="note_constexpr_uninitialized_base">
         <segment>
           <source>constructor of base class %0 is not called</source>
-          <target></target>
+          <target>constructor of base class ${arg0} is not called</target>
         </segment>
       </unit>
       <unit id="2285" name="note_constexpr_union_member_change_during_init">
         <segment>
           <source>assignment would change active union member during the initialization of a different member of the same union</source>
-          <target></target>
+          <target>assignment would change active union member during the initialization of a different member of the same union</target>
         </segment>
       </unit>
       <unit id="2286" name="note_constexpr_unsized_array_indexed">
         <segment>
           <source>indexing of array without known bound is not allowed in a constant expression</source>
-          <target></target>
+          <target>indexing of array without known bound is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2287" name="note_constexpr_unsupported_destruction">
         <segment>
           <source>non-trivial destruction of type %0 in a constant expression is not supported</source>
-          <target></target>
+          <target>non-trivial destruction of type ${arg0} in a constant expression is not supported</target>
         </segment>
       </unit>
       <unit id="2288" name="note_constexpr_unsupported_flexible_array">
         <segment>
           <source>flexible array initialization is not yet supported</source>
-          <target></target>
+          <target>flexible array initialization is not yet supported</target>
         </segment>
       </unit>
       <unit id="2289" name="note_constexpr_unsupported_layout">
         <segment>
           <source>type %0 has unexpected layout</source>
-          <target></target>
+          <target>type ${arg0} has unexpected layout</target>
         </segment>
       </unit>
       <unit id="2290" name="note_constexpr_unsupported_temporary_nontrivial_dtor">
         <segment>
           <source>non-trivial destruction of lifetime-extended temporary with type %0 used in the result of a constant expression is not yet supported</source>
-          <target></target>
+          <target>non-trivial destruction of lifetime-extended temporary with type ${arg0} used in the result of a constant expression is not yet supported</target>
         </segment>
       </unit>
       <unit id="2291" name="note_constexpr_unsupported_unsized_array">
         <segment>
           <source>array-to-pointer decay of array member without known bound is not supported</source>
-          <target></target>
+          <target>array-to-pointer decay of array member without known bound is not supported</target>
         </segment>
       </unit>
       <unit id="2292" name="note_constexpr_use_uninit_reference">
         <segment>
           <source>use of reference outside its lifetime is not allowed in a constant expression</source>
-          <target></target>
+          <target>use of reference outside its lifetime is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="2293" name="note_constexpr_var_init_non_constant">
         <segment>
           <source>initializer of %0 is not a constant expression</source>
-          <target></target>
+          <target>initializer of ${arg0} is not a constant expression</target>
         </segment>
       </unit>
       <unit id="2294" name="note_constexpr_var_init_unknown">
         <segment>
           <source>initializer of %0 is unknown</source>
-          <target></target>
+          <target>initializer of ${arg0} is unknown</target>
         </segment>
       </unit>
       <unit id="2295" name="note_constexpr_var_init_weak">
         <segment>
           <source>initializer of weak variable %0 is not considered constant because it may be different at runtime</source>
-          <target></target>
+          <target>initializer of weak variable ${arg0} is not considered constant because it may be different at runtime</target>
         </segment>
       </unit>
       <unit id="2296" name="note_constexpr_virtual_base">
         <segment>
           <source>cannot construct object of type %0 with virtual base class in a constant expression</source>
-          <target></target>
+          <target>cannot construct object of type ${arg0} with virtual base class in a constant expression</target>
         </segment>
       </unit>
       <unit id="2297" name="note_constexpr_virtual_call">
         <segment>
           <source>cannot evaluate call to virtual function in a constant expression in C++ standards before C++20</source>
-          <target></target>
+          <target>cannot evaluate call to virtual function in a constant expression in C++ standards before C++20</target>
         </segment>
       </unit>
       <unit id="2298" name="note_constexpr_void_comparison">
         <segment>
           <source>comparison between unequal pointers to void has unspecified result</source>
-          <target></target>
+          <target>comparison between unequal pointers to void has unspecified result</target>
         </segment>
       </unit>
       <unit id="2299" name="note_constexpr_volatile_here">
         <segment>
           <source>volatile %select{temporary created|object declared|member declared}0 here</source>
-          <target></target>
+          <target>volatile %select{temporary created|object declared|member declared}0 here</target>
         </segment>
       </unit>
       <unit id="2300" name="note_covariant_thunk">
         <segment>
           <source>covariant thunk required by %0</source>
-          <target></target>
+          <target>covariant thunk required by ${arg0}</target>
         </segment>
       </unit>
       <unit id="2301" name="note_expr_divide_by_zero">
         <segment>
           <source>division by zero</source>
-          <target></target>
+          <target>division by zero</target>
         </segment>
       </unit>
       <unit id="2302" name="note_first_module_difference">
         <segment>
           <source>in first definition, possible difference is here</source>
-          <target></target>
+          <target>in first definition, possible difference is here</target>
         </segment>
       </unit>
       <unit id="2303" name="note_module_odr_violation_definition_data">
         <segment>
           <source>but in '%0' found %select{%2 base %plural{1:class|:classes}2|%2 virtual base %plural{1:class|:classes}2|%ordinal2 base class with different type %3|%ordinal2 %select{non-virtual|virtual}3 base class %4|%ordinal2 base class %3 with %select{public|protected|private|no}4 access specifier}1</source>
-          <target></target>
+          <target>but in '${arg0}' found %select{${arg2} base %plural{1:class|:classes}2|${arg2} virtual base %plural{1:class|:classes}2|%ordinal2 base class with different type ${arg3}|%ordinal2 %select{non-virtual|virtual}3 base class ${arg4}|%ordinal2 base class ${arg3} with %select{public|protected|private|no}4 access specifier}1</target>
         </segment>
       </unit>
       <unit id="2304" name="note_module_odr_violation_different_definitions">
         <segment>
           <source>definition in module '%0' is here</source>
-          <target></target>
+          <target>definition in module '${arg0}' is here</target>
         </segment>
       </unit>
       <unit id="2305" name="note_module_odr_violation_enum">
         <segment>
           <source>but in '%0' found %select{enum that is %select{not scoped|scoped}2|enum scoped with keyword %select{struct|class}2|enum %select{without|with}2 specified type|enum with specified type %2|enum with %2 element%s2|%ordinal2 element has name %3|%ordinal2 element %3 %select{has|does not have}4 an initializer|%ordinal2 element %3 has different initializer|}1</source>
-          <target></target>
+          <target>but in '${arg0}' found %select{enum that is %select{not scoped|scoped}2|enum scoped with keyword %select{struct|class}2|enum %select{without|with}2 specified type|enum with specified type ${arg2}|enum with ${arg2} element%s2|%ordinal2 element has name ${arg3}|%ordinal2 element ${arg3} %select{has|does not have}4 an initializer|%ordinal2 element ${arg3} has different initializer|}1</target>
         </segment>
       </unit>
       <unit id="2306" name="note_module_odr_violation_field">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{field %3|field %3 with type %4|%select{non-|}4bitfield %3|bitfield %3 with different width expression|%select{non-|}4mutable field %3|field %3 with %select{no|an}4 initializer|field %3 with a different initializer}2</source>
-          <target></target>
+          <target>but in %select{'${arg1}'|definition here}0 found %select{field ${arg3}|field ${arg3} with type ${arg4}|%select{non-|}4bitfield ${arg3}|bitfield ${arg3} with different width expression|%select{non-|}4mutable field ${arg3}|field ${arg3} with %select{no|an}4 initializer|field ${arg3} with a different initializer}2</target>
         </segment>
       </unit>
       <unit id="2307" name="note_module_odr_violation_function">
         <segment>
           <source>but in '%0' found %select{different return type %2|%ordinal2 parameter with name %3|%ordinal2 parameter with type %3%select{| decayed from %5}4|%ordinal2 parameter with%select{out|}3 a default argument|%ordinal2 parameter with a different default argument|a different body}1</source>
-          <target></target>
+          <target>but in '${arg0}' found %select{different return type ${arg2}|%ordinal2 parameter with name ${arg3}|%ordinal2 parameter with type ${arg3}%select{| decayed from ${arg5}}4|%ordinal2 parameter with%select{out|}3 a default argument|%ordinal2 parameter with a different default argument|a different body}1</target>
         </segment>
       </unit>
       <unit id="2308" name="note_module_odr_violation_method_params">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{%select{method %4|constructor|destructor}3 that has %5 parameter%s5|%select{method %4|constructor|destructor}3 with %ordinal5 parameter of type %6%select{| decayed from %8}7|%select{method %4|constructor|destructor}3 with %ordinal5 parameter named %6}2</source>
-          <target></target>
+          <target>but in %select{'${arg1}'|definition here}0 found %select{%select{method ${arg4}|constructor|destructor}3 that has ${arg5} parameter%s5|%select{method ${arg4}|constructor|destructor}3 with %ordinal5 parameter of type ${arg6}%select{| decayed from ${arg8}}7|%select{method ${arg4}|constructor|destructor}3 with %ordinal5 parameter named ${arg6}}2</target>
         </segment>
       </unit>
       <unit id="2309" name="note_module_odr_violation_mismatch_decl">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}2</source>
-          <target></target>
+          <target>but in %select{'${arg1}'|definition here}0 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}2</target>
         </segment>
       </unit>
       <unit id="2310" name="note_module_odr_violation_mismatch_decl_unknown">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{||||different static assert|different field|different method|different type alias|different typedef|different data member|different friend declaration|different function template|different method|different instance variable|different property|another unexpected decl}2</source>
-          <target></target>
+          <target>but in %select{'${arg1}'|definition here}0 found %select{||||different static assert|different field|different method|different type alias|different typedef|different data member|different friend declaration|different function template|different method|different instance variable|different property|another unexpected decl}2</target>
         </segment>
       </unit>
       <unit id="2311" name="note_module_odr_violation_objc_interface">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{%select{no super class|super class with type %4}3|instance variable '%3' access control is %select{|@private|@protected|@public|@package}4}2</source>
-          <target></target>
+          <target>but in %select{'${arg1}'|definition here}0 found %select{%select{no super class|super class with type ${arg4}}3|instance variable '${arg3}' access control is %select{|@private|@protected|@public|@package}4}2</target>
         </segment>
       </unit>
       <unit id="2312" name="note_module_odr_violation_objc_method">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{method %3 with different return type %4|method %3 as %select{class|instance}4 method|%select{no|'required'|'optional'}3 method control|method %3 with %select{no designated initializer|designated initializer}4|%select{regular|direct}4 method %3|different method %3}2</source>
-          <target></target>
+          <target>but in %select{'${arg1}'|definition here}0 found %select{method ${arg3} with different return type ${arg4}|method ${arg3} as %select{class|instance}4 method|%select{no|'required'|'optional'}3 method control|method ${arg3} with %select{no designated initializer|designated initializer}4|%select{regular|direct}4 method ${arg3}|different method ${arg3}}2</target>
         </segment>
       </unit>
       <unit id="2313" name="note_module_odr_violation_objc_property">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{property %3|property %3 with type %4|%select{no|'required'|'optional'}3 property control|property %3 with different '%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}4' attribute}2</source>
-          <target></target>
+          <target>but in %select{'${arg1}'|definition here}0 found %select{property ${arg3}|property ${arg3} with type ${arg4}|%select{no|'required'|'optional'}3 property control|property ${arg3} with different '%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}4' attribute}2</target>
         </segment>
       </unit>
       <unit id="2314" name="note_module_odr_violation_record">
         <segment>
           <source>but in '%0' found %select{static assert with different condition|static assert with different message|static assert with %select{|no }2message|%select{method %3|constructor|destructor}2|%select{method %3|constructor|destructor}2 is %select{not deleted|deleted}4|%select{method %3|constructor|destructor}2 is %select{not defaulted|defaulted}4|%select{method %3|constructor|destructor}2 is %select{|pure }4%select{not virtual|virtual}5|%select{method %3|constructor|destructor}2 is %select{not static|static}4|%select{method %3|constructor|destructor}2 is %select{not volatile|volatile}4|%select{method %3|constructor|destructor}2 is %select{not const|const}4|%select{method %3|constructor|destructor}2 is %select{not inline|inline}4|%select{method %3|constructor|destructor}2 with %ordinal4 parameter with%select{out|}5 a default argument|%select{method %3|constructor|destructor}2 with %ordinal4 parameter with a different default argument|%select{method %3|constructor|destructor}2 with %select{no |}4template arguments|%select{method %3|constructor|destructor}2 with %4 template argument%s4|%select{method %3|constructor|destructor}2 with %4 for %ordinal5 template argument|%select{method %3|constructor|destructor}2 with %select{no body|body}4|%select{method %3|constructor|destructor}2 with different body|friend %select{class|function}2|friend %2|friend function %2|function template %2 with %3 template parameter%s3|function template %2 with %ordinal3 template paramter being a %select{type|non-type|template}4 template parameter|function template %2 with %ordinal3 template parameter %select{with no name|named %5}4|function template %2 with %ordinal3 template parameter with %select{no |}4default argument|function template %2 with %ordinal3 template parameter with default argument %4|function template %2 with %ordinal3 template parameter with different type|function template %2 with %ordinal3 template parameter %select{not |}4being a template parameter pack|}1</source>
-          <target></target>
+          <target>but in '${arg0}' found %select{static assert with different condition|static assert with different message|static assert with %select{|no }2message|%select{method ${arg3}|constructor|destructor}2|%select{method ${arg3}|constructor|destructor}2 is %select{not deleted|deleted}4|%select{method ${arg3}|constructor|destructor}2 is %select{not defaulted|defaulted}4|%select{method ${arg3}|constructor|destructor}2 is %select{|pure }4%select{not virtual|virtual}5|%select{method ${arg3}|constructor|destructor}2 is %select{not static|static}4|%select{method ${arg3}|constructor|destructor}2 is %select{not volatile|volatile}4|%select{method ${arg3}|constructor|destructor}2 is %select{not const|const}4|%select{method ${arg3}|constructor|destructor}2 is %select{not inline|inline}4|%select{method ${arg3}|constructor|destructor}2 with %ordinal4 parameter with%select{out|}5 a default argument|%select{method ${arg3}|constructor|destructor}2 with %ordinal4 parameter with a different default argument|%select{method ${arg3}|constructor|destructor}2 with %select{no |}4template arguments|%select{method ${arg3}|constructor|destructor}2 with ${arg4} template argument%s4|%select{method ${arg3}|constructor|destructor}2 with ${arg4} for %ordinal5 template argument|%select{method ${arg3}|constructor|destructor}2 with %select{no body|body}4|%select{method ${arg3}|constructor|destructor}2 with different body|friend %select{class|function}2|friend ${arg2}|friend function ${arg2}|function template ${arg2} with ${arg3} template parameter%s3|function template ${arg2} with %ordinal3 template paramter being a %select{type|non-type|template}4 template parameter|function template ${arg2} with %ordinal3 template parameter %select{with no name|named ${arg5}}4|function template ${arg2} with %ordinal3 template parameter with %select{no |}4default argument|function template ${arg2} with %ordinal3 template parameter with default argument ${arg4}|function template ${arg2} with %ordinal3 template parameter with different type|function template ${arg2} with %ordinal3 template parameter %select{not |}4being a template parameter pack|}1</target>
         </segment>
       </unit>
       <unit id="2315" name="note_module_odr_violation_referenced_protocols">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{%3 referenced %plural{1:protocol|:protocols}3|%ordinal3 referenced protocol with different name %4}2</source>
-          <target></target>
+          <target>but in %select{'${arg1}'|definition here}0 found %select{${arg3} referenced %plural{1:protocol|:protocols}3|%ordinal3 referenced protocol with different name ${arg4}}2</target>
         </segment>
       </unit>
       <unit id="2316" name="note_module_odr_violation_template_parameter">
         <segment>
           <source>but in '%0' found %select{unnamed template parameter %2|template parameter %3|template parameter with %select{no |}2default argument|template parameter with different default argument}1</source>
-          <target></target>
+          <target>but in '${arg0}' found %select{unnamed template parameter ${arg2}|template parameter ${arg3}|template parameter with %select{no |}2default argument|template parameter with different default argument}1</target>
         </segment>
       </unit>
       <unit id="2317" name="note_module_odr_violation_typedef">
         <segment>
           <source>but in '%0' found %select{%select{typedef|type alias}2 name %3|%select{typedef|type alias}2 %3 with different underlying type %4}1</source>
-          <target></target>
+          <target>but in '${arg0}' found %select{%select{typedef|type alias}2 name ${arg3}|%select{typedef|type alias}2 ${arg3} with different underlying type ${arg4}}1</target>
         </segment>
       </unit>
       <unit id="2318" name="note_module_odr_violation_variable">
         <segment>
           <source>but in '%0' found %select{data member with name %2|data member %2 with different type %3|data member %2 with%select{out|}3 an initializer|data member %2 with a different initializer|data member %2 %select{is constexpr|is not constexpr}3}1</source>
-          <target></target>
+          <target>but in '${arg0}' found %select{data member with name ${arg2}|data member ${arg2} with different type ${arg3}|data member ${arg2} with%select{out|}3 an initializer|data member ${arg2} with a different initializer|data member ${arg2} %select{is constexpr|is not constexpr}3}1</target>
         </segment>
       </unit>
       <unit id="2319" name="note_non_null_attribute_failed">
         <segment>
           <source>null passed to a callee that requires a non-null argument</source>
-          <target></target>
+          <target>null passed to a callee that requires a non-null argument</target>
         </segment>
       </unit>
       <unit id="2320" name="note_odr_base">
         <segment>
           <source>class has base type %0</source>
-          <target></target>
+          <target>class has base type ${arg0}</target>
         </segment>
       </unit>
       <unit id="2321" name="note_odr_enumerator">
         <segment>
           <source>enumerator %0 with value %1 here</source>
-          <target></target>
+          <target>enumerator ${arg0} with value ${arg1} here</target>
         </segment>
       </unit>
       <unit id="2322" name="note_odr_field">
         <segment>
           <source>field %0 has type %1 here</source>
-          <target></target>
+          <target>field ${arg0} has type ${arg1} here</target>
         </segment>
       </unit>
       <unit id="2323" name="note_odr_field_name">
         <segment>
           <source>field has name %0 here</source>
-          <target></target>
+          <target>field has name ${arg0} here</target>
         </segment>
       </unit>
       <unit id="2324" name="note_odr_friend">
         <segment>
           <source>friend declared here</source>
-          <target></target>
+          <target>friend declared here</target>
         </segment>
       </unit>
       <unit id="2325" name="note_odr_missing_base">
         <segment>
           <source>no corresponding base class here</source>
-          <target></target>
+          <target>no corresponding base class here</target>
         </segment>
       </unit>
       <unit id="2326" name="note_odr_missing_enumerator">
         <segment>
           <source>no corresponding enumerator here</source>
-          <target></target>
+          <target>no corresponding enumerator here</target>
         </segment>
       </unit>
       <unit id="2327" name="note_odr_missing_field">
         <segment>
           <source>no corresponding field here</source>
-          <target></target>
+          <target>no corresponding field here</target>
         </segment>
       </unit>
       <unit id="2328" name="note_odr_missing_friend">
         <segment>
           <source>no corresponding friend here</source>
-          <target></target>
+          <target>no corresponding friend here</target>
         </segment>
       </unit>
       <unit id="2329" name="note_odr_number_of_bases">
         <segment>
           <source>class has %0 base %plural{1:class|:classes}0</source>
-          <target></target>
+          <target>class has ${arg0} base %plural{1:class|:classes}0</target>
         </segment>
       </unit>
       <unit id="2330" name="note_odr_objc_method_here">
         <segment>
           <source>%select{class|instance}0 method %1 also declared here</source>
-          <target></target>
+          <target>%select{class|instance}0 method ${arg1} also declared here</target>
         </segment>
       </unit>
       <unit id="2331" name="note_odr_objc_missing_superclass">
         <segment>
           <source>no corresponding superclass here</source>
-          <target></target>
+          <target>no corresponding superclass here</target>
         </segment>
       </unit>
       <unit id="2332" name="note_odr_objc_property_impl_kind">
         <segment>
           <source>property %0 is implemented with %select{@synthesize|@dynamic}1 here</source>
-          <target></target>
+          <target>property ${arg0} is implemented with %select{@synthesize|@dynamic}1 here</target>
         </segment>
       </unit>
       <unit id="2333" name="note_odr_objc_superclass">
         <segment>
           <source>inherits from superclass %0 here</source>
-          <target></target>
+          <target>inherits from superclass ${arg0} here</target>
         </segment>
       </unit>
       <unit id="2334" name="note_odr_objc_synthesize_ivar_here">
         <segment>
           <source>property is synthesized to ivar %0 here</source>
-          <target></target>
+          <target>property is synthesized to ivar ${arg0} here</target>
         </segment>
       </unit>
       <unit id="2335" name="note_odr_parameter_pack_non_pack">
         <segment>
           <source>%select{parameter|parameter pack}0 declared here</source>
-          <target></target>
+          <target>%select{parameter|parameter pack}0 declared here</target>
         </segment>
       </unit>
       <unit id="2336" name="note_odr_tag_kind_here">
         <segment>
           <source>%0 is a %select{struct|interface|union|class|enum}1 here</source>
-          <target></target>
+          <target>${arg0} is a %select{struct|interface|union|class|enum}1 here</target>
         </segment>
       </unit>
       <unit id="2337" name="note_odr_template_parameter_here">
         <segment>
           <source>template parameter declared here</source>
-          <target></target>
+          <target>template parameter declared here</target>
         </segment>
       </unit>
       <unit id="2338" name="note_odr_template_parameter_list">
         <segment>
           <source>template parameter list also declared here</source>
-          <target></target>
+          <target>template parameter list also declared here</target>
         </segment>
       </unit>
       <unit id="2339" name="note_odr_value_here">
         <segment>
           <source>declared here with type %0</source>
-          <target></target>
+          <target>declared here with type ${arg0}</target>
         </segment>
       </unit>
       <unit id="2340" name="note_odr_virtual_base">
         <segment>
           <source>%select{non-virtual|virtual}0 derivation here</source>
-          <target></target>
+          <target>%select{non-virtual|virtual}0 derivation here</target>
         </segment>
       </unit>
       <unit id="2341" name="note_second_module_difference">
         <segment>
           <source>in second definition, possible difference is here</source>
-          <target></target>
+          <target>in second definition, possible difference is here</target>
         </segment>
       </unit>
       <unit id="2342" name="note_unimplemented_constexpr_lambda_feature_ast">
         <segment>
           <source>unimplemented constexpr lambda feature: %0 (coming soon!)</source>
-          <target></target>
+          <target>unimplemented constexpr lambda feature: ${arg0} (coming soon!)</target>
         </segment>
       </unit>
       <unit id="2343" name="remark_sanitize_address_insert_extra_padding_accepted">
         <segment>
           <source>-fsanitize-address-field-padding applied to %0</source>
-          <target></target>
+          <target>-fsanitize-address-field-padding applied to ${arg0}</target>
         </segment>
       </unit>
       <unit id="2344" name="remark_sanitize_address_insert_extra_padding_rejected">
         <segment>
           <source>-fsanitize-address-field-padding ignored for %0 because it %select{is not C++|is packed|is a union|is trivially copyable|has trivial destructor|is standard layout|is in a ignorelisted file|is ignorelisted}1</source>
-          <target></target>
+          <target>-fsanitize-address-field-padding ignored for ${arg0} because it %select{is not C++|is packed|is a union|is trivially copyable|has trivial destructor|is standard layout|is in a ignorelisted file|is ignorelisted}1</target>
         </segment>
       </unit>
       <unit id="2345" name="warn_constexpr_unscoped_enum_out_of_range">
         <segment>
           <source>integer value %0 is outside the valid range of values [%1, %2] for the enumeration type %3</source>
-          <target></target>
+          <target>integer value ${arg0} is outside the valid range of values [${arg1}, ${arg2}] for the enumeration type ${arg3}</target>
         </segment>
       </unit>
       <unit id="2346" name="warn_fixedpoint_constant_overflow">
         <segment>
           <source>overflow in expression; result is %0 with type %1</source>
-          <target></target>
+          <target>overflow in expression; result is ${arg0} with type ${arg1}</target>
         </segment>
       </unit>
       <unit id="2347" name="warn_integer_constant_overflow">
         <segment>
           <source>overflow in expression; result is %0 with type %1</source>
-          <target></target>
+          <target>overflow in expression; result is ${arg0} with type ${arg1}</target>
         </segment>
       </unit>
       <unit id="2348" name="warn_is_constant_evaluated_always_true_constexpr">
         <segment>
           <source>'%0' will always evaluate to 'true' in a manifestly constant-evaluated expression</source>
-          <target></target>
+          <target>'${arg0}' will always evaluate to 'true' in a manifestly constant-evaluated expression</target>
         </segment>
       </unit>
       <unit id="2349" name="warn_npot_ms_struct">
         <segment>
           <source>ms_struct may not produce Microsoft-compatible layouts with fundamental data types with sizes that aren't a power of two</source>
-          <target></target>
+          <target>ms_struct may not produce Microsoft-compatible layouts with fundamental data types with sizes that aren't a power of two</target>
         </segment>
       </unit>
       <unit id="2350" name="warn_odr_different_num_template_parameters">
         <segment>
           <source>template parameter lists have a different number of parameters (%0 vs %1)</source>
-          <target></target>
+          <target>template parameter lists have a different number of parameters (${arg0} vs ${arg1})</target>
         </segment>
       </unit>
       <unit id="2351" name="warn_odr_different_template_parameter_kind">
         <segment>
           <source>template parameter has different kinds in different translation units</source>
-          <target></target>
+          <target>template parameter has different kinds in different translation units</target>
         </segment>
       </unit>
       <unit id="2352" name="warn_odr_field_type_inconsistent">
         <segment>
           <source>field %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>field ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2353" name="warn_odr_function_type_inconsistent">
         <segment>
           <source>external function %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>external function ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2354" name="warn_odr_ivar_type_inconsistent">
         <segment>
           <source>instance variable %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>instance variable ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2355" name="warn_odr_non_type_parameter_type_inconsistent">
         <segment>
           <source>non-type template parameter declared with incompatible types in different translation units (%0 vs. %1)</source>
-          <target></target>
+          <target>non-type template parameter declared with incompatible types in different translation units (${arg0} vs. ${arg1})</target>
         </segment>
       </unit>
       <unit id="2356" name="warn_odr_objc_method_num_params_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has a different number of parameters in different translation units (%2 vs. %3)</source>
-          <target></target>
+          <target>%select{class|instance}0 method ${arg1} has a different number of parameters in different translation units (${arg2} vs. ${arg3})</target>
         </segment>
       </unit>
       <unit id="2357" name="warn_odr_objc_method_param_type_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has a parameter with a different types in different translation units (%2 vs. %3)</source>
-          <target></target>
+          <target>%select{class|instance}0 method ${arg1} has a parameter with a different types in different translation units (${arg2} vs. ${arg3})</target>
         </segment>
       </unit>
       <unit id="2358" name="warn_odr_objc_method_result_type_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 has incompatible result types in different translation units (%2 vs. %3)</source>
-          <target></target>
+          <target>%select{class|instance}0 method ${arg1} has incompatible result types in different translation units (${arg2} vs. ${arg3})</target>
         </segment>
       </unit>
       <unit id="2359" name="warn_odr_objc_method_variadic_inconsistent">
         <segment>
           <source>%select{class|instance}0 method %1 is variadic in one translation unit and not variadic in another</source>
-          <target></target>
+          <target>%select{class|instance}0 method ${arg1} is variadic in one translation unit and not variadic in another</target>
         </segment>
       </unit>
       <unit id="2360" name="warn_odr_objc_property_impl_kind_inconsistent">
         <segment>
           <source>property %0 is implemented with %select{@synthesize|@dynamic}1 in one translation but %select{@dynamic|@synthesize}1 in another translation unit</source>
-          <target></target>
+          <target>property ${arg0} is implemented with %select{@synthesize|@dynamic}1 in one translation but %select{@dynamic|@synthesize}1 in another translation unit</target>
         </segment>
       </unit>
       <unit id="2361" name="warn_odr_objc_property_type_inconsistent">
         <segment>
           <source>property %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>property ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2362" name="warn_odr_objc_superclass_inconsistent">
         <segment>
           <source>class %0 has incompatible superclasses</source>
-          <target></target>
+          <target>class ${arg0} has incompatible superclasses</target>
         </segment>
       </unit>
       <unit id="2363" name="warn_odr_objc_synthesize_ivar_inconsistent">
         <segment>
           <source>property %0 is synthesized to different ivars in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>property ${arg0} is synthesized to different ivars in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2364" name="warn_odr_parameter_pack_non_pack">
         <segment>
           <source>parameter kind mismatch; parameter is %select{not a|a}0 parameter pack</source>
-          <target></target>
+          <target>parameter kind mismatch; parameter is %select{not a|a}0 parameter pack</target>
         </segment>
       </unit>
       <unit id="2365" name="warn_odr_tag_type_inconsistent">
         <segment>
           <source>type %0 has incompatible definitions in different translation units</source>
-          <target></target>
+          <target>type ${arg0} has incompatible definitions in different translation units</target>
         </segment>
       </unit>
       <unit id="2366" name="warn_odr_variable_multiple_def">
         <segment>
           <source>external variable %0 defined in multiple translation units</source>
-          <target></target>
+          <target>external variable ${arg0} defined in multiple translation units</target>
         </segment>
       </unit>
       <unit id="2367" name="warn_odr_variable_type_inconsistent">
         <segment>
           <source>external variable %0 declared with incompatible types in different translation units (%1 vs. %2)</source>
-          <target></target>
+          <target>external variable ${arg0} declared with incompatible types in different translation units (${arg1} vs. ${arg2})</target>
         </segment>
       </unit>
       <unit id="2368" name="warn_padded_struct_anon_bitfield">
         <segment>
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align anonymous bit-field</source>
-          <target></target>
+          <target>padding %select{struct|interface|class}0 ${arg1} with ${arg2} %select{byte|bit}3%s2 to align anonymous bit-field</target>
         </segment>
       </unit>
       <unit id="2369" name="warn_padded_struct_anon_field">
         <segment>
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align anonymous field</source>
-          <target></target>
+          <target>padding %select{struct|interface|class}0 ${arg1} with ${arg2} %select{byte|bit}3%s2 to align anonymous field</target>
         </segment>
       </unit>
       <unit id="2370" name="warn_padded_struct_bitfield">
         <segment>
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align %4</source>
-          <target></target>
+          <target>padding %select{struct|interface|class}0 ${arg1} with ${arg2} %select{byte|bit}3%s2 to align ${arg4}</target>
         </segment>
       </unit>
       <unit id="2371" name="warn_padded_struct_field">
         <segment>
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align %4</source>
-          <target></target>
+          <target>padding %select{struct|interface|class}0 ${arg1} with ${arg2} %select{byte|bit}3%s2 to align ${arg4}</target>
         </segment>
       </unit>
       <unit id="2372" name="warn_padded_struct_size">
         <segment>
           <source>padding size of %0 with %1 %select{byte|bit}2%s1 to alignment boundary</source>
-          <target></target>
+          <target>padding size of ${arg0} with ${arg1} %select{byte|bit}2%s1 to alignment boundary</target>
         </segment>
       </unit>
       <unit id="2373" name="warn_unaligned_access">
         <segment>
           <source>field %1 within %0 is less aligned than %2 and is usually due to %0 being packed, which can lead to unaligned accesses</source>
-          <target></target>
+          <target>field ${arg1} within ${arg0} is less aligned than ${arg2} and is usually due to ${arg0} being packed, which can lead to unaligned accesses</target>
         </segment>
       </unit>
       <unit id="2374" name="warn_unnecessary_packed">
         <segment>
           <source>packed attribute is unnecessary for %0</source>
-          <target></target>
+          <target>packed attribute is unnecessary for ${arg0}</target>
         </segment>
       </unit>
       <unit id="2375" name="warn_unpacked_field">
         <segment>
           <source>not packing field %0 as it is non-POD for the purposes of layout</source>
-          <target></target>
+          <target>not packing field ${arg0} as it is non-POD for the purposes of layout</target>
         </segment>
       </unit>
     </group>
