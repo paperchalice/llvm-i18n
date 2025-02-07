@@ -42,6 +42,8 @@ class Converter:
       tgt = unit.find('./xliff:segment/xliff:target', ns)
       if tgt.text:
         string_list.append(process_str(tgt.text))
+      else:
+        string_list.append("")
     return string_list
 
 def handle_component(component):
