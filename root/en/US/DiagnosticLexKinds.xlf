@@ -338,7 +338,7 @@
       <unit id="1076" name="err_mmap_expected_rbrace">
         <segment>
           <source>expected '}'</source>
-          <target>expected '}'</target>
+          <target>expected '\}'</target>
         </segment>
       </unit>
       <unit id="1077" name="err_mmap_expected_rsquare">
@@ -1934,7 +1934,7 @@
       <unit id="1342" name="warn_delimited_ucn_empty">
         <segment>
           <source>empty delimited universal character name; treating as '\' '%0' '{' '}'</source>
-          <target>empty delimited universal character name; treating as '\' '${arg0}' '\{' '}'</target>
+          <target>empty delimited universal character name; treating as '\' '${arg0}' '\{' '\}'</target>
         </segment>
       </unit>
       <unit id="1343" name="warn_delimited_ucn_incomplete">

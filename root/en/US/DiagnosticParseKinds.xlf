@@ -854,7 +854,7 @@
       <unit id="1562" name="err_extraneous_closing_brace">
         <segment>
           <source>extraneous closing brace ('}')</source>
-          <target>extraneous closing brace ('}')</target>
+          <target>extraneous closing brace ('\}')</target>
         </segment>
       </unit>
       <unit id="1563" name="err_extraneous_rparen_in_condition">
@@ -1178,7 +1178,7 @@
       <unit id="1616" name="err_missing_end_of_definition">
         <segment>
           <source>missing '}' at end of definition of %q0</source>
-          <target>missing '}' at end of definition of {$arg0}</target>
+          <target>missing '\}' at end of definition of {$arg0}</target>
         </segment>
       </unit>
       <unit id="1617" name="err_missing_param">
@@ -1418,7 +1418,7 @@
       <unit id="1656" name="err_objc_unexpected_atend">
         <segment>
           <source>'@end' appears where closing brace '}' is expected</source>
-          <target>'@end' appears where closing brace '}' is expected</target>
+          <target>'@end' appears where closing brace '\}' is expected</target>
         </segment>
       </unit>
       <unit id="1657" name="err_objc_unexpected_attr">
@@ -2072,7 +2072,7 @@
       <unit id="1765" name="err_requires_expr_simple_requirement_noexcept">
         <segment>
           <source>'noexcept' can only be used in a compound requirement (with '{' '}' around the expression)</source>
-          <target>'noexcept' can only be used in a compound requirement (with '\{' '}' around the expression)</target>
+          <target>'noexcept' can only be used in a compound requirement (with '\{' '\}' around the expression)</target>
         </segment>
       </unit>
       <unit id="1766" name="err_right_angle_bracket_equal_needs_space">

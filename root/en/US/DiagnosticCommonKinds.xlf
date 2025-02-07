@@ -728,7 +728,7 @@
       <unit id="120" name="note_type_being_defined">
         <segment>
           <source>definition of %0 is not complete until the closing '}'</source>
-          <target>definition of ${arg0} is not complete until the closing '}'</target>
+          <target>definition of ${arg0} is not complete until the closing '\}'</target>
         </segment>
       </unit>
       <unit id="121" name="note_using">
