@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" srcLang="en-US" xsi:schemaLocation="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd" trgLang="en-US">
+  <file id="DiagnosticSerialization" original="clang/Basic/DiagnosticSerializationKinds.inc">
+    <notes>
+      <note appliesTo="source">Automatically generated file, do not edit directly!</note>
+    </notes>
+    <group id="Serialization">
+      <unit id="901" name="err_ast_file_invalid">
+        <segment>
+          <source>file '%1' is not a valid precompiled %select{PCH|module|AST}0 file: %2</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="902" name="err_ast_file_not_found">
+        <segment>
+          <source>%select{PCH|module|AST}0 file '%1' not found%select{|: %3}2</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="903" name="err_ast_file_out_of_date">
+        <segment>
+          <source>%select{PCH|module|AST}0 file '%1' is out of date and needs to be rebuilt%select{|: %3}2</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="904" name="err_failed_to_find_module_file">
+        <segment>
+          <source>failed to find module file for module '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="905" name="err_fe_ast_file_modified">
+        <segment>
+          <source>file '%0' has been modified since the %select{precompiled header|module file|AST file}1 '%2' was built: %select{size|mtime|content}3 changed%select{| (was %5, now %6)}4</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="906" name="err_fe_not_a_pch_file">
+        <segment>
+          <source>input is not a PCH file: '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="907" name="err_fe_pch_file_overridden">
+        <segment>
+          <source>file '%0' from the precompiled header has been overridden</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="908" name="err_fe_pch_malformed">
+        <segment>
+          <source>malformed or corrupted AST file: '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="909" name="err_fe_pch_malformed_block">
+        <segment>
+          <source>malformed block record in PCH file: '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="910" name="err_fe_unable_to_read_pch_file">
+        <segment>
+          <source>unable to read PCH file %0: '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="911" name="err_imported_module_modmap_changed">
+        <segment>
+          <source>module '%0' %select{in|imported by}4 AST file '%1' found in a different module map file (%2) than when the importing AST file was built (%3)</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="912" name="err_imported_module_not_found">
+        <segment>
+          <source>module '%0' in AST file '%1' %select{(imported by AST file '%2') |}4is not defined in any loaded module map file; maybe you need to load '%3'?</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="913" name="err_imported_module_relocated">
+        <segment>
+          <source>module '%0' was built in directory '%1' but now resides in directory '%2'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="914" name="err_module_different_modmap">
+        <segment>
+          <source>module '%0' %select{uses|does not use}1 additional module map '%2'%select{| not}1 used when the module was built</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="915" name="err_module_file_conflict">
+        <segment>
+          <source>module '%0' is defined in both '%1' and '%2'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="916" name="err_module_file_missing_top_level_submodule">
+        <segment>
+          <source>module file '%0' is missing its top-level submodule</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="917" name="err_module_file_not_module">
+        <segment>
+          <source>AST file '%0' was not built as a module</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="918" name="err_module_no_size_mtime_for_header">
+        <segment>
+          <source>cannot emit module %0: %select{size|mtime}1 must be explicitly specified for missing header file "%2"</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="919" name="err_module_odr_violation_different_instantiations">
+        <segment>
+          <source>instantiation of %q0 is different in different modules</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="920" name="err_module_odr_violation_missing_decl">
+        <segment>
+          <source>%q0 from module '%1' is not present in definition of %q2%select{ in module '%4'| provided earlier}3</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="921" name="err_module_unable_to_hash_content">
+        <segment>
+          <source>failed to hash content for '%0' because memory buffer cannot be retrieved</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="922" name="err_pch_diagopt_mismatch">
+        <segment>
+          <source>%0 is currently enabled, but was not in the PCH file</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="923" name="err_pch_different_branch">
+        <segment>
+          <source>PCH file built from a different branch (%0) than the compiler (%1)</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="924" name="err_pch_langopt_mismatch">
+        <segment>
+          <source>%0 was %select{disabled|enabled}1 in PCH file but is currently %select{disabled|enabled}2</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="925" name="err_pch_langopt_value_mismatch">
+        <segment>
+          <source>%0 differs in PCH file vs. current file</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="926" name="err_pch_macro_def_conflict">
+        <segment>
+          <source>definition of macro '%0' differs between the precompiled header ('%1') and the command line ('%2')</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="927" name="err_pch_macro_def_undef">
+        <segment>
+          <source>macro '%0' was %select{defined|undef'd}1 in the precompiled header but %select{undef'd|defined}1 on the command line</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="928" name="err_pch_modulecache_mismatch">
+        <segment>
+          <source>PCH was compiled with module cache path '%0', but the path is currently '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="929" name="err_pch_pp_detailed_record">
+        <segment>
+          <source>%select{command line contains|precompiled header was built with}0 '-detailed-preprocessing-record' but %select{precompiled header was not built with it|it is not present on the command line}0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="930" name="err_pch_targetopt_feature_mismatch">
+        <segment>
+          <source>%select{AST file was|current translation unit is}0 compiled with the target feature '%1' but the %select{current translation unit is|AST file was}0 not</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="931" name="err_pch_targetopt_mismatch">
+        <segment>
+          <source>PCH file was compiled for the %0 '%1' but the current translation unit is being compiled for target '%2'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="932" name="err_pch_undef">
+        <segment>
+          <source>%select{command line contains|precompiled header was built with}0 '-undef' but %select{precompiled header was not built with it|it is not present on the command line}0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="933" name="err_pch_version_too_new">
+        <segment>
+          <source>PCH file uses a newer PCH format that cannot be read</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="934" name="err_pch_version_too_old">
+        <segment>
+          <source>PCH file uses an older PCH format that is no longer supported</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="935" name="err_pch_with_compiler_errors">
+        <segment>
+          <source>PCH file contains compiler errors</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="936" name="note_imported_by_pch_module_not_found">
+        <segment>
+          <source>consider adding '%0' to the header search path</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="937" name="note_module_cache_path">
+        <segment>
+          <source>after modifying system headers, please delete the module cache at '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="938" name="note_module_file_conflict">
+        <segment>
+          <source>this is generally caused by modules with the same name found in multiple paths</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="939" name="note_module_file_imported_by">
+        <segment>
+          <source>imported by %select{|module '%2' in }1'%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="940" name="note_module_odr_violation_no_possible_decls">
+        <segment>
+          <source>definition has no member %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="941" name="note_module_odr_violation_possible_decl">
+        <segment>
+          <source>declaration of %0 does not match</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="942" name="note_pch_rebuild_required">
+        <segment>
+          <source>please rebuild precompiled header '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="943" name="note_pch_required_by">
+        <segment>
+          <source>'%0' required by '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="944" name="note_pch_vfsoverlay_empty">
+        <segment>
+          <source>%select{PCH|current translation unit}0 has no VFS overlays</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="945" name="note_pch_vfsoverlay_files">
+        <segment>
+          <source>%select{PCH|current translation unit}0 has the following VFS overlays:
+%1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="946" name="remark_module_import">
+        <segment>
+          <source>importing module '%0'%select{| into '%3'}2 from '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="947" name="warn_duplicate_module_file_extension">
+        <segment>
+          <source>duplicate module file extension block name '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="948" name="warn_module_system_bit_conflict">
+        <segment>
+          <source>module file '%0' was validated as a system module and is now being imported as a non-system module; any difference in diagnostic options will be ignored</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="949" name="warn_module_uses_date_time">
+        <segment>
+          <source>%select{precompiled header|module}0 uses __DATE__ or __TIME__</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="950" name="warn_pch_vfsoverlay_mismatch">
+        <segment>
+          <source>PCH was compiled with different VFS overlay files than are currently in use</source>
+          <target></target>
+        </segment>
+      </unit>
+    </group>
+  </file>
+</xliff>

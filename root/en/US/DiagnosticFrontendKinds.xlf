@@ -1,0 +1,898 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" srcLang="en-US" xsi:schemaLocation="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd" trgLang="en-US">
+  <file id="DiagnosticFrontend" original="clang/Basic/DiagnosticFrontendKinds.inc">
+    <notes>
+      <note appliesTo="source">Automatically generated file, do not edit directly!</note>
+    </notes>
+    <group id="Frontend">
+      <unit id="701" name="err_alias_to_common">
+        <segment>
+          <source>alias to a variable in a common section is not allowed</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="702" name="err_alias_to_undefined">
+        <segment>
+          <source>%select{alias|ifunc}0 must point to a defined %select{variable or |}1function</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="703" name="err_ast_action_on_llvm_ir">
+        <segment>
+          <source>cannot apply AST actions to LLVM IR file '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="704" name="err_avx_calling_convention">
+        <segment>
+          <source>AVX vector %select{return|argument}0 of type %1 without '%2' enabled changes the ABI</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="705" name="err_builtin_needs_feature">
+        <segment>
+          <source>%0 needs target feature %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="706" name="err_cyclic_alias">
+        <segment>
+          <source>%select{alias|ifunc}0 definition is part of a cycle</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="707" name="err_duplicate_mangled_name">
+        <segment>
+          <source>definition with same mangled name '%0' as another definition</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="708" name="err_extract_api_ignores_file_not_found">
+        <segment>
+          <source>file '%0' specified by '--extract-api-ignores=' not found</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="709" name="err_fe_action_not_available">
+        <segment>
+          <source>action %0 not compiled in</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="710" name="err_fe_backend_error_attr">
+        <segment>
+          <source>call to '%0' declared with 'error' attribute: %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="711" name="err_fe_backend_frame_larger_than">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="712" name="err_fe_backend_plugin">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="713" name="err_fe_backend_resource_limit">
+        <segment>
+          <source>%0 (%1) exceeds limit (%2) in '%3'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="714" name="err_fe_backend_unsupported">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="715" name="err_fe_dependency_file_requires_MT">
+        <segment>
+          <source>-dependency-file requires at least one -MT or -MQ option</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="716" name="err_fe_error_backend">
+        <segment>
+          <source>error in backend: %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="717" name="err_fe_error_opening">
+        <segment>
+          <source>error opening '%0': %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="718" name="err_fe_error_reading">
+        <segment>
+          <source>error reading '%0': %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="719" name="err_fe_error_reading_stdin">
+        <segment>
+          <source>error reading stdin: %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="720" name="err_fe_expected_clang_command">
+        <segment>
+          <source>expected a clang compiler command</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="721" name="err_fe_expected_compiler_job">
+        <segment>
+          <source>unable to handle compilation, expected exactly one compiler job in '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="722" name="err_fe_inline_asm">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="723" name="err_fe_invalid_alignment">
+        <segment>
+          <source>invalid value '%1' in '%0'; alignment must be a power of 2</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="724" name="err_fe_invalid_code_complete_file">
+        <segment>
+          <source>cannot locate code-completion file %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="725" name="err_fe_invalid_exception_model">
+        <segment>
+          <source>invalid exception model '%select{none|sjlj|seh|dwarf|wasm}0' for target '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="726" name="err_fe_invalid_multiple_actions">
+        <segment>
+          <source>'%0' action ignored; '%1' action specified previously</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="727" name="err_fe_invalid_plugin_name">
+        <segment>
+          <source>unable to find plugin '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="728" name="err_fe_invalid_source_date_epoch">
+        <segment>
+          <source>environment variable 'SOURCE_DATE_EPOCH' ('%0') must be a non-negative decimal integer &lt;= %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="729" name="err_fe_linking_module">
+        <segment>
+          <source>cannot link module '%0': %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="730" name="err_fe_no_pch_in_dir">
+        <segment>
+          <source>no suitable precompiled header file found in directory '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="731" name="err_fe_remap_missing_from_file">
+        <segment>
+          <source>could not remap from missing file '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="732" name="err_fe_remap_missing_to_file">
+        <segment>
+          <source>could not remap file '%0' to the contents of file '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="733" name="err_fe_source_mgr">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="734" name="err_fe_unable_to_create_target">
+        <segment>
+          <source>unable to create target: '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="735" name="err_fe_unable_to_interface_with_target">
+        <segment>
+          <source>unable to interface with target machine</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="736" name="err_fe_unable_to_load_basic_block_sections_file">
+        <segment>
+          <source>unable to load basic block sections function list: '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="737" name="err_fe_unable_to_load_pch">
+        <segment>
+          <source>unable to load PCH file</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="738" name="err_fe_unable_to_load_plugin">
+        <segment>
+          <source>unable to load plugin '%0': '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="739" name="err_fe_unable_to_open_output">
+        <segment>
+          <source>unable to open output file '%0': '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="740" name="err_file_is_not_module">
+        <segment>
+          <source>file '%0' is not a module file</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="741" name="err_function_always_inline_attribute_mismatch">
+        <segment>
+          <source>always_inline function %1 and its caller %0 have mismatching %2 attributes</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="742" name="err_function_always_inline_new_za">
+        <segment>
+          <source>always_inline function %0 has new za state</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="743" name="err_function_needs_feature">
+        <segment>
+          <source>always_inline function %1 requires target feature '%2', but would be inlined into function %0 that is compiled without support for '%2'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="744" name="err_hidden_visibility_dllexport">
+        <segment>
+          <source>hidden visibility cannot be applied to 'dllexport' declaration</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="745" name="err_ifunc_resolver_return">
+        <segment>
+          <source>ifunc resolver function must return a pointer</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="746" name="err_incompatible_fp_eval_method_options">
+        <segment>
+          <source>option 'ffp-eval-method' cannot be used with option %select{'fapprox-func'|'mreassociate'|'freciprocal'}0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="747" name="err_invalid_vfs_overlay">
+        <segment>
+          <source>invalid virtual filesystem overlay file '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="748" name="err_missing_module">
+        <segment>
+          <source>no module named '%0' declared in module map file '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="749" name="err_missing_module_name">
+        <segment>
+          <source>no module name provided; specify one with -fmodule-name=</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="750" name="err_missing_vfs_overlay_file">
+        <segment>
+          <source>virtual filesystem overlay file '%0' not found</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="751" name="err_module_build_requires_fmodules">
+        <segment>
+          <source>module compilation requires '-fmodules'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="752" name="err_module_cannot_create_includes">
+        <segment>
+          <source>cannot create includes file for module %0: %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="753" name="err_module_header_file_not_found">
+        <segment>
+          <source>module header file '%0' not found</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="754" name="err_module_interface_requires_cpp_modules">
+        <segment>
+          <source>module interface compilation requires '-std=c++20'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="755" name="err_module_map_not_found">
+        <segment>
+          <source>module map file '%0' not found</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="756" name="err_modules_embed_file_not_found">
+        <segment>
+          <source>file '%0' specified by '-fmodules-embed-file=' not found</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="757" name="err_no_submodule">
+        <segment>
+          <source>no submodule named %0 in module '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="758" name="err_no_submodule_suggest">
+        <segment>
+          <source>no submodule named %0 in module '%1'; did you mean '%2'?</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="759" name="err_non_default_visibility_dllimport">
+        <segment>
+          <source>non-default visibility cannot be applied to 'dllimport' declaration</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="760" name="err_relocatable_without_isysroot">
+        <segment>
+          <source>must specify system root with -isysroot when building a relocatable PCH file</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="761" name="err_target_unsupported_type_for_abi">
+        <segment>
+          <source>%0 requires %1 type support, but ABI '%2' does not support it</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="762" name="err_test_module_file_extension_version">
+        <segment>
+          <source>test module file extension '%0' has different version (%1.%2) than expected (%3.%4)</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="763" name="err_verify_ambiguous_marker">
+        <segment>
+          <source>reference to marker '%0' is ambiguous</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="764" name="err_verify_inconsistent_diags">
+        <segment>
+          <source>'%0' diagnostics %select{expected|seen}1 but not %select{seen|expected}1: %2</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="765" name="err_verify_invalid_content">
+        <segment>
+          <source>invalid expected %0: %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="766" name="err_verify_invalid_no_diags">
+        <segment>
+          <source>%select{expected|'%0-no-diagnostics'}1 directive cannot follow %select{'%0-no-diagnostics' directive|other expected directives}1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="767" name="err_verify_invalid_range">
+        <segment>
+          <source>invalid range following '-' in expected %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="768" name="err_verify_missing_end">
+        <segment>
+          <source>cannot find end ('%1') of expected %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="769" name="err_verify_missing_file">
+        <segment>
+          <source>file '%0' could not be located in expected %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="770" name="err_verify_missing_line">
+        <segment>
+          <source>missing or invalid line number following '@' in expected %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="771" name="err_verify_missing_regex">
+        <segment>
+          <source>cannot find start of regex ('{{') in %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="772" name="err_verify_missing_start">
+        <segment>
+          <source>cannot find start ('{{') of expected %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="773" name="err_verify_no_directives">
+        <segment>
+          <source>no expected directives found: consider use of '%0-no-diagnostics'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="774" name="err_verify_no_such_marker">
+        <segment>
+          <source>use of undefined marker '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="775" name="err_verify_nonconst_addrspace">
+        <segment>
+          <source>qualifier 'const' is needed for variables in address space '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="776" name="note_alias_mangled_name_alternative">
+        <segment>
+          <source>function by that name is mangled as "%0"</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="777" name="note_alias_requires_mangled_name">
+        <segment>
+          <source>the %select{function or variable|function}0 specified in an %select{alias|ifunc}1 must refer to its mangled name</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="778" name="note_fe_backend_frame_larger_than">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="779" name="note_fe_backend_invalid_loc">
+        <segment>
+          <source>could not determine the original source location for %0:%1:%2</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="780" name="note_fe_backend_plugin">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="781" name="note_fe_backend_resource_limit">
+        <segment>
+          <source>%0 (%1) exceeds limit (%2) in '%3'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="782" name="note_fe_inline_asm">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="783" name="note_fe_inline_asm_here">
+        <segment>
+          <source>instantiated into assembly here</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="784" name="note_fe_linking_module">
+        <segment>
+          <source>linking module '%0': %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="785" name="note_fe_source_mgr">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="786" name="note_fixit_applied">
+        <segment>
+          <source>FIX-IT applied suggested code changes</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="787" name="note_fixit_failed">
+        <segment>
+          <source>FIX-IT unable to apply suggested code changes</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="788" name="note_fixit_in_macro">
+        <segment>
+          <source>FIX-IT unable to apply suggested code changes in a macro</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="789" name="note_fixit_unfixed_error">
+        <segment>
+          <source>FIX-IT detected an error it cannot fix</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="790" name="note_incompatible_analyzer_plugin_api">
+        <segment>
+          <source>current API version is '%0', but plugin was compiled with version '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="791" name="note_module_def_undef_here">
+        <segment>
+          <source>macro was %select{defined|#undef'd}0 here</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="792" name="note_module_import_here">
+        <segment>
+          <source>module imported here</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="793" name="note_private_top_level_defined">
+        <segment>
+          <source>module defined here</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="794" name="note_verify_ambiguous_marker">
+        <segment>
+          <source>ambiguous marker '%0' is defined here</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="795" name="remark_fe_backend_optimization_remark">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="796" name="remark_fe_backend_optimization_remark_analysis">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="797" name="remark_fe_backend_optimization_remark_analysis_aliasing">
+        <segment>
+          <source>%0; allow reordering by specifying '#pragma clang loop vectorize(enable)' before the loop; if the arrays will always be independent, specify '#pragma clang loop vectorize(assume_safety)' before the loop or provide the '__restrict__' qualifier with the independent array arguments -- erroneous results will occur if these options are incorrectly applied</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="798" name="remark_fe_backend_optimization_remark_analysis_fpcommute">
+        <segment>
+          <source>%0; allow reordering by specifying '#pragma clang loop vectorize(enable)' before the loop or by providing the compiler option '-ffast-math'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="799" name="remark_fe_backend_optimization_remark_missed">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="800" name="remark_fe_backend_plugin">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="801" name="remark_module_build">
+        <segment>
+          <source>building module '%0' as '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="802" name="remark_module_build_done">
+        <segment>
+          <source>finished building module '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="803" name="remark_module_lock">
+        <segment>
+          <source>locking '%0' to build module '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="804" name="warn_alias_to_weak_alias">
+        <segment>
+          <source>%select{alias|ifunc}2 will always resolve to %0 even if weak definition of %1 is overridden</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="805" name="warn_alias_with_section">
+        <segment>
+          <source>%select{alias|ifunc}1 will not be in section '%0' but in the same section as the %select{aliasee|resolver}2</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="806" name="warn_atomic_op_misaligned">
+        <segment>
+          <source>misaligned atomic operation may incur significant performance penalty; the expected alignment (%0 bytes) exceeds the actual alignment (%1 bytes)</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="807" name="warn_atomic_op_oversized">
+        <segment>
+          <source>large atomic operation may incur significant performance penalty; the access size (%0 bytes) exceeds the max lock-free size (%1  bytes)</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="808" name="warn_avx_calling_convention">
+        <segment>
+          <source>AVX vector %select{return|argument}0 of type %1 without '%2' enabled changes the ABI</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="809" name="warn_eagerly_load_for_standard_cplusplus_modules">
+        <segment>
+          <source>the form '-fmodule-file=&lt;BMI-path&gt;' is deprecated for standard C++ named modules;consider to use '-fmodule-file=&lt;module-name&gt;=&lt;BMI-path&gt;' instead</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="810" name="warn_fe_backend_frame_larger_than">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="811" name="warn_fe_backend_invalid_feature_flag">
+        <segment>
+          <source>feature flag '%0' must start with either '+' to enable the feature or '-' to disable it; flag ignored</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="812" name="warn_fe_backend_optimization_failure">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="813" name="warn_fe_backend_plugin">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="814" name="warn_fe_backend_readonly_feature_flag">
+        <segment>
+          <source>feature flag '%0' is ignored since the feature is read only</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="815" name="warn_fe_backend_resource_limit">
+        <segment>
+          <source>%0 (%1) exceeds limit (%2) in '%3'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="816" name="warn_fe_backend_unsupported">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="817" name="warn_fe_backend_unsupported_fp_exceptions">
+        <segment>
+          <source>overriding currently unsupported use of floating point exceptions on this target</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="818" name="warn_fe_backend_unsupported_fp_rounding">
+        <segment>
+          <source>overriding currently unsupported rounding mode on this target</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="819" name="warn_fe_backend_warning_attr">
+        <segment>
+          <source>call to '%0' declared with 'warning' attribute: %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="820" name="warn_fe_cc_log_diagnostics_failure">
+        <segment>
+          <source>unable to open CC_LOG_DIAGNOSTICS file: %0 (using stderr)</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="821" name="warn_fe_cc_print_header_failure">
+        <segment>
+          <source>unable to open CC_PRINT_HEADERS file: %0 (using stderr)</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="822" name="warn_fe_frame_larger_than">
+        <segment>
+          <source>stack frame size (%0) exceeds limit (%1) in '%2'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="823" name="warn_fe_inline_asm">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="824" name="warn_fe_linking_module">
+        <segment>
+          <source>linking module '%0': %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="825" name="warn_fe_macro_contains_embedded_newline">
+        <segment>
+          <source>macro '%0' contains embedded newline; text after the newline is ignored</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="826" name="warn_fe_override_module">
+        <segment>
+          <source>overriding the module target triple with %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="827" name="warn_fe_serialized_diag_failure">
+        <segment>
+          <source>unable to open file %0 for serializing diagnostics (%1)</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="828" name="warn_fe_serialized_diag_failure_during_finalization">
+        <segment>
+          <source>received warning after diagnostic serialization teardown was underway: %0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="829" name="warn_fe_serialized_diag_merge_failure">
+        <segment>
+          <source>unable to merge a subprocess's serialized diagnostics</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="830" name="warn_fe_source_mgr">
+        <segment>
+          <source>%0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="831" name="warn_fe_unable_to_open_stats_file">
+        <segment>
+          <source>unable to open statistics output file '%0': '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="832" name="warn_fixit_no_changes">
+        <segment>
+          <source>FIX-IT detected errors it could not fix; no output will be generated</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="833" name="warn_function_always_inline_attribute_mismatch">
+        <segment>
+          <source>always_inline function %1 and its caller %0 have mismatching %2 attributes, inlining may change runtime behaviour</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="834" name="warn_incompatible_analyzer_plugin_api">
+        <segment>
+          <source>checker plugin '%0' is not compatible with this version of the analyzer</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="835" name="warn_missing_submodule">
+        <segment>
+          <source>missing submodule '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="836" name="warn_missing_symbol_graph_dir">
+        <segment>
+          <source>missing symbol graph output directory, defaulting to working directory</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="837" name="warn_module_config_macro_undef">
+        <segment>
+          <source>%select{definition|#undef}0 of configuration macro '%1' has no effect on the import of '%2'; pass '%select{-D%1=...|-U%1}0' on the command line to configure the module</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="838" name="warn_module_config_mismatch">
+        <segment>
+          <source>module file %0 cannot be loaded due to a configuration mismatch with the current compilation</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="839" name="warn_no_priv_submodule_use_toplevel">
+        <segment>
+          <source>no submodule named %0 in module '%1'; using top level '%2'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="840" name="warn_option_invalid_ocl_version">
+        <segment>
+          <source>%0 does not support the option '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="841" name="warn_profile_data_misexpect">
+        <segment>
+          <source>potential performance regression from use of __builtin_expect(): annotation was correct on %0 of profiled executions</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="842" name="warn_profile_data_missing">
+        <segment>
+          <source>profile data may be incomplete: of %0 function%s0, %1 %plural{1:has|:have}1 no data</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="843" name="warn_profile_data_out_of_date">
+        <segment>
+          <source>profile data may be out of date: of %0 function%s0, %1 %plural{1:has|:have}1 mismatched data that will be ignored</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="844" name="warn_profile_data_unprofiled">
+        <segment>
+          <source>no profile data available for file "%0"</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="845" name="warn_sync_op_misaligned">
+        <segment>
+          <source>__sync builtin operation must have natural alignment (consider using __atomic)</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="846" name="warn_toc_unsupported_type">
+        <segment>
+          <source>-mtocdata option is ignored for %0 because %1</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="847" name="warn_unknown_diag_option">
+        <segment>
+          <source>unknown %select{warning|remark}0 option '%1'%select{|; did you mean '%3'?}2</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="848" name="warn_unknown_warning_specifier">
+        <segment>
+          <source>unknown %0 warning specifier: '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+    </group>
+  </file>
+</xliff>

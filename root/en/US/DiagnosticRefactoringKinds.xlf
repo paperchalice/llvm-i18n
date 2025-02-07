@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" srcLang="en-US" xsi:schemaLocation="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd" trgLang="en-US">
+  <file id="DiagnosticRefactoring" original="clang/Basic/DiagnosticRefactoringKinds.inc">
+    <notes>
+      <note appliesTo="source">Automatically generated file, do not edit directly!</note>
+    </notes>
+    <group id="Refactoring">
+      <unit id="7221" name="err_refactor_code_outside_of_function">
+        <segment>
+          <source>the selected code is not a part of a function's / method's body</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="7222" name="err_refactor_extract_prohibited_expression">
+        <segment>
+          <source>the selected expression can't be extracted</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="7223" name="err_refactor_extract_simple_expression">
+        <segment>
+          <source>the selected expression is too simple to extract</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="7224" name="err_refactor_no_selection">
+        <segment>
+          <source>refactoring action can't be initiated without a selection</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="7225" name="err_refactor_selection_invalid_ast">
+        <segment>
+          <source>the provided selection does not overlap with the AST nodes of interest</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="7226" name="err_refactor_selection_no_symbol">
+        <segment>
+          <source>there is no symbol at the given location</source>
+          <target></target>
+        </segment>
+      </unit>
+    </group>
+  </file>
+</xliff>
