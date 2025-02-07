@@ -80,7 +80,7 @@
       <unit id="1033" name="err_delimited_escape_missing_brace">
         <segment>
           <source>expected '{' after '\%0' escape sequence</source>
-          <target>expected '{' after '\${arg0}' escape sequence</target>
+          <target>expected '\{' after '\${arg0}' escape sequence</target>
         </segment>
       </unit>
       <unit id="1034" name="err_dep_source_scanner_missing_semi_after_at_import">
@@ -296,13 +296,13 @@
       <unit id="1069" name="err_mmap_expected_lbrace">
         <segment>
           <source>expected '{' to start module '%0'</source>
-          <target>expected '{' to start module '${arg0}'</target>
+          <target>expected '\{' to start module '${arg0}'</target>
         </segment>
       </unit>
       <unit id="1070" name="err_mmap_expected_lbrace_wildcard">
         <segment>
           <source>expected '{' to start inferred submodule</source>
-          <target>expected '{' to start inferred submodule</target>
+          <target>expected '\{' to start inferred submodule</target>
         </segment>
       </unit>
       <unit id="1071" name="err_mmap_expected_library_name">
@@ -1472,7 +1472,7 @@
       <unit id="1265" name="note_mmap_lbrace_match">
         <segment>
           <source>to match this '{'</source>
-          <target>to match this '{'</target>
+          <target>to match this '\{'</target>
         </segment>
       </unit>
       <unit id="1266" name="note_mmap_lsquare_match">
@@ -1934,13 +1934,13 @@
       <unit id="1342" name="warn_delimited_ucn_empty">
         <segment>
           <source>empty delimited universal character name; treating as '\' '%0' '{' '}'</source>
-          <target>empty delimited universal character name; treating as '\' '${arg0}' '{' '}'</target>
+          <target>empty delimited universal character name; treating as '\' '${arg0}' '\{' '}'</target>
         </segment>
       </unit>
       <unit id="1343" name="warn_delimited_ucn_incomplete">
         <segment>
           <source>incomplete delimited universal character name; treating as '\' '%0' '{' identifier</source>
-          <target>incomplete delimited universal character name; treating as '\' '${arg0}' '{' identifier</target>
+          <target>incomplete delimited universal character name; treating as '\' '${arg0}' '\{' identifier</target>
         </segment>
       </unit>
       <unit id="1344" name="warn_deprecated_module_dot_map">

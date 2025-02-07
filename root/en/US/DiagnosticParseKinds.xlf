@@ -578,13 +578,13 @@
       <unit id="1516" name="err_expected_lbrace_after_base_specifiers">
         <segment>
           <source>expected '{' after base class list</source>
-          <target>expected '{' after base class list</target>
+          <target>expected '\{' after base class list</target>
         </segment>
       </unit>
       <unit id="1517" name="err_expected_lbrace_in_compound_literal">
         <segment>
           <source>expected '{' in compound literal</source>
-          <target>expected '{' in compound literal</target>
+          <target>expected '\{' in compound literal</target>
         </segment>
       </unit>
       <unit id="1518" name="err_expected_less_after">
@@ -2072,7 +2072,7 @@
       <unit id="1765" name="err_requires_expr_simple_requirement_noexcept">
         <segment>
           <source>'noexcept' can only be used in a compound requirement (with '{' '}' around the expression)</source>
-          <target>'noexcept' can only be used in a compound requirement (with '{' '}' around the expression)</target>
+          <target>'noexcept' can only be used in a compound requirement (with '\{' '}' around the expression)</target>
         </segment>
       </unit>
       <unit id="1766" name="err_right_angle_bracket_equal_needs_space">
