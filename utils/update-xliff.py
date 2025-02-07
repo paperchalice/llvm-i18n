@@ -47,16 +47,16 @@ class Updater:
     for unit in units:
       group.remove(unit)
     for e in self.enums:
-      units = [u for u in units if u.attrib['name'] == e.spelling]
-      if len(units) == 1:
-        unit = units[0]
+      tu = [u for u in units if u.attrib['name'] == e.spelling]
+      if len(tu) == 1:
+        unit = tu[0]
         unit.attrib['id'] = str(e.value)
         source = unit.find('./xliff:segment/xliff:source', ns)
         if source.text != e.desc:
           source.text = e.desc
           source.attrib['state'] = 'initial'
         group.append(unit)
-      elif len(units) == 0:
+      elif len(tu) == 0:
         unit_attr = {
           'id': str(e.value),
           'name': e.spelling
