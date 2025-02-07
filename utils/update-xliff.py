@@ -52,7 +52,9 @@ class Updater:
         unit = units[0]
         unit.attrib['id'] = str(e.value)
         source = unit.find('./xliff:segment/xliff:source', ns)
-        source.text = e.desc
+        if source.text != e.desc:
+          source.text = e.desc
+          source.attrib['state'] = 'initial'
         group.append(unit)
       elif len(units) == 0:
         unit_attr = {

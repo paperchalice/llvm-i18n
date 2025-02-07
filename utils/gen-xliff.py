@@ -46,7 +46,10 @@ class XmlGenerator:
         'name': e.spelling
       }
       unit = ET.SubElement(group, 'unit', **unit_attr)
-      segment = ET.SubElement(unit, 'segment')
+      segment_attr = {
+        'state': 'initial'
+      }
+      segment = ET.SubElement(unit, 'segment', segment_attr)
       source = ET.SubElement(segment, 'source')
       source.text = e.desc
       ET.SubElement(segment, 'target')
