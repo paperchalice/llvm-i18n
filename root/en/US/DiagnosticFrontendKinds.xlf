@@ -428,13 +428,13 @@
       <unit id="771" name="err_verify_missing_regex">
         <segment>
           <source>cannot find start of regex ('{{') in %0</source>
-          <target>cannot find start of regex ('{{') in {$arg0}</target>
+          <target>cannot find start of regex ('\{\{') in {$arg0}</target>
         </segment>
       </unit>
       <unit id="772" name="err_verify_missing_start">
         <segment>
           <source>cannot find start ('{{') of expected %0</source>
-          <target>cannot find start ('{{') of expected {$arg0}</target>
+          <target>cannot find start ('\{\{') of expected {$arg0}</target>
         </segment>
       </unit>
       <unit id="773" name="err_verify_no_directives">
