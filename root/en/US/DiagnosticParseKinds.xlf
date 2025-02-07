@@ -20,7 +20,7 @@
       <unit id="1423" name="err_acc_invalid_clause">
         <segment>
           <source>invalid OpenACC clause %0</source>
-          <target>invalid OpenACC clause ${arg0}</target>
+          <target>invalid OpenACC clause {$arg0}</target>
         </segment>
       </unit>
       <unit id="1424" name="err_acc_invalid_default_clause_kind">
@@ -32,7 +32,7 @@
       <unit id="1425" name="err_acc_invalid_directive">
         <segment>
           <source>invalid OpenACC directive %select{%1|'%1 %2'}0</source>
-          <target>invalid OpenACC directive %select{${arg1}|'${arg1} ${arg2}'}0</target>
+          <target>invalid OpenACC directive %select{{$arg1}|'{$arg1} {$arg2}'}0</target>
         </segment>
       </unit>
       <unit id="1426" name="err_acc_invalid_open_paren">
@@ -50,7 +50,7 @@
       <unit id="1428" name="err_acc_invalid_tag_kind">
         <segment>
           <source>invalid tag %0 on '%1' %select{directive|clause}2</source>
-          <target>invalid tag ${arg0} on '${arg1}' %select{directive|clause}2</target>
+          <target>invalid tag {$arg0} on '{$arg1}' %select{directive|clause}2</target>
         </segment>
       </unit>
       <unit id="1429" name="err_acc_missing_directive">
@@ -62,7 +62,7 @@
       <unit id="1430" name="err_acc_unexpected_directive">
         <segment>
           <source>unexpected OpenACC directive %select{|'#pragma acc %1'}0</source>
-          <target>unexpected OpenACC directive %select{|'#pragma acc ${arg1}'}0</target>
+          <target>unexpected OpenACC directive %select{|'#pragma acc {$arg1}'}0</target>
         </segment>
       </unit>
       <unit id="1431" name="err_access_specifier_interface">
@@ -104,7 +104,7 @@
       <unit id="1437" name="err_anon_type_definition">
         <segment>
           <source>declaration of anonymous %0 must be a definition</source>
-          <target>declaration of anonymous ${arg0} must be a definition</target>
+          <target>declaration of anonymous {$arg0} must be a definition</target>
         </segment>
       </unit>
       <unit id="1438" name="err_anonymous_enum_bitfield">
@@ -128,7 +128,7 @@
       <unit id="1441" name="err_asm_duplicate_qual">
         <segment>
           <source>duplicate asm qualifier '%0'</source>
-          <target>duplicate asm qualifier '${arg0}'</target>
+          <target>duplicate asm qualifier '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1442" name="err_asm_empty">
@@ -152,7 +152,7 @@
       <unit id="1445" name="err_assume_attr_expects_cond_expr">
         <segment>
           <source>use of this expression in an %0 attribute requires parentheses</source>
-          <target>use of this expression in an ${arg0} attribute requires parentheses</target>
+          <target>use of this expression in an {$arg0} attribute requires parentheses</target>
         </segment>
       </unit>
       <unit id="1446" name="err_at_defs_cxx">
@@ -176,25 +176,25 @@
       <unit id="1449" name="err_attribute_argument_parm_pack_not_supported">
         <segment>
           <source>attribute %0 does not support argument pack expansion</source>
-          <target>attribute ${arg0} does not support argument pack expansion</target>
+          <target>attribute {$arg0} does not support argument pack expansion</target>
         </segment>
       </unit>
       <unit id="1450" name="err_attribute_not_import_attr">
         <segment>
           <source>%0 attribute cannot be applied to a module import</source>
-          <target>${arg0} attribute cannot be applied to a module import</target>
+          <target>{$arg0} attribute cannot be applied to a module import</target>
         </segment>
       </unit>
       <unit id="1451" name="err_attribute_not_module_attr">
         <segment>
           <source>%0 attribute cannot be applied to a module</source>
-          <target>${arg0} attribute cannot be applied to a module</target>
+          <target>{$arg0} attribute cannot be applied to a module</target>
         </segment>
       </unit>
       <unit id="1452" name="err_attribute_requires_arguments">
         <segment>
           <source>parentheses must be omitted if %0 attribute's argument list is empty</source>
-          <target>parentheses must be omitted if ${arg0} attribute's argument list is empty</target>
+          <target>parentheses must be omitted if {$arg0} attribute's argument list is empty</target>
         </segment>
       </unit>
       <unit id="1453" name="err_attributes_misplaced">
@@ -218,7 +218,7 @@
       <unit id="1456" name="err_avail_query_unrecognized_platform_name">
         <segment>
           <source>unrecognized platform name %0</source>
-          <target>unrecognized platform name ${arg0}</target>
+          <target>unrecognized platform name {$arg0}</target>
         </segment>
       </unit>
       <unit id="1457" name="err_availability_expected_change">
@@ -242,7 +242,7 @@
       <unit id="1460" name="err_availability_query_repeated_platform">
         <segment>
           <source>version for '%0' already specified</source>
-          <target>version for '${arg0}' already specified</target>
+          <target>version for '{$arg0}' already specified</target>
         </segment>
       </unit>
       <unit id="1461" name="err_availability_query_repeated_star">
@@ -260,13 +260,13 @@
       <unit id="1463" name="err_availability_redundant">
         <segment>
           <source>redundant %0 availability change; only the last specified change will be used</source>
-          <target>redundant ${arg0} availability change; only the last specified change will be used</target>
+          <target>redundant {$arg0} availability change; only the last specified change will be used</target>
         </segment>
       </unit>
       <unit id="1464" name="err_availability_unknown_change">
         <segment>
           <source>%0 is not an availability stage; use 'introduced', 'deprecated', or 'obsoleted'</source>
-          <target>${arg0} is not an availability stage; use 'introduced', 'deprecated', or 'obsoleted'</target>
+          <target>{$arg0} is not an availability stage; use 'introduced', 'deprecated', or 'obsoleted'</target>
         </segment>
       </unit>
       <unit id="1465" name="err_bool_redeclaration">
@@ -278,7 +278,7 @@
       <unit id="1466" name="err_bracket_depth_exceeded">
         <segment>
           <source>bracket nesting level exceeded maximum of %0</source>
-          <target>bracket nesting level exceeded maximum of ${arg0}</target>
+          <target>bracket nesting level exceeded maximum of {$arg0}</target>
         </segment>
       </unit>
       <unit id="1467" name="err_brackets_go_after_unqualified_id">
@@ -320,7 +320,7 @@
       <unit id="1473" name="err_constructor_bad_name">
         <segment>
           <source>missing return type for function %0; did you mean the constructor name %1?</source>
-          <target>missing return type for function ${arg0}; did you mean the constructor name ${arg1}?</target>
+          <target>missing return type for function {$arg0}; did you mean the constructor name {$arg1}?</target>
         </segment>
       </unit>
       <unit id="1474" name="err_ctor_init_missing_comma">
@@ -332,13 +332,13 @@
       <unit id="1475" name="err_cxx11_attribute_forbids_arguments">
         <segment>
           <source>attribute %0 cannot have an argument list</source>
-          <target>attribute ${arg0} cannot have an argument list</target>
+          <target>attribute {$arg0} cannot have an argument list</target>
         </segment>
       </unit>
       <unit id="1476" name="err_cxx11_attribute_forbids_ellipsis">
         <segment>
           <source>attribute %0 cannot be used as an attribute pack</source>
-          <target>attribute ${arg0} cannot be used as an attribute pack</target>
+          <target>attribute {$arg0} cannot be used as an attribute pack</target>
         </segment>
       </unit>
       <unit id="1477" name="err_declaration_does_not_declare_param">
@@ -350,7 +350,7 @@
       <unit id="1478" name="err_declspec_after_virtspec">
         <segment>
           <source>'%0' qualifier may not appear after the virtual specifier '%1'</source>
-          <target>'${arg0}' qualifier may not appear after the virtual specifier '${arg1}'</target>
+          <target>'{$arg0}' qualifier may not appear after the virtual specifier '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="1479" name="err_default_arg_unparsed">
@@ -374,7 +374,7 @@
       <unit id="1482" name="err_destructor_template_id">
         <segment>
           <source>destructor name %0 does not refer to a template</source>
-          <target>destructor name ${arg0} does not refer to a template</target>
+          <target>destructor name {$arg0} does not refer to a template</target>
         </segment>
       </unit>
       <unit id="1483" name="err_destructor_tilde_identifier">
@@ -398,7 +398,7 @@
       <unit id="1486" name="err_duplicate_class_virt_specifier">
         <segment>
           <source>class already marked '%0'</source>
-          <target>class already marked '${arg0}'</target>
+          <target>class already marked '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1487" name="err_duplicate_default_assoc">
@@ -410,7 +410,7 @@
       <unit id="1488" name="err_duplicate_virt_specifier">
         <segment>
           <source>class member already marked '%0'</source>
-          <target>class member already marked '${arg0}'</target>
+          <target>class member already marked '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1489" name="err_dynamic_and_noexcept_specification">
@@ -590,13 +590,13 @@
       <unit id="1518" name="err_expected_less_after">
         <segment>
           <source>expected '&lt;' after '%0'</source>
-          <target>expected '&lt;' after '${arg0}'</target>
+          <target>expected '&lt;' after '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1519" name="err_expected_lparen_after">
         <segment>
           <source>expected '(' after '%0'</source>
-          <target>expected '(' after '${arg0}'</target>
+          <target>expected '(' after '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1520" name="err_expected_lparen_after_type">
@@ -614,7 +614,7 @@
       <unit id="1522" name="err_expected_member_name_or_semi_objcxx_keyword">
         <segment>
           <source>expected member name or ';' after declaration specifiers; %0 is a keyword in Objective-C++</source>
-          <target>expected member name or ';' after declaration specifiers; ${arg0} is a keyword in Objective-C++</target>
+          <target>expected member name or ';' after declaration specifiers; {$arg0} is a keyword in Objective-C++</target>
         </segment>
       </unit>
       <unit id="1523" name="err_expected_member_or_base_name">
@@ -650,7 +650,7 @@
       <unit id="1528" name="err_expected_parentheses_around_typename">
         <segment>
           <source>expected parentheses around type name in %0 expression</source>
-          <target>expected parentheses around type name in ${arg0} expression</target>
+          <target>expected parentheses around type name in {$arg0} expression</target>
         </segment>
       </unit>
       <unit id="1529" name="err_expected_property_name">
@@ -662,7 +662,7 @@
       <unit id="1530" name="err_expected_punc">
         <segment>
           <source>expected ')' or ',' after '%0'</source>
-          <target>expected ')' or ',' after '${arg0}'</target>
+          <target>expected ')' or ',' after '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1531" name="err_expected_qualified_after_typename">
@@ -674,7 +674,7 @@
       <unit id="1532" name="err_expected_rparen_after">
         <segment>
           <source>expected ')' after '%0'</source>
-          <target>expected ')' after '${arg0}'</target>
+          <target>expected ')' after '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1533" name="err_expected_selector_for_method">
@@ -716,13 +716,13 @@
       <unit id="1539" name="err_expected_semi_after_static_assert">
         <segment>
           <source>expected ';' after '%0'</source>
-          <target>expected ';' after '${arg0}'</target>
+          <target>expected ';' after '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1540" name="err_expected_semi_after_stmt">
         <segment>
           <source>expected ';' after %0 statement</source>
-          <target>expected ';' after ${arg0} statement</target>
+          <target>expected ';' after {$arg0} statement</target>
         </segment>
       </unit>
       <unit id="1541" name="err_expected_semi_decl_list">
@@ -782,7 +782,7 @@
       <unit id="1550" name="err_expected_token_instead_of_objcxx_keyword">
         <segment>
           <source>expected %0; %1 is a keyword in Objective-C++</source>
-          <target>expected ${arg0}; ${arg1} is a keyword in Objective-C++</target>
+          <target>expected {$arg0}; {$arg1} is a keyword in Objective-C++</target>
         </segment>
       </unit>
       <unit id="1551" name="err_expected_type">
@@ -830,7 +830,7 @@
       <unit id="1558" name="err_explicit_spec_non_template">
         <segment>
           <source>explicit %select{specialization|instantiation}0 of %select{non-|undeclared }3template %1 %2</source>
-          <target>explicit %select{specialization|instantiation}0 of %select{non-|undeclared }3template ${arg1} ${arg2}</target>
+          <target>explicit %select{specialization|instantiation}0 of %select{non-|undeclared }3template {$arg1} {$arg2}</target>
         </segment>
       </unit>
       <unit id="1559" name="err_export_empty">
@@ -842,7 +842,7 @@
       <unit id="1560" name="err_external_source_symbol_duplicate_clause">
         <segment>
           <source>duplicate %0 clause in an 'external_source_symbol' attribute</source>
-          <target>duplicate ${arg0} clause in an 'external_source_symbol' attribute</target>
+          <target>duplicate {$arg0} clause in an 'external_source_symbol' attribute</target>
         </segment>
       </unit>
       <unit id="1561" name="err_external_source_symbol_expected_keyword">
@@ -866,7 +866,7 @@
       <unit id="1564" name="err_extraneous_token_before_semi">
         <segment>
           <source>extraneous '%0' before ';'</source>
-          <target>extraneous '${arg0}' before ';'</target>
+          <target>extraneous '{$arg0}' before ';'</target>
         </segment>
       </unit>
       <unit id="1565" name="err_fold_operator_mismatch">
@@ -932,19 +932,19 @@
       <unit id="1575" name="err_function_is_not_record">
         <segment>
           <source>unexpected %0 in function call; perhaps remove the %0?</source>
-          <target>unexpected ${arg0} in function call; perhaps remove the ${arg0}?</target>
+          <target>unexpected {$arg0} in function call; perhaps remove the {$arg0}?</target>
         </segment>
       </unit>
       <unit id="1576" name="err_function_scope_depth_exceeded">
         <segment>
           <source>function scope depth exceeded maximum of %0</source>
-          <target>function scope depth exceeded maximum of ${arg0}</target>
+          <target>function scope depth exceeded maximum of {$arg0}</target>
         </segment>
       </unit>
       <unit id="1577" name="err_global_asm_qualifier_ignored">
         <segment>
           <source>meaningless '%0' on asm outside function</source>
-          <target>meaningless '${arg0}' on asm outside function</target>
+          <target>meaningless '{$arg0}' on asm outside function</target>
         </segment>
       </unit>
       <unit id="1578" name="err_global_module_introducer_not_at_start">
@@ -962,19 +962,19 @@
       <unit id="1580" name="err_hlsl_packoffset_invalid_reg">
         <segment>
           <source>invalid resource class specifier '%0' for packoffset, expected 'c'</source>
-          <target>invalid resource class specifier '${arg0}' for packoffset, expected 'c'</target>
+          <target>invalid resource class specifier '{$arg0}' for packoffset, expected 'c'</target>
         </segment>
       </unit>
       <unit id="1581" name="err_hlsl_separate_attr_arg_and_number">
         <segment>
           <source>wrong argument format for hlsl attribute, use %0 instead</source>
-          <target>wrong argument format for hlsl attribute, use ${arg0} instead</target>
+          <target>wrong argument format for hlsl attribute, use {$arg0} instead</target>
         </segment>
       </unit>
       <unit id="1582" name="err_hlsl_unsupported_component">
         <segment>
           <source>invalid component '%0' used; expected 'x', 'y', 'z', or 'w'</source>
-          <target>invalid component '${arg0}' used; expected 'x', 'y', 'z', or 'w'</target>
+          <target>invalid component '{$arg0}' used; expected 'x', 'y', 'z', or 'w'</target>
         </segment>
       </unit>
       <unit id="1583" name="err_id_after_template_in_nested_name_spec">
@@ -986,7 +986,7 @@
       <unit id="1584" name="err_illegal_decl_reference_to_reference">
         <segment>
           <source>%0 declared as a reference to a reference</source>
-          <target>${arg0} declared as a reference to a reference</target>
+          <target>{$arg0} declared as a reference to a reference</target>
         </segment>
       </unit>
       <unit id="1585" name="err_illegal_super_cast">
@@ -1016,13 +1016,13 @@
       <unit id="1589" name="err_init_list_bin_op">
         <segment>
           <source>initializer list cannot be used on the %select{left|right}0 hand side of operator '%1'</source>
-          <target>initializer list cannot be used on the %select{left|right}0 hand side of operator '${arg1}'</target>
+          <target>initializer list cannot be used on the %select{left|right}0 hand side of operator '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="1590" name="err_inline_ms_asm_parsing">
         <segment>
           <source>%0</source>
-          <target>${arg0}</target>
+          <target>{$arg0}</target>
         </segment>
       </unit>
       <unit id="1591" name="err_inline_namespace_alias">
@@ -1052,13 +1052,13 @@
       <unit id="1595" name="err_invalid_reference_qualifier_application">
         <segment>
           <source>'%0' qualifier may not be applied to a reference</source>
-          <target>'${arg0}' qualifier may not be applied to a reference</target>
+          <target>'{$arg0}' qualifier may not be applied to a reference</target>
         </segment>
       </unit>
       <unit id="1596" name="err_invalid_token_after_declarator_suggest_equal">
         <segment>
           <source>invalid %0 at end of declaration; did you mean '='?</source>
-          <target>invalid ${arg0} at end of declaration; did you mean '='?</target>
+          <target>invalid {$arg0} at end of declaration; did you mean '='?</target>
         </segment>
       </unit>
       <unit id="1597" name="err_invalid_token_after_toplevel_declarator">
@@ -1070,31 +1070,31 @@
       <unit id="1598" name="err_keyword_as_parameter">
         <segment>
           <source>invalid parameter name: '%0' is a keyword</source>
-          <target>invalid parameter name: '${arg0}' is a keyword</target>
+          <target>invalid parameter name: '{$arg0}' is a keyword</target>
         </segment>
       </unit>
       <unit id="1599" name="err_keyword_misplaced">
         <segment>
           <source>misplaced %0; expected %0 here</source>
-          <target>misplaced ${arg0}; expected ${arg0} here</target>
+          <target>misplaced {$arg0}; expected {$arg0} here</target>
         </segment>
       </unit>
       <unit id="1600" name="err_keyword_not_allowed">
         <segment>
           <source>%0 cannot appear here</source>
-          <target>${arg0} cannot appear here</target>
+          <target>{$arg0} cannot appear here</target>
         </segment>
       </unit>
       <unit id="1601" name="err_keyword_not_import_attr">
         <segment>
           <source>%0 cannot be applied to a module import</source>
-          <target>${arg0} cannot be applied to a module import</target>
+          <target>{$arg0} cannot be applied to a module import</target>
         </segment>
       </unit>
       <unit id="1602" name="err_keyword_not_module_attr">
         <segment>
           <source>%0 cannot be applied to a module</source>
-          <target>${arg0} cannot be applied to a module</target>
+          <target>{$arg0} cannot be applied to a module</target>
         </segment>
       </unit>
       <unit id="1603" name="err_l_square_l_square_not_attribute">
@@ -1154,7 +1154,7 @@
       <unit id="1612" name="err_missing_before_module_end">
         <segment>
           <source>expected %0 at end of module</source>
-          <target>expected ${arg0} at end of module</target>
+          <target>expected {$arg0} at end of module</target>
         </segment>
       </unit>
       <unit id="1613" name="err_missing_catch_finally">
@@ -1172,7 +1172,7 @@
       <unit id="1615" name="err_missing_dependent_template_keyword">
         <segment>
           <source>use 'template' keyword to treat '%0' as a dependent template name</source>
-          <target>use 'template' keyword to treat '${arg0}' as a dependent template name</target>
+          <target>use 'template' keyword to treat '{$arg0}' as a dependent template name</target>
         </segment>
       </unit>
       <unit id="1616" name="err_missing_end_of_definition">
@@ -1196,7 +1196,7 @@
       <unit id="1619" name="err_modifier_expected_colon">
         <segment>
           <source>missing ':' after %0 modifier</source>
-          <target>missing ':' after ${arg0} modifier</target>
+          <target>missing ':' after {$arg0} modifier</target>
         </segment>
       </unit>
       <unit id="1620" name="err_module_expected_ident">
@@ -1232,7 +1232,7 @@
       <unit id="1625" name="err_ms_property_duplicate_accessor">
         <segment>
           <source>property declaration specifies '%0' accessor twice</source>
-          <target>property declaration specifies '${arg0}' accessor twice</target>
+          <target>property declaration specifies '{$arg0}' accessor twice</target>
         </segment>
       </unit>
       <unit id="1626" name="err_ms_property_expected_accessor_name">
@@ -1250,7 +1250,7 @@
       <unit id="1628" name="err_ms_property_expected_equal">
         <segment>
           <source>expected '=' after '%0'</source>
-          <target>expected '=' after '${arg0}'</target>
+          <target>expected '=' after '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1629" name="err_ms_property_has_set_accessor">
@@ -1286,13 +1286,13 @@
       <unit id="1634" name="err_msasm_unable_to_create_target">
         <segment>
           <source>MS-style inline assembly is not available: %0</source>
-          <target>MS-style inline assembly is not available: ${arg0}</target>
+          <target>MS-style inline assembly is not available: {$arg0}</target>
         </segment>
       </unit>
       <unit id="1635" name="err_msasm_unsupported_arch">
         <segment>
           <source>unsupported architecture '%0' for MS-style inline assembly</source>
-          <target>unsupported architecture '${arg0}' for MS-style inline assembly</target>
+          <target>unsupported architecture '{$arg0}' for MS-style inline assembly</target>
         </segment>
       </unit>
       <unit id="1636" name="err_multiple_template_declarators">
@@ -1310,13 +1310,13 @@
       <unit id="1638" name="err_no_matching_param">
         <segment>
           <source>parameter named %0 is missing</source>
-          <target>parameter named ${arg0} is missing</target>
+          <target>parameter named {$arg0} is missing</target>
         </segment>
       </unit>
       <unit id="1639" name="err_nsnumber_nonliteral_unary">
         <segment>
           <source>@%0 must be followed by a number to form an NSNumber object</source>
-          <target>@${arg0} must be followed by a number to form an NSNumber object</target>
+          <target>@{$arg0} must be followed by a number to form an NSNumber object</target>
         </segment>
       </unit>
       <unit id="1640" name="err_objc_concat_string">
@@ -1346,7 +1346,7 @@
       <unit id="1644" name="err_objc_expected_property_attr">
         <segment>
           <source>unknown property attribute %0</source>
-          <target>unknown property attribute ${arg0}</target>
+          <target>unknown property attribute {$arg0}</target>
         </segment>
       </unit>
       <unit id="1645" name="err_objc_expected_selector_for_getter_setter">
@@ -1460,7 +1460,7 @@
       <unit id="1663" name="err_omp_declare_simd_inbranch_notinbranch">
         <segment>
           <source>unexpected '%0' clause, '%1' is specified already</source>
-          <target>unexpected '${arg0}' clause, '${arg1}' is specified already</target>
+          <target>unexpected '{$arg0}' clause, '{$arg1}' is specified already</target>
         </segment>
       </unit>
       <unit id="1664" name="err_omp_declare_target_indirect_device_type">
@@ -1484,19 +1484,19 @@
       <unit id="1667" name="err_omp_declare_target_multiple">
         <segment>
           <source>%0 appears multiple times in clauses on the same declare target directive</source>
-          <target>${arg0} appears multiple times in clauses on the same declare target directive</target>
+          <target>{$arg0} appears multiple times in clauses on the same declare target directive</target>
         </segment>
       </unit>
       <unit id="1668" name="err_omp_declare_target_unexpected_clause">
         <segment>
           <source>unexpected '%0' clause, only %select{'device_type'|'to' or 'link'|'to', 'link' or 'device_type'|'device_type', 'indirect'|'to', 'link', 'device_type' or 'indirect'}1 clauses expected</source>
-          <target>unexpected '${arg0}' clause, only %select{'device_type'|'to' or 'link'|'to', 'link' or 'device_type'|'device_type', 'indirect'|'to', 'link', 'device_type' or 'indirect'}1 clauses expected</target>
+          <target>unexpected '{$arg0}' clause, only %select{'device_type'|'to' or 'link'|'to', 'link' or 'device_type'|'device_type', 'indirect'|'to', 'link', 'device_type' or 'indirect'}1 clauses expected</target>
         </segment>
       </unit>
       <unit id="1669" name="err_omp_declare_target_unexpected_clause_52">
         <segment>
           <source>unexpected '%0' clause, only %select{'device_type'|'enter' or 'link'|'enter', 'link' or 'device_type'|'device_type', 'indirect'|'enter', 'link', 'device_type' or 'indirect'}1 clauses expected</source>
-          <target>unexpected '${arg0}' clause, only %select{'device_type'|'enter' or 'link'|'enter', 'link' or 'device_type'|'device_type', 'indirect'|'enter', 'link', 'device_type' or 'indirect'}1 clauses expected</target>
+          <target>unexpected '{$arg0}' clause, only %select{'device_type'|'enter' or 'link'|'enter', 'link' or 'device_type'|'device_type', 'indirect'|'enter', 'link', 'device_type' or 'indirect'}1 clauses expected</target>
         </segment>
       </unit>
       <unit id="1670" name="err_omp_declare_target_unexpected_enter_clause">
@@ -1526,7 +1526,7 @@
       <unit id="1674" name="err_omp_declare_variant_duplicate_nested_trait">
         <segment>
           <source>nested OpenMP context selector contains duplicated trait '%0' in selector '%1' and set '%2' with different score</source>
-          <target>nested OpenMP context selector contains duplicated trait '${arg0}' in selector '${arg1}' and set '${arg2}' with different score</target>
+          <target>nested OpenMP context selector contains duplicated trait '{$arg0}' in selector '{$arg1}' and set '{$arg2}' with different score</target>
         </segment>
       </unit>
       <unit id="1675" name="err_omp_declare_variant_nested_user_condition">
@@ -1544,31 +1544,31 @@
       <unit id="1677" name="err_omp_deprecate_old_syntax">
         <segment>
           <source>old syntax '%0' on '%1' clause was deprecated, use new syntax '%2'</source>
-          <target>old syntax '${arg0}' on '${arg1}' clause was deprecated, use new syntax '${arg2}'</target>
+          <target>old syntax '{$arg0}' on '{$arg1}' clause was deprecated, use new syntax '{$arg2}'</target>
         </segment>
       </unit>
       <unit id="1678" name="err_omp_expected_clause">
         <segment>
           <source>expected at least one clause on '#pragma omp %0' directive</source>
-          <target>expected at least one clause on '#pragma omp ${arg0}' directive</target>
+          <target>expected at least one clause on '#pragma omp {$arg0}' directive</target>
         </segment>
       </unit>
       <unit id="1679" name="err_omp_expected_clause_argument">
         <segment>
           <source>expected '%0' clause with an argument on '#pragma omp %1' construct</source>
-          <target>expected '${arg0}' clause with an argument on '#pragma omp ${arg1}' construct</target>
+          <target>expected '{$arg0}' clause with an argument on '#pragma omp {$arg1}' construct</target>
         </segment>
       </unit>
       <unit id="1680" name="err_omp_expected_colon">
         <segment>
           <source>missing ':' in %0</source>
-          <target>missing ':' in ${arg0}</target>
+          <target>missing ':' in {$arg0}</target>
         </segment>
       </unit>
       <unit id="1681" name="err_omp_expected_context_selector">
         <segment>
           <source>expected valid context selector in %0</source>
-          <target>expected valid context selector in ${arg0}</target>
+          <target>expected valid context selector in {$arg0}</target>
         </segment>
       </unit>
       <unit id="1682" name="err_omp_expected_equal_in_iterator">
@@ -1592,7 +1592,7 @@
       <unit id="1685" name="err_omp_expected_punc">
         <segment>
           <source>expected ',' or ')' in '%0' %select{clause|directive}1</source>
-          <target>expected ',' or ')' in '${arg0}' %select{clause|directive}1</target>
+          <target>expected ',' or ')' in '{$arg0}' %select{clause|directive}1</target>
         </segment>
       </unit>
       <unit id="1686" name="err_omp_expected_punc_after_interop_mod">
@@ -1616,13 +1616,13 @@
       <unit id="1689" name="err_omp_immediate_directive">
         <segment>
           <source>'#pragma omp %0' %select{|with '%2' clause }1cannot be an immediate substatement</source>
-          <target>'#pragma omp ${arg0}' %select{|with '${arg2}' clause }1cannot be an immediate substatement</target>
+          <target>'#pragma omp {$arg0}' %select{|with '{$arg2}' clause }1cannot be an immediate substatement</target>
         </segment>
       </unit>
       <unit id="1690" name="err_omp_invalid_dsa">
         <segment>
           <source>data-sharing attribute '%0' in '%1' clause requires OpenMP version %2 or above</source>
-          <target>data-sharing attribute '${arg0}' in '${arg1}' clause requires OpenMP version ${arg2} or above</target>
+          <target>data-sharing attribute '{$arg0}' in '{$arg1}' clause requires OpenMP version {$arg2} or above</target>
         </segment>
       </unit>
       <unit id="1691" name="err_omp_map_modifier_specification_list">
@@ -1658,7 +1658,7 @@
       <unit id="1696" name="err_omp_missing_comma">
         <segment>
           <source>missing ',' after %0</source>
-          <target>missing ',' after ${arg0}</target>
+          <target>missing ',' after {$arg0}</target>
         </segment>
       </unit>
       <unit id="1697" name="err_omp_more_one_map_type">
@@ -1682,7 +1682,7 @@
       <unit id="1700" name="err_omp_sink_and_source_iteration_not_allowd">
         <segment>
           <source> '%0 %select{sink:|source:}1' must be with '%select{omp_cur_iteration - 1|omp_cur_iteration}1'</source>
-          <target> '${arg0} %select{sink:|source:}1' must be with '%select{omp_cur_iteration - 1|omp_cur_iteration}1'</target>
+          <target> '{$arg0} %select{sink:|source:}1' must be with '%select{omp_cur_iteration - 1|omp_cur_iteration}1'</target>
         </segment>
       </unit>
       <unit id="1701" name="err_omp_unexpected_append_op">
@@ -1694,19 +1694,19 @@
       <unit id="1702" name="err_omp_unexpected_clause">
         <segment>
           <source>unexpected OpenMP clause '%0' in directive '#pragma omp %1'</source>
-          <target>unexpected OpenMP clause '${arg0}' in directive '#pragma omp ${arg1}'</target>
+          <target>unexpected OpenMP clause '{$arg0}' in directive '#pragma omp {$arg1}'</target>
         </segment>
       </unit>
       <unit id="1703" name="err_omp_unexpected_clause_extension_only">
         <segment>
           <source>OpenMP clause '%0' is only available as extension, use '-fopenmp-extensions'</source>
-          <target>OpenMP clause '${arg0}' is only available as extension, use '-fopenmp-extensions'</target>
+          <target>OpenMP clause '{$arg0}' is only available as extension, use '-fopenmp-extensions'</target>
         </segment>
       </unit>
       <unit id="1704" name="err_omp_unexpected_directive">
         <segment>
           <source>unexpected OpenMP directive %select{|'#pragma omp %1'}0</source>
-          <target>unexpected OpenMP directive %select{|'#pragma omp ${arg1}'}0</target>
+          <target>unexpected OpenMP directive %select{|'#pragma omp {$arg1}'}0</target>
         </segment>
       </unit>
       <unit id="1705" name="err_omp_unexpected_execution_modifier">
@@ -1766,19 +1766,19 @@
       <unit id="1714" name="err_out_of_line_constructor_template_id">
         <segment>
           <source>out-of-line constructor for %0 cannot have template arguments</source>
-          <target>out-of-line constructor for ${arg0} cannot have template arguments</target>
+          <target>out-of-line constructor for {$arg0} cannot have template arguments</target>
         </segment>
       </unit>
       <unit id="1715" name="err_override_control_interface">
         <segment>
           <source>'%0' keyword not permitted with interface types</source>
-          <target>'${arg0}' keyword not permitted with interface types</target>
+          <target>'{$arg0}' keyword not permitted with interface types</target>
         </segment>
       </unit>
       <unit id="1716" name="err_paren_sizeof_parameter_pack">
         <segment>
           <source>missing parentheses around the size of parameter pack %0</source>
-          <target>missing parentheses around the size of parameter pack ${arg0}</target>
+          <target>missing parentheses around the size of parameter pack {$arg0}</target>
         </segment>
       </unit>
       <unit id="1717" name="err_partition_import_outside_module">
@@ -1796,13 +1796,13 @@
       <unit id="1719" name="err_postfix_after_unary_requires_parens">
         <segment>
           <source>expression cannot be followed by a postfix %0 operator; add parentheses</source>
-          <target>expression cannot be followed by a postfix ${arg0} operator; add parentheses</target>
+          <target>expression cannot be followed by a postfix {$arg0} operator; add parentheses</target>
         </segment>
       </unit>
       <unit id="1720" name="err_pragma_attribute_duplicate_subject">
         <segment>
           <source>duplicate attribute subject matcher '%0'</source>
-          <target>duplicate attribute subject matcher '${arg0}'</target>
+          <target>duplicate attribute subject matcher '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1721" name="err_pragma_attribute_expected_attribute">
@@ -1826,7 +1826,7 @@
       <unit id="1724" name="err_pragma_attribute_expected_period">
         <segment>
           <source>expected '.' after pragma attribute namespace %0</source>
-          <target>expected '.' after pragma attribute namespace ${arg0}</target>
+          <target>expected '.' after pragma attribute namespace {$arg0}</target>
         </segment>
       </unit>
       <unit id="1725" name="err_pragma_attribute_expected_push_pop_paren">
@@ -1844,7 +1844,7 @@
       <unit id="1727" name="err_pragma_attribute_expected_subject_sub_identifier">
         <segment>
           <source>expected an identifier that corresponds to an attribute subject matcher sub-rule; '%0' matcher %select{does not support sub-rules|supports the following sub-rules: %2|}1</source>
-          <target>expected an identifier that corresponds to an attribute subject matcher sub-rule; '${arg0}' matcher %select{does not support sub-rules|supports the following sub-rules: ${arg2}|}1</target>
+          <target>expected an identifier that corresponds to an attribute subject matcher sub-rule; '{$arg0}' matcher %select{does not support sub-rules|supports the following sub-rules: {$arg2}|}1</target>
         </segment>
       </unit>
       <unit id="1728" name="err_pragma_attribute_extra_tokens_after_attribute">
@@ -1856,7 +1856,7 @@
       <unit id="1729" name="err_pragma_attribute_invalid_argument">
         <segment>
           <source>unexpected argument '%0' to '#pragma clang attribute'; expected 'push' or 'pop'</source>
-          <target>unexpected argument '${arg0}' to '#pragma clang attribute'; expected 'push' or 'pop'</target>
+          <target>unexpected argument '{$arg0}' to '#pragma clang attribute'; expected 'push' or 'pop'</target>
         </segment>
       </unit>
       <unit id="1730" name="err_pragma_attribute_invalid_subject_set_specifier">
@@ -1874,19 +1874,19 @@
       <unit id="1732" name="err_pragma_attribute_unknown_subject_rule">
         <segment>
           <source>unknown attribute subject rule '%0'</source>
-          <target>unknown attribute subject rule '${arg0}'</target>
+          <target>unknown attribute subject rule '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1733" name="err_pragma_attribute_unknown_subject_sub_rule">
         <segment>
           <source>%select{invalid use of|unknown}2 attribute subject matcher sub-rule '%0'; '%1' matcher %select{does not support sub-rules|supports the following sub-rules: %3}2</source>
-          <target>%select{invalid use of|unknown}2 attribute subject matcher sub-rule '${arg0}'; '${arg1}' matcher %select{does not support sub-rules|supports the following sub-rules: ${arg3}}2</target>
+          <target>%select{invalid use of|unknown}2 attribute subject matcher sub-rule '{$arg0}'; '{$arg1}' matcher %select{does not support sub-rules|supports the following sub-rules: {$arg3}}2</target>
         </segment>
       </unit>
       <unit id="1734" name="err_pragma_attribute_unsupported_attribute">
         <segment>
           <source>attribute %0 is not supported by '#pragma clang attribute'</source>
-          <target>attribute ${arg0} is not supported by '#pragma clang attribute'</target>
+          <target>attribute {$arg0} is not supported by '#pragma clang attribute'</target>
         </segment>
       </unit>
       <unit id="1735" name="err_pragma_cannot_end_force_cuda_host_device">
@@ -1922,19 +1922,19 @@
       <unit id="1740" name="err_pragma_expected_clang_section_name">
         <segment>
           <source>expected one of [bss|data|rodata|text|relro] section kind in '#pragma %0'</source>
-          <target>expected one of [bss|data|rodata|text|relro] section kind in '#pragma ${arg0}'</target>
+          <target>expected one of [bss|data|rodata|text|relro] section kind in '#pragma {$arg0}'</target>
         </segment>
       </unit>
       <unit id="1741" name="err_pragma_expected_integer">
         <segment>
           <source>expected an integer argument in '#pragma %0'</source>
-          <target>expected an integer argument in '#pragma ${arg0}'</target>
+          <target>expected an integer argument in '#pragma {$arg0}'</target>
         </segment>
       </unit>
       <unit id="1742" name="err_pragma_file_or_compound_scope">
         <segment>
           <source>'#pragma %0' can only appear at file scope or at the start of a compound statement</source>
-          <target>'#pragma ${arg0}' can only appear at file scope or at the start of a compound statement</target>
+          <target>'#pragma {$arg0}' can only appear at file scope or at the start of a compound statement</target>
         </segment>
       </unit>
       <unit id="1743" name="err_pragma_float_control_malformed">
@@ -1946,13 +1946,13 @@
       <unit id="1744" name="err_pragma_fp_invalid_argument">
         <segment>
           <source>unexpected argument '%0' to '#pragma clang fp %1'; expected %select{'fast' or 'on' or 'off'|'on' or 'off'|'on' or 'off'|'ignore', 'maytrap' or 'strict'|'source', 'double' or 'extended'}2</source>
-          <target>unexpected argument '${arg0}' to '#pragma clang fp ${arg1}'; expected %select{'fast' or 'on' or 'off'|'on' or 'off'|'on' or 'off'|'ignore', 'maytrap' or 'strict'|'source', 'double' or 'extended'}2</target>
+          <target>unexpected argument '{$arg0}' to '#pragma clang fp {$arg1}'; expected %select{'fast' or 'on' or 'off'|'on' or 'off'|'on' or 'off'|'ignore', 'maytrap' or 'strict'|'source', 'double' or 'extended'}2</target>
         </segment>
       </unit>
       <unit id="1745" name="err_pragma_fp_invalid_option">
         <segment>
           <source>%select{invalid|missing}0 option%select{ %1|}0; expected 'contract', 'reassociate', 'reciprocal', or 'exceptions'</source>
-          <target>%select{invalid|missing}0 option%select{ ${arg1}|}0; expected 'contract', 'reassociate', 'reciprocal', or 'exceptions'</target>
+          <target>%select{invalid|missing}0 option%select{ {$arg1}|}0; expected 'contract', 'reassociate', 'reciprocal', or 'exceptions'</target>
         </segment>
       </unit>
       <unit id="1746" name="err_pragma_invalid_keyword">
@@ -1964,7 +1964,7 @@
       <unit id="1747" name="err_pragma_loop_invalid_option">
         <segment>
           <source>%select{invalid|missing}0 option%select{ %1|}0; expected vectorize, vectorize_width, interleave, interleave_count, unroll, unroll_count, pipeline, pipeline_initiation_interval, vectorize_predicate, or distribute</source>
-          <target>%select{invalid|missing}0 option%select{ ${arg1}|}0; expected vectorize, vectorize_width, interleave, interleave_count, unroll, unroll_count, pipeline, pipeline_initiation_interval, vectorize_predicate, or distribute</target>
+          <target>%select{invalid|missing}0 option%select{ {$arg1}|}0; expected vectorize, vectorize_width, interleave, interleave_count, unroll, unroll_count, pipeline, pipeline_initiation_interval, vectorize_predicate, or distribute</target>
         </segment>
       </unit>
       <unit id="1748" name="err_pragma_loop_invalid_vectorize_option">
@@ -1982,25 +1982,25 @@
       <unit id="1750" name="err_pragma_misplaced_in_decl">
         <segment>
           <source>this pragma cannot appear in %0 declaration</source>
-          <target>this pragma cannot appear in ${arg0} declaration</target>
+          <target>this pragma cannot appear in {$arg0} declaration</target>
         </segment>
       </unit>
       <unit id="1751" name="err_pragma_missing_argument">
         <segment>
           <source>missing argument to '#pragma %0'%select{|; expected %2}1</source>
-          <target>missing argument to '#pragma ${arg0}'%select{|; expected ${arg2}}1</target>
+          <target>missing argument to '#pragma {$arg0}'%select{|; expected {$arg2}}1</target>
         </segment>
       </unit>
       <unit id="1752" name="err_pragma_optimize_extra_argument">
         <segment>
           <source>unexpected extra argument '%0' to '#pragma clang optimize'</source>
-          <target>unexpected extra argument '${arg0}' to '#pragma clang optimize'</target>
+          <target>unexpected extra argument '{$arg0}' to '#pragma clang optimize'</target>
         </segment>
       </unit>
       <unit id="1753" name="err_pragma_optimize_invalid_argument">
         <segment>
           <source>unexpected argument '%0' to '#pragma clang optimize'; expected 'on' or 'off'</source>
-          <target>unexpected argument '${arg0}' to '#pragma clang optimize'; expected 'on' or 'off'</target>
+          <target>unexpected argument '{$arg0}' to '#pragma clang optimize'; expected 'on' or 'off'</target>
         </segment>
       </unit>
       <unit id="1754" name="err_pragma_pipeline_invalid_keyword">
@@ -2012,7 +2012,7 @@
       <unit id="1755" name="err_pragma_pointers_to_members_unknown_kind">
         <segment>
           <source>unexpected %0, expected to see one of %select{|'best_case', 'full_generality', }1'single_inheritance', 'multiple_inheritance', or 'virtual_inheritance'</source>
-          <target>unexpected ${arg0}, expected to see one of %select{|'best_case', 'full_generality', }1'single_inheritance', 'multiple_inheritance', or 'virtual_inheritance'</target>
+          <target>unexpected {$arg0}, expected to see one of %select{|'best_case', 'full_generality', }1'single_inheritance', 'multiple_inheritance', or 'virtual_inheritance'</target>
         </segment>
       </unit>
       <unit id="1756" name="err_private_module_fragment_expected_semi">
@@ -2144,7 +2144,7 @@
       <unit id="1777" name="err_template_spec_syntax_non_template">
         <segment>
           <source>identifier followed by '&lt;' indicates a class template specialization but %0 %select{does not refer to a template|refers to a function template|&lt;unused&gt;|refers to a variable template|&lt;unused&gt;|&lt;unused&gt;|refers to a concept}1</source>
-          <target>identifier followed by '&lt;' indicates a class template specialization but ${arg0} %select{does not refer to a template|refers to a function template|&lt;unused&gt;|refers to a variable template|&lt;unused&gt;|&lt;unused&gt;|refers to a concept}1</target>
+          <target>identifier followed by '&lt;' indicates a class template specialization but {$arg0} %select{does not refer to a template|refers to a function template|&lt;unused&gt;|refers to a variable template|&lt;unused&gt;|&lt;unused&gt;|refers to a concept}1</target>
         </segment>
       </unit>
       <unit id="1778" name="err_templated_invalid_declaration">
@@ -2174,13 +2174,13 @@
       <unit id="1782" name="err_type_safety_unknown_flag">
         <segment>
           <source>invalid comparison flag %0; use 'layout_compatible' or 'must_be_null'</source>
-          <target>invalid comparison flag ${arg0}; use 'layout_compatible' or 'must_be_null'</target>
+          <target>invalid comparison flag {$arg0}; use 'layout_compatible' or 'must_be_null'</target>
         </segment>
       </unit>
       <unit id="1783" name="err_type_trait_arity">
         <segment>
           <source>type trait requires %0%select{| or more}1 argument%select{|s}2; have %3 argument%s3</source>
-          <target>type trait requires ${arg0}%select{| or more}1 argument%select{|s}2; have ${arg3} argument%s3</target>
+          <target>type trait requires {$arg0}%select{| or more}1 argument%select{|s}2; have {$arg3} argument%s3</target>
         </segment>
       </unit>
       <unit id="1784" name="err_type_unparsed">
@@ -2276,7 +2276,7 @@
       <unit id="1799" name="err_unexpected_semi">
         <segment>
           <source>unexpected ';' before %0</source>
-          <target>unexpected ';' before ${arg0}</target>
+          <target>unexpected ';' before {$arg0}</target>
         </segment>
       </unit>
       <unit id="1800" name="err_unexpected_template_after_using">
@@ -2300,13 +2300,13 @@
       <unit id="1803" name="err_unexpected_token_in_nested_name_spec">
         <segment>
           <source>'%0' cannot be a part of nested name specifier; did you mean ':'?</source>
-          <target>'${arg0}' cannot be a part of nested name specifier; did you mean ':'?</target>
+          <target>'{$arg0}' cannot be a part of nested name specifier; did you mean ':'?</target>
         </segment>
       </unit>
       <unit id="1804" name="err_unexpected_typedef_ident">
         <segment>
           <source>unexpected type name %0: expected identifier</source>
-          <target>unexpected type name ${arg0}: expected identifier</target>
+          <target>unexpected type name {$arg0}: expected identifier</target>
         </segment>
       </unit>
       <unit id="1805" name="err_unexpected_unqualified_id">
@@ -2318,13 +2318,13 @@
       <unit id="1806" name="err_unknown_hlsl_semantic">
         <segment>
           <source>unknown HLSL semantic %0</source>
-          <target>unknown HLSL semantic ${arg0}</target>
+          <target>unknown HLSL semantic {$arg0}</target>
         </segment>
       </unit>
       <unit id="1807" name="err_unknown_template_name">
         <segment>
           <source>unknown template name %0</source>
-          <target>unknown template name ${arg0}</target>
+          <target>unknown template name {$arg0}</target>
         </segment>
       </unit>
       <unit id="1808" name="err_unparenthesized_non_primary_expr_in_requires_clause">
@@ -2372,7 +2372,7 @@
       <unit id="1815" name="err_virt_specifier_outside_class">
         <segment>
           <source>'%0' specifier is not allowed outside a class definition</source>
-          <target>'${arg0}' specifier is not allowed outside a class definition</target>
+          <target>'{$arg0}' specifier is not allowed outside a class definition</target>
         </segment>
       </unit>
       <unit id="1816" name="err_while_loop_outside_of_a_function">
@@ -2408,7 +2408,7 @@
       <unit id="1821" name="ext_alignof_expr">
         <segment>
           <source>%0 applied to an expression is a GNU extension</source>
-          <target>${arg0} applied to an expression is a GNU extension</target>
+          <target>{$arg0} applied to an expression is a GNU extension</target>
         </segment>
       </unit>
       <unit id="1822" name="ext_auto_storage_class">
@@ -2444,7 +2444,7 @@
       <unit id="1827" name="ext_c11_feature">
         <segment>
           <source>'%0' is a C11 extension</source>
-          <target>'${arg0}' is a C11 extension</target>
+          <target>'{$arg0}' is a C11 extension</target>
         </segment>
       </unit>
       <unit id="1828" name="ext_c99_compound_literal">
@@ -2456,7 +2456,7 @@
       <unit id="1829" name="ext_c99_feature">
         <segment>
           <source>'%0' is a C99 extension</source>
-          <target>'${arg0}' is a C99 extension</target>
+          <target>'{$arg0}' is a C99 extension</target>
         </segment>
       </unit>
       <unit id="1830" name="ext_c99_variable_decl_in_for_loop">
@@ -2516,7 +2516,7 @@
       <unit id="1839" name="ext_cxx11_attr_placement">
         <segment>
           <source>ISO C++ does not allow %select{an attribute list|%0}1 to appear here</source>
-          <target>ISO C++ does not allow %select{an attribute list|${arg0}}1 to appear here</target>
+          <target>ISO C++ does not allow %select{an attribute list|{$arg0}}1 to appear here</target>
         </segment>
       </unit>
       <unit id="1840" name="ext_cxx11_enum_fixed_underlying_type">
@@ -2546,7 +2546,7 @@
       <unit id="1844" name="ext_decl_attrs_on_lambda">
         <segment>
           <source>%select{an attribute specifier sequence|%0}1 in this position is a C++23 extension</source>
-          <target>%select{an attribute specifier sequence|${arg0}}1 in this position is a C++23 extension</target>
+          <target>%select{an attribute specifier sequence|{$arg0}}1 in this position is a C++23 extension</target>
         </segment>
       </unit>
       <unit id="1845" name="ext_decltype_auto_type_specifier">
@@ -2636,7 +2636,7 @@
       <unit id="1859" name="ext_extra_semi">
         <segment>
           <source>extra ';' %select{outside of a function|inside a %1|inside instance variable list|after member function definition}0</source>
-          <target>extra ';' %select{outside of a function|inside a ${arg1}|inside instance variable list|after member function definition}0</target>
+          <target>extra ';' %select{outside of a function|inside a {$arg1}|inside instance variable list|after member function definition}0</target>
         </segment>
       </unit>
       <unit id="1860" name="ext_extra_semi_cxx11">
@@ -2756,7 +2756,7 @@
       <unit id="1879" name="ext_keyword_as_ident">
         <segment>
           <source>keyword '%0' will be made available as an identifier %select{here|for the remainder of the translation unit}1</source>
-          <target>keyword '${arg0}' will be made available as an identifier %select{here|for the remainder of the translation unit}1</target>
+          <target>keyword '{$arg0}' will be made available as an identifier %select{here|for the remainder of the translation unit}1</target>
         </segment>
       </unit>
       <unit id="1880" name="ext_lambda">
@@ -2828,7 +2828,7 @@
       <unit id="1891" name="ext_nullability">
         <segment>
           <source>type nullability specifier %0 is a Clang extension</source>
-          <target>type nullability specifier ${arg0} is a Clang extension</target>
+          <target>type nullability specifier {$arg0} is a Clang extension</target>
         </segment>
       </unit>
       <unit id="1892" name="ext_omp_attributes">
@@ -2840,7 +2840,7 @@
       <unit id="1893" name="ext_override_control_keyword">
         <segment>
           <source>'%0' keyword is a C++11 extension</source>
-          <target>'${arg0}' keyword is a C++11 extension</target>
+          <target>'{$arg0}' keyword is a C++11 extension</target>
         </segment>
       </unit>
       <unit id="1894" name="ext_ref_qualifier">
@@ -2876,7 +2876,7 @@
       <unit id="1899" name="ext_thread_before">
         <segment>
           <source>'__thread' before '%0'</source>
-          <target>'__thread' before '${arg0}'</target>
+          <target>'__thread' before '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1900" name="ext_using_attribute_ns">
@@ -2918,13 +2918,13 @@
       <unit id="1906" name="note_compound_token_split_second_token_here">
         <segment>
           <source>%select{|second }0%1 token is here</source>
-          <target>%select{|second }0${arg1} token is here</target>
+          <target>%select{|second }0{$arg1} token is here</target>
         </segment>
       </unit>
       <unit id="1907" name="note_exception_spec_deprecated">
         <segment>
           <source>use '%0' instead</source>
-          <target>use '${arg0}' instead</target>
+          <target>use '{$arg0}' instead</target>
         </segment>
       </unit>
       <unit id="1908" name="note_extra_comma_message_arg">
@@ -2936,7 +2936,7 @@
       <unit id="1909" name="note_force_empty_selector_name">
         <segment>
           <source>or insert whitespace before ':' to use %0 as parameter name and have an empty entry in the selector</source>
-          <target>or insert whitespace before ':' to use ${arg0} as parameter name and have an empty entry in the selector</target>
+          <target>or insert whitespace before ':' to use {$arg0} as parameter name and have an empty entry in the selector</target>
         </segment>
       </unit>
       <unit id="1910" name="note_max_tokens_total_override">
@@ -2978,7 +2978,7 @@
       <unit id="1916" name="note_missing_selector_name">
         <segment>
           <source>introduce a parameter name to make %0 part of the selector</source>
-          <target>introduce a parameter name to make ${arg0} part of the selector</target>
+          <target>introduce a parameter name to make {$arg0} part of the selector</target>
         </segment>
       </unit>
       <unit id="1917" name="note_objc_container_start">
@@ -2996,13 +2996,13 @@
       <unit id="1919" name="note_omp_ctx_compatible_set_and_selector_for_property">
         <segment>
           <source>the context property '%0' can be nested in the context selector '%1' which is nested in the context set '%2'; try 'match(%2={%1(%0)})'</source>
-          <target>the context property '${arg0}' can be nested in the context selector '${arg1}' which is nested in the context set '${arg2}'; try 'match(${arg2}={${arg1}(${arg0})})'</target>
+          <target>the context property '{$arg0}' can be nested in the context selector '{$arg1}' which is nested in the context set '{$arg2}'; try 'match({$arg2}={{$arg1}({$arg0})})'</target>
         </segment>
       </unit>
       <unit id="1920" name="note_omp_ctx_compatible_set_for_selector">
         <segment>
           <source>the context selector '%0' can be nested in the context set '%1'; try 'match(%1={%0%select{|(property)}2})'</source>
-          <target>the context selector '${arg0}' can be nested in the context set '${arg1}'; try 'match(${arg1}={${arg0}%select{|(property)}2})'</target>
+          <target>the context selector '{$arg0}' can be nested in the context set '{$arg1}'; try 'match({$arg1}={{$arg0}%select{|(property)}2})'</target>
         </segment>
       </unit>
       <unit id="1921" name="note_omp_declare_variant_ctx_continue_here">
@@ -3014,31 +3014,31 @@
       <unit id="1922" name="note_omp_declare_variant_ctx_is_a">
         <segment>
           <source>'%0' is a context %select{set|selector|property}1 not a context %select{set|selector|property}2</source>
-          <target>'${arg0}' is a context %select{set|selector|property}1 not a context %select{set|selector|property}2</target>
+          <target>'{$arg0}' is a context %select{set|selector|property}1 not a context %select{set|selector|property}2</target>
         </segment>
       </unit>
       <unit id="1923" name="note_omp_declare_variant_ctx_options">
         <segment>
           <source>context %select{set|selector|property}0 options are: %1</source>
-          <target>context %select{set|selector|property}0 options are: ${arg1}</target>
+          <target>context %select{set|selector|property}0 options are: {$arg1}</target>
         </segment>
       </unit>
       <unit id="1924" name="note_omp_declare_variant_ctx_try">
         <segment>
           <source>try 'match(%0={%1%2})'</source>
-          <target>try 'match(${arg0}={${arg1}${arg2}})'</target>
+          <target>try 'match({$arg0}={{$arg1}{$arg2}})'</target>
         </segment>
       </unit>
       <unit id="1925" name="note_omp_declare_variant_ctx_used_here">
         <segment>
           <source>the previous context %select{set|selector|property}0 '%1' used here</source>
-          <target>the previous context %select{set|selector|property}0 '${arg1}' used here</target>
+          <target>the previous context %select{set|selector|property}0 '{$arg1}' used here</target>
         </segment>
       </unit>
       <unit id="1926" name="note_ompx_bare_clause">
         <segment>
           <source>OpenMP extension clause '%0' only allowed with '#pragma omp %1'</source>
-          <target>OpenMP extension clause '${arg0}' only allowed with '#pragma omp ${arg1}'</target>
+          <target>OpenMP extension clause '{$arg0}' only allowed with '#pragma omp {$arg1}'</target>
         </segment>
       </unit>
       <unit id="1927" name="note_pragma_attribute_namespace_on_attribute">
@@ -3068,7 +3068,7 @@
       <unit id="1931" name="note_previous_map_type_specified_here">
         <segment>
           <source>map type '%0' is previous specified here</source>
-          <target>map type '${arg0}' is previous specified here</target>
+          <target>map type '{$arg0}' is previous specified here</target>
         </segment>
       </unit>
       <unit id="1932" name="note_previous_statement">
@@ -3086,7 +3086,7 @@
       <unit id="1934" name="warn_arc_bridge_cast_nonarc">
         <segment>
           <source>'%0' casts have no effect when not using ARC</source>
-          <target>'${arg0}' casts have no effect when not using ARC</target>
+          <target>'{$arg0}' casts have no effect when not using ARC</target>
         </segment>
       </unit>
       <unit id="1935" name="warn_atimport_in_framework_header">
@@ -3098,13 +3098,13 @@
       <unit id="1936" name="warn_attribute_no_decl">
         <segment>
           <source>attribute %0 ignored, because it is not attached to a declaration</source>
-          <target>attribute ${arg0} ignored, because it is not attached to a declaration</target>
+          <target>attribute {$arg0} ignored, because it is not attached to a declaration</target>
         </segment>
       </unit>
       <unit id="1937" name="warn_attribute_on_function_definition">
         <segment>
           <source>GCC does not allow %0 attribute in this position on a function definition</source>
-          <target>GCC does not allow ${arg0} attribute in this position on a function definition</target>
+          <target>GCC does not allow {$arg0} attribute in this position on a function definition</target>
         </segment>
       </unit>
       <unit id="1938" name="warn_availability_and_unavailable">
@@ -3122,7 +3122,7 @@
       <unit id="1940" name="warn_c11_compat_keyword">
         <segment>
           <source>'%0' is incompatible with C standards before C11</source>
-          <target>'${arg0}' is incompatible with C standards before C11</target>
+          <target>'{$arg0}' is incompatible with C standards before C11</target>
         </segment>
       </unit>
       <unit id="1941" name="warn_c17_compat_static_assert_no_message">
@@ -3134,7 +3134,7 @@
       <unit id="1942" name="warn_c23_compat_keyword">
         <segment>
           <source>'%0' is incompatible with C standards before C23</source>
-          <target>'${arg0}' is incompatible with C standards before C23</target>
+          <target>'{$arg0}' is incompatible with C standards before C23</target>
         </segment>
       </unit>
       <unit id="1943" name="warn_c23_compat_label_end_of_compound_statement">
@@ -3152,19 +3152,19 @@
       <unit id="1945" name="warn_clause_expected_string">
         <segment>
           <source>expected string literal in 'clause %0' - ignoring</source>
-          <target>expected string literal in 'clause ${arg0}' - ignoring</target>
+          <target>expected string literal in 'clause {$arg0}' - ignoring</target>
         </segment>
       </unit>
       <unit id="1946" name="warn_compound_token_split_by_macro">
         <segment>
           <source>%select{%1 and |}0%2 tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 appear in different macro expansion contexts</source>
-          <target>%select{${arg1} and |}0${arg2} tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 appear in different macro expansion contexts</target>
+          <target>%select{{$arg1} and |}0{$arg2} tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 appear in different macro expansion contexts</target>
         </segment>
       </unit>
       <unit id="1947" name="warn_compound_token_split_by_whitespace">
         <segment>
           <source>%select{%1 and |}0%2 tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 are separated by whitespace</source>
-          <target>%select{${arg1} and |}0${arg2} tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 are separated by whitespace</target>
+          <target>%select{{$arg1} and |}0{$arg2} tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 are separated by whitespace</target>
         </segment>
       </unit>
       <unit id="1948" name="warn_cstyle_param">
@@ -3176,7 +3176,7 @@
       <unit id="1949" name="warn_cuda_attr_lambda_position">
         <segment>
           <source>nvcc does not allow '__%0__' to appear after the parameter list in lambdas</source>
-          <target>nvcc does not allow '__${arg0}__' to appear after the parameter list in lambdas</target>
+          <target>nvcc does not allow '__{$arg0}__' to appear after the parameter list in lambdas</target>
         </segment>
       </unit>
       <unit id="1950" name="warn_cxx11_compat_decltype_auto_type_specifier">
@@ -3308,7 +3308,7 @@
       <unit id="1971" name="warn_cxx20_compat_decl_attrs_on_lambda">
         <segment>
           <source>%select{an attribute specifier sequence|%1}0 in this position is incompatible with C++ standards before C++23</source>
-          <target>%select{an attribute specifier sequence|${arg1}}0 in this position is incompatible with C++ standards before C++23</target>
+          <target>%select{an attribute specifier sequence|{$arg1}}0 in this position is incompatible with C++ standards before C++23</target>
         </segment>
       </unit>
       <unit id="1972" name="warn_cxx20_compat_explicit_bool">
@@ -3452,7 +3452,7 @@
       <unit id="1995" name="warn_cxx98_compat_override_control_keyword">
         <segment>
           <source>'%0' keyword is incompatible with C++98</source>
-          <target>'${arg0}' keyword is incompatible with C++98</target>
+          <target>'{$arg0}' keyword is incompatible with C++98</target>
         </segment>
       </unit>
       <unit id="1996" name="warn_cxx98_compat_ref_qualifier">
@@ -3572,13 +3572,13 @@
       <unit id="2015" name="warn_max_tokens">
         <segment>
           <source>the number of preprocessor source tokens (%0) exceeds this token limit (%1)</source>
-          <target>the number of preprocessor source tokens (${arg0}) exceeds this token limit (${arg1})</target>
+          <target>the number of preprocessor source tokens ({$arg0}) exceeds this token limit ({$arg1})</target>
         </segment>
       </unit>
       <unit id="2016" name="warn_max_tokens_total">
         <segment>
           <source>the total number of preprocessor source tokens (%0) exceeds the token limit (%1)</source>
-          <target>the total number of preprocessor source tokens (${arg0}) exceeds the token limit (${arg1})</target>
+          <target>the total number of preprocessor source tokens ({$arg0}) exceeds the token limit ({$arg1})</target>
         </segment>
       </unit>
       <unit id="2017" name="warn_microsoft_dependent_exists">
@@ -3608,13 +3608,13 @@
       <unit id="2021" name="warn_missing_dependent_template_keyword">
         <segment>
           <source>use 'template' keyword to treat '%0' as a dependent template name</source>
-          <target>use 'template' keyword to treat '${arg0}' as a dependent template name</target>
+          <target>use 'template' keyword to treat '{$arg0}' as a dependent template name</target>
         </segment>
       </unit>
       <unit id="2022" name="warn_missing_selector_name">
         <segment>
           <source>%0 used as the name of the previous parameter rather than as part of the selector</source>
-          <target>${arg0} used as the name of the previous parameter rather than as part of the selector</target>
+          <target>{$arg0} used as the name of the previous parameter rather than as part of the selector</target>
         </segment>
       </unit>
       <unit id="2023" name="warn_no_support_for_eval_method_source_on_m32">
@@ -3644,55 +3644,55 @@
       <unit id="2027" name="warn_omp_ctx_incompatible_property_for_selector">
         <segment>
           <source>the context property '%0' is not valid for the context selector '%1' and the context set '%2'; property ignored</source>
-          <target>the context property '${arg0}' is not valid for the context selector '${arg1}' and the context set '${arg2}'; property ignored</target>
+          <target>the context property '{$arg0}' is not valid for the context selector '{$arg1}' and the context set '{$arg2}'; property ignored</target>
         </segment>
       </unit>
       <unit id="2028" name="warn_omp_ctx_incompatible_score_for_property">
         <segment>
           <source>the context selector '%0' in the context set '%1' cannot have a score ('%2'); score ignored</source>
-          <target>the context selector '${arg0}' in the context set '${arg1}' cannot have a score ('${arg2}'); score ignored</target>
+          <target>the context selector '{$arg0}' in the context set '{$arg1}' cannot have a score ('{$arg2}'); score ignored</target>
         </segment>
       </unit>
       <unit id="2029" name="warn_omp_ctx_incompatible_selector_for_set">
         <segment>
           <source>the context selector '%0' is not valid for the context set '%1'; selector ignored</source>
-          <target>the context selector '${arg0}' is not valid for the context set '${arg1}'; selector ignored</target>
+          <target>the context selector '{$arg0}' is not valid for the context set '{$arg1}'; selector ignored</target>
         </segment>
       </unit>
       <unit id="2030" name="warn_omp_ctx_selector_without_properties">
         <segment>
           <source>the context selector '%0' in context set '%1' requires a context property defined in parentheses; selector ignored</source>
-          <target>the context selector '${arg0}' in context set '${arg1}' requires a context property defined in parentheses; selector ignored</target>
+          <target>the context selector '{$arg0}' in context set '{$arg1}' requires a context property defined in parentheses; selector ignored</target>
         </segment>
       </unit>
       <unit id="2031" name="warn_omp_declare_variant_ctx_mutiple_use">
         <segment>
           <source>the context %select{set|selector|property}0 '%1' was used already in the same 'omp declare variant' directive; %select{set|selector|property}0 ignored</source>
-          <target>the context %select{set|selector|property}0 '${arg1}' was used already in the same 'omp declare variant' directive; %select{set|selector|property}0 ignored</target>
+          <target>the context %select{set|selector|property}0 '{$arg1}' was used already in the same 'omp declare variant' directive; %select{set|selector|property}0 ignored</target>
         </segment>
       </unit>
       <unit id="2032" name="warn_omp_declare_variant_ctx_not_a_property">
         <segment>
           <source>'%0' is not a valid context property for the context selector '%1' and the context set '%2'; property ignored</source>
-          <target>'${arg0}' is not a valid context property for the context selector '${arg1}' and the context set '${arg2}'; property ignored</target>
+          <target>'{$arg0}' is not a valid context property for the context selector '{$arg1}' and the context set '{$arg2}'; property ignored</target>
         </segment>
       </unit>
       <unit id="2033" name="warn_omp_declare_variant_ctx_not_a_selector">
         <segment>
           <source>'%0' is not a valid context selector for the context set '%1'; selector ignored</source>
-          <target>'${arg0}' is not a valid context selector for the context set '${arg1}'; selector ignored</target>
+          <target>'{$arg0}' is not a valid context selector for the context set '{$arg1}'; selector ignored</target>
         </segment>
       </unit>
       <unit id="2034" name="warn_omp_declare_variant_ctx_not_a_set">
         <segment>
           <source>'%0' is not a valid context set in a `declare variant`; set ignored</source>
-          <target>'${arg0}' is not a valid context set in a `declare variant`; set ignored</target>
+          <target>'{$arg0}' is not a valid context set in a `declare variant`; set ignored</target>
         </segment>
       </unit>
       <unit id="2035" name="warn_omp_declare_variant_expected">
         <segment>
           <source>expected '%0' after the %1; '%0' assumed</source>
-          <target>expected '${arg0}' after the ${arg1}; '${arg0}' assumed</target>
+          <target>expected '{$arg0}' after the {$arg1}; '{$arg0}' assumed</target>
         </segment>
       </unit>
       <unit id="2036" name="warn_omp_declare_variant_string_literal_or_identifier">
@@ -3710,13 +3710,13 @@
       <unit id="2038" name="warn_omp_extra_tokens_at_eol">
         <segment>
           <source>extra tokens at the end of '#pragma omp %0' are ignored</source>
-          <target>extra tokens at the end of '#pragma omp ${arg0}' are ignored</target>
+          <target>extra tokens at the end of '#pragma omp {$arg0}' are ignored</target>
         </segment>
       </unit>
       <unit id="2039" name="warn_omp_invalid_attribute_for_ompx_attributes">
         <segment>
           <source>'ompx_attribute' clause only allows 'amdgpu_flat_work_group_size', 'amdgpu_waves_per_eu', and 'launch_bounds'; %0 is ignored</source>
-          <target>'ompx_attribute' clause only allows 'amdgpu_flat_work_group_size', 'amdgpu_waves_per_eu', and 'launch_bounds'; ${arg0} is ignored</target>
+          <target>'ompx_attribute' clause only allows 'amdgpu_flat_work_group_size', 'amdgpu_waves_per_eu', and 'launch_bounds'; {$arg0} is ignored</target>
         </segment>
       </unit>
       <unit id="2040" name="warn_omp_more_one_device_type_clause">
@@ -3728,7 +3728,7 @@
       <unit id="2041" name="warn_omp_more_one_interop_type">
         <segment>
           <source>interop type '%0' cannot be specified more than once</source>
-          <target>interop type '${arg0}' cannot be specified more than once</target>
+          <target>interop type '{$arg0}' cannot be specified more than once</target>
         </segment>
       </unit>
       <unit id="2042" name="warn_omp_more_one_omp_all_memory">
@@ -3740,13 +3740,13 @@
       <unit id="2043" name="warn_omp_unknown_assumption_clause_missing_id">
         <segment>
           <source>valid %0 clauses start with %1; %select{token|tokens}2 will be ignored</source>
-          <target>valid ${arg0} clauses start with ${arg1}; %select{token|tokens}2 will be ignored</target>
+          <target>valid {$arg0} clauses start with {$arg1}; %select{token|tokens}2 will be ignored</target>
         </segment>
       </unit>
       <unit id="2044" name="warn_omp_unknown_assumption_clause_without_args">
         <segment>
           <source>%0 clause should not be followed by arguments; tokens will be ignored</source>
-          <target>${arg0} clause should not be followed by arguments; tokens will be ignored</target>
+          <target>{$arg0} clause should not be followed by arguments; tokens will be ignored</target>
         </segment>
       </unit>
       <unit id="2045" name="warn_pragma_acc_ignored">
@@ -3770,7 +3770,7 @@
       <unit id="2048" name="warn_pragma_comment_ignored">
         <segment>
           <source>'#pragma comment %0' ignored</source>
-          <target>'#pragma comment ${arg0}' ignored</target>
+          <target>'#pragma comment {$arg0}' ignored</target>
         </segment>
       </unit>
       <unit id="2049" name="warn_pragma_debug_dependent_argument">
@@ -3782,55 +3782,55 @@
       <unit id="2050" name="warn_pragma_expected_action_or_r_paren">
         <segment>
           <source>expected action or ')' in '#pragma %0' - ignored</source>
-          <target>expected action or ')' in '#pragma ${arg0}' - ignored</target>
+          <target>expected action or ')' in '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2051" name="warn_pragma_expected_colon">
         <segment>
           <source>missing ':' after %0 - ignoring</source>
-          <target>missing ':' after ${arg0} - ignoring</target>
+          <target>missing ':' after {$arg0} - ignoring</target>
         </segment>
       </unit>
       <unit id="2052" name="warn_pragma_expected_colon_r_paren">
         <segment>
           <source>missing ':' or ')' after %0 - ignoring</source>
-          <target>missing ':' or ')' after ${arg0} - ignoring</target>
+          <target>missing ':' or ')' after {$arg0} - ignoring</target>
         </segment>
       </unit>
       <unit id="2053" name="warn_pragma_expected_comma">
         <segment>
           <source>expected ',' in '#pragma %0'</source>
-          <target>expected ',' in '#pragma ${arg0}'</target>
+          <target>expected ',' in '#pragma {$arg0}'</target>
         </segment>
       </unit>
       <unit id="2054" name="warn_pragma_expected_identifier">
         <segment>
           <source>expected identifier in '#pragma %0' - ignored</source>
-          <target>expected identifier in '#pragma ${arg0}' - ignored</target>
+          <target>expected identifier in '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2055" name="warn_pragma_expected_init_seg">
         <segment>
           <source>expected 'compiler', 'lib', 'user', or a string literal for the section name in '#pragma %0' - ignored</source>
-          <target>expected 'compiler', 'lib', 'user', or a string literal for the section name in '#pragma ${arg0}' - ignored</target>
+          <target>expected 'compiler', 'lib', 'user', or a string literal for the section name in '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2056" name="warn_pragma_expected_integer">
         <segment>
           <source>expected integer between %0 and %1 inclusive in '#pragma %2' - ignored</source>
-          <target>expected integer between ${arg0} and ${arg1} inclusive in '#pragma ${arg2}' - ignored</target>
+          <target>expected integer between {$arg0} and {$arg1} inclusive in '#pragma {$arg2}' - ignored</target>
         </segment>
       </unit>
       <unit id="2057" name="warn_pragma_expected_lparen">
         <segment>
           <source>missing '(' after '#pragma %0' - ignoring</source>
-          <target>missing '(' after '#pragma ${arg0}' - ignoring</target>
+          <target>missing '(' after '#pragma {$arg0}' - ignoring</target>
         </segment>
       </unit>
       <unit id="2058" name="warn_pragma_expected_non_wide_string">
         <segment>
           <source>expected non-wide string literal in '#pragma %0'</source>
-          <target>expected non-wide string literal in '#pragma ${arg0}'</target>
+          <target>expected non-wide string literal in '#pragma {$arg0}'</target>
         </segment>
       </unit>
       <unit id="2059" name="warn_pragma_expected_predicate">
@@ -3842,49 +3842,49 @@
       <unit id="2060" name="warn_pragma_expected_punc">
         <segment>
           <source>expected ')' or ',' in '#pragma %0'</source>
-          <target>expected ')' or ',' in '#pragma ${arg0}'</target>
+          <target>expected ')' or ',' in '#pragma {$arg0}'</target>
         </segment>
       </unit>
       <unit id="2061" name="warn_pragma_expected_rparen">
         <segment>
           <source>missing ')' after '#pragma %0' - ignoring</source>
-          <target>missing ')' after '#pragma ${arg0}' - ignoring</target>
+          <target>missing ')' after '#pragma {$arg0}' - ignoring</target>
         </segment>
       </unit>
       <unit id="2062" name="warn_pragma_expected_section_label_or_name">
         <segment>
           <source>expected a stack label or a string literal for the section name in '#pragma %0' - ignored</source>
-          <target>expected a stack label or a string literal for the section name in '#pragma ${arg0}' - ignored</target>
+          <target>expected a stack label or a string literal for the section name in '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2063" name="warn_pragma_expected_section_name">
         <segment>
           <source>expected a string literal for the section name in '#pragma %0' - ignored</source>
-          <target>expected a string literal for the section name in '#pragma ${arg0}' - ignored</target>
+          <target>expected a string literal for the section name in '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2064" name="warn_pragma_expected_section_push_pop_or_name">
         <segment>
           <source>expected push, pop or a string literal for the section name in '#pragma %0' - ignored</source>
-          <target>expected push, pop or a string literal for the section name in '#pragma ${arg0}' - ignored</target>
+          <target>expected push, pop or a string literal for the section name in '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2065" name="warn_pragma_expected_string">
         <segment>
           <source>expected string literal in '#pragma %0' - ignoring</source>
-          <target>expected string literal in '#pragma ${arg0}' - ignoring</target>
+          <target>expected string literal in '#pragma {$arg0}' - ignoring</target>
         </segment>
       </unit>
       <unit id="2066" name="warn_pragma_extension_is_core">
         <segment>
           <source>OpenCL extension %0 is core feature or supported optional core feature - ignoring</source>
-          <target>OpenCL extension ${arg0} is core feature or supported optional core feature - ignoring</target>
+          <target>OpenCL extension {$arg0} is core feature or supported optional core feature - ignoring</target>
         </segment>
       </unit>
       <unit id="2067" name="warn_pragma_extra_tokens_at_eol">
         <segment>
           <source>extra tokens at end of '#pragma %0' - ignored</source>
-          <target>extra tokens at end of '#pragma ${arg0}' - ignored</target>
+          <target>extra tokens at end of '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2068" name="warn_pragma_force_cuda_host_device_bad_arg">
@@ -3896,7 +3896,7 @@
       <unit id="2069" name="warn_pragma_fp_ignored">
         <segment>
           <source>'#pragma %0' is not supported on this target - ignored</source>
-          <target>'#pragma ${arg0}' is not supported on this target - ignored</target>
+          <target>'#pragma {$arg0}' is not supported on this target - ignored</target>
         </segment>
       </unit>
       <unit id="2070" name="warn_pragma_init_seg_unsupported_target">
@@ -3908,31 +3908,31 @@
       <unit id="2071" name="warn_pragma_intrinsic_builtin">
         <segment>
           <source>%0 is not a recognized builtin%select{|; consider including &lt;intrin.h&gt; to access non-builtin intrinsics}1</source>
-          <target>${arg0} is not a recognized builtin%select{|; consider including &lt;intrin.h&gt; to access non-builtin intrinsics}1</target>
+          <target>{$arg0} is not a recognized builtin%select{|; consider including &lt;intrin.h&gt; to access non-builtin intrinsics}1</target>
         </segment>
       </unit>
       <unit id="2072" name="warn_pragma_invalid_action">
         <segment>
           <source>unknown action for '#pragma %0' - ignored</source>
-          <target>unknown action for '#pragma ${arg0}' - ignored</target>
+          <target>unknown action for '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2073" name="warn_pragma_invalid_argument">
         <segment>
           <source>unexpected argument '%0' to '#pragma %1'%select{|; expected %3}2</source>
-          <target>unexpected argument '${arg0}' to '#pragma ${arg1}'%select{|; expected ${arg3}}2</target>
+          <target>unexpected argument '{$arg0}' to '#pragma {$arg1}'%select{|; expected {$arg3}}2</target>
         </segment>
       </unit>
       <unit id="2074" name="warn_pragma_invalid_specific_action">
         <segment>
           <source>unknown action '%1' for '#pragma %0' - ignored</source>
-          <target>unknown action '${arg1}' for '#pragma ${arg0}' - ignored</target>
+          <target>unknown action '{$arg1}' for '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2075" name="warn_pragma_missing_argument">
         <segment>
           <source>missing argument to '#pragma %0'%select{|; expected %2}1</source>
-          <target>missing argument to '#pragma ${arg0}'%select{|; expected ${arg2}}1</target>
+          <target>missing argument to '#pragma {$arg0}'%select{|; expected {$arg2}}1</target>
         </segment>
       </unit>
       <unit id="2076" name="warn_pragma_ms_fenv_access">
@@ -3968,7 +3968,7 @@
       <unit id="2081" name="warn_pragma_unknown_extension">
         <segment>
           <source>OpenCL extension %0 unknown or does not require pragma - ignoring</source>
-          <target>OpenCL extension ${arg0} unknown or does not require pragma - ignoring</target>
+          <target>OpenCL extension {$arg0} unknown or does not require pragma - ignoring</target>
         </segment>
       </unit>
       <unit id="2082" name="warn_pragma_unroll_cuda_value_in_parens">
@@ -3980,13 +3980,13 @@
       <unit id="2083" name="warn_pragma_unsupported_action">
         <segment>
           <source>known but unsupported action '%1' for '#pragma %0' - ignored</source>
-          <target>known but unsupported action '${arg1}' for '#pragma ${arg0}' - ignored</target>
+          <target>known but unsupported action '{$arg1}' for '#pragma {$arg0}' - ignored</target>
         </segment>
       </unit>
       <unit id="2084" name="warn_pragma_unsupported_extension">
         <segment>
           <source>unsupported OpenCL extension %0 - ignoring</source>
-          <target>unsupported OpenCL extension ${arg0} - ignoring</target>
+          <target>unsupported OpenCL extension {$arg0} - ignoring</target>
         </segment>
       </unit>
       <unit id="2085" name="warn_pragma_unused_expected_var">
@@ -4028,7 +4028,7 @@
       <unit id="2091" name="warn_unknown_declare_variant_isa_trait">
         <segment>
           <source>isa trait '%0' is not known to the current target; verify the spelling or consider restricting the context selector with the 'arch' selector further</source>
-          <target>isa trait '${arg0}' is not known to the current target; verify the spelling or consider restricting the context selector with the 'arch' selector further</target>
+          <target>isa trait '{$arg0}' is not known to the current target; verify the spelling or consider restricting the context selector with the 'arch' selector further</target>
         </segment>
       </unit>
       <unit id="2092" name="warn_wrong_clang_attr_namespace">

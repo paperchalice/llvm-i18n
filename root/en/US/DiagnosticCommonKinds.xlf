@@ -14,31 +14,31 @@
       <unit id="1" name="err_apinotes_message">
         <segment>
           <source>%0</source>
-          <target>${arg0}</target>
+          <target>{$arg0}</target>
         </segment>
       </unit>
       <unit id="2" name="err_arcmt_nsinvocation_ownership">
         <segment>
           <source>NSInvocation's %0 is not safe to be used with an object with ownership other than __unsafe_unretained</source>
-          <target>NSInvocation's ${arg0} is not safe to be used with an object with ownership other than __unsafe_unretained</target>
+          <target>NSInvocation's {$arg0} is not safe to be used with an object with ownership other than __unsafe_unretained</target>
         </segment>
       </unit>
       <unit id="3" name="err_asm_invalid_type">
         <segment>
           <source>invalid type %0 in asm %select{input|output}1</source>
-          <target>invalid type ${arg0} in asm %select{input|output}1</target>
+          <target>invalid type {$arg0} in asm %select{input|output}1</target>
         </segment>
       </unit>
       <unit id="4" name="err_asm_invalid_type_in_input">
         <segment>
           <source>invalid type %0 in asm input for constraint '%1'</source>
-          <target>invalid type ${arg0} in asm input for constraint '${arg1}'</target>
+          <target>invalid type {$arg0} in asm input for constraint '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="5" name="err_attribute_not_type_attr">
         <segment>
           <source>%0%select{ attribute|}1 cannot be applied to types</source>
-          <target>${arg0}%select{ attribute|}1 cannot be applied to types</target>
+          <target>{$arg0}%select{ attribute|}1 cannot be applied to types</target>
         </segment>
       </unit>
       <unit id="6" name="err_attribute_uuid_malformed_guid">
@@ -50,13 +50,13 @@
       <unit id="7" name="err_cannot_open_file">
         <segment>
           <source>cannot open file '%0': %1</source>
-          <target>cannot open file '${arg0}': ${arg1}</target>
+          <target>cannot open file '{$arg0}': {$arg1}</target>
         </segment>
       </unit>
       <unit id="8" name="err_constexpr_invalid_template_arg">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '%3' variable}2 is not allowed in a template argument</source>
-          <target>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '${arg3}' variable}2 is not allowed in a template argument</target>
+          <target>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '{$arg3}' variable}2 is not allowed in a template argument</target>
         </segment>
       </unit>
       <unit id="9" name="err_cxx23_size_t_suffix">
@@ -80,7 +80,7 @@
       <unit id="12" name="err_duplicate_declspec">
         <segment>
           <source>duplicate '%0' declaration specifier</source>
-          <target>duplicate '${arg0}' declaration specifier</target>
+          <target>duplicate '{$arg0}' declaration specifier</target>
         </segment>
       </unit>
       <unit id="13" name="err_enum_template">
@@ -92,13 +92,13 @@
       <unit id="14" name="err_expected">
         <segment>
           <source>expected %0</source>
-          <target>expected ${arg0}</target>
+          <target>expected {$arg0}</target>
         </segment>
       </unit>
       <unit id="15" name="err_expected_after">
         <segment>
           <source>expected %1 after %0</source>
-          <target>expected ${arg1} after ${arg0}</target>
+          <target>expected {$arg1} after {$arg0}</target>
         </segment>
       </unit>
       <unit id="16" name="err_expected_colon_after_setter_name">
@@ -110,7 +110,7 @@
       <unit id="17" name="err_expected_either">
         <segment>
           <source>expected %0 or %1</source>
-          <target>expected ${arg0} or ${arg1}</target>
+          <target>expected {$arg0} or {$arg1}</target>
         </segment>
       </unit>
       <unit id="18" name="err_expected_namespace_name">
@@ -122,25 +122,25 @@
       <unit id="19" name="err_expected_string_literal">
         <segment>
           <source>expected string literal %select{in %1|for diagnostic message in static_assert|for optional message in 'availability' attribute|for %select{language name|source container name|USR}1 in 'external_source_symbol' attribute|as argument of '%1' attribute}0</source>
-          <target>expected string literal %select{in ${arg1}|for diagnostic message in static_assert|for optional message in 'availability' attribute|for %select{language name|source container name|USR}1 in 'external_source_symbol' attribute|as argument of '${arg1}' attribute}0</target>
+          <target>expected string literal %select{in {$arg1}|for diagnostic message in static_assert|for optional message in 'availability' attribute|for %select{language name|source container name|USR}1 in 'external_source_symbol' attribute|as argument of '{$arg1}' attribute}0</target>
         </segment>
       </unit>
       <unit id="20" name="err_file_modified">
         <segment>
           <source>file '%0' modified since it was first processed</source>
-          <target>file '${arg0}' modified since it was first processed</target>
+          <target>file '{$arg0}' modified since it was first processed</target>
         </segment>
       </unit>
       <unit id="21" name="err_file_too_large">
         <segment>
           <source>file '%0' is too large for Clang to process</source>
-          <target>file '${arg0}' is too large for Clang to process</target>
+          <target>file '{$arg0}' is too large for Clang to process</target>
         </segment>
       </unit>
       <unit id="22" name="err_friend_decl_spec">
         <segment>
           <source>'%0' is invalid in friend declarations</source>
-          <target>'${arg0}' is invalid in friend declarations</target>
+          <target>'{$arg0}' is invalid in friend declarations</target>
         </segment>
       </unit>
       <unit id="23" name="err_integer_literal_too_large">
@@ -158,13 +158,13 @@
       <unit id="25" name="err_invalid_feature_combination">
         <segment>
           <source>invalid feature combination: %0</source>
-          <target>invalid feature combination: ${arg0}</target>
+          <target>invalid feature combination: {$arg0}</target>
         </segment>
       </unit>
       <unit id="26" name="err_invalid_member_in_interface">
         <segment>
           <source>%select{data member |non-public member function |static member function |user-declared constructor|user-declared destructor|operator |nested class }0%1 is not permitted within an interface type</source>
-          <target>%select{data member |non-public member function |static member function |user-declared constructor|user-declared destructor|operator |nested class }0${arg1} is not permitted within an interface type</target>
+          <target>%select{data member |non-public member function |static member function |user-declared constructor|user-declared destructor|operator |nested class }0{$arg1} is not permitted within an interface type</target>
         </segment>
       </unit>
       <unit id="27" name="err_invalid_numeric_udl">
@@ -188,79 +188,79 @@
       <unit id="30" name="err_keyword_not_supported_on_target">
         <segment>
           <source>%0 is not supported on this target</source>
-          <target>${arg0} is not supported on this target</target>
+          <target>{$arg0} is not supported on this target</target>
         </segment>
       </unit>
       <unit id="31" name="err_mips_fp64_req">
         <segment>
           <source>'%0' can only be used if the target supports the mfhc1 and mthc1 instructions</source>
-          <target>'${arg0}' can only be used if the target supports the mfhc1 and mthc1 instructions</target>
+          <target>'{$arg0}' can only be used if the target supports the mfhc1 and mthc1 instructions</target>
         </segment>
       </unit>
       <unit id="32" name="err_module_build_disabled">
         <segment>
           <source>module '%0' is needed but has not been provided, and implicit use of module files is disabled</source>
-          <target>module '${arg0}' is needed but has not been provided, and implicit use of module files is disabled</target>
+          <target>module '{$arg0}' is needed but has not been provided, and implicit use of module files is disabled</target>
         </segment>
       </unit>
       <unit id="33" name="err_module_build_shadowed_submodule">
         <segment>
           <source>build a shadowed submodule '%0'</source>
-          <target>build a shadowed submodule '${arg0}'</target>
+          <target>build a shadowed submodule '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="34" name="err_module_cycle">
         <segment>
           <source>cyclic dependency in module '%0': %1</source>
-          <target>cyclic dependency in module '${arg0}': ${arg1}</target>
+          <target>cyclic dependency in module '{$arg0}': {$arg1}</target>
         </segment>
       </unit>
       <unit id="35" name="err_module_format_unhandled">
         <segment>
           <source>no handler registered for module format '%0'</source>
-          <target>no handler registered for module format '${arg0}'</target>
+          <target>no handler registered for module format '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="36" name="err_module_header_missing">
         <segment>
           <source>%select{|umbrella }0header '%1' not found</source>
-          <target>%select{|umbrella }0header '${arg1}' not found</target>
+          <target>%select{|umbrella }0header '{$arg1}' not found</target>
         </segment>
       </unit>
       <unit id="37" name="err_module_not_built">
         <segment>
           <source>could not build module '%0'</source>
-          <target>could not build module '${arg0}'</target>
+          <target>could not build module '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="38" name="err_module_not_found">
         <segment>
           <source>module '%0' not found</source>
-          <target>module '${arg0}' not found</target>
+          <target>module '{$arg0}' not found</target>
         </segment>
       </unit>
       <unit id="39" name="err_module_prebuilt">
         <segment>
           <source>error in loading module '%0' from prebuilt module path</source>
-          <target>error in loading module '${arg0}' from prebuilt module path</target>
+          <target>error in loading module '{$arg0}' from prebuilt module path</target>
         </segment>
       </unit>
       <unit id="40" name="err_module_rebuild_finalized">
         <segment>
           <source>cannot rebuild module '%0' as it is already finalized</source>
-          <target>cannot rebuild module '${arg0}' as it is already finalized</target>
+          <target>cannot rebuild module '{$arg0}' as it is already finalized</target>
         </segment>
       </unit>
       <unit id="41" name="err_module_shadowed">
         <segment>
           <source>import of shadowed module '%0'</source>
-          <target>import of shadowed module '${arg0}'</target>
+          <target>import of shadowed module '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="42" name="err_module_unavailable">
         <segment>
           <source>module '%0' %select{is incompatible with|requires}1 feature '%2'</source>
-          <target>module '${arg0}' %select{is incompatible with|requires}1 feature '${arg2}'</target>
+          <target>module '{$arg0}' %select{is incompatible with|requires}1 feature '{$arg2}'</target>
         </segment>
       </unit>
       <unit id="43" name="err_ms_asm_bitfield_unsupported">
@@ -272,79 +272,79 @@
       <unit id="44" name="err_mt_message">
         <segment>
           <source>[rewriter] %0</source>
-          <target>[rewriter] ${arg0}</target>
+          <target>[rewriter] {$arg0}</target>
         </segment>
       </unit>
       <unit id="45" name="err_nullability_conflicting">
         <segment>
           <source>nullability specifier %0 conflicts with existing specifier %1</source>
-          <target>nullability specifier ${arg0} conflicts with existing specifier ${arg1}</target>
+          <target>nullability specifier {$arg0} conflicts with existing specifier {$arg1}</target>
         </segment>
       </unit>
       <unit id="46" name="err_omp_more_one_clause">
         <segment>
           <source>directive '#pragma omp %0' cannot contain more than one '%1' clause%select{| with '%3' name modifier| with 'source' dependence}2</source>
-          <target>directive '#pragma omp ${arg0}' cannot contain more than one '${arg1}' clause%select{| with '${arg3}' name modifier| with 'source' dependence}2</target>
+          <target>directive '#pragma omp {$arg0}' cannot contain more than one '{$arg1}' clause%select{| with '{$arg3}' name modifier| with 'source' dependence}2</target>
         </segment>
       </unit>
       <unit id="47" name="err_omp_required_clause">
         <segment>
           <source>directive '#pragma omp %0' requires the '%1' clause</source>
-          <target>directive '#pragma omp ${arg0}' requires the '${arg1}' clause</target>
+          <target>directive '#pragma omp {$arg0}' requires the '{$arg1}' clause</target>
         </segment>
       </unit>
       <unit id="48" name="err_opencl_extension_and_feature_differs">
         <segment>
           <source>options %0 and %1 are set to different values</source>
-          <target>options ${arg0} and ${arg1} are set to different values</target>
+          <target>options {$arg0} and {$arg1} are set to different values</target>
         </segment>
       </unit>
       <unit id="49" name="err_opencl_feature_requires">
         <segment>
           <source>feature %0 requires support of %1 feature</source>
-          <target>feature ${arg0} requires support of ${arg1} feature</target>
+          <target>feature {$arg0} requires support of {$arg1} feature</target>
         </segment>
       </unit>
       <unit id="50" name="err_opencl_unknown_type_specifier">
         <segment>
           <source>%0 does not support the '%1' %select{type qualifier|storage class specifier}2</source>
-          <target>${arg0} does not support the '${arg1}' %select{type qualifier|storage class specifier}2</target>
+          <target>{$arg0} does not support the '{$arg1}' %select{type qualifier|storage class specifier}2</target>
         </segment>
       </unit>
       <unit id="51" name="err_openclcxx_not_supported">
         <segment>
           <source>'%0' is not supported in C++ for OpenCL</source>
-          <target>'${arg0}' is not supported in C++ for OpenCL</target>
+          <target>'{$arg0}' is not supported in C++ for OpenCL</target>
         </segment>
       </unit>
       <unit id="52" name="err_opt_not_valid_on_target">
         <segment>
           <source>option '%0' cannot be specified on this target</source>
-          <target>option '${arg0}' cannot be specified on this target</target>
+          <target>option '{$arg0}' cannot be specified on this target</target>
         </segment>
       </unit>
       <unit id="53" name="err_opt_not_valid_with_opt">
         <segment>
           <source>option '%0' cannot be specified with '%1'</source>
-          <target>option '${arg0}' cannot be specified with '${arg1}'</target>
+          <target>option '{$arg0}' cannot be specified with '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="54" name="err_opt_not_valid_with_opt_on_target">
         <segment>
           <source>option '%0' cannot be specified with '%1' for the %2 sub-architecture</source>
-          <target>option '${arg0}' cannot be specified with '${arg1}' for the ${arg2} sub-architecture</target>
+          <target>option '{$arg0}' cannot be specified with '{$arg1}' for the {$arg2} sub-architecture</target>
         </segment>
       </unit>
       <unit id="55" name="err_opt_not_valid_without_opt">
         <segment>
           <source>option '%0' cannot be specified without '%1'</source>
-          <target>option '${arg0}' cannot be specified without '${arg1}'</target>
+          <target>option '{$arg0}' cannot be specified without '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="56" name="err_param_redefinition">
         <segment>
           <source>redefinition of parameter %0</source>
-          <target>redefinition of parameter ${arg0}</target>
+          <target>redefinition of parameter {$arg0}</target>
         </segment>
       </unit>
       <unit id="57" name="err_ppc_impossible_musttail">
@@ -356,25 +356,25 @@
       <unit id="58" name="err_requires_positive_value">
         <segment>
           <source>%select{invalid value '%0'; must be positive|value '%0' is too large}1</source>
-          <target>%select{invalid value '${arg0}'; must be positive|value '${arg0}' is too large}1</target>
+          <target>%select{invalid value '{$arg0}'; must be positive|value '{$arg0}' is too large}1</target>
         </segment>
       </unit>
       <unit id="59" name="err_seh___except_block">
         <segment>
           <source>%0 only allowed in __except block or filter expression</source>
-          <target>${arg0} only allowed in __except block or filter expression</target>
+          <target>{$arg0} only allowed in __except block or filter expression</target>
         </segment>
       </unit>
       <unit id="60" name="err_seh___except_filter">
         <segment>
           <source>%0 only allowed in __except filter expression</source>
-          <target>${arg0} only allowed in __except filter expression</target>
+          <target>{$arg0} only allowed in __except filter expression</target>
         </segment>
       </unit>
       <unit id="61" name="err_seh___finally_block">
         <segment>
           <source>%0 only allowed in __finally block</source>
-          <target>${arg0} only allowed in __finally block</target>
+          <target>{$arg0} only allowed in __finally block</target>
         </segment>
       </unit>
       <unit id="62" name="err_seh_expected_handler">
@@ -398,79 +398,79 @@
       <unit id="65" name="err_target_unknown_abi">
         <segment>
           <source>unknown target ABI '%0'</source>
-          <target>unknown target ABI '${arg0}'</target>
+          <target>unknown target ABI '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="66" name="err_target_unknown_cpu">
         <segment>
           <source>unknown target CPU '%0'</source>
-          <target>unknown target CPU '${arg0}'</target>
+          <target>unknown target CPU '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="67" name="err_target_unknown_fpmath">
         <segment>
           <source>unknown FP unit '%0'</source>
-          <target>unknown FP unit '${arg0}'</target>
+          <target>unknown FP unit '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="68" name="err_target_unknown_triple">
         <segment>
           <source>unknown target triple '%0'</source>
-          <target>unknown target triple '${arg0}'</target>
+          <target>unknown target triple '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="69" name="err_target_unsupported_abi">
         <segment>
           <source>ABI '%0' is not supported on CPU '%1'</source>
-          <target>ABI '${arg0}' is not supported on CPU '${arg1}'</target>
+          <target>ABI '{$arg0}' is not supported on CPU '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="70" name="err_target_unsupported_abi_for_triple">
         <segment>
           <source>ABI '%0' is not supported for '%1'</source>
-          <target>ABI '${arg0}' is not supported for '${arg1}'</target>
+          <target>ABI '{$arg0}' is not supported for '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="71" name="err_target_unsupported_abi_with_fpu">
         <segment>
           <source>'%0' ABI is not supported with FPU</source>
-          <target>'${arg0}' ABI is not supported with FPU</target>
+          <target>'{$arg0}' ABI is not supported with FPU</target>
         </segment>
       </unit>
       <unit id="72" name="err_target_unsupported_cpu_for_micromips">
         <segment>
           <source>micromips is not supported for target CPU '%0'</source>
-          <target>micromips is not supported for target CPU '${arg0}'</target>
+          <target>micromips is not supported for target CPU '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="73" name="err_target_unsupported_execute_only">
         <segment>
           <source>execute only is not supported for the %0 sub-architecture</source>
-          <target>execute only is not supported for the ${arg0} sub-architecture</target>
+          <target>execute only is not supported for the {$arg0} sub-architecture</target>
         </segment>
       </unit>
       <unit id="74" name="err_target_unsupported_fpmath">
         <segment>
           <source>the '%0' unit is not supported with this instruction set</source>
-          <target>the '${arg0}' unit is not supported with this instruction set</target>
+          <target>the '{$arg0}' unit is not supported with this instruction set</target>
         </segment>
       </unit>
       <unit id="75" name="err_target_unsupported_mcmse">
         <segment>
           <source>-mcmse is not supported for %0</source>
-          <target>-mcmse is not supported for ${arg0}</target>
+          <target>-mcmse is not supported for {$arg0}</target>
         </segment>
       </unit>
       <unit id="76" name="err_target_unsupported_tp_hard">
         <segment>
           <source>hardware TLS register is not supported for the %0 sub-architecture</source>
-          <target>hardware TLS register is not supported for the ${arg0} sub-architecture</target>
+          <target>hardware TLS register is not supported for the {$arg0} sub-architecture</target>
         </segment>
       </unit>
       <unit id="77" name="err_target_unsupported_unaligned">
         <segment>
           <source>the %0 sub-architecture does not support unaligned accesses</source>
-          <target>the ${arg0} sub-architecture does not support unaligned accesses</target>
+          <target>the {$arg0} sub-architecture does not support unaligned accesses</target>
         </segment>
       </unit>
       <unit id="78" name="err_too_large_for_fixed_point">
@@ -482,43 +482,43 @@
       <unit id="79" name="err_unable_to_make_temp">
         <segment>
           <source>unable to make temporary file: %0</source>
-          <target>unable to make temporary file: ${arg0}</target>
+          <target>unable to make temporary file: {$arg0}</target>
         </segment>
       </unit>
       <unit id="80" name="err_unable_to_rename_temp">
         <segment>
           <source>unable to rename temporary '%0' to output file '%1': '%2'</source>
-          <target>unable to rename temporary '${arg0}' to output file '${arg1}': '${arg2}'</target>
+          <target>unable to rename temporary '{$arg0}' to output file '{$arg1}': '{$arg2}'</target>
         </segment>
       </unit>
       <unit id="81" name="err_unimplemented_conversion_with_fixed_point_type">
         <segment>
           <source>conversion between fixed point and %0 is not yet supported</source>
-          <target>conversion between fixed point and ${arg0} is not yet supported</target>
+          <target>conversion between fixed point and {$arg0} is not yet supported</target>
         </segment>
       </unit>
       <unit id="82" name="err_unknown_analyzer_checker_or_package">
         <segment>
           <source>no analyzer checkers or packages are associated with '%0'</source>
-          <target>no analyzer checkers or packages are associated with '${arg0}'</target>
+          <target>no analyzer checkers or packages are associated with '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="83" name="err_unsupported_abi_for_opt">
         <segment>
           <source>'%0' can only be used with the '%1' ABI</source>
-          <target>'${arg0}' can only be used with the '${arg1}' ABI</target>
+          <target>'{$arg0}' can only be used with the '{$arg1}' ABI</target>
         </segment>
       </unit>
       <unit id="84" name="err_unsupported_bom">
         <segment>
           <source>%0 byte order mark detected in '%1', but encoding is not supported</source>
-          <target>${arg0} byte order mark detected in '${arg1}', but encoding is not supported</target>
+          <target>{$arg0} byte order mark detected in '{$arg1}', but encoding is not supported</target>
         </segment>
       </unit>
       <unit id="85" name="err_use_of_tag_name_without_tag">
         <segment>
           <source>must use '%1' tag to refer to type %0%select{| in this scope}2</source>
-          <target>must use '${arg1}' tag to refer to type ${arg0}%select{| in this scope}2</target>
+          <target>must use '{$arg1}' tag to refer to type {$arg0}%select{| in this scope}2</target>
         </segment>
       </unit>
       <unit id="86" name="ext_c23_bitint_suffix">
@@ -572,7 +572,7 @@
       <unit id="94" name="ext_duplicate_declspec">
         <segment>
           <source>duplicate '%0' declaration specifier</source>
-          <target>duplicate '${arg0}' declaration specifier</target>
+          <target>duplicate '{$arg0}' declaration specifier</target>
         </segment>
       </unit>
       <unit id="95" name="ext_integer_literal_too_large_for_signed">
@@ -596,7 +596,7 @@
       <unit id="98" name="ext_warn_duplicate_declspec">
         <segment>
           <source>duplicate '%0' declaration specifier</source>
-          <target>duplicate '${arg0}' declaration specifier</target>
+          <target>duplicate '{$arg0}' declaration specifier</target>
         </segment>
       </unit>
       <unit id="99" name="fatal_too_many_errors">
@@ -614,19 +614,19 @@
       <unit id="101" name="note_apinotes_message">
         <segment>
           <source>%0</source>
-          <target>${arg0}</target>
+          <target>{$arg0}</target>
         </segment>
       </unit>
       <unit id="102" name="note_constexpr_invalid_template_arg">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '%3' variable}2 is not allowed in a template argument</source>
-          <target>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '${arg3}' variable}2 is not allowed in a template argument</target>
+          <target>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '{$arg3}' variable}2 is not allowed in a template argument</target>
         </segment>
       </unit>
       <unit id="103" name="note_decl_hiding_tag_type">
         <segment>
           <source>%1 %0 is hidden by a non-type declaration of %0 here</source>
-          <target>${arg1} ${arg0} is hidden by a non-type declaration of ${arg0} here</target>
+          <target>{$arg1} {$arg0} is hidden by a non-type declaration of {$arg0} here</target>
         </segment>
       </unit>
       <unit id="104" name="note_declared_at">
@@ -644,19 +644,19 @@
       <unit id="106" name="note_file_misc_sloc_usage">
         <segment>
           <source>%0 additional files entered using a total of %1B of space</source>
-          <target>${arg0} additional files entered using a total of ${arg1}B of space</target>
+          <target>{$arg0} additional files entered using a total of {$arg1}B of space</target>
         </segment>
       </unit>
       <unit id="107" name="note_file_sloc_usage">
         <segment>
           <source>file entered %0 time%s0 using %1B of space%plural{0:|: plus %2B for macro expansions}2</source>
-          <target>file entered ${arg0} time%s0 using ${arg1}B of space%plural{0:|: plus ${arg2}B for macro expansions}2</target>
+          <target>file entered {$arg0} time%s0 using {$arg1}B of space%plural{0:|: plus {$arg2}B for macro expansions}2</target>
         </segment>
       </unit>
       <unit id="108" name="note_forward_declaration">
         <segment>
           <source>forward declaration of %0</source>
-          <target>forward declaration of ${arg0}</target>
+          <target>forward declaration of {$arg0}</target>
         </segment>
       </unit>
       <unit id="109" name="note_invalid_subexpr_in_const_expr">
@@ -668,13 +668,13 @@
       <unit id="110" name="note_matching">
         <segment>
           <source>to match this %0</source>
-          <target>to match this ${arg0}</target>
+          <target>to match this {$arg0}</target>
         </segment>
       </unit>
       <unit id="111" name="note_mt_message">
         <segment>
           <source>[rewriter] %0</source>
-          <target>[rewriter] ${arg0}</target>
+          <target>[rewriter] {$arg0}</target>
         </segment>
       </unit>
       <unit id="112" name="note_possibility">
@@ -722,13 +722,13 @@
       <unit id="119" name="note_total_sloc_usage">
         <segment>
           <source>%0B in local locations, %1B in locations loaded from AST files, for a total of %2B (%3%% of available space)</source>
-          <target>${arg0}B in local locations, ${arg1}B in locations loaded from AST files, for a total of ${arg2}B (${arg3}% of available space)</target>
+          <target>{$arg0}B in local locations, {$arg1}B in locations loaded from AST files, for a total of {$arg2}B ({$arg3}% of available space)</target>
         </segment>
       </unit>
       <unit id="120" name="note_type_being_defined">
         <segment>
           <source>definition of %0 is not complete until the closing '}'</source>
-          <target>definition of ${arg0} is not complete until the closing '\}'</target>
+          <target>definition of {$arg0} is not complete until the closing '\}'</target>
         </segment>
       </unit>
       <unit id="121" name="note_using">
@@ -740,19 +740,19 @@
       <unit id="122" name="note_valid_options">
         <segment>
           <source>valid target CPU values are: %0</source>
-          <target>valid target CPU values are: ${arg0}</target>
+          <target>valid target CPU values are: {$arg0}</target>
         </segment>
       </unit>
       <unit id="123" name="remark_module_lock_failure">
         <segment>
           <source>could not acquire lock file for module '%0': %1</source>
-          <target>could not acquire lock file for module '${arg0}': ${arg1}</target>
+          <target>could not acquire lock file for module '{$arg0}': {$arg1}</target>
         </segment>
       </unit>
       <unit id="124" name="remark_module_lock_timeout">
         <segment>
           <source>timed out waiting to acquire lock file for module '%0'</source>
-          <target>timed out waiting to acquire lock file for module '${arg0}'</target>
+          <target>timed out waiting to acquire lock file for module '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="125" name="remark_sloc_usage">
@@ -764,19 +764,19 @@
       <unit id="126" name="warn_apinotes_message">
         <segment>
           <source>%0</source>
-          <target>${arg0}</target>
+          <target>{$arg0}</target>
         </segment>
       </unit>
       <unit id="127" name="warn_apinotes_private_case">
         <segment>
           <source>private API notes file for module '%0' should be named '%0_private.apinotes', not '%1'</source>
-          <target>private API notes file for module '${arg0}' should be named '${arg0}_private.apinotes', not '${arg1}'</target>
+          <target>private API notes file for module '{$arg0}' should be named '{$arg0}_private.apinotes', not '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="128" name="warn_apinotes_private_case_system">
         <segment>
           <source>private API notes file for module '%0' should be named '%0_private.apinotes', not '%1'</source>
-          <target>private API notes file for module '${arg0}' should be named '${arg0}_private.apinotes', not '${arg1}'</target>
+          <target>private API notes file for module '{$arg0}' should be named '{$arg0}_private.apinotes', not '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="129" name="warn_arcmt_nsalloc_realloc">
@@ -788,7 +788,7 @@
       <unit id="130" name="warn_attribute_ignored">
         <segment>
           <source>%0 attribute ignored</source>
-          <target>${arg0} attribute ignored</target>
+          <target>{$arg0} attribute ignored</target>
         </segment>
       </unit>
       <unit id="131" name="warn_c23_compat_bitint_suffix">
@@ -806,13 +806,13 @@
       <unit id="133" name="warn_conflicting_nullability_attr_overriding_param_types">
         <segment>
           <source>conflicting nullability specifier on parameter types, %0 conflicts with existing specifier %1</source>
-          <target>conflicting nullability specifier on parameter types, ${arg0} conflicts with existing specifier ${arg1}</target>
+          <target>conflicting nullability specifier on parameter types, {$arg0} conflicts with existing specifier {$arg1}</target>
         </segment>
       </unit>
       <unit id="134" name="warn_conflicting_nullability_attr_overriding_ret_types">
         <segment>
           <source>conflicting nullability specifier on return types, %0 conflicts with existing specifier %1</source>
-          <target>conflicting nullability specifier on return types, ${arg0} conflicts with existing specifier ${arg1}</target>
+          <target>conflicting nullability specifier on return types, {$arg0} conflicts with existing specifier {$arg1}</target>
         </segment>
       </unit>
       <unit id="135" name="warn_cxx20_compat_consteval">
@@ -842,13 +842,13 @@
       <unit id="139" name="warn_dup_category_def">
         <segment>
           <source>duplicate definition of category %1 on interface %0</source>
-          <target>duplicate definition of category ${arg1} on interface ${arg0}</target>
+          <target>duplicate definition of category {$arg1} on interface {$arg0}</target>
         </segment>
       </unit>
       <unit id="140" name="warn_duplicate_declspec">
         <segment>
           <source>duplicate '%0' declaration specifier</source>
-          <target>duplicate '${arg0}' declaration specifier</target>
+          <target>duplicate '{$arg0}' declaration specifier</target>
         </segment>
       </unit>
       <unit id="141" name="warn_fp_nan_inf_when_disabled">
@@ -860,31 +860,31 @@
       <unit id="142" name="warn_ignored_hip_only_option">
         <segment>
           <source>'%0' is ignored since it is only supported for HIP</source>
-          <target>'${arg0}' is ignored since it is only supported for HIP</target>
+          <target>'{$arg0}' is ignored since it is only supported for HIP</target>
         </segment>
       </unit>
       <unit id="143" name="warn_incompatible_branch_protection_option">
         <segment>
           <source>'-mbranch-protection=' option is incompatible with the '%0' architecture</source>
-          <target>'-mbranch-protection=' option is incompatible with the '${arg0}' architecture</target>
+          <target>'-mbranch-protection=' option is incompatible with the '{$arg0}' architecture</target>
         </segment>
       </unit>
       <unit id="144" name="warn_invalid_feature_combination">
         <segment>
           <source>invalid feature combination: %0</source>
-          <target>invalid feature combination: ${arg0}</target>
+          <target>invalid feature combination: {$arg0}</target>
         </segment>
       </unit>
       <unit id="145" name="warn_method_param_declaration">
         <segment>
           <source>redeclaration of method parameter %0</source>
-          <target>redeclaration of method parameter ${arg0}</target>
+          <target>redeclaration of method parameter {$arg0}</target>
         </segment>
       </unit>
       <unit id="146" name="warn_method_param_redefinition">
         <segment>
           <source>redefinition of method parameter %0</source>
-          <target>redefinition of method parameter ${arg0}</target>
+          <target>redefinition of method parameter {$arg0}</target>
         </segment>
       </unit>
       <unit id="147" name="warn_missing_type_specifier">
@@ -896,7 +896,7 @@
       <unit id="148" name="warn_mt_message">
         <segment>
           <source>[rewriter] %0</source>
-          <target>[rewriter] ${arg0}</target>
+          <target>[rewriter] {$arg0}</target>
         </segment>
       </unit>
       <unit id="149" name="warn_next_larger_fp_type_same_size_than_fp">
@@ -908,7 +908,7 @@
       <unit id="150" name="warn_nullability_duplicate">
         <segment>
           <source>duplicate nullability specifier %0</source>
-          <target>duplicate nullability specifier ${arg0}</target>
+          <target>duplicate nullability specifier {$arg0}</target>
         </segment>
       </unit>
       <unit id="151" name="warn_old_implicitly_unsigned_long">
@@ -926,19 +926,19 @@
       <unit id="153" name="warn_opencl_unsupported_core_feature">
         <segment>
           <source>%0 is a core feature in %select{OpenCL C|C++ for OpenCL}1 version %2 but not supported on this target</source>
-          <target>${arg0} is a core feature in %select{OpenCL C|C++ for OpenCL}1 version ${arg2} but not supported on this target</target>
+          <target>{$arg0} is a core feature in %select{OpenCL C|C++ for OpenCL}1 version {$arg2} but not supported on this target</target>
         </segment>
       </unit>
       <unit id="154" name="warn_poison_system_directories">
         <segment>
           <source>include location '%0' is unsafe for cross-compilation</source>
-          <target>include location '${arg0}' is unsafe for cross-compilation</target>
+          <target>include location '{$arg0}' is unsafe for cross-compilation</target>
         </segment>
       </unit>
       <unit id="155" name="warn_pragma_debug_missing_argument">
         <segment>
           <source>missing argument to debug command '%0'</source>
-          <target>missing argument to debug command '${arg0}'</target>
+          <target>missing argument to debug command '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="156" name="warn_pragma_debug_unexpected_argument">
@@ -968,31 +968,31 @@
       <unit id="160" name="warn_target_unrecognized_env">
         <segment>
           <source>mismatch between architecture and environment in target triple '%0'; did you mean '%1'?</source>
-          <target>mismatch between architecture and environment in target triple '${arg0}'; did you mean '${arg1}'?</target>
+          <target>mismatch between architecture and environment in target triple '{$arg0}'; did you mean '{$arg1}'?</target>
         </segment>
       </unit>
       <unit id="161" name="warn_target_unsupported_branch_protection_attribute">
         <segment>
           <source>ignoring the 'branch-protection' attribute because the '%0' architecture does not support it</source>
-          <target>ignoring the 'branch-protection' attribute because the '${arg0}' architecture does not support it</target>
+          <target>ignoring the 'branch-protection' attribute because the '{$arg0}' architecture does not support it</target>
         </segment>
       </unit>
       <unit id="162" name="warn_throw_not_valid_on_target">
         <segment>
           <source>target '%0' does not support exception handling; 'throw' is assumed to be never reached</source>
-          <target>target '${arg0}' does not support exception handling; 'throw' is assumed to be never reached</target>
+          <target>target '{$arg0}' does not support exception handling; 'throw' is assumed to be never reached</target>
         </segment>
       </unit>
       <unit id="163" name="warn_try_not_valid_on_target">
         <segment>
           <source>target '%0' does not support exception handling; 'catch' block is ignored</source>
-          <target>target '${arg0}' does not support exception handling; 'catch' block is ignored</target>
+          <target>target '{$arg0}' does not support exception handling; 'catch' block is ignored</target>
         </segment>
       </unit>
       <unit id="164" name="warn_unknown_attribute_ignored">
         <segment>
           <source>unknown attribute %0 ignored</source>
-          <target>unknown attribute ${arg0} ignored</target>
+          <target>unknown attribute {$arg0} ignored</target>
         </segment>
       </unit>
     </group>

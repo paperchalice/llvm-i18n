@@ -8,13 +8,13 @@
       <unit id="2521" name="err_ctu_error_opening">
         <segment>
           <source>error opening '%0': required by the CrossTU functionality</source>
-          <target>error opening '${arg0}': required by the CrossTU functionality</target>
+          <target>error opening '{$arg0}': required by the CrossTU functionality</target>
         </segment>
       </unit>
       <unit id="2522" name="err_extdefmap_parsing">
         <segment>
           <source>error parsing index file: '%0' line: %1 '&lt;USR-Length&gt;:&lt;USR&gt; &lt;File-Path&gt;' format expected</source>
-          <target>error parsing index file: '${arg0}' line: ${arg1} '&lt;USR-Length&gt;:&lt;USR&gt; &lt;File-Path&gt;' format expected</target>
+          <target>error parsing index file: '{$arg0}' line: {$arg1} '&lt;USR-Length&gt;:&lt;USR&gt; &lt;File-Path&gt;' format expected</target>
         </segment>
       </unit>
       <unit id="2523" name="err_multiple_def_index">
@@ -26,7 +26,7 @@
       <unit id="2524" name="warn_ctu_incompat_triple">
         <segment>
           <source>imported AST from '%0' had been generated for a different target, current: %1, imported: %2</source>
-          <target>imported AST from '${arg0}' had been generated for a different target, current: ${arg1}, imported: ${arg2}</target>
+          <target>imported AST from '{$arg0}' had been generated for a different target, current: {$arg1}, imported: {$arg2}</target>
         </segment>
       </unit>
     </group>
