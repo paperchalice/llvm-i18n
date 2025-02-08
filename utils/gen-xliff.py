@@ -56,7 +56,7 @@ class XmlGenerator:
     xml_tree = ET.ElementTree(xliff)
     ET.indent(xml_tree)
 
-    output_dir = 'root'/Path(args.trg_lang.replace('-', '/'))
+    output_dir = 'xliff'/Path(args.trg_lang.replace('-', '/'))
     os.makedirs(output_dir, exist_ok=True)
     with open(output_dir/f"Diagnostic{self.component}Kinds.xlf", "wb") as xml_file:
         xml_tree.write(xml_file, encoding="UTF-8", xml_declaration=True, short_empty_elements=False)

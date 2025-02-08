@@ -21,7 +21,7 @@ class Updater:
     self.component = component
     input_dir = Path(args.trg_lang.replace('-', '/'))
 
-    file_name = 'root'/input_dir/f'Diagnostic{component}Kinds.xlf'
+    file_name = 'xliff'/input_dir/f'Diagnostic{component}Kinds.xlf'
     self.file_name = file_name
     ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.0')
     self.xlf = ET.parse(file_name)
