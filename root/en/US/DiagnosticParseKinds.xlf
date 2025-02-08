@@ -2996,7 +2996,7 @@
       <unit id="1919" name="note_omp_ctx_compatible_set_and_selector_for_property">
         <segment>
           <source>the context property '%0' can be nested in the context selector '%1' which is nested in the context set '%2'; try 'match(%2={%1(%0)})'</source>
-          <target>the context property '{$arg0}' can be nested in the context selector '{$arg1}' which is nested in the context set '{$arg2}'; try 'match({$arg2}={{$arg1}({$arg0})})'</target>
+          <target>the context property '{$arg0}' can be nested in the context selector '{$arg1}' which is nested in the context set '{$arg2}'; try 'match({$arg2}=\{{$arg1}({$arg0})\})'</target>
         </segment>
       </unit>
       <unit id="1920" name="note_omp_ctx_compatible_set_for_selector">
@@ -3026,7 +3026,7 @@
       <unit id="1924" name="note_omp_declare_variant_ctx_try">
         <segment>
           <source>try 'match(%0={%1%2})'</source>
-          <target>try 'match({$arg0}={{$arg1}{$arg2}})'</target>
+          <target>try 'match({$arg0}=\{{$arg1}{$arg2}\})'</target>
         </segment>
       </unit>
       <unit id="1925" name="note_omp_declare_variant_ctx_used_here">
