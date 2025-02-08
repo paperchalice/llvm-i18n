@@ -5,7 +5,7 @@ from extractor import COMPONENT_LIST
 import argparse
 from pathlib import Path
 import locale
-import os
+import binascii
 
 parser = argparse.ArgumentParser(description='Example argparse script.')
 parser.add_argument('--trg-lang', required=True, type=str, help='target language')
@@ -20,23 +20,10 @@ TXT_TEMPLATE = '''// Automatically generated file, do not edit directly!
 }}
 '''
 
-def quoted(s):
-  q = ''
-  for c in s:
-    match c:
-      case '\r':
-        q += '\\r'
-      case '\n':
-        q += '\\n'
-      case '\t':
-        q += '\\t'
-      case '\\':
-        q += r'\\'
-      case '"':
-        q += r'\"'
-      case _:
-        q += c
-  return f'"{q}"'
+def to_icu_bin(txt):
+  if txt is None:
+    return ':bin { 00 }'
+  return f':bin {{ {txt.encode("utf-8").hex()}00 }}'
 
 class Converter:
   def __init__(self, lang):
@@ -61,10 +48,7 @@ class Converter:
       units = xlf.findall('./xliff:file/xliff:group/xliff:unit', ns)
       for unit in units:
         tgt = unit.find('./xliff:segment/xliff:target', ns)
-        if tgt.text:
-          string_list.append(quoted(tgt.text))
-        else:
-          string_list.append('""')
+        string_list.append(to_icu_bin(tgt.text))
 
     lang = self.lang.replace('-', '_')
     if lang == 'en_US':
@@ -72,8 +56,8 @@ class Converter:
     strings = ',\n    '.join(string_list)
     out_txt = TXT_TEMPLATE.format(lang=lang, strings=strings)
     # With BOM so genrb can recognize it.
-    Path('build').mkdir(exist_ok=True)
-    out_file = Path(f'build/{lang}.txt')
+    Path('icures').mkdir(exist_ok=True)
+    out_file = Path(f'icures/{lang}.txt')
     with open(out_file, 'w+', encoding='utf-8-sig') as f:
       f.write(out_txt)
 
