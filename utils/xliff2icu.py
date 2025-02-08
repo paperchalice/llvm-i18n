@@ -19,14 +19,24 @@ TXT_TEMPLATE = '''// Automatically generated file, do not edit directly!
 }}
 '''
 
-def process_str(s):
-  lines = s.splitlines()
-  for idx, line in enumerate(lines):
-    line = line.encode('unicode-escape').decode('utf-8')
-    line = line.replace('"', r'\"')
-    line = f'"{line}"'
-    lines[idx] = line
-  return f'{str.join('\n    ', lines)}'
+def quoted(s):
+  q = ''
+  for c in s:
+    print(c)
+    match c:
+      case '\r':
+        q += '\\r'
+      case '\n':
+        q += '\\n'
+      case '\t':
+        q += '\\t'
+      case '\\':
+        q += r'\\'
+      case '"':
+        q += r'\"'
+      case _:
+        q += c
+  return f'"{q}"'
 
 class Converter:
   def __init__(self, component):
@@ -46,7 +56,7 @@ class Converter:
     for unit in units:
       tgt = unit.find('./xliff:segment/xliff:target', ns)
       if tgt.text:
-        string_list.append(process_str(tgt.text))
+        string_list.append(quoted(tgt.text))
       else:
         string_list.append('""')
     return string_list
