@@ -32,6 +32,7 @@ class DiagInfo:
     return f'{self.spelling}: {self.value}: {self.desc}'
 
 class Extractor:
+  enums_map = {}
   def __init__(self, component):
     self._component = component
     self.enums: list[DiagInfo] = []
@@ -77,6 +78,9 @@ class Extractor:
           self.extract_descs(child)
 
   def extract(self, clang_args):
+    if self._component in Extractor.enums_map:
+      self.enums =  Extractor.enums_map[self._component]
+      return
     src = SRC_TEMPLATE.format(component=self._component)
     index = clang.cindex.Index.create()
     translation_unit = index.parse(f'src.cpp', args=clang_args,
@@ -85,6 +89,7 @@ class Extractor:
     self.extract_enums(cursor)
     self._should_add = False
     self.extract_descs(cursor)
+    Extractor.enums_map[self._component] = self.enums
 
 # Sync order with clang/lib/Basic/DiagnosticIDs.cpp: StaticDiagInfo[].
 COMPONENT_LIST = [
