@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
 import pathlib
-from extractor import DiagInfo, Extractor, COMPONENT_LIST
+from extractor import DiagInfo, Extractor
 import os
 from pathlib import Path
 import argparse
@@ -24,10 +24,9 @@ class XmlGenerator:
       'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
       'version': '2.1',
       'srcLang': 'en-US',
+      'trgLang': args.trg_lang,
       'xsi:schemaLocation': 'http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd'
     }
-    if args.trg_lang:
-      xliff_attr['trgLang'] = args.trg_lang
     
     xliff = ET.Element("xliff", **xliff_attr)
 
@@ -62,21 +61,18 @@ class XmlGenerator:
         xml_tree.write(xml_file, encoding="UTF-8", xml_declaration=True, short_empty_elements=False)
     return
 
-def handle_component(component):
+def main():
   clang_args = ['-std=c++17']
   if args.clang_prefix:
     clang_args.append(f'-I{args.clang_prefix/'include'}')
   if args.llvm_prefix:
     clang_args.append(f'-I{args.llvm_prefix/'include'}')
-
-  extractor = Extractor(component)
+  extractor = Extractor()
   extractor.extract(clang_args)
-  generator = XmlGenerator(args.trg_lang, component)
-  generator.generate(extractor.enums)
-
-def main():
-  for c in COMPONENT_LIST:
-    handle_component(c)
+  result = extractor.get_result()
+  for k, v in result.items():
+    generator = XmlGenerator(args.trg_lang, k)
+    generator.generate(v)
 
 if __name__ == "__main__":
   main()
