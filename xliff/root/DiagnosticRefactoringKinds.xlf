@@ -5,37 +5,37 @@
       <note appliesTo="source">Automatically generated file, do not edit directly!</note>
     </notes>
     <group id="Refactoring">
-      <unit id="7221" name="err_refactor_code_outside_of_function">
+      <unit id="7721" name="err_refactor_code_outside_of_function">
         <segment>
           <source>the selected code is not a part of a function's / method's body</source>
           <target>the selected code is not a part of a function's / method's body</target>
         </segment>
       </unit>
-      <unit id="7222" name="err_refactor_extract_prohibited_expression">
+      <unit id="7722" name="err_refactor_extract_prohibited_expression">
         <segment>
-          <source>the selected expression can't be extracted</source>
+          <source state="initial">the selected expression cannot be extracted</source>
           <target>the selected expression can't be extracted</target>
         </segment>
       </unit>
-      <unit id="7223" name="err_refactor_extract_simple_expression">
+      <unit id="7723" name="err_refactor_extract_simple_expression">
         <segment>
           <source>the selected expression is too simple to extract</source>
           <target>the selected expression is too simple to extract</target>
         </segment>
       </unit>
-      <unit id="7224" name="err_refactor_no_selection">
+      <unit id="7724" name="err_refactor_no_selection">
         <segment>
-          <source>refactoring action can't be initiated without a selection</source>
+          <source state="initial">refactoring action cannot be initiated without a selection</source>
           <target>refactoring action can't be initiated without a selection</target>
         </segment>
       </unit>
-      <unit id="7225" name="err_refactor_selection_invalid_ast">
+      <unit id="7725" name="err_refactor_selection_invalid_ast">
         <segment>
           <source>the provided selection does not overlap with the AST nodes of interest</source>
           <target>the provided selection does not overlap with the AST nodes of interest</target>
         </segment>
       </unit>
-      <unit id="7226" name="err_refactor_selection_no_symbol">
+      <unit id="7726" name="err_refactor_selection_no_symbol">
         <segment>
           <source>there is no symbol at the given location</source>
           <target>there is no symbol at the given location</target>

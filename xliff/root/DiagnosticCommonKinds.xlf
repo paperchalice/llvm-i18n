@@ -349,7 +349,7 @@
       </unit>
       <unit id="57" name="err_ppc_impossible_musttail">
         <segment>
-          <source>'musttail' attribute for this call is impossible because %select{long calls can not be tail called on PPC|indirect calls can not be tail called on PPC|external calls can not be tail called on PPC}0</source>
+          <source state="initial">'musttail' attribute for this call is impossible because %select{long calls cannot be tail called on PPC|indirect calls cannot be tail called on PPC|external calls cannot be tail called on PPC}0</source>
           <target></target>
         </segment>
       </unit>
@@ -643,13 +643,13 @@
       </unit>
       <unit id="106" name="note_file_misc_sloc_usage">
         <segment>
-          <source>%0 additional files entered using a total of %1B of space</source>
+          <source state="initial">%0 additional files entered using a total of %1B (%human1B) of space</source>
           <target>{$arg0} additional files entered using a total of {$arg1}B of space</target>
         </segment>
       </unit>
       <unit id="107" name="note_file_sloc_usage">
         <segment>
-          <source>file entered %0 time%s0 using %1B of space%plural{0:|: plus %2B for macro expansions}2</source>
+          <source state="initial">file entered %0 time%s0 using %1B (%human1B) of space%plural{0:|: plus %2B (%human2B) for macro expansions}2</source>
           <target>file entered {$arg0} time%s0 using {$arg1}B of space%plural{0:|: plus {$arg2}B for macro expansions}2</target>
         </segment>
       </unit>
@@ -721,7 +721,7 @@
       </unit>
       <unit id="119" name="note_total_sloc_usage">
         <segment>
-          <source>%0B in local locations, %1B in locations loaded from AST files, for a total of %2B (%3%% of available space)</source>
+          <source state="initial">%0B (%human0B) in local locations, %1B (%human1B) in locations loaded from AST files, for a total of %2B (%human2B) (%3%% of available space)</source>
           <target>{$arg0}B in local locations, {$arg1}B in locations loaded from AST files, for a total of {$arg2}B ({$arg3}% of available space)</target>
         </segment>
       </unit>
@@ -899,97 +899,91 @@
           <target>[rewriter] {$arg0}</target>
         </segment>
       </unit>
-      <unit id="149" name="warn_next_larger_fp_type_same_size_than_fp">
-        <segment>
-          <source>higher precision floating-point type size has the same size than floating-point type size</source>
-          <target>higher precision floating-point type size has the same size than floating-point type size</target>
-        </segment>
-      </unit>
-      <unit id="150" name="warn_nullability_duplicate">
+      <unit id="149" name="warn_nullability_duplicate">
         <segment>
           <source>duplicate nullability specifier %0</source>
           <target>duplicate nullability specifier {$arg0}</target>
         </segment>
       </unit>
-      <unit id="151" name="warn_old_implicitly_unsigned_long">
+      <unit id="150" name="warn_old_implicitly_unsigned_long">
         <segment>
           <source>integer literal is too large to be represented in type 'long', interpreting as 'unsigned long' per C89; this literal will %select{have type 'long long'|be ill-formed}0 in C99 onwards</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="152" name="warn_old_implicitly_unsigned_long_cxx">
+      <unit id="151" name="warn_old_implicitly_unsigned_long_cxx">
         <segment>
           <source>integer literal is too large to be represented in type 'long', interpreting as 'unsigned long' per C++98; this literal will %select{have type 'long long'|be ill-formed}0 in C++11 onwards</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="153" name="warn_opencl_unsupported_core_feature">
+      <unit id="152" name="warn_opencl_unsupported_core_feature">
         <segment>
           <source>%0 is a core feature in %select{OpenCL C|C++ for OpenCL}1 version %2 but not supported on this target</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="154" name="warn_poison_system_directories">
+      <unit id="153" name="warn_poison_system_directories">
         <segment>
           <source>include location '%0' is unsafe for cross-compilation</source>
           <target>include location '{$arg0}' is unsafe for cross-compilation</target>
         </segment>
       </unit>
-      <unit id="155" name="warn_pragma_debug_missing_argument">
+      <unit id="154" name="warn_pragma_debug_missing_argument">
         <segment>
           <source>missing argument to debug command '%0'</source>
           <target>missing argument to debug command '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="156" name="warn_pragma_debug_unexpected_argument">
+      <unit id="155" name="warn_pragma_debug_unexpected_argument">
         <segment>
           <source>unexpected argument to debug command</source>
           <target>unexpected argument to debug command</target>
         </segment>
       </unit>
-      <unit id="157" name="warn_slh_does_not_support_asm_goto">
+      <unit id="156" name="warn_slh_does_not_support_asm_goto">
         <segment>
           <source>speculative load hardening does not protect functions with asm goto</source>
           <target>speculative load hardening does not protect functions with asm goto</target>
         </segment>
       </unit>
-      <unit id="158" name="warn_stack_clash_protection_inline_asm">
+      <unit id="157" name="warn_stack_clash_protection_inline_asm">
         <segment>
           <source>unable to protect inline asm that clobbers stack pointer against stack clash</source>
           <target>unable to protect inline asm that clobbers stack pointer against stack clash</target>
         </segment>
       </unit>
-      <unit id="159" name="warn_stack_exhausted">
+      <unit id="158" name="warn_stack_exhausted">
         <segment>
           <source>stack nearly exhausted; compilation time may suffer, and crashes due to stack overflow are likely</source>
           <target>stack nearly exhausted; compilation time may suffer, and crashes due to stack overflow are likely</target>
         </segment>
       </unit>
-      <unit id="160" name="warn_target_unrecognized_env">
+      <unit id="159" name="warn_target_unrecognized_env">
         <segment>
           <source>mismatch between architecture and environment in target triple '%0'; did you mean '%1'?</source>
           <target>mismatch between architecture and environment in target triple '{$arg0}'; did you mean '{$arg1}'?</target>
         </segment>
       </unit>
-      <unit id="161" name="warn_target_unsupported_branch_protection_attribute">
+      <unit id="160" name="warn_target_unsupported_branch_protection_attribute">
         <segment>
           <source>ignoring the 'branch-protection' attribute because the '%0' architecture does not support it</source>
           <target>ignoring the 'branch-protection' attribute because the '{$arg0}' architecture does not support it</target>
         </segment>
       </unit>
-      <unit id="162" name="warn_throw_not_valid_on_target">
+      <unit id="161" name="warn_throw_not_valid_on_target">
         <segment>
           <source>target '%0' does not support exception handling; 'throw' is assumed to be never reached</source>
           <target>target '{$arg0}' does not support exception handling; 'throw' is assumed to be never reached</target>
         </segment>
       </unit>
-      <unit id="163" name="warn_try_not_valid_on_target">
+      <unit id="162" name="warn_try_not_valid_on_target">
         <segment>
           <source>target '%0' does not support exception handling; 'catch' block is ignored</source>
           <target>target '{$arg0}' does not support exception handling; 'catch' block is ignored</target>
         </segment>
       </unit>
-      <unit id="164" name="warn_unknown_attribute_ignored">
+      <unit id="163" name="warn_unknown_attribute_ignored">
         <segment>
           <source>unknown attribute %0 ignored</source>
           <target>unknown attribute {$arg0} ignored</target>
