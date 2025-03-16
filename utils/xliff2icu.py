@@ -42,7 +42,7 @@ class Converter:
     if not input_dir.exists():
       return
 
-    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.0')
+    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.2')
     xlfs = input_dir.glob('*.xlf')
     for xlf in xlfs:
       self.xlfs.append(ET.parse(xlf))
@@ -55,7 +55,7 @@ class Converter:
         f.write(EMPTY_TEMPLATE.format(lang=under_score_lang))
       return
     ns = {
-      'xliff': 'urn:oasis:names:tc:xliff:document:2.0'
+      'xliff': 'urn:oasis:names:tc:xliff:document:2.2'
     }
     string_list = []
     for xlf in self.xlfs:

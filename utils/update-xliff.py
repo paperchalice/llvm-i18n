@@ -24,7 +24,7 @@ class Updater:
     input_dir = Path(trg_lang.replace('-', '/'))
     self._file_names = {}
     self._xlfs = {}
-    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.0')
+    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.2')
     for c in self._extract_result:
       file_name = 'xliff'/input_dir/f'Diagnostic{c}Kinds.xlf'
       self._file_names[c] = file_name
@@ -33,7 +33,7 @@ class Updater:
   def _update_for_component(self, component):
     xlf_copy = copy.deepcopy(self._xlfs[component])
     ns = {
-      'xliff': 'urn:oasis:names:tc:xliff:document:2.0'
+      'xliff': 'urn:oasis:names:tc:xliff:document:2.2'
     }
     group = xlf_copy.find('./xliff:file/xliff:group', ns)
     units = group.findall('./xliff:unit', ns)

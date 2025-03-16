@@ -20,12 +20,12 @@ class XmlGenerator:
   
   def generate(self, enums:list[DiagInfo]):
     xliff_attr = {
-      'xmlns': 'urn:oasis:names:tc:xliff:document:2.0',
+      'xmlns': 'urn:oasis:names:tc:xliff:document:2.2',
       'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
-      'version': '2.1',
+      'version': '2.2',
       'srcLang': 'en-US',
       'trgLang': args.trg_lang,
-      'xsi:schemaLocation': 'http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd'
+      'xsi:schemaLocation': 'https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd'
     }
     
     xliff = ET.Element("xliff", **xliff_attr)
