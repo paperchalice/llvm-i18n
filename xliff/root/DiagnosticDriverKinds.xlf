@@ -1375,7 +1375,7 @@
       </unit>
       <unit id="529" name="warn_drv_avr_mcu_not_specified">
         <segment>
-          <source state="initial">no target microcontroller specified, please pass -mmcu=&lt;mcu name&gt;</source>
+          <source>no target microcontroller specified, please pass -mmcu=&lt;mcu name&gt;</source>
           <target>no target microcontroller specified on command line, cannot link standard libraries, please pass -mmcu=&lt;mcu name&gt;</target>
         </segment>
       </unit>
