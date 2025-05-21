@@ -43,8 +43,13 @@ class Converter:
       return
 
     ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.2')
-    xlfs = input_dir.glob('*.xlf')
-    for xlf in xlfs:
+    components = [
+      'Common', 'Driver', 'Frontend', 'Serialization',
+      'Lex', 'Parse', 'AST', 'Comment', 'CrossTU',
+      'Sema', 'Analysis', 'Refactoring', 'InstallAPI'
+    ]
+    for c in components:
+      xlf = Path(f'{input_dir}/Diagnostic{c}Kinds.xlf')
       self.xlfs.append(ET.parse(xlf))
 
   def generate(self):
