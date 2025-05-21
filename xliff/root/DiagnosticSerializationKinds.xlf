@@ -229,7 +229,7 @@
       </unit>
       <unit id="938" name="note_module_file_conflict">
         <segment>
-          <source>this is generally caused by modules with the same name found in multiple paths</source>
+          <source state="initial">compiled from '%0' and '%1'</source>
           <target>this is generally caused by modules with the same name found in multiple paths</target>
         </segment>
       </unit>
@@ -294,19 +294,25 @@
           <target>duplicate module file extension block name '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="949" name="warn_module_system_bit_conflict">
+      <unit id="949" name="warn_module_file_mapping_mismatch">
+        <segment>
+          <source>loaded module file '%0' conflicts with imported file '%1'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="950" name="warn_module_system_bit_conflict">
         <segment>
           <source>module file '%0' was validated as a system module and is now being imported as a non-system module; any difference in diagnostic options will be ignored</source>
           <target>module file '{$arg0}' was validated as a system module and is now being imported as a non-system module; any difference in diagnostic options will be ignored</target>
         </segment>
       </unit>
-      <unit id="950" name="warn_module_uses_date_time">
+      <unit id="951" name="warn_module_uses_date_time">
         <segment>
           <source>%select{precompiled header|module}0 uses __DATE__ or __TIME__</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="951" name="warn_pch_vfsoverlay_mismatch">
+      <unit id="952" name="warn_pch_vfsoverlay_mismatch">
         <segment>
           <source>PCH was compiled with different VFS overlay files than are currently in use</source>
           <target>PCH was compiled with different VFS overlay files than are currently in use</target>

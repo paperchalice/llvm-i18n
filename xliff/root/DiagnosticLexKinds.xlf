@@ -425,1951 +425,2017 @@
           <target>qualified module name can only be used to define modules at the top level</target>
         </segment>
       </unit>
-      <unit id="1091" name="err_mmap_submodule_export_as">
+      <unit id="1091" name="err_mmap_qualified_export_as">
+        <segment>
+          <source>a module can only be re-exported as another top-level module</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1092" name="err_mmap_submodule_export_as">
         <segment>
           <source>only top-level modules can be re-exported as public</source>
           <target>only top-level modules can be re-exported as public</target>
         </segment>
       </unit>
-      <unit id="1092" name="err_mmap_top_level_inferred_submodule">
+      <unit id="1093" name="err_mmap_top_level_inferred_submodule">
         <segment>
           <source>only submodules and framework modules may be inferred with wildcard syntax</source>
           <target>only submodules and framework modules may be inferred with wildcard syntax</target>
         </segment>
       </unit>
-      <unit id="1093" name="err_mmap_umbrella_clash">
+      <unit id="1094" name="err_mmap_umbrella_clash">
         <segment>
           <source>umbrella for module '%0' already covers this directory</source>
           <target>umbrella for module '{$arg0}' already covers this directory</target>
         </segment>
       </unit>
-      <unit id="1094" name="err_mmap_unknown_token">
+      <unit id="1095" name="err_mmap_unknown_token">
         <segment>
           <source>skipping stray token</source>
           <target>skipping stray token</target>
         </segment>
       </unit>
-      <unit id="1095" name="err_mmap_use_decl_submodule">
+      <unit id="1096" name="err_mmap_use_decl_submodule">
         <segment>
           <source>use declarations are only allowed in top-level modules</source>
           <target>use declarations are only allowed in top-level modules</target>
         </segment>
       </unit>
-      <unit id="1096" name="err_multichar_character_literal">
+      <unit id="1097" name="err_multichar_character_literal">
         <segment>
           <source>%select{wide|Unicode}0 character literals may not contain multiple characters</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1097" name="err_opencl_logical_exclusive_or">
+      <unit id="1098" name="err_opencl_logical_exclusive_or">
         <segment>
           <source>^^ is a reserved operator in OpenCL</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1098" name="err_pascal_string_too_long">
+      <unit id="1099" name="err_pascal_string_too_long">
         <segment>
           <source>Pascal string is too long</source>
           <target>Pascal string is too long</target>
         </segment>
       </unit>
-      <unit id="1099" name="err_paste_at_end">
+      <unit id="1100" name="err_paste_at_end">
         <segment>
           <source>'##' cannot appear at end of macro expansion</source>
           <target>'##' cannot appear at end of macro expansion</target>
         </segment>
       </unit>
-      <unit id="1100" name="err_paste_at_start">
+      <unit id="1101" name="err_paste_at_start">
         <segment>
           <source>'##' cannot appear at start of macro expansion</source>
           <target>'##' cannot appear at start of macro expansion</target>
         </segment>
       </unit>
-      <unit id="1101" name="err_placeholder_in_source">
+      <unit id="1102" name="err_placeholder_in_source">
         <segment>
           <source>editor placeholder in source file</source>
           <target>editor placeholder in source file</target>
         </segment>
       </unit>
-      <unit id="1102" name="err_pp_arc_cf_code_audited_syntax">
+      <unit id="1103" name="err_pp_arc_cf_code_audited_syntax">
         <segment>
           <source>expected 'begin' or 'end'</source>
           <target>expected 'begin' or 'end'</target>
         </segment>
       </unit>
-      <unit id="1103" name="err_pp_assume_nonnull_syntax">
+      <unit id="1104" name="err_pp_assume_nonnull_syntax">
         <segment>
           <source>expected 'begin' or 'end'</source>
           <target>expected 'begin' or 'end'</target>
         </segment>
       </unit>
-      <unit id="1104" name="err_pp_bad_paste">
+      <unit id="1105" name="err_pp_bad_paste">
         <segment>
           <source>pasting formed '%0', an invalid preprocessing token</source>
           <target>pasting formed '{$arg0}', an invalid preprocessing token</target>
         </segment>
       </unit>
-      <unit id="1105" name="err_pp_colon_without_question">
+      <unit id="1106" name="err_pp_colon_without_question">
         <segment>
           <source>':' without preceding '?'</source>
           <target>':' without preceding '?'</target>
         </segment>
       </unit>
-      <unit id="1106" name="err_pp_directive_required">
+      <unit id="1107" name="err_pp_directive_required">
         <segment>
           <source>%0 must be used within a preprocessing directive</source>
           <target>{$arg0} must be used within a preprocessing directive</target>
         </segment>
       </unit>
-      <unit id="1107" name="err_pp_division_by_zero">
+      <unit id="1108" name="err_pp_division_by_zero">
         <segment>
           <source>division by zero in preprocessor expression</source>
           <target>division by zero in preprocessor expression</target>
         </segment>
       </unit>
-      <unit id="1108" name="err_pp_double_begin_of_arc_cf_code_audited">
+      <unit id="1109" name="err_pp_double_begin_of_arc_cf_code_audited">
         <segment>
           <source>already inside '#pragma clang arc_cf_code_audited'</source>
           <target>already inside '#pragma clang arc_cf_code_audited'</target>
         </segment>
       </unit>
-      <unit id="1109" name="err_pp_double_begin_of_assume_nonnull">
+      <unit id="1110" name="err_pp_double_begin_of_assume_nonnull">
         <segment>
           <source>already inside '#pragma clang assume_nonnull'</source>
           <target>already inside '#pragma clang assume_nonnull'</target>
         </segment>
       </unit>
-      <unit id="1110" name="err_pp_double_begin_pragma_unsafe_buffer_usage">
+      <unit id="1111" name="err_pp_double_begin_pragma_unsafe_buffer_usage">
         <segment>
           <source>already inside '#pragma unsafe_buffer_usage'</source>
           <target>already inside '#pragma unsafe_buffer_usage'</target>
         </segment>
       </unit>
-      <unit id="1111" name="err_pp_duplicate_name_in_arg_list">
+      <unit id="1112" name="err_pp_duplicate_name_in_arg_list">
         <segment>
           <source>duplicate macro parameter name %0</source>
           <target>duplicate macro parameter name {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1112" name="err_pp_embed_dup_params">
+      <unit id="1113" name="err_pp_embed_device_file">
+        <segment>
+          <source>device files are not yet supported by '#embed' directive</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1114" name="err_pp_embed_dup_params">
         <segment>
           <source>cannot specify parameter '%0' twice in the same '#embed' directive</source>
           <target>cannot specify parameter '{$arg0}' twice in the same '#embed' directive</target>
         </segment>
       </unit>
-      <unit id="1113" name="err_pp_empty_filename">
+      <unit id="1115" name="err_pp_empty_filename">
         <segment>
           <source>empty filename</source>
           <target>empty filename</target>
         </segment>
       </unit>
-      <unit id="1114" name="err_pp_endif_without_if">
+      <unit id="1116" name="err_pp_endif_without_if">
         <segment>
           <source>#endif without #if</source>
           <target>#endif without #if</target>
         </segment>
       </unit>
-      <unit id="1115" name="err_pp_eof_in_arc_cf_code_audited">
+      <unit id="1117" name="err_pp_eof_in_arc_cf_code_audited">
         <segment>
           <source>'#pragma clang arc_cf_code_audited' was not ended within this file</source>
           <target>'#pragma clang arc_cf_code_audited' was not ended within this file</target>
         </segment>
       </unit>
-      <unit id="1116" name="err_pp_eof_in_assume_nonnull">
+      <unit id="1118" name="err_pp_eof_in_assume_nonnull">
         <segment>
           <source>'#pragma clang assume_nonnull' was not ended within this file</source>
           <target>'#pragma clang assume_nonnull' was not ended within this file</target>
         </segment>
       </unit>
-      <unit id="1117" name="err_pp_error_opening_file">
+      <unit id="1119" name="err_pp_error_opening_file">
         <segment>
           <source>error opening file '%0': %1</source>
           <target>error opening file '{$arg0}': {$arg1}</target>
         </segment>
       </unit>
-      <unit id="1118" name="err_pp_expected_after">
+      <unit id="1120" name="err_pp_expected_after">
         <segment>
           <source>missing %1 after %0</source>
           <target>missing {$arg1} after {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1119" name="err_pp_expected_comma_in_arg_list">
+      <unit id="1121" name="err_pp_expected_comma_in_arg_list">
         <segment>
           <source>expected comma in macro parameter list</source>
           <target>expected comma in macro parameter list</target>
         </segment>
       </unit>
-      <unit id="1120" name="err_pp_expected_eol">
+      <unit id="1122" name="err_pp_expected_eol">
         <segment>
           <source>expected end of line in preprocessor expression</source>
           <target>expected end of line in preprocessor expression</target>
         </segment>
       </unit>
-      <unit id="1121" name="err_pp_expected_ident_in_arg_list">
+      <unit id="1123" name="err_pp_expected_ident_in_arg_list">
         <segment>
           <source>expected identifier in macro parameter list</source>
           <target>expected identifier in macro parameter list</target>
         </segment>
       </unit>
-      <unit id="1122" name="err_pp_expected_module_name">
+      <unit id="1124" name="err_pp_expected_module_name">
         <segment>
           <source>expected %select{identifier after '.' in |}0module name</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1123" name="err_pp_expected_rparen">
+      <unit id="1125" name="err_pp_expected_rparen">
         <segment>
           <source>expected ')' in preprocessor expression</source>
           <target>expected ')' in preprocessor expression</target>
         </segment>
       </unit>
-      <unit id="1124" name="err_pp_expected_value_in_expr">
+      <unit id="1126" name="err_pp_expected_value_in_expr">
         <segment>
           <source>expected value in expression</source>
           <target>expected value in expression</target>
         </segment>
       </unit>
-      <unit id="1125" name="err_pp_expects_filename">
+      <unit id="1127" name="err_pp_expects_filename">
         <segment>
           <source>expected "FILENAME" or &lt;FILENAME&gt;</source>
           <target>expected "FILENAME" or &lt;FILENAME&gt;</target>
         </segment>
       </unit>
-      <unit id="1126" name="err_pp_expr_bad_token_binop">
+      <unit id="1128" name="err_pp_expr_bad_token_binop">
         <segment>
           <source>token is not a valid binary operator in a preprocessor subexpression</source>
           <target>token is not a valid binary operator in a preprocessor subexpression</target>
         </segment>
       </unit>
-      <unit id="1127" name="err_pp_expr_bad_token_lparen">
+      <unit id="1129" name="err_pp_expr_bad_token_lparen">
         <segment>
           <source>function-like macro %0 is not defined</source>
           <target>function-like macro {$arg0} is not defined</target>
         </segment>
       </unit>
-      <unit id="1128" name="err_pp_expr_bad_token_start_expr">
+      <unit id="1130" name="err_pp_expr_bad_token_start_expr">
         <segment>
           <source>invalid token at start of a preprocessor expression</source>
           <target>invalid token at start of a preprocessor expression</target>
         </segment>
       </unit>
-      <unit id="1129" name="err_pp_file_not_found">
+      <unit id="1131" name="err_pp_file_not_found">
         <segment>
           <source>'%0' file not found</source>
           <target>'{$arg0}' file not found</target>
         </segment>
       </unit>
-      <unit id="1130" name="err_pp_file_not_found_angled_include_not_fatal">
+      <unit id="1132" name="err_pp_file_not_found_angled_include_not_fatal">
         <segment>
           <source>'%0' file not found with &lt;angled&gt; %select{include|import}1; use "quotes" instead</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1131" name="err_pp_file_not_found_typo_not_fatal">
+      <unit id="1133" name="err_pp_file_not_found_typo_not_fatal">
         <segment>
           <source>'%0' file not found, did you mean '%1'?</source>
           <target>'{$arg0}' file not found, did you mean '{$arg1}'?</target>
         </segment>
       </unit>
-      <unit id="1132" name="err_pp_hash_error">
+      <unit id="1134" name="err_pp_hash_error">
         <segment>
           <source>%0</source>
           <target>{$arg0}</target>
         </segment>
       </unit>
-      <unit id="1133" name="err_pp_identifier_arg_not_identifier">
+      <unit id="1135" name="err_pp_identifier_arg_not_identifier">
         <segment>
           <source>cannot convert %0 token to an identifier</source>
           <target>cannot convert {$arg0} token to an identifier</target>
         </segment>
       </unit>
-      <unit id="1134" name="err_pp_illegal_floating_literal">
+      <unit id="1136" name="err_pp_illegal_floating_literal">
         <segment>
           <source>floating point literal in preprocessor expression</source>
           <target>floating point literal in preprocessor expression</target>
         </segment>
       </unit>
-      <unit id="1135" name="err_pp_import_directive_ms">
+      <unit id="1137" name="err_pp_import_directive_ms">
         <segment>
           <source>#import of type library is an unsupported Microsoft feature</source>
           <target>#import of type library is an unsupported Microsoft feature</target>
         </segment>
       </unit>
-      <unit id="1136" name="err_pp_include_in_arc_cf_code_audited">
+      <unit id="1138" name="err_pp_include_in_arc_cf_code_audited">
         <segment>
           <source>cannot %select{#include files|import headers}0 inside '#pragma clang arc_cf_code_audited'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1137" name="err_pp_include_in_assume_nonnull">
+      <unit id="1139" name="err_pp_include_in_assume_nonnull">
         <segment>
           <source>cannot %select{#include files|import headers}0 inside '#pragma clang assume_nonnull'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1138" name="err_pp_include_too_deep">
+      <unit id="1140" name="err_pp_include_too_deep">
         <segment>
           <source>#include nested too deeply</source>
           <target>#include nested too deeply</target>
         </segment>
       </unit>
-      <unit id="1139" name="err_pp_including_mainfile_in_preamble">
+      <unit id="1141" name="err_pp_including_mainfile_in_preamble">
         <segment>
           <source>main file cannot be included recursively when building a preamble</source>
           <target>main file cannot be included recursively when building a preamble</target>
         </segment>
       </unit>
-      <unit id="1140" name="err_pp_invalid_directive">
+      <unit id="1142" name="err_pp_invalid_directive">
         <segment>
           <source>invalid preprocessing directive%select{|, did you mean '#%1'?}0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1141" name="err_pp_invalid_poison">
+      <unit id="1143" name="err_pp_invalid_poison">
         <segment>
           <source>can only poison identifier tokens</source>
           <target>can only poison identifier tokens</target>
         </segment>
       </unit>
-      <unit id="1142" name="err_pp_invalid_tok_in_arg_list">
+      <unit id="1144" name="err_pp_invalid_tok_in_arg_list">
         <segment>
           <source>invalid token in macro parameter list</source>
           <target>invalid token in macro parameter list</target>
         </segment>
       </unit>
-      <unit id="1143" name="err_pp_invalid_udl">
+      <unit id="1145" name="err_pp_invalid_udl">
         <segment>
           <source>%select{character|integer}0 literal with user-defined suffix cannot be used in preprocessor constant expression</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1144" name="err_pp_line_digit_sequence">
+      <unit id="1146" name="err_pp_line_digit_sequence">
         <segment>
           <source>%select{#line|GNU line marker}0 directive requires a simple digit sequence</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1145" name="err_pp_line_invalid_filename">
+      <unit id="1147" name="err_pp_line_invalid_filename">
         <segment>
           <source>invalid filename for #line directive</source>
           <target>invalid filename for #line directive</target>
         </segment>
       </unit>
-      <unit id="1146" name="err_pp_line_requires_integer">
+      <unit id="1148" name="err_pp_line_requires_integer">
         <segment>
           <source>#line directive requires a positive integer argument</source>
           <target>#line directive requires a positive integer argument</target>
         </segment>
       </unit>
-      <unit id="1147" name="err_pp_linemarker_invalid_filename">
+      <unit id="1149" name="err_pp_linemarker_invalid_filename">
         <segment>
           <source>invalid filename for line marker directive</source>
           <target>invalid filename for line marker directive</target>
         </segment>
       </unit>
-      <unit id="1148" name="err_pp_linemarker_invalid_flag">
+      <unit id="1150" name="err_pp_linemarker_invalid_flag">
         <segment>
           <source>invalid flag line marker directive</source>
           <target>invalid flag line marker directive</target>
         </segment>
       </unit>
-      <unit id="1149" name="err_pp_linemarker_invalid_pop">
+      <unit id="1151" name="err_pp_linemarker_invalid_pop">
         <segment>
           <source>invalid line marker flag '2': cannot pop empty include stack</source>
           <target>invalid line marker flag '2': cannot pop empty include stack</target>
         </segment>
       </unit>
-      <unit id="1150" name="err_pp_linemarker_requires_integer">
+      <unit id="1152" name="err_pp_linemarker_requires_integer">
         <segment>
           <source>line marker directive requires a positive integer argument</source>
           <target>line marker directive requires a positive integer argument</target>
         </segment>
       </unit>
-      <unit id="1151" name="err_pp_macro_not_identifier">
+      <unit id="1153" name="err_pp_macro_not_identifier">
         <segment>
           <source>macro name must be an identifier</source>
           <target>macro name must be an identifier</target>
         </segment>
       </unit>
-      <unit id="1152" name="err_pp_malformed_ident">
+      <unit id="1154" name="err_pp_malformed_ident">
         <segment>
           <source>invalid #ident directive</source>
           <target>invalid #ident directive</target>
         </segment>
       </unit>
-      <unit id="1153" name="err_pp_missing_lparen_in_vaopt_use">
+      <unit id="1155" name="err_pp_missing_lparen_in_vaopt_use">
         <segment>
           <source>missing '(' following __VA_OPT__</source>
           <target>missing '(' following __VA_OPT__</target>
         </segment>
       </unit>
-      <unit id="1154" name="err_pp_missing_macro_name">
+      <unit id="1156" name="err_pp_missing_macro_name">
         <segment>
           <source>macro name missing</source>
           <target>macro name missing</target>
         </segment>
       </unit>
-      <unit id="1155" name="err_pp_missing_rparen_in_macro_def">
+      <unit id="1157" name="err_pp_missing_rparen_in_macro_def">
         <segment>
           <source>missing ')' in macro parameter list</source>
           <target>missing ')' in macro parameter list</target>
         </segment>
       </unit>
-      <unit id="1156" name="err_pp_module_begin_no_module_map">
+      <unit id="1158" name="err_pp_module_begin_no_module_map">
         <segment>
           <source>no module map available for module %0</source>
           <target>no module map available for module {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1157" name="err_pp_module_begin_no_submodule">
+      <unit id="1159" name="err_pp_module_begin_no_submodule">
         <segment>
           <source>submodule %0.%1 not declared in module map</source>
           <target>submodule {$arg0}.{$arg1} not declared in module map</target>
         </segment>
       </unit>
-      <unit id="1158" name="err_pp_module_begin_without_module_end">
+      <unit id="1160" name="err_pp_module_begin_without_module_end">
         <segment>
           <source>no matching '#pragma clang module end' for this '#pragma clang module begin'</source>
           <target>no matching '#pragma clang module end' for this '#pragma clang module begin'</target>
         </segment>
       </unit>
-      <unit id="1159" name="err_pp_module_begin_wrong_module">
+      <unit id="1161" name="err_pp_module_begin_wrong_module">
         <segment>
           <source>must specify '-fmodule-name=%0' to enter %select{|submodule of }1this module%select{ (current module is %3)|}2</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1160" name="err_pp_module_build_missing_end">
+      <unit id="1162" name="err_pp_module_build_missing_end">
         <segment>
           <source>no matching '#pragma clang module endbuild' for this '#pragma clang module build'</source>
           <target>no matching '#pragma clang module endbuild' for this '#pragma clang module build'</target>
         </segment>
       </unit>
-      <unit id="1161" name="err_pp_module_end_without_module_begin">
+      <unit id="1163" name="err_pp_module_end_without_module_begin">
         <segment>
           <source>no matching '#pragma clang module begin' for this '#pragma clang module end'</source>
           <target>no matching '#pragma clang module begin' for this '#pragma clang module end'</target>
         </segment>
       </unit>
-      <unit id="1162" name="err_pp_nested_paren">
+      <unit id="1164" name="err_pp_nested_paren">
         <segment>
           <source>nested parentheses not permitted in %0</source>
           <target>nested parentheses not permitted in {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1163" name="err_pp_operator_used_as_macro_name">
+      <unit id="1165" name="err_pp_operator_used_as_macro_name">
         <segment>
           <source>C++ operator %0 (aka %1) used as a macro name</source>
           <target>C++ operator {$arg0} (aka {$arg1}) used as a macro name</target>
         </segment>
       </unit>
-      <unit id="1164" name="err_pp_pragma_hdrstop_not_seen">
+      <unit id="1166" name="err_pp_pragma_hdrstop_not_seen">
         <segment>
           <source>#pragma hdrstop not seen while attempting to use precompiled header</source>
           <target>#pragma hdrstop not seen while attempting to use precompiled header</target>
         </segment>
       </unit>
-      <unit id="1165" name="err_pp_pragma_unsafe_buffer_usage_syntax">
+      <unit id="1167" name="err_pp_pragma_unsafe_buffer_usage_syntax">
         <segment>
           <source>expected 'begin' or 'end'</source>
           <target>expected 'begin' or 'end'</target>
         </segment>
       </unit>
-      <unit id="1166" name="err_pp_remainder_by_zero">
+      <unit id="1168" name="err_pp_remainder_by_zero">
         <segment>
           <source>remainder by zero in preprocessor expression</source>
           <target>remainder by zero in preprocessor expression</target>
         </segment>
       </unit>
-      <unit id="1167" name="err_pp_stringize_not_parameter">
+      <unit id="1169" name="err_pp_stringize_not_parameter">
         <segment>
           <source>'%select{#|#@}0' is not followed by a macro parameter</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1168" name="err_pp_through_header_not_found">
+      <unit id="1170" name="err_pp_through_header_not_found">
         <segment>
           <source>'%0' required for precompiled header not found</source>
           <target>'{$arg0}' required for precompiled header not found</target>
         </segment>
       </unit>
-      <unit id="1169" name="err_pp_through_header_not_seen">
+      <unit id="1171" name="err_pp_through_header_not_seen">
         <segment>
           <source>#include of '%0' not seen while attempting to %select{create|use}1 precompiled header</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1170" name="err_pp_unclosed_pragma_unsafe_buffer_usage">
+      <unit id="1172" name="err_pp_unclosed_pragma_unsafe_buffer_usage">
         <segment>
           <source>'#pragma unsafe_buffer_usage' was not ended</source>
           <target>'#pragma unsafe_buffer_usage' was not ended</target>
         </segment>
       </unit>
-      <unit id="1171" name="err_pp_unknown_parameter">
+      <unit id="1173" name="err_pp_unknown_parameter">
         <segment>
           <source>unknown%select{ | embed}0 preprocessor parameter '%1'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1172" name="err_pp_unmatched_end_begin_pragma_unsafe_buffer_usage">
+      <unit id="1174" name="err_pp_unmatched_end_begin_pragma_unsafe_buffer_usage">
         <segment>
           <source>not currently inside '#pragma unsafe_buffer_usage'</source>
           <target>not currently inside '#pragma unsafe_buffer_usage'</target>
         </segment>
       </unit>
-      <unit id="1173" name="err_pp_unmatched_end_of_arc_cf_code_audited">
+      <unit id="1175" name="err_pp_unmatched_end_of_arc_cf_code_audited">
         <segment>
           <source>not currently inside '#pragma clang arc_cf_code_audited'</source>
           <target>not currently inside '#pragma clang arc_cf_code_audited'</target>
         </segment>
       </unit>
-      <unit id="1174" name="err_pp_unmatched_end_of_assume_nonnull">
+      <unit id="1176" name="err_pp_unmatched_end_of_assume_nonnull">
         <segment>
           <source>not currently inside '#pragma clang assume_nonnull'</source>
           <target>not currently inside '#pragma clang assume_nonnull'</target>
         </segment>
       </unit>
-      <unit id="1175" name="err_pp_unterminated_conditional">
+      <unit id="1177" name="err_pp_unterminated_conditional">
         <segment>
           <source>unterminated conditional directive</source>
           <target>unterminated conditional directive</target>
         </segment>
       </unit>
-      <unit id="1176" name="err_pp_used_poisoned_id">
+      <unit id="1178" name="err_pp_used_poisoned_id">
         <segment>
           <source>attempt to use a poisoned identifier</source>
           <target>attempt to use a poisoned identifier</target>
         </segment>
       </unit>
-      <unit id="1177" name="err_pp_vaopt_nested_use">
+      <unit id="1179" name="err_pp_vaopt_nested_use">
         <segment>
           <source>__VA_OPT__ cannot be nested within its own replacement tokens</source>
           <target>__VA_OPT__ cannot be nested within its own replacement tokens</target>
         </segment>
       </unit>
-      <unit id="1178" name="err_pp_visibility_non_macro">
+      <unit id="1180" name="err_pp_visibility_non_macro">
         <segment>
           <source>no macro named %0</source>
           <target>no macro named {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1179" name="err_pragma_message">
+      <unit id="1181" name="err_pragma_message">
         <segment>
           <source>%0</source>
           <target>{$arg0}</target>
         </segment>
       </unit>
-      <unit id="1180" name="err_pragma_message_malformed">
+      <unit id="1182" name="err_pragma_message_malformed">
         <segment>
           <source>pragma %select{message|warning|error}0 requires parenthesized string</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1181" name="err_pragma_push_pop_macro_malformed">
+      <unit id="1183" name="err_pragma_push_pop_macro_malformed">
         <segment>
           <source>pragma %0 requires a parenthesized string</source>
           <target>pragma {$arg0} requires a parenthesized string</target>
         </segment>
       </unit>
-      <unit id="1182" name="err_raw_delim_too_long">
+      <unit id="1184" name="err_raw_delim_too_long">
         <segment>
           <source>raw string delimiter longer than 16 characters; use PREFIX( )PREFIX to delimit raw string</source>
           <target>raw string delimiter longer than 16 characters; use PREFIX( )PREFIX to delimit raw string</target>
         </segment>
       </unit>
-      <unit id="1183" name="err_string_concat_mixed_suffix">
+      <unit id="1185" name="err_string_concat_mixed_suffix">
         <segment>
           <source>differing user-defined suffixes ('%0' and '%1') in string literal concatenation</source>
           <target>differing user-defined suffixes ('{$arg0}' and '{$arg1}') in string literal concatenation</target>
         </segment>
       </unit>
-      <unit id="1184" name="err_too_few_args_in_macro_invoc">
+      <unit id="1186" name="err_too_few_args_in_macro_invoc">
         <segment>
           <source>too few arguments provided to function-like macro invocation</source>
           <target>too few arguments provided to function-like macro invocation</target>
         </segment>
       </unit>
-      <unit id="1185" name="err_too_many_args_in_macro_invoc">
+      <unit id="1187" name="err_too_many_args_in_macro_invoc">
         <segment>
           <source>too many arguments provided to function-like macro invocation</source>
           <target>too many arguments provided to function-like macro invocation</target>
         </segment>
       </unit>
-      <unit id="1186" name="err_ucn_control_character">
+      <unit id="1188" name="err_ucn_control_character">
         <segment>
           <source>universal character name refers to a control character</source>
           <target>universal character name refers to a control character</target>
         </segment>
       </unit>
-      <unit id="1187" name="err_ucn_escape_basic_scs">
+      <unit id="1189" name="err_ucn_escape_basic_scs">
         <segment>
           <source>character '%0' cannot be specified by a universal character name</source>
           <target>character '{$arg0}' cannot be specified by a universal character name</target>
         </segment>
       </unit>
-      <unit id="1188" name="err_ucn_escape_incomplete">
+      <unit id="1190" name="err_ucn_escape_incomplete">
         <segment>
           <source>incomplete universal character name</source>
           <target>incomplete universal character name</target>
         </segment>
       </unit>
-      <unit id="1189" name="err_ucn_escape_invalid">
+      <unit id="1191" name="err_ucn_escape_invalid">
         <segment>
           <source>invalid universal character</source>
           <target>invalid universal character</target>
         </segment>
       </unit>
-      <unit id="1190" name="err_undeclared_use_of_module">
+      <unit id="1192" name="err_undeclared_use_of_module">
         <segment>
           <source>module %0 does not depend on a module exporting '%1'</source>
           <target>module {$arg0} does not depend on a module exporting '{$arg1}'</target>
         </segment>
       </unit>
-      <unit id="1191" name="err_undeclared_use_of_module_indirect">
+      <unit id="1193" name="err_undeclared_use_of_module_indirect">
         <segment>
           <source>module %0 does not directly depend on a module exporting '%1', which is part of indirectly-used module %2</source>
           <target>module {$arg0} does not directly depend on a module exporting '{$arg1}', which is part of indirectly-used module {$arg2}</target>
         </segment>
       </unit>
-      <unit id="1192" name="err_unevaluated_string_invalid_escape_sequence">
+      <unit id="1194" name="err_unevaluated_string_invalid_escape_sequence">
         <segment>
           <source>invalid escape sequence '%0' in an unevaluated string literal</source>
           <target>invalid escape sequence '{$arg0}' in an unevaluated string literal</target>
         </segment>
       </unit>
-      <unit id="1193" name="err_unevaluated_string_prefix">
+      <unit id="1195" name="err_unevaluated_string_prefix">
         <segment>
           <source>an unevaluated string literal cannot have an encoding prefix</source>
           <target>an unevaluated string literal cannot have an encoding prefix</target>
         </segment>
       </unit>
-      <unit id="1194" name="err_unevaluated_string_udl">
+      <unit id="1196" name="err_unevaluated_string_udl">
         <segment>
           <source>an unevaluated string literal cannot be a user-defined literal</source>
           <target>an unevaluated string literal cannot be a user-defined literal</target>
         </segment>
       </unit>
-      <unit id="1195" name="err_unsupported_string_concat">
+      <unit id="1197" name="err_unsupported_string_concat">
         <segment>
           <source>unsupported non-standard concatenation of string literals</source>
           <target>unsupported non-standard concatenation of string literals</target>
         </segment>
       </unit>
-      <unit id="1196" name="err_unterm_macro_invoc">
+      <unit id="1198" name="err_unterm_macro_invoc">
         <segment>
           <source>unterminated function-like macro invocation</source>
           <target>unterminated function-like macro invocation</target>
         </segment>
       </unit>
-      <unit id="1197" name="err_unterminated___pragma">
+      <unit id="1199" name="err_unterminated___pragma">
         <segment>
           <source>missing terminating ')' character</source>
           <target>missing terminating ')' character</target>
         </segment>
       </unit>
-      <unit id="1198" name="err_unterminated_block_comment">
+      <unit id="1200" name="err_unterminated_block_comment">
         <segment>
           <source>unterminated /* comment</source>
           <target>unterminated /* comment</target>
         </segment>
       </unit>
-      <unit id="1199" name="err_unterminated_raw_string">
+      <unit id="1201" name="err_unterminated_raw_string">
         <segment>
           <source>raw string missing terminating delimiter )%0"</source>
           <target>raw string missing terminating delimiter ){$arg0}"</target>
         </segment>
       </unit>
-      <unit id="1200" name="err_vaopt_paste_at_end">
+      <unit id="1202" name="err_vaopt_paste_at_end">
         <segment>
           <source>'##' cannot appear at end of __VA_OPT__ argument</source>
           <target>'##' cannot appear at end of __VA_OPT__ argument</target>
         </segment>
       </unit>
-      <unit id="1201" name="err_vaopt_paste_at_start">
+      <unit id="1203" name="err_vaopt_paste_at_start">
         <segment>
           <source>'##' cannot appear at start of __VA_OPT__ argument</source>
           <target>'##' cannot appear at start of __VA_OPT__ argument</target>
         </segment>
       </unit>
-      <unit id="1202" name="escaped_newline_block_comment_end">
+      <unit id="1204" name="escaped_newline_block_comment_end">
         <segment>
           <source>escaped newline between */ characters at block comment end</source>
           <target>escaped newline between */ characters at block comment end</target>
         </segment>
       </unit>
-      <unit id="1203" name="ext_binary_literal">
+      <unit id="1205" name="ext_binary_literal">
         <segment>
           <source>binary integer literals are a C23 extension</source>
           <target>binary integer literals are a C23 extension</target>
         </segment>
       </unit>
-      <unit id="1204" name="ext_binary_literal_cxx14">
+      <unit id="1206" name="ext_binary_literal_cxx14">
         <segment>
           <source>binary integer literals are a C++14 extension</source>
           <target>binary integer literals are a C++14 extension</target>
         </segment>
       </unit>
-      <unit id="1205" name="ext_c23_pp_directive">
+      <unit id="1207" name="ext_c23_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is a C23 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1206" name="ext_c99_whitespace_required_after_macro_name">
+      <unit id="1208" name="ext_c99_whitespace_required_after_macro_name">
         <segment>
           <source>ISO C99 requires whitespace after the macro name</source>
           <target>ISO C99 requires whitespace after the macro name</target>
         </segment>
       </unit>
-      <unit id="1207" name="ext_c_missing_varargs_arg">
+      <unit id="1209" name="ext_c_missing_varargs_arg">
         <segment>
           <source>passing no argument for the '...' parameter of a variadic macro is a C23 extension</source>
           <target>passing no argument for the '...' parameter of a variadic macro is a C23 extension</target>
         </segment>
       </unit>
-      <unit id="1208" name="ext_charize_microsoft">
+      <unit id="1210" name="ext_charize_microsoft">
         <segment>
           <source>charizing operator #@ is a Microsoft extension</source>
           <target>charizing operator #@ is a Microsoft extension</target>
         </segment>
       </unit>
-      <unit id="1209" name="ext_comment_paste_microsoft">
+      <unit id="1211" name="ext_comment_paste_microsoft">
         <segment>
           <source>pasting two '/' tokens into a '//' comment is a Microsoft extension</source>
           <target>pasting two '/' tokens into a '//' comment is a Microsoft extension</target>
         </segment>
       </unit>
-      <unit id="1210" name="ext_ctrl_z_eof_microsoft">
+      <unit id="1212" name="ext_cpp_octal_literal">
+        <segment>
+          <source>octal integer literals are a Clang extension</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1213" name="ext_ctrl_z_eof_microsoft">
         <segment>
           <source>treating Ctrl-Z as end-of-file is a Microsoft extension</source>
           <target>treating Ctrl-Z as end-of-file is a Microsoft extension</target>
         </segment>
       </unit>
-      <unit id="1211" name="ext_cxx23_pp_directive">
+      <unit id="1214" name="ext_cxx23_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is a C++23 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1212" name="ext_cxx26_raw_string_literal_character_set">
+      <unit id="1215" name="ext_cxx26_raw_string_literal_character_set">
         <segment>
           <source> '%0' in a raw string literal delimiter is a C++2c extension</source>
           <target> '{$arg0}' in a raw string literal delimiter is a C++2c extension</target>
         </segment>
       </unit>
-      <unit id="1213" name="ext_cxx_missing_varargs_arg">
+      <unit id="1216" name="ext_cxx_missing_varargs_arg">
         <segment>
           <source>passing no argument for the '...' parameter of a variadic macro is a C++20 extension</source>
           <target>passing no argument for the '...' parameter of a variadic macro is a C++20 extension</target>
         </segment>
       </unit>
-      <unit id="1214" name="ext_delimited_escape_sequence">
+      <unit id="1217" name="ext_delimited_escape_sequence">
         <segment>
-          <source>%select{delimited|named}0 escape sequences are a %select{Clang|C++23}1 extension</source>
+          <source state="initial">%select{delimited|named}0 escape sequences are a %select{C++23|C2y|Clang}1 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1215" name="ext_dollar_in_identifier">
+      <unit id="1218" name="ext_dollar_in_identifier">
         <segment>
           <source>'$' in identifier</source>
           <target>'$' in identifier</target>
         </segment>
       </unit>
-      <unit id="1216" name="ext_embedded_directive">
+      <unit id="1219" name="ext_embedded_directive">
         <segment>
           <source>embedding a directive within macro arguments has undefined behavior</source>
           <target>embedding a directive within macro arguments has undefined behavior</target>
         </segment>
       </unit>
-      <unit id="1217" name="ext_empty_character">
+      <unit id="1220" name="ext_empty_character">
         <segment>
           <source>empty character constant</source>
           <target>empty character constant</target>
         </segment>
       </unit>
-      <unit id="1218" name="ext_empty_fnmacro_arg">
+      <unit id="1221" name="ext_empty_fnmacro_arg">
         <segment>
           <source>empty macro arguments are a C99 feature</source>
           <target>empty macro arguments are a C99 feature</target>
         </segment>
       </unit>
-      <unit id="1219" name="ext_hex_constant_invalid">
+      <unit id="1222" name="ext_hex_constant_invalid">
         <segment>
           <source>hexadecimal floating constants are a C99 feature</source>
           <target>hexadecimal floating constants are a C99 feature</target>
         </segment>
       </unit>
-      <unit id="1220" name="ext_hex_literal_invalid">
+      <unit id="1223" name="ext_hex_literal_invalid">
         <segment>
           <source>hexadecimal floating literals are a C++17 feature</source>
           <target>hexadecimal floating literals are a C++17 feature</target>
         </segment>
       </unit>
-      <unit id="1221" name="ext_line_comment">
+      <unit id="1224" name="ext_line_comment">
         <segment>
           <source>// comments are not allowed in this language</source>
           <target>// comments are not allowed in this language</target>
         </segment>
       </unit>
-      <unit id="1222" name="ext_mathematical_notation">
+      <unit id="1225" name="ext_mathematical_notation">
         <segment>
           <source>mathematical notation character &lt;U+%0&gt; in an identifier is a Clang extension</source>
           <target>mathematical notation character &lt;U+{$arg0}&gt; in an identifier is a Clang extension</target>
         </segment>
       </unit>
-      <unit id="1223" name="ext_missing_whitespace_after_macro_name">
+      <unit id="1226" name="ext_missing_whitespace_after_macro_name">
         <segment>
           <source>whitespace required after macro name</source>
           <target>whitespace required after macro name</target>
         </segment>
       </unit>
-      <unit id="1224" name="ext_ms_reserved_user_defined_literal">
+      <unit id="1227" name="ext_ms_reserved_user_defined_literal">
         <segment>
           <source>invalid suffix on literal; C++11 requires a space between literal and identifier</source>
           <target>invalid suffix on literal; C++11 requires a space between literal and identifier</target>
         </segment>
       </unit>
-      <unit id="1225" name="ext_multi_line_line_comment">
+      <unit id="1228" name="ext_multi_line_line_comment">
         <segment>
           <source>multi-line // comment</source>
           <target>multi-line // comment</target>
         </segment>
       </unit>
-      <unit id="1226" name="ext_named_variadic_macro">
+      <unit id="1229" name="ext_named_variadic_macro">
         <segment>
           <source>named variadic macros are a GNU extension</source>
           <target>named variadic macros are a GNU extension</target>
         </segment>
       </unit>
-      <unit id="1227" name="ext_no_newline_eof">
-        <segment>
-          <source>no newline at end of file</source>
-          <target>no newline at end of file</target>
-        </segment>
-      </unit>
-      <unit id="1228" name="ext_nonstandard_escape">
+      <unit id="1230" name="ext_nonstandard_escape">
         <segment>
           <source>use of non-standard escape character '\%0'</source>
           <target>use of non-standard escape character '\\{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1229" name="ext_on_off_switch_syntax">
+      <unit id="1231" name="ext_octal_literal">
+        <segment>
+          <source>octal integer literals are a C2y extension</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1232" name="ext_on_off_switch_syntax">
         <segment>
           <source>expected 'ON' or 'OFF' or 'DEFAULT' in pragma</source>
           <target>expected 'ON' or 'OFF' or 'DEFAULT' in pragma</target>
         </segment>
       </unit>
-      <unit id="1230" name="ext_paste_comma">
+      <unit id="1233" name="ext_paste_comma">
         <segment>
           <source>token pasting of ',' and __VA_ARGS__ is a GNU extension</source>
           <target>token pasting of ',' and __VA_ARGS__ is a GNU extension</target>
         </segment>
       </unit>
-      <unit id="1231" name="ext_pp_bad_paste_ms">
+      <unit id="1234" name="ext_pp_bad_paste_ms">
         <segment>
           <source>pasting formed '%0', an invalid preprocessing token</source>
           <target>pasting formed '{$arg0}', an invalid preprocessing token</target>
         </segment>
       </unit>
-      <unit id="1232" name="ext_pp_bad_vaargs_use">
+      <unit id="1235" name="ext_pp_bad_vaargs_use">
         <segment>
           <source>__VA_ARGS__ can only appear in the expansion of a C99 variadic macro</source>
           <target>__VA_ARGS__ can only appear in the expansion of a C99 variadic macro</target>
         </segment>
       </unit>
-      <unit id="1233" name="ext_pp_bad_vaopt_use">
+      <unit id="1236" name="ext_pp_bad_vaopt_use">
         <segment>
           <source>__VA_OPT__ can only appear in the expansion of a variadic macro</source>
           <target>__VA_OPT__ can only appear in the expansion of a variadic macro</target>
         </segment>
       </unit>
-      <unit id="1234" name="ext_pp_comma_expr">
+      <unit id="1237" name="ext_pp_comma_expr">
         <segment>
           <source>comma operator in operand of #if</source>
           <target>comma operator in operand of #if</target>
         </segment>
       </unit>
-      <unit id="1235" name="ext_pp_embed_directive">
+      <unit id="1238" name="ext_pp_embed_directive">
         <segment>
           <source>#embed is a %select{C23|Clang}0 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1236" name="ext_pp_extra_tokens_at_eol">
+      <unit id="1239" name="ext_pp_extra_tokens_at_eol">
         <segment>
           <source>extra tokens at end of #%0 directive</source>
           <target>extra tokens at end of #{$arg0} directive</target>
         </segment>
       </unit>
-      <unit id="1237" name="ext_pp_gnu_line_directive">
+      <unit id="1240" name="ext_pp_gnu_line_directive">
         <segment>
           <source>this style of line directive is a GNU extension</source>
           <target>this style of line directive is a GNU extension</target>
         </segment>
       </unit>
-      <unit id="1238" name="ext_pp_ident_directive">
+      <unit id="1241" name="ext_pp_ident_directive">
         <segment>
           <source>#ident is a language extension</source>
           <target>#ident is a language extension</target>
         </segment>
       </unit>
-      <unit id="1239" name="ext_pp_import_directive">
+      <unit id="1242" name="ext_pp_import_directive">
         <segment>
           <source>#import is a language extension</source>
           <target>#import is a language extension</target>
         </segment>
       </unit>
-      <unit id="1240" name="ext_pp_include_next_directive">
+      <unit id="1243" name="ext_pp_include_next_directive">
         <segment>
           <source>#include_next is a language extension</source>
           <target>#include_next is a language extension</target>
         </segment>
       </unit>
-      <unit id="1241" name="ext_pp_include_search_ms">
+      <unit id="1244" name="ext_pp_include_search_ms">
         <segment>
           <source>#include resolved using non-portable Microsoft search rules as: %0</source>
           <target>#include resolved using non-portable Microsoft search rules as: {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1242" name="ext_pp_line_too_big">
+      <unit id="1245" name="ext_pp_line_too_big">
         <segment>
           <source>C requires #line number to be less than %0, allowed as extension</source>
           <target>C requires #line number to be less than {$arg0}, allowed as extension</target>
         </segment>
       </unit>
-      <unit id="1243" name="ext_pp_line_zero">
+      <unit id="1246" name="ext_pp_line_zero">
         <segment>
           <source>#line directive with zero argument is a GNU extension</source>
           <target>#line directive with zero argument is a GNU extension</target>
         </segment>
       </unit>
-      <unit id="1244" name="ext_pp_macro_redef">
+      <unit id="1247" name="ext_pp_macro_redef">
         <segment>
           <source>%0 macro redefined</source>
           <target>{$arg0} macro redefined</target>
         </segment>
       </unit>
-      <unit id="1245" name="ext_pp_opencl_variadic_macros">
+      <unit id="1248" name="ext_pp_opencl_variadic_macros">
         <segment>
           <source>variadic macros are a Clang extension in OpenCL</source>
           <target>variadic macros are a Clang extension in OpenCL</target>
         </segment>
       </unit>
-      <unit id="1246" name="ext_pp_operator_used_as_macro_name">
+      <unit id="1249" name="ext_pp_operator_used_as_macro_name">
         <segment>
           <source>C++ operator %0 (aka %1) used as a macro name</source>
           <target>C++ operator {$arg0} (aka {$arg1}) used as a macro name</target>
         </segment>
       </unit>
-      <unit id="1247" name="ext_pp_redef_builtin_macro">
+      <unit id="1250" name="ext_pp_redef_builtin_macro">
         <segment>
           <source>redefining builtin macro</source>
           <target>redefining builtin macro</target>
         </segment>
       </unit>
-      <unit id="1248" name="ext_pp_undef_builtin_macro">
+      <unit id="1251" name="ext_pp_undef_builtin_macro">
         <segment>
           <source>undefining builtin macro</source>
           <target>undefining builtin macro</target>
         </segment>
       </unit>
-      <unit id="1249" name="ext_pp_warning_directive">
+      <unit id="1252" name="ext_pp_warning_directive">
         <segment>
           <source>#warning is a %select{C23|C++23}0 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1250" name="ext_pragma_syntax_eod">
+      <unit id="1253" name="ext_pragma_syntax_eod">
         <segment>
           <source>expected end of directive in pragma</source>
           <target>expected end of directive in pragma</target>
         </segment>
       </unit>
-      <unit id="1251" name="ext_reserved_user_defined_literal">
+      <unit id="1254" name="ext_reserved_user_defined_literal">
         <segment>
           <source>invalid suffix on literal; C++11 requires a space between literal and identifier</source>
           <target>invalid suffix on literal; C++11 requires a space between literal and identifier</target>
         </segment>
       </unit>
-      <unit id="1252" name="ext_string_too_long">
+      <unit id="1255" name="ext_string_too_long">
         <segment>
           <source>string literal of length %0 exceeds maximum length %1 that %select{C90|ISO C99|C++}2 compilers are required to support</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1253" name="ext_token_used">
+      <unit id="1256" name="ext_token_used">
         <segment>
           <source>extension used</source>
           <target>extension used</target>
         </segment>
       </unit>
-      <unit id="1254" name="ext_unicode_whitespace">
+      <unit id="1257" name="ext_unicode_whitespace">
         <segment>
           <source>treating Unicode character as whitespace</source>
           <target>treating Unicode character as whitespace</target>
         </segment>
       </unit>
-      <unit id="1255" name="ext_unknown_escape">
+      <unit id="1258" name="ext_unknown_escape">
         <segment>
           <source>unknown escape sequence '\%0'</source>
           <target>unknown escape sequence '\\{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1256" name="ext_unterminated_char_or_string">
+      <unit id="1259" name="ext_unterminated_char_or_string">
         <segment>
           <source>missing terminating %select{'|'"'}0 character</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1257" name="ext_variadic_macro">
+      <unit id="1260" name="ext_variadic_macro">
         <segment>
           <source>variadic macros are a C99 feature</source>
           <target>variadic macros are a C99 feature</target>
         </segment>
       </unit>
-      <unit id="1258" name="note_header_guard">
+      <unit id="1261" name="note_header_guard">
         <segment>
           <source>%0 is defined here; did you mean %1?</source>
           <target>{$arg0} is defined here; did you mean {$arg1}?</target>
         </segment>
       </unit>
-      <unit id="1259" name="note_implicit_top_level_module_import_here">
+      <unit id="1262" name="note_implicit_top_level_module_import_here">
         <segment>
           <source>submodule of top-level module '%0' implicitly imported here</source>
           <target>submodule of top-level module '{$arg0}' implicitly imported here</target>
         </segment>
       </unit>
-      <unit id="1260" name="note_init_list_at_beginning_of_macro_argument">
+      <unit id="1263" name="note_init_list_at_beginning_of_macro_argument">
         <segment>
           <source>cannot use initializer list at the beginning of a macro argument</source>
           <target>cannot use initializer list at the beginning of a macro argument</target>
         </segment>
       </unit>
-      <unit id="1261" name="note_invalid_ucn_name_candidate">
+      <unit id="1264" name="note_invalid_ucn_name_candidate">
         <segment>
           <source>did you mean %0 ('%2' U+%1)?</source>
           <target>did you mean {$arg0} ('{$arg2}' U+{$arg1})?</target>
         </segment>
       </unit>
-      <unit id="1262" name="note_invalid_ucn_name_loose_matching">
+      <unit id="1265" name="note_invalid_ucn_name_loose_matching">
         <segment>
           <source>characters names in Unicode escape sequences are sensitive to case and whitespaces</source>
           <target>characters names in Unicode escape sequences are sensitive to case and whitespaces</target>
         </segment>
       </unit>
-      <unit id="1263" name="note_macro_expansion_here">
+      <unit id="1266" name="note_macro_expansion_here">
         <segment>
           <source>expansion of macro %0 requested here</source>
           <target>expansion of macro {$arg0} requested here</target>
         </segment>
       </unit>
-      <unit id="1264" name="note_macro_here">
+      <unit id="1267" name="note_macro_here">
         <segment>
           <source>macro %0 defined here</source>
           <target>macro {$arg0} defined here</target>
         </segment>
       </unit>
-      <unit id="1265" name="note_mmap_add_framework_keyword">
+      <unit id="1268" name="note_mmap_add_framework_keyword">
         <segment>
           <source>use 'framework module' to declare module '%0'</source>
           <target>use 'framework module' to declare module '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1266" name="note_mmap_lbrace_match">
+      <unit id="1269" name="note_mmap_lbrace_match">
         <segment>
           <source>to match this '{'</source>
           <target>to match this '\{'</target>
         </segment>
       </unit>
-      <unit id="1267" name="note_mmap_lsquare_match">
+      <unit id="1270" name="note_mmap_lsquare_match">
         <segment>
           <source>to match this ']'</source>
           <target>to match this ']'</target>
         </segment>
       </unit>
-      <unit id="1268" name="note_mmap_prev_definition">
+      <unit id="1271" name="note_mmap_prev_definition">
         <segment>
           <source>previously defined here</source>
           <target>previously defined here</target>
         </segment>
       </unit>
-      <unit id="1269" name="note_mmap_rename_top_level_private_module">
+      <unit id="1272" name="note_mmap_rename_top_level_private_module">
         <segment>
           <source>rename '%0' to ensure it can be found by name</source>
           <target>rename '{$arg0}' to ensure it can be found by name</target>
         </segment>
       </unit>
-      <unit id="1270" name="note_pp_ambiguous_macro_chosen">
+      <unit id="1273" name="note_pp_ambiguous_macro_chosen">
         <segment>
           <source>expanding this definition of %0</source>
           <target>expanding this definition of {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1271" name="note_pp_ambiguous_macro_other">
+      <unit id="1274" name="note_pp_ambiguous_macro_other">
         <segment>
           <source>other definition of %0</source>
           <target>other definition of {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1272" name="note_pp_framework_without_header">
+      <unit id="1275" name="note_pp_framework_without_header">
         <segment>
           <source>did not find header '%0' in framework '%1' (loaded from '%2')</source>
           <target>did not find header '{$arg0}' in framework '{$arg1}' (loaded from '{$arg2}')</target>
         </segment>
       </unit>
-      <unit id="1273" name="note_pp_macro_annotation">
+      <unit id="1276" name="note_pp_macro_annotation">
         <segment>
           <source>macro marked '%select{deprecated|restrict_expansion|final}0' here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1274" name="note_pp_module_begin_here">
+      <unit id="1277" name="note_pp_module_begin_here">
         <segment>
           <source>entering module '%0' due to this pragma</source>
           <target>entering module '{$arg0}' due to this pragma</target>
         </segment>
       </unit>
-      <unit id="1275" name="note_suggest_parens_for_macro">
+      <unit id="1278" name="note_suggest_parens_for_macro">
         <segment>
           <source>parentheses are required around macro argument containing braced initializer list</source>
           <target>parentheses are required around macro argument containing braced initializer list</target>
         </segment>
       </unit>
-      <unit id="1276" name="note_ucn_four_not_eight">
+      <unit id="1279" name="note_ucn_four_not_eight">
         <segment>
           <source>did you mean to use '\u'?</source>
           <target>did you mean to use '\u'?</target>
         </segment>
       </unit>
-      <unit id="1277" name="null_in_char_or_string">
+      <unit id="1280" name="null_in_char_or_string">
         <segment>
           <source>null character(s) preserved in %select{char|string}0 literal</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1278" name="null_in_file">
+      <unit id="1281" name="null_in_file">
         <segment>
           <source>null character ignored</source>
           <target>null character ignored</target>
         </segment>
       </unit>
-      <unit id="1279" name="pp_disabled_macro_expansion">
+      <unit id="1282" name="pp_disabled_macro_expansion">
         <segment>
           <source>disabled expansion of recursive macro</source>
           <target>disabled expansion of recursive macro</target>
         </segment>
       </unit>
-      <unit id="1280" name="pp_err_elif_after_else">
+      <unit id="1283" name="pp_err_elif_after_else">
         <segment>
           <source>%select{#elif|#elifdef|#elifndef}0 after #else</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1281" name="pp_err_elif_without_if">
+      <unit id="1284" name="pp_err_elif_without_if">
         <segment>
           <source>%select{#elif|#elifdef|#elifndef}0 without #if</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1282" name="pp_err_else_after_else">
+      <unit id="1285" name="pp_err_else_after_else">
         <segment>
           <source>#else after #else</source>
           <target>#else after #else</target>
         </segment>
       </unit>
-      <unit id="1283" name="pp_err_else_without_if">
+      <unit id="1286" name="pp_err_else_without_if">
         <segment>
           <source>#else without #if</source>
           <target>#else without #if</target>
         </segment>
       </unit>
-      <unit id="1284" name="pp_hash_warning">
+      <unit id="1287" name="pp_hash_warning">
         <segment>
           <source>%0</source>
           <target>{$arg0}</target>
         </segment>
       </unit>
-      <unit id="1285" name="pp_include_macros_out_of_predefines">
+      <unit id="1288" name="pp_include_macros_out_of_predefines">
         <segment>
           <source>the #__include_macros directive is only for internal use by -imacros</source>
           <target>the #__include_macros directive is only for internal use by -imacros</target>
         </segment>
       </unit>
-      <unit id="1286" name="pp_include_next_absolute_path">
+      <unit id="1289" name="pp_include_next_absolute_path">
         <segment>
           <source>#include_next in file found relative to primary source file or found by absolute path; will search from start of include path</source>
           <target>#include_next in file found relative to primary source file or found by absolute path; will search from start of include path</target>
         </segment>
       </unit>
-      <unit id="1287" name="pp_include_next_in_primary">
+      <unit id="1290" name="pp_include_next_in_primary">
         <segment>
           <source>#include_next in primary source file; will search from start of include path</source>
           <target>#include_next in primary source file; will search from start of include path</target>
         </segment>
       </unit>
-      <unit id="1288" name="pp_invalid_string_literal">
+      <unit id="1291" name="pp_invalid_string_literal">
         <segment>
           <source>invalid string literal, ignoring final '\'</source>
           <target>invalid string literal, ignoring final '\\'</target>
         </segment>
       </unit>
-      <unit id="1289" name="pp_macro_not_used">
+      <unit id="1292" name="pp_macro_not_used">
         <segment>
           <source>macro is not used</source>
           <target>macro is not used</target>
         </segment>
       </unit>
-      <unit id="1290" name="pp_nonportable_path">
+      <unit id="1293" name="pp_nonportable_path">
         <segment>
           <source>non-portable path to file '%0'; specified path differs in case from file name on disk</source>
           <target>non-portable path to file '{$arg0}'; specified path differs in case from file name on disk</target>
         </segment>
       </unit>
-      <unit id="1291" name="pp_nonportable_system_path">
+      <unit id="1294" name="pp_nonportable_system_path">
         <segment>
           <source>non-portable path to file '%0'; specified path differs in case from file name on disk</source>
           <target>non-portable path to file '{$arg0}'; specified path differs in case from file name on disk</target>
         </segment>
       </unit>
-      <unit id="1292" name="pp_out_of_date_dependency">
+      <unit id="1295" name="pp_out_of_date_dependency">
         <segment>
           <source>current file is older than dependency %0</source>
           <target>current file is older than dependency {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1293" name="pp_poisoning_existing_macro">
+      <unit id="1296" name="pp_poisoning_existing_macro">
         <segment>
           <source>poisoning existing macro</source>
           <target>poisoning existing macro</target>
         </segment>
       </unit>
-      <unit id="1294" name="pp_pragma_once_in_main_file">
+      <unit id="1297" name="pp_pragma_once_in_main_file">
         <segment>
           <source>#pragma once in main file</source>
           <target>#pragma once in main file</target>
         </segment>
       </unit>
-      <unit id="1295" name="pp_pragma_sysheader_in_main_file">
+      <unit id="1298" name="pp_pragma_sysheader_in_main_file">
         <segment>
           <source>#pragma system_header ignored in main file</source>
           <target>#pragma system_header ignored in main file</target>
         </segment>
       </unit>
-      <unit id="1296" name="remark_pp_include_directive_modular_translation">
+      <unit id="1299" name="remark_mmap_load">
+        <segment>
+          <source>loading modulemap '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1300" name="remark_mmap_load_module">
+        <segment>
+          <source>loading parsed module '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1301" name="remark_mmap_parse">
+        <segment>
+          <source>parsing modulemap '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1302" name="remark_pp_include_directive_modular_translation">
         <segment>
           <source>treating #%select{include|import|include_next|__include_macros}0 as an import of module '%1'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1297" name="remark_pp_search_path_usage">
+      <unit id="1303" name="remark_pp_search_path_usage">
         <segment>
           <source>search path used: '%0'</source>
           <target>search path used: '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1298" name="trigraph_converted">
+      <unit id="1304" name="trigraph_converted">
         <segment>
           <source>trigraph converted to '%0' character</source>
           <target>trigraph converted to '{$arg0}' character</target>
         </segment>
       </unit>
-      <unit id="1299" name="trigraph_ends_block_comment">
+      <unit id="1305" name="trigraph_ends_block_comment">
         <segment>
           <source>trigraph ends block comment</source>
           <target>trigraph ends block comment</target>
         </segment>
       </unit>
-      <unit id="1300" name="trigraph_ignored">
+      <unit id="1306" name="trigraph_ignored">
         <segment>
           <source>trigraph ignored</source>
           <target>trigraph ignored</target>
         </segment>
       </unit>
-      <unit id="1301" name="trigraph_ignored_block_comment">
+      <unit id="1307" name="trigraph_ignored_block_comment">
         <segment>
           <source>ignored trigraph would end block comment</source>
           <target>ignored trigraph would end block comment</target>
         </segment>
       </unit>
-      <unit id="1302" name="warn_bad_character_encoding">
+      <unit id="1308" name="warn_bad_character_encoding">
         <segment>
           <source>illegal character encoding in character literal</source>
           <target>illegal character encoding in character literal</target>
         </segment>
       </unit>
-      <unit id="1303" name="warn_bad_string_encoding">
+      <unit id="1309" name="warn_bad_string_encoding">
         <segment>
           <source>illegal character encoding in string literal</source>
           <target>illegal character encoding in string literal</target>
         </segment>
       </unit>
-      <unit id="1304" name="warn_c17_compat_missing_varargs_arg">
+      <unit id="1310" name="warn_c2y_compat_octal_literal">
+        <segment>
+          <source>octal integer literals are incompatible with standards before C2y</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1311" name="warn_c2y_delimited_escape_sequence">
+        <segment>
+          <source>delimited escape sequences are incompatible with C standards before C2y</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1312" name="warn_c17_compat_missing_varargs_arg">
         <segment>
           <source>passing no argument for the '...' parameter of a variadic macro is incompatible with C standards before C23</source>
           <target>passing no argument for the '...' parameter of a variadic macro is incompatible with C standards before C23</target>
         </segment>
       </unit>
-      <unit id="1305" name="warn_c17_compat_u8_character_literal">
+      <unit id="1313" name="warn_c17_compat_u8_character_literal">
         <segment>
           <source>unicode literals are incompatible with C standards before C23</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1306" name="warn_c23_compat_binary_literal">
+      <unit id="1314" name="warn_c23_compat_binary_literal">
         <segment>
           <source>binary integer literals are incompatible with C standards before C23</source>
           <target>binary integer literals are incompatible with C standards before C23</target>
         </segment>
       </unit>
-      <unit id="1307" name="warn_c23_compat_digit_separator">
+      <unit id="1315" name="warn_c23_compat_digit_separator">
         <segment>
           <source>digit separators are incompatible with C standards before C23</source>
           <target>digit separators are incompatible with C standards before C23</target>
         </segment>
       </unit>
-      <unit id="1308" name="warn_c23_compat_literal_ucn_control_character">
+      <unit id="1316" name="warn_c23_compat_literal_ucn_control_character">
         <segment>
           <source>universal character name referring to a control character is incompatible with C standards before C23</source>
           <target>universal character name referring to a control character is incompatible with C standards before C23</target>
         </segment>
       </unit>
-      <unit id="1309" name="warn_c23_compat_literal_ucn_escape_basic_scs">
+      <unit id="1317" name="warn_c23_compat_literal_ucn_escape_basic_scs">
         <segment>
           <source>specifying character '%0' with a universal character name is incompatible with C standards before C23</source>
           <target>specifying character '{$arg0}' with a universal character name is incompatible with C standards before C23</target>
         </segment>
       </unit>
-      <unit id="1310" name="warn_c23_compat_pp_directive">
+      <unit id="1318" name="warn_c23_compat_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is incompatible with C standards before C23</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1311" name="warn_c23_compat_warning_directive">
+      <unit id="1319" name="warn_c23_compat_warning_directive">
         <segment>
           <source>#warning is incompatible with C standards before C23</source>
           <target>#warning is incompatible with C standards before C23</target>
         </segment>
       </unit>
-      <unit id="1312" name="warn_c23_keyword">
+      <unit id="1320" name="warn_c23_keyword">
         <segment>
           <source>'%0' is a keyword in C23</source>
           <target>'{$arg0}' is a keyword in C23</target>
         </segment>
       </unit>
-      <unit id="1313" name="warn_c99_compat_unicode_id">
+      <unit id="1321" name="warn_c99_compat_unicode_id">
         <segment>
           <source>%select{using this character in an identifier|starting an identifier with this character}0 is incompatible with C99</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1314" name="warn_c99_compat_unicode_literal">
+      <unit id="1322" name="warn_c99_compat_unicode_literal">
         <segment>
           <source>unicode literals are incompatible with C99</source>
           <target>unicode literals are incompatible with C99</target>
         </segment>
       </unit>
-      <unit id="1315" name="warn_c99_keyword">
+      <unit id="1323" name="warn_c99_keyword">
         <segment>
           <source>'%0' is a keyword in C99</source>
           <target>'{$arg0}' is a keyword in C99</target>
         </segment>
       </unit>
-      <unit id="1316" name="warn_char_constant_too_large">
+      <unit id="1324" name="warn_char_constant_too_large">
         <segment>
           <source>character constant too long for its type</source>
           <target>character constant too long for its type</target>
         </segment>
       </unit>
-      <unit id="1317" name="warn_compat_pp_embed_directive">
+      <unit id="1325" name="warn_compat_pp_embed_directive">
         <segment>
           <source>#embed is incompatible with C standards before C23</source>
           <target>#embed is incompatible with C standards before C23</target>
         </segment>
       </unit>
-      <unit id="1318" name="warn_cxx11_compat_binary_literal">
+      <unit id="1326" name="warn_cxx11_compat_binary_literal">
         <segment>
           <source>binary integer literals are incompatible with C++ standards before C++14</source>
           <target>binary integer literals are incompatible with C++ standards before C++14</target>
         </segment>
       </unit>
-      <unit id="1319" name="warn_cxx11_compat_digit_separator">
+      <unit id="1327" name="warn_cxx11_compat_digit_separator">
         <segment>
           <source>digit separators are incompatible with C++ standards before C++14</source>
           <target>digit separators are incompatible with C++ standards before C++14</target>
         </segment>
       </unit>
-      <unit id="1320" name="warn_cxx11_compat_reserved_user_defined_literal">
+      <unit id="1328" name="warn_cxx11_compat_reserved_user_defined_literal">
         <segment>
           <source>identifier after literal will be treated as a reserved user-defined literal suffix in C++11</source>
           <target>identifier after literal will be treated as a reserved user-defined literal suffix in C++11</target>
         </segment>
       </unit>
-      <unit id="1321" name="warn_cxx11_compat_user_defined_literal">
+      <unit id="1329" name="warn_cxx11_compat_user_defined_literal">
         <segment>
           <source>identifier after literal will be treated as a user-defined literal suffix in C++11</source>
           <target>identifier after literal will be treated as a user-defined literal suffix in C++11</target>
         </segment>
       </unit>
-      <unit id="1322" name="warn_cxx11_keyword">
+      <unit id="1330" name="warn_cxx11_keyword">
         <segment>
           <source>'%0' is a keyword in C++11</source>
           <target>'{$arg0}' is a keyword in C++11</target>
         </segment>
       </unit>
-      <unit id="1323" name="warn_cxx14_compat_u8_character_literal">
+      <unit id="1331" name="warn_cxx14_compat_u8_character_literal">
         <segment>
           <source>unicode literals are incompatible with C++ standards before C++17</source>
           <target>unicode literals are incompatible with C++ standards before C++17</target>
         </segment>
       </unit>
-      <unit id="1324" name="warn_cxx17_compat_missing_varargs_arg">
+      <unit id="1332" name="warn_cxx17_compat_missing_varargs_arg">
         <segment>
           <source>passing no argument for the '...' parameter of a variadic macro is incompatible with C++ standards before C++20</source>
           <target>passing no argument for the '...' parameter of a variadic macro is incompatible with C++ standards before C++20</target>
         </segment>
       </unit>
-      <unit id="1325" name="warn_cxx17_compat_spaceship">
+      <unit id="1333" name="warn_cxx17_compat_spaceship">
         <segment>
           <source>'&lt;=&gt;' operator is incompatible with C++ standards before C++20</source>
           <target>'&lt;=&gt;' operator is incompatible with C++ standards before C++20</target>
         </segment>
       </unit>
-      <unit id="1326" name="warn_cxx17_hex_literal">
+      <unit id="1334" name="warn_cxx17_hex_literal">
         <segment>
           <source>hexadecimal floating literals are incompatible with C++ standards before C++17</source>
           <target>hexadecimal floating literals are incompatible with C++ standards before C++17</target>
         </segment>
       </unit>
-      <unit id="1327" name="warn_cxx20_compat_spaceship">
+      <unit id="1335" name="warn_cxx20_compat_spaceship">
         <segment>
           <source>'&lt;=&gt;' is a single token in C++20; add a space to avoid a change in behavior</source>
           <target>'&lt;=&gt;' is a single token in C++20; add a space to avoid a change in behavior</target>
         </segment>
       </unit>
-      <unit id="1328" name="warn_cxx20_keyword">
+      <unit id="1336" name="warn_cxx20_keyword">
         <segment>
           <source>'%0' is a keyword in C++20</source>
           <target>'{$arg0}' is a keyword in C++20</target>
         </segment>
       </unit>
-      <unit id="1329" name="warn_cxx23_compat_pp_directive">
+      <unit id="1337" name="warn_cxx23_compat_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is incompatible with C++ standards before C++23</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1330" name="warn_cxx23_compat_warning_directive">
+      <unit id="1338" name="warn_cxx23_compat_warning_directive">
         <segment>
           <source>#warning is incompatible with C++ standards before C++23</source>
           <target>#warning is incompatible with C++ standards before C++23</target>
         </segment>
       </unit>
-      <unit id="1331" name="warn_cxx23_delimited_escape_sequence">
+      <unit id="1339" name="warn_cxx23_delimited_escape_sequence">
         <segment>
           <source>%select{delimited|named}0 escape sequences are incompatible with C++ standards before C++23</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1332" name="warn_cxx26_compat_raw_string_literal_character_set">
+      <unit id="1340" name="warn_cxx26_compat_raw_string_literal_character_set">
         <segment>
           <source> '%0' in a raw string literal delimiter is incompatible with standards before C++2c</source>
           <target> '{$arg0}' in a raw string literal delimiter is incompatible with standards before C++2c</target>
         </segment>
       </unit>
-      <unit id="1333" name="warn_cxx98_compat_empty_fnmacro_arg">
+      <unit id="1341" name="warn_cxx98_compat_empty_fnmacro_arg">
         <segment>
           <source>empty macro arguments are incompatible with C++98</source>
           <target>empty macro arguments are incompatible with C++98</target>
         </segment>
       </unit>
-      <unit id="1334" name="warn_cxx98_compat_less_colon_colon">
+      <unit id="1342" name="warn_cxx98_compat_less_colon_colon">
         <segment>
           <source>'&lt;::' is treated as digraph '&lt;:' (aka '[') followed by ':' in C++98</source>
           <target>'&lt;::' is treated as digraph '&lt;:' (aka '[') followed by ':' in C++98</target>
         </segment>
       </unit>
-      <unit id="1335" name="warn_cxx98_compat_literal_ucn_control_character">
+      <unit id="1343" name="warn_cxx98_compat_literal_ucn_control_character">
         <segment>
           <source>universal character name referring to a control character is incompatible with C++98</source>
           <target>universal character name referring to a control character is incompatible with C++98</target>
         </segment>
       </unit>
-      <unit id="1336" name="warn_cxx98_compat_literal_ucn_escape_basic_scs">
+      <unit id="1344" name="warn_cxx98_compat_literal_ucn_escape_basic_scs">
         <segment>
           <source>specifying character '%0' with a universal character name is incompatible with C++98</source>
           <target>specifying character '{$arg0}' with a universal character name is incompatible with C++98</target>
         </segment>
       </unit>
-      <unit id="1337" name="warn_cxx98_compat_no_newline_eof">
-        <segment>
-          <source>C++98 requires newline at end of file</source>
-          <target>C++98 requires newline at end of file</target>
-        </segment>
-      </unit>
-      <unit id="1338" name="warn_cxx98_compat_pp_line_too_big">
+      <unit id="1345" name="warn_cxx98_compat_pp_line_too_big">
         <segment>
           <source>#line number greater than 32767 is incompatible with C++98</source>
           <target>#line number greater than 32767 is incompatible with C++98</target>
         </segment>
       </unit>
-      <unit id="1339" name="warn_cxx98_compat_raw_string_literal">
+      <unit id="1346" name="warn_cxx98_compat_raw_string_literal">
         <segment>
           <source>raw string literals are incompatible with C++98</source>
           <target>raw string literals are incompatible with C++98</target>
         </segment>
       </unit>
-      <unit id="1340" name="warn_cxx98_compat_unicode_literal">
+      <unit id="1347" name="warn_cxx98_compat_unicode_literal">
         <segment>
           <source>unicode literals are incompatible with C++98</source>
           <target>unicode literals are incompatible with C++98</target>
         </segment>
       </unit>
-      <unit id="1341" name="warn_cxx98_compat_variadic_macro">
+      <unit id="1348" name="warn_cxx98_compat_variadic_macro">
         <segment>
           <source>variadic macros are incompatible with C++98</source>
           <target>variadic macros are incompatible with C++98</target>
         </segment>
       </unit>
-      <unit id="1342" name="warn_defined_in_function_type_macro">
+      <unit id="1349" name="warn_defined_in_function_type_macro">
         <segment>
           <source>macro expansion producing 'defined' has undefined behavior</source>
           <target>macro expansion producing 'defined' has undefined behavior</target>
         </segment>
       </unit>
-      <unit id="1343" name="warn_defined_in_object_type_macro">
+      <unit id="1350" name="warn_defined_in_object_type_macro">
         <segment>
           <source>macro expansion producing 'defined' has undefined behavior</source>
           <target>macro expansion producing 'defined' has undefined behavior</target>
         </segment>
       </unit>
-      <unit id="1344" name="warn_delimited_ucn_empty">
+      <unit id="1351" name="warn_delimited_ucn_empty">
         <segment>
           <source>empty delimited universal character name; treating as '\' '%0' '{' '}'</source>
           <target>empty delimited universal character name; treating as '\\' '{$arg0}' '\{' '\}'</target>
         </segment>
       </unit>
-      <unit id="1345" name="warn_delimited_ucn_incomplete">
+      <unit id="1352" name="warn_delimited_ucn_incomplete">
         <segment>
           <source>incomplete delimited universal character name; treating as '\' '%0' '{' identifier</source>
           <target>incomplete delimited universal character name; treating as '\\' '{$arg0}' '\{' identifier</target>
         </segment>
       </unit>
-      <unit id="1346" name="warn_deprecated_module_dot_map">
+      <unit id="1353" name="warn_deprecated_module_dot_map">
         <segment>
           <source>'%0' as a module map name is deprecated, rename it to %select{module.modulemap|module.private.modulemap}1%select{| in the 'Modules' directory of the framework}2</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1347" name="warn_four_char_character_literal">
+      <unit id="1354" name="warn_four_char_character_literal">
         <segment>
           <source>multi-character character constant</source>
           <target>multi-character character constant</target>
         </segment>
       </unit>
-      <unit id="1348" name="warn_framework_include_private_from_public">
+      <unit id="1355" name="warn_framework_include_private_from_public">
         <segment>
           <source>public framework header includes private framework header '%0'</source>
           <target>public framework header includes private framework header '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1349" name="warn_has_warning_invalid_option">
+      <unit id="1356" name="warn_has_warning_invalid_option">
         <segment>
           <source>__has_warning expected option name (e.g. "-Wundef")</source>
           <target>__has_warning expected option name (e.g. "-Wundef")</target>
         </segment>
       </unit>
-      <unit id="1350" name="warn_header_guard">
+      <unit id="1357" name="warn_header_guard">
         <segment>
           <source>%0 is used as a header guard here, followed by #define of a different macro</source>
           <target>{$arg0} is used as a header guard here, followed by #define of a different macro</target>
         </segment>
       </unit>
-      <unit id="1351" name="warn_invalid_utf8_in_comment">
+      <unit id="1358" name="warn_invalid_utf8_in_comment">
         <segment>
           <source>invalid UTF-8 in comment</source>
           <target>invalid UTF-8 in comment</target>
         </segment>
       </unit>
-      <unit id="1352" name="warn_missing_whitespace_after_macro_name">
+      <unit id="1359" name="warn_missing_whitespace_after_macro_name">
         <segment>
           <source>whitespace recommended after macro name</source>
           <target>whitespace recommended after macro name</target>
         </segment>
       </unit>
-      <unit id="1353" name="warn_mmap_incomplete_framework_module_declaration">
+      <unit id="1360" name="warn_mmap_incomplete_framework_module_declaration">
         <segment>
           <source>skipping '%0' because module declaration of '%1' lacks the 'framework' qualifier</source>
           <target>skipping '{$arg0}' because module declaration of '{$arg1}' lacks the 'framework' qualifier</target>
         </segment>
       </unit>
-      <unit id="1354" name="warn_mmap_mismatched_private_module_name">
+      <unit id="1361" name="warn_mmap_mismatched_private_module_name">
         <segment>
           <source>expected canonical name for private module '%0'</source>
           <target>expected canonical name for private module '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1355" name="warn_mmap_mismatched_private_submodule">
+      <unit id="1362" name="warn_mmap_mismatched_private_submodule">
         <segment>
           <source>private submodule '%0' in private module map, expected top-level module</source>
           <target>private submodule '{$arg0}' in private module map, expected top-level module</target>
         </segment>
       </unit>
-      <unit id="1356" name="warn_mmap_redundant_export_as">
+      <unit id="1363" name="warn_mmap_redundant_export_as">
         <segment>
           <source>module '%0' already re-exported as '%1'</source>
           <target>module '{$arg0}' already re-exported as '{$arg1}'</target>
         </segment>
       </unit>
-      <unit id="1357" name="warn_mmap_umbrella_dir_not_found">
+      <unit id="1364" name="warn_mmap_umbrella_dir_not_found">
         <segment>
           <source>umbrella directory '%0' not found</source>
           <target>umbrella directory '{$arg0}' not found</target>
         </segment>
       </unit>
-      <unit id="1358" name="warn_mmap_unknown_attribute">
+      <unit id="1365" name="warn_mmap_unknown_attribute">
         <segment>
           <source>unknown attribute '%0'</source>
           <target>unknown attribute '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1359" name="warn_module_conflict">
+      <unit id="1366" name="warn_module_conflict">
         <segment>
           <source>module '%0' conflicts with already-imported module '%1': %2</source>
           <target>module '{$arg0}' conflicts with already-imported module '{$arg1}': {$arg2}</target>
         </segment>
       </unit>
-      <unit id="1360" name="warn_multichar_character_literal">
+      <unit id="1367" name="warn_multichar_character_literal">
         <segment>
           <source>multi-character character constant</source>
           <target>multi-character character constant</target>
         </segment>
       </unit>
-      <unit id="1361" name="warn_nested_block_comment">
+      <unit id="1368" name="warn_nested_block_comment">
         <segment>
           <source>'/*' within block comment</source>
           <target>'/*' within block comment</target>
         </segment>
       </unit>
-      <unit id="1362" name="warn_no_newline_eof">
+      <unit id="1369" name="warn_no_newline_eof">
         <segment>
           <source>no newline at end of file</source>
           <target>no newline at end of file</target>
         </segment>
       </unit>
-      <unit id="1363" name="warn_non_modular_include_in_framework_module">
+      <unit id="1370" name="warn_non_modular_include_in_framework_module">
         <segment>
           <source>include of non-modular header inside framework module '%0': '%1'</source>
           <target>include of non-modular header inside framework module '{$arg0}': '{$arg1}'</target>
         </segment>
       </unit>
-      <unit id="1364" name="warn_non_modular_include_in_module">
+      <unit id="1371" name="warn_non_modular_include_in_module">
         <segment>
           <source>include of non-modular header inside module '%0': '%1'</source>
           <target>include of non-modular header inside module '{$arg0}': '{$arg1}'</target>
         </segment>
       </unit>
-      <unit id="1365" name="warn_pp_ambiguous_macro">
+      <unit id="1372" name="warn_pp_ambiguous_macro">
         <segment>
           <source>ambiguous expansion of macro %0</source>
           <target>ambiguous expansion of macro {$arg0}</target>
         </segment>
       </unit>
-      <unit id="1366" name="warn_pp_convert_to_positive">
+      <unit id="1373" name="warn_pp_convert_to_positive">
         <segment>
           <source>%select{left|right}0 side of operator converted from negative value to unsigned: %1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1367" name="warn_pp_date_time">
+      <unit id="1374" name="warn_pp_date_time">
         <segment>
           <source>expansion of date or time macro is not reproducible</source>
           <target>expansion of date or time macro is not reproducible</target>
         </segment>
       </unit>
-      <unit id="1368" name="warn_pp_expr_overflow">
+      <unit id="1375" name="warn_pp_expr_overflow">
         <segment>
           <source>integer overflow in preprocessor expression</source>
           <target>integer overflow in preprocessor expression</target>
         </segment>
       </unit>
-      <unit id="1369" name="warn_pp_hdrstop_filename_ignored">
+      <unit id="1376" name="warn_pp_hdrstop_filename_ignored">
         <segment>
           <source>#pragma hdrstop filename not supported, /Fp can be used to specify precompiled header filename</source>
           <target>#pragma hdrstop filename not supported, /Fp can be used to specify precompiled header filename</target>
         </segment>
       </unit>
-      <unit id="1370" name="warn_pp_include_angled_in_module_purview">
+      <unit id="1377" name="warn_pp_identifier_is_cpp_keyword">
+        <segment>
+          <source>identifier %0 conflicts with a C++ keyword</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1378" name="warn_pp_include_angled_in_module_purview">
         <segment>
           <source>'#include &lt;filename&gt;' attaches the declarations to the named module '%0', which is not usually intended; consider moving that directive before the module declaration</source>
           <target>'#include &lt;filename&gt;' attaches the declarations to the named module '{$arg0}', which is not usually intended; consider moving that directive before the module declaration</target>
         </segment>
       </unit>
-      <unit id="1371" name="warn_pp_invalid_directive">
+      <unit id="1379" name="warn_pp_invalid_directive">
         <segment>
           <source>invalid preprocessing directive%select{|, did you mean '#%1'?}0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1372" name="warn_pp_line_decimal">
+      <unit id="1380" name="warn_pp_line_decimal">
         <segment>
           <source>%select{#line|GNU line marker}0 directive interprets number as decimal, not octal</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1373" name="warn_pp_macro_def_mismatch_with_pch">
+      <unit id="1381" name="warn_pp_macro_def_mismatch_with_pch">
         <segment>
           <source>definition of macro %0 does not match definition in precompiled header</source>
           <target>definition of macro {$arg0} does not match definition in precompiled header</target>
         </segment>
       </unit>
-      <unit id="1374" name="warn_pp_macro_hides_keyword">
+      <unit id="1382" name="warn_pp_macro_hides_keyword">
         <segment>
           <source>keyword is hidden by macro definition</source>
           <target>keyword is hidden by macro definition</target>
         </segment>
       </unit>
-      <unit id="1375" name="warn_pp_macro_is_reserved_attribute_id">
+      <unit id="1383" name="warn_pp_macro_is_reserved_attribute_id">
         <segment>
           <source>%0 is a reserved attribute identifier</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1376" name="warn_pp_macro_is_reserved_id">
+      <unit id="1384" name="warn_pp_macro_is_reserved_id">
         <segment>
           <source>macro name is a reserved identifier</source>
           <target>macro name is a reserved identifier</target>
         </segment>
       </unit>
-      <unit id="1377" name="warn_pp_objc_macro_redef_ignored">
+      <unit id="1385" name="warn_pp_objc_macro_redef_ignored">
         <segment>
           <source>ignoring redefinition of Objective-C qualifier macro</source>
           <target>ignoring redefinition of Objective-C qualifier macro</target>
         </segment>
       </unit>
-      <unit id="1378" name="warn_pp_undef_identifier">
+      <unit id="1386" name="warn_pp_undef_identifier">
         <segment>
           <source>%0 is not defined, evaluates to 0</source>
           <target>{$arg0} is not defined, evaluates to 0</target>
         </segment>
       </unit>
-      <unit id="1379" name="warn_pp_undef_prefix">
+      <unit id="1387" name="warn_pp_undef_prefix">
         <segment>
           <source>%0 is not defined, evaluates to 0</source>
           <target>{$arg0} is not defined, evaluates to 0</target>
         </segment>
       </unit>
-      <unit id="1380" name="warn_pragma_debug_missing_command">
+      <unit id="1388" name="warn_pp_undef_true_identifier">
+        <segment>
+          <source>'true' is not defined, evaluates to 0</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1389" name="warn_pragma_debug_missing_command">
         <segment>
           <source>missing debug command</source>
           <target>missing debug command</target>
         </segment>
       </unit>
-      <unit id="1381" name="warn_pragma_debug_unexpected_command">
+      <unit id="1390" name="warn_pragma_debug_unable_to_find_module">
+        <segment>
+          <source>unable to find module '%0'</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1391" name="warn_pragma_debug_unexpected_command">
         <segment>
           <source>unexpected debug command '%0'</source>
           <target>unexpected debug command '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1382" name="warn_pragma_debug_unknown_module">
+      <unit id="1392" name="warn_pragma_debug_unknown_module">
         <segment>
           <source>unknown module '%0'</source>
           <target>unknown module '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1383" name="warn_pragma_deprecated_macro_use">
+      <unit id="1393" name="warn_pragma_deprecated_macro_use">
         <segment>
           <source>macro %0 has been marked as deprecated%select{|: %2}1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1384" name="warn_pragma_diagnostic_cannot_pop">
+      <unit id="1394" name="warn_pragma_diagnostic_cannot_pop">
         <segment>
           <source>pragma diagnostic pop could not pop, no matching push</source>
           <target>pragma diagnostic pop could not pop, no matching push</target>
         </segment>
       </unit>
-      <unit id="1385" name="warn_pragma_diagnostic_invalid">
+      <unit id="1395" name="warn_pragma_diagnostic_invalid">
         <segment>
           <source>pragma diagnostic expected 'error', 'warning', 'ignored', 'fatal', 'push', or 'pop'</source>
           <target>pragma diagnostic expected 'error', 'warning', 'ignored', 'fatal', 'push', or 'pop'</target>
         </segment>
       </unit>
-      <unit id="1386" name="warn_pragma_diagnostic_invalid_option">
+      <unit id="1396" name="warn_pragma_diagnostic_invalid_option">
         <segment>
           <source>pragma diagnostic expected option name (e.g. "-Wundef")</source>
           <target>pragma diagnostic expected option name (e.g. "-Wundef")</target>
         </segment>
       </unit>
-      <unit id="1387" name="warn_pragma_diagnostic_invalid_token">
+      <unit id="1397" name="warn_pragma_diagnostic_invalid_token">
         <segment>
           <source>unexpected token in pragma diagnostic</source>
           <target>unexpected token in pragma diagnostic</target>
         </segment>
       </unit>
-      <unit id="1388" name="warn_pragma_diagnostic_unknown_warning">
+      <unit id="1398" name="warn_pragma_diagnostic_unknown_warning">
         <segment>
           <source>unknown warning group '%0', ignored</source>
           <target>unknown warning group '{$arg0}', ignored</target>
         </segment>
       </unit>
-      <unit id="1389" name="warn_pragma_exec_charset_expected">
+      <unit id="1399" name="warn_pragma_exec_charset_expected">
         <segment>
           <source>#pragma execution_character_set expected '%0'</source>
           <target>#pragma execution_character_set expected '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1390" name="warn_pragma_exec_charset_push_invalid">
+      <unit id="1400" name="warn_pragma_exec_charset_push_invalid">
         <segment>
           <source>#pragma execution_character_set invalid value '%0', only 'UTF-8' is supported</source>
           <target>#pragma execution_character_set invalid value '{$arg0}', only 'UTF-8' is supported</target>
         </segment>
       </unit>
-      <unit id="1391" name="warn_pragma_exec_charset_spec_invalid">
+      <unit id="1401" name="warn_pragma_exec_charset_spec_invalid">
         <segment>
           <source>#pragma execution_character_set expected 'push' or 'pop'</source>
           <target>#pragma execution_character_set expected 'push' or 'pop'</target>
         </segment>
       </unit>
-      <unit id="1392" name="warn_pragma_final_macro">
+      <unit id="1402" name="warn_pragma_final_macro">
         <segment>
           <source>macro %0 has been marked as final and should not be %select{undefined|redefined}1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1393" name="warn_pragma_ignored">
+      <unit id="1403" name="warn_pragma_ignored">
         <segment>
           <source>unknown pragma ignored</source>
           <target>unknown pragma ignored</target>
         </segment>
       </unit>
-      <unit id="1394" name="warn_pragma_include_alias_expected">
+      <unit id="1404" name="warn_pragma_include_alias_expected">
         <segment>
           <source>pragma include_alias expected '%0'</source>
           <target>pragma include_alias expected '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1395" name="warn_pragma_include_alias_expected_filename">
+      <unit id="1405" name="warn_pragma_include_alias_expected_filename">
         <segment>
           <source>pragma include_alias expected include filename</source>
           <target>pragma include_alias expected include filename</target>
         </segment>
       </unit>
-      <unit id="1396" name="warn_pragma_include_alias_mismatch_angle">
+      <unit id="1406" name="warn_pragma_include_alias_mismatch_angle">
         <segment>
           <source>angle-bracketed include &lt;%0&gt; cannot be aliased to double-quoted include "%1"</source>
           <target>angle-bracketed include &lt;{$arg0}&gt; cannot be aliased to double-quoted include "{$arg1}"</target>
         </segment>
       </unit>
-      <unit id="1397" name="warn_pragma_include_alias_mismatch_quote">
+      <unit id="1407" name="warn_pragma_include_alias_mismatch_quote">
         <segment>
           <source>double-quoted include "%0" cannot be aliased to angle-bracketed include &lt;%1&gt;</source>
           <target>double-quoted include "{$arg0}" cannot be aliased to angle-bracketed include &lt;{$arg1}&gt;</target>
         </segment>
       </unit>
-      <unit id="1398" name="warn_pragma_message">
+      <unit id="1408" name="warn_pragma_message">
         <segment>
           <source>%0</source>
           <target>{$arg0}</target>
         </segment>
       </unit>
-      <unit id="1399" name="warn_pragma_pop_macro_no_push">
+      <unit id="1409" name="warn_pragma_pop_macro_no_push">
         <segment>
           <source>pragma pop_macro could not pop '%0', no matching push_macro</source>
           <target>pragma pop_macro could not pop '{$arg0}', no matching push_macro</target>
         </segment>
       </unit>
-      <unit id="1400" name="warn_pragma_restrict_expansion_macro_use">
+      <unit id="1410" name="warn_pragma_restrict_expansion_macro_use">
         <segment>
           <source>macro %0 has been marked as unsafe for use in headers%select{|: %2}1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1401" name="warn_pragma_warning_expected">
+      <unit id="1411" name="warn_pragma_warning_expected">
         <segment>
           <source>#pragma warning expected '%0'</source>
           <target>#pragma warning expected '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1402" name="warn_pragma_warning_expected_number">
+      <unit id="1412" name="warn_pragma_warning_expected_number">
         <segment>
           <source>#pragma warning expected a warning number</source>
           <target>#pragma warning expected a warning number</target>
         </segment>
       </unit>
-      <unit id="1403" name="warn_pragma_warning_push_level">
+      <unit id="1413" name="warn_pragma_warning_push_level">
         <segment>
           <source>#pragma warning(push, level) requires a level between 0 and 4</source>
           <target>#pragma warning(push, level) requires a level between 0 and 4</target>
         </segment>
       </unit>
-      <unit id="1404" name="warn_pragma_warning_spec_invalid">
+      <unit id="1414" name="warn_pragma_warning_spec_invalid">
         <segment>
           <source>#pragma warning expected 'push', 'pop', 'default', 'disable', 'error', 'once', 'suppress', 1, 2, 3, or 4</source>
           <target>#pragma warning expected 'push', 'pop', 'default', 'disable', 'error', 'once', 'suppress', 1, 2, 3, or 4</target>
         </segment>
       </unit>
-      <unit id="1405" name="warn_quoted_include_in_framework_header">
+      <unit id="1415" name="warn_quoted_include_in_framework_header">
         <segment>
           <source>double-quoted include "%0" in framework header, expected angle-bracketed instead</source>
           <target>double-quoted include "{$arg0}" in framework header, expected angle-bracketed instead</target>
         </segment>
       </unit>
-      <unit id="1406" name="warn_ucn_escape_incomplete">
+      <unit id="1416" name="warn_ucn_escape_incomplete">
         <segment>
           <source>incomplete universal character name; treating as '\' followed by identifier</source>
           <target>incomplete universal character name; treating as '\\' followed by identifier</target>
         </segment>
       </unit>
-      <unit id="1407" name="warn_ucn_escape_no_digits">
+      <unit id="1417" name="warn_ucn_escape_no_digits">
         <segment>
           <source>\%0 used with no following hex digits; treating as '\' followed by identifier</source>
           <target>\\{$arg0} used with no following hex digits; treating as '\\' followed by identifier</target>
         </segment>
       </unit>
-      <unit id="1408" name="warn_ucn_escape_surrogate">
+      <unit id="1418" name="warn_ucn_escape_surrogate">
         <segment>
           <source>universal character name refers to a surrogate character</source>
           <target>universal character name refers to a surrogate character</target>
         </segment>
       </unit>
-      <unit id="1409" name="warn_ucn_not_valid_in_c89">
+      <unit id="1419" name="warn_ucn_not_valid_in_c89">
         <segment>
           <source>universal character names are only valid in C99 or C++; treating as '\' followed by identifier</source>
           <target>universal character names are only valid in C99 or C++; treating as '\\' followed by identifier</target>
         </segment>
       </unit>
-      <unit id="1410" name="warn_ucn_not_valid_in_c89_literal">
+      <unit id="1420" name="warn_ucn_not_valid_in_c89_literal">
         <segment>
           <source>universal character names are only valid in C99 or C++</source>
           <target>universal character names are only valid in C99 or C++</target>
         </segment>
       </unit>
-      <unit id="1411" name="warn_uncovered_module_header">
+      <unit id="1421" name="warn_uncovered_module_header">
         <segment>
           <source>umbrella header for module '%0' does not include header '%1'</source>
           <target>umbrella header for module '{$arg0}' does not include header '{$arg1}'</target>
         </segment>
       </unit>
-      <unit id="1412" name="warn_unevaluated_string_prefix">
+      <unit id="1422" name="warn_unevaluated_string_prefix">
         <segment>
           <source>encoding prefix '%0' on an unevaluated string literal has no effect%select{| and is incompatible with c++2c}1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1413" name="warn_use_of_private_header_outside_module">
+      <unit id="1423" name="warn_unprefixed_octal_deprecated">
+        <segment>
+          <source>octal literals without a '0o' prefix are deprecated</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="1424" name="warn_use_of_private_header_outside_module">
         <segment>
           <source>use of private header from outside its module: '%0'</source>
           <target>use of private header from outside its module: '{$arg0}'</target>
         </segment>
       </unit>
-      <unit id="1414" name="warn_utf8_symbol_homoglyph">
+      <unit id="1425" name="warn_utf8_symbol_homoglyph">
         <segment>
           <source>treating Unicode character &lt;U+%0&gt; as an identifier character rather than as '%1' symbol</source>
           <target>treating Unicode character &lt;U+{$arg0}&gt; as an identifier character rather than as '{$arg1}' symbol</target>
         </segment>
       </unit>
-      <unit id="1415" name="warn_utf8_symbol_zero_width">
+      <unit id="1426" name="warn_utf8_symbol_zero_width">
         <segment>
           <source>identifier contains Unicode character &lt;U+%0&gt; that is invisible in some environments</source>
           <target>identifier contains Unicode character &lt;U+{$arg0}&gt; that is invisible in some environments</target>
