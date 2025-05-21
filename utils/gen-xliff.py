@@ -8,8 +8,8 @@ import argparse
 import xml.etree.ElementTree as ET
 
 parser = argparse.ArgumentParser(description='Example argparse script.')
-parser.add_argument('--clang-prefix', type=pathlib.Path, help='clang prefix directory.')
-parser.add_argument('--llvm-prefix', type=pathlib.Path, help='LLVM prefix directory')
+parser.add_argument('--clang-src-prefix', type=pathlib.Path, help='clang source prefix directory')
+parser.add_argument('--clang-build-prefix', type=pathlib.Path, help='clang build tree prefix directory.')
 parser.add_argument('--trg-lang', type=str, required=True, help='target language')
 args = parser.parse_args()
 
@@ -23,7 +23,7 @@ class XmlGenerator:
       'xmlns': 'urn:oasis:names:tc:xliff:document:2.2',
       'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
       'version': '2.2',
-      'srcLang': 'en-US',
+      'srcLang': 'en_US',
       'trgLang': args.trg_lang,
       'xsi:schemaLocation': 'https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd'
     }
@@ -63,10 +63,10 @@ class XmlGenerator:
 
 def main():
   clang_args = ['-std=c++17']
-  if args.clang_prefix:
-    clang_args.append(f'-I{args.clang_prefix/'include'}')
-  if args.llvm_prefix:
-    clang_args.append(f'-I{args.llvm_prefix/'include'}')
+  if args.clang_src_prefix:
+    clang_args.append(f'-I{args.clang_src_prefix/'include'}')
+  if args.clang_build_prefix:
+    clang_args.append(f'-I{args.clang_build_prefix/'include'}')
   extractor = Extractor()
   extractor.extract(clang_args)
   result = extractor.get_result()

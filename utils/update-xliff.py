@@ -11,8 +11,8 @@ import langs
 import copy
 
 parser = argparse.ArgumentParser(description='Example argparse script.')
-parser.add_argument('--clang-prefix', type=Path, help='clang prefix directory.')
-parser.add_argument('--llvm-prefix', type=Path, help='LLVM prefix directory')
+parser.add_argument('--clang-src-prefix', type=pathlib.Path, help='clang source prefix directory')
+parser.add_argument('--clang-build-prefix', type=pathlib.Path, help='clang build tree prefix directory.')
 parser.add_argument('--trg-lang', required=True, type=str, help='target language')
 parser.add_argument('--inreplace', '-i', action='store_true', help='Inreplace mode, without backup.')
 args = parser.parse_args()
@@ -75,10 +75,10 @@ class Updater:
 
 def main():
   clang_args = ['-std=c++17']
-  if args.clang_prefix:
-    clang_args.append(f'-I{args.clang_prefix/'include'}')
-  if args.llvm_prefix:
-    clang_args.append(f'-I{args.llvm_prefix/'include'}')
+  if args.clang_src_prefix:
+    clang_args.append(f'-I{args.clang_src_prefix/'include'}')
+  if args.clang_build_prefix:
+    clang_args.append(f'-I{args.clang_build_prefix/'include'}')
   extractor = Extractor()
   extractor.extract(clang_args)
   all_langs = [args.trg_lang]
