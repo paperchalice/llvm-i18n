@@ -680,7 +680,7 @@
       <unit id="1133" name="err_pp_file_not_found_typo_not_fatal">
         <segment state="initial">
           <source>'%0' file not found, did you mean '%1'?</source>
-          <target>无法找到文件‘{$arg0}’，还是说你要这个‘{$arg1}’？</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1134" name="err_pp_hash_error">
@@ -1415,7 +1415,7 @@
           <target></target>
         </segment>
       </unit>
-      <unit id="1256" name="ext_token-USed">
+      <unit id="1256" name="ext_token_used">
         <segment state="initial">
           <source>extension used</source>
           <target></target>
