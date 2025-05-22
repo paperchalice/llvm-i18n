@@ -1,44 +1,44 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" srcLang="en-US" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd" trgLang="root">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" srcLang="en-US" trgLang="zh-Hans-CN" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd">
   <file id="DiagnosticRefactoring" original="clang/Basic/DiagnosticRefactoringKinds.inc">
     <notes>
       <note appliesTo="source">Automatically generated file, do not edit directly!</note>
     </notes>
     <group id="Refactoring">
       <unit id="7921" name="err_refactor_code_outside_of_function">
-        <segment>
+        <segment state="initial">
           <source>the selected code is not a part of a function's / method's body</source>
-          <target>the selected code is not a part of a function's / method's body</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7922" name="err_refactor_extract_prohibited_expression">
-        <segment>
-          <source state="initial">the selected expression cannot be extracted</source>
-          <target>the selected expression can't be extracted</target>
+        <segment state="initial">
+          <source>the selected expression cannot be extracted</source>
+          <target></target>
         </segment>
       </unit>
       <unit id="7923" name="err_refactor_extract_simple_expression">
-        <segment>
+        <segment state="initial">
           <source>the selected expression is too simple to extract</source>
-          <target>the selected expression is too simple to extract</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7924" name="err_refactor_no_selection">
-        <segment>
-          <source state="initial">refactoring action cannot be initiated without a selection</source>
-          <target>refactoring action can't be initiated without a selection</target>
+        <segment state="initial">
+          <source>refactoring action cannot be initiated without a selection</source>
+          <target></target>
         </segment>
       </unit>
       <unit id="7925" name="err_refactor_selection_invalid_ast">
-        <segment>
+        <segment state="initial">
           <source>the provided selection does not overlap with the AST nodes of interest</source>
-          <target>the provided selection does not overlap with the AST nodes of interest</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7926" name="err_refactor_selection_no_symbol">
-        <segment>
+        <segment state="initial">
           <source>there is no symbol at the given location</source>
-          <target>there is no symbol at the given location</target>
+          <target></target>
         </segment>
       </unit>
     </group>

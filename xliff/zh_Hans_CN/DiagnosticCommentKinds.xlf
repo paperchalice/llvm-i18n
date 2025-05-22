@@ -1,216 +1,216 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" srcLang="en-US" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd" trgLang="root">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" srcLang="en-US" trgLang="zh-Hans-CN" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd">
   <file id="DiagnosticComment" original="clang/Basic/DiagnosticCommentKinds.inc">
     <notes>
       <note appliesTo="source">Automatically generated file, do not edit directly!</note>
     </notes>
     <group id="Comment">
       <unit id="2621" name="note_add_deprecation_attr">
-        <segment>
+        <segment state="initial">
           <source>add a deprecation attribute to the declaration to silence this warning</source>
-          <target>add a deprecation attribute to the declaration to silence this warning</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2622" name="note_doc_block_command_previous">
-        <segment>
+        <segment state="initial">
           <source>previous command '%select{\|@}0%1' here</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2623" name="note_doc_block_command_previous_alias">
-        <segment>
+        <segment state="initial">
           <source>previous command '%select{\|@}0%1' (an alias of '\%2') here</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2624" name="note_doc_html_end_tag">
-        <segment>
+        <segment state="initial">
           <source>end tag</source>
-          <target>end tag</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2625" name="note_doc_html_tag_started_here">
-        <segment>
+        <segment state="initial">
           <source>HTML tag started here</source>
-          <target>HTML tag started here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2626" name="note_doc_param_name_suggestion">
-        <segment>
+        <segment state="initial">
           <source>did you mean '%0'?</source>
-          <target>did you mean '{$arg0}'?</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2627" name="note_doc_param_previous">
-        <segment>
+        <segment state="initial">
           <source>previous documentation</source>
-          <target>previous documentation</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2628" name="note_doc_tparam_name_suggestion">
-        <segment>
+        <segment state="initial">
           <source>did you mean '%0'?</source>
-          <target>did you mean '{$arg0}'?</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2629" name="note_doc_tparam_previous">
-        <segment>
+        <segment state="initial">
           <source>previous documentation</source>
-          <target>previous documentation</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2630" name="warn_correct_comment_command_name">
-        <segment>
+        <segment state="initial">
           <source>unknown command tag name '%0'; did you mean '%1'?</source>
-          <target>unknown command tag name '{$arg0}'; did you mean '{$arg1}'?</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2631" name="warn_doc_api_container_decl_mismatch">
-        <segment>
+        <segment state="initial">
           <source>'%select{\|@}0%select{class|interface|protocol|struct|union}1' command should not be used in a comment attached to a non-%select{class|interface|protocol|struct|union}2 declaration</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2632" name="warn_doc_block_command_duplicate">
-        <segment>
+        <segment state="initial">
           <source>duplicated command '%select{\|@}0%1'</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2633" name="warn_doc_block_command_empty_paragraph">
-        <segment>
+        <segment state="initial">
           <source>empty paragraph passed to '%select{\|@}0%1' command</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2634" name="warn_doc_container_decl_mismatch">
-        <segment>
+        <segment state="initial">
           <source>'%select{\|@}0%select{classdesign|coclass|dependency|helper|helperclass|helps|instancesize|ownership|performance|security|superclass}1' command should not be used in a comment attached to a non-container declaration</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2635" name="warn_doc_deprecated_not_sync">
-        <segment>
+        <segment state="initial">
           <source>declaration is marked with '%select{\|@}0deprecated' command but does not have a deprecation attribute</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2636" name="warn_doc_function_method_decl_mismatch">
-        <segment>
+        <segment state="initial">
           <source>'%select{\|@}0%select{function|functiongroup|method|methodgroup|callback}1' command should be used in a comment attached to %select{a function|a function|an Objective-C method|an Objective-C method|a pointer to function}2 declaration</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2637" name="warn_doc_html_end_forbidden">
-        <segment>
+        <segment state="initial">
           <source>HTML end tag '%0' is forbidden</source>
-          <target>HTML end tag '{$arg0}' is forbidden</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2638" name="warn_doc_html_end_unbalanced">
-        <segment>
+        <segment state="initial">
           <source>HTML end tag does not match any start tag</source>
-          <target>HTML end tag does not match any start tag</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2639" name="warn_doc_html_missing_end_tag">
-        <segment>
+        <segment state="initial">
           <source>HTML tag '%0' requires an end tag</source>
-          <target>HTML tag '{$arg0}' requires an end tag</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2640" name="warn_doc_html_start_end_mismatch">
-        <segment>
+        <segment state="initial">
           <source>HTML start tag '%0' closed by '%1'</source>
-          <target>HTML start tag '{$arg0}' closed by '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2641" name="warn_doc_html_start_tag_expected_ident_or_greater">
-        <segment>
+        <segment state="initial">
           <source>HTML start tag prematurely ended, expected attribute name or '&gt;'</source>
-          <target>HTML start tag prematurely ended, expected attribute name or '&gt;'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2642" name="warn_doc_html_start_tag_expected_quoted_string">
-        <segment>
+        <segment state="initial">
           <source>expected quoted string after equals sign</source>
-          <target>expected quoted string after equals sign</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2643" name="warn_doc_inline_command_not_enough_arguments">
-        <segment>
+        <segment state="initial">
           <source>'%select{\|@}0%1' command has %plural{0:no|:%2}2 word argument%s2, expected %3</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2644" name="warn_doc_param_duplicate">
-        <segment>
+        <segment state="initial">
           <source>parameter '%0' is already documented</source>
-          <target>parameter '{$arg0}' is already documented</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2645" name="warn_doc_param_invalid_direction">
-        <segment>
+        <segment state="initial">
           <source>unrecognized parameter passing direction, valid directions are '[in]', '[out]' and '[in,out]'</source>
-          <target>unrecognized parameter passing direction, valid directions are '[in]', '[out]' and '[in,out]'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2646" name="warn_doc_param_not_attached_to_a_function_decl">
-        <segment>
+        <segment state="initial">
           <source>'%select{\|@}0param' command used in a comment that is not attached to a function declaration</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2647" name="warn_doc_param_not_found">
-        <segment>
+        <segment state="initial">
           <source>parameter '%0' not found in the function declaration</source>
-          <target>parameter '{$arg0}' not found in the function declaration</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2648" name="warn_doc_param_spaces_in_direction">
-        <segment>
+        <segment state="initial">
           <source>whitespace is not allowed in parameter passing direction</source>
-          <target>whitespace is not allowed in parameter passing direction</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2649" name="warn_doc_returns_attached_to_a_void_function">
-        <segment>
+        <segment state="initial">
           <source>'%select{\|@}0%1' command used in a comment that is attached to a %select{function returning void|constructor|destructor|method returning void}2</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2650" name="warn_doc_returns_not_attached_to_a_function_decl">
-        <segment>
+        <segment state="initial">
           <source>'%select{\|@}0%1' command used in a comment that is not attached to a function or method declaration</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2651" name="warn_doc_tparam_duplicate">
-        <segment>
+        <segment state="initial">
           <source>template parameter '%0' is already documented</source>
-          <target>template parameter '{$arg0}' is already documented</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2652" name="warn_doc_tparam_not_attached_to_a_template_decl">
-        <segment>
+        <segment state="initial">
           <source>'%select{\|@}0tparam' command used in a comment that is not attached to a template declaration</source>
           <target></target>
         </segment>
       </unit>
       <unit id="2653" name="warn_doc_tparam_not_found">
-        <segment>
+        <segment state="initial">
           <source>template parameter '%0' not found in the template declaration</source>
-          <target>template parameter '{$arg0}' not found in the template declaration</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2654" name="warn_unknown_comment_command_name">
-        <segment>
+        <segment state="initial">
           <source>unknown command tag name</source>
-          <target>unknown command tag name</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2655" name="warn_verbatim_block_end_without_start">
-        <segment>
+        <segment state="initial">
           <source>'%select{\|@}0%1' command does not terminate a verbatim text block</source>
           <target></target>
         </segment>

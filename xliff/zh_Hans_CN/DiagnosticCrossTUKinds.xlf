@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" srcLang="en-US" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd" trgLang="root">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" srcLang="en-US" trgLang="zh-Hans-CN" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd">
   <file id="DiagnosticCrossTU" original="clang/Basic/DiagnosticCrossTUKinds.inc">
     <notes>
       <note appliesTo="source">Automatically generated file, do not edit directly!</note>
     </notes>
     <group id="CrossTU">
       <unit id="2721" name="err_ctu_error_opening">
-        <segment>
+        <segment state="initial">
           <source>error opening '%0': required by the CrossTU functionality</source>
-          <target>error opening '{$arg0}': required by the CrossTU functionality</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2722" name="err_extdefmap_parsing">
-        <segment>
+        <segment state="initial">
           <source>error parsing index file: '%0' line: %1 '&lt;USR-Length&gt;:&lt;USR&gt; &lt;File-Path&gt;' format expected</source>
-          <target>error parsing index file: '{$arg0}' line: {$arg1} '&lt;USR-Length&gt;:&lt;USR&gt; &lt;File-Path&gt;' format expected</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2723" name="err_multiple_def_index">
-        <segment>
+        <segment state="initial">
           <source>multiple definitions are found for the same key in index </source>
-          <target>multiple definitions are found for the same key in index </target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2724" name="warn_ctu_incompat_triple">
-        <segment>
+        <segment state="initial">
           <source>imported AST from '%0' had been generated for a different target, current: %1, imported: %2</source>
-          <target>imported AST from '{$arg0}' had been generated for a different target, current: {$arg1}, imported: {$arg2}</target>
+          <target></target>
         </segment>
       </unit>
     </group>
