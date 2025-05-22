@@ -6,25 +6,29 @@ import os
 from pathlib import Path
 import argparse
 import xml.etree.ElementTree as ET
+from common import *
 
 parser = argparse.ArgumentParser(description='Example argparse script.')
-parser.add_argument('--clang-src-prefix', type=pathlib.Path, help='clang source prefix directory')
-parser.add_argument('--clang-build-prefix', type=pathlib.Path, help='clang build tree prefix directory.')
-parser.add_argument('--trg-lang', type=str, required=True, help='target language')
+parser.add_argument('-I', type=pathlib.Path, action='append', help='clang source prefix directory')
+parser.add_argument('--trg-lang', type=str, nargs='+', required=True, help='target language')
 args = parser.parse_args()
 
 class XmlGenerator:
   def __init__(self, trg_lang, component):
     self.trg_lang = trg_lang
     self.component = component
-  
+    
   def generate(self, enums:list[DiagInfo]):
+    for lang in self.trg_lang:
+      self.generate_for_lang(enums, lang)
+  
+  def generate_for_lang(self, enums:list[DiagInfo], lang):
     xliff_attr = {
       'xmlns': 'urn:oasis:names:tc:xliff:document:2.2',
       'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
       'version': '2.2',
-      'srcLang': 'en_US',
-      'trgLang': args.trg_lang,
+      'srcLang': 'en-US',
+      'trgLang': lang,
       'xsi:schemaLocation': 'https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd'
     }
     
@@ -55,7 +59,8 @@ class XmlGenerator:
     xml_tree = ET.ElementTree(xliff)
     ET.indent(xml_tree)
 
-    output_dir = 'xliff'/Path(args.trg_lang.replace('-', '/'))
+    icu_lang = get_icu_locale(lang)
+    output_dir = 'xliff'/Path(icu_lang.replace('_', '/'))
     os.makedirs(output_dir, exist_ok=True)
     with open(output_dir/f"Diagnostic{self.component}Kinds.xlf", "wb") as xml_file:
         xml_tree.write(xml_file, encoding="UTF-8", xml_declaration=True, short_empty_elements=False)
@@ -63,15 +68,19 @@ class XmlGenerator:
 
 def main():
   clang_args = ['-std=c++17']
-  if args.clang_src_prefix:
-    clang_args.append(f'-I{args.clang_src_prefix/'include'}')
-  if args.clang_build_prefix:
-    clang_args.append(f'-I{args.clang_build_prefix/'include'}')
+  if args.I:
+    for i in args.I:
+      clang_args.append(f'-I{i}')
+      
+  trg_lang = args.trg_lang
+  if trg_lang[0] == "all":
+    trg_lang = ICU_LOCALES
+      
   extractor = Extractor()
   extractor.extract(clang_args)
   result = extractor.get_result()
   for k, v in result.items():
-    generator = XmlGenerator(args.trg_lang, k)
+    generator = XmlGenerator(map(get_bcp47_locale, args.trg_lang), k)
     generator.generate(v)
 
 if __name__ == "__main__":

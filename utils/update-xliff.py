@@ -6,14 +6,13 @@ from pathlib import Path
 import os
 import time
 import xml.etree.ElementTree as ET
-import warnings
-import langs
+import pathlib
+import common
 import copy
 
 parser = argparse.ArgumentParser(description='Example argparse script.')
-parser.add_argument('--clang-src-prefix', type=pathlib.Path, help='clang source prefix directory')
-parser.add_argument('--clang-build-prefix', type=pathlib.Path, help='clang build tree prefix directory.')
-parser.add_argument('--trg-lang', required=True, type=str, help='target language')
+parser.add_argument('-I', type=pathlib.Path, action='append', help='clang source prefix directory')
+parser.add_argument('--trg-lang', required=True, type=str, nargs='+', help='target language')
 parser.add_argument('--inreplace', '-i', action='store_true', help='Inreplace mode, without backup.')
 args = parser.parse_args()
 
@@ -21,9 +20,14 @@ class Updater:
   def __init__(self, extractor:Extractor, trg_lang:str):
     self._extractor = extractor
     self._extract_result = self._extractor.get_result()
-    input_dir = Path(trg_lang.replace('-', '/'))
+    input_dir = Path(trg_lang.replace('_', '/'))
     self._file_names = {}
+    self.trg_lang = trg_lang
     self._xlfs = {}
+    if not ('xliff'/input_dir).exists():
+      return
+    elif not list(('xliff'/input_dir).glob('*.xlf')):
+      return
     ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.2')
     for c in self._extract_result:
       file_name = 'xliff'/input_dir/f'Diagnostic{c}Kinds.xlf'
@@ -31,6 +35,8 @@ class Updater:
       self._xlfs[c] = ET.parse(file_name)
   
   def _update_for_component(self, component):
+    if len(self._xlfs) == 0:
+      return
     xlf_copy = copy.deepcopy(self._xlfs[component])
     ns = {
       'xliff': 'urn:oasis:names:tc:xliff:document:2.2'
@@ -65,6 +71,7 @@ class Updater:
     with open(file_name, "wb") as xml_file:
         ET.indent(xlf_copy)
         xlf_copy.write(xml_file, encoding="UTF-8", xml_declaration=True, short_empty_elements=False)
+        print(f'update done for {self.trg_lang}')
     return
   
   def update(self):
@@ -75,17 +82,17 @@ class Updater:
 
 def main():
   clang_args = ['-std=c++17']
-  if args.clang_src_prefix:
-    clang_args.append(f'-I{args.clang_src_prefix/'include'}')
-  if args.clang_build_prefix:
-    clang_args.append(f'-I{args.clang_build_prefix/'include'}')
+  if args.I:
+    for i in args.I:
+      clang_args.append(f'-I{i}')
   extractor = Extractor()
   extractor.extract(clang_args)
-  all_langs = [args.trg_lang]
-  if args.trg_lang.upper() == 'ALL':
-    all_langs = langs.ALL_LANGS
+  all_langs = args.trg_lang
+  if args.trg_lang[0].upper() == 'ALL':
+    all_langs = common.ICU_LOCALES
 
   for l in all_langs:
+    print(f'update for language {l}')
     updater = Updater(extractor, l)
     updater.update()
   
