@@ -81,7 +81,10 @@ def gen_for_lang(lang:str):
 
 
 def main():
-  langs = map(get_bcp47_locale, args.trg_lang)
+  if args.trg_lang[0] == 'all':
+    langs = BCP47_LOCALES
+  else:
+    langs = map(get_bcp47_locale, args.trg_lang)
 
   Path(args.out_dir).mkdir(exist_ok=True)
   for lang in langs:

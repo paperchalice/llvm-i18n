@@ -9,14 +9,14 @@ BCP47_LOCALES.append('root')
 
 # Sync order with clang/lib/Basic/DiagnosticIDs.cpp: StaticDiagInfo[].
 COMPONENT_LIST = [
-  'Comment',
+  'Common',
   'Driver',
   'Frontend',
   'Serialization',
   'Lex',
   'Parse',
   'AST',
-  'Common',
+  'Comment',
   'CrossTU',
   'Sema',
   'Analysis',
