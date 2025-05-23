@@ -14,7 +14,7 @@
       <unit id="702" name="err_alias_to_undefined">
         <segment>
           <source>%select{alias|ifunc}0 must point to a defined %select{variable or |}1function</source>
-          <target></target>
+          <target>{$arg0 :select s0=|alias| s1=|ifunc|} must point to a defined {$arg1 :select s0=|variable or | s1=||}function</target>
         </segment>
       </unit>
       <unit id="703" name="err_ast_action_on_llvm_ir">
@@ -26,7 +26,7 @@
       <unit id="704" name="err_avx_calling_convention">
         <segment>
           <source>AVX vector %select{return|argument}0 of type %1 without '%2' enabled changes the ABI</source>
-          <target></target>
+          <target>AVX vector {$arg0 :select s0=|return| s1=|argument|} of type {$arg1} without '{$arg2}' enabled changes the ABI</target>
         </segment>
       </unit>
       <unit id="705" name="err_builtin_needs_feature">
@@ -38,19 +38,19 @@
       <unit id="706" name="err_cir_to_cir_transform_failed">
         <segment>
           <source>CIR-to-CIR transformation failed</source>
-          <target></target>
+          <target>CIR-to-CIR transformation failed</target>
         </segment>
       </unit>
       <unit id="707" name="err_cir_verification_failed_pre_passes">
         <segment>
           <source>CIR module verification error before running CIR-to-CIR passes</source>
-          <target></target>
+          <target>CIR module verification error before running CIR-to-CIR passes</target>
         </segment>
       </unit>
       <unit id="708" name="err_cyclic_alias">
         <segment>
           <source>%select{alias|ifunc}0 definition is part of a cycle</source>
-          <target></target>
+          <target>{$arg0 :select s0=|alias| s1=|ifunc|} definition is part of a cycle</target>
         </segment>
       </unit>
       <unit id="709" name="err_duplicate_mangled_name">
@@ -164,7 +164,7 @@
       <unit id="727" name="err_fe_invalid_exception_model">
         <segment>
           <source>invalid exception model '%select{none|sjlj|seh|dwarf|wasm}0' for target '%1'</source>
-          <target></target>
+          <target>invalid exception model '{$arg0 :select s0=|none| s1=|sjlj| s2=|seh| s3=|dwarf| s4=|wasm|}' for target '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="728" name="err_fe_invalid_multiple_actions">
@@ -254,7 +254,7 @@
       <unit id="742" name="err_frontend_action_unsupported_input_format">
         <segment>
           <source>%0 does not support input file format of file '%1': '%select{Source|ModuleMap|Precompiled|Unknown}2'</source>
-          <target></target>
+          <target>{$arg0} does not support input file format of file '{$arg1}': '{$arg2 :select s0=|Source| s1=|ModuleMap| s2=|Precompiled| s3=|Unknown|}'</target>
         </segment>
       </unit>
       <unit id="743" name="err_function_always_inline_attribute_mismatch">
@@ -272,7 +272,7 @@
       <unit id="745" name="err_function_always_inline_new_zt0">
         <segment>
           <source>always_inline function %0 has new zt0 state</source>
-          <target></target>
+          <target>always_inline function {$arg0} has new zt0 state</target>
         </segment>
       </unit>
       <unit id="746" name="err_function_needs_feature">
@@ -296,13 +296,13 @@
       <unit id="749" name="err_incompatible_fp_eval_method_options">
         <segment>
           <source>option 'ffp-eval-method' cannot be used with option %select{'fapprox-func'|'mreassociate'|'freciprocal'}0</source>
-          <target></target>
+          <target>option 'ffp-eval-method' cannot be used with option {$arg0 :select s0=|'fapprox-func'| s1=|'mreassociate'| s2=|'freciprocal'|}</target>
         </segment>
       </unit>
       <unit id="750" name="err_invalid_llvm_ir">
         <segment>
           <source>invalid LLVM IR input: %0</source>
-          <target></target>
+          <target>invalid LLVM IR input: {$arg0}</target>
         </segment>
       </unit>
       <unit id="751" name="err_invalid_vfs_overlay">
@@ -386,7 +386,7 @@
       <unit id="764" name="err_os_unsupport_riscv_fmv">
         <segment>
           <source>function multiversioning is currently only supported on Linux</source>
-          <target></target>
+          <target>function multiversioning is currently only supported on Linux</target>
         </segment>
       </unit>
       <unit id="765" name="err_relocatable_without_isysroot">
@@ -416,7 +416,7 @@
       <unit id="769" name="err_verify_inconsistent_diags">
         <segment>
           <source state="initial">%select{|'%1-%2' }0diagnostics %select{with '%2' severity |}0%select{expected|seen}3 but not %select{seen|expected}3: %4</source>
-          <target></target>
+          <target>{$arg0 :select s0=|| s1=|'{$arg1}-{$arg2}' |}diagnostics {$arg0 :select s0=|with '{$arg2}' severity | s1=||}{$arg3 :select s0=|expected| s1=|seen|} but not {$arg3 :select s0=|seen| s1=|expected|}: {$arg4}</target>
         </segment>
       </unit>
       <unit id="770" name="err_verify_invalid_content">
@@ -428,7 +428,7 @@
       <unit id="771" name="err_verify_invalid_no_diags">
         <segment>
           <source state="initial">'%0' directive cannot follow %select{'%2' directive|other expected directives}1</source>
-          <target></target>
+          <target>'{$arg0}' directive cannot follow {$arg1 :select s0=|'{$arg2}' directive| s1=|other expected directives|}</target>
         </segment>
       </unit>
       <unit id="772" name="err_verify_invalid_range">
@@ -458,13 +458,13 @@
       <unit id="776" name="err_verify_missing_regex">
         <segment>
           <source>cannot find start of regex ('{{') in %0</source>
-          <target>cannot find start of regex ('\{\{') in {$arg0}</target>
+          <target>cannot find start of regex ('{{') in {$arg0}</target>
         </segment>
       </unit>
       <unit id="777" name="err_verify_missing_start">
         <segment>
           <source>cannot find start ('{{') of expected %0</source>
-          <target>cannot find start ('\{\{') of expected {$arg0}</target>
+          <target>cannot find start ('{{') of expected {$arg0}</target>
         </segment>
       </unit>
       <unit id="778" name="err_verify_no_directives">
@@ -494,7 +494,7 @@
       <unit id="782" name="note_alias_requires_mangled_name">
         <segment>
           <source>the %select{function or variable|function}0 specified in an %select{alias|ifunc}1 must refer to its mangled name</source>
-          <target></target>
+          <target>the {$arg0 :select s0=|function or variable| s1=|function|} specified in an {$arg1 :select s0=|alias| s1=|ifunc|} must refer to its mangled name</target>
         </segment>
       </unit>
       <unit id="783" name="note_fe_backend_frame_larger_than">
@@ -578,7 +578,7 @@
       <unit id="796" name="note_module_def_undef_here">
         <segment>
           <source>macro was %select{defined|#undef'd}0 here</source>
-          <target></target>
+          <target>macro was {$arg0 :select s0=|defined| s1=|#undef'd|} here</target>
         </segment>
       </unit>
       <unit id="797" name="note_module_import_here">
@@ -656,13 +656,13 @@
       <unit id="809" name="warn_alias_to_weak_alias">
         <segment>
           <source>%select{alias|ifunc}2 will always resolve to %0 even if weak definition of %1 is overridden</source>
-          <target></target>
+          <target>{$arg2 :select s0=|alias| s1=|ifunc|} will always resolve to {$arg0} even if weak definition of {$arg1} is overridden</target>
         </segment>
       </unit>
       <unit id="810" name="warn_alias_with_section">
         <segment>
           <source>%select{alias|ifunc}1 will not be in section '%0' but in the same section as the %select{aliasee|resolver}2</source>
-          <target></target>
+          <target>{$arg1 :select s0=|alias| s1=|ifunc|} will not be in section '{$arg0}' but in the same section as the {$arg2 :select s0=|aliasee| s1=|resolver|}</target>
         </segment>
       </unit>
       <unit id="811" name="warn_atomic_op_misaligned">
@@ -674,19 +674,19 @@
       <unit id="812" name="warn_atomic_op_oversized">
         <segment>
           <source state="initial">large atomic operation may incur significant performance penalty; the access size (%0 bytes) exceeds the max lock-free size (%1 bytes)</source>
-          <target>large atomic operation may incur significant performance penalty; the access size ({$arg0} bytes) exceeds the max lock-free size ({$arg1}  bytes)</target>
+          <target>large atomic operation may incur significant performance penalty; the access size ({$arg0} bytes) exceeds the max lock-free size ({$arg1} bytes)</target>
         </segment>
       </unit>
       <unit id="813" name="warn_avx_calling_convention">
         <segment>
           <source>AVX vector %select{return|argument}0 of type %1 without '%2' enabled changes the ABI</source>
-          <target></target>
+          <target>AVX vector {$arg0 :select s0=|return| s1=|argument|} of type {$arg1} without '{$arg2}' enabled changes the ABI</target>
         </segment>
       </unit>
       <unit id="814" name="warn_eagerly_load_for_standard_cplusplus_modules">
         <segment>
           <source state="initial">the form '-fmodule-file=&lt;BMI-path&gt;' is deprecated for standard C++ named modules; consider to use '-fmodule-file=&lt;module-name&gt;=&lt;BMI-path&gt;' instead</source>
-          <target>the form '-fmodule-file=&lt;BMI-path&gt;' is deprecated for standard C++ named modules;consider to use '-fmodule-file=&lt;module-name&gt;=&lt;BMI-path&gt;' instead</target>
+          <target>the form '-fmodule-file=&lt;BMI-path&gt;' is deprecated for standard C++ named modules; consider to use '-fmodule-file=&lt;module-name&gt;=&lt;BMI-path&gt;' instead</target>
         </segment>
       </unit>
       <unit id="815" name="warn_fe_backend_frame_larger_than">
@@ -836,7 +836,7 @@
       <unit id="839" name="warn_hlsl_langstd_minimal">
         <segment>
           <source>support for HLSL language version %0 is incomplete, recommend using %1 instead</source>
-          <target></target>
+          <target>support for HLSL language version {$arg0} is incomplete, recommend using {$arg1} instead</target>
         </segment>
       </unit>
       <unit id="840" name="warn_incompatible_analyzer_plugin_api">
@@ -860,7 +860,7 @@
       <unit id="843" name="warn_module_config_macro_undef">
         <segment>
           <source>%select{definition|#undef}0 of configuration macro '%1' has no effect on the import of '%2'; pass '%select{-D%1=...|-U%1}0' on the command line to configure the module</source>
-          <target></target>
+          <target>{$arg0 :select s0=|definition| s1=|#undef|} of configuration macro '{$arg1}' has no effect on the import of '{$arg2}'; pass '{$arg0 :select s0=|-D{$arg1}=...| s1=|-U{$arg1}|}' on the command line to configure the module</target>
         </segment>
       </unit>
       <unit id="844" name="warn_module_config_mismatch">
@@ -920,7 +920,7 @@
       <unit id="853" name="warn_unknown_diag_option">
         <segment>
           <source>unknown %select{warning|remark}0 option '%1'%select{|; did you mean '%3'?}2</source>
-          <target></target>
+          <target>unknown {$arg0 :select s0=|warning| s1=|remark|} option '{$arg1}'{$arg2 :select s0=|| s1=|; did you mean '{$arg3}'?|}</target>
         </segment>
       </unit>
       <unit id="854" name="warn_unknown_warning_specifier">

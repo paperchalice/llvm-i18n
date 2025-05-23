@@ -14,7 +14,7 @@
       <unit id="7922" name="err_refactor_extract_prohibited_expression">
         <segment>
           <source state="initial">the selected expression cannot be extracted</source>
-          <target>the selected expression can't be extracted</target>
+          <target>the selected expression cannot be extracted</target>
         </segment>
       </unit>
       <unit id="7923" name="err_refactor_extract_simple_expression">
@@ -26,7 +26,7 @@
       <unit id="7924" name="err_refactor_no_selection">
         <segment>
           <source state="initial">refactoring action cannot be initiated without a selection</source>
-          <target>refactoring action can't be initiated without a selection</target>
+          <target>refactoring action cannot be initiated without a selection</target>
         </segment>
       </unit>
       <unit id="7925" name="err_refactor_selection_invalid_ast">

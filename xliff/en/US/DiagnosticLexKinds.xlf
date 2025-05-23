@@ -38,7 +38,7 @@
       <unit id="1026" name="err_character_not_allowed_identifier">
         <segment>
           <source>character &lt;U+%0&gt; not allowed %select{in|at the start of}1 an identifier</source>
-          <target></target>
+          <target>character &lt;U+{$arg0}&gt; not allowed {$arg1 :select s0=|in| s1=|at the start of|} an identifier</target>
         </segment>
       </unit>
       <unit id="1027" name="err_character_too_large">
@@ -98,7 +98,7 @@
       <unit id="1036" name="err_digit_separator_not_between_digits">
         <segment>
           <source>digit separator cannot appear at %select{start|end}0 of digit sequence</source>
-          <target></target>
+          <target>digit separator cannot appear at {$arg0 :select s0=|start| s1=|end|} of digit sequence</target>
         </segment>
       </unit>
       <unit id="1037" name="err_embedded_directive">
@@ -110,7 +110,7 @@
       <unit id="1038" name="err_escape_too_large">
         <segment>
           <source>%select{hex|octal}0 escape sequence out of range</source>
-          <target></target>
+          <target>{$arg0 :select s0=|hex| s1=|octal|} escape sequence out of range</target>
         </segment>
       </unit>
       <unit id="1039" name="err_expected_id_building_module">
@@ -146,7 +146,7 @@
       <unit id="1044" name="err_hex_constant_requires">
         <segment>
           <source>hexadecimal floating %select{constant|literal}0 requires %select{an exponent|a significand}1</source>
-          <target></target>
+          <target>hexadecimal floating {$arg0 :select s0=|constant| s1=|literal|} requires {$arg1 :select s0=|an exponent| s1=|a significand|}</target>
         </segment>
       </unit>
       <unit id="1045" name="err_hex_escape_no_digits">
@@ -176,7 +176,7 @@
       <unit id="1049" name="err_invalid_digit">
         <segment>
           <source>invalid digit '%0' in %select{decimal|octal|binary}1 constant</source>
-          <target></target>
+          <target>invalid digit '{$arg0}' in {$arg1 :select s0=|decimal| s1=|octal| s2=|binary|} constant</target>
         </segment>
       </unit>
       <unit id="1050" name="err_invalid_newline_raw_delim">
@@ -188,7 +188,7 @@
       <unit id="1051" name="err_invalid_suffix_constant">
         <segment>
           <source>invalid suffix '%0' on %select{integer|floating|fixed-point}1 constant</source>
-          <target></target>
+          <target>invalid suffix '{$arg0}' on {$arg1 :select s0=|integer| s1=|floating| s2=|fixed-point|} constant</target>
         </segment>
       </unit>
       <unit id="1052" name="err_invalid_ucn_name">
@@ -290,7 +290,7 @@
       <unit id="1068" name="err_mmap_expected_inferred_member">
         <segment>
           <source>expected %select{module exclusion with 'exclude'|'export *'}0</source>
-          <target></target>
+          <target>expected {$arg0 :select s0=|module exclusion with 'exclude'| s1=|'export *'|}</target>
         </segment>
       </unit>
       <unit id="1069" name="err_mmap_expected_lbrace">
@@ -308,7 +308,7 @@
       <unit id="1071" name="err_mmap_expected_library_name">
         <segment>
           <source>expected %select{library|framework}0 name as a string</source>
-          <target></target>
+          <target>expected {$arg0 :select s0=|library| s1=|framework|} name as a string</target>
         </segment>
       </unit>
       <unit id="1072" name="err_mmap_expected_member">
@@ -404,7 +404,7 @@
       <unit id="1087" name="err_mmap_missing_parent_module">
         <segment>
           <source>no module named '%0' %select{found|in '%2'}1, parent module must be defined before the submodule</source>
-          <target></target>
+          <target>no module named '{$arg0}' {$arg1 :select s0=|found| s1=|in '{$arg2}'|}, parent module must be defined before the submodule</target>
         </segment>
       </unit>
       <unit id="1088" name="err_mmap_module_id">
@@ -428,7 +428,7 @@
       <unit id="1091" name="err_mmap_qualified_export_as">
         <segment>
           <source>a module can only be re-exported as another top-level module</source>
-          <target></target>
+          <target>a module can only be re-exported as another top-level module</target>
         </segment>
       </unit>
       <unit id="1092" name="err_mmap_submodule_export_as">
@@ -464,13 +464,13 @@
       <unit id="1097" name="err_multichar_character_literal">
         <segment>
           <source>%select{wide|Unicode}0 character literals may not contain multiple characters</source>
-          <target></target>
+          <target>{$arg0 :select s0=|wide| s1=|Unicode|} character literals may not contain multiple characters</target>
         </segment>
       </unit>
       <unit id="1098" name="err_opencl_logical_exclusive_or">
         <segment>
           <source>^^ is a reserved operator in OpenCL</source>
-          <target></target>
+          <target>^^ is a reserved operator in OpenCL</target>
         </segment>
       </unit>
       <unit id="1099" name="err_pascal_string_too_long">
@@ -560,7 +560,7 @@
       <unit id="1113" name="err_pp_embed_device_file">
         <segment>
           <source>device files are not yet supported by '#embed' directive</source>
-          <target></target>
+          <target>device files are not yet supported by '#embed' directive</target>
         </segment>
       </unit>
       <unit id="1114" name="err_pp_embed_dup_params">
@@ -626,7 +626,7 @@
       <unit id="1124" name="err_pp_expected_module_name">
         <segment>
           <source>expected %select{identifier after '.' in |}0module name</source>
-          <target></target>
+          <target>expected {$arg0 :select s0=|identifier after '.' in | s1=||}module name</target>
         </segment>
       </unit>
       <unit id="1125" name="err_pp_expected_rparen">
@@ -674,7 +674,7 @@
       <unit id="1132" name="err_pp_file_not_found_angled_include_not_fatal">
         <segment>
           <source>'%0' file not found with &lt;angled&gt; %select{include|import}1; use "quotes" instead</source>
-          <target></target>
+          <target>'{$arg0}' file not found with &lt;angled&gt; {$arg1 :select s0=|include| s1=|import|}; use "quotes" instead</target>
         </segment>
       </unit>
       <unit id="1133" name="err_pp_file_not_found_typo_not_fatal">
@@ -710,13 +710,13 @@
       <unit id="1138" name="err_pp_include_in_arc_cf_code_audited">
         <segment>
           <source>cannot %select{#include files|import headers}0 inside '#pragma clang arc_cf_code_audited'</source>
-          <target></target>
+          <target>cannot {$arg0 :select s0=|#include files| s1=|import headers|} inside '#pragma clang arc_cf_code_audited'</target>
         </segment>
       </unit>
       <unit id="1139" name="err_pp_include_in_assume_nonnull">
         <segment>
           <source>cannot %select{#include files|import headers}0 inside '#pragma clang assume_nonnull'</source>
-          <target></target>
+          <target>cannot {$arg0 :select s0=|#include files| s1=|import headers|} inside '#pragma clang assume_nonnull'</target>
         </segment>
       </unit>
       <unit id="1140" name="err_pp_include_too_deep">
@@ -734,7 +734,7 @@
       <unit id="1142" name="err_pp_invalid_directive">
         <segment>
           <source>invalid preprocessing directive%select{|, did you mean '#%1'?}0</source>
-          <target></target>
+          <target>invalid preprocessing directive{$arg0 :select s0=|| s1=|, did you mean '#{$arg1}'?|}</target>
         </segment>
       </unit>
       <unit id="1143" name="err_pp_invalid_poison">
@@ -752,13 +752,13 @@
       <unit id="1145" name="err_pp_invalid_udl">
         <segment>
           <source>%select{character|integer}0 literal with user-defined suffix cannot be used in preprocessor constant expression</source>
-          <target></target>
+          <target>{$arg0 :select s0=|character| s1=|integer|} literal with user-defined suffix cannot be used in preprocessor constant expression</target>
         </segment>
       </unit>
       <unit id="1146" name="err_pp_line_digit_sequence">
         <segment>
           <source>%select{#line|GNU line marker}0 directive requires a simple digit sequence</source>
-          <target></target>
+          <target>{$arg0 :select s0=|#line| s1=|GNU line marker|} directive requires a simple digit sequence</target>
         </segment>
       </unit>
       <unit id="1147" name="err_pp_line_invalid_filename">
@@ -848,7 +848,7 @@
       <unit id="1161" name="err_pp_module_begin_wrong_module">
         <segment>
           <source>must specify '-fmodule-name=%0' to enter %select{|submodule of }1this module%select{ (current module is %3)|}2</source>
-          <target></target>
+          <target>must specify '-fmodule-name={$arg0}' to enter {$arg1 :select s0=|| s1=|submodule of |}this module{$arg2 :select s0=| (current module is {$arg3})| s1=||}</target>
         </segment>
       </unit>
       <unit id="1162" name="err_pp_module_build_missing_end">
@@ -896,7 +896,7 @@
       <unit id="1169" name="err_pp_stringize_not_parameter">
         <segment>
           <source>'%select{#|#@}0' is not followed by a macro parameter</source>
-          <target></target>
+          <target>'{$arg0 :select s0=|#| s1=|#@|}' is not followed by a macro parameter</target>
         </segment>
       </unit>
       <unit id="1170" name="err_pp_through_header_not_found">
@@ -908,7 +908,7 @@
       <unit id="1171" name="err_pp_through_header_not_seen">
         <segment>
           <source>#include of '%0' not seen while attempting to %select{create|use}1 precompiled header</source>
-          <target></target>
+          <target>#include of '{$arg0}' not seen while attempting to {$arg1 :select s0=|create| s1=|use|} precompiled header</target>
         </segment>
       </unit>
       <unit id="1172" name="err_pp_unclosed_pragma_unsafe_buffer_usage">
@@ -920,7 +920,7 @@
       <unit id="1173" name="err_pp_unknown_parameter">
         <segment>
           <source>unknown%select{ | embed}0 preprocessor parameter '%1'</source>
-          <target></target>
+          <target>unknown{$arg0 :select s0=| | s1=| embed|} preprocessor parameter '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="1174" name="err_pp_unmatched_end_begin_pragma_unsafe_buffer_usage">
@@ -974,7 +974,7 @@
       <unit id="1182" name="err_pragma_message_malformed">
         <segment>
           <source>pragma %select{message|warning|error}0 requires parenthesized string</source>
-          <target></target>
+          <target>pragma {$arg0 :select s0=|message| s1=|warning| s2=|error|} requires parenthesized string</target>
         </segment>
       </unit>
       <unit id="1183" name="err_pragma_push_pop_macro_malformed">
@@ -1124,7 +1124,7 @@
       <unit id="1207" name="ext_c23_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is a C23 extension</source>
-          <target></target>
+          <target>use of a '#{$arg0 :select s0=|&lt;BUG IF SEEN&gt;| s1=|elifdef| s2=|elifndef|}' directive is a C23 extension</target>
         </segment>
       </unit>
       <unit id="1208" name="ext_c99_whitespace_required_after_macro_name">
@@ -1154,7 +1154,7 @@
       <unit id="1212" name="ext_cpp_octal_literal">
         <segment>
           <source>octal integer literals are a Clang extension</source>
-          <target></target>
+          <target>octal integer literals are a Clang extension</target>
         </segment>
       </unit>
       <unit id="1213" name="ext_ctrl_z_eof_microsoft">
@@ -1166,7 +1166,7 @@
       <unit id="1214" name="ext_cxx23_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is a C++23 extension</source>
-          <target></target>
+          <target>use of a '#{$arg0 :select s0=|&lt;BUG IF SEEN&gt;| s1=|elifdef| s2=|elifndef|}' directive is a C++23 extension</target>
         </segment>
       </unit>
       <unit id="1215" name="ext_cxx26_raw_string_literal_character_set">
@@ -1184,7 +1184,7 @@
       <unit id="1217" name="ext_delimited_escape_sequence">
         <segment>
           <source state="initial">%select{delimited|named}0 escape sequences are a %select{C++23|C2y|Clang}1 extension</source>
-          <target></target>
+          <target>{$arg0 :select s0=|delimited| s1=|named|} escape sequences are a {$arg1 :select s0=|C++23| s1=|C2y| s2=|Clang|} extension</target>
         </segment>
       </unit>
       <unit id="1218" name="ext_dollar_in_identifier">
@@ -1268,7 +1268,7 @@
       <unit id="1231" name="ext_octal_literal">
         <segment>
           <source>octal integer literals are a C2y extension</source>
-          <target></target>
+          <target>octal integer literals are a C2y extension</target>
         </segment>
       </unit>
       <unit id="1232" name="ext_on_off_switch_syntax">
@@ -1310,7 +1310,7 @@
       <unit id="1238" name="ext_pp_embed_directive">
         <segment>
           <source>#embed is a %select{C23|Clang}0 extension</source>
-          <target></target>
+          <target>#embed is a {$arg0 :select s0=|C23| s1=|Clang|} extension</target>
         </segment>
       </unit>
       <unit id="1239" name="ext_pp_extra_tokens_at_eol">
@@ -1394,7 +1394,7 @@
       <unit id="1252" name="ext_pp_warning_directive">
         <segment>
           <source>#warning is a %select{C23|C++23}0 extension</source>
-          <target></target>
+          <target>#warning is a {$arg0 :select s0=|C23| s1=|C++23|} extension</target>
         </segment>
       </unit>
       <unit id="1253" name="ext_pragma_syntax_eod">
@@ -1412,7 +1412,7 @@
       <unit id="1255" name="ext_string_too_long">
         <segment>
           <source>string literal of length %0 exceeds maximum length %1 that %select{C90|ISO C99|C++}2 compilers are required to support</source>
-          <target></target>
+          <target>string literal of length {$arg0} exceeds maximum length {$arg1} that {$arg2 :select s0=|C90| s1=|ISO C99| s2=|C++|} compilers are required to support</target>
         </segment>
       </unit>
       <unit id="1256" name="ext_token-USed">
@@ -1436,7 +1436,7 @@
       <unit id="1259" name="ext_unterminated_char_or_string">
         <segment>
           <source>missing terminating %select{'|'"'}0 character</source>
-          <target></target>
+          <target>missing terminating {$arg0 :select s0=|'| s1=|'"'|} character</target>
         </segment>
       </unit>
       <unit id="1260" name="ext_variadic_macro">
@@ -1538,7 +1538,7 @@
       <unit id="1276" name="note_pp_macro_annotation">
         <segment>
           <source>macro marked '%select{deprecated|restrict_expansion|final}0' here</source>
-          <target></target>
+          <target>macro marked '{$arg0 :select s0=|deprecated| s1=|restrict_expansion| s2=|final|}' here</target>
         </segment>
       </unit>
       <unit id="1277" name="note_pp_module_begin_here">
@@ -1556,13 +1556,13 @@
       <unit id="1279" name="note_ucn_four_not_eight">
         <segment>
           <source>did you mean to use '\u'?</source>
-          <target>did you mean to use '\u'?</target>
+          <target>did you mean to use '\\u'?</target>
         </segment>
       </unit>
       <unit id="1280" name="null_in_char_or_string">
         <segment>
           <source>null character(s) preserved in %select{char|string}0 literal</source>
-          <target></target>
+          <target>null character(s) preserved in {$arg0 :select s0=|char| s1=|string|} literal</target>
         </segment>
       </unit>
       <unit id="1281" name="null_in_file">
@@ -1580,13 +1580,13 @@
       <unit id="1283" name="pp_err_elif_after_else">
         <segment>
           <source>%select{#elif|#elifdef|#elifndef}0 after #else</source>
-          <target></target>
+          <target>{$arg0 :select s0=|#elif| s1=|#elifdef| s2=|#elifndef|} after #else</target>
         </segment>
       </unit>
       <unit id="1284" name="pp_err_elif_without_if">
         <segment>
           <source>%select{#elif|#elifdef|#elifndef}0 without #if</source>
-          <target></target>
+          <target>{$arg0 :select s0=|#elif| s1=|#elifdef| s2=|#elifndef|} without #if</target>
         </segment>
       </unit>
       <unit id="1285" name="pp_err_else_after_else">
@@ -1676,25 +1676,25 @@
       <unit id="1299" name="remark_mmap_load">
         <segment>
           <source>loading modulemap '%0'</source>
-          <target></target>
+          <target>loading modulemap '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1300" name="remark_mmap_load_module">
         <segment>
           <source>loading parsed module '%0'</source>
-          <target></target>
+          <target>loading parsed module '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1301" name="remark_mmap_parse">
         <segment>
           <source>parsing modulemap '%0'</source>
-          <target></target>
+          <target>parsing modulemap '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1302" name="remark_pp_include_directive_modular_translation">
         <segment>
           <source>treating #%select{include|import|include_next|__include_macros}0 as an import of module '%1'</source>
-          <target></target>
+          <target>treating #{$arg0 :select s0=|include| s1=|import| s2=|include_next| s3=|__include_macros|} as an import of module '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="1303" name="remark_pp_search_path_usage">
@@ -1742,13 +1742,13 @@
       <unit id="1310" name="warn_c2y_compat_octal_literal">
         <segment>
           <source>octal integer literals are incompatible with standards before C2y</source>
-          <target></target>
+          <target>octal integer literals are incompatible with standards before C2y</target>
         </segment>
       </unit>
       <unit id="1311" name="warn_c2y_delimited_escape_sequence">
         <segment>
           <source>delimited escape sequences are incompatible with C standards before C2y</source>
-          <target></target>
+          <target>delimited escape sequences are incompatible with C standards before C2y</target>
         </segment>
       </unit>
       <unit id="1312" name="warn_c17_compat_missing_varargs_arg">
@@ -1760,7 +1760,7 @@
       <unit id="1313" name="warn_c17_compat_u8_character_literal">
         <segment>
           <source>unicode literals are incompatible with C standards before C23</source>
-          <target></target>
+          <target>unicode literals are incompatible with C standards before C23</target>
         </segment>
       </unit>
       <unit id="1314" name="warn_c23_compat_binary_literal">
@@ -1790,7 +1790,7 @@
       <unit id="1318" name="warn_c23_compat_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is incompatible with C standards before C23</source>
-          <target></target>
+          <target>use of a '#{$arg0 :select s0=|&lt;BUG IF SEEN&gt;| s1=|elifdef| s2=|elifndef|}' directive is incompatible with C standards before C23</target>
         </segment>
       </unit>
       <unit id="1319" name="warn_c23_compat_warning_directive">
@@ -1808,7 +1808,7 @@
       <unit id="1321" name="warn_c99_compat_unicode_id">
         <segment>
           <source>%select{using this character in an identifier|starting an identifier with this character}0 is incompatible with C99</source>
-          <target></target>
+          <target>{$arg0 :select s0=|using this character in an identifier| s1=|starting an identifier with this character|} is incompatible with C99</target>
         </segment>
       </unit>
       <unit id="1322" name="warn_c99_compat_unicode_literal">
@@ -1904,7 +1904,7 @@
       <unit id="1337" name="warn_cxx23_compat_pp_directive">
         <segment>
           <source>use of a '#%select{&lt;BUG IF SEEN&gt;|elifdef|elifndef}0' directive is incompatible with C++ standards before C++23</source>
-          <target></target>
+          <target>use of a '#{$arg0 :select s0=|&lt;BUG IF SEEN&gt;| s1=|elifdef| s2=|elifndef|}' directive is incompatible with C++ standards before C++23</target>
         </segment>
       </unit>
       <unit id="1338" name="warn_cxx23_compat_warning_directive">
@@ -1916,7 +1916,7 @@
       <unit id="1339" name="warn_cxx23_delimited_escape_sequence">
         <segment>
           <source>%select{delimited|named}0 escape sequences are incompatible with C++ standards before C++23</source>
-          <target></target>
+          <target>{$arg0 :select s0=|delimited| s1=|named|} escape sequences are incompatible with C++ standards before C++23</target>
         </segment>
       </unit>
       <unit id="1340" name="warn_cxx26_compat_raw_string_literal_character_set">
@@ -2000,7 +2000,7 @@
       <unit id="1353" name="warn_deprecated_module_dot_map">
         <segment>
           <source>'%0' as a module map name is deprecated, rename it to %select{module.modulemap|module.private.modulemap}1%select{| in the 'Modules' directory of the framework}2</source>
-          <target></target>
+          <target>'{$arg0}' as a module map name is deprecated, rename it to {$arg1 :select s0=|module.modulemap| s1=|module.private.modulemap|}{$arg2 :select s0=|| s1=| in the 'Modules' directory of the framework|}</target>
         </segment>
       </unit>
       <unit id="1354" name="warn_four_char_character_literal">
@@ -2120,7 +2120,7 @@
       <unit id="1373" name="warn_pp_convert_to_positive">
         <segment>
           <source>%select{left|right}0 side of operator converted from negative value to unsigned: %1</source>
-          <target></target>
+          <target>{$arg0 :select s0=|left| s1=|right|} side of operator converted from negative value to unsigned: {$arg1}</target>
         </segment>
       </unit>
       <unit id="1374" name="warn_pp_date_time">
@@ -2144,7 +2144,7 @@
       <unit id="1377" name="warn_pp_identifier_is_cpp_keyword">
         <segment>
           <source>identifier %0 conflicts with a C++ keyword</source>
-          <target></target>
+          <target>identifier {$arg0} conflicts with a C++ keyword</target>
         </segment>
       </unit>
       <unit id="1378" name="warn_pp_include_angled_in_module_purview">
@@ -2156,13 +2156,13 @@
       <unit id="1379" name="warn_pp_invalid_directive">
         <segment>
           <source>invalid preprocessing directive%select{|, did you mean '#%1'?}0</source>
-          <target></target>
+          <target>invalid preprocessing directive{$arg0 :select s0=|| s1=|, did you mean '#{$arg1}'?|}</target>
         </segment>
       </unit>
       <unit id="1380" name="warn_pp_line_decimal">
         <segment>
           <source>%select{#line|GNU line marker}0 directive interprets number as decimal, not octal</source>
-          <target></target>
+          <target>{$arg0 :select s0=|#line| s1=|GNU line marker|} directive interprets number as decimal, not octal</target>
         </segment>
       </unit>
       <unit id="1381" name="warn_pp_macro_def_mismatch_with_pch">
@@ -2180,7 +2180,7 @@
       <unit id="1383" name="warn_pp_macro_is_reserved_attribute_id">
         <segment>
           <source>%0 is a reserved attribute identifier</source>
-          <target></target>
+          <target>{$arg0} is a reserved attribute identifier</target>
         </segment>
       </unit>
       <unit id="1384" name="warn_pp_macro_is_reserved_id">
@@ -2210,7 +2210,7 @@
       <unit id="1388" name="warn_pp_undef_true_identifier">
         <segment>
           <source>'true' is not defined, evaluates to 0</source>
-          <target></target>
+          <target>'true' is not defined, evaluates to 0</target>
         </segment>
       </unit>
       <unit id="1389" name="warn_pragma_debug_missing_command">
@@ -2222,7 +2222,7 @@
       <unit id="1390" name="warn_pragma_debug_unable_to_find_module">
         <segment>
           <source>unable to find module '%0'</source>
-          <target></target>
+          <target>unable to find module '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1391" name="warn_pragma_debug_unexpected_command">
@@ -2240,7 +2240,7 @@
       <unit id="1393" name="warn_pragma_deprecated_macro_use">
         <segment>
           <source>macro %0 has been marked as deprecated%select{|: %2}1</source>
-          <target></target>
+          <target>macro {$arg0} has been marked as deprecated{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
         </segment>
       </unit>
       <unit id="1394" name="warn_pragma_diagnostic_cannot_pop">
@@ -2294,7 +2294,7 @@
       <unit id="1402" name="warn_pragma_final_macro">
         <segment>
           <source>macro %0 has been marked as final and should not be %select{undefined|redefined}1</source>
-          <target></target>
+          <target>macro {$arg0} has been marked as final and should not be {$arg1 :select s0=|undefined| s1=|redefined|}</target>
         </segment>
       </unit>
       <unit id="1403" name="warn_pragma_ignored">
@@ -2342,7 +2342,7 @@
       <unit id="1410" name="warn_pragma_restrict_expansion_macro_use">
         <segment>
           <source>macro %0 has been marked as unsafe for use in headers%select{|: %2}1</source>
-          <target></target>
+          <target>macro {$arg0} has been marked as unsafe for use in headers{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
         </segment>
       </unit>
       <unit id="1411" name="warn_pragma_warning_expected">
@@ -2414,13 +2414,13 @@
       <unit id="1422" name="warn_unevaluated_string_prefix">
         <segment>
           <source>encoding prefix '%0' on an unevaluated string literal has no effect%select{| and is incompatible with c++2c}1</source>
-          <target></target>
+          <target>encoding prefix '{$arg0}' on an unevaluated string literal has no effect{$arg1 :select s0=|| s1=| and is incompatible with c++2c|}</target>
         </segment>
       </unit>
       <unit id="1423" name="warn_unprefixed_octal_deprecated">
         <segment>
           <source>octal literals without a '0o' prefix are deprecated</source>
-          <target></target>
+          <target>octal literals without a '0o' prefix are deprecated</target>
         </segment>
       </unit>
       <unit id="1424" name="warn_use_of_private_header_outside_module">

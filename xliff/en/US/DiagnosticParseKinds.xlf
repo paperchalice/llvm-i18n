@@ -8,13 +8,13 @@
       <unit id="1521" name="compat_cxx11_enum_fixed_underlying_type">
         <segment>
           <source>enumeration types with a fixed underlying type are incompatible with C++98</source>
-          <target></target>
+          <target>enumeration types with a fixed underlying type are incompatible with C++98</target>
         </segment>
       </unit>
       <unit id="1522" name="compat_pre_cxx11_enum_fixed_underlying_type">
         <segment>
           <source>enumeration types with a fixed underlying type are a C++11 extension</source>
-          <target></target>
+          <target>enumeration types with a fixed underlying type are a C++11 extension</target>
         </segment>
       </unit>
       <unit id="1523" name="err_acc_expected_reduction_operator">
@@ -26,7 +26,7 @@
       <unit id="1524" name="err_acc_incorrect_bind_arg">
         <segment>
           <source state="initial">expected identifier or string literal in OpenACC 'bind' clause</source>
-          <target>expected identifier or string literal</target>
+          <target>expected identifier or string literal in OpenACC 'bind' clause</target>
         </segment>
       </unit>
       <unit id="1525" name="err_acc_invalid_clause">
@@ -44,7 +44,7 @@
       <unit id="1527" name="err_acc_invalid_directive">
         <segment>
           <source>invalid OpenACC directive %select{%1|'%1 %2'}0</source>
-          <target></target>
+          <target>invalid OpenACC directive {$arg0 :select s0=|{$arg1}| s1=|'{$arg1} {$arg2}'|}</target>
         </segment>
       </unit>
       <unit id="1528" name="err_acc_invalid_open_paren">
@@ -62,7 +62,7 @@
       <unit id="1530" name="err_acc_invalid_tag_kind">
         <segment>
           <source>invalid tag %0 on '%1' %select{directive|clause}2</source>
-          <target></target>
+          <target>invalid tag {$arg0} on '{$arg1}' {$arg2 :select s0=|directive| s1=|clause|}</target>
         </segment>
       </unit>
       <unit id="1531" name="err_acc_missing_directive">
@@ -74,19 +74,19 @@
       <unit id="1532" name="err_acc_modifier">
         <segment>
           <source>%select{unknown|duplicate}0 modifier %1 in OpenACC modifier-list on '%2' clause</source>
-          <target></target>
+          <target>{$arg0 :select s0=|unknown| s1=|duplicate|} modifier {$arg1} in OpenACC modifier-list on '{$arg2}' clause</target>
         </segment>
       </unit>
       <unit id="1533" name="err_acc_unexpected_directive">
         <segment>
           <source>unexpected OpenACC directive %select{|'#pragma acc %1'}0</source>
-          <target></target>
+          <target>unexpected OpenACC directive {$arg0 :select s0=|| s1=|'#pragma acc {$arg1}'|}</target>
         </segment>
       </unit>
       <unit id="1534" name="err_access_specifier_interface">
         <segment>
           <source>interface types cannot specify '%select{private|protected}0' access</source>
-          <target></target>
+          <target>interface types cannot specify '{$arg0 :select s0=|private| s1=|protected|}' access</target>
         </segment>
       </unit>
       <unit id="1535" name="err_address_of_label_outside_fn">
@@ -110,7 +110,7 @@
       <unit id="1538" name="err_alias_declaration_specialization">
         <segment>
           <source>%select{partial specialization|explicit specialization|explicit instantiation}0 of alias templates is not permitted</source>
-          <target></target>
+          <target>{$arg0 :select s0=|partial specialization| s1=|explicit specialization| s2=|explicit instantiation|} of alias templates is not permitted</target>
         </segment>
       </unit>
       <unit id="1539" name="err_anon_bitfield_member_init">
@@ -158,13 +158,13 @@
       <unit id="1546" name="err_asm_expected_string">
         <segment>
           <source>expected string literal %select{or parenthesized constant expression |}0in 'asm'</source>
-          <target></target>
+          <target>expected string literal {$arg0 :select s0=|or parenthesized constant expression | s1=||}in 'asm'</target>
         </segment>
       </unit>
       <unit id="1547" name="err_asm_operand_wide_string_literal">
         <segment>
           <source state="initial">cannot use %select{unicode|wide}0 string literal in 'asm'</source>
-          <target></target>
+          <target>cannot use {$arg0 :select s0=|unicode| s1=|wide|} string literal in 'asm'</target>
         </segment>
       </unit>
       <unit id="1548" name="err_asm_qualifier_ignored">
@@ -296,7 +296,7 @@
       <unit id="1569" name="err_binding_multiple_ellipses">
         <segment>
           <source>multiple packs in structured binding declaration</source>
-          <target></target>
+          <target>multiple packs in structured binding declaration</target>
         </segment>
       </unit>
       <unit id="1570" name="err_bool_redeclaration">
@@ -314,7 +314,7 @@
       <unit id="1572" name="err_brackets_go_after_unqualified_id">
         <segment>
           <source>brackets are not allowed here; to declare an array, place the brackets after the %select{identifier|name}0</source>
-          <target></target>
+          <target>brackets are not allowed here; to declare an array, place the brackets after the {$arg0 :select s0=|identifier| s1=|name|}</target>
         </segment>
       </unit>
       <unit id="1573" name="err_c11_noreturn_misplaced">
@@ -332,7 +332,7 @@
       <unit id="1575" name="err_class_on_template_template_param">
         <segment>
           <source>template template parameter requires 'class'%select{| or 'typename'}0 after the parameter list</source>
-          <target></target>
+          <target>template template parameter requires 'class'{$arg0 :select s0=|| s1=| or 'typename'|} after the parameter list</target>
         </segment>
       </unit>
       <unit id="1576" name="err_concept_definition_not_identifier">
@@ -392,7 +392,7 @@
       <unit id="1585" name="err_default_delete_in_multiple_declaration">
         <segment>
           <source>'= %select{default|delete}0' is a function definition and must occur in a standalone declaration</source>
-          <target></target>
+          <target>'= {$arg0 :select s0=|default| s1=|delete|}' is a function definition and must occur in a standalone declaration</target>
         </segment>
       </unit>
       <unit id="1586" name="err_default_template_template_parameter_not_template">
@@ -428,7 +428,7 @@
       <unit id="1591" name="err_duplicate_class_relocation_specifier">
         <segment>
           <source>class already marked '%select{trivially_relocatable_if_eligible|replaceable_if_eligible}0'</source>
-          <target></target>
+          <target>class already marked '{$arg0 :select s0=|trivially_relocatable_if_eligible| s1=|replaceable_if_eligible|}'</target>
         </segment>
       </unit>
       <unit id="1592" name="err_duplicate_class_virt_specifier">
@@ -548,7 +548,7 @@
       <unit id="1611" name="err_expected_end_declare_target_or_variant">
         <segment>
           <source>expected '#pragma omp end declare %select{target|variant}0'</source>
-          <target></target>
+          <target>expected '#pragma omp end declare {$arg0 :select s0=|target| s1=|variant|}'</target>
         </segment>
       </unit>
       <unit id="1612" name="err_expected_end_of_enumerator">
@@ -836,7 +836,7 @@
       <unit id="1659" name="err_expected_unqualified_id">
         <segment>
           <source>expected %select{identifier|unqualified-id}0</source>
-          <target></target>
+          <target>expected {$arg0 :select s0=|identifier| s1=|unqualified-id|}</target>
         </segment>
       </unit>
       <unit id="1660" name="err_expected_version">
@@ -866,7 +866,7 @@
       <unit id="1664" name="err_explicit_spec_non_template">
         <segment>
           <source>explicit %select{specialization|instantiation}0 of %select{non-|undeclared }3template %1 %2</source>
-          <target></target>
+          <target>explicit {$arg0 :select s0=|specialization| s1=|instantiation|} of {$arg3 :select s0=|non-| s1=|undeclared |}template {$arg1} {$arg2}</target>
         </segment>
       </unit>
       <unit id="1665" name="err_export_empty">
@@ -932,7 +932,7 @@
       <unit id="1675" name="err_friend_concept">
         <segment>
           <source>friend declaration cannot be a concept</source>
-          <target></target>
+          <target>friend declaration cannot be a concept</target>
         </segment>
       </unit>
       <unit id="1676" name="err_friend_decl_defines_type">
@@ -980,7 +980,7 @@
       <unit id="1683" name="err_function_parameter_limit_exceeded">
         <segment>
           <source>too many function parameters; subsequent parameters will be ignored</source>
-          <target></target>
+          <target>too many function parameters; subsequent parameters will be ignored</target>
         </segment>
       </unit>
       <unit id="1684" name="err_function_scope_depth_exceeded">
@@ -1010,7 +1010,7 @@
       <unit id="1688" name="err_hlsl_number_literal_overflow">
         <segment>
           <source>integer literal is too large to be represented as a 32-bit %select{signed |}0 integer type</source>
-          <target></target>
+          <target>integer literal is too large to be represented as a 32-bit {$arg0 :select s0=|signed | s1=||} integer type</target>
         </segment>
       </unit>
       <unit id="1689" name="err_hlsl_packoffset_invalid_reg">
@@ -1022,19 +1022,19 @@
       <unit id="1690" name="err_hlsl_rootsig_missing_param">
         <segment>
           <source>did not specify mandatory parameter '%0'</source>
-          <target></target>
+          <target>did not specify mandatory parameter '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="1691" name="err_hlsl_rootsig_non_zero_flag">
         <segment>
           <source>flag value is neither a literal 0 nor a named value</source>
-          <target></target>
+          <target>flag value is neither a literal 0 nor a named value</target>
         </segment>
       </unit>
       <unit id="1692" name="err_hlsl_rootsig_repeat_param">
         <segment>
           <source>specified the same parameter '%0' multiple times</source>
-          <target></target>
+          <target>specified the same parameter '{$arg0}' multiple times</target>
         </segment>
       </unit>
       <unit id="1693" name="err_hlsl_separate_attr_arg_and_number">
@@ -1046,7 +1046,7 @@
       <unit id="1694" name="err_hlsl_unexpected_end_of_params">
         <segment>
           <source>expected %0 to denote end of parameters, or, another valid parameter of %1</source>
-          <target></target>
+          <target>expected {$arg0} to denote end of parameters, or, another valid parameter of {$arg1}</target>
         </segment>
       </unit>
       <unit id="1695" name="err_hlsl_unsupported_component">
@@ -1058,13 +1058,13 @@
       <unit id="1696" name="err_hlsl_virtual_function">
         <segment>
           <source>virtual functions are unsupported in HLSL</source>
-          <target></target>
+          <target>virtual functions are unsupported in HLSL</target>
         </segment>
       </unit>
       <unit id="1697" name="err_hlsl_virtual_inheritance">
         <segment>
           <source>virtual inheritance is unsupported in HLSL</source>
-          <target></target>
+          <target>virtual inheritance is unsupported in HLSL</target>
         </segment>
       </unit>
       <unit id="1698" name="err_id_after_template_in_nested_name_spec">
@@ -1088,7 +1088,7 @@
       <unit id="1701" name="err_import_in_wrong_fragment">
         <segment>
           <source>module%select{| partition}0 imports cannot be in the %select{global|private}1 module fragment</source>
-          <target></target>
+          <target>module{$arg0 :select s0=|| s1=| partition|} imports cannot be in the {$arg1 :select s0=|global| s1=|private|} module fragment</target>
         </segment>
       </unit>
       <unit id="1702" name="err_import_not_allowed_here">
@@ -1106,7 +1106,7 @@
       <unit id="1704" name="err_init_list_bin_op">
         <segment>
           <source>initializer list cannot be used on the %select{left|right}0 hand side of operator '%1'</source>
-          <target></target>
+          <target>initializer list cannot be used on the {$arg0 :select s0=|left| s1=|right|} hand side of operator '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="1705" name="err_inline_ms_asm_parsing">
@@ -1130,13 +1130,13 @@
       <unit id="1708" name="err_invalid_declaration_in_hlsl_buffer">
         <segment>
           <source>invalid declaration inside %select{tbuffer|cbuffer}0</source>
-          <target></target>
+          <target>invalid declaration inside {$arg0 :select s0=|tbuffer| s1=|cbuffer|}</target>
         </segment>
       </unit>
       <unit id="1709" name="err_invalid_operator_on_type">
         <segment>
           <source>cannot use %select{dot|arrow}0 operator on a type</source>
-          <target></target>
+          <target>cannot use {$arg0 :select s0=|dot| s1=|arrow|} operator on a type</target>
         </segment>
       </unit>
       <unit id="1710" name="err_invalid_reference_qualifier_application">
@@ -1202,7 +1202,7 @@
       <unit id="1720" name="err_lambda_capture_misplaced_ellipsis">
         <segment>
           <source>ellipsis in pack %select{|init-}0capture must appear %select{after|before}0 the name of the capture</source>
-          <target></target>
+          <target>ellipsis in pack {$arg0 :select s0=|| s1=|init-|}capture must appear {$arg0 :select s0=|after| s1=|before|} the name of the capture</target>
         </segment>
       </unit>
       <unit id="1721" name="err_lambda_capture_multiple_ellipses">
@@ -1214,7 +1214,7 @@
       <unit id="1722" name="err_lambda_decl_specifier_repeated">
         <segment>
           <source>%select{'mutable'|'static'|'constexpr'|'consteval'}0 cannot appear multiple times in a lambda declarator</source>
-          <target></target>
+          <target>{$arg0 :select s0=|'mutable'| s1=|'static'| s2=|'constexpr'| s3=|'consteval'|} cannot appear multiple times in a lambda declarator</target>
         </segment>
       </unit>
       <unit id="1723" name="err_lambda_template_parameter_list_empty">
@@ -1238,7 +1238,7 @@
       <unit id="1726" name="err_misplaced_ellipsis_in_declaration">
         <segment>
           <source>'...' must %select{immediately precede declared identifier|be innermost component of anonymous pack declaration}0</source>
-          <target></target>
+          <target>'...' must {$arg0 :select s0=|immediately precede declared identifier| s1=|be innermost component of anonymous pack declaration|}</target>
         </segment>
       </unit>
       <unit id="1727" name="err_missing_before_module_end">
@@ -1268,7 +1268,7 @@
       <unit id="1731" name="err_missing_end_of_definition">
         <segment>
           <source>missing '}' at end of definition of %q0</source>
-          <target>missing '\}' at end of definition of {$arg0}</target>
+          <target>missing '\}' at end of definition of {$arg0 :q}</target>
         </segment>
       </unit>
       <unit id="1732" name="err_missing_param">
@@ -1280,7 +1280,7 @@
       <unit id="1733" name="err_missing_whitespace_digraph">
         <segment>
           <source>found '&lt;::' after a %select{template name|addrspace_cast|const_cast|dynamic_cast|reinterpret_cast|static_cast}0 which forms the digraph '&lt;:' (aka '[') and a ':', did you mean '&lt; ::'?</source>
-          <target></target>
+          <target>found '&lt;::' after a {$arg0 :select s0=|template name| s1=|addrspace_cast| s2=|const_cast| s3=|dynamic_cast| s4=|reinterpret_cast| s5=|static_cast|} which forms the digraph '&lt;:' (aka '[') and a ':', did you mean '&lt; ::'?</target>
         </segment>
       </unit>
       <unit id="1734" name="err_modifier_expected_colon">
@@ -1292,7 +1292,7 @@
       <unit id="1735" name="err_module_expected_ident">
         <segment>
           <source>expected a module name after '%select{module|import}0'</source>
-          <target></target>
+          <target>expected a module name after '{$arg0 :select s0=|module| s1=|import|}'</target>
         </segment>
       </unit>
       <unit id="1736" name="err_module_expected_semi">
@@ -1304,7 +1304,7 @@
       <unit id="1737" name="err_module_fragment_exported">
         <segment>
           <source>%select{global|private}0 module fragment cannot be exported</source>
-          <target></target>
+          <target>{$arg0 :select s0=|global| s1=|private|} module fragment cannot be exported</target>
         </segment>
       </unit>
       <unit id="1738" name="err_ms_attributes_not_enabled">
@@ -1388,7 +1388,7 @@
       <unit id="1751" name="err_multiple_template_declarators">
         <segment>
           <source>%select{|a template declaration|an explicit template specialization|an explicit template instantiation}0 can only %select{|declare|declare|instantiate}0 a single entity</source>
-          <target></target>
+          <target>{$arg0 :select s0=|| s1=|a template declaration| s2=|an explicit template specialization| s3=|an explicit template instantiation|} can only {$arg0 :select s0=|| s1=|declare| s2=|declare| s3=|instantiate|} a single entity</target>
         </segment>
       </unit>
       <unit id="1752" name="err_namespace_nonnamespace_scope">
@@ -1442,7 +1442,7 @@
       <unit id="1760" name="err_objc_expected_selector_for_getter_setter">
         <segment>
           <source>expected selector for Objective-C %select{setter|getter}0</source>
-          <target></target>
+          <target>expected selector for Objective-C {$arg0 :select s0=|setter| s1=|getter|}</target>
         </segment>
       </unit>
       <unit id="1761" name="err_objc_expected_type_parameter">
@@ -1484,7 +1484,7 @@
       <unit id="1767" name="err_objc_postfix_attribute_hint">
         <segment>
           <source>postfix attributes are not allowed on Objective-C directives, place them in front of '%select{@interface|@protocol}0'</source>
-          <target></target>
+          <target>postfix attributes are not allowed on Objective-C directives, place them in front of '{$arg0 :select s0=|@interface| s1=|@protocol|}'</target>
         </segment>
       </unit>
       <unit id="1768" name="err_objc_property_bitfield">
@@ -1544,7 +1544,7 @@
       <unit id="1777" name="err_omp_decl_in_declare_simd_variant">
         <segment>
           <source>function declaration is expected after 'declare %select{simd|variant}0' directive</source>
-          <target></target>
+          <target>function declaration is expected after 'declare {$arg0 :select s0=|simd| s1=|variant|}' directive</target>
         </segment>
       </unit>
       <unit id="1778" name="err_omp_declare_simd_inbranch_notinbranch">
@@ -1562,13 +1562,13 @@
       <unit id="1780" name="err_omp_declare_target_missing_enter_or_link_clause">
         <segment>
           <source>expected at least one %select{'enter' or 'link'|'enter', 'link' or 'indirect'}0 clause</source>
-          <target></target>
+          <target>expected at least one {$arg0 :select s0=|'enter' or 'link'| s1=|'enter', 'link' or 'indirect'|} clause</target>
         </segment>
       </unit>
       <unit id="1781" name="err_omp_declare_target_missing_to_or_link_clause">
         <segment>
           <source>expected at least one %select{'to' or 'link'|'to', 'link' or 'indirect'}0 clause</source>
-          <target></target>
+          <target>expected at least one {$arg0 :select s0=|'to' or 'link'| s1=|'to', 'link' or 'indirect'|} clause</target>
         </segment>
       </unit>
       <unit id="1782" name="err_omp_declare_target_multiple">
@@ -1580,13 +1580,13 @@
       <unit id="1783" name="err_omp_declare_target_unexpected_clause">
         <segment>
           <source>unexpected '%0' clause, only %select{'device_type'|'to' or 'link'|'to', 'link' or 'device_type'|'device_type', 'indirect'|'to', 'link', 'device_type' or 'indirect'}1 clauses expected</source>
-          <target></target>
+          <target>unexpected '{$arg0}' clause, only {$arg1 :select s0=|'device_type'| s1=|'to' or 'link'| s2=|'to', 'link' or 'device_type'| s3=|'device_type', 'indirect'| s4=|'to', 'link', 'device_type' or 'indirect'|} clauses expected</target>
         </segment>
       </unit>
       <unit id="1784" name="err_omp_declare_target_unexpected_clause_52">
         <segment>
           <source>unexpected '%0' clause, only %select{'device_type'|'enter' or 'link'|'enter', 'link' or 'device_type'|'device_type', 'indirect'|'enter', 'link', 'device_type' or 'indirect'}1 clauses expected</source>
-          <target></target>
+          <target>unexpected '{$arg0}' clause, only {$arg1 :select s0=|'device_type'| s1=|'enter' or 'link'| s2=|'enter', 'link' or 'device_type'| s3=|'device_type', 'indirect'| s4=|'enter', 'link', 'device_type' or 'indirect'|} clauses expected</target>
         </segment>
       </unit>
       <unit id="1785" name="err_omp_declare_target_unexpected_enter_clause">
@@ -1628,7 +1628,7 @@
       <unit id="1791" name="err_omp_declare_variant_wrong_clause">
         <segment>
           <source>expected %select{'match'|'match', 'adjust_args', or 'append_args'}0 clause on 'omp declare variant' directive</source>
-          <target></target>
+          <target>expected {$arg0 :select s0=|'match'| s1=|'match', 'adjust_args', or 'append_args'|} clause on 'omp declare variant' directive</target>
         </segment>
       </unit>
       <unit id="1792" name="err_omp_deprecate_old_syntax">
@@ -1640,7 +1640,7 @@
       <unit id="1793" name="err_omp_duplicate_modifier">
         <segment>
           <source>duplicate modifier '%0' in '%1' clause</source>
-          <target></target>
+          <target>duplicate modifier '{$arg0}' in '{$arg1}' clause</target>
         </segment>
       </unit>
       <unit id="1794" name="err_omp_expected_clause">
@@ -1688,13 +1688,13 @@
       <unit id="1801" name="err_omp_expected_modifier">
         <segment>
           <source>expected modifier in '%0' clause</source>
-          <target></target>
+          <target>expected modifier in '{$arg0}' clause</target>
         </segment>
       </unit>
       <unit id="1802" name="err_omp_expected_punc">
         <segment>
           <source>expected ',' or ')' in '%0' %select{clause|directive}1</source>
-          <target></target>
+          <target>expected ',' or ')' in '{$arg0}' {$arg1 :select s0=|clause| s1=|directive|}</target>
         </segment>
       </unit>
       <unit id="1803" name="err_omp_expected_punc_after_interop_mod">
@@ -1718,7 +1718,7 @@
       <unit id="1806" name="err_omp_immediate_directive">
         <segment>
           <source>'#pragma omp %0' %select{|with '%2' clause }1cannot be an immediate substatement</source>
-          <target></target>
+          <target>'#pragma omp {$arg0}' {$arg1 :select s0=|| s1=|with '{$arg2}' clause |}cannot be an immediate substatement</target>
         </segment>
       </unit>
       <unit id="1807" name="err_omp_invalid_dsa">
@@ -1772,7 +1772,7 @@
       <unit id="1815" name="err_omp_multiple_step_or_linear_modifier">
         <segment>
           <source>multiple %select{'step size'|'linear modifier'}0 found in linear clause</source>
-          <target></target>
+          <target>multiple {$arg0 :select s0=|'step size'| s1=|'linear modifier'|} found in linear clause</target>
         </segment>
       </unit>
       <unit id="1816" name="err_omp_requires_out_inout_depend_type">
@@ -1784,7 +1784,7 @@
       <unit id="1817" name="err_omp_sink_and_source_iteration_not_allowd">
         <segment>
           <source> '%0 %select{sink:|source:}1' must be with '%select{omp_cur_iteration - 1|omp_cur_iteration}1'</source>
-          <target></target>
+          <target> '{$arg0} {$arg1 :select s0=|sink:| s1=|source:|}' must be with '{$arg1 :select s0=|omp_cur_iteration - 1| s1=|omp_cur_iteration|}'</target>
         </segment>
       </unit>
       <unit id="1818" name="err_omp_unexpected_append_op">
@@ -1808,7 +1808,7 @@
       <unit id="1821" name="err_omp_unexpected_directive">
         <segment>
           <source>unexpected OpenMP directive %select{|'#pragma omp %1'}0</source>
-          <target></target>
+          <target>unexpected OpenMP directive {$arg0 :select s0=|| s1=|'#pragma omp {$arg1}'|}</target>
         </segment>
       </unit>
       <unit id="1822" name="err_omp_unexpected_execution_modifier">
@@ -1838,7 +1838,7 @@
       <unit id="1826" name="err_omp_unknown_map_type_modifier">
         <segment>
           <source state="initial">incorrect map type modifier, expected one of: 'always', 'close', 'mapper'%select{|, 'present'|, 'present', 'iterator'}0%select{|, 'ompx_hold'}1%select{|, 'self'}2</source>
-          <target></target>
+          <target>incorrect map type modifier, expected one of: 'always', 'close', 'mapper'{$arg0 :select s0=|| s1=|, 'present'| s2=|, 'present', 'iterator'|}{$arg1 :select s0=|| s1=|, 'ompx_hold'|}{$arg2 :select s0=|| s1=|, 'self'|}</target>
         </segment>
       </unit>
       <unit id="1827" name="err_omp_variant_ctx_second_match_extension">
@@ -1940,7 +1940,7 @@
       <unit id="1843" name="err_pragma_attribute_expected_subject_sub_identifier">
         <segment>
           <source>expected an identifier that corresponds to an attribute subject matcher sub-rule; '%0' matcher %select{does not support sub-rules|supports the following sub-rules: %2|}1</source>
-          <target></target>
+          <target>expected an identifier that corresponds to an attribute subject matcher sub-rule; '{$arg0}' matcher {$arg1 :select s0=|does not support sub-rules| s1=|supports the following sub-rules: {$arg2}| s2=||}</target>
         </segment>
       </unit>
       <unit id="1844" name="err_pragma_attribute_extra_tokens_after_attribute">
@@ -1976,7 +1976,7 @@
       <unit id="1849" name="err_pragma_attribute_unknown_subject_sub_rule">
         <segment>
           <source>%select{invalid use of|unknown}2 attribute subject matcher sub-rule '%0'; '%1' matcher %select{does not support sub-rules|supports the following sub-rules: %3}2</source>
-          <target></target>
+          <target>{$arg2 :select s0=|invalid use of| s1=|unknown|} attribute subject matcher sub-rule '{$arg0}'; '{$arg1}' matcher {$arg2 :select s0=|does not support sub-rules| s1=|supports the following sub-rules: {$arg3}|}</target>
         </segment>
       </unit>
       <unit id="1850" name="err_pragma_attribute_unsupported_attribute">
@@ -1994,7 +1994,7 @@
       <unit id="1852" name="err_pragma_clang_section_expected_equal">
         <segment>
           <source>expected '=' following '#pragma clang section %select{invalid|bss|data|rodata|text|relro}0'</source>
-          <target></target>
+          <target>expected '=' following '#pragma clang section {$arg0 :select s0=|invalid| s1=|bss| s2=|data| s3=|rodata| s4=|text| s5=|relro|}'</target>
         </segment>
       </unit>
       <unit id="1853" name="err_pragma_comment_malformed">
@@ -2042,25 +2042,25 @@
       <unit id="1860" name="err_pragma_fp_invalid_argument">
         <segment>
           <source>unexpected argument '%0' to '#pragma clang fp %1'; expected %select{'fast' or 'on' or 'off'|'on' or 'off'|'on' or 'off'|'ignore', 'maytrap' or 'strict'|'source', 'double' or 'extended'}2</source>
-          <target></target>
+          <target>unexpected argument '{$arg0}' to '#pragma clang fp {$arg1}'; expected {$arg2 :select s0=|'fast' or 'on' or 'off'| s1=|'on' or 'off'| s2=|'on' or 'off'| s3=|'ignore', 'maytrap' or 'strict'| s4=|'source', 'double' or 'extended'|}</target>
         </segment>
       </unit>
       <unit id="1861" name="err_pragma_fp_invalid_option">
         <segment>
           <source>%select{invalid|missing}0 option%select{ %1|}0; expected 'contract', 'reassociate', 'reciprocal', or 'exceptions'</source>
-          <target></target>
+          <target>{$arg0 :select s0=|invalid| s1=|missing|} option{$arg0 :select s0=| {$arg1}| s1=||}; expected 'contract', 'reassociate', 'reciprocal', or 'exceptions'</target>
         </segment>
       </unit>
       <unit id="1862" name="err_pragma_invalid_keyword">
         <segment>
           <source>invalid argument; expected 'enable'%select{|, 'full'}0%select{|, 'assume_safety'}1 or 'disable'</source>
-          <target></target>
+          <target>invalid argument; expected 'enable'{$arg0 :select s0=|| s1=|, 'full'|}{$arg1 :select s0=|| s1=|, 'assume_safety'|} or 'disable'</target>
         </segment>
       </unit>
       <unit id="1863" name="err_pragma_loop_invalid_option">
         <segment>
           <source>%select{invalid|missing}0 option%select{ %1|}0; expected vectorize, vectorize_width, interleave, interleave_count, unroll, unroll_count, pipeline, pipeline_initiation_interval, vectorize_predicate, or distribute</source>
-          <target></target>
+          <target>{$arg0 :select s0=|invalid| s1=|missing|} option{$arg0 :select s0=| {$arg1}| s1=||}; expected vectorize, vectorize_width, interleave, interleave_count, unroll, unroll_count, pipeline, pipeline_initiation_interval, vectorize_predicate, or distribute</target>
         </segment>
       </unit>
       <unit id="1864" name="err_pragma_loop_invalid_vectorize_option">
@@ -2072,7 +2072,7 @@
       <unit id="1865" name="err_pragma_loop_missing_argument">
         <segment>
           <source>missing argument; expected %select{an integer value|'enable'%select{|, 'full'}1%select{|, 'assume_safety'}2 or 'disable'}0</source>
-          <target></target>
+          <target>missing argument; expected %select{an integer value|'enable'{$arg1 :select s0=|| s1=|, 'full'|}{$arg0 :select s0=|| s1=|, 'assume_safety'}2 or 'disable'|}</target>
         </segment>
       </unit>
       <unit id="1866" name="err_pragma_misplaced_in_decl">
@@ -2084,7 +2084,7 @@
       <unit id="1867" name="err_pragma_missing_argument">
         <segment>
           <source>missing argument to '#pragma %0'%select{|; expected %2}1</source>
-          <target></target>
+          <target>missing argument to '#pragma {$arg0}'{$arg1 :select s0=|| s1=|; expected {$arg2}|}</target>
         </segment>
       </unit>
       <unit id="1868" name="err_pragma_optimize_extra_argument">
@@ -2108,7 +2108,7 @@
       <unit id="1871" name="err_pragma_pointers_to_members_unknown_kind">
         <segment>
           <source>unexpected %0, expected to see one of %select{|'best_case', 'full_generality', }1'single_inheritance', 'multiple_inheritance', or 'virtual_inheritance'</source>
-          <target></target>
+          <target>unexpected {$arg0}, expected to see one of {$arg1 :select s0=|| s1=|'best_case', 'full_generality', |}'single_inheritance', 'multiple_inheritance', or 'virtual_inheritance'</target>
         </segment>
       </unit>
       <unit id="1872" name="err_private_module_fragment_expected_semi">
@@ -2120,7 +2120,7 @@
       <unit id="1873" name="err_ptrauth_qualifier_bad_arg_count">
         <segment>
           <source>'__ptrauth' qualifier must take between 1 and 3 arguments</source>
-          <target></target>
+          <target>'__ptrauth' qualifier must take between 1 and 3 arguments</target>
         </segment>
       </unit>
       <unit id="1874" name="err_requires_clause_inside_parens">
@@ -2240,13 +2240,13 @@
       <unit id="1893" name="err_template_defn_explicit_instantiation">
         <segment>
           <source>%select{function|class|variable}0 cannot be defined in an explicit instantiation; if this declaration is meant to be a %select{function|class|variable}0 definition, remove the 'template' keyword</source>
-          <target></target>
+          <target>{$arg0 :select s0=|function| s1=|class| s2=|variable|} cannot be defined in an explicit instantiation; if this declaration is meant to be a {$arg0 :select s0=|function| s1=|class| s2=|variable|} definition, remove the 'template' keyword</target>
         </segment>
       </unit>
       <unit id="1894" name="err_template_spec_syntax_non_template">
         <segment>
           <source>identifier followed by '&lt;' indicates a class template specialization but %0 %select{does not refer to a template|refers to a function template|&lt;unused&gt;|refers to a variable template|&lt;unused&gt;|&lt;unused&gt;|refers to a concept}1</source>
-          <target></target>
+          <target>identifier followed by '&lt;' indicates a class template specialization but {$arg0} {$arg1 :select s0=|does not refer to a template| s1=|refers to a function template| s2=|&lt;unused&gt;| s3=|refers to a variable template| s4=|&lt;unused&gt;| s5=|&lt;unused&gt;| s6=|refers to a concept|}</target>
         </segment>
       </unit>
       <unit id="1895" name="err_templated_invalid_declaration">
@@ -2258,7 +2258,7 @@
       <unit id="1896" name="err_templated_using_directive_declaration">
         <segment>
           <source>cannot template a using %select{directive|declaration}0</source>
-          <target></target>
+          <target>cannot template a using {$arg0 :select s0=|directive| s1=|declaration|}</target>
         </segment>
       </unit>
       <unit id="1897" name="err_this_captured_by_reference">
@@ -2282,7 +2282,7 @@
       <unit id="1900" name="err_type_trait_arity">
         <segment>
           <source>type trait requires %0%select{| or more}1 argument%select{|s}2; have %3 argument%s3</source>
-          <target></target>
+          <target>type trait requires {$arg0}{$arg1 :select s0=|| s1=| or more|} argument{$arg2 :select s0=|| s1=|s|}; have {$arg3} argument%s3</target>
         </segment>
       </unit>
       <unit id="1901" name="err_type_unparsed">
@@ -2300,7 +2300,7 @@
       <unit id="1903" name="err_typename_invalid_constexpr">
         <segment>
           <source>type name does not allow %select{&lt;ERROR&gt;|constexpr|consteval|constinit}0 specifier to be specified</source>
-          <target></target>
+          <target>type name does not allow {$arg0 :select s0=|&lt;ERROR&gt;| s1=|constexpr| s2=|consteval| s3=|constinit|} specifier to be specified</target>
         </segment>
       </unit>
       <unit id="1904" name="err_typename_invalid_functionspec">
@@ -2462,7 +2462,7 @@
       <unit id="1930" name="err_using_enum_expect_identifier">
         <segment>
           <source>using enum %select{requires an enum or typedef name|does not permit an elaborated enum specifier}0</source>
-          <target></target>
+          <target>using enum {$arg0 :select s0=|requires an enum or typedef name| s1=|does not permit an elaborated enum specifier|}</target>
         </segment>
       </unit>
       <unit id="1931" name="err_using_namespace_in_class">
@@ -2528,7 +2528,7 @@
       <unit id="1941" name="ext_bit_int">
         <segment>
           <source>'_BitInt' in %select{C17 and earlier|C++}0 is a Clang extension</source>
-          <target></target>
+          <target>'_BitInt' in {$arg0 :select s0=|C17 and earlier| s1=|C++|} is a Clang extension</target>
         </segment>
       </unit>
       <unit id="1942" name="ext_bitfield_member_init">
@@ -2540,13 +2540,13 @@
       <unit id="1943" name="ext_c2y_case_range">
         <segment>
           <source>case ranges are a C2y extension</source>
-          <target></target>
+          <target>case ranges are a C2y extension</target>
         </segment>
       </unit>
       <unit id="1944" name="ext_c2y_feature">
         <segment>
           <source>'%0' is a C2y extension</source>
-          <target></target>
+          <target>'{$arg0}' is a C2y extension</target>
         </segment>
       </unit>
       <unit id="1945" name="ext_c2y_generic_with_type_arg">
@@ -2564,7 +2564,7 @@
       <unit id="1947" name="ext_c23_enum_fixed_underlying_type">
         <segment>
           <source>enumeration types with a fixed underlying type are a C23 extension</source>
-          <target></target>
+          <target>enumeration types with a fixed underlying type are a C23 extension</target>
         </segment>
       </unit>
       <unit id="1948" name="ext_c99_compound_literal">
@@ -2630,13 +2630,13 @@
       <unit id="1958" name="ext_cxx11_attr_placement">
         <segment>
           <source>ISO C++ does not allow %select{an attribute list|%0}1 to appear here</source>
-          <target></target>
+          <target>ISO C++ does not allow {$arg1 :select s0=|an attribute list| s1=|{$arg0}|} to appear here</target>
         </segment>
       </unit>
       <unit id="1959" name="ext_cxx_binding_pack">
         <segment>
           <source>structured binding packs are a C++2c extension </source>
-          <target></target>
+          <target>structured binding packs are a C++2c extension </target>
         </segment>
       </unit>
       <unit id="1960" name="ext_cxx_label_end_of_compound_statement">
@@ -2654,7 +2654,7 @@
       <unit id="1962" name="ext_cxx_static_assert_user_generated_message">
         <segment>
           <source>'static_assert' with a user-generated message is a C++26 extension</source>
-          <target></target>
+          <target>'static_assert' with a user-generated message is a C++26 extension</target>
         </segment>
       </unit>
       <unit id="1963" name="ext_decl_attrs_on_binding">
@@ -2666,7 +2666,7 @@
       <unit id="1964" name="ext_decl_attrs_on_lambda">
         <segment>
           <source>%select{an attribute specifier sequence|%0}1 in this position is a C++23 extension</source>
-          <target></target>
+          <target>{$arg1 :select s0=|an attribute specifier sequence| s1=|{$arg0}|} in this position is a C++23 extension</target>
         </segment>
       </unit>
       <unit id="1965" name="ext_decltype_auto_type_specifier">
@@ -2684,7 +2684,7 @@
       <unit id="1967" name="ext_defaulted_deleted_function">
         <segment>
           <source>%select{defaulted|deleted}0 function definitions are a C++11 extension</source>
-          <target></target>
+          <target>{$arg0 :select s0=|defaulted| s1=|deleted|} function definitions are a C++11 extension</target>
         </segment>
       </unit>
       <unit id="1968" name="ext_delete_with_message">
@@ -2702,7 +2702,7 @@
       <unit id="1970" name="ext_elaborated_enum_class">
         <segment>
           <source>reference to enumeration must use 'enum' not 'enum %select{struct|class}0'</source>
-          <target></target>
+          <target>reference to enumeration must use 'enum' not 'enum {$arg0 :select s0=|struct| s1=|class|}'</target>
         </segment>
       </unit>
       <unit id="1971" name="ext_ellipsis_exception_spec">
@@ -2720,7 +2720,7 @@
       <unit id="1973" name="ext_enum_base_in_type_specifier">
         <segment>
           <source>non-defining declaration of enumeration with a fixed underlying type is only permitted as a standalone declaration%select{|; missing list of enumerators?}0</source>
-          <target></target>
+          <target>non-defining declaration of enumeration with a fixed underlying type is only permitted as a standalone declaration{$arg0 :select s0=|| s1=|; missing list of enumerators?|}</target>
         </segment>
       </unit>
       <unit id="1974" name="ext_enumerator_list_comma_c">
@@ -2756,7 +2756,7 @@
       <unit id="1979" name="ext_extra_semi">
         <segment>
           <source>extra ';' %select{outside of a function|inside a %1|inside instance variable list|after member function definition}0</source>
-          <target></target>
+          <target>extra ';' {$arg0 :select s0=|outside of a function| s1=|inside a {$arg1}| s2=|inside instance variable list| s3=|after member function definition|}</target>
         </segment>
       </unit>
       <unit id="1980" name="ext_extra_semi_cxx11">
@@ -2804,7 +2804,7 @@
       <unit id="1987" name="ext_gnu_case_range">
         <segment>
           <source state="initial">case ranges are a GNU extension</source>
-          <target>use of GNU case range extension</target>
+          <target>case ranges are a GNU extension</target>
         </segment>
       </unit>
       <unit id="1988" name="ext_gnu_conditional_expr">
@@ -2852,7 +2852,7 @@
       <unit id="1995" name="ext_hlsl_lambda">
         <segment>
           <source>lambdas are a %select{C++11|clang HLSL}0 extension</source>
-          <target></target>
+          <target>lambdas are a {$arg0 :select s0=|C++11| s1=|clang HLSL|} extension</target>
         </segment>
       </unit>
       <unit id="1996" name="ext_ident_list_in_param">
@@ -2864,7 +2864,7 @@
       <unit id="1997" name="ext_init_statement">
         <segment>
           <source>'%select{if|switch}0' initialization statements are a C++17 extension</source>
-          <target></target>
+          <target>'{$arg0 :select s0=|if| s1=|switch|}' initialization statements are a C++17 extension</target>
         </segment>
       </unit>
       <unit id="1998" name="ext_inline_namespace">
@@ -2882,13 +2882,13 @@
       <unit id="2000" name="ext_keyword_as_ident">
         <segment>
           <source>keyword '%0' will be made available as an identifier %select{here|for the remainder of the translation unit}1</source>
-          <target></target>
+          <target>keyword '{$arg0}' will be made available as an identifier {$arg1 :select s0=|here| s1=|for the remainder of the translation unit|}</target>
         </segment>
       </unit>
       <unit id="2001" name="ext_lambda">
         <segment>
           <source state="initial">lambdas are a %select{C++11|clang HLSL}0 extension</source>
-          <target>lambdas are a C++11 extension</target>
+          <target>lambdas are a {$arg0 :select s0=|C++11| s1=|clang HLSL|} extension</target>
         </segment>
       </unit>
       <unit id="2002" name="ext_lambda_missing_parens">
@@ -2948,7 +2948,7 @@
       <unit id="2011" name="ext_ns_enum_attribute">
         <segment>
           <source>attributes on %select{a namespace|an enumerator}0 declaration are a C++17 extension</source>
-          <target></target>
+          <target>attributes on {$arg0 :select s0=|a namespace| s1=|an enumerator|} declaration are a C++17 extension</target>
         </segment>
       </unit>
       <unit id="2012" name="ext_nullability">
@@ -2978,7 +2978,7 @@
       <unit id="2016" name="ext_relocatable_keyword">
         <segment>
           <source>'%select{trivially_relocatable_if_eligible|replaceable_if_eligible}0' keyword is a C++2c extension</source>
-          <target></target>
+          <target>'{$arg0 :select s0=|trivially_relocatable_if_eligible| s1=|replaceable_if_eligible|}' keyword is a C++2c extension</target>
         </segment>
       </unit>
       <unit id="2017" name="ext_rvalue_reference">
@@ -3032,7 +3032,7 @@
       <unit id="2025" name="ext_variadic_friends">
         <segment>
           <source>variadic 'friend' declarations are a C++2c extension</source>
-          <target></target>
+          <target>variadic 'friend' declarations are a C++2c extension</target>
         </segment>
       </unit>
       <unit id="2026" name="ext_warn_gnu_final">
@@ -3056,7 +3056,7 @@
       <unit id="2029" name="note_compound_token_split_second_token_here">
         <segment>
           <source>%select{|second }0%1 token is here</source>
-          <target></target>
+          <target>{$arg0 :select s0=|| s1=|second |}{$arg1} token is here</target>
         </segment>
       </unit>
       <unit id="2030" name="note_exception_spec_deprecated">
@@ -3098,7 +3098,7 @@
       <unit id="2036" name="note_misplaced_ellipsis_vararg_add_ellipsis">
         <segment>
           <source>place '...' %select{immediately before declared identifier|here}0 to declare a function parameter pack</source>
-          <target></target>
+          <target>place '...' {$arg0 :select s0=|immediately before declared identifier| s1=|here|} to declare a function parameter pack</target>
         </segment>
       </unit>
       <unit id="2037" name="note_misplaced_ellipsis_vararg_existing_ellipsis">
@@ -3110,7 +3110,7 @@
       <unit id="2038" name="note_missing_end_of_definition_before">
         <segment>
           <source>still within definition of %q0 here</source>
-          <target>still within definition of {$arg0} here</target>
+          <target>still within definition of {$arg0 :q} here</target>
         </segment>
       </unit>
       <unit id="2039" name="note_missing_selector_name">
@@ -3122,7 +3122,7 @@
       <unit id="2040" name="note_objc_container_start">
         <segment>
           <source>%select{class|protocol|category|class extension|implementation|category implementation}0 started here</source>
-          <target></target>
+          <target>{$arg0 :select s0=|class| s1=|protocol| s2=|category| s3=|class extension| s4=|implementation| s5=|category implementation|} started here</target>
         </segment>
       </unit>
       <unit id="2041" name="note_omp_assumption_clause_continue_here">
@@ -3134,43 +3134,43 @@
       <unit id="2042" name="note_omp_ctx_compatible_set_and_selector_for_property">
         <segment>
           <source>the context property '%0' can be nested in the context selector '%1' which is nested in the context set '%2'; try 'match(%2={%1(%0)})'</source>
-          <target>the context property '{$arg0}' can be nested in the context selector '{$arg1}' which is nested in the context set '{$arg2}'; try 'match({$arg2}=\{{$arg1}({$arg0})\})'</target>
+          <target>the context property '{$arg0}' can be nested in the context selector '{$arg1}' which is nested in the context set '{$arg2}'; try 'match({$arg2}={{$arg1}({$arg0})})'</target>
         </segment>
       </unit>
       <unit id="2043" name="note_omp_ctx_compatible_set_for_selector">
         <segment>
           <source>the context selector '%0' can be nested in the context set '%1'; try 'match(%1={%0%select{|(property)}2})'</source>
-          <target></target>
+          <target>the context selector '{$arg0}' can be nested in the context set '{$arg1}'; try 'match({$arg1}={{$arg0}{$arg2 :select s0=|| s1=|(property)|}})'</target>
         </segment>
       </unit>
       <unit id="2044" name="note_omp_declare_variant_ctx_continue_here">
         <segment>
           <source>the ignored %select{set|selector|property}0 spans until here</source>
-          <target></target>
+          <target>the ignored {$arg0 :select s0=|set| s1=|selector| s2=|property|} spans until here</target>
         </segment>
       </unit>
       <unit id="2045" name="note_omp_declare_variant_ctx_is_a">
         <segment>
           <source>'%0' is a context %select{set|selector|property}1 not a context %select{set|selector|property}2</source>
-          <target></target>
+          <target>'{$arg0}' is a context {$arg1 :select s0=|set| s1=|selector| s2=|property|} not a context {$arg2 :select s0=|set| s1=|selector| s2=|property|}</target>
         </segment>
       </unit>
       <unit id="2046" name="note_omp_declare_variant_ctx_options">
         <segment>
           <source>context %select{set|selector|property}0 options are: %1</source>
-          <target></target>
+          <target>context {$arg0 :select s0=|set| s1=|selector| s2=|property|} options are: {$arg1}</target>
         </segment>
       </unit>
       <unit id="2047" name="note_omp_declare_variant_ctx_try">
         <segment>
           <source>try 'match(%0={%1%2})'</source>
-          <target>try 'match({$arg0}=\{{$arg1}{$arg2}\})'</target>
+          <target>try 'match({$arg0}={{$arg1}{$arg2}})'</target>
         </segment>
       </unit>
       <unit id="2048" name="note_omp_declare_variant_ctx_used_here">
         <segment>
           <source>the previous context %select{set|selector|property}0 '%1' used here</source>
-          <target></target>
+          <target>the previous context {$arg0 :select s0=|set| s1=|selector| s2=|property|} '{$arg1}' used here</target>
         </segment>
       </unit>
       <unit id="2049" name="note_ompx_bare_clause">
@@ -3206,7 +3206,7 @@
       <unit id="2054" name="note_previous_ellipsis">
         <segment>
           <source>previous binding pack specified here</source>
-          <target></target>
+          <target>previous binding pack specified here</target>
         </segment>
       </unit>
       <unit id="2055" name="note_previous_map_type_specified_here">
@@ -3266,7 +3266,7 @@
       <unit id="2064" name="warn_c2y_compat_keyword">
         <segment>
           <source>'%0' is incompatible with C standards before C2y</source>
-          <target></target>
+          <target>'{$arg0}' is incompatible with C standards before C2y</target>
         </segment>
       </unit>
       <unit id="2065" name="warn_c11_compat_keyword">
@@ -3278,7 +3278,7 @@
       <unit id="2066" name="warn_c17_compat_enum_fixed_underlying_type">
         <segment>
           <source>enumeration types with a fixed underlying type are incompatible with C standards before C23</source>
-          <target></target>
+          <target>enumeration types with a fixed underlying type are incompatible with C standards before C23</target>
         </segment>
       </unit>
       <unit id="2067" name="warn_c17_compat_static_assert_no_message">
@@ -3290,7 +3290,7 @@
       <unit id="2068" name="warn_c23_compat_case_range">
         <segment>
           <source>case ranges are incompatible with C standards before C2y</source>
-          <target></target>
+          <target>case ranges are incompatible with C standards before C2y</target>
         </segment>
       </unit>
       <unit id="2069" name="warn_c23_compat_keyword">
@@ -3320,13 +3320,13 @@
       <unit id="2073" name="warn_compound_token_split_by_macro">
         <segment>
           <source>%select{%1 and |}0%2 tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 appear in different macro expansion contexts</source>
-          <target></target>
+          <target>{$arg0 :select s0=|{$arg1} and | s1=||}{$arg2} tokens {$arg3 :select s0=|introducing statement expression| s1=|terminating statement expression| s2=|introducing attribute| s3=|terminating attribute| s4=|forming pointer to member type|} appear in different macro expansion contexts</target>
         </segment>
       </unit>
       <unit id="2074" name="warn_compound_token_split_by_whitespace">
         <segment>
           <source>%select{%1 and |}0%2 tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 are separated by whitespace</source>
-          <target></target>
+          <target>{$arg0 :select s0=|{$arg1} and | s1=||}{$arg2} tokens {$arg3 :select s0=|introducing statement expression| s1=|terminating statement expression| s2=|introducing attribute| s3=|terminating attribute| s4=|forming pointer to member type|} are separated by whitespace</target>
         </segment>
       </unit>
       <unit id="2075" name="warn_cstyle_param">
@@ -3374,7 +3374,7 @@
       <unit id="2082" name="warn_cxx14_compat_init_statement">
         <segment>
           <source>%select{if|switch}0 initialization statements are incompatible with C++ standards before C++17</source>
-          <target></target>
+          <target>{$arg0 :select s0=|if| s1=|switch|} initialization statements are incompatible with C++ standards before C++17</target>
         </segment>
       </unit>
       <unit id="2083" name="warn_cxx14_compat_nested_namespace_definition">
@@ -3386,7 +3386,7 @@
       <unit id="2084" name="warn_cxx14_compat_ns_enum_attribute">
         <segment>
           <source>attributes on %select{a namespace|an enumerator}0 declaration are incompatible with C++ standards before C++17</source>
-          <target></target>
+          <target>attributes on {$arg0 :select s0=|a namespace| s1=|an enumerator|} declaration are incompatible with C++ standards before C++17</target>
         </segment>
       </unit>
       <unit id="2085" name="warn_cxx14_compat_static_assert_no_message">
@@ -3470,7 +3470,7 @@
       <unit id="2098" name="warn_cxx20_compat_decl_attrs_on_lambda">
         <segment>
           <source>%select{an attribute specifier sequence|%1}0 in this position is incompatible with C++ standards before C++23</source>
-          <target></target>
+          <target>{$arg0 :select s0=|an attribute specifier sequence| s1=|{$arg1}|} in this position is incompatible with C++ standards before C++23</target>
         </segment>
       </unit>
       <unit id="2099" name="warn_cxx20_compat_explicit_bool">
@@ -3488,7 +3488,7 @@
       <unit id="2101" name="warn_cxx20_compat_static_assert_user_generated_message">
         <segment>
           <source>'static_assert' with a user-generated message is incompatible with C++ standards before C++26</source>
-          <target></target>
+          <target>'static_assert' with a user-generated message is incompatible with C++ standards before C++26</target>
         </segment>
       </unit>
       <unit id="2102" name="warn_cxx20_compat_static_lambda">
@@ -3500,7 +3500,7 @@
       <unit id="2103" name="warn_cxx23_compat_binding_pack">
         <segment>
           <source>structured binding packs are incompatible with C++ standards before C++2c</source>
-          <target></target>
+          <target>structured binding packs are incompatible with C++ standards before C++2c</target>
         </segment>
       </unit>
       <unit id="2104" name="warn_cxx23_compat_decl_attrs_on_binding">
@@ -3518,7 +3518,7 @@
       <unit id="2106" name="warn_cxx23_variadic_friends">
         <segment>
           <source>variadic 'friend' declarations are incompatible with C++ standards before C++2c</source>
-          <target></target>
+          <target>variadic 'friend' declarations are incompatible with C++ standards before C++2c</target>
         </segment>
       </unit>
       <unit id="2107" name="warn_cxx98_compat_alias_declaration">
@@ -3554,7 +3554,7 @@
       <unit id="2112" name="warn_cxx98_compat_defaulted_deleted_function">
         <segment>
           <source>%select{defaulted|deleted}0 function definitions are incompatible with C++98</source>
-          <target></target>
+          <target>{$arg0 :select s0=|defaulted| s1=|deleted|} function definitions are incompatible with C++98</target>
         </segment>
       </unit>
       <unit id="2113" name="warn_cxx98_compat_enumerator_list_comma">
@@ -3686,13 +3686,13 @@
       <unit id="2134" name="warn_deprecated_missing_comma_before_ellipsis">
         <segment>
           <source>declaration of a variadic function without a comma before '...' is deprecated</source>
-          <target></target>
+          <target>declaration of a variadic function without a comma before '...' is deprecated</target>
         </segment>
       </unit>
       <unit id="2135" name="warn_empty_init_statement">
         <segment>
           <source>empty initialization statement of '%select{if|switch|range-based for}0' has no effect</source>
-          <target></target>
+          <target>empty initialization statement of '{$arg0 :select s0=|if| s1=|switch| s2=|range-based for|}' has no effect</target>
         </segment>
       </unit>
       <unit id="2136" name="warn_exception_spec_deprecated">
@@ -3764,7 +3764,7 @@
       <unit id="2147" name="warn_microsoft_dependent_exists">
         <segment>
           <source>dependent %select{__if_not_exists|__if_exists}0 declarations are ignored</source>
-          <target></target>
+          <target>dependent {$arg0 :select s0=|__if_not_exists| s1=|__if_exists|} declarations are ignored</target>
         </segment>
       </unit>
       <unit id="2148" name="warn_microsoft_qualifiers_ignored">
@@ -3776,13 +3776,13 @@
       <unit id="2149" name="warn_misleading_indentation">
         <segment>
           <source>misleading indentation; statement is not part of the previous '%select{if|else|for|while}0'</source>
-          <target></target>
+          <target>misleading indentation; statement is not part of the previous '{$arg0 :select s0=|if| s1=|else| s2=|for| s3=|while|}'</target>
         </segment>
       </unit>
       <unit id="2150" name="warn_misplaced_ellipsis_vararg">
         <segment>
           <source>'...' in this location creates a C-style varargs function%select{, not a function parameter pack|}0</source>
-          <target></target>
+          <target>'...' in this location creates a C-style varargs function{$arg0 :select s0=|, not a function parameter pack| s1=||}</target>
         </segment>
       </unit>
       <unit id="2151" name="warn_missing_dependent_template_keyword">
@@ -3830,7 +3830,7 @@
       <unit id="2158" name="warn_omp_ctx_incompatible_score_for_property">
         <segment>
           <source state="initial">the context selector '%0' in the context set '%1' cannot have a score (%quoted2); score ignored</source>
-          <target>the context selector '{$arg0}' in the context set '{$arg1}' cannot have a score ('{$arg2}'); score ignored</target>
+          <target>the context selector '{$arg0}' in the context set '{$arg1}' cannot have a score (%quoted2); score ignored</target>
         </segment>
       </unit>
       <unit id="2159" name="warn_omp_ctx_incompatible_selector_for_set">
@@ -3848,7 +3848,7 @@
       <unit id="2161" name="warn_omp_declare_variant_ctx_mutiple_use">
         <segment>
           <source>the context %select{set|selector|property}0 '%1' was used already in the same 'omp declare variant' directive; %select{set|selector|property}0 ignored</source>
-          <target></target>
+          <target>the context {$arg0 :select s0=|set| s1=|selector| s2=|property|} '{$arg1}' was used already in the same 'omp declare variant' directive; {$arg0 :select s0=|set| s1=|selector| s2=|property|} ignored</target>
         </segment>
       </unit>
       <unit id="2162" name="warn_omp_declare_variant_ctx_not_a_property">
@@ -3878,13 +3878,13 @@
       <unit id="2166" name="warn_omp_declare_variant_string_literal_or_identifier">
         <segment>
           <source>expected identifier or string literal describing a context %select{set|selector|property}0; %select{set|selector|property}0 skipped</source>
-          <target></target>
+          <target>expected identifier or string literal describing a context {$arg0 :select s0=|set| s1=|selector| s2=|property|}; {$arg0 :select s0=|set| s1=|selector| s2=|property|} skipped</target>
         </segment>
       </unit>
       <unit id="2167" name="warn_omp_default_deprecated">
         <segment>
           <source>'default' clause for 'metadirective' is deprecated; use 'otherwise' instead</source>
-          <target></target>
+          <target>'default' clause for 'metadirective' is deprecated; use 'otherwise' instead</target>
         </segment>
       </unit>
       <unit id="2168" name="warn_omp_depend_in_ordered_deprecated">
@@ -3926,7 +3926,7 @@
       <unit id="2174" name="warn_omp_unknown_assumption_clause_missing_id">
         <segment>
           <source>valid %0 clauses start with %1; %select{token|tokens}2 will be ignored</source>
-          <target></target>
+          <target>valid {$arg0} clauses start with {$arg1}; {$arg2 :select s0=|token| s1=|tokens|} will be ignored</target>
         </segment>
       </unit>
       <unit id="2175" name="warn_omp_unknown_assumption_clause_without_args">
@@ -3944,13 +3944,13 @@
       <unit id="2177" name="warn_pragma_align_expected_equal">
         <segment>
           <source>expected '=' following '#pragma %select{align|options align}0' - ignored</source>
-          <target></target>
+          <target>expected '=' following '#pragma {$arg0 :select s0=|align| s1=|options align|}' - ignored</target>
         </segment>
       </unit>
       <unit id="2178" name="warn_pragma_align_invalid_option">
         <segment>
           <source>invalid alignment option in '#pragma %select{align|options align}0' - ignored</source>
-          <target></target>
+          <target>invalid alignment option in '#pragma {$arg0 :select s0=|align| s1=|options align|}' - ignored</target>
         </segment>
       </unit>
       <unit id="2179" name="warn_pragma_comment_ignored">
@@ -3962,7 +3962,7 @@
       <unit id="2180" name="warn_pragma_debug_dependent_argument">
         <segment>
           <source>%select{value|type}0-dependent expression passed as an argument to debug command</source>
-          <target></target>
+          <target>{$arg0 :select s0=|value| s1=|type|}-dependent expression passed as an argument to debug command</target>
         </segment>
       </unit>
       <unit id="2181" name="warn_pragma_expected_action_or_r_paren">
@@ -4022,7 +4022,7 @@
       <unit id="2190" name="warn_pragma_expected_predicate">
         <segment>
           <source>expected %select{'enable', 'disable', 'begin' or 'end'|'disable'}0 - ignoring</source>
-          <target></target>
+          <target>expected {$arg0 :select s0=|'enable', 'disable', 'begin' or 'end'| s1=|'disable'|} - ignoring</target>
         </segment>
       </unit>
       <unit id="2191" name="warn_pragma_expected_punc">
@@ -4094,7 +4094,7 @@
       <unit id="2202" name="warn_pragma_intrinsic_builtin">
         <segment>
           <source>%0 is not a recognized builtin%select{|; consider including &lt;intrin.h&gt; to access non-builtin intrinsics}1</source>
-          <target></target>
+          <target>{$arg0} is not a recognized builtin{$arg1 :select s0=|| s1=|; consider including &lt;intrin.h&gt; to access non-builtin intrinsics|}</target>
         </segment>
       </unit>
       <unit id="2203" name="warn_pragma_invalid_action">
@@ -4106,7 +4106,7 @@
       <unit id="2204" name="warn_pragma_invalid_argument">
         <segment>
           <source>unexpected argument '%0' to '#pragma %1'%select{|; expected %3}2</source>
-          <target></target>
+          <target>unexpected argument '{$arg0}' to '#pragma {$arg1}'{$arg2 :select s0=|| s1=|; expected {$arg3}|}</target>
         </segment>
       </unit>
       <unit id="2205" name="warn_pragma_invalid_specific_action">
@@ -4118,7 +4118,7 @@
       <unit id="2206" name="warn_pragma_missing_argument">
         <segment>
           <source>missing argument to '#pragma %0'%select{|; expected %2}1</source>
-          <target></target>
+          <target>missing argument to '#pragma {$arg0}'{$arg1 :select s0=|| s1=|; expected {$arg2}|}</target>
         </segment>
       </unit>
       <unit id="2207" name="warn_pragma_ms_fenv_access">
@@ -4190,13 +4190,13 @@
       <unit id="2218" name="warn_pre_cxx26_ambiguous_pack_indexing_type">
         <segment>
           <source>%0 is no longer a pack expansion but a pack indexing type; add a name to specify a pack expansion</source>
-          <target></target>
+          <target>{$arg0} is no longer a pack expansion but a pack indexing type; add a name to specify a pack expansion</target>
         </segment>
       </unit>
       <unit id="2219" name="warn_relocatable_keyword">
         <segment>
           <source>'%select{trivially_relocatable|replaceable}0_if_eligible' keyword is incompatible with standards before C++2c</source>
-          <target></target>
+          <target>'{$arg0 :select s0=|trivially_relocatable| s1=|replaceable|}_if_eligible' keyword is incompatible with standards before C++2c</target>
         </segment>
       </unit>
       <unit id="2220" name="warn_semicolon_before_method_body">
@@ -4208,7 +4208,7 @@
       <unit id="2221" name="warn_static_inline_explicit_inst_ignored">
         <segment>
           <source>ignoring '%select{static|inline}0' keyword on explicit template instantiation</source>
-          <target></target>
+          <target>ignoring '{$arg0 :select s0=|static| s1=|inline|}' keyword on explicit template instantiation</target>
         </segment>
       </unit>
       <unit id="2222" name="warn_stdc_fenv_round_not_supported">
