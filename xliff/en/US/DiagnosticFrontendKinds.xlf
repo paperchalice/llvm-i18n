@@ -416,7 +416,7 @@
       <unit id="769" name="err_verify_inconsistent_diags">
         <segment>
           <source state="initial">%select{|'%1-%2' }0diagnostics %select{with '%2' severity |}0%select{expected|seen}3 but not %select{seen|expected}3: %4</source>
-          <target>{$arg0 :select s0=|| s1=|'{$arg1}-{$arg2}' |}diagnostics {$arg0 :select s0=|with '{$arg2}' severity | s1=||}{$arg3 :select s0=|expected| s1=|seen|} but not {$arg3 :select s0=|seen| s1=|expected|}: {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="770" name="err_verify_invalid_content">
@@ -428,7 +428,7 @@
       <unit id="771" name="err_verify_invalid_no_diags">
         <segment>
           <source state="initial">'%0' directive cannot follow %select{'%2' directive|other expected directives}1</source>
-          <target>'{$arg0}' directive cannot follow {$arg1 :select s0=|'{$arg2}' directive| s1=|other expected directives|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="772" name="err_verify_invalid_range">
@@ -860,7 +860,7 @@
       <unit id="843" name="warn_module_config_macro_undef">
         <segment>
           <source>%select{definition|#undef}0 of configuration macro '%1' has no effect on the import of '%2'; pass '%select{-D%1=...|-U%1}0' on the command line to configure the module</source>
-          <target>{$arg0 :select s0=|definition| s1=|#undef|} of configuration macro '{$arg1}' has no effect on the import of '{$arg2}'; pass '{$arg0 :select s0=|-D{$arg1}=...| s1=|-U{$arg1}|}' on the command line to configure the module</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="844" name="warn_module_config_mismatch">
@@ -920,7 +920,7 @@
       <unit id="853" name="warn_unknown_diag_option">
         <segment>
           <source>unknown %select{warning|remark}0 option '%1'%select{|; did you mean '%3'?}2</source>
-          <target>unknown {$arg0 :select s0=|warning| s1=|remark|} option '{$arg1}'{$arg2 :select s0=|| s1=|; did you mean '{$arg3}'?|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="854" name="warn_unknown_warning_specifier">

@@ -50,7 +50,7 @@
       <unit id="7" name="err_constexpr_invalid_template_arg">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '%3' variable}2 is not allowed in a template argument</source>
-          <target>{$arg0 :select s0=|pointer| s1=|reference|} to {$arg1 :select s0=|| s1=|subobject of |}{$arg2 :select s0=|type_info object| s1=|string literal| s2=|temporary object| s3=|predefined '{$arg3}' variable|} is not allowed in a template argument</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="8" name="err_cxx23_size_t_suffix">
@@ -116,7 +116,7 @@
       <unit id="18" name="err_expected_string_literal">
         <segment>
           <source>expected string literal %select{in %1|for diagnostic message in static_assert|for optional message in 'availability' attribute|for %select{language name|source container name|USR}1 in 'external_source_symbol' attribute|as argument of '%1' attribute}0</source>
-          <target>expected string literal %select{in {$arg1}|for diagnostic message in static_assert|for optional message in 'availability' attribute|for {$arg0 :select s0=|language name| s1=|source container name| s2=|USR}1 in 'external_source_symbol' attribute| s3=|as argument of '{$arg1}' attribute|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="19" name="err_file_modified">
@@ -272,7 +272,7 @@
       <unit id="44" name="err_omp_more_one_clause">
         <segment>
           <source>directive '#pragma omp %0' cannot contain more than one '%1' clause%select{| with '%3' name modifier| with 'source' dependence}2</source>
-          <target>directive '#pragma omp {$arg0}' cannot contain more than one '{$arg1}' clause{$arg2 :select s0=|| s1=| with '{$arg3}' name modifier| s2=| with 'source' dependence|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="45" name="err_omp_required_clause">
@@ -344,7 +344,7 @@
       <unit id="56" name="err_requires_positive_value">
         <segment>
           <source>%select{invalid value '%0'; must be positive|value '%0' is too large}1</source>
-          <target>{$arg1 :select s0=|invalid value '{$arg0}'; must be positive| s1=|value '{$arg0}' is too large|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="57" name="err_seh___except_block">
@@ -608,7 +608,7 @@
       <unit id="100" name="note_constexpr_invalid_template_arg">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '%3' variable}2 is not allowed in a template argument</source>
-          <target>{$arg0 :select s0=|pointer| s1=|reference|} to {$arg1 :select s0=|| s1=|subobject of |}{$arg2 :select s0=|type_info object| s1=|string literal| s2=|temporary object| s3=|predefined '{$arg3}' variable|} is not allowed in a template argument</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="101" name="note_decl_hiding_tag_type">

@@ -50,97 +50,97 @@
       <unit id="2328" name="err_module_odr_violation_definition_data">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%4 base %plural{1:class|:classes}4|%4 virtual base %plural{1:class|:classes}4|%ordinal4 base class with type %5|%ordinal4 %select{non-virtual|virtual}5 base class %6|%ordinal4 base class %5 with %select{public|protected|private|no}6 access specifier}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{{$arg4} base %plural{1:class|:classes}4|{$arg4} virtual base %plural{1:class|:classes}4|%ordinal4 base class with type {$arg5}|%ordinal4 {$arg5 :select s0=|non-virtual| s1=|virtual|} base class {$arg6}|%ordinal4 base class {$arg5} with {$arg3 :select s0=|public| s1=|protected| s2=|private| s3=|no}6 access specifier|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2329" name="err_module_odr_violation_different_definitions">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2' is here|defined here}1</source>
-          <target>{$arg0 :q} has different definitions in different modules; {$arg1 :select s0=|definition in module '{$arg2}' is here| s1=|defined here|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2330" name="err_module_odr_violation_enum">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2'|defined here}1 first difference is %select{enum that is %select{not scoped|scoped}4|enum scoped with keyword %select{struct|class}4|enum %select{without|with}4 specified type|enum with specified type %4|enum with %4 element%s4|%ordinal4 element has name %5|%ordinal4 element %5 %select{has|does not have}6 an initializer|%ordinal4 element %5 has an initializer|}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} first difference is %select{enum that is {$arg4 :select s0=|not scoped| s1=|scoped|}|enum scoped with keyword {$arg4 :select s0=|struct| s1=|class|}|enum {$arg4 :select s0=|without| s1=|with|} specified type|enum with specified type {$arg4}|enum with {$arg4} element%s4|%ordinal4 element has name {$arg5}|%ordinal4 element {$arg5} {$arg3 :select s0=|has| s1=|does not have}6 an initializer| s2=|%ordinal4 element {$arg5} has an initializer| s3=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2331" name="err_module_odr_violation_field">
         <segment>
           <source state="initial">%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{field %4|field %4 with type %5|%select{non-|}5bit-field %4|bit-field %4 with one width expression|%select{non-|}5mutable field %4|field %4 with %select{no|an}5 initializer|field %4 with an initializer}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{field {$arg4}|field {$arg4} with type {$arg5}|{$arg5 :select s0=|non-| s1=||}bit-field {$arg4}|bit-field {$arg4} with one width expression|{$arg5 :select s0=|non-| s1=||}mutable field {$arg4}|field {$arg4} with {$arg3 :select s0=|no| s1=|an}5 initializer| s2=|field {$arg4} with an initializer|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2332" name="err_module_odr_violation_function">
         <segment>
           <source>%q0 has different definitions in different modules; %select{definition in module '%2'|defined here}1 first difference is %select{return type is %4|%ordinal4 parameter with name %5|%ordinal4 parameter with type %5%select{| decayed from %7}6|%ordinal4 parameter with%select{out|}5 a default argument|%ordinal4 parameter with a default argument|function body}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} first difference is %select{return type is {$arg4}|%ordinal4 parameter with name {$arg5}|%ordinal4 parameter with type {$arg5}{$arg6 :select s0=|| s1=| decayed from {$arg7}|}|%ordinal4 parameter with{$arg3 :select s0=|out| s1=|}5 a default argument| s2=|%ordinal4 parameter with a default argument| s3=|function body|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2333" name="err_module_odr_violation_method_params">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{method %5|constructor|destructor}4 that has %6 parameter%s6|%select{method %5|constructor|destructor}4 with %ordinal6 parameter of type %7%select{| decayed from %9}8|%select{method %5|constructor|destructor}4 with %ordinal6 parameter named %7}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} that has {$arg6} parameter%s6|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} with %ordinal6 parameter of type {$arg7}{$arg8 :select s0=|| s1=| decayed from {$arg9}|}|{$arg3 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor}4 with %ordinal6 parameter named {$arg7}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2334" name="err_module_odr_violation_mismatch_decl">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found {$arg3 :select s0=|end of class| s1=|public access specifier| s2=|private access specifier| s3=|protected access specifier| s4=|static assert| s5=|field| s6=|method| s7=|type alias| s8=|typedef| s9=|data member| s10=|friend declaration| s11=|function template| s12=|method| s13=|instance variable| s14=|property|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2335" name="err_module_odr_violation_mismatch_decl_unknown">
         <segment>
           <source>%q0 %select{with definition in module '%2'|defined here}1 has different definitions in different modules; first difference is this %select{||||static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property|unexpected decl}3</source>
-          <target>{$arg0 :q} {$arg1 :select s0=|with definition in module '{$arg2}'| s1=|defined here|} has different definitions in different modules; first difference is this {$arg3 :select s0=|| s1=|| s2=|| s3=|| s4=|static assert| s5=|field| s6=|method| s7=|type alias| s8=|typedef| s9=|data member| s10=|friend declaration| s11=|function template| s12=|method| s13=|instance variable| s14=|property| s15=|unexpected decl|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2336" name="err_module_odr_violation_objc_interface">
         <segment>
           <source>%0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{no super class|super class with type %5}4|instance variable '%4' access control is %select{|@private|@protected|@public|@package}5}3</source>
-          <target>{$arg0} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{{$arg4 :select s0=|no super class| s1=|super class with type {$arg5}|}|instance variable '{$arg4}' access control is {$arg3 :select s0=|| s1=|@private| s2=|@protected| s3=|@public| s4=|@package}5|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2337" name="err_module_odr_violation_objc_method">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{method %4 with return type %5|%select{class|instance}5 method %4|%select{no|'required'|'optional'}4 method control|method %4 with %select{no designated initializer|designated initializer}5|%select{regular|direct}5 method %4|method %4}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{method {$arg4} with return type {$arg5}|{$arg5 :select s0=|class| s1=|instance|} method {$arg4}|{$arg4 :select s0=|no| s1=|'required'| s2=|'optional'|} method control|method {$arg4} with {$arg5 :select s0=|no designated initializer| s1=|designated initializer|}|{$arg3 :select s0=|regular| s1=|direct}5 method {$arg4}| s2=|method {$arg4}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2338" name="err_module_odr_violation_objc_property">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{property %4|property %4 with type %5|%select{no|'required'|'optional'}4 property control|property %4 with %select{default |}6'%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}5' attribute}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{property {$arg4}|property {$arg4} with type {$arg5}|{$arg4 :select s0=|no| s1=|'required'| s2=|'optional'|} property control|property {$arg4} with {$arg6 :select s0=|default | s1=||}'{$arg3 :select s0=|none| s1=|readonly| s2=|getter| s3=|assign| s4=|readwrite| s5=|retain| s6=|copy| s7=|nonatomic| s8=|setter| s9=|atomic| s10=|weak| s11=|strong| s12=|unsafe_unretained| s13=|nullability| s14=|null_resettable| s15=|class| s16=|direct}5' attribute|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2339" name="err_module_odr_violation_record">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{static assert with condition|static assert with message|static assert with %select{|no }4message|%select{method %5|constructor|destructor}4|%select{method %5|constructor|destructor}4 is %select{not deleted|deleted}6|%select{method %5|constructor|destructor}4 is %select{not defaulted|defaulted}6|%select{method %5|constructor|destructor}4 is %select{|pure }6%select{not virtual|virtual}7|%select{method %5|constructor|destructor}4 is %select{not static|static}6|%select{method %5|constructor|destructor}4 is %select{not volatile|volatile}6|%select{method %5|constructor|destructor}4 is %select{not const|const}6|%select{method %5|constructor|destructor}4 is %select{not inline|inline}6|%select{method %5|constructor|destructor}4 with %ordinal6 parameter with%select{out|}7 a default argument|%select{method %5|constructor|destructor}4 with %ordinal6 parameter with a default argument|%select{method %5|constructor|destructor}4 with %select{no |}6template arguments|%select{method %5|constructor|destructor}4 with %6 template argument%s6|%select{method %5|constructor|destructor}4 with %6 for %ordinal7 template argument|%select{method %5|constructor|destructor}4 with %select{no body|body}6|%select{method %5|constructor|destructor}4 with body|friend %select{class|function}4|friend %4|friend function %4|function template %4 with %5 template parameter%s5|function template %4 with %ordinal5 template parameter being a %select{type|non-type|template}6 template parameter|function template %4 with %ordinal5 template parameter %select{with no name|named %7}6|function template %4 with %ordinal5 template parameter with %select{no |}6default argument|function template %4 with %ordinal5 template parameter with default argument %6|function template %4 with %ordinal5 template parameter with one type|function template %4 with %ordinal5 template parameter %select{not |}6being a template parameter pack|}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{static assert with condition|static assert with message|static assert with {$arg4 :select s0=|| s1=|no |}message|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|}|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} is {$arg6 :select s0=|not deleted| s1=|deleted|}|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} is {$arg6 :select s0=|not defaulted| s1=|defaulted|}|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} is {$arg6 :select s0=|| s1=|pure |}{$arg7 :select s0=|not virtual| s1=|virtual|}|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} is {$arg6 :select s0=|not static| s1=|static|}|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} is {$arg6 :select s0=|not volatile| s1=|volatile|}|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} is {$arg6 :select s0=|not const| s1=|const|}|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} is {$arg6 :select s0=|not inline| s1=|inline|}|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} with %ordinal6 parameter with{$arg7 :select s0=|out| s1=||} a default argument|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} with %ordinal6 parameter with a default argument|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} with {$arg6 :select s0=|no | s1=||}template arguments|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} with {$arg6} template argument%s6|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} with {$arg6} for %ordinal7 template argument|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} with {$arg6 :select s0=|no body| s1=|body|}|{$arg4 :select s0=|method {$arg5}| s1=|constructor| s2=|destructor|} with body|friend {$arg4 :select s0=|class| s1=|function|}|friend {$arg4}|friend function {$arg4}|function template {$arg4} with {$arg5} template parameter%s5|function template {$arg4} with %ordinal5 template parameter being a {$arg6 :select s0=|type| s1=|non-type| s2=|template|} template parameter|function template {$arg4} with %ordinal5 template parameter {$arg6 :select s0=|with no name| s1=|named {$arg7}|}|function template {$arg4} with %ordinal5 template parameter with {$arg6 :select s0=|no | s1=||}default argument|function template {$arg4} with %ordinal5 template parameter with default argument {$arg6}|function template {$arg4} with %ordinal5 template parameter with one type|function template {$arg4} with %ordinal5 template parameter {$arg3 :select s0=|not | s1=|}6being a template parameter pack| s2=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2340" name="err_module_odr_violation_referenced_protocols">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%4 referenced %plural{1:protocol|:protocols}4|%ordinal4 referenced protocol with name %5}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{{$arg4} referenced %plural{1:protocol|:protocols}4|%ordinal4 referenced protocol with name {$arg5}}3</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2341" name="err_module_odr_violation_template_parameter">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{unnamed template parameter|template parameter %5|template parameter with %select{no |}4default argument|template parameter with default argument}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{unnamed template parameter|template parameter {$arg5}|template parameter with {$arg3 :select s0=|no | s1=|}4default argument| s2=|template parameter with default argument|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2342" name="err_module_odr_violation_typedef">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{%select{typedef|type alias}4 name %5|%select{typedef|type alias}4 %5 with underlying type %6}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{{$arg4 :select s0=|typedef| s1=|type alias|} name {$arg5}|{$arg3 :select s0=|typedef| s1=|type alias}4 {$arg5} with underlying type {$arg6}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2343" name="err_module_odr_violation_variable">
         <segment>
           <source>%q0 has different definitions in different modules; first difference is %select{definition in module '%2'|defined here}1 found %select{data member with name %4|data member %4 with type %5|data member %4 with%select{out|}5 an initializer|data member %4 with an initializer|data member %4 %select{is constexpr|is not constexpr}5}3</source>
-          <target>{$arg0 :q} has different definitions in different modules; first difference is {$arg1 :select s0=|definition in module '{$arg2}'| s1=|defined here|} found %select{data member with name {$arg4}|data member {$arg4} with type {$arg5}|data member {$arg4} with{$arg5 :select s0=|out| s1=||} an initializer|data member {$arg4} with an initializer|data member {$arg4} {$arg3 :select s0=|is constexpr| s1=|is not constexpr}5|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2344" name="err_odr_different_num_template_parameters">
@@ -278,7 +278,7 @@
       <unit id="2366" name="note_constexpr_access_inactive_union_member">
         <segment>
           <source state="initial">%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of subobject of|destruction of|read of}0 member %1 of union with %select{active member %3|no active member}2 is not allowed in a constant expression</source>
-          <target>{$arg0 :select s0=|read of| s1=|read of| s2=|assignment to| s3=|increment of| s4=|decrement of| s5=|member call on| s6=|dynamic_cast of| s7=|typeid applied to| s8=|construction of subobject of| s9=|destruction of| s10=|read of|} member {$arg1} of union with {$arg2 :select s0=|active member {$arg3}| s1=|no active member|} is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2367" name="note_constexpr_access_mutable">
@@ -326,7 +326,7 @@
       <unit id="2374" name="note_constexpr_access_volatile_obj">
         <segment>
           <source state="initial">%select{read of|read of|assignment to|increment of|decrement of|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;|&lt;ERROR&gt;}0 volatile %select{temporary|object %2|member %2}1 is not allowed in a constant expression</source>
-          <target>{$arg0 :select s0=|read of| s1=|read of| s2=|assignment to| s3=|increment of| s4=|decrement of| s5=|&lt;ERROR&gt;| s6=|&lt;ERROR&gt;| s7=|&lt;ERROR&gt;| s8=|&lt;ERROR&gt;| s9=|&lt;ERROR&gt;| s10=|&lt;ERROR&gt;|} volatile {$arg1 :select s0=|temporary| s1=|object {$arg2}| s2=|member {$arg2}|} is not allowed in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2375" name="note_constexpr_access_volatile_type">
@@ -356,7 +356,7 @@
       <unit id="2379" name="note_constexpr_array_index">
         <segment>
           <source>cannot refer to element %0 of %select{array of %2 element%plural{1:|:s}2|non-array object}1 in a constant expression</source>
-          <target>cannot refer to element {$arg0} of %select{array of {$arg2} element%plural{1:|:s}2|non-array object}1 in a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2380" name="note_constexpr_assumption_failed">
@@ -524,7 +524,7 @@
       <unit id="2407" name="note_constexpr_dynamic_cast_to_reference_failed">
         <segment>
           <source>reference dynamic_cast failed: %select{static type %1 of operand is a non-public base class of dynamic type %2|dynamic type %2 of operand does not have a base class of type %3|%3 is an ambiguous base class of dynamic type %2 of operand|%3 is a non-public base class of dynamic type %2 of operand}0</source>
-          <target>reference dynamic_cast failed: {$arg0 :select s0=|static type {$arg1} of operand is a non-public base class of dynamic type {$arg2}| s1=|dynamic type {$arg2} of operand does not have a base class of type {$arg3}| s2=|{$arg3} is an ambiguous base class of dynamic type {$arg2} of operand| s3=|{$arg3} is a non-public base class of dynamic type {$arg2} of operand|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2408" name="note_constexpr_dynamic_rounding">
@@ -572,7 +572,7 @@
       <unit id="2415" name="note_constexpr_invalid_cast">
         <segment>
           <source>%select{reinterpret_cast|dynamic_cast|%select{this conversion|cast that performs the conversions of a reinterpret_cast}1|cast from %1}0 is not allowed in a constant expression%select{| in C++ standards before C++20||}0</source>
-          <target>%select{reinterpret_cast|dynamic_cast|{$arg0 :select s0=|this conversion| s1=|cast that performs the conversions of a reinterpret_cast}1| s2=|cast from {$arg1}|} is not allowed in a constant expression{$arg0 :select s0=|| s1=| in C++ standards before C++20| s2=|| s3=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2416" name="note_constexpr_invalid_downcast">
@@ -596,7 +596,7 @@
       <unit id="2419" name="note_constexpr_invalid_void_star_cast">
         <segment>
           <source>cast from %0 is not allowed in a constant expression %select{in C++ standards before C++2c|because the pointed object type %2 is not similar to the target type %3}1</source>
-          <target>cast from {$arg0} is not allowed in a constant expression {$arg1 :select s0=|in C++ standards before C++2c| s1=|because the pointed object type {$arg2} is not similar to the target type {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2420" name="note_constexpr_large_shift">
@@ -692,7 +692,7 @@
       <unit id="2435" name="note_constexpr_memcpy_null">
         <segment>
           <source>%select{source|destination}2 of '%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' is %3</source>
-          <target>{$arg2 :select s0=|source| s1=|destination|} of '%select{{$arg1 :select s0=|memcpy| s1=|wmemcpy|}|{$arg0 :select s0=|memmove| s1=|wmemmove}1|}' is {$arg3}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2436" name="note_constexpr_memcpy_overlap">
@@ -710,7 +710,7 @@
       <unit id="2438" name="note_constexpr_memcpy_unsupported">
         <segment>
           <source>'%select{%select{memcpy|wmemcpy}1|%select{memmove|wmemmove}1}0' not supported: %select{size to copy (%4) is not a multiple of size of element type %3 (%5)|source is not a contiguous array of at least %4 elements of type %3|destination is not a contiguous array of at least %4 elements of type %3}2</source>
-          <target>'%select{{$arg1 :select s0=|memcpy| s1=|wmemcpy|}|{$arg0 :select s0=|memmove| s1=|wmemmove}1|}' not supported: {$arg2 :select s0=|size to copy ({$arg4}) is not a multiple of size of element type {$arg3} ({$arg5})| s1=|source is not a contiguous array of at least {$arg4} elements of type {$arg3}| s2=|destination is not a contiguous array of at least {$arg4} elements of type {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2439" name="note_constexpr_memory_leak">
@@ -746,7 +746,7 @@
       <unit id="2444" name="note_constexpr_new_delete_mismatch">
         <segment>
           <source>%plural{2:'delete' used to delete pointer to object allocated with 'std::allocator&lt;...&gt;::allocate'|:%select{non-array delete|array delete|'std::allocator&lt;...&gt;::deallocate'}0 used to delete pointer to %select{array object of type %2|non-array object of type %2|object allocated with 'new'}0}1</source>
-          <target>%plural{2:'delete' used to delete pointer to object allocated with 'std::allocator&lt;...&gt;::allocate'|:{$arg0 :select s0=|non-array delete| s1=|array delete| s2=|'std::allocator&lt;...&gt;::deallocate'|} used to delete pointer to {$arg1 :select s0=|array object of type {$arg2}| s1=|non-array object of type {$arg2}| s2=|object allocated with 'new'}0|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2445" name="note_constexpr_new_exceeds_limits">
@@ -812,7 +812,7 @@
       <unit id="2455" name="note_constexpr_non_global">
         <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{temporary|%3}2 is not a constant expression</source>
-          <target>{$arg0 :select s0=|pointer| s1=|reference|} to {$arg1 :select s0=|| s1=|subobject of |}{$arg2 :select s0=|temporary| s1=|{$arg3}|} is not a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2456" name="note_constexpr_nonliteral">
@@ -860,7 +860,7 @@
       <unit id="2463" name="note_constexpr_past_end">
         <segment>
           <source>dereferenced pointer past the end of %select{|subobject of }0%select{temporary|%2}1 is not a constant expression</source>
-          <target>dereferenced pointer past the end of {$arg0 :select s0=|| s1=|subobject of |}{$arg1 :select s0=|temporary| s1=|{$arg2}|} is not a constant expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2464" name="note_constexpr_past_end_subobject">
@@ -1130,7 +1130,7 @@
       <unit id="2508" name="note_module_odr_violation_definition_data">
         <segment>
           <source>but in '%0' found %select{%2 base %plural{1:class|:classes}2|%2 virtual base %plural{1:class|:classes}2|%ordinal2 base class with different type %3|%ordinal2 %select{non-virtual|virtual}3 base class %4|%ordinal2 base class %3 with %select{public|protected|private|no}4 access specifier}1</source>
-          <target>but in '{$arg0}' found %select{{$arg2} base %plural{1:class|:classes}2|{$arg2} virtual base %plural{1:class|:classes}2|%ordinal2 base class with different type {$arg3}|%ordinal2 {$arg3 :select s0=|non-virtual| s1=|virtual|} base class {$arg4}|%ordinal2 base class {$arg3} with {$arg1 :select s0=|public| s1=|protected| s2=|private| s3=|no}4 access specifier|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2509" name="note_module_odr_violation_different_definitions">
@@ -1142,85 +1142,85 @@
       <unit id="2510" name="note_module_odr_violation_enum">
         <segment>
           <source>but in '%0' found %select{enum that is %select{not scoped|scoped}2|enum scoped with keyword %select{struct|class}2|enum %select{without|with}2 specified type|enum with specified type %2|enum with %2 element%s2|%ordinal2 element has name %3|%ordinal2 element %3 %select{has|does not have}4 an initializer|%ordinal2 element %3 has different initializer|}1</source>
-          <target>but in '{$arg0}' found %select{enum that is {$arg2 :select s0=|not scoped| s1=|scoped|}|enum scoped with keyword {$arg2 :select s0=|struct| s1=|class|}|enum {$arg2 :select s0=|without| s1=|with|} specified type|enum with specified type {$arg2}|enum with {$arg2} element%s2|%ordinal2 element has name {$arg3}|%ordinal2 element {$arg3} {$arg1 :select s0=|has| s1=|does not have}4 an initializer| s2=|%ordinal2 element {$arg3} has different initializer| s3=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2511" name="note_module_odr_violation_field">
         <segment>
           <source state="initial">but in %select{'%1'|definition here}0 found %select{field %3|field %3 with type %4|%select{non-|}4bit-field %3|bit-field %3 with different width expression|%select{non-|}4mutable field %3|field %3 with %select{no|an}4 initializer|field %3 with a different initializer}2</source>
-          <target>but in {$arg0 :select s0=|'{$arg1}'| s1=|definition here|} found %select{field {$arg3}|field {$arg3} with type {$arg4}|{$arg4 :select s0=|non-| s1=||}bit-field {$arg3}|bit-field {$arg3} with different width expression|{$arg4 :select s0=|non-| s1=||}mutable field {$arg3}|field {$arg3} with {$arg2 :select s0=|no| s1=|an}4 initializer| s2=|field {$arg3} with a different initializer|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2512" name="note_module_odr_violation_function">
         <segment>
           <source>but in '%0' found %select{different return type %2|%ordinal2 parameter with name %3|%ordinal2 parameter with type %3%select{| decayed from %5}4|%ordinal2 parameter with%select{out|}3 a default argument|%ordinal2 parameter with a different default argument|a different body}1</source>
-          <target>but in '{$arg0}' found %select{different return type {$arg2}|%ordinal2 parameter with name {$arg3}|%ordinal2 parameter with type {$arg3}{$arg4 :select s0=|| s1=| decayed from {$arg5}|}|%ordinal2 parameter with{$arg1 :select s0=|out| s1=|}3 a default argument| s2=|%ordinal2 parameter with a different default argument| s3=|a different body|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2513" name="note_module_odr_violation_method_params">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{%select{method %4|constructor|destructor}3 that has %5 parameter%s5|%select{method %4|constructor|destructor}3 with %ordinal5 parameter of type %6%select{| decayed from %8}7|%select{method %4|constructor|destructor}3 with %ordinal5 parameter named %6}2</source>
-          <target>but in {$arg0 :select s0=|'{$arg1}'| s1=|definition here|} found %select{{$arg3 :select s0=|method {$arg4}| s1=|constructor| s2=|destructor|} that has {$arg5} parameter%s5|{$arg3 :select s0=|method {$arg4}| s1=|constructor| s2=|destructor|} with %ordinal5 parameter of type {$arg6}{$arg7 :select s0=|| s1=| decayed from {$arg8}|}|{$arg2 :select s0=|method {$arg4}| s1=|constructor| s2=|destructor}3 with %ordinal5 parameter named {$arg6}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2514" name="note_module_odr_violation_mismatch_decl">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{end of class|public access specifier|private access specifier|protected access specifier|static assert|field|method|type alias|typedef|data member|friend declaration|function template|method|instance variable|property}2</source>
-          <target>but in {$arg0 :select s0=|'{$arg1}'| s1=|definition here|} found {$arg2 :select s0=|end of class| s1=|public access specifier| s2=|private access specifier| s3=|protected access specifier| s4=|static assert| s5=|field| s6=|method| s7=|type alias| s8=|typedef| s9=|data member| s10=|friend declaration| s11=|function template| s12=|method| s13=|instance variable| s14=|property|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2515" name="note_module_odr_violation_mismatch_decl_unknown">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{||||different static assert|different field|different method|different type alias|different typedef|different data member|different friend declaration|different function template|different method|different instance variable|different property|another unexpected decl}2</source>
-          <target>but in {$arg0 :select s0=|'{$arg1}'| s1=|definition here|} found {$arg2 :select s0=|| s1=|| s2=|| s3=|| s4=|different static assert| s5=|different field| s6=|different method| s7=|different type alias| s8=|different typedef| s9=|different data member| s10=|different friend declaration| s11=|different function template| s12=|different method| s13=|different instance variable| s14=|different property| s15=|another unexpected decl|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2516" name="note_module_odr_violation_objc_interface">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{%select{no super class|super class with type %4}3|instance variable '%3' access control is %select{|@private|@protected|@public|@package}4}2</source>
-          <target>but in {$arg0 :select s0=|'{$arg1}'| s1=|definition here|} found %select{{$arg3 :select s0=|no super class| s1=|super class with type {$arg4}|}|instance variable '{$arg3}' access control is {$arg2 :select s0=|| s1=|@private| s2=|@protected| s3=|@public| s4=|@package}4|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2517" name="note_module_odr_violation_objc_method">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{method %3 with different return type %4|method %3 as %select{class|instance}4 method|%select{no|'required'|'optional'}3 method control|method %3 with %select{no designated initializer|designated initializer}4|%select{regular|direct}4 method %3|different method %3}2</source>
-          <target>but in {$arg0 :select s0=|'{$arg1}'| s1=|definition here|} found %select{method {$arg3} with different return type {$arg4}|method {$arg3} as {$arg4 :select s0=|class| s1=|instance|} method|{$arg3 :select s0=|no| s1=|'required'| s2=|'optional'|} method control|method {$arg3} with {$arg4 :select s0=|no designated initializer| s1=|designated initializer|}|{$arg2 :select s0=|regular| s1=|direct}4 method {$arg3}| s2=|different method {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2518" name="note_module_odr_violation_objc_property">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{property %3|property %3 with type %4|%select{no|'required'|'optional'}3 property control|property %3 with different '%select{none|readonly|getter|assign|readwrite|retain|copy|nonatomic|setter|atomic|weak|strong|unsafe_unretained|nullability|null_resettable|class|direct}4' attribute}2</source>
-          <target>but in {$arg0 :select s0=|'{$arg1}'| s1=|definition here|} found %select{property {$arg3}|property {$arg3} with type {$arg4}|{$arg3 :select s0=|no| s1=|'required'| s2=|'optional'|} property control|property {$arg3} with different '{$arg2 :select s0=|none| s1=|readonly| s2=|getter| s3=|assign| s4=|readwrite| s5=|retain| s6=|copy| s7=|nonatomic| s8=|setter| s9=|atomic| s10=|weak| s11=|strong| s12=|unsafe_unretained| s13=|nullability| s14=|null_resettable| s15=|class| s16=|direct}4' attribute|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2519" name="note_module_odr_violation_record">
         <segment>
           <source>but in '%0' found %select{static assert with different condition|static assert with different message|static assert with %select{|no }2message|%select{method %3|constructor|destructor}2|%select{method %3|constructor|destructor}2 is %select{not deleted|deleted}4|%select{method %3|constructor|destructor}2 is %select{not defaulted|defaulted}4|%select{method %3|constructor|destructor}2 is %select{|pure }4%select{not virtual|virtual}5|%select{method %3|constructor|destructor}2 is %select{not static|static}4|%select{method %3|constructor|destructor}2 is %select{not volatile|volatile}4|%select{method %3|constructor|destructor}2 is %select{not const|const}4|%select{method %3|constructor|destructor}2 is %select{not inline|inline}4|%select{method %3|constructor|destructor}2 with %ordinal4 parameter with%select{out|}5 a default argument|%select{method %3|constructor|destructor}2 with %ordinal4 parameter with a different default argument|%select{method %3|constructor|destructor}2 with %select{no |}4template arguments|%select{method %3|constructor|destructor}2 with %4 template argument%s4|%select{method %3|constructor|destructor}2 with %4 for %ordinal5 template argument|%select{method %3|constructor|destructor}2 with %select{no body|body}4|%select{method %3|constructor|destructor}2 with different body|friend %select{class|function}2|friend %2|friend function %2|function template %2 with %3 template parameter%s3|function template %2 with %ordinal3 template paramter being a %select{type|non-type|template}4 template parameter|function template %2 with %ordinal3 template parameter %select{with no name|named %5}4|function template %2 with %ordinal3 template parameter with %select{no |}4default argument|function template %2 with %ordinal3 template parameter with default argument %4|function template %2 with %ordinal3 template parameter with different type|function template %2 with %ordinal3 template parameter %select{not |}4being a template parameter pack|}1</source>
-          <target>but in '{$arg0}' found %select{static assert with different condition|static assert with different message|static assert with {$arg2 :select s0=|| s1=|no |}message|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|}|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} is {$arg4 :select s0=|not deleted| s1=|deleted|}|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} is {$arg4 :select s0=|not defaulted| s1=|defaulted|}|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} is {$arg4 :select s0=|| s1=|pure |}{$arg5 :select s0=|not virtual| s1=|virtual|}|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} is {$arg4 :select s0=|not static| s1=|static|}|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} is {$arg4 :select s0=|not volatile| s1=|volatile|}|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} is {$arg4 :select s0=|not const| s1=|const|}|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} is {$arg4 :select s0=|not inline| s1=|inline|}|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} with %ordinal4 parameter with{$arg5 :select s0=|out| s1=||} a default argument|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} with %ordinal4 parameter with a different default argument|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} with {$arg4 :select s0=|no | s1=||}template arguments|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} with {$arg4} template argument%s4|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} with {$arg4} for %ordinal5 template argument|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} with {$arg4 :select s0=|no body| s1=|body|}|{$arg2 :select s0=|method {$arg3}| s1=|constructor| s2=|destructor|} with different body|friend {$arg2 :select s0=|class| s1=|function|}|friend {$arg2}|friend function {$arg2}|function template {$arg2} with {$arg3} template parameter%s3|function template {$arg2} with %ordinal3 template paramter being a {$arg4 :select s0=|type| s1=|non-type| s2=|template|} template parameter|function template {$arg2} with %ordinal3 template parameter {$arg4 :select s0=|with no name| s1=|named {$arg5}|}|function template {$arg2} with %ordinal3 template parameter with {$arg4 :select s0=|no | s1=||}default argument|function template {$arg2} with %ordinal3 template parameter with default argument {$arg4}|function template {$arg2} with %ordinal3 template parameter with different type|function template {$arg2} with %ordinal3 template parameter {$arg1 :select s0=|not | s1=|}4being a template parameter pack| s2=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2520" name="note_module_odr_violation_referenced_protocols">
         <segment>
           <source>but in %select{'%1'|definition here}0 found %select{%3 referenced %plural{1:protocol|:protocols}3|%ordinal3 referenced protocol with different name %4}2</source>
-          <target>but in {$arg0 :select s0=|'{$arg1}'| s1=|definition here|} found %select{{$arg3} referenced %plural{1:protocol|:protocols}3|%ordinal3 referenced protocol with different name {$arg4}}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2521" name="note_module_odr_violation_template_parameter">
         <segment>
           <source>but in '%0' found %select{unnamed template parameter %2|template parameter %3|template parameter with %select{no |}2default argument|template parameter with different default argument}1</source>
-          <target>but in '{$arg0}' found %select{unnamed template parameter {$arg2}|template parameter {$arg3}|template parameter with {$arg1 :select s0=|no | s1=|}2default argument| s2=|template parameter with different default argument|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2522" name="note_module_odr_violation_typedef">
         <segment>
           <source>but in '%0' found %select{%select{typedef|type alias}2 name %3|%select{typedef|type alias}2 %3 with different underlying type %4}1</source>
-          <target>but in '{$arg0}' found %select{{$arg2 :select s0=|typedef| s1=|type alias|} name {$arg3}|{$arg1 :select s0=|typedef| s1=|type alias}2 {$arg3} with different underlying type {$arg4}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2523" name="note_module_odr_violation_variable">
         <segment>
           <source>but in '%0' found %select{data member with name %2|data member %2 with different type %3|data member %2 with%select{out|}3 an initializer|data member %2 with a different initializer|data member %2 %select{is constexpr|is not constexpr}3}1</source>
-          <target>but in '{$arg0}' found %select{data member with name {$arg2}|data member {$arg2} with different type {$arg3}|data member {$arg2} with{$arg3 :select s0=|out| s1=||} an initializer|data member {$arg2} with a different initializer|data member {$arg2} {$arg1 :select s0=|is constexpr| s1=|is not constexpr}3|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2524" name="note_non_null_attribute_failed">

@@ -350,7 +350,7 @@
       <unit id="2878" name="err_acc_clause_in_clause_region">
         <segment>
           <source>loop with a '%0' clause may not exist in the region of a '%1' clause%select{| on a '%3' construct}2</source>
-          <target>loop with a '{$arg0}' clause may not exist in the region of a '{$arg1}' clause{$arg2 :select s0=|| s1=| on a '{$arg3}' construct|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2879" name="err_acc_clause_multiple_loops">
@@ -386,7 +386,7 @@
       <unit id="2884" name="err_acc_collapse_loop_count">
         <segment>
           <source>OpenACC 'collapse' clause loop count must be a %select{constant expression|positive integer value, evaluated to %1}0</source>
-          <target>OpenACC 'collapse' clause loop count must be a {$arg0 :select s0=|constant expression| s1=|positive integer value, evaluated to {$arg1}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2885" name="err_acc_construct_appertainment">
@@ -458,7 +458,7 @@
       <unit id="2896" name="err_acc_gang_dim_value">
         <segment>
           <source>argument to 'gang' clause dimension must be %select{a constant expression|1, 2, or 3: evaluated to %1}0</source>
-          <target>argument to 'gang' clause dimension must be {$arg0 :select s0=|a constant expression| s1=|1, 2, or 3: evaluated to {$arg1}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2897" name="err_acc_gang_multiple_elt">
@@ -488,7 +488,7 @@
       <unit id="2901" name="err_acc_int_arg_invalid">
         <segment>
           <source>'%0' argument on '%1' clause is not permitted on a%select{|n orphaned}2 '%3' construct%select{| associated with a '%5' compute construct}4</source>
-          <target>'{$arg0}' argument on '{$arg1}' clause is not permitted on a{$arg2 :select s0=|| s1=|n orphaned|} '{$arg3}' construct{$arg4 :select s0=|| s1=| associated with a '{$arg5}' compute construct|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2902" name="err_acc_int_expr_explicit_conversion">
@@ -512,7 +512,7 @@
       <unit id="2905" name="err_acc_int_expr_requires_integer">
         <segment>
           <source>OpenACC %select{clause '%1'|directive '%2'|sub-array bound}0 requires expression of integer type (%3 invalid)</source>
-          <target>OpenACC {$arg0 :select s0=|clause '{$arg1}'| s1=|directive '{$arg2}'| s2=|sub-array bound|} requires expression of integer type ({$arg3} invalid)</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2906" name="err_acc_intervening_code">
@@ -524,7 +524,7 @@
       <unit id="2907" name="err_acc_invalid_atomic">
         <segment>
           <source>statement associated with OpenACC 'atomic%select{| %1}0' directive is invalid</source>
-          <target>statement associated with OpenACC 'atomic{$arg0 :select s0=|| s1=| {$arg1}|}' directive is invalid</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2908" name="err_acc_invalid_default_type">
@@ -536,7 +536,7 @@
       <unit id="2909" name="err_acc_invalid_in_loop">
         <segment>
           <source>%select{OpenACC '%3' construct|while loop|do loop}0 cannot appear in intervening code of a '%1' with a '%2' clause</source>
-          <target>{$arg0 :select s0=|OpenACC '{$arg3}' construct| s1=|while loop| s2=|do loop|} cannot appear in intervening code of a '{$arg1}' with a '{$arg2}' clause</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2910" name="err_acc_invalid_modifier">
@@ -614,7 +614,7 @@
       <unit id="2922" name="err_acc_num_arg_conflict">
         <segment>
           <source>'%0' argument to '%1' clause not allowed on a '%2' construct%select{| associated with a '%4' construct}3 that has a '%5' clause</source>
-          <target>'{$arg0}' argument to '{$arg1}' clause not allowed on a '{$arg2}' construct{$arg3 :select s0=|| s1=| associated with a '{$arg4}' construct|} that has a '{$arg5}' clause</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2923" name="err_acc_num_arg_conflict_reverse">
@@ -626,7 +626,7 @@
       <unit id="2924" name="err_acc_num_gangs_num_args">
         <segment>
           <source>%select{no|too many}0 integer expression arguments provided to OpenACC 'num_gangs' %select{|clause: '%1' directive expects maximum of %2, %3 were provided}0</source>
-          <target>{$arg0 :select s0=|no| s1=|too many|} integer expression arguments provided to OpenACC 'num_gangs' {$arg0 :select s0=|| s1=|clause: '{$arg1}' directive expects maximum of {$arg2}, {$arg3} were provided|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2925" name="err_acc_reduction_composite_member_type">
@@ -668,7 +668,7 @@
       <unit id="2931" name="err_acc_size_expr_value">
         <segment>
           <source>OpenACC 'tile' clause size expression must be %select{an asterisk or a constant expression|positive integer value, evaluated to %1}0</source>
-          <target>OpenACC 'tile' clause size expression must be {$arg0 :select s0=|an asterisk or a constant expression| s1=|positive integer value, evaluated to {$arg1}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2932" name="err_acc_subarray_base_plus_length_out_of_range">
@@ -944,7 +944,7 @@
       <unit id="2977" name="err_aligned_allocation_unavailable">
         <segment>
           <source>aligned %select{allocation|deallocation}0 function of type '%1' is %select{only|not}4 available on %2%select{ %3 or newer|}4</source>
-          <target>aligned {$arg0 :select s0=|allocation| s1=|deallocation|} function of type '{$arg1}' is {$arg4 :select s0=|only| s1=|not|} available on {$arg2}{$arg4 :select s0=| {$arg3} or newer| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2978" name="err_aligned_attribute_argument_not_int">
@@ -1142,7 +1142,7 @@
       <unit id="3010" name="err_anyx86_interrupt_attribute">
         <segment>
           <source>%select{x86|x86-64}0 'interrupt' attribute only applies to functions that have %select{a 'void' return type|only a pointer parameter optionally followed by an integer parameter|a pointer as the first parameter|a %2 type as the second parameter}1</source>
-          <target>{$arg0 :select s0=|x86| s1=|x86-64|} 'interrupt' attribute only applies to functions that have {$arg1 :select s0=|a 'void' return type| s1=|only a pointer parameter optionally followed by an integer parameter| s2=|a pointer as the first parameter| s3=|a {$arg2} type as the second parameter|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3011" name="err_anyx86_interrupt_called">
@@ -1274,7 +1274,7 @@
       <unit id="3032" name="err_arc_mismatched_cast">
         <segment>
           <source>%select{implicit conversion|cast}0 of %select{%2|a non-Objective-C pointer type %2|a block pointer|an Objective-C pointer|an indirect pointer to an Objective-C pointer}1 to %3 is disallowed with ARC</source>
-          <target>{$arg0 :select s0=|implicit conversion| s1=|cast|} of {$arg1 :select s0=|{$arg2}| s1=|a non-Objective-C pointer type {$arg2}| s2=|a block pointer| s3=|an Objective-C pointer| s4=|an indirect pointer to an Objective-C pointer|} to {$arg3} is disallowed with ARC</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3033" name="err_arc_multiple_method_decl">
@@ -2096,7 +2096,7 @@
       <unit id="3169" name="err_attribute_cleanup_arg_not_function">
         <segment>
           <source>'cleanup' argument %select{|%1 |%1 }0is not a %select{||single }0function</source>
-          <target>'cleanup' argument {$arg0 :select s0=|| s1=|{$arg1} | s2=|{$arg1} |}is not a {$arg0 :select s0=|| s1=|| s2=|single |}function</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3170" name="err_attribute_cleanup_func_arg_incompatible_type">
@@ -2246,7 +2246,7 @@
       <unit id="3194" name="err_attribute_malloc_arg_not_function">
         <segment>
           <source>'malloc' argument %select{for deallocator |%1 |%1 }0is not a %select{||single }0function</source>
-          <target>'malloc' argument {$arg0 :select s0=|for deallocator | s1=|{$arg1} | s2=|{$arg1} |}is not a {$arg0 :select s0=|| s1=|| s2=|single |}function</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3195" name="err_attribute_malloc_arg_not_function_with_pointer_arg">
@@ -2672,7 +2672,7 @@
       <unit id="3265" name="err_auto_not_allowed">
         <segment>
           <source>%select{'auto'|'decltype(auto)'|'__auto_type'|use of %select{class template|function template|variable template|alias template|template template parameter|concept|template}2 %3 requires template arguments; argument deduction}0 not allowed %select{in function prototype|in non-static struct member|in struct member|in non-static union member|in union member|in non-static class member|in interface member|in exception declaration|in template parameter until C++17|in block literal|in template argument|in typedef|in type alias|in function return type|in conversion function type|here|in lambda parameter|in type allocated by 'new'|in K&amp;R-style function parameter|in template parameter|in friend declaration|in function prototype that is not a function declaration|in requires expression parameter|in array declaration|in declaration of conversion function template|in lambda parameter before C++14}1</source>
-          <target>%select{'auto'|'decltype(auto)'|'__auto_type'|use of {$arg0 :select s0=|class template| s1=|function template| s2=|variable template| s3=|alias template| s4=|template template parameter| s5=|concept| s6=|template}2 {$arg3} requires template arguments; argument deduction|} not allowed {$arg1 :select s0=|in function prototype| s1=|in non-static struct member| s2=|in struct member| s3=|in non-static union member| s4=|in union member| s5=|in non-static class member| s6=|in interface member| s7=|in exception declaration| s8=|in template parameter until C++17| s9=|in block literal| s10=|in template argument| s11=|in typedef| s12=|in type alias| s13=|in function return type| s14=|in conversion function type| s15=|here| s16=|in lambda parameter| s17=|in type allocated by 'new'| s18=|in K&amp;R-style function parameter| s19=|in template parameter| s20=|in friend declaration| s21=|in function prototype that is not a function declaration| s22=|in requires expression parameter| s23=|in array declaration| s24=|in declaration of conversion function template| s25=|in lambda parameter before C++14|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3266" name="err_auto_not_allowed_var_inst">
@@ -3038,13 +3038,13 @@
       <unit id="3326" name="err_bitfield_too_wide">
         <segment>
           <source>%select{bit-field %1|anonymous bit-field}0 is too wide (%2 bits)</source>
-          <target>{$arg0 :select s0=|bit-field {$arg1}| s1=|anonymous bit-field|} is too wide ({$arg2} bits)</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3327" name="err_bitfield_width_exceeds_type_width">
         <segment>
           <source>width of%select{ anonymous|}0 bit-field%select{| %1}0 (%2 bits) exceeds the %select{width|size}3 of its type (%4 bit%s4)</source>
-          <target>width of{$arg0 :select s0=| anonymous| s1=||} bit-field{$arg0 :select s0=|| s1=| {$arg1}|} ({$arg2} bits) exceeds the {$arg3 :select s0=|width| s1=|size|} of its type ({$arg4} bit%s4)</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3328" name="err_block_decl_ref_not_modifiable_lvalue">
@@ -3452,13 +3452,13 @@
       <unit id="3395" name="err_cannot_pass_to_vararg">
         <segment>
           <source>cannot pass %select{expression of type %1|initializer list}0 to variadic %select{function|block|method|constructor}2</source>
-          <target>cannot pass {$arg0 :select s0=|expression of type {$arg1}| s1=|initializer list|} to variadic {$arg2 :select s0=|function| s1=|block| s2=|method| s3=|constructor|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3396" name="err_cannot_pass_to_vararg_format">
         <segment>
           <source>cannot pass %select{expression of type %1|initializer list}0 to variadic %select{function|block|method|constructor}2; expected type from format string was %3</source>
-          <target>cannot pass {$arg0 :select s0=|expression of type {$arg1}| s1=|initializer list|} to variadic {$arg2 :select s0=|function| s1=|block| s2=|method| s3=|constructor|}; expected type from format string was {$arg3}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3397" name="err_capture_bad_target">
@@ -3656,7 +3656,7 @@
       <unit id="3429" name="err_cconv_change">
         <segment>
           <source>function declared '%0' here was previously declared %select{'%2'|without calling convention}1</source>
-          <target>function declared '{$arg0}' here was previously declared {$arg1 :select s0=|'{$arg2}'| s1=|without calling convention|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3430" name="err_cconv_incomplete_param_type">
@@ -3746,7 +3746,7 @@
       <unit id="3444" name="err_compound_qualified_function_type">
         <segment>
           <source>%select{block pointer|pointer|reference}0 to function type %select{%2 |}1cannot have '%3' qualifier</source>
-          <target>{$arg0 :select s0=|block pointer| s1=|pointer| s2=|reference|} to function type {$arg1 :select s0=|{$arg2} | s1=||}cannot have '{$arg3}' qualifier</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3445" name="err_computed_type_in_declarative_nns">
@@ -3950,7 +3950,7 @@
       <unit id="3478" name="err_constexpr_dtor_subobject">
         <segment>
           <source>destructor cannot be declared %select{&lt;ERROR&gt;|constexpr|consteval|constinit}0 because %select{data member %2|base class %3}1 does not have a constexpr destructor</source>
-          <target>destructor cannot be declared {$arg0 :select s0=|&lt;ERROR&gt;| s1=|constexpr| s2=|consteval| s3=|constinit|} because {$arg1 :select s0=|data member {$arg2}| s1=|base class {$arg3}|} does not have a constexpr destructor</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3479" name="err_constexpr_if_condition_expression_is_not_constant">
@@ -4160,7 +4160,7 @@
       <unit id="3513" name="err_conv_function_with_complex_decl">
         <segment>
           <source>cannot specify any part of a return type in the declaration of a conversion function%select{; put the complete type after 'operator'|; use a typedef to declare a conversion to %1|; use an alias template to declare a conversion to %1|}0</source>
-          <target>cannot specify any part of a return type in the declaration of a conversion function{$arg0 :select s0=|; put the complete type after 'operator'| s1=|; use a typedef to declare a conversion to {$arg1}| s2=|; use an alias template to declare a conversion to {$arg1}| s3=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3514" name="err_conv_function_with_params">
@@ -4352,7 +4352,7 @@
       <unit id="3545" name="err_counted_by_attr_pointee_unknown_size">
         <segment>
           <source>'%select{counted_by|sized_by|counted_by_or_null|sized_by_or_null}4' %select{cannot|should not}3 be applied to %select{a pointer with pointee|an array with element}0 of unknown size because %1 is %select{an incomplete type|a sizeless type|a function type|a struct type with a flexible array member%select{|. This will be an error in a future compiler version}3}2</source>
-          <target>'{$arg4 :select s0=|counted_by| s1=|sized_by| s2=|counted_by_or_null| s3=|sized_by_or_null|}' {$arg3 :select s0=|cannot| s1=|should not|} be applied to {$arg0 :select s0=|a pointer with pointee| s1=|an array with element|} of unknown size because {$arg1} is %select{an incomplete type|a sizeless type|a function type|a struct type with a flexible array member{$arg2 :select s0=|| s1=|. This will be an error in a future compiler version}3|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3546" name="err_counted_by_attr_refer_to_itself">
@@ -4364,13 +4364,13 @@
       <unit id="3547" name="err_counted_by_on_incomplete_type_on_assign">
         <segment>
           <source>cannot %select{assign to %select{object|'%1'}2 with|pass argument to %select{parameter|parameter '%1'}2 with|return|convert to|%select{|implicitly }3initialize %select{object|'%1'}2 with|pass argument to parameter with|cast to|pass argument to parameter with}0 '%5' attributed type %4 because the pointee type %6 is incomplete</source>
-          <target>cannot %select{assign to {$arg2 :select s0=|object| s1=|'{$arg1}'|} with|pass argument to {$arg2 :select s0=|parameter| s1=|parameter '{$arg1}'|} with|return|convert to|{$arg3 :select s0=|| s1=|implicitly |}initialize {$arg0 :select s0=|object| s1=|'{$arg1}'}2 with| s2=|pass argument to parameter with| s3=|cast to| s4=|pass argument to parameter with|} '{$arg5}' attributed type {$arg4} because the pointee type {$arg6} is incomplete</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3548" name="err_counted_by_on_incomplete_type_on_use">
         <segment>
           <source>cannot %select{use '%1' with '%4' attributed|call '%1' with '%4' attributed return}0 type %2 because the pointee type %3 is incomplete</source>
-          <target>cannot {$arg0 :select s0=|use '{$arg1}' with '{$arg4}' attributed| s1=|call '{$arg1}' with '{$arg4}' attributed return|} type {$arg2} because the pointee type {$arg3} is incomplete</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3549" name="err_countof_arg_not_array_type">
@@ -4634,7 +4634,7 @@
       <unit id="3592" name="err_decomp_decl_multiple_bases_with_members">
         <segment>
           <source>cannot decompose class type %1: %select{its base classes %2 and|both it and its base class}0 %3 have non-static data members</source>
-          <target>cannot decompose class type {$arg1}: {$arg0 :select s0=|its base classes {$arg2} and| s1=|both it and its base class|} {$arg3} have non-static data members</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3593" name="err_decomp_decl_not_alone">
@@ -4694,7 +4694,7 @@
       <unit id="3602" name="err_decomp_decl_wrong_number_bindings">
         <segment>
           <source>type %0 decomposes into %3 %plural{1:element|:elements}2, but %select{%plural{0:no|:only %1}1|%1}4 %plural{1:name was|:names were}1 provided</source>
-          <target>type {$arg0} decomposes into {$arg3} %plural{1:element|:elements}2, but %select{%plural{0:no|:only {$arg1}}1|{$arg1}}4 %plural{1:name was|:names were}1 provided</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3603" name="err_decrement_bool">
@@ -4880,7 +4880,7 @@
       <unit id="3633" name="err_defaulted_comparison_constexpr_mismatch">
         <segment>
           <source state="initial">defaulted definition of %select{%select{&lt;ERROR&gt;|equality|three-way|equality|relational}1 comparison operator|three-way comparison operator}0 cannot be declared %select{constexpr|consteval}2 because %select{it|for which the corresponding implicit 'operator==' }0 invokes a non-constexpr comparison function</source>
-          <target>defaulted definition of %select{{$arg0 :select s0=|&lt;ERROR&gt;| s1=|equality| s2=|three-way| s3=|equality| s4=|relational}1 comparison operator| s5=|three-way comparison operator|} cannot be declared {$arg2 :select s0=|constexpr| s1=|consteval|} because {$arg0 :select s0=|it| s1=|for which the corresponding implicit 'operator==' |} invokes a non-constexpr comparison function</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3634" name="err_defaulted_comparison_deduced_return_type_not_auto">
@@ -4910,7 +4910,7 @@
       <unit id="3638" name="err_defaulted_comparison_param">
         <segment>
           <source>invalid parameter type for defaulted %select{&lt;ERROR&gt;|equality|three-way|equality|relational}0 comparison operator; found %1, expected %2%select{| or %4}3</source>
-          <target>invalid parameter type for defaulted {$arg0 :select s0=|&lt;ERROR&gt;| s1=|equality| s2=|three-way| s3=|equality| s4=|relational|} comparison operator; found {$arg1}, expected {$arg2}{$arg3 :select s0=|| s1=| or {$arg4}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3639" name="err_defaulted_comparison_param_mismatch">
@@ -5048,7 +5048,7 @@
       <unit id="3661" name="err_deleted_function_use">
         <segment>
           <source>attempt to use a deleted function%select{|: %1}0</source>
-          <target>attempt to use a deleted function{$arg0 :select s0=|| s1=|: {$arg1}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3662" name="err_deleted_inherited_ctor_use">
@@ -5438,7 +5438,7 @@
       <unit id="3726" name="err_enum_invalid_underlying">
         <segment>
           <source>%select{non-integral type %0|%0}1 is an invalid underlying type</source>
-          <target>{$arg1 :select s0=|non-integral type {$arg0}| s1=|{$arg0}|} is an invalid underlying type</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3727" name="err_enum_mode_vector_type">
@@ -6776,7 +6776,7 @@
       <unit id="3949" name="err_incompatible_qualified_id">
         <segment>
           <source>%select{%diff{assigning to $ from incompatible type $|assigning to type from incompatible type}0,1|%diff{passing $ to parameter of incompatible type $|passing type to parameter of incompatible type}0,1|%diff{returning $ from a function with incompatible result type $|returning type from a function with incompatible result type}0,1|%diff{converting $ to incompatible type $|converting type to incompatible type}0,1|%diff{initializing $ with an expression of incompatible type $|initializing type with an expression of incompatible type}0,1|%diff{sending $ to parameter of incompatible type $|sending type to parameter of incompatible type}0,1|%diff{casting $ to incompatible type $|casting type to incompatible type}0,1}2</source>
-          <target>%select{%diff{assigning to $ from incompatible type $|assigning to type from incompatible type}0,1|%diff{passing $ to parameter of incompatible type $|passing type to parameter of incompatible type}0,1|%diff{returning $ from a function with incompatible result type $|returning type from a function with incompatible result type}0,1|%diff{converting $ to incompatible type $|converting type to incompatible type}0,1|%diff{initializing $ with an expression of incompatible type $|initializing type with an expression of incompatible type}0,1|%diff{sending $ to parameter of incompatible type $|sending type to parameter of incompatible type}0,1|%diff{casting $ to incompatible type $|casting type to incompatible type}0,1}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3950" name="err_incompatible_replacement_type">
@@ -6788,7 +6788,7 @@
       <unit id="3951" name="err_incompatible_vectors">
         <segment>
           <source>incompatible vector types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2</source>
-          <target>incompatible vector types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3952" name="err_incomplete_base_class">
@@ -6950,7 +6950,7 @@
       <unit id="3978" name="err_init_conversion_failed">
         <segment>
           <source>cannot initialize %select{a variable|a parameter|template parameter|return object|statement expression result|an exception object|a member subobject|an array element|a new value|a value|a base class|a constructor delegation|a vector element|a block element|a block element|a complex element|a lambda capture|a compound literal initializer|a related result|a parameter of CF audited function|a structured binding|a member subobject}0 %diff{of type $ with an %select{rvalue|lvalue}2 of type $|with an %select{rvalue|lvalue}2 of incompatible type}1,3%select{|: different classes%diff{ ($ vs $)|}5,6|: different number of parameters (%5 vs %6)|: type mismatch at %ordinal5 parameter%diff{ ($ vs $)|}6,7|: different return type%diff{ ($ vs $)|}5,6|: different qualifiers (%5 vs %6)|: different exception specifications}4</source>
-          <target>cannot initialize {$arg0 :select s0=|a variable| s1=|a parameter| s2=|template parameter| s3=|return object| s4=|statement expression result| s5=|an exception object| s6=|a member subobject| s7=|an array element| s8=|a new value| s9=|a value| s10=|a base class| s11=|a constructor delegation| s12=|a vector element| s13=|a block element| s14=|a block element| s15=|a complex element| s16=|a lambda capture| s17=|a compound literal initializer| s18=|a related result| s19=|a parameter of CF audited function| s20=|a structured binding| s21=|a member subobject|} %diff{of type $ with an {$arg2 :select s0=|rvalue| s1=|lvalue|} of type $|with an {$arg1 :select s0=|rvalue| s1=|lvalue}2 of incompatible type|},3%select{|: different classes%diff{ ($ vs $)|}5,6|: different number of parameters ({$arg5} vs {$arg6})|: type mismatch at %ordinal5 parameter%diff{ ($ vs $)|}6,7|: different return type%diff{ ($ vs $)|}5,6|: different qualifiers ({$arg5} vs {$arg6})|: different exception specifications}4</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3979" name="err_init_element_not_constant">
@@ -7058,7 +7058,7 @@
       <unit id="3996" name="err_int_to_block_pointer">
         <segment>
           <source>invalid block pointer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2</source>
-          <target>invalid block pointer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="3997" name="err_integer_incorrect_bit_count">
@@ -7160,7 +7160,7 @@
       <unit id="4013" name="err_invalid_constexpr_member">
         <segment>
           <source>non-static data member cannot be constexpr%select{; did you intend to make it %select{const|static}0?|}1</source>
-          <target>non-static data member cannot be constexpr%select{; did you intend to make it {$arg1 :select s0=|const| s1=|static}0?| s2=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4014" name="err_invalid_constexpr_var_decl">
@@ -7370,7 +7370,7 @@
       <unit id="4048" name="err_invalid_qualified_function_type">
         <segment>
           <source>%select{non-member function|static member function|explicit object member function|deduction guide}0 %select{of type %2 |}1cannot have '%3' qualifier</source>
-          <target>{$arg0 :select s0=|non-member function| s1=|static member function| s2=|explicit object member function| s3=|deduction guide|} {$arg1 :select s0=|of type {$arg2} | s1=||}cannot have '{$arg3}' qualifier</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4049" name="err_invalid_receiver_class_message">
@@ -7814,7 +7814,7 @@
       <unit id="4122" name="err_make_signed_integral_only">
         <segment>
           <source>'%select{make_unsigned|make_signed}0' is only compatible with non-%select{bool|_BitInt(1)}1 integers and enum types, but was given %2%select{| whose underlying type is %4}3</source>
-          <target>'{$arg0 :select s0=|make_unsigned| s1=|make_signed|}' is only compatible with non-{$arg1 :select s0=|bool| s1=|_BitInt(1)|} integers and enum types, but was given {$arg2}{$arg3 :select s0=|| s1=| whose underlying type is {$arg4}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4123" name="err_malformed_std_class_template">
@@ -8102,7 +8102,7 @@
       <unit id="4170" name="err_mismatched_owning_module">
         <segment>
           <source>declaration of %0 in %select{the global module|module %2}1 follows declaration in %select{the global module|module %4}3</source>
-          <target>declaration of {$arg0} in {$arg1 :select s0=|the global module| s1=|module {$arg2}|} follows declaration in {$arg3 :select s0=|the global module| s1=|module {$arg4}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4171" name="err_mismatched_uuid">
@@ -8156,7 +8156,7 @@
       <unit id="4179" name="err_missing_default_ctor">
         <segment>
           <source>%select{constructor for %1 must explicitly initialize the|implicit default constructor for %1 must explicitly initialize the|cannot use constructor inherited from base class %4;}0 %select{base class|member}2 %3 %select{which|which|of %1}0 does not have a default constructor</source>
-          <target>{$arg0 :select s0=|constructor for {$arg1} must explicitly initialize the| s1=|implicit default constructor for {$arg1} must explicitly initialize the| s2=|cannot use constructor inherited from base class {$arg4};|} {$arg2 :select s0=|base class| s1=|member|} {$arg3} {$arg0 :select s0=|which| s1=|which| s2=|of {$arg1}|} does not have a default constructor</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4180" name="err_missing_exception_specification">
@@ -8330,7 +8330,7 @@
       <unit id="4208" name="err_module_unimported_use_header">
         <segment>
           <source>%select{missing '#include'|missing '#include %3'}2; %select{||default argument of |explicit specialization of |partial specialization of }0%1 must be %select{declared|defined|defined|declared|declared}0 before it is used</source>
-          <target>{$arg2 :select s0=|missing '#include'| s1=|missing '#include {$arg3}'|}; {$arg0 :select s0=|| s1=|| s2=|default argument of | s3=|explicit specialization of | s4=|partial specialization of |}{$arg1} must be {$arg0 :select s0=|declared| s1=|defined| s2=|defined| s3=|declared| s4=|declared|} before it is used</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4209" name="err_module_unimported_use_multiple">
@@ -8462,7 +8462,7 @@
       <unit id="4230" name="err_musttail_callconv_mismatch">
         <segment>
           <source>cannot perform a tail call to function%select{| %1}0 because it uses an incompatible calling convention</source>
-          <target>cannot perform a tail call to function{$arg0 :select s0=|| s1=| {$arg1}|} because it uses an incompatible calling convention</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4231" name="err_musttail_forbidden_from_this_context">
@@ -8474,13 +8474,13 @@
       <unit id="4232" name="err_musttail_member_mismatch">
         <segment>
           <source>%select{non-member|static member|non-static member}0 function cannot perform a tail call to %select{non-member|static member|non-static member|pointer-to-member}1 function%select{| %3}2</source>
-          <target>{$arg0 :select s0=|non-member| s1=|static member| s2=|non-static member|} function cannot perform a tail call to {$arg1 :select s0=|non-member| s1=|static member| s2=|non-static member| s3=|pointer-to-member|} function{$arg2 :select s0=|| s1=| {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4233" name="err_musttail_mismatch">
         <segment>
           <source>cannot perform a tail call to function%select{| %1}0 because its signature is incompatible with the calling function</source>
-          <target>cannot perform a tail call to function{$arg0 :select s0=|| s1=| {$arg1}|} because its signature is incompatible with the calling function</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4234" name="err_musttail_needs_call">
@@ -8588,7 +8588,7 @@
       <unit id="4251" name="err_nested_pointer_qualifier_mismatch">
         <segment>
           <source>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 discards qualifiers in nested pointer types</source>
-          <target>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 discards qualifiers in nested pointer types</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4252" name="err_nested_redefinition">
@@ -8822,7 +8822,7 @@
       <unit id="4290" name="err_non_first_default_compare_deletes">
         <segment>
           <source>defaulting %select{this %select{&lt;ERROR&gt;|equality|three-way|equality|relational}1 comparison operator|the corresponding implicit 'operator==' for this defaulted 'operator&lt;=&gt;'}0 would delete it after its first declaration</source>
-          <target>defaulting %select{this {$arg0 :select s0=|&lt;ERROR&gt;| s1=|equality| s2=|three-way| s3=|equality| s4=|relational}1 comparison operator| s5=|the corresponding implicit 'operator==' for this defaulted 'operator&lt;=&gt;'|} would delete it after its first declaration</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4291" name="err_non_first_default_compare_in_class">
@@ -8894,7 +8894,7 @@
       <unit id="4302" name="err_non_trivial_c_union_in_invalid_context">
         <segment>
           <source>cannot %select{use type %1 for a function/method parameter|use type %1 for function/method return|default-initialize an object of type %1|declare an automatic variable of type %1|copy-initialize an object of type %1|assign to a variable of type %1|construct an automatic compound literal of type %1|capture a variable of type %1|cannot use volatile type %1 where it causes an lvalue-to-rvalue conversion}3 since it %select{contains|is}2 a union that is non-trivial to %select{default-initialize|destruct|copy}0</source>
-          <target>cannot {$arg3 :select s0=|use type {$arg1} for a function/method parameter| s1=|use type {$arg1} for function/method return| s2=|default-initialize an object of type {$arg1}| s3=|declare an automatic variable of type {$arg1}| s4=|copy-initialize an object of type {$arg1}| s5=|assign to a variable of type {$arg1}| s6=|construct an automatic compound literal of type {$arg1}| s7=|capture a variable of type {$arg1}| s8=|cannot use volatile type {$arg1} where it causes an lvalue-to-rvalue conversion|} since it {$arg2 :select s0=|contains| s1=|is|} a union that is non-trivial to {$arg0 :select s0=|default-initialize| s1=|destruct| s2=|copy|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4303" name="err_non_type_template_arg_addr_label_diff">
@@ -8972,13 +8972,13 @@
       <unit id="4315" name="err_nosetter_property_assignment">
         <segment>
           <source>%select{assignment to readonly property|no setter method %1 for assignment to property}0</source>
-          <target>{$arg0 :select s0=|assignment to readonly property| s1=|no setter method {$arg1} for assignment to property|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4316" name="err_nosetter_property_incdec">
         <segment>
           <source>%select{%select{increment|decrement}1 of readonly property|no setter method %2 for %select{increment|decrement}1 of property}0</source>
-          <target>%select{{$arg1 :select s0=|increment| s1=|decrement|} of readonly property|no setter method {$arg2} for {$arg0 :select s0=|increment| s1=|decrement}1 of property|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4317" name="err_not_class_template_specialization">
@@ -9032,7 +9032,7 @@
       <unit id="4325" name="err_nserrordomain_invalid_decl">
         <segment>
           <source>domain argument %select{|%1 }0does not refer to global constant</source>
-          <target>domain argument {$arg0 :select s0=|| s1=|{$arg1} |}does not refer to global constant</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4326" name="err_nserrordomain_wrong_type">
@@ -9068,7 +9068,7 @@
       <unit id="4331" name="err_nullptr_cast">
         <segment>
           <source>cannot cast an object of type %select{'nullptr_t' to %1|%1 to 'nullptr_t'}0</source>
-          <target>cannot cast an object of type {$arg0 :select s0=|'nullptr_t' to {$arg1}| s1=|{$arg1} to 'nullptr_t'|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4332" name="err_objc_array_of_interfaces">
@@ -9116,7 +9116,7 @@
       <unit id="4339" name="err_objc_bridged_related_known_method">
         <segment>
           <source>%0 must be explicitly converted to %1; use %select{%objcclass2|%objcinstance2}3 method for this conversion</source>
-          <target>{$arg0} must be explicitly converted to {$arg1}; use {$arg3 :select s0=|%objcclass2| s1=|%objcinstance2|} method for this conversion</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4340" name="err_objc_cf_bridged_not_interface">
@@ -9170,7 +9170,7 @@
       <unit id="4348" name="err_objc_direct_protocol_conformance">
         <segment>
           <source>%select{category %1|class extension}0 cannot conform to protocol %2 because of direct members declared in interface %3</source>
-          <target>{$arg0 :select s0=|category {$arg1}| s1=|class extension|} cannot conform to protocol {$arg2} because of direct members declared in interface {$arg3}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4349" name="err_objc_exceptions_disabled">
@@ -9464,7 +9464,7 @@
       <unit id="4397" name="err_objc_type_param_bound_conflict">
         <segment>
           <source>type bound %0 for type parameter %1 conflicts with %select{implicit|previous}2 bound %3%select{for type parameter %5|}4</source>
-          <target>type bound {$arg0} for type parameter {$arg1} conflicts with {$arg2 :select s0=|implicit| s1=|previous|} bound {$arg3}{$arg4 :select s0=|for type parameter {$arg5}| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4398" name="err_objc_type_param_bound_explicit_nullability">
@@ -9644,7 +9644,7 @@
       <unit id="4427" name="err_omp_atomic_incompatible_mem_order_clause">
         <segment>
           <source>directive '#pragma omp atomic%select{ %0|}1' cannot be used with '%2' clause</source>
-          <target>directive '#pragma omp atomic{$arg1 :select s0=| {$arg0}| s1=||}' cannot be used with '{$arg2}' clause</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4428" name="err_omp_atomic_no_compare">
@@ -9848,7 +9848,7 @@
       <unit id="4461" name="err_omp_depend_sink_expected_loop_iteration">
         <segment>
           <source>expected%select{| %1}0 loop iteration variable</source>
-          <target>expected{$arg0 :select s0=|| s1=| {$arg1}|} loop iteration variable</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4462" name="err_omp_depend_sink_expected_plus_minus">
@@ -9962,7 +9962,7 @@
       <unit id="4480" name="err_omp_expected_omp_depend_t_lvalue">
         <segment>
           <source>expected lvalue expression%select{ of 'omp_depend_t' type, not %1|}0</source>
-          <target>expected lvalue expression{$arg0 :select s0=| of 'omp_depend_t' type, not {$arg1}| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4481" name="err_omp_expected_predefined_allocator">
@@ -10142,7 +10142,7 @@
       <unit id="4510" name="err_omp_invalid_map_type_for_directive">
         <segment>
           <source>%select{map type '%1' is not allowed|map type must be specified}0 for '#pragma omp %2'</source>
-          <target>{$arg0 :select s0=|map type '{$arg1}' is not allowed| s1=|map type must be specified|} for '#pragma omp {$arg2}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4511" name="err_omp_invalid_map_type_modifier_for_directive">
@@ -10400,7 +10400,7 @@
       <unit id="4553" name="err_omp_not_for">
         <segment>
           <source>%select{statement after '#pragma omp %1' must be a for loop|expected %2 for loops after '#pragma omp %1'%select{|, but found only %4}3}0</source>
-          <target>%select{statement after '#pragma omp {$arg1}' must be a for loop|expected {$arg2} for loops after '#pragma omp {$arg1}'{$arg0 :select s0=|| s1=|, but found only {$arg4}}3|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4554" name="err_omp_not_integral">
@@ -10472,7 +10472,7 @@
       <unit id="4565" name="err_omp_orphaned_section_directive">
         <segment>
           <source>%select{orphaned 'omp section' directives are prohibited, it|'omp section' directive}0 must be closely nested to a sections region%select{|, not a %1 region}0</source>
-          <target>{$arg0 :select s0=|orphaned 'omp section' directives are prohibited, it| s1=|'omp section' directive|} must be closely nested to a sections region{$arg0 :select s0=|| s1=|, not a {$arg1} region|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4566" name="err_omp_parallel_reduction_in_task_firstprivate">
@@ -10520,7 +10520,7 @@
       <unit id="4573" name="err_omp_prohibited_region">
         <segment>
           <source>region cannot be%select{| closely}0 nested inside '%1' region%select{|; perhaps you forget to enclose 'omp %3' directive into a parallel region?|; perhaps you forget to enclose 'omp %3' directive into a for or a parallel for region with 'ordered' clause?|; perhaps you forget to enclose 'omp %3' directive into a target region?|; perhaps you forget to enclose 'omp %3' directive into a teams region?|; perhaps you forget to enclose 'omp %3' directive into a for, simd, for simd, parallel for, or parallel for simd region?}2</source>
-          <target>region cannot be{$arg0 :select s0=|| s1=| closely|} nested inside '{$arg1}' region{$arg2 :select s0=|| s1=|; perhaps you forget to enclose 'omp {$arg3}' directive into a parallel region?| s2=|; perhaps you forget to enclose 'omp {$arg3}' directive into a for or a parallel for region with 'ordered' clause?| s3=|; perhaps you forget to enclose 'omp {$arg3}' directive into a target region?| s4=|; perhaps you forget to enclose 'omp {$arg3}' directive into a teams region?| s5=|; perhaps you forget to enclose 'omp {$arg3}' directive into a for, simd, for simd, parallel for, or parallel for simd region?|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4574" name="err_omp_prohibited_region_atomic">
@@ -10874,7 +10874,7 @@
       <unit id="4632" name="err_omp_var_expected">
         <segment>
           <source>expected variable of the '%0' type%select{|, not %2}1</source>
-          <target>expected variable of the '{$arg0}' type{$arg1 :select s0=|| s1=|, not {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4633" name="err_omp_var_scope">
@@ -11534,7 +11534,7 @@
       <unit id="4742" name="err_ovl_deleted_call">
         <segment>
           <source>call to deleted%select{| member}0 function %1%select{|: %3}2</source>
-          <target>call to deleted{$arg0 :select s0=|| s1=| member|} function {$arg1}{$arg2 :select s0=|| s1=|: {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4743" name="err_ovl_deleted_comparison">
@@ -11546,25 +11546,25 @@
       <unit id="4744" name="err_ovl_deleted_conversion_in_cast">
         <segment>
           <source>%select{|static_cast|reinterpret_cast|dynamic_cast|C-style cast|functional-style cast|}0 from %1 to %2 uses deleted function%select{|: %4}3</source>
-          <target>{$arg0 :select s0=|| s1=|static_cast| s2=|reinterpret_cast| s3=|dynamic_cast| s4=|C-style cast| s5=|functional-style cast| s6=||} from {$arg1} to {$arg2} uses deleted function{$arg3 :select s0=|| s1=|: {$arg4}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4745" name="err_ovl_deleted_init">
         <segment>
           <source>call to deleted constructor of %0%select{|: %2}1</source>
-          <target>call to deleted constructor of {$arg0}{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4746" name="err_ovl_deleted_object_call">
         <segment>
           <source>call to deleted function call operator in type %0%select{|: %2}1</source>
-          <target>call to deleted function call operator in type {$arg0}{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4747" name="err_ovl_deleted_oper">
         <segment>
           <source>overload resolution selected deleted operator '%0'%select{|: %2}1</source>
-          <target>overload resolution selected deleted operator '{$arg0}'{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4748" name="err_ovl_deleted_special_init">
@@ -11618,7 +11618,7 @@
       <unit id="4756" name="err_ovl_no_viable_literal_operator">
         <segment>
           <source>no matching literal operator for call to %0%select{| with argument of type %2| with arguments of types %2 and %3}1%select{| or 'const char *'}4%select{|, and no matching literal operator template}5</source>
-          <target>no matching literal operator for call to {$arg0}{$arg1 :select s0=|| s1=| with argument of type {$arg2}| s2=| with arguments of types {$arg2} and {$arg3}|}{$arg4 :select s0=|| s1=| or 'const char *'|}{$arg5 :select s0=|| s1=|, and no matching literal operator template|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4757" name="err_ovl_no_viable_member_function_in_call">
@@ -11942,7 +11942,7 @@
       <unit id="4810" name="err_pragma_attribute_stack_mismatch">
         <segment>
           <source>'#pragma clang attribute %select{%1.|}0pop' with no matching '#pragma clang attribute %select{%1.|}0push'</source>
-          <target>'#pragma clang attribute {$arg0 :select s0=|{$arg1}.| s1=||}pop' with no matching '#pragma clang attribute {$arg0 :select s0=|{$arg1}.| s1=||}push'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4811" name="err_pragma_expected_file_scope">
@@ -12200,7 +12200,7 @@
       <unit id="4853" name="err_protocol_property_mismatch">
         <segment>
           <source>property %select{of type %1|with attribute '%1'|without attribute '%1'|with getter %1|with setter %1}0 was selected for synthesis</source>
-          <target>property {$arg0 :select s0=|of type {$arg1}| s1=|with attribute '{$arg1}'| s2=|without attribute '{$arg1}'| s3=|with getter {$arg1}| s4=|with setter {$arg1}|} was selected for synthesis</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4854" name="err_pseudo_dtor_base_not_scalar">
@@ -12572,13 +12572,13 @@
       <unit id="4915" name="err_reference_bind_drops_quals">
         <segment>
           <source>binding reference %diff{of type $ to value of type $|to value}0,1 %select{drops %3 qualifier%plural{1:|2:|4:|:s}4|changes address space|not permitted due to incompatible qualifiers}2</source>
-          <target>binding reference %diff{of type $ to value of type $|to value}0,1 %select{drops {$arg3} qualifier%plural{1:|2:|4:|:s}4|changes address space|not permitted due to incompatible qualifiers}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4916" name="err_reference_bind_failed">
         <segment>
           <source>reference %diff{to %select{type|incomplete type}1 $ could not bind to an %select{rvalue|lvalue}2 of type $|could not bind to %select{rvalue|lvalue}2 of incompatible type}0,3</source>
-          <target>reference %diff{to {$arg1 :select s0=|type| s1=|incomplete type|} $ could not bind to an {$arg2 :select s0=|rvalue| s1=|lvalue|} of type $|could not bind to {$arg0 :select s0=|rvalue| s1=|lvalue}2 of incompatible type|},3</target>
+          <target>reference %diff{to {$arg1 :select s0=|type| s1=|incomplete type|} $ could not bind to an {$arg2 :select s0=|rvalue| s1=|lvalue|} of type $|could not bind to {$arg2 :select s0=|rvalue| s1=|lvalue|} of incompatible type}0,3</target>
         </segment>
       </unit>
       <unit id="4917" name="err_reference_bind_init_list">
@@ -12596,7 +12596,7 @@
       <unit id="4919" name="err_reference_bind_to_bitfield">
         <segment>
           <source>%select{non-const|volatile}0 reference cannot bind to bit-field%select{| %1}2</source>
-          <target>{$arg0 :select s0=|non-const| s1=|volatile|} reference cannot bind to bit-field{$arg2 :select s0=|| s1=| {$arg1}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4920" name="err_reference_bind_to_bitfield_in_cce">
@@ -12644,7 +12644,7 @@
       <unit id="4927" name="err_reference_to_local_in_enclosing_context">
         <segment>
           <source>reference to local %select{variable|binding}1 %0 declared in enclosing %select{%3|block literal|lambda expression|context}2</source>
-          <target>reference to local {$arg1 :select s0=|variable| s1=|binding|} {$arg0} declared in enclosing {$arg2 :select s0=|{$arg3}| s1=|block literal| s2=|lambda expression| s3=|context|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4928" name="err_reference_to_void">
@@ -13034,7 +13034,7 @@
       <unit id="4992" name="err_spaceship_argument_narrowing">
         <segment>
           <source>argument to 'operator&lt;=&gt;' %select{cannot be narrowed from type %1 to %2|evaluates to %1, which cannot be narrowed to type %2}0</source>
-          <target>argument to 'operator&lt;=&gt;' {$arg0 :select s0=|cannot be narrowed from type {$arg1} to {$arg2}| s1=|evaluates to {$arg1}, which cannot be narrowed to type {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="4993" name="err_spec_member_not_instantiated">
@@ -13076,13 +13076,13 @@
       <unit id="4999" name="err_static_assert_failed">
         <segment>
           <source>static assertion failed%select{: %1|}0</source>
-          <target>static assertion failed{$arg0 :select s0=|: {$arg1}| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5000" name="err_static_assert_requirement_failed">
         <segment>
           <source>static assertion failed due to requirement '%0'%select{: %2|}1</source>
-          <target>static assertion failed due to requirement '{$arg0}'{$arg1 :select s0=|: {$arg2}| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5001" name="err_static_block_func">
@@ -13172,7 +13172,7 @@
       <unit id="5015" name="err_std_compare_type_not_supported">
         <segment>
           <source>standard library implementation of %0 is not supported; %select{member '%2' does not have expected form|member '%2' is missing|the type is not trivially copyable|the type does not have the expected form}1</source>
-          <target>standard library implementation of {$arg0} is not supported; {$arg1 :select s0=|member '{$arg2}' does not have expected form| s1=|member '{$arg2}' is missing| s2=|the type is not trivially copyable| s3=|the type does not have the expected form|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5016" name="err_std_initializer_list_malformed">
@@ -13478,7 +13478,7 @@
       <unit id="5066" name="err_target_unsupported_type">
         <segment>
           <source>%0 requires %select{|%2 bit size}1 %3 %select{|return }4type support, but target '%5' does not support it</source>
-          <target>{$arg0} requires {$arg1 :select s0=|| s1=|{$arg2} bit size|} {$arg3} {$arg4 :select s0=|| s1=|return |}type support, but target '{$arg5}' does not support it</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5067" name="err_tcb_conflicting_attributes">
@@ -13970,7 +13970,7 @@
       <unit id="5148" name="err_template_spec_redecl_out_of_scope">
         <segment>
           <source>%select{class template|class template partial|variable template|variable template partial|function template|member function|static data member|member class|member enumeration}0 specialization of %1 not in %select{a namespace enclosing %2|class %2 or an enclosing namespace}3</source>
-          <target>{$arg0 :select s0=|class template| s1=|class template partial| s2=|variable template| s3=|variable template partial| s4=|function template| s5=|member function| s6=|static data member| s7=|member class| s8=|member enumeration|} specialization of {$arg1} not in {$arg3 :select s0=|a namespace enclosing {$arg2}| s1=|class {$arg2} or an enclosing namespace|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5149" name="err_template_spec_unknown_kind">
@@ -14300,7 +14300,7 @@
       <unit id="5203" name="err_typecheck_assign_const">
         <segment>
           <source>%select{cannot assign to return value because function %1 returns a const value|cannot assign to variable %1 with const-qualified type %2|cannot assign to %select{non-|}1static data member %2 with const-qualified type %3|cannot assign to non-static data member within const member function %1|cannot assign to %select{variable %2|non-static data member %2|lvalue}1 with %select{|nested }3const-qualified data member %4|read-only variable is not assignable}0</source>
-          <target>%select{cannot assign to return value because function {$arg1} returns a const value|cannot assign to variable {$arg1} with const-qualified type {$arg2}|cannot assign to {$arg1 :select s0=|non-| s1=||}static data member {$arg2} with const-qualified type {$arg3}|cannot assign to non-static data member within const member function {$arg1}|cannot assign to {$arg1 :select s0=|variable {$arg2}| s1=|non-static data member {$arg2}| s2=|lvalue|} with {$arg0 :select s0=|| s1=|nested }3const-qualified data member {$arg4}| s2=|read-only variable is not assignable|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5204" name="err_typecheck_bool_condition">
@@ -14492,55 +14492,55 @@
       <unit id="5235" name="err_typecheck_convert_discards_qualifiers">
         <segment>
           <source>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 discards qualifiers</source>
-          <target>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 discards qualifiers</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5236" name="err_typecheck_convert_incompatible">
         <segment>
           <source>%select{%diff{assigning to $ from incompatible type $|assigning to type from incompatible type}0,1|%diff{passing $ to parameter of incompatible type $|passing type to parameter of incompatible type}0,1|%diff{returning $ from a function with incompatible result type $|returning type from a function with incompatible result type}0,1|%diff{converting $ to incompatible type $|converting type to incompatible type}0,1|%diff{initializing $ with an expression of incompatible type $|initializing type with an expression of incompatible type}0,1|%diff{sending $ to parameter of incompatible type $|sending type to parameter of incompatible type}0,1|%diff{casting $ to incompatible type $|casting type to incompatible type}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3%select{|: different classes%diff{ ($ vs $)|}5,6|: different number of parameters (%5 vs %6)|: type mismatch at %ordinal5 parameter%diff{ ($ vs $)|}6,7|: different return type%diff{ ($ vs $)|}5,6|: different qualifiers (%5 vs %6)|: different exception specifications}4</source>
-          <target>%select{%diff{assigning to $ from incompatible type $|assigning to type from incompatible type}0,1|%diff{passing $ to parameter of incompatible type $|passing type to parameter of incompatible type}0,1|%diff{returning $ from a function with incompatible result type $|returning type from a function with incompatible result type}0,1|%diff{converting $ to incompatible type $|converting type to incompatible type}0,1|%diff{initializing $ with an expression of incompatible type $|initializing type with an expression of incompatible type}0,1|%diff{sending $ to parameter of incompatible type $|sending type to parameter of incompatible type}0,1|%diff{casting $ to incompatible type $|casting type to incompatible type}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}%select{|: different classes%diff{ ($ vs $)|}5,6|: different number of parameters ({$arg5} vs {$arg6})|: type mismatch at %ordinal5 parameter%diff{ ($ vs $)|}6,7|: different return type%diff{ ($ vs $)|}5,6|: different qualifiers ({$arg5} vs {$arg6})|: different exception specifications}4</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5237" name="err_typecheck_convert_incompatible_block_pointer">
         <segment>
           <source>incompatible block pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2</source>
-          <target>incompatible block pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5238" name="err_typecheck_convert_incompatible_function_pointer">
         <segment>
           <source>incompatible function pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3</source>
-          <target>incompatible function pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5239" name="err_typecheck_convert_incompatible_pointer">
         <segment>
           <source>incompatible pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3</source>
-          <target>incompatible pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5240" name="err_typecheck_convert_incompatible_pointer_sign">
         <segment>
           <source>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 converts between pointers to integer types %select{with different sign|where one is of the unique plain 'char' type and the other is not}3</source>
-          <target>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 converts between pointers to integer types {$arg3 :select s0=|with different sign| s1=|where one is of the unique plain 'char' type and the other is not|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5241" name="err_typecheck_convert_int_pointer">
         <segment>
           <source>incompatible integer to pointer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3</source>
-          <target>incompatible integer to pointer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5242" name="err_typecheck_convert_pointer_int">
         <segment>
           <source>incompatible pointer to integer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3</source>
-          <target>incompatible pointer to integer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5243" name="err_typecheck_convert_pointer_void_func">
         <segment>
           <source>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 converts between void pointer and function pointer</source>
-          <target>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 converts between void pointer and function pointer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5244" name="err_typecheck_converted_constant_expression">
@@ -14570,7 +14570,7 @@
       <unit id="5248" name="err_typecheck_deleted_function">
         <segment>
           <source>conversion function %diff{from $ to $|between types}0,1 invokes a deleted function%select{|: %3}2</source>
-          <target>conversion function %diff{from $ to $|between types}0,1 invokes a deleted function{$arg2 :select s0=|| s1=|: {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5249" name="err_typecheck_duplicate_vector_components_not_mlvalue">
@@ -14636,25 +14636,25 @@
       <unit id="5259" name="err_typecheck_incompatible_address_space">
         <segment>
           <source>%select{%diff{assigning $ to $|assigning to different types}1,0|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 changes address space of pointer</source>
-          <target>%select{%diff{assigning $ to $|assigning to different types}1,0|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 changes address space of pointer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5260" name="err_typecheck_incompatible_nested_address_space">
         <segment>
           <source>%select{%diff{assigning $ to $|assigning to different types}1,0|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 changes address space of nested pointer</source>
-          <target>%select{%diff{assigning $ to $|assigning to different types}1,0|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 changes address space of nested pointer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5261" name="err_typecheck_incompatible_ownership">
         <segment>
           <source>%select{%diff{assigning $ to $|assigning to different types}1,0|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 changes retain/release properties of pointer</source>
-          <target>%select{%diff{assigning $ to $|assigning to different types}1,0|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 changes retain/release properties of pointer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5262" name="err_typecheck_incompatible_ptrauth">
         <segment>
           <source>%select{%diff{assigning $ to $|assigning to different types}1,0|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 changes pointer authentication of pointee type</source>
-          <target>%select{%diff{assigning $ to $|assigning to different types}1,0|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 changes pointer authentication of pointee type</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5263" name="err_typecheck_incomplete_array_needs_initializer">
@@ -14732,7 +14732,7 @@
       <unit id="5275" name="err_typecheck_logical_vector_expr_gnu_cpp_restrict">
         <segment>
           <source>logical expression with vector %select{type %1 and non-vector type %2|types %1 and %2}0 is only supported in C++</source>
-          <target>logical expression with vector {$arg0 :select s0=|type {$arg1} and non-vector type {$arg2}| s1=|types {$arg1} and {$arg2}|} is only supported in C++</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5276" name="err_typecheck_lvalue_casts_not_supported">
@@ -14804,7 +14804,7 @@
       <unit id="5287" name="err_typecheck_nonviable_condition">
         <segment>
           <source>no viable conversion%select{%diff{ from $ to $|}1,2|%diff{ from returned value of type $ to function return type $|}1,2}0</source>
-          <target>no viable conversion%select{%diff{ from $ to $|}1,2|%diff{ from returned value of type $ to function return type $|}1,2}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5288" name="err_typecheck_nonviable_condition_incomplete">
@@ -14816,7 +14816,7 @@
       <unit id="5289" name="err_typecheck_op_on_nonoverlapping_address_space_pointers">
         <segment>
           <source>%select{comparison between %diff{ ($ and $)|}0,1|arithmetic operation with operands of type %diff{ ($ and $)|}0,1|conditional operator with the second and third operands of type %diff{ ($ and $)|}0,1}2 which are pointers to non-overlapping address spaces</source>
-          <target>%select{comparison between %diff{ ($ and $)|}0,1|arithmetic operation with operands of type %diff{ ($ and $)|}0,1|conditional operator with the second and third operands of type %diff{ ($ and $)|}0,1}2 which are pointers to non-overlapping address spaces</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5290" name="err_typecheck_ordered_comparison_of_function_pointers">
@@ -14834,7 +14834,7 @@
       <unit id="5292" name="err_typecheck_pointer_arith_function_type">
         <segment>
           <source>arithmetic on%select{ a|}0 pointer%select{|s}0 to%select{ the|}2 function type%select{|s}2 %1%select{| and %3}2</source>
-          <target>arithmetic on{$arg0 :select s0=| a| s1=||} pointer{$arg0 :select s0=|| s1=|s|} to{$arg2 :select s0=| the| s1=||} function type{$arg2 :select s0=|| s1=|s|} {$arg1}{$arg2 :select s0=|| s1=| and {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5293" name="err_typecheck_pointer_arith_void_type">
@@ -15038,7 +15038,7 @@
       <unit id="5326" name="err_uncasted_send_to_unknown_any_method">
         <segment>
           <source>no known method %select{%objcinstance1|%objcclass1}0; cast the message send to the method's return type</source>
-          <target>no known method {$arg0 :select s0=|%objcinstance1| s1=|%objcclass1|}; cast the message send to the method's return type</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5327" name="err_uncasted_use_of_unknown_any">
@@ -15188,7 +15188,7 @@
       <unit id="5351" name="err_uninitialized_member_in_ctor">
         <segment>
           <source>%select{constructor for %1|implicit default constructor for %1|cannot use constructor inherited from %1:}0 must explicitly initialize the %select{reference|const}2 member %3</source>
-          <target>{$arg0 :select s0=|constructor for {$arg1}| s1=|implicit default constructor for {$arg1}| s2=|cannot use constructor inherited from {$arg1}:|} must explicitly initialize the {$arg2 :select s0=|reference| s1=|const|} member {$arg3}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5352" name="err_union_as_base_class">
@@ -15710,7 +15710,7 @@
       <unit id="5438" name="err_vla_unsupported">
         <segment>
           <source>variable length arrays are not supported %select{for the current target|in '%1'}0</source>
-          <target>variable length arrays are not supported {$arg0 :select s0=|for the current target| s1=|in '{$arg1}'|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5439" name="err_vm_decl_has_extern_linkage">
@@ -16094,7 +16094,7 @@
       <unit id="5502" name="ext_cce_narrowing">
         <segment>
           <source state="initial">%select{case value|enumerator value|non-type template argument|non-type parameter of template template parameter|array size|explicit specifier argument|noexcept specifier argument|call to 'size()'|call to 'data()'}0 %select{cannot be narrowed from type %2 to %3|evaluates to %2, which cannot be narrowed to type %3}1</source>
-          <target>{$arg0 :select s0=|case value| s1=|enumerator value| s2=|non-type template argument| s3=|non-type parameter of template template parameter| s4=|array size| s5=|explicit specifier argument| s6=|noexcept specifier argument| s7=|call to 'size()'| s8=|call to 'data()'|} {$arg1 :select s0=|cannot be narrowed from type {$arg2} to {$arg3}| s1=|evaluates to {$arg2}, which cannot be narrowed to type {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5503" name="ext_compat_template_param_shadow">
@@ -16424,7 +16424,7 @@
       <unit id="5557" name="ext_gnu_ptr_func_arith">
         <segment>
           <source>arithmetic on%select{ a|}0 pointer%select{|s}0 to%select{ the|}2 function type%select{|s}2 %1%select{| and %3}2 is a GNU extension</source>
-          <target>arithmetic on{$arg0 :select s0=| a| s1=||} pointer{$arg0 :select s0=|| s1=|s|} to{$arg2 :select s0=| the| s1=||} function type{$arg2 :select s0=|| s1=|s|} {$arg1}{$arg2 :select s0=|| s1=| and {$arg3}|} is a GNU extension</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5558" name="ext_gnu_subscript_void_type">
@@ -16730,7 +16730,7 @@
       <unit id="5608" name="ext_ms_template_spec_redecl_out_of_scope">
         <segment>
           <source>%select{class template|class template partial|variable template|variable template partial|function template|member function|static data member|member class|member enumeration}0 specialization of %1 not in %select{a namespace enclosing %2|class %2 or an enclosing namespace}3 is a Microsoft extension</source>
-          <target>{$arg0 :select s0=|class template| s1=|class template partial| s2=|variable template| s3=|variable template partial| s4=|function template| s5=|member function| s6=|static data member| s7=|member class| s8=|member enumeration|} specialization of {$arg1} not in {$arg3 :select s0=|a namespace enclosing {$arg2}| s1=|class {$arg2} or an enclosing namespace|} is a Microsoft extension</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5609" name="ext_ms_template_type_arg_missing_typename">
@@ -16766,7 +16766,7 @@
       <unit id="5614" name="ext_nested_pointer_qualifier_mismatch">
         <segment>
           <source>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 discards qualifiers in nested pointer types</source>
-          <target>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 discards qualifiers in nested pointer types</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5615" name="ext_new_paren_array_nonconst">
@@ -17198,43 +17198,43 @@
       <unit id="5686" name="ext_typecheck_convert_discards_qualifiers">
         <segment>
           <source>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 discards qualifiers</source>
-          <target>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 discards qualifiers</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5687" name="ext_typecheck_convert_incompatible_function_pointer">
         <segment>
           <source>incompatible function pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3</source>
-          <target>incompatible function pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5688" name="ext_typecheck_convert_incompatible_pointer">
         <segment>
           <source>incompatible pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3</source>
-          <target>incompatible pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5689" name="ext_typecheck_convert_incompatible_pointer_sign">
         <segment>
           <source>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 converts between pointers to integer types %select{with different sign|where one is of the unique plain 'char' type and the other is not}3</source>
-          <target>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 converts between pointers to integer types {$arg3 :select s0=|with different sign| s1=|where one is of the unique plain 'char' type and the other is not|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5690" name="ext_typecheck_convert_int_pointer">
         <segment>
           <source>incompatible integer to pointer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3</source>
-          <target>incompatible integer to pointer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5691" name="ext_typecheck_convert_pointer_int">
         <segment>
           <source>incompatible pointer to integer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3</source>
-          <target>incompatible pointer to integer conversion %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5692" name="ext_typecheck_convert_pointer_void_func">
         <segment>
           <source>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 converts between void pointer and function pointer</source>
-          <target>%select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2 converts between void pointer and function pointer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5693" name="ext_typecheck_decl_incomplete_type">
@@ -17438,7 +17438,7 @@
       <unit id="5726" name="note_acc_atomic_operand_lvalue_scalar">
         <segment>
           <source>%select{left |right |}0operand to %select{assignment|compound assignment|increment|decrement}1 expression must be %select{an l-value|of scalar type (was %3)}2</source>
-          <target>{$arg0 :select s0=|left | s1=|right | s2=||}operand to {$arg1 :select s0=|assignment| s1=|compound assignment| s2=|increment| s3=|decrement|} expression must be {$arg2 :select s0=|an l-value| s1=|of scalar type (was {$arg3})|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5727" name="note_acc_atomic_too_many_stmts">
@@ -18068,7 +18068,7 @@
       <unit id="5831" name="note_constexpr_dtor_subobject">
         <segment>
           <source>%select{data member %1|base class %2}0 declared here</source>
-          <target>{$arg0 :select s0=|data member {$arg1}| s1=|base class {$arg2}|} declared here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5832" name="note_constexpr_virtual_base_here">
@@ -18212,7 +18212,7 @@
       <unit id="5855" name="note_decl_unguarded_availability_silence">
         <segment>
           <source>annotate %select{%1|anonymous %1}0 with an availability attribute to silence this warning</source>
-          <target>annotate {$arg0 :select s0=|{$arg1}| s1=|anonymous {$arg1}|} with an availability attribute to silence this warning</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5856" name="note_declaration_not_a_prototype">
@@ -18302,13 +18302,13 @@
       <unit id="5870" name="note_defaulted_comparison_ambiguous">
         <segment>
           <source>defaulted %0 is implicitly deleted because implied %select{|'==' |'&lt;' }1comparison %select{|for member %3 |for base class %3 }2is ambiguous</source>
-          <target>defaulted {$arg0} is implicitly deleted because implied {$arg1 :select s0=|| s1=|'==' | s2=|'&lt;' |}comparison {$arg2 :select s0=|| s1=|for member {$arg3} | s2=|for base class {$arg3} |}is ambiguous</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5871" name="note_defaulted_comparison_calls_deleted">
         <segment>
           <source>defaulted %0 is implicitly deleted because it would invoke a deleted comparison function%select{| for member %2| for base class %2}1</source>
-          <target>defaulted {$arg0} is implicitly deleted because it would invoke a deleted comparison function{$arg1 :select s0=|| s1=| for member {$arg2}| s2=| for base class {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5872" name="note_defaulted_comparison_cannot_deduce">
@@ -18332,7 +18332,7 @@
       <unit id="5875" name="note_defaulted_comparison_inaccessible">
         <segment>
           <source>defaulted %0 is implicitly deleted because it would invoke a %select{private|protected}3 %4%select{ member of %6| member of %6 to compare member %2| to compare base class %2}1</source>
-          <target>defaulted {$arg0} is implicitly deleted because it would invoke a {$arg3 :select s0=|private| s1=|protected|} {$arg4}{$arg1 :select s0=| member of {$arg6}| s1=| member of {$arg6} to compare member {$arg2}| s2=| to compare base class {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5876" name="note_defaulted_comparison_no_viable_function">
@@ -18350,7 +18350,7 @@
       <unit id="5878" name="note_defaulted_comparison_not_constexpr">
         <segment>
           <source>non-constexpr comparison function would be used to compare %select{|member %1|base class %1}0</source>
-          <target>non-constexpr comparison function would be used to compare {$arg0 :select s0=|| s1=|member {$arg1}| s2=|base class {$arg1}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5879" name="note_defaulted_comparison_not_constexpr_here">
@@ -18446,7 +18446,7 @@
       <unit id="5894" name="note_deleted_special_member_class_subobject">
         <segment>
           <source state="initial">%select{default constructor of|copy constructor of|move constructor of|copy assignment operator of|move assignment operator of|destructor of|constructor inherited by}0 %1 is implicitly deleted because %select{base class %3|%select{||||variant }4field %3}2 %select{has %select{no|a deleted|multiple|an inaccessible|a non-trivial}4 %select{%select{default constructor|copy constructor|move constructor|copy assignment operator|move assignment operator|destructor|%select{default|corresponding|default|default|default}4 constructor}0|destructor}5%select{||s||}4|is an ObjC pointer|has an address-discriminated '__ptrauth' qualifier}6</source>
-          <target>{$arg0 :select s0=|default constructor of| s1=|copy constructor of| s2=|move constructor of| s3=|copy assignment operator of| s4=|move assignment operator of| s5=|destructor of| s6=|constructor inherited by|} {$arg1} is implicitly deleted because %select{base class {$arg3}|{$arg2 :select s0=|| s1=|| s2=|| s3=|| s4=|variant }4field {$arg3}|} %select{has {$arg4 :select s0=|no| s1=|a deleted| s2=|multiple| s3=|an inaccessible| s4=|a non-trivial|} %select{%select{default constructor|copy constructor|move constructor|copy assignment operator|move assignment operator|destructor|{$arg5 :select s0=|default| s1=|corresponding| s2=|default| s3=|default| s4=|default}4 constructor}0| s5=|destructor|}{$arg6 :select s0=|| s1=|| s2=|s| s3=|| s4=|}4| s5=|is an ObjC pointer| s6=|has an address-discriminated '__ptrauth' qualifier|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5895" name="note_deleted_type_mismatch">
@@ -18458,7 +18458,7 @@
       <unit id="5896" name="note_dependent_function_template_spec_discard_reason">
         <segment>
           <source>candidate ignored: %select{not a function template|not a member of the enclosing %select{class template|namespace; did you mean to explicitly qualify the specialization?}1}0</source>
-          <target>candidate ignored: %select{not a function template|not a member of the enclosing {$arg0 :select s0=|class template| s1=|namespace; did you mean to explicitly qualify the specialization?}1|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5897" name="note_dependent_member_use">
@@ -18632,7 +18632,7 @@
       <unit id="5925" name="note_equivalent_internal_linkage_decl">
         <segment>
           <source>declared here%select{ in module '%1'|}0</source>
-          <target>declared here{$arg0 :select s0=| in module '{$arg1}'| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="5926" name="note_evaluate_comparison_first">
@@ -19100,7 +19100,7 @@
       <unit id="6003" name="note_hidden_overloaded_virtual_declared_here">
         <segment>
           <source>hidden overloaded virtual function %q0 declared here%select{|: different classes%diff{ ($ vs $)|}2,3|: different number of parameters (%2 vs %3)|: type mismatch at %ordinal2 parameter%diff{ ($ vs $)|}3,4|: different return type%diff{ ($ vs $)|}2,3|: different qualifiers (%2 vs %3)|: different exception specifications}1</source>
-          <target>hidden overloaded virtual function {$arg0 :q} declared here%select{|: different classes%diff{ ($ vs $)|}2,3|: different number of parameters ({$arg2} vs {$arg3})|: type mismatch at %ordinal2 parameter%diff{ ($ vs $)|}3,4|: different return type%diff{ ($ vs $)|}2,3|: different qualifiers ({$arg2} vs {$arg3})|: different exception specifications}1</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6004" name="note_hidden_tag">
@@ -19130,7 +19130,7 @@
       <unit id="6008" name="note_immediate_function_reason">
         <segment>
           <source>%0 is an immediate %select{function|constructor}5 because %select{its body|the%select{| default}7 initializer of %8}6 %select{evaluates the address of %select{an immediate|a consteval}2 function %1|contains a call to %select{an immediate|a consteval}2 %select{function|constructor}4 %1 and that call is not a constant expression}3</source>
-          <target>{$arg0} is an immediate {$arg5 :select s0=|function| s1=|constructor|} because %select{its body|the{$arg6 :select s0=|| s1=| default}7 initializer of {$arg8}|} %select{evaluates the address of {$arg2 :select s0=|an immediate| s1=|a consteval|} function {$arg1}|contains a call to {$arg2 :select s0=|an immediate| s1=|a consteval|} {$arg3 :select s0=|function| s1=|constructor}4 {$arg1} and that call is not a constant expression|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6009" name="note_implementation_declared">
@@ -19214,7 +19214,7 @@
       <unit id="6022" name="note_in_omitted_aggregate_initializer">
         <segment>
           <source>in implicit initialization of %select{array element %1 with omitted initializer|field %1 with omitted initializer|trailing array elements in runtime-sized array new}0</source>
-          <target>in implicit initialization of {$arg0 :select s0=|array element {$arg1} with omitted initializer| s1=|field {$arg1} with omitted initializer| s2=|trailing array elements in runtime-sized array new|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6023" name="note_in_reference_temporary_list_initializer">
@@ -19340,7 +19340,7 @@
       <unit id="6043" name="note_lambda_capture_initializer">
         <segment>
           <source>%select{implicitly |}2captured%select{| by reference}3%select{%select{ due to use|}2 here| via initialization of lambda capture %0}1</source>
-          <target>{$arg2 :select s0=|implicitly | s1=||}captured{$arg3 :select s0=|| s1=| by reference|}%select{{$arg1 :select s0=| due to use| s1=|}2 here| s2=| via initialization of lambda capture {$arg0}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6044" name="note_lambda_decl">
@@ -19382,7 +19382,7 @@
       <unit id="6050" name="note_lifetime_extending_member_declared_here">
         <segment>
           <source>%select{%select{reference|'std::initializer_list'}0 member|member with %select{reference|'std::initializer_list'}0 subobject}1 declared here</source>
-          <target>%select{{$arg0 :select s0=|reference| s1=|'std::initializer_list'|} member|member with {$arg1 :select s0=|reference| s1=|'std::initializer_list'}0 subobject|} declared here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6051" name="note_local_decl_close_match">
@@ -19400,7 +19400,7 @@
       <unit id="6053" name="note_local_var_initializer">
         <segment>
           <source>%select{via initialization of|binding reference}0 variable %select{%2 |}1here</source>
-          <target>{$arg0 :select s0=|via initialization of| s1=|binding reference|} variable {$arg1 :select s0=|{$arg2} | s1=||}here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6054" name="note_lock_exclusive_and_shared">
@@ -19598,7 +19598,7 @@
       <unit id="6086" name="note_musttail_mismatch">
         <segment>
           <source>target function %select{is a member of different class%diff{ (expected $ but has $)|}1,2|has different number of parameters (expected %1 but has %2)|has type mismatch at %ordinal3 parameter%diff{ (expected $ but has $)|}1,2|has different return type%diff{ ($ expected but has $)|}1,2}0</source>
-          <target>target function %select{is a member of different class%diff{ (expected $ but has $)|}1,2|has different number of parameters (expected {$arg1} but has {$arg2})|has type mismatch at %ordinal3 parameter%diff{ (expected $ but has $)|}1,2|has different return type%diff{ ($ expected but has $)|}1,2}0</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6087" name="note_musttail_structors_forbidden">
@@ -19742,7 +19742,7 @@
       <unit id="6110" name="note_non_trivial_c_union">
         <segment>
           <source>%select{%2 has subobjects that are|%3 has type %2 that is}0 non-trivial to %select{default-initialize|destruct|copy}1</source>
-          <target>{$arg0 :select s0=|{$arg2} has subobjects that are| s1=|{$arg3} has type {$arg2} that is|} non-trivial to {$arg1 :select s0=|default-initialize| s1=|destruct| s2=|copy|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6111" name="note_non_usual_function_declared_here">
@@ -19832,7 +19832,7 @@
       <unit id="6125" name="note_not_found_by_two_phase_lookup">
         <segment>
           <source>%0 should be declared prior to the call site%select{| or in %2| or in an associated namespace of one of its arguments}1</source>
-          <target>{$arg0} should be declared prior to the call site{$arg1 :select s0=|| s1=| or in {$arg2}| s2=| or in an associated namespace of one of its arguments|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6126" name="note_not_module_interface_add_export">
@@ -19958,7 +19958,7 @@
       <unit id="6146" name="note_omp_atomic_update">
         <segment>
           <source>%select{expected an expression statement|expected built-in binary or unary operator|expected unary decrement/increment operation|expected expression of scalar type|expected assignment expression|expected built-in binary operator|expected one of '+', '*', '-', '/', '&amp;', '^', '%|', '&lt;&lt;', or '&gt;&gt;' built-in operations|expected in right hand side of expression}0</source>
-          <target>{$arg0 :select s0=|expected an expression statement| s1=|expected built-in binary or unary operator| s2=|expected unary decrement/increment operation| s3=|expected expression of scalar type| s4=|expected assignment expression| s5=|expected built-in binary operator| s6=|expected one of '+', '*', '-', '/', '&amp;', '^', '%| s7=|', '&lt;&lt;', or '&gt;&gt;' built-in operations| s8=|expected in right hand side of expression|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6147" name="note_omp_collapse_ordered_expr">
@@ -20096,7 +20096,7 @@
       <unit id="6169" name="note_omp_predetermined_dsa">
         <segment>
           <source>%select{static data member is predetermined as shared|variable with static storage duration is predetermined as shared|loop iteration variable is predetermined as private|loop iteration variable is predetermined as linear|loop iteration variable is predetermined as lastprivate|constant variable is predetermined as shared|global variable is predetermined as shared|non-shared variable in a task construct is predetermined as firstprivate|variable with automatic storage duration is predetermined as private}0%select{|; perhaps you forget to enclose 'omp %2' directive into a parallel or another task region?}1</source>
-          <target>{$arg0 :select s0=|static data member is predetermined as shared| s1=|variable with static storage duration is predetermined as shared| s2=|loop iteration variable is predetermined as private| s3=|loop iteration variable is predetermined as linear| s4=|loop iteration variable is predetermined as lastprivate| s5=|constant variable is predetermined as shared| s6=|global variable is predetermined as shared| s7=|non-shared variable in a task construct is predetermined as firstprivate| s8=|variable with automatic storage duration is predetermined as private|}{$arg1 :select s0=|| s1=|; perhaps you forget to enclose 'omp {$arg2}' directive into a parallel or another task region?|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6170" name="note_omp_previous_allocator">
@@ -20252,67 +20252,67 @@
       <unit id="6195" name="note_ovl_candidate">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %3}1%select{| has different class%diff{ (expected $ but has $)|}5,6| has different number of parameters (expected %5 but has %6)| has type mismatch at %ordinal5 parameter%diff{ (expected $ but has $)|}6,7| has different return type%diff{ ($ expected but has $)|}5,6| has different qualifiers (expected %5 but found %6)| has different exception specification}4</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg3}|}%select{| has different class%diff{ (expected $ but has $)|}5,6| has different number of parameters (expected {$arg5} but has {$arg6})| has type mismatch at %ordinal5 parameter%diff{ (expected $ but has $)|}6,7| has different return type%diff{ ($ expected but has $)|}5,6| has different qualifiers (expected {$arg5} but found {$arg6})| has different exception specification}4</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6196" name="note_ovl_candidate_arity">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: requires%select{ at least| at most|}3 %4 %select{|non-object }6argument%s4, but %5 %plural{1:was|:were}5 provided</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: requires{$arg3 :select s0=| at least| s1=| at most| s2=||} {$arg4} {$arg6 :select s0=|| s1=|non-object |}argument%s4, but {$arg5} %plural{1:was|:were}5 provided</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6197" name="note_ovl_candidate_arity_one">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: %select{requires at least|allows at most single|requires single}3 %select{|non-object }6argument %4, but %plural{0:no|:%5}5 arguments were provided</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: {$arg3 :select s0=|requires at least| s1=|allows at most single| s2=|requires single|} {$arg6 :select s0=|| s1=|non-object |}argument {$arg4}, but %plural{0:no|:{$arg5}}5 arguments were provided</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6198" name="note_ovl_candidate_bad_addrspace">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: cannot %select{pass pointer to|bind reference in}5 %3 %select{as a pointer to|to object in}5 %4 in %ordinal6 argument</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: cannot {$arg5 :select s0=|pass pointer to| s1=|bind reference in|} {$arg3} {$arg5 :select s0=|as a pointer to| s1=|to object in|} {$arg4} in %ordinal6 argument</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6199" name="note_ovl_candidate_bad_addrspace_this">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: 'this' object is in %3, but method expects object in %4</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: 'this' object is in {$arg3}, but method expects object in {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6200" name="note_ovl_candidate_bad_arc_conv">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: cannot implicitly convert argument %diff{of type $ to $|type to parameter type}3,4 for %select{%ordinal6 argument|object argument}5 under ARC</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: cannot implicitly convert argument %diff{of type $ to $|type to parameter type}3,4 for {$arg5 :select s0=|%ordinal6 argument| s1=|object argument|} under ARC</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6201" name="note_ovl_candidate_bad_base_to_derived_conv">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: cannot %select{convert from|convert from|bind}3 %select{base class pointer|superclass|base class object of type}3 %4 to %select{derived class pointer|subclass|derived class reference}3 %5 for %ordinal6 argument</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: cannot {$arg3 :select s0=|convert from| s1=|convert from| s2=|bind|} {$arg3 :select s0=|base class pointer| s1=|superclass| s2=|base class object of type|} {$arg4} to {$arg3 :select s0=|derived class pointer| s1=|subclass| s2=|derived class reference|} {$arg5} for %ordinal6 argument</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6202" name="note_ovl_candidate_bad_conv">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: no known conversion %diff{from $ to $|from argument type to parameter type}3,4 for %select{%ordinal6 argument|object argument}5%select{|; dereference the argument with *|; take the address of the argument with &amp;|; remove *|; remove &amp;}7</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: no known conversion %diff{from $ to $|from argument type to parameter type}3,4 for {$arg5 :select s0=|%ordinal6 argument| s1=|object argument|}{$arg7 :select s0=|| s1=|; dereference the argument with *| s2=|; take the address of the argument with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6203" name="note_ovl_candidate_bad_conv_incomplete">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: cannot convert argument of incomplete type %diff{$ to $|to parameter type}3,4 for %select{%ordinal6 argument|object argument}5%select{|; dereference the argument with *|; take the address of the argument with &amp;|; remove *|; remove &amp;}7</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: cannot convert argument of incomplete type %diff{$ to $|to parameter type}3,4 for {$arg5 :select s0=|%ordinal6 argument| s1=|object argument|}{$arg7 :select s0=|| s1=|; dereference the argument with *| s2=|; take the address of the argument with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6204" name="note_ovl_candidate_bad_cvr">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: %ordinal5 argument (%3) would lose %select{const|restrict|const and restrict|volatile|const and volatile|volatile and restrict|const, volatile, and restrict}4 qualifier%select{||s||s|s|s}4</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: %ordinal5 argument ({$arg3}) would lose {$arg4 :select s0=|const| s1=|restrict| s2=|const and restrict| s3=|volatile| s4=|const and volatile| s5=|volatile and restrict| s6=|const, volatile, and restrict|} qualifier{$arg4 :select s0=|| s1=|| s2=|s| s3=|| s4=|s| s5=|s| s6=|s|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6205" name="note_ovl_candidate_bad_cvr_this">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: 'this' argument has type %3, but method is not marked %select{const|restrict|const or restrict|volatile|const or volatile|volatile or restrict|const, volatile, or restrict}4</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: 'this' argument has type {$arg3}, but method is not marked {$arg4 :select s0=|const| s1=|restrict| s2=|const or restrict| s3=|volatile| s4=|const or volatile| s5=|volatile or restrict| s6=|const, volatile, or restrict|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6206" name="note_ovl_candidate_bad_deduction">
@@ -20324,61 +20324,61 @@
       <unit id="6207" name="note_ovl_candidate_bad_gc">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: %select{%ordinal7|'this'}6 argument (%3) has %select{no|__weak|__strong}4 ownership, but parameter has %select{no|__weak|__strong}5 ownership</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: {$arg6 :select s0=|%ordinal7| s1=|'this'|} argument ({$arg3}) has {$arg4 :select s0=|no| s1=|__weak| s2=|__strong|} ownership, but parameter has {$arg5 :select s0=|no| s1=|__weak| s2=|__strong|} ownership</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6208" name="note_ovl_candidate_bad_list_argument">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: %select{cannot convert initializer list|too few initializers in list|too many initializers in list}7 argument to %4</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: {$arg7 :select s0=|cannot convert initializer list| s1=|too few initializers in list| s2=|too many initializers in list|} argument to {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6209" name="note_ovl_candidate_bad_overload">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: no overload of %4 matching %3 for %ordinal5 argument</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: no overload of {$arg4} matching {$arg3} for %ordinal5 argument</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6210" name="note_ovl_candidate_bad_ownership">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: %select{%ordinal7|'this'}6 argument (%3) has %select{no|__unsafe_unretained|__strong|__weak|__autoreleasing}4 ownership, but parameter has %select{no|__unsafe_unretained|__strong|__weak|__autoreleasing}5 ownership</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: {$arg6 :select s0=|%ordinal7| s1=|'this'|} argument ({$arg3}) has {$arg4 :select s0=|no| s1=|__unsafe_unretained| s2=|__strong| s3=|__weak| s4=|__autoreleasing|} ownership, but parameter has {$arg5 :select s0=|no| s1=|__unsafe_unretained| s2=|__strong| s3=|__weak| s4=|__autoreleasing|} ownership</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6211" name="note_ovl_candidate_bad_ptrauth">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: %ordinal8 argument (%3) has %select{no '__ptrauth'|%5}4 qualifier, but parameter has %select{no '__ptrauth'|%7}6 qualifier</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: %ordinal8 argument ({$arg3}) has {$arg4 :select s0=|no '__ptrauth'| s1=|{$arg5}|} qualifier, but parameter has {$arg6 :select s0=|no '__ptrauth'| s1=|{$arg7}|} qualifier</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6212" name="note_ovl_candidate_bad_target">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: call to %select{__device__|__global__|__host__|__host__ __device__|invalid}3 function from %select{__device__|__global__|__host__|__host__ __device__|invalid}4 function</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: call to {$arg3 :select s0=|__device__| s1=|__global__| s2=|__host__| s3=|__host__ __device__| s4=|invalid|} function from {$arg4 :select s0=|__device__| s1=|__global__| s2=|__host__| s3=|__host__ __device__| s4=|invalid|} function</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6213" name="note_ovl_candidate_bad_value_category">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: expects an %select{lvalue|rvalue}5 for %select{%ordinal4 argument|object argument}3</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: expects an {$arg5 :select s0=|lvalue| s1=|rvalue|} for {$arg3 :select s0=|%ordinal4 argument| s1=|object argument|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6214" name="note_ovl_candidate_constraints_not_satisfied">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 not viable: constraints not satisfied</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} not viable: constraints not satisfied</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6215" name="note_ovl_candidate_deduced_mismatch">
         <segment>
           <source>candidate template ignored: deduced type %diff{$ of %select{|element of }4%ordinal0 parameter does not match adjusted type $ of %select{|element of }4argument|of %select{|element of }4%ordinal0 parameter does not match adjusted type of %select{|element of }4argument}1,2%3</source>
-          <target>candidate template ignored: deduced type %diff{$ of {$arg4 :select s0=|| s1=|element of |}%ordinal0 parameter does not match adjusted type $ of {$arg4 :select s0=|| s1=|element of |}argument|of {$arg4 :select s0=|| s1=|element of |}%ordinal0 parameter does not match adjusted type of {$arg1 :select s0=|| s1=|element of }4argument|},2{$arg3}</target>
+          <target>candidate template ignored: deduced type %diff{$ of {$arg4 :select s0=|| s1=|element of |}%ordinal0 parameter does not match adjusted type $ of {$arg4 :select s0=|| s1=|element of |}argument|of {$arg4 :select s0=|| s1=|element of |}%ordinal0 parameter does not match adjusted type of {$arg4 :select s0=|| s1=|element of |}argument}1,2{$arg3}</target>
         </segment>
       </unit>
       <unit id="6216" name="note_ovl_candidate_deleted">
         <segment>
           <source>candidate %select{function|function|function (with reversed parameter order)|constructor|constructor (the implicit default constructor)|constructor (the implicit copy constructor)|constructor (the implicit move constructor)|function (the implicit copy assignment operator)|function (the implicit move assignment operator)|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'|inherited constructor}0%select{| template| %2}1 has been %select{explicitly made unavailable|explicitly deleted|implicitly deleted}3</source>
-          <target>candidate {$arg0 :select s0=|function| s1=|function| s2=|function (with reversed parameter order)| s3=|constructor| s4=|constructor (the implicit default constructor)| s5=|constructor (the implicit copy constructor)| s6=|constructor (the implicit move constructor)| s7=|function (the implicit copy assignment operator)| s8=|function (the implicit move assignment operator)| s9=|function (the implicit 'operator==' for this 'operator&lt;=&gt;)'| s10=|inherited constructor|}{$arg1 :select s0=|| s1=| template| s2=| {$arg2}|} has been {$arg3 :select s0=|explicitly made unavailable| s1=|explicitly deleted| s2=|implicitly deleted|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6217" name="note_ovl_candidate_disabled_by_enable_if">
@@ -20570,7 +20570,7 @@
       <unit id="6248" name="note_partial_availability_specified_here">
         <segment>
           <source>%0 has been marked as being introduced in %1 %2 %select{|in %5 environment }4here, but the deployment target is %1 %3%select{| %6 environment }4</source>
-          <target>{$arg0} has been marked as being introduced in {$arg1} {$arg2} {$arg4 :select s0=|| s1=|in {$arg5} environment |}here, but the deployment target is {$arg1} {$arg3}{$arg4 :select s0=|| s1=| {$arg6} environment |}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6249" name="note_partial_spec_match">
@@ -20960,7 +20960,7 @@
       <unit id="6313" name="note_protocol_property_declare">
         <segment>
           <source>it could also be property %select{of type %1|without attribute '%1'|with attribute '%1'|with getter %1|with setter %1}0 declared here</source>
-          <target>it could also be property {$arg0 :select s0=|of type {$arg1}| s1=|without attribute '{$arg1}'| s2=|with attribute '{$arg1}'| s3=|with getter {$arg1}| s4=|with setter {$arg1}|} declared here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6314" name="note_ptrauth_virtual_function_incomplete_arg_ret_type">
@@ -21542,7 +21542,7 @@
       <unit id="6410" name="note_typecheck_assign_const">
         <segment>
           <source>%select{function %1 which returns const-qualified type %2 declared here|variable %1 declared const here|%select{non-|}1static data member %2 declared const here|member function %q1 is declared const here|%select{|nested }1data member %2 declared const here}0</source>
-          <target>%select{function {$arg1} which returns const-qualified type {$arg2} declared here|variable {$arg1} declared const here|{$arg1 :select s0=|non-| s1=||}static data member {$arg2} declared const here|member function {$arg1 :q} is declared const here|{$arg0 :select s0=|| s1=|nested }1data member {$arg2} declared const here|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6411" name="note_typecheck_invalid_operands_converted">
@@ -21584,7 +21584,7 @@
       <unit id="6417" name="note_uninit_fixit_remove_cond">
         <segment>
           <source>remove the %select{'%1' if its condition|condition if it}0 is always %select{false|true}2</source>
-          <target>remove the {$arg0 :select s0=|'{$arg1}' if its condition| s1=|condition if it|} is always {$arg2 :select s0=|false| s1=|true|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6418" name="note_uninit_in_this_constructor">
@@ -21650,13 +21650,13 @@
       <unit id="6428" name="note_unsafe_buffer_variable_fixit_group">
         <segment>
           <source>change type of %0 to '%select{std::span' to preserve bounds information|std::array' to label it for hardening|std::span::iterator' to preserve bounds information}1%select{|, and change %2 to '%select{std::span|std::array|std::span::iterator}1' to propagate bounds information between them}3</source>
-          <target>change type of {$arg0} to '{$arg1 :select s0=|std::span' to preserve bounds information| s1=|std::array' to label it for hardening| s2=|std::span::iterator' to preserve bounds information|}%select{|, and change {$arg2} to '{$arg3 :select s0=|std::span| s1=|std::array| s2=|std::span::iterator}1' to propagate bounds information between them|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6429" name="note_unsafe_buffer_variable_fixit_together">
         <segment>
           <source>change type of %0 to '%select{std::span' to preserve bounds information|std::array' to label it for hardening|std::span::iterator' to preserve bounds information}1%select{|, and change %2 to safe types to make function %4 bounds-safe}3</source>
-          <target>change type of {$arg0} to '{$arg1 :select s0=|std::span' to preserve bounds information| s1=|std::array' to label it for hardening| s2=|std::span::iterator' to preserve bounds information|}{$arg3 :select s0=|| s1=|, and change {$arg2} to safe types to make function {$arg4} bounds-safe|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6430" name="note_use_ifdef_guards">
@@ -21776,7 +21776,7 @@
       <unit id="6449" name="note_vbase_moved_here">
         <segment>
           <source>%select{%1 is a virtual base class of base class %2 declared here|virtual base class %1 declared here}0</source>
-          <target>{$arg0 :select s0=|{$arg1} is a virtual base class of base class {$arg2} declared here| s1=|virtual base class {$arg1} declared here|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6450" name="note_vla_unsupported">
@@ -22106,7 +22106,7 @@
       <unit id="6504" name="warn_array_index_exceeds_bounds">
         <segment>
           <source>array index %0 is past the end of the array (that has type %1%select{|, cast to %3}2)</source>
-          <target>array index {$arg0} is past the end of the array (that has type {$arg1}{$arg2 :select s0=|| s1=|, cast to {$arg3}|})</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6505" name="warn_array_index_exceeds_max_addressable_bounds">
@@ -22982,7 +22982,7 @@
       <unit id="6650" name="warn_cmse_nonsecure_union">
         <segment>
           <source>passing union across security boundary via %select{parameter %1|return value}0 may leak information</source>
-          <target>passing union across security boundary via {$arg0 :select s0=|parameter {$arg1}| s1=|return value|} may leak information</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6651" name="warn_cocoa_naming_owned_rule">
@@ -23060,7 +23060,7 @@
       <unit id="6663" name="warn_compatible_implicit_pointer_conv">
         <segment>
           <source>implicit conversion when %select{%diff{assigning to $ from type $|assigning to type from type}0,1|%diff{passing $ to parameter of type $|passing type to parameter of type}0,1|%diff{returning $ from a function with result type $|returning type from a function with result type}0,1|&lt;CLANG BUG IF YOU SEE THIS&gt;|%diff{initializing $ with an expression of type $|initializing type with an expression of type}0,1|%diff{sending $ to parameter of type $|sending type to parameter of type}0,1|&lt;CLANG BUG IF YOU SEE THIS&gt;}2 is not permitted in C++</source>
-          <target>implicit conversion when %select{%diff{assigning to $ from type $|assigning to type from type}0,1|%diff{passing $ to parameter of type $|passing type to parameter of type}0,1|%diff{returning $ from a function with result type $|returning type from a function with result type}0,1|&lt;CLANG BUG IF YOU SEE THIS&gt;|%diff{initializing $ with an expression of type $|initializing type with an expression of type}0,1|%diff{sending $ to parameter of type $|sending type to parameter of type}0,1|&lt;CLANG BUG IF YOU SEE THIS&gt;}2 is not permitted in C++</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6664" name="warn_completion_handler_called_twice">
@@ -23246,7 +23246,7 @@
       <unit id="6694" name="warn_counted_by_attr_elt_type_unknown_size">
         <segment>
           <source>'%select{counted_by|sized_by|counted_by_or_null|sized_by_or_null}4' %select{cannot|should not}3 be applied to %select{a pointer with pointee|an array with element}0 of unknown size because %1 is %select{an incomplete type|a sizeless type|a function type|a struct type with a flexible array member%select{|. This will be an error in a future compiler version}3}2</source>
-          <target>'{$arg4 :select s0=|counted_by| s1=|sized_by| s2=|counted_by_or_null| s3=|sized_by_or_null|}' {$arg3 :select s0=|cannot| s1=|should not|} be applied to {$arg0 :select s0=|a pointer with pointee| s1=|an array with element|} of unknown size because {$arg1} is %select{an incomplete type|a sizeless type|a function type|a struct type with a flexible array member{$arg2 :select s0=|| s1=|. This will be an error in a future compiler version}3|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6695" name="warn_cpp_compat_goto_into_protected_scope">
@@ -23324,7 +23324,7 @@
       <unit id="6707" name="warn_cxx14_compat_class_template_argument_deduction">
         <segment>
           <source>class template argument deduction is incompatible with C++ standards before C++17%select{|; for compatibility, use explicit type name %1}0</source>
-          <target>class template argument deduction is incompatible with C++ standards before C++17{$arg0 :select s0=|| s1=|; for compatibility, use explicit type name {$arg1}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6708" name="warn_cxx14_compat_constexpr_not_const">
@@ -23744,7 +23744,7 @@
       <unit id="6777" name="warn_dangling_variable">
         <segment>
           <source>%select{temporary %select{whose address is used as value of|%select{|implicitly }2bound to}4 %select{%select{|reference }4member of local variable|local %select{variable|reference}4}1|array backing %select{initializer list subobject of local variable|local initializer list}1}0 %select{%3 |}2will be destroyed at the end of the full-expression</source>
-          <target>%select{temporary %select{whose address is used as value of|{$arg4 :select s0=|| s1=|implicitly }2bound to|} %select{{$arg4 :select s0=|| s1=|reference |}member of local variable|local {$arg1 :select s0=|variable| s1=|reference}4|}|array backing {$arg0 :select s0=|initializer list subobject of local variable| s1=|local initializer list}1|} {$arg2 :select s0=|{$arg3} | s1=||}will be destroyed at the end of the full-expression</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6778" name="warn_dealloc_in_category">
@@ -23768,13 +23768,13 @@
       <unit id="6781" name="warn_decl_shadow">
         <segment>
           <source>declaration shadows a %select{local variable|variable in %2|static data member of %2|field of %2|typedef in %2|type alias in %2|structured binding}1</source>
-          <target>declaration shadows a {$arg1 :select s0=|local variable| s1=|variable in {$arg2}| s2=|static data member of {$arg2}| s3=|field of {$arg2}| s4=|typedef in {$arg2}| s5=|type alias in {$arg2}| s6=|structured binding|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6782" name="warn_decl_shadow_uncaptured_local">
         <segment>
           <source>declaration shadows a %select{local variable|variable in %2|static data member of %2|field of %2|typedef in %2|type alias in %2|structured binding}1</source>
-          <target>declaration shadows a {$arg1 :select s0=|local variable| s1=|variable in {$arg2}| s2=|static data member of {$arg2}| s3=|field of {$arg2}| s4=|typedef in {$arg2}| s5=|type alias in {$arg2}| s6=|structured binding|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6783" name="warn_declspec_allocator_nonpointer">
@@ -24296,7 +24296,7 @@
       <unit id="6869" name="warn_field_requires_explicit_init">
         <segment>
           <source>field %select{%1|in %1}0 requires explicit initialization but is not explicitly initialized</source>
-          <target>field {$arg0 :select s0=|{$arg1}| s1=|in {$arg1}|} requires explicit initialization but is not explicitly initialized</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6870" name="warn_final_dtor_non_final_class">
@@ -24596,7 +24596,7 @@
       <unit id="6919" name="warn_free_nonheap_object">
         <segment>
           <source>attempt to call %0 on non-heap %select{object %2|object: block expression|object: lambda-to-function-pointer conversion}1</source>
-          <target>attempt to call {$arg0} on non-heap {$arg1 :select s0=|object {$arg2}| s1=|object: block expression| s2=|object: lambda-to-function-pointer conversion|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6920" name="warn_fun_excludes_mutex">
@@ -24608,13 +24608,13 @@
       <unit id="6921" name="warn_fun_requires_lock">
         <segment>
           <source>calling function %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>calling function {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6922" name="warn_fun_requires_lock_precise">
         <segment>
           <source>calling function %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>calling function {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6923" name="warn_fun_requires_negative_cap">
@@ -24716,25 +24716,25 @@
       <unit id="6939" name="warn_guarded_pass_by_reference">
         <segment>
           <source>passing variable %1 by reference requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>passing variable {$arg1} by reference requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6940" name="warn_guarded_pass_pointer">
         <segment>
           <source>passing pointer to variable %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>passing pointer to variable {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6941" name="warn_guarded_return_by_reference">
         <segment>
           <source>returning variable %1 by reference requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>returning variable {$arg1} by reference requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6942" name="warn_guarded_return_pointer">
         <segment>
           <source>returning pointer to variable %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>returning pointer to variable {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6943" name="warn_hip_omp_target_directives">
@@ -24746,7 +24746,7 @@
       <unit id="6944" name="warn_hlsl_availability">
         <segment>
           <source>%0 is only available %select{|in %4 environment }3on %1 %2 or newer</source>
-          <target>{$arg0} is only available {$arg3 :select s0=|| s1=|in {$arg4} environment |}on {$arg1} {$arg2} or newer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6945" name="warn_hlsl_availability_unavailable">
@@ -25016,7 +25016,7 @@
       <unit id="6989" name="warn_impcast_pointer_to_bool">
         <segment>
           <source>address of %select{'%1'|function '%1'|array '%1'|lambda function pointer conversion operator}0 will always evaluate to 'true'</source>
-          <target>address of {$arg0 :select s0=|'{$arg1}'| s1=|function '{$arg1}'| s2=|array '{$arg1}'| s3=|lambda function pointer conversion operator|} will always evaluate to 'true'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="6990" name="warn_impcast_single_bit_bitield_precision_constant">
@@ -25130,13 +25130,13 @@
       <unit id="7008" name="warn_incompatible_qualified_id">
         <segment>
           <source>%select{%diff{assigning to $ from incompatible type $|assigning to type from incompatible type}0,1|%diff{passing $ to parameter of incompatible type $|passing type to parameter of incompatible type}0,1|%diff{returning $ from a function with incompatible result type $|returning type from a function with incompatible result type}0,1|%diff{converting $ to incompatible type $|converting type to incompatible type}0,1|%diff{initializing $ with an expression of incompatible type $|initializing type with an expression of incompatible type}0,1|%diff{sending $ to parameter of incompatible type $|sending type to parameter of incompatible type}0,1|%diff{casting $ to incompatible type $|casting type to incompatible type}0,1}2</source>
-          <target>%select{%diff{assigning to $ from incompatible type $|assigning to type from incompatible type}0,1|%diff{passing $ to parameter of incompatible type $|passing type to parameter of incompatible type}0,1|%diff{returning $ from a function with incompatible result type $|returning type from a function with incompatible result type}0,1|%diff{converting $ to incompatible type $|converting type to incompatible type}0,1|%diff{initializing $ with an expression of incompatible type $|initializing type with an expression of incompatible type}0,1|%diff{sending $ to parameter of incompatible type $|sending type to parameter of incompatible type}0,1|%diff{casting $ to incompatible type $|casting type to incompatible type}0,1}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7009" name="warn_incompatible_vectors">
         <segment>
           <source>incompatible vector types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2</source>
-          <target>incompatible vector types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7010" name="warn_incomplete_encoded_type">
@@ -25322,7 +25322,7 @@
       <unit id="7040" name="warn_invalid_specialization">
         <segment>
           <source>%0 cannot be specialized%select{|: %2}1</source>
-          <target>{$arg0} cannot be specialized{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7041" name="warn_ivar_use_hidden">
@@ -25784,7 +25784,7 @@
       <unit id="7117" name="warn_non_prototype_changes_behavior">
         <segment>
           <source>a function %select{declaration|definition}0 without a prototype is deprecated in all versions of C %select{and is not supported in C23|and is treated as a zero-parameter prototype in C23, conflicting with a %select{previous|subsequent}2 %select{declaration|definition}3}1</source>
-          <target>a function {$arg0 :select s0=|declaration| s1=|definition|} without a prototype is deprecated in all versions of C %select{and is not supported in C23|and is treated as a zero-parameter prototype in C23, conflicting with a {$arg2 :select s0=|previous| s1=|subsequent|} {$arg1 :select s0=|declaration| s1=|definition}3|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7118" name="warn_non_virtual_dtor">
@@ -25916,7 +25916,7 @@
       <unit id="7139" name="warn_null_in_comparison_operation">
         <segment>
           <source>comparison between NULL and non-pointer %select{(%1 and NULL)|(NULL and %1)}0</source>
-          <target>comparison between NULL and non-pointer {$arg0 :select s0=|({$arg1} and NULL)| s1=|(NULL and {$arg1})|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7140" name="warn_null_pointer_compare">
@@ -26288,7 +26288,7 @@
       <unit id="7201" name="warn_omp_used_different_allocator">
         <segment>
           <source>allocate directive specifies %select{default|'%1'}0 allocator while previously used %select{default|'%3'}2</source>
-          <target>allocate directive specifies {$arg0 :select s0=|default| s1=|'{$arg1}'|} allocator while previously used {$arg2 :select s0=|default| s1=|'{$arg3}'|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7202" name="warn_on_superclass_use">
@@ -26324,7 +26324,7 @@
       <unit id="7207" name="warn_out_of_range_compare">
         <segment>
           <source>result of comparison of %select{constant %0|true|false}1 with %select{expression of type %2|boolean expression}3 is always %4</source>
-          <target>result of comparison of {$arg1 :select s0=|constant {$arg0}| s1=|true| s2=|false|} with {$arg3 :select s0=|expression of type {$arg2}| s1=|boolean expression|} is always {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7208" name="warn_overaligned_type">
@@ -26354,7 +26354,7 @@
       <unit id="7212" name="warn_param_mismatched_alignment">
         <segment>
           <source>passing %0-byte aligned argument to %1-byte aligned parameter %2%select{| of %4}3 may result in an unaligned pointer access</source>
-          <target>passing {$arg0}-byte aligned argument to {$arg1}-byte aligned parameter {$arg2}{$arg3 :select s0=|| s1=| of {$arg4}|} may result in an unaligned pointer access</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7213" name="warn_param_return_typestate_mismatch">
@@ -26390,7 +26390,7 @@
       <unit id="7218" name="warn_pass_class_arg_to_vararg">
         <segment>
           <source>passing object of class type %0 through variadic %select{function|block|method|constructor}1%select{|; did you mean to call '%3'?}2</source>
-          <target>passing object of class type {$arg0} through variadic {$arg1 :select s0=|function| s1=|block| s2=|method| s3=|constructor|}{$arg2 :select s0=|| s1=|; did you mean to call '{$arg3}'?|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7219" name="warn_perf_constraint_implies_noexcept">
@@ -26726,31 +26726,31 @@
       <unit id="7274" name="warn_protocol_property_mismatch">
         <segment>
           <source>property %select{of type %1|with attribute '%1'|without attribute '%1'|with getter %1|with setter %1}0 was selected for synthesis</source>
-          <target>property {$arg0 :select s0=|of type {$arg1}| s1=|with attribute '{$arg1}'| s2=|without attribute '{$arg1}'| s3=|with getter {$arg1}| s4=|with setter {$arg1}|} was selected for synthesis</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7275" name="warn_pt_guarded_pass_by_reference">
         <segment>
           <source>passing the value that %1 points to by reference requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>passing the value that {$arg1} points to by reference requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7276" name="warn_pt_guarded_pass_pointer">
         <segment>
           <source>passing pointer %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>passing pointer {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7277" name="warn_pt_guarded_return_by_reference">
         <segment>
           <source>returning the value that %1 points to by reference requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>returning the value that {$arg1} points to by reference requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7278" name="warn_pt_guarded_return_pointer">
         <segment>
           <source>returning pointer %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>returning pointer {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7279" name="warn_ptr_arith_exceeds_bounds">
@@ -27050,19 +27050,19 @@
       <unit id="7328" name="warn_self_assignment_builtin">
         <segment>
           <source>explicitly assigning value of variable of type %0 to itself%select{|; did you mean to assign to member %2?}1</source>
-          <target>explicitly assigning value of variable of type {$arg0} to itself{$arg1 :select s0=|| s1=|; did you mean to assign to member {$arg2}?|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7329" name="warn_self_assignment_overloaded">
         <segment>
           <source>explicitly assigning value of variable of type %0 to itself%select{|; did you mean to assign to member %2?}1</source>
-          <target>explicitly assigning value of variable of type {$arg0} to itself{$arg1 :select s0=|| s1=|; did you mean to assign to member {$arg2}?|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7330" name="warn_self_move">
         <segment>
           <source>explicitly moving variable of type %0 to itself%select{|; did you mean to move to member %2?}1</source>
-          <target>explicitly moving variable of type {$arg0} to itself{$arg1 :select s0=|| s1=|; did you mean to move to member {$arg2}?|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7331" name="warn_setter_getter_impl_required">
@@ -27080,7 +27080,7 @@
       <unit id="7333" name="warn_shadow_field">
         <segment>
           <source>%select{parameter|non-static data member}3 %0 %select{|of %1 }3shadows member inherited from type %2</source>
-          <target>{$arg3 :select s0=|parameter| s1=|non-static data member|} {$arg0} {$arg3 :select s0=|| s1=|of {$arg1} |}shadows member inherited from type {$arg2}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7334" name="warn_shift_bool">
@@ -27188,7 +27188,7 @@
       <unit id="7351" name="warn_sometimes_uninit_var">
         <segment>
           <source>variable %0 is %select{used|captured}1 uninitialized whenever %select{'%3' condition is %select{true|false}4|'%3' loop %select{is entered|exits because its condition is false}4|'%3' loop %select{condition is true|exits because its condition is false}4|switch %3 is taken|its declaration is reached|%3 is called}2</source>
-          <target>variable {$arg0} is {$arg1 :select s0=|used| s1=|captured|} uninitialized whenever %select{'{$arg3}' condition is {$arg4 :select s0=|true| s1=|false|}|'{$arg3}' loop {$arg4 :select s0=|is entered| s1=|exits because its condition is false|}|'{$arg3}' loop {$arg2 :select s0=|condition is true| s1=|exits because its condition is false}4| s2=|switch {$arg3} is taken| s3=|its declaration is reached| s4=|{$arg3} is called|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7352" name="warn_splice_in_doxygen_comment">
@@ -27206,7 +27206,7 @@
       <unit id="7354" name="warn_static_array_too_small">
         <segment>
           <source>array argument is too small; %select{contains %0 elements|is of size %0}2, callee requires at least %1</source>
-          <target>array argument is too small; {$arg2 :select s0=|contains {$arg0} elements| s1=|is of size {$arg0}|}, callee requires at least {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7355" name="warn_static_local_in_extern_inline">
@@ -27248,7 +27248,7 @@
       <unit id="7361" name="warn_strict_uses_without_prototype">
         <segment>
           <source>passing arguments to %select{a function|%1}0 without a prototype is deprecated in all versions of C and is not supported in C23</source>
-          <target>passing arguments to {$arg0 :select s0=|a function| s1=|{$arg1}|} without a prototype is deprecated in all versions of C and is not supported in C23</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7362" name="warn_string_plus_char">
@@ -27434,7 +27434,7 @@
       <unit id="7392" name="warn_tautological_bool_compare">
         <segment>
           <source>result of comparison of %select{constant %0|true|false}1 with %select{expression of type %2|boolean expression}3 is always %4</source>
-          <target>result of comparison of {$arg1 :select s0=|constant {$arg0}| s1=|true| s2=|false|} with {$arg3 :select s0=|expression of type {$arg2}| s1=|boolean expression|} is always {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7393" name="warn_tautological_compare_objc_bool">
@@ -27446,13 +27446,13 @@
       <unit id="7394" name="warn_tautological_compare_value_range">
         <segment>
           <source>result of comparison of %select{%4|%1-bit %select{signed|unsigned}2 value}0 %3 %select{%1-bit %select{signed|unsigned}2 value|%4}0 is always %5</source>
-          <target>result of comparison of %select{{$arg4}|{$arg1}-bit {$arg0 :select s0=|signed| s1=|unsigned}2 value|} {$arg3} %select{{$arg1}-bit {$arg0 :select s0=|signed| s1=|unsigned}2 value| s2=|{$arg4}|} is always {$arg5}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7395" name="warn_tautological_constant_compare">
         <segment>
           <source>result of comparison %select{%3|%1}0 %2 %select{%1|%3}0 is always %4</source>
-          <target>result of comparison {$arg0 :select s0=|{$arg3}| s1=|{$arg1}|} {$arg2} {$arg0 :select s0=|{$arg1}| s1=|{$arg3}|} is always {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7396" name="warn_tautological_negation_and_compare">
@@ -27638,7 +27638,7 @@
       <unit id="7426" name="warn_type_safety_type_mismatch">
         <segment>
           <source>argument type %0 doesn't match specified %1 type tag %select{that requires %3|}2</source>
-          <target>argument type {$arg0} doesn't match specified {$arg1} type tag {$arg2 :select s0=|that requires {$arg3}| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7427" name="warn_type_tag_for_datatype_wrong_kind">
@@ -27650,7 +27650,7 @@
       <unit id="7428" name="warn_typecheck_convert_incompatible_function_pointer_strict">
         <segment>
           <source>incompatible function pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2%select{|; dereference with *|; take the address with &amp;|; remove *|; remove &amp;}3</source>
-          <target>incompatible function pointer types %select{%diff{assigning to $ from $|assigning to different types}0,1|%diff{passing $ to parameter of type $|passing to parameter of different type}0,1|%diff{returning $ from a function with result type $|returning from function with different return type}0,1|%diff{converting $ to type $|converting between types}0,1|%diff{initializing $ with an expression of type $|initializing with expression of different type}0,1|%diff{sending $ to parameter of type $|sending to parameter of different type}0,1|%diff{casting $ to type $|casting between types}0,1}2{$arg3 :select s0=|| s1=|; dereference with *| s2=|; take the address with &amp;| s3=|; remove *| s4=|; remove &amp;|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7429" name="warn_typecheck_function_qualifiers_ignored">
@@ -27758,13 +27758,13 @@
       <unit id="7446" name="warn_unguarded_availability">
         <segment>
           <source>%0 is only available %select{|in %4 environment }3on %1 %2 or newer</source>
-          <target>{$arg0} is only available {$arg3 :select s0=|| s1=|in {$arg4} environment |}on {$arg1} {$arg2} or newer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7447" name="warn_unguarded_availability_new">
         <segment>
           <source>%0 is only available %select{|in %4 environment }3on %1 %2 or newer</source>
-          <target>{$arg0} is only available {$arg3 :select s0=|| s1=|in {$arg4} environment |}on {$arg1} {$arg2} or newer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7448" name="warn_unguarded_availability_unavailable">
@@ -27932,7 +27932,7 @@
       <unit id="7475" name="warn_unsafe_buffer_operation">
         <segment>
           <source state="initial">%select{unsafe pointer operation|unsafe pointer arithmetic|unsafe buffer access|function introduces unsafe buffer manipulation|unsafe invocation of %1|field %1 prone to unsafe buffer manipulation}0</source>
-          <target>{$arg0 :select s0=|unsafe pointer operation| s1=|unsafe pointer arithmetic| s2=|unsafe buffer access| s3=|function introduces unsafe buffer manipulation| s4=|unsafe invocation of {$arg1}| s5=|field {$arg1} prone to unsafe buffer manipulation|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7476" name="warn_unsafe_buffer_usage_in_container">
@@ -27968,7 +27968,7 @@
       <unit id="7481" name="warn_unsigned_always_true_comparison">
         <segment>
           <source>result of comparison of %select{%3|unsigned expression}0 %2 %select{unsigned expression|%3}0 is always %4</source>
-          <target>result of comparison of {$arg0 :select s0=|{$arg3}| s1=|unsigned expression|} {$arg2} {$arg0 :select s0=|unsigned expression| s1=|{$arg3}|} is always {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7482" name="warn_unsigned_bitfield_assigned_signed_enum">
@@ -27980,13 +27980,13 @@
       <unit id="7483" name="warn_unsigned_char_always_true_comparison">
         <segment>
           <source>result of comparison of %select{%3|char expression}0 %2 %select{char expression|%3}0 is always %4, since char is interpreted as unsigned</source>
-          <target>result of comparison of {$arg0 :select s0=|{$arg3}| s1=|char expression|} {$arg2} {$arg0 :select s0=|char expression| s1=|{$arg3}|} is always {$arg4}, since char is interpreted as unsigned</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7484" name="warn_unsigned_enum_always_true_comparison">
         <segment>
           <source>result of comparison of %select{%3|unsigned enum expression}0 %2 %select{unsigned enum expression|%3}0 is always %4</source>
-          <target>result of comparison of {$arg0 :select s0=|{$arg3}| s1=|unsigned enum expression|} {$arg2} {$arg0 :select s0=|unsigned enum expression| s1=|{$arg3}|} is always {$arg4}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7485" name="warn_unsupported_branch_protection_spec">
@@ -28040,7 +28040,7 @@
       <unit id="7493" name="warn_unused_constructor">
         <segment>
           <source state="initial">ignoring temporary created by a constructor declared with %0 attribute%select{|: %2}1</source>
-          <target>ignoring temporary created by a constructor declared with {$arg0} attribute{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7494" name="warn_unused_container_subscript_expr">
@@ -28118,7 +28118,7 @@
       <unit id="7506" name="warn_unused_result">
         <segment>
           <source state="initial">ignoring return value of function declared with %0 attribute%select{|: %2}1</source>
-          <target>ignoring return value of function declared with {$arg0} attribute{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7507" name="warn_unused_result_typedef_unsupported_spelling">
@@ -28130,7 +28130,7 @@
       <unit id="7508" name="warn_unused_return_type">
         <segment>
           <source>ignoring %select{return value|temporary}0 of type %2 declared with %1 attribute%select{|: %4}3</source>
-          <target>ignoring {$arg0 :select s0=|return value| s1=|temporary|} of type {$arg2} declared with {$arg1} attribute{$arg3 :select s0=|| s1=|: {$arg4}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7509" name="warn_unused_template">
@@ -28214,13 +28214,13 @@
       <unit id="7522" name="warn_var_deref_requires_lock">
         <segment>
           <source>%select{reading|writing}3 the value pointed to by %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>{$arg3 :select s0=|reading| s1=|writing|} the value pointed to by {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7523" name="warn_var_deref_requires_lock_precise">
         <segment>
           <source>%select{reading|writing}3 the value pointed to by %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>{$arg3 :select s0=|reading| s1=|writing|} the value pointed to by {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7524" name="warn_var_template_missing">
@@ -28238,13 +28238,13 @@
       <unit id="7526" name="warn_variable_requires_lock">
         <segment>
           <source>%select{reading|writing}3 variable %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>{$arg3 :select s0=|reading| s1=|writing|} variable {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7527" name="warn_variable_requires_lock_precise">
         <segment>
           <source>%select{reading|writing}3 variable %1 requires holding %0 %select{'%2'|'%2' exclusively}3</source>
-          <target>{$arg3 :select s0=|reading| s1=|writing|} variable {$arg1} requires holding {$arg0} {$arg3 :select s0=|'{$arg2}'| s1=|'{$arg2}' exclusively|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7528" name="warn_variable_sized_ivar_visibility">
@@ -28256,7 +28256,7 @@
       <unit id="7529" name="warn_variables_not_in_loop_body">
         <segment>
           <source>variable%select{s| %1|s %1 and %2|s %1, %2, and %3|s %1, %2, %3, and %4}0 used in loop condition not modified in loop body</source>
-          <target>variable{$arg0 :select s0=|s| s1=| {$arg1}| s2=|s {$arg1} and {$arg2}| s3=|s {$arg1}, {$arg2}, and {$arg3}| s4=|s {$arg1}, {$arg2}, {$arg3}, and {$arg4}|} used in loop condition not modified in loop body</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="7530" name="warn_vbase_moved_multiple_times">

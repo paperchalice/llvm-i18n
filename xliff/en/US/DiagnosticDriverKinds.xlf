@@ -374,7 +374,7 @@
       <unit id="362" name="err_drv_hlsl_16bit_types_unsupported">
         <segment>
           <source>'%0' option requires target HLSL Version &gt;= 2018%select{| and shader model &gt;= 6.2}1, but HLSL Version is '%2'%select{| and shader model is '%3'}1</source>
-          <target>'{$arg0}' option requires target HLSL Version &gt;= 2018{$arg1 :select s0=|| s1=| and shader model &gt;= 6.2|}, but HLSL Version is '{$arg2}'{$arg1 :select s0=|| s1=| and shader model is '{$arg3}'|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="363" name="err_drv_hlsl_bad_shader_required_in_target">
@@ -794,7 +794,7 @@
       <unit id="432" name="err_drv_no_hipspv_device_lib">
         <segment>
           <source>cannot find HIP device library%select{| for %1}0; provide its path via '--hip-path' or '--hip-device-lib-path', or pass '-nogpulib' to build without HIP device library</source>
-          <target>cannot find HIP device library{$arg0 :select s0=|| s1=| for {$arg1}|}; provide its path via '--hip-path' or '--hip-device-lib-path', or pass '-nogpulib' to build without HIP device library</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="433" name="err_drv_no_hipstdpar_lib">
@@ -842,7 +842,7 @@
       <unit id="440" name="err_drv_no_rocm_device_lib">
         <segment>
           <source state="initial">cannot find ROCm device library%select{| for %1| for ABI version %1%select{|, which requires ROCm %3 or higher}2}0; provide its path via '--rocm-path' or '--rocm-device-lib-path', or pass '-nogpulib' to build without ROCm device library</source>
-          <target>cannot find ROCm device library%select{| for {$arg1}| for ABI version {$arg1}{$arg0 :select s0=|| s1=|, which requires ROCm {$arg3} or higher}2|}; provide its path via '--rocm-path' or '--rocm-device-lib-path', or pass '-nogpulib' to build without ROCm device library</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="441" name="err_drv_no_such_file">
@@ -1346,7 +1346,7 @@
       <unit id="524" name="note_drv_use_standard">
         <segment>
           <source>use '%0'%select{| or '%3'|, '%3', or '%4'|, '%3', '%4', or '%5'}2 for '%1' standard</source>
-          <target>use '{$arg0}'{$arg2 :select s0=|| s1=| or '{$arg3}'| s2=|, '{$arg3}', or '{$arg4}'| s3=|, '{$arg3}', '{$arg4}', or '{$arg5}'|} for '{$arg1}' standard</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="525" name="note_drv_verify_prefix_spelling">
@@ -1448,7 +1448,7 @@
       <unit id="541" name="warn_drv_deprecated_arg">
         <segment>
           <source>argument '%0' is deprecated%select{|, use '%2' instead}1</source>
-          <target>argument '{$arg0}' is deprecated{$arg1 :select s0=|| s1=|, use '{$arg2}' instead|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="542" name="warn_drv_deprecated_arg_ofast">
@@ -1544,7 +1544,7 @@
       <unit id="557" name="warn_drv_input_file_unused">
         <segment>
           <source>%0: '%1' input unused%select{ when '%3' is present|}2</source>
-          <target>{$arg0}: '{$arg1}' input unused{$arg2 :select s0=| when '{$arg3}' is present| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="558" name="warn_drv_input_file_unused_by_cpp">
@@ -1730,7 +1730,7 @@
       <unit id="588" name="warn_drv_preprocessed_input_file_unused">
         <segment>
           <source>%0: previously preprocessed input%select{ unused when '%2' is present|}1</source>
-          <target>{$arg0}: previously preprocessed input{$arg1 :select s0=| unused when '{$arg2}' is present| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="589" name="warn_drv_ps_force_pic">

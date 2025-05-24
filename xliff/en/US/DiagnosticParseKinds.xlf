@@ -44,7 +44,7 @@
       <unit id="1527" name="err_acc_invalid_directive">
         <segment>
           <source>invalid OpenACC directive %select{%1|'%1 %2'}0</source>
-          <target>invalid OpenACC directive {$arg0 :select s0=|{$arg1}| s1=|'{$arg1} {$arg2}'|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1528" name="err_acc_invalid_open_paren">
@@ -80,7 +80,7 @@
       <unit id="1533" name="err_acc_unexpected_directive">
         <segment>
           <source>unexpected OpenACC directive %select{|'#pragma acc %1'}0</source>
-          <target>unexpected OpenACC directive {$arg0 :select s0=|| s1=|'#pragma acc {$arg1}'|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1534" name="err_access_specifier_interface">
@@ -1718,7 +1718,7 @@
       <unit id="1806" name="err_omp_immediate_directive">
         <segment>
           <source>'#pragma omp %0' %select{|with '%2' clause }1cannot be an immediate substatement</source>
-          <target>'#pragma omp {$arg0}' {$arg1 :select s0=|| s1=|with '{$arg2}' clause |}cannot be an immediate substatement</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1807" name="err_omp_invalid_dsa">
@@ -1808,7 +1808,7 @@
       <unit id="1821" name="err_omp_unexpected_directive">
         <segment>
           <source>unexpected OpenMP directive %select{|'#pragma omp %1'}0</source>
-          <target>unexpected OpenMP directive {$arg0 :select s0=|| s1=|'#pragma omp {$arg1}'|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1822" name="err_omp_unexpected_execution_modifier">
@@ -1940,7 +1940,7 @@
       <unit id="1843" name="err_pragma_attribute_expected_subject_sub_identifier">
         <segment>
           <source>expected an identifier that corresponds to an attribute subject matcher sub-rule; '%0' matcher %select{does not support sub-rules|supports the following sub-rules: %2|}1</source>
-          <target>expected an identifier that corresponds to an attribute subject matcher sub-rule; '{$arg0}' matcher {$arg1 :select s0=|does not support sub-rules| s1=|supports the following sub-rules: {$arg2}| s2=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1844" name="err_pragma_attribute_extra_tokens_after_attribute">
@@ -1976,7 +1976,7 @@
       <unit id="1849" name="err_pragma_attribute_unknown_subject_sub_rule">
         <segment>
           <source>%select{invalid use of|unknown}2 attribute subject matcher sub-rule '%0'; '%1' matcher %select{does not support sub-rules|supports the following sub-rules: %3}2</source>
-          <target>{$arg2 :select s0=|invalid use of| s1=|unknown|} attribute subject matcher sub-rule '{$arg0}'; '{$arg1}' matcher {$arg2 :select s0=|does not support sub-rules| s1=|supports the following sub-rules: {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1850" name="err_pragma_attribute_unsupported_attribute">
@@ -2048,7 +2048,7 @@
       <unit id="1861" name="err_pragma_fp_invalid_option">
         <segment>
           <source>%select{invalid|missing}0 option%select{ %1|}0; expected 'contract', 'reassociate', 'reciprocal', or 'exceptions'</source>
-          <target>{$arg0 :select s0=|invalid| s1=|missing|} option{$arg0 :select s0=| {$arg1}| s1=||}; expected 'contract', 'reassociate', 'reciprocal', or 'exceptions'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1862" name="err_pragma_invalid_keyword">
@@ -2060,7 +2060,7 @@
       <unit id="1863" name="err_pragma_loop_invalid_option">
         <segment>
           <source>%select{invalid|missing}0 option%select{ %1|}0; expected vectorize, vectorize_width, interleave, interleave_count, unroll, unroll_count, pipeline, pipeline_initiation_interval, vectorize_predicate, or distribute</source>
-          <target>{$arg0 :select s0=|invalid| s1=|missing|} option{$arg0 :select s0=| {$arg1}| s1=||}; expected vectorize, vectorize_width, interleave, interleave_count, unroll, unroll_count, pipeline, pipeline_initiation_interval, vectorize_predicate, or distribute</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1864" name="err_pragma_loop_invalid_vectorize_option">
@@ -2072,7 +2072,7 @@
       <unit id="1865" name="err_pragma_loop_missing_argument">
         <segment>
           <source>missing argument; expected %select{an integer value|'enable'%select{|, 'full'}1%select{|, 'assume_safety'}2 or 'disable'}0</source>
-          <target>missing argument; expected %select{an integer value|'enable'{$arg1 :select s0=|| s1=|, 'full'|}{$arg0 :select s0=|| s1=|, 'assume_safety'}2 or 'disable'|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1866" name="err_pragma_misplaced_in_decl">
@@ -2084,7 +2084,7 @@
       <unit id="1867" name="err_pragma_missing_argument">
         <segment>
           <source>missing argument to '#pragma %0'%select{|; expected %2}1</source>
-          <target>missing argument to '#pragma {$arg0}'{$arg1 :select s0=|| s1=|; expected {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1868" name="err_pragma_optimize_extra_argument">
@@ -2630,7 +2630,7 @@
       <unit id="1958" name="ext_cxx11_attr_placement">
         <segment>
           <source>ISO C++ does not allow %select{an attribute list|%0}1 to appear here</source>
-          <target>ISO C++ does not allow {$arg1 :select s0=|an attribute list| s1=|{$arg0}|} to appear here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1959" name="ext_cxx_binding_pack">
@@ -2666,7 +2666,7 @@
       <unit id="1964" name="ext_decl_attrs_on_lambda">
         <segment>
           <source>%select{an attribute specifier sequence|%0}1 in this position is a C++23 extension</source>
-          <target>{$arg1 :select s0=|an attribute specifier sequence| s1=|{$arg0}|} in this position is a C++23 extension</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1965" name="ext_decltype_auto_type_specifier">
@@ -2756,7 +2756,7 @@
       <unit id="1979" name="ext_extra_semi">
         <segment>
           <source>extra ';' %select{outside of a function|inside a %1|inside instance variable list|after member function definition}0</source>
-          <target>extra ';' {$arg0 :select s0=|outside of a function| s1=|inside a {$arg1}| s2=|inside instance variable list| s3=|after member function definition|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1980" name="ext_extra_semi_cxx11">
@@ -3320,13 +3320,13 @@
       <unit id="2073" name="warn_compound_token_split_by_macro">
         <segment>
           <source>%select{%1 and |}0%2 tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 appear in different macro expansion contexts</source>
-          <target>{$arg0 :select s0=|{$arg1} and | s1=||}{$arg2} tokens {$arg3 :select s0=|introducing statement expression| s1=|terminating statement expression| s2=|introducing attribute| s3=|terminating attribute| s4=|forming pointer to member type|} appear in different macro expansion contexts</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2074" name="warn_compound_token_split_by_whitespace">
         <segment>
           <source>%select{%1 and |}0%2 tokens %select{introducing statement expression|terminating statement expression|introducing attribute|terminating attribute|forming pointer to member type}3 are separated by whitespace</source>
-          <target>{$arg0 :select s0=|{$arg1} and | s1=||}{$arg2} tokens {$arg3 :select s0=|introducing statement expression| s1=|terminating statement expression| s2=|introducing attribute| s3=|terminating attribute| s4=|forming pointer to member type|} are separated by whitespace</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2075" name="warn_cstyle_param">
@@ -3470,7 +3470,7 @@
       <unit id="2098" name="warn_cxx20_compat_decl_attrs_on_lambda">
         <segment>
           <source>%select{an attribute specifier sequence|%1}0 in this position is incompatible with C++ standards before C++23</source>
-          <target>{$arg0 :select s0=|an attribute specifier sequence| s1=|{$arg1}|} in this position is incompatible with C++ standards before C++23</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2099" name="warn_cxx20_compat_explicit_bool">
@@ -4106,7 +4106,7 @@
       <unit id="2204" name="warn_pragma_invalid_argument">
         <segment>
           <source>unexpected argument '%0' to '#pragma %1'%select{|; expected %3}2</source>
-          <target>unexpected argument '{$arg0}' to '#pragma {$arg1}'{$arg2 :select s0=|| s1=|; expected {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2205" name="warn_pragma_invalid_specific_action">
@@ -4118,7 +4118,7 @@
       <unit id="2206" name="warn_pragma_missing_argument">
         <segment>
           <source>missing argument to '#pragma %0'%select{|; expected %2}1</source>
-          <target>missing argument to '#pragma {$arg0}'{$arg1 :select s0=|| s1=|; expected {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="2207" name="warn_pragma_ms_fenv_access">

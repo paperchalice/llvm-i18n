@@ -404,7 +404,7 @@
       <unit id="1087" name="err_mmap_missing_parent_module">
         <segment>
           <source>no module named '%0' %select{found|in '%2'}1, parent module must be defined before the submodule</source>
-          <target>no module named '{$arg0}' {$arg1 :select s0=|found| s1=|in '{$arg2}'|}, parent module must be defined before the submodule</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1088" name="err_mmap_module_id">
@@ -734,7 +734,7 @@
       <unit id="1142" name="err_pp_invalid_directive">
         <segment>
           <source>invalid preprocessing directive%select{|, did you mean '#%1'?}0</source>
-          <target>invalid preprocessing directive{$arg0 :select s0=|| s1=|, did you mean '#{$arg1}'?|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1143" name="err_pp_invalid_poison">
@@ -848,7 +848,7 @@
       <unit id="1161" name="err_pp_module_begin_wrong_module">
         <segment>
           <source>must specify '-fmodule-name=%0' to enter %select{|submodule of }1this module%select{ (current module is %3)|}2</source>
-          <target>must specify '-fmodule-name={$arg0}' to enter {$arg1 :select s0=|| s1=|submodule of |}this module{$arg2 :select s0=| (current module is {$arg3})| s1=||}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1162" name="err_pp_module_build_missing_end">
@@ -2156,7 +2156,7 @@
       <unit id="1379" name="warn_pp_invalid_directive">
         <segment>
           <source>invalid preprocessing directive%select{|, did you mean '#%1'?}0</source>
-          <target>invalid preprocessing directive{$arg0 :select s0=|| s1=|, did you mean '#{$arg1}'?|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1380" name="warn_pp_line_decimal">
@@ -2240,7 +2240,7 @@
       <unit id="1393" name="warn_pragma_deprecated_macro_use">
         <segment>
           <source>macro %0 has been marked as deprecated%select{|: %2}1</source>
-          <target>macro {$arg0} has been marked as deprecated{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1394" name="warn_pragma_diagnostic_cannot_pop">
@@ -2342,7 +2342,7 @@
       <unit id="1410" name="warn_pragma_restrict_expansion_macro_use">
         <segment>
           <source>macro %0 has been marked as unsafe for use in headers%select{|: %2}1</source>
-          <target>macro {$arg0} has been marked as unsafe for use in headers{$arg1 :select s0=|| s1=|: {$arg2}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="1411" name="warn_pragma_warning_expected">

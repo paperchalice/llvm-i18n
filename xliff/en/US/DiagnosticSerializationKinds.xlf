@@ -56,25 +56,25 @@
       <unit id="909" name="err_ast_file_not_found">
         <segment>
           <source>%select{PCH|module|AST}0 file '%1' not found%select{|: %3}2</source>
-          <target>{$arg0 :select s0=|PCH| s1=|module| s2=|AST|} file '{$arg1}' not found{$arg2 :select s0=|| s1=|: {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="910" name="err_ast_file_out_of_date">
         <segment>
           <source>%select{PCH|module|AST}0 file '%1' is out of date and needs to be rebuilt%select{|: %3}2</source>
-          <target>{$arg0 :select s0=|PCH| s1=|module| s2=|AST|} file '{$arg1}' is out of date and needs to be rebuilt{$arg2 :select s0=|| s1=|: {$arg3}|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="911" name="err_ast_file_pp_detailed_record">
         <segment>
           <source>%select{command line contains|AST file '%1' was built with}0 '-detailed-preprocessing-record' but %select{AST file '%1' was not built with it|it is not present on the command line}0</source>
-          <target>{$arg0 :select s0=|command line contains| s1=|AST file '{$arg1}' was built with|} '-detailed-preprocessing-record' but {$arg0 :select s0=|AST file '{$arg1}' was not built with it| s1=|it is not present on the command line|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="912" name="err_ast_file_targetopt_feature_mismatch">
         <segment>
           <source>%select{AST file '%1' was|current translation unit is}0 compiled with the target feature '%2' but the %select{current translation unit is|AST file '%1' was}0 not</source>
-          <target>{$arg0 :select s0=|AST file '{$arg1}' was| s1=|current translation unit is|} compiled with the target feature '{$arg2}' but the {$arg0 :select s0=|current translation unit is| s1=|AST file '{$arg1}' was|} not</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="913" name="err_ast_file_targetopt_mismatch">
@@ -86,7 +86,7 @@
       <unit id="914" name="err_ast_file_undef">
         <segment>
           <source>%select{command line contains|AST file '%1' was built with}0 '-undef' but %select{AST file '%1' was not built with it|it is not present on the command line}0</source>
-          <target>{$arg0 :select s0=|command line contains| s1=|AST file '{$arg1}' was built with|} '-undef' but {$arg0 :select s0=|AST file '{$arg1}' was not built with it| s1=|it is not present on the command line|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="915" name="err_ast_file_version_too_new">
@@ -116,7 +116,7 @@
       <unit id="919" name="err_fe_ast_file_modified">
         <segment>
           <source>file '%0' has been modified since the %select{precompiled header|module file|AST file}1 '%2' was built: %select{size|mtime|content}3 changed%select{| (was %5, now %6)}4</source>
-          <target>file '{$arg0}' has been modified since the {$arg1 :select s0=|precompiled header| s1=|module file| s2=|AST file|} '{$arg2}' was built: {$arg3 :select s0=|size| s1=|mtime| s2=|content|} changed{$arg4 :select s0=|| s1=| (was {$arg5}, now {$arg6})|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="920" name="err_fe_not_a_pch_file">
@@ -158,7 +158,7 @@
       <unit id="926" name="err_imported_module_not_found">
         <segment>
           <source>module '%0' in AST file '%1' %select{(imported by AST file '%2') |}4is not defined in any loaded module map file; maybe you need to load '%3'?</source>
-          <target>module '{$arg0}' in AST file '{$arg1}' {$arg4 :select s0=|(imported by AST file '{$arg2}') | s1=||}is not defined in any loaded module map file; maybe you need to load '{$arg3}'?</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="927" name="err_imported_module_relocated">
@@ -206,7 +206,7 @@
       <unit id="934" name="err_module_odr_violation_missing_decl">
         <segment>
           <source>%q0 from module '%1' is not present in definition of %q2%select{ in module '%4'| provided earlier}3</source>
-          <target>{$arg0 :q} from module '{$arg1}' is not present in definition of {$arg2 :q}{$arg3 :select s0=| in module '{$arg4}'| s1=| provided earlier|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="935" name="err_module_unable_to_hash_content">
@@ -236,7 +236,7 @@
       <unit id="939" name="note_module_file_imported_by">
         <segment>
           <source>imported by %select{|module '%2' in }1'%0'</source>
-          <target>imported by {$arg1 :select s0=|| s1=|module '{$arg2}' in |}'{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="940" name="note_module_odr_violation_no_possible_decls">
@@ -280,7 +280,7 @@
       <unit id="946" name="remark_module_import">
         <segment>
           <source>importing module '%0'%select{| into '%3'}2 from '%1'</source>
-          <target>importing module '{$arg0}'{$arg2 :select s0=|| s1=| into '{$arg3}'|} from '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="947" name="warn_decls_in_multiple_modules">
