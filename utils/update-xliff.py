@@ -28,7 +28,7 @@ class Updater:
       return
     elif not list(('xliff'/input_dir).glob('*.xlf')):
       return
-    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.2')
+    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.1')
     for c in self._extract_result:
       file_name = 'xliff'/input_dir/f'Diagnostic{c}Kinds.xlf'
       self._file_names[c] = file_name
@@ -39,7 +39,7 @@ class Updater:
       return
     xlf_copy = copy.deepcopy(self._xlfs[component])
     ns = {
-      'xliff': 'urn:oasis:names:tc:xliff:document:2.2'
+      'xliff': 'urn:oasis:names:tc:xliff:document:2.1'
     }
     group = xlf_copy.find('./xliff:file/xliff:group', ns)
     units = group.findall('./xliff:unit', ns)

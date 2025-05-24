@@ -44,7 +44,7 @@ class Converter:
     if len(list(input_dir.glob('*.xlf'))) == 0:
       return
 
-    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.2')
+    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.1')
     for c in COMPONENT_LIST:
       xlf = Path(f'{input_dir}/Diagnostic{c}Kinds.xlf')
       self.xlfs.append(ET.parse(xlf))
@@ -57,7 +57,7 @@ class Converter:
         f.write(EMPTY_TEMPLATE.format(lang=under_score_lang))
       return
     ns = {
-      'xliff': 'urn:oasis:names:tc:xliff:document:2.2'
+      'xliff': 'urn:oasis:names:tc:xliff:document:2.1'
     }
     string_list = []
     for xlf in self.xlfs:

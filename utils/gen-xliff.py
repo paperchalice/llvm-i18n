@@ -24,12 +24,12 @@ class XmlGenerator:
   
   def generate_for_lang(self, enums:list[DiagInfo], lang):
     xliff_attr = {
-      'xmlns': 'urn:oasis:names:tc:xliff:document:2.2',
+      'xmlns': 'urn:oasis:names:tc:xliff:document:2.1',
       'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
       'version': '2.2',
       'srcLang': 'en-US',
       'trgLang': lang,
-      'xsi:schemaLocation': 'https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.2.xsd'
+      'xsi:schemaLocation': 'https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.1.xsd'
     }
     
     xliff = ET.Element("xliff", **xliff_attr)
