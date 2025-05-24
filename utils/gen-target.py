@@ -1,22 +1,56 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 import xml.etree.ElementTree as ET
 import pathlib
 import re
 
 
-def translate_select(s):
-    select_pattern = r"%select{([^{]+)}(\d+)"
-
-    def handle_choice(m: re.Match):
-        g1:str = m.group(1)
-        choices = g1.split('|')
-        choices_str = ""
-        for i, c in enumerate(choices):
-            choices_str += f' s{i}=|{c}|'
-        return f"{{$arg{m.group(2)} :select{choices_str}}}"
-
-    result = re.sub(select_pattern, handle_choice, s)
+def split_selection_choices(s:str):
+    bra = 0
+    result = []
+    start = 0
+    for i, c in enumerate(s):
+        if c == '{':
+            bra+=1
+        elif c == '}':
+            bra -= 1
+        if bra == 0 and c == '|':
+            result.append(s[start:i])
+            start = i + 1
+    result.append(s[start:])
     return result
+
+
+def translate_select(s:str):
+    select_pattern = r"%select{"
+    m = re.search(select_pattern, s)
+    while m:
+        interest = s[m.end():]
+
+        bra = 1
+        end = 0
+        for i, c in enumerate(interest):
+            if c == '{':
+                bra += 1
+            elif c == '}':
+                bra -= 1
+            if bra == 0:
+                end = i
+                break
+        choices_s = interest[:end]
+        p = r"(?<!%)%(?!%)"
+        # contain format string?
+        if re.search(p, choices_s):
+            s = ''
+            break
+            
+        choices = split_selection_choices(choices_s)
+        arg_num =  interest[end + 1]
+        opts = ''
+        for i, c in enumerate(choices):
+            opts += f' s{i}=|{c}|'
+        s = s.replace(f'%select{{{choices_s}}}{arg_num}', f'{{$arg{arg_num} :select{opts}}}')
+        m = re.search(select_pattern, s)
+    return s
 
 
 def translate_var(s):
@@ -56,9 +90,9 @@ def translate(s):
 
 
 def handle_xliff(f):
-    ET.register_namespace("", "urn:oasis:names:tc:xliff:document:2.2")
+    ET.register_namespace("", "urn:oasis:names:tc:xliff:document:2.1")
     xlf = ET.parse(f)
-    ns = {"xliff": "urn:oasis:names:tc:xliff:document:2.2"}
+    ns = {"xliff": "urn:oasis:names:tc:xliff:document:2.1"}
     group = xlf.find("./xliff:file/xliff:group", ns)
     units = group.findall("./xliff:unit", ns)
     for unit in units:
