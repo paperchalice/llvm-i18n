@@ -368,8 +368,8 @@
       <unit id="2381" name="note_constexpr_baa_insufficient_alignment">
         <segment state="translated">
           <source>%select{alignment of|offset of the aligned pointer from}0 the base pointee object (%1 %plural{1:byte|:bytes}1) is %select{less than|not a multiple of}0 the asserted %2 %plural{1:byte|:bytes}2</source>
-          <target>.input {$arg2 :number}
-.input {$arg1 :number}
+          <target>.input {$arg2 :integer}
+.input {$arg1 :integer}
 .match $arg1 $arg2
 1 1 {{{$arg0 :select s0=|alignment of| s1=|offset of the aligned pointer from|} the base pointee object ({$arg1} byte) is {$arg0 :select s0=|less than| s1=|not a multiple of|} the asserted {$arg2} byte}}
 1 * {{{$arg0 :select s0=|alignment of| s1=|offset of the aligned pointer from|} the base pointee object ({$arg1} byte) is {$arg0 :select s0=|less than| s1=|not a multiple of|} the asserted {$arg2} bytes}}
@@ -380,7 +380,7 @@
       <unit id="2382" name="note_constexpr_baa_value_insufficient_alignment">
         <segment state="translated">
           <source>value of the aligned pointer (%0) is not a multiple of the asserted %1 %plural{1:byte|:bytes}1</source>
-          <target>.input {$arg1 :number}
+          <target>.input {$arg1 :integer}
 .match $arg1
 one {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {$arg1} byte}}
 * {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {$arg1} bytes}}</target>
@@ -617,7 +617,7 @@ one {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {
       <unit id="2421" name="note_constexpr_lifetime_ended">
         <segment state="translated">
           <source state="initial">%select{read of|read of|assignment to|increment of|decrement of|member call on|dynamic_cast of|typeid applied to|construction of|destruction of|read of}0 %select{temporary|variable}1 whose %plural{8:storage duration|:lifetime}0 has ended</source>
-          <target>.input {$arg0 :number}
+          <target>.input {$arg0 :integer}
 .match $arg0
 8 {{{$arg0 :select s0=|read of| s1=|read of| s2=|assignment to| s3=|increment of| s4=|decrement of| s5=|member call on| s6=|dynamic_cast of| s7=|typeid applied to| s8=|construction of| s9=|destruction of| s10=|read of|} {$arg1 :select s0=|temporary| s1=|variable|} whose storage duration has ended}}
 * {{{$arg0 :select s0=|read of| s1=|read of| s2=|assignment to| s3=|increment of| s4=|decrement of| s5=|member call on| s6=|dynamic_cast of| s7=|typeid applied to| s8=|construction of| s9=|destruction of| s10=|read of|} {$arg1 :select s0=|temporary| s1=|variable|} whose lifetime has ended}}</target>
@@ -728,7 +728,7 @@ one {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {
       <unit id="2439" name="note_constexpr_memory_leak">
         <segment state="translated">
           <source>allocation performed here was not deallocated%plural{0:|: (along with %0 other memory leak%s0)}0</source>
-          <target>.input {$arg0 :number}
+          <target>.input {$arg0 :integer}
 .match $arg0
 0 {{allocation performed here was not deallocated}}
 1 {{allocation performed here was not deallocated (along with {$arg0} other memory leak)}}
@@ -1320,7 +1320,7 @@ one {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {
       <unit id="2537" name="note_odr_number_of_bases">
         <segment state="translated">
           <source>class has %0 base %plural{1:class|:classes}0</source>
-          <target>.input {$arg1 :number}
+          <target>.input {$arg1 :integer}
 .match $arg1
 1 {{class has {$arg0} base class}}
 * {{class has {$arg0} base classes}}</target>
@@ -1569,7 +1569,7 @@ one {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {
       <unit id="2578" name="warn_padded_struct_anon_bitfield">
         <segment state="translated">
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align anonymous bit-field</source>
-          <target>.input {$arg2 :number}
+          <target>.input {$arg2 :integer}
 .match $arg2
 1 {{padding {$arg0 :select s0=|struct| s1=|interface| s2=|class|} {$arg1} with {$arg2} {$arg3 :select s0=|byte| s1=|bit|} to align anonymous bit-field}}
 * {{padding {$arg0 :select s0=|struct| s1=|interface| s2=|class|} {$arg1} with {$arg2} {$arg3 :select s0=|byte| s1=|bit|}s to align anonymous bit-field}}</target>
@@ -1578,7 +1578,7 @@ one {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {
       <unit id="2579" name="warn_padded_struct_anon_field">
         <segment state="translated">
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align anonymous field</source>
-          <target>.input {$arg2 :number}
+          <target>.input {$arg2 :integer}
 .match $arg2
 1 {{padding {$arg0 :select s0=|struct| s1=|interface| s2=|class|} {$arg1} with {$arg2} {$arg3 :select s0=|byte| s1=|bit|} to align anonymous field}}
 * {{padding {$arg0 :select s0=|struct| s1=|interface| s2=|class|} {$arg1} with {$arg2} {$arg3 :select s0=|byte| s1=|bit|}s to align anonymous field}}</target>
@@ -1587,7 +1587,7 @@ one {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {
       <unit id="2580" name="warn_padded_struct_bitfield">
         <segment state="translated">
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align %4</source>
-          <target>.input {$arg2 :number}
+          <target>.input {$arg2 :integer}
 .match $arg2
 1 {{padding {$arg0 :select s0=|struct| s1=|interface| s2=|class|} {$arg1} with {$arg2} {$arg3 :select s0=|byte| s1=|bit|} to align {$arg4}}}
 * {{padding {$arg0 :select s0=|struct| s1=|interface| s2=|class|} {$arg1} with {$arg2} {$arg3 :select s0=|byte| s1=|bit|}s to align {$arg4}}}\</target>
@@ -1596,7 +1596,7 @@ one {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {
       <unit id="2581" name="warn_padded_struct_field">
         <segment state="translated">
           <source>padding %select{struct|interface|class}0 %1 with %2 %select{byte|bit}3%s2 to align %4</source>
-          <target>.input {$arg2 :number}
+          <target>.input {$arg2 :integer}
 .match $arg2
 1 {{padding {$arg0 :select s0=|struct| s1=|interface| s2=|class|} {$arg1} with {$arg2} {$arg3 :select s0=|byte| s1=|bit|} to align {$arg4}}}
 * {{padding {$arg0 :select s0=|struct| s1=|interface| s2=|class|} {$arg1} with {$arg2} {$arg3 :select s0=|byte| s1=|bit|}s to align {$arg4}}}</target>
@@ -1605,7 +1605,7 @@ one {{value of the aligned pointer ({$arg0}) is not a multiple of the asserted {
       <unit id="2582" name="warn_padded_struct_size">
         <segment state="translated">
           <source>padding size of %0 with %1 %select{byte|bit}2%s1 to alignment boundary</source>
-          <target>.input {$arg2 :number}
+          <target>.input {$arg2 :integer}
 .match $arg2
 1 {{padding size of {$arg0} with {$arg1} {$arg2 :select s0=|byte| s1=|bit|}%s1 to alignment boundary}}
 * {{padding size of {$arg0} with {$arg1} {$arg2 :select s0=|byte| s1=|bit|}s to alignment boundary}}</target>
