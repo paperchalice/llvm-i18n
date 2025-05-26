@@ -17,7 +17,7 @@ _project_dir = Path(__file__).parent.parent
 TXT_TEMPLATE = '''// Automatically generated file, do not edit directly!
 {lang}:table {{
   Basic:table {{
-    DiagInfoDescriptionStringTable:array {{
+    DiagInfoDescriptionStringTable:table {{
       {strings}
     }}
   }}
@@ -28,10 +28,12 @@ EMPTY_TEMPLATE = '''// Automatically generated file, do not edit directly!
 {lang}:table {{}}
 '''
 
-def to_icu_bin(txt):
+def to_icu_bin(name, txt):
   if txt is None:
-    return ':bin { 00 }'
-  return f':bin {{ {txt.encode("utf-8").hex()}00 }}'
+    return f'{name}:string {{ "" }}'
+  def unicode_escape(s):
+    return "".join(map(lambda c: rf"\U{ord(c):08x}", s))
+  return f'{name}:string {{ {unicode_escape(txt)} }}'
 
 class Converter:
   def __init__(self, lang):
@@ -64,9 +66,10 @@ class Converter:
       units = xlf.findall('./xliff:file/xliff:group/xliff:unit', ns)
       for unit in units:
         tgt = unit.find('./xliff:segment/xliff:target', ns)
-        string_list.append(to_icu_bin(tgt.text))
+        name = unit.get("name")
+        string_list.append(to_icu_bin(name, tgt.text))
 
-    strings = ',\n      '.join(string_list)
+    strings = '\n      '.join(string_list)
     out_txt = TXT_TEMPLATE.format(lang=under_score_lang, strings=strings)
     # With BOM so genrb can recognize it.
     out_file = Path(f'{args.out_dir}/{under_score_lang}.txt')
