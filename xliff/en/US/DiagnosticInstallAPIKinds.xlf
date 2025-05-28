@@ -1,296 +1,301 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" srcLang="en-US" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.1.xsd" trgLang="root">
-  <file id="DiagnosticInstallAPI" original="clang/Basic/DiagnosticInstallAPIKinds.inc">
-    <notes>
-      <note appliesTo="source">Automatically generated file, do not edit directly!</note>
-    </notes>
-    <group id="InstallAPI">
-      <unit id="8921" name="err_allowable_clients_mismatch">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd" trgLang="en-US">
+  <!--his file is automatically generated. Do not update this file directly by hand! Use `update-xliff.py`.-->
+  <file id="DiagnosticInstallAPI" original="clang/Basic/DiagnosticInstallAPIKinds.td">
+    <group id="TextSubstitution"></group>
+    <group id="Diagnostic">
+      <unit id="err_allowable_clients_mismatch">
         <segment>
           <source>allowable clients do not match: '%0' (provided) vs '%1' (found)</source>
-          <target>allowable clients do not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8922" name="err_allowable_clients_missing">
+      <unit id="err_allowable_clients_missing">
         <segment>
           <source>allowable client missing from %0: '%1'</source>
-          <target>allowable client missing from {$arg0}: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8923" name="err_appextension_safe_mismatch">
+      <unit id="err_appextension_safe_mismatch">
         <segment>
           <source>the ApplicationExtensionSafe flag does not match: '%0' (provided) vs '%1' (found)</source>
-          <target>the ApplicationExtensionSafe flag does not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8924" name="err_architecture_mismatch">
+      <unit id="err_architecture_mismatch">
         <segment>
           <source>architectures do not match: '%0' (provided) vs '%1' (found)</source>
-          <target>architectures do not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8925" name="err_cannot_find_reexport">
+      <unit id="err_cannot_find_reexport">
         <segment>
           <source>cannot find re-exported %select{framework|library}0: '%1'</source>
-          <target>cannot find re-exported {$arg0 :select s0=|framework| s1=|library|}: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8926" name="err_cannot_read_input_list">
+      <unit id="err_cannot_read_input_list">
         <segment>
           <source>could not read %0 input list '%1': %2</source>
-          <target>could not read {$arg0} input list '{$arg1}': {$arg2}</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8927" name="err_cannot_write_file">
+      <unit id="err_cannot_write_file">
         <segment>
           <source>cannot write file '%0': %1</source>
-          <target>cannot write file '{$arg0}': {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8928" name="err_compatibility_version_mismatch">
+      <unit id="err_compatibility_version_mismatch">
         <segment>
           <source>compatibility_version does not match: '%0' (provided) vs '%1' (found)</source>
-          <target>compatibility_version does not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8929" name="err_current_version_mismatch">
+      <unit id="err_current_version_mismatch">
         <segment>
           <source>current_version does not match: '%0' (provided) vs '%1' (found)</source>
-          <target>current_version does not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8930" name="err_directory_scanning">
+      <unit id="err_directory_scanning">
         <segment>
           <source>could not read directory '%0': %1</source>
-          <target>could not read directory '{$arg0}': {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8931" name="err_dylib_symbol_flags_mismatch">
+      <unit id="err_dylib_symbol_flags_mismatch">
         <segment>
           <source>dynamic library symbol '%0' is %select{weak defined|thread local}1, but its declaration is not</source>
-          <target>dynamic library symbol '{$arg0}' is {$arg1 :select s0=|weak defined| s1=|thread local|}, but its declaration is not</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8932" name="err_header_availability_mismatch">
+      <unit id="err_header_availability_mismatch">
         <segment>
           <source>declaration '%0' is marked %select{available|unavailable}1, but symbol is %select{not |}2exported in dynamic library</source>
-          <target>declaration '{$arg0}' is marked {$arg1 :select s0=|available| s1=|unavailable|}, but symbol is {$arg2 :select s0=|not | s1=||}exported in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8933" name="err_header_hidden_symbol">
+      <unit id="err_header_hidden_symbol">
         <segment>
           <source>symbol exported in dynamic library, but marked hidden in declaration '%0'</source>
-          <target>symbol exported in dynamic library, but marked hidden in declaration '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8934" name="err_header_symbol_flags_mismatch">
+      <unit id="err_header_symbol_flags_mismatch">
         <segment>
           <source>declaration '%0' is %select{weak defined|thread local}1, but symbol is not in dynamic library</source>
-          <target>declaration '{$arg0}' is {$arg1 :select s0=|weak defined| s1=|thread local|}, but symbol is not in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8935" name="err_header_symbol_missing">
+      <unit id="err_header_symbol_missing">
         <segment>
           <source>no declaration found for exported symbol '%0' in dynamic library</source>
-          <target>no declaration found for exported symbol '{$arg0}' in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8936" name="err_install_name_mismatch">
+      <unit id="err_install_name_mismatch">
         <segment>
           <source>install_name does not match: '%0' (provided) vs '%1' (found)</source>
-          <target>install_name does not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8937" name="err_invalid_label">
+      <unit id="err_invalid_label">
         <segment>
           <source>label '%0' is reserved: use a different label name for -X&lt;label&gt;</source>
-          <target>label '{$arg0}' is reserved: use a different label name for -X&lt;label&gt;</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8938" name="err_library_hidden_symbol">
+      <unit id="err_library_hidden_symbol">
         <segment>
           <source>declaration has external linkage, but symbol has internal linkage in dynamic library '%0'</source>
-          <target>declaration has external linkage, but symbol has internal linkage in dynamic library '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8939" name="err_library_missing_symbol">
+      <unit id="err_library_missing_symbol">
         <segment>
           <source>declaration has external linkage, but dynamic library doesn't have symbol '%0'</source>
-          <target>declaration has external linkage, but dynamic library doesn't have symbol '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8940" name="err_more_than_one_library">
+      <unit id="err_more_than_one_library">
         <segment>
           <source>more than one framework/dynamic library found</source>
-          <target>more than one framework/dynamic library found</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8941" name="err_no_install_name">
+      <unit id="err_no_install_name">
         <segment>
           <source>no install name specified: add -install_name &lt;path&gt;</source>
-          <target>no install name specified: add -install_name &lt;path&gt;</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8942" name="err_no_matching_target">
+      <unit id="err_no_matching_target">
         <segment>
           <source>no matching target found for target variant '%0'</source>
-          <target>no matching target found for target variant '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8943" name="err_no_output_file">
+      <unit id="err_no_output_file">
         <segment>
           <source>no output file specified</source>
-          <target>no output file specified</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8944" name="err_no_such_header_file">
+      <unit id="err_no_such_header_file">
         <segment>
           <source>no such %select{public|private|project}1 header file: '%0'</source>
-          <target>no such {$arg1 :select s0=|public| s1=|private| s2=|project|} header file: '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8945" name="err_no_such_umbrella_header_file">
+      <unit id="err_no_such_umbrella_header_file">
         <segment>
           <source>%select{public|private|project}1 umbrella header file not found in input: '%0'</source>
-          <target>{$arg1 :select s0=|public| s1=|private| s2=|project|} umbrella header file not found in input: '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8946" name="err_no_twolevel_namespace">
+      <unit id="err_no_twolevel_namespace">
         <segment>
           <source>flat namespace libraries are not supported</source>
-          <target>flat namespace libraries are not supported</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8947" name="err_parent_umbrella_mismatch">
+      <unit id="err_parent_umbrella_mismatch">
         <segment>
           <source>parent umbrella does not match: '%0' (provided) vs '%1' (found)</source>
-          <target>parent umbrella does not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8948" name="err_parent_umbrella_missing">
+      <unit id="err_parent_umbrella_missing">
         <segment>
           <source>parent umbrella missing from %0: '%1'</source>
-          <target>parent umbrella missing from {$arg0}: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8949" name="err_platform_mismatch">
+      <unit id="err_platform_mismatch">
         <segment>
           <source>platform does not match: '%0' (provided) vs '%1' (found)</source>
-          <target>platform does not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8950" name="err_reexported_libraries_mismatch">
+      <unit id="err_reexported_libraries_mismatch">
         <segment>
           <source>re-exported libraries do not match: '%0' (provided) vs '%1' (found)</source>
-          <target>re-exported libraries do not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8951" name="err_reexported_libraries_missing">
+      <unit id="err_reexported_libraries_missing">
         <segment>
           <source>re-exported library missing from %0: '%1'</source>
-          <target>re-exported library missing from {$arg0}: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8952" name="err_shared_cache_eligiblity_mismatch">
+      <unit id="err_shared_cache_eligiblity_mismatch">
         <segment>
           <source>the NotForDyldSharedCache flag does not match: '%0' (provided) vs '%1' (found)</source>
-          <target>the NotForDyldSharedCache flag does not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8953" name="err_unsupported_environment">
+      <unit id="err_unsupported_environment">
         <segment>
           <source>environment '%0' is not supported: '%1'</source>
-          <target>environment '{$arg0}' is not supported: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8954" name="err_unsupported_os">
+      <unit id="err_unsupported_os">
         <segment>
           <source>os '%0' is not supported: '%1'</source>
-          <target>os '{$arg0}' is not supported: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8955" name="err_unsupported_vendor">
+      <unit id="err_unsupported_vendor">
         <segment>
           <source>vendor '%0' is not supported: '%1'</source>
-          <target>vendor '{$arg0}' is not supported: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8956" name="warn_dylib_symbol_flags_mismatch">
+      <unit id="warn_dylib_symbol_flags_mismatch">
         <segment>
           <source>dynamic library symbol '%0' is %select{weak defined|thread local}1, but its declaration is not</source>
-          <target>dynamic library symbol '{$arg0}' is {$arg1 :select s0=|weak defined| s1=|thread local|}, but its declaration is not</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8957" name="warn_glob_did_not_match">
+      <unit id="warn_glob_did_not_match">
         <segment>
           <source>glob '%0' did not match any header file</source>
-          <target>glob '{$arg0}' did not match any header file</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8958" name="warn_header_availability_mismatch">
+      <unit id="warn_header_availability_mismatch">
         <segment>
           <source>declaration '%0' is marked %select{available|unavailable}1, but symbol is %select{not |}2exported in dynamic library</source>
-          <target>declaration '{$arg0}' is marked {$arg1 :select s0=|available| s1=|unavailable|}, but symbol is {$arg2 :select s0=|not | s1=||}exported in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8959" name="warn_header_hidden_symbol">
+      <unit id="warn_header_hidden_symbol">
         <segment>
           <source>symbol exported in dynamic library, but marked hidden in declaration '%0'</source>
-          <target>symbol exported in dynamic library, but marked hidden in declaration '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8960" name="warn_header_symbol_flags_mismatch">
+      <unit id="warn_header_symbol_flags_mismatch">
         <segment>
           <source>declaration '%0' is %select{weak defined|thread local}1, but symbol is not in dynamic library</source>
-          <target>declaration '{$arg0}' is {$arg1 :select s0=|weak defined| s1=|thread local|}, but symbol is not in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8961" name="warn_header_symbol_missing">
+      <unit id="warn_header_symbol_missing">
         <segment>
           <source>no declaration was found for exported symbol '%0' in dynamic library</source>
-          <target>no declaration was found for exported symbol '{$arg0}' in dynamic library</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8962" name="warn_library_hidden_symbol">
+      <unit id="warn_library_hidden_symbol">
         <segment>
           <source>declaration has external linkage, but symbol has internal linkage in dynamic library '%0'</source>
-          <target>declaration has external linkage, but symbol has internal linkage in dynamic library '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8963" name="warn_library_missing_symbol">
+      <unit id="warn_library_missing_symbol">
         <segment>
           <source>declaration has external linkage, but dynamic library doesn't have symbol '%0'</source>
-          <target>declaration has external linkage, but dynamic library doesn't have symbol '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8964" name="warn_no_such_excluded_header_file">
+      <unit id="warn_no_such_excluded_header_file">
         <segment>
           <source>no such excluded %select{public|private}0 header file: '%1'</source>
-          <target>no such excluded {$arg0 :select s0=|public| s1=|private|} header file: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8965" name="warn_platform_mismatch">
+      <unit id="warn_platform_mismatch">
         <segment>
           <source>platform does not match: '%0' (provided) vs '%1' (found)</source>
-          <target>platform does not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8966" name="warn_rpaths_mismatch">
+      <unit id="warn_rpaths_mismatch">
         <segment>
           <source>runpath search paths do not match: '%0' (provided) vs '%1' (found)</source>
-          <target>runpath search paths do not match: '{$arg0}' (provided) vs '{$arg1}' (found)</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8967" name="warn_rpaths_missing">
+      <unit id="warn_rpaths_missing">
         <segment>
           <source>runpath search paths missing from %0: '%1'</source>
-          <target>runpath search paths missing from {$arg0}: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="8968" name="warn_target">
+      <unit id="warn_target">
         <segment>
           <source>violations found for %0</source>
-          <target>violations found for {$arg0}</target>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="warn_zero_size_struct_union_in_extern_c">
+        <segment>
+          <source>%select{|empty }0%select{struct|union}1 has size 0 in C, %select{size 1|non-zero size}2 in C++</source>
+          <target></target>
         </segment>
       </unit>
     </group>

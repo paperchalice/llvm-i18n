@@ -1,9 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" srcLang="en-US" trgLang="zh-Hans-CN" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.1.xsd">
-  <file id="DiagnosticAnalysis" original="clang/Basic/DiagnosticAnalysisKinds.inc">
-    <notes>
-      <note appliesTo="source">Automatically generated file, do not edit directly!</note>
-    </notes>
-    <group id="Analysis"></group>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd" trgLang="zh-Hans-CN">
+  <!--his file is automatically generated. Do not update this file directly by hand! Use `update-xliff.py`.-->
+  <file id="DiagnosticAnalysis" original="clang/Basic/DiagnosticAnalysisKinds.td">
+    <group id="TextSubstitution"></group>
+    <group id="Diagnostic">
+      <unit id="warn_zero_size_struct_union_in_extern_c">
+        <segment>
+          <source>%select{|empty }0%select{struct|union}1 has size 0 in C, %select{size 1|non-zero size}2 in C++</source>
+          <target></target>
+        </segment>
+      </unit>
+    </group>
   </file>
 </xliff>

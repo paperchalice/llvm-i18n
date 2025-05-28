@@ -1,961 +1,979 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" srcLang="en-US" trgLang="zh-Hans-CN" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.1.xsd">
-  <file id="DiagnosticCommon" original="clang/Basic/DiagnosticCommonKinds.inc">
-    <notes>
-      <note appliesTo="source">Automatically generated file, do not edit directly!</note>
-    </notes>
-    <group id="Common">
-      <unit id="0" name="err_aix_musttail_unsupported">
-        <segment state="initial">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd" trgLang="zh-Hans-CN">
+  <!--his file is automatically generated. Do not update this file directly by hand! Use `update-xliff.py`.-->
+  <file id="DiagnosticCommon" original="clang/Basic/DiagnosticCommonKinds.td">
+    <group id="TextSubstitution">
+      <unit id="duplicate_declspec">
+        <segment>
+          <source>duplicate '%0' declaration specifier</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="select_constexpr_spec_kind">
+        <segment>
+          <source>%select{&lt;ERROR&gt;|constexpr|consteval|constinit}0</source>
+          <target></target>
+        </segment>
+      </unit>
+    </group>
+    <group id="Diagnostic">
+      <unit id="err_aix_musttail_unsupported">
+        <segment>
           <source>'musttail' attribute is not supported on AIX</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="1" name="err_apinotes_message">
-        <segment state="initial">
+      <unit id="err_apinotes_message">
+        <segment>
           <source>%0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="2" name="err_asm_invalid_type">
-        <segment state="initial">
+      <unit id="err_asm_invalid_type">
+        <segment>
           <source>invalid type %0 in asm %select{input|output}1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="3" name="err_asm_invalid_type_in_input">
-        <segment state="initial">
+      <unit id="err_asm_invalid_type_in_input">
+        <segment>
           <source>invalid type %0 in asm input for constraint '%1'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="4" name="err_attribute_not_type_attr">
-        <segment state="initial">
+      <unit id="err_attribute_not_type_attr">
+        <segment>
           <source>%0%select{ attribute|}1 cannot be applied to types</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="5" name="err_attribute_uuid_malformed_guid">
-        <segment state="initial">
+      <unit id="err_attribute_uuid_malformed_guid">
+        <segment>
           <source>uuid attribute contains a malformed GUID</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="6" name="err_cannot_open_file">
-        <segment state="initial">
+      <unit id="err_cannot_open_file">
+        <segment>
           <source>cannot open file '%0': %1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="7" name="err_constexpr_invalid_template_arg">
-        <segment state="initial">
+      <unit id="err_constexpr_invalid_template_arg">
+        <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '%3' variable}2 is not allowed in a template argument</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="8" name="err_cxx23_size_t_suffix">
-        <segment state="initial">
+      <unit id="err_cxx23_size_t_suffix">
+        <segment>
           <source>'size_t' suffix for literals is a C++23 feature</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="9" name="err_default_special_members">
-        <segment state="initial">
+      <unit id="err_default_special_members">
+        <segment>
           <source>only special member functions %select{|and comparison operators }0may be defaulted</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="10" name="err_deleted_non_function">
-        <segment state="initial">
+      <unit id="err_deleted_non_function">
+        <segment>
           <source>only functions can have deleted definitions</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="11" name="err_duplicate_declspec">
-        <segment state="initial">
-          <source>duplicate '%0' declaration specifier</source>
+      <unit id="err_duplicate_declspec">
+        <segment>
+          <source>%sub{duplicate_declspec}0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="12" name="err_enum_template">
-        <segment state="initial">
+      <unit id="err_enum_template">
+        <segment>
           <source>enumeration cannot be a template</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="13" name="err_expected">
-        <segment state="initial">
+      <unit id="err_expected">
+        <segment>
           <source>expected %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="14" name="err_expected_after">
-        <segment state="initial">
+      <unit id="err_expected_after">
+        <segment>
           <source>expected %1 after %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="15" name="err_expected_colon_after_setter_name">
-        <segment state="initial">
+      <unit id="err_expected_colon_after_setter_name">
+        <segment>
           <source>method name referenced in property setter attribute must end with ':'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="16" name="err_expected_either">
-        <segment state="initial">
+      <unit id="err_expected_either">
+        <segment>
           <source>expected %0 or %1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="17" name="err_expected_namespace_name">
-        <segment state="initial">
+      <unit id="err_expected_namespace_name">
+        <segment>
           <source>expected namespace name</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="18" name="err_expected_string_literal">
-        <segment state="initial">
+      <unit id="err_expected_string_literal">
+        <segment>
           <source>expected string literal %select{in %1|for diagnostic message in static_assert|for optional message in 'availability' attribute|for %select{language name|source container name|USR}1 in 'external_source_symbol' attribute|as argument of '%1' attribute}0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="19" name="err_file_modified">
-        <segment state="initial">
+      <unit id="err_file_modified">
+        <segment>
           <source>file '%0' modified since it was first processed</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="20" name="err_file_too_large">
-        <segment state="initial">
+      <unit id="err_file_too_large">
+        <segment>
           <source>file '%0' is too large for Clang to process</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="21" name="err_friend_decl_spec">
-        <segment state="initial">
+      <unit id="err_friend_decl_spec">
+        <segment>
           <source>'%0' is invalid in friend declarations</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="22" name="err_integer_literal_too_large">
-        <segment state="initial">
+      <unit id="err_integer_literal_too_large">
+        <segment>
           <source>integer literal is too large to be represented in any %select{signed |}0integer type</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="23" name="err_invalid_character_udl">
-        <segment state="initial">
+      <unit id="err_invalid_character_udl">
+        <segment>
           <source>character literal with user-defined suffix cannot be used here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="24" name="err_invalid_feature_combination">
-        <segment state="initial">
+      <unit id="err_invalid_feature_combination">
+        <segment>
           <source>invalid feature combination: %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="25" name="err_invalid_member_in_interface">
-        <segment state="initial">
+      <unit id="err_invalid_member_in_interface">
+        <segment>
           <source>%select{data member |non-public member function |static member function |user-declared constructor|user-declared destructor|operator |nested class }0%1 is not permitted within an interface type</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="26" name="err_invalid_numeric_udl">
-        <segment state="initial">
+      <unit id="err_invalid_numeric_udl">
+        <segment>
           <source>numeric literal with user-defined suffix cannot be used here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="27" name="err_invalid_storage_class_in_func_decl">
-        <segment state="initial">
+      <unit id="err_invalid_storage_class_in_func_decl">
+        <segment>
           <source>invalid storage class specifier in function declarator</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="28" name="err_invalid_string_udl">
-        <segment state="initial">
+      <unit id="err_invalid_string_udl">
+        <segment>
           <source>string literal with user-defined suffix cannot be used here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="29" name="err_keyword_not_supported_on_target">
-        <segment state="initial">
+      <unit id="err_keyword_not_supported_on_target">
+        <segment>
           <source>%0 is not supported on this target</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="30" name="err_mips_fp64_req">
-        <segment state="initial">
+      <unit id="err_mips_fp64_req">
+        <segment>
           <source>'%0' can only be used if the target supports the mfhc1 and mthc1 instructions</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="31" name="err_module_build_disabled">
-        <segment state="initial">
+      <unit id="err_module_build_disabled">
+        <segment>
           <source>module '%0' is needed but has not been provided, and implicit use of module files is disabled</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="32" name="err_module_build_shadowed_submodule">
-        <segment state="initial">
+      <unit id="err_module_build_shadowed_submodule">
+        <segment>
           <source>build a shadowed submodule '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="33" name="err_module_cycle">
-        <segment state="initial">
+      <unit id="err_module_cycle">
+        <segment>
           <source>cyclic dependency in module '%0': %1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="34" name="err_module_format_unhandled">
-        <segment state="initial">
+      <unit id="err_module_format_unhandled">
+        <segment>
           <source>no handler registered for module format '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="35" name="err_module_header_missing">
-        <segment state="initial">
+      <unit id="err_module_header_missing">
+        <segment>
           <source>%select{|umbrella }0header '%1' not found</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="36" name="err_module_not_built">
-        <segment state="initial">
+      <unit id="err_module_not_built">
+        <segment>
           <source>could not build module '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="37" name="err_module_not_found">
-        <segment state="initial">
+      <unit id="err_module_not_found">
+        <segment>
           <source>module '%0' not found</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="38" name="err_module_prebuilt">
-        <segment state="initial">
+      <unit id="err_module_prebuilt">
+        <segment>
           <source>error in loading module '%0' from prebuilt module path</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="39" name="err_module_rebuild_finalized">
-        <segment state="initial">
+      <unit id="err_module_rebuild_finalized">
+        <segment>
           <source>cannot rebuild module '%0' as it is already finalized</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="40" name="err_module_shadowed">
-        <segment state="initial">
+      <unit id="err_module_shadowed">
+        <segment>
           <source>import of shadowed module '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="41" name="err_module_unavailable">
-        <segment state="initial">
+      <unit id="err_module_unavailable">
+        <segment>
           <source>module '%0' %select{is incompatible with|requires}1 feature '%2'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="42" name="err_ms_asm_bitfield_unsupported">
-        <segment state="initial">
+      <unit id="err_ms_asm_bitfield_unsupported">
+        <segment>
           <source>an inline asm block cannot have an operand which is a bit-field</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="43" name="err_nullability_conflicting">
-        <segment state="initial">
+      <unit id="err_nullability_conflicting">
+        <segment>
           <source>nullability specifier %0 conflicts with existing specifier %1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="44" name="err_omp_more_one_clause">
-        <segment state="initial">
+      <unit id="err_omp_more_one_clause">
+        <segment>
           <source>directive '#pragma omp %0' cannot contain more than one '%1' clause%select{| with '%3' name modifier| with 'source' dependence}2</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="45" name="err_omp_required_clause">
-        <segment state="initial">
+      <unit id="err_omp_required_clause">
+        <segment>
           <source>directive '#pragma omp %0' requires the '%1' clause</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="46" name="err_opencl_extension_and_feature_differs">
-        <segment state="initial">
+      <unit id="err_opencl_extension_and_feature_differs">
+        <segment>
           <source>options %0 and %1 are set to different values</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="47" name="err_opencl_feature_requires">
-        <segment state="initial">
+      <unit id="err_opencl_feature_requires">
+        <segment>
           <source>feature %0 requires support of %1 feature</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="48" name="err_opencl_unknown_type_specifier">
-        <segment state="initial">
+      <unit id="err_opencl_unknown_type_specifier">
+        <segment>
           <source>%0 does not support the '%1' %select{type qualifier|storage class specifier}2</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="49" name="err_openclcxx_not_supported">
-        <segment state="initial">
+      <unit id="err_openclcxx_not_supported">
+        <segment>
           <source>'%0' is not supported in C++ for OpenCL</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="50" name="err_opt_not_valid_on_target">
-        <segment state="initial">
+      <unit id="err_opt_not_valid_on_target">
+        <segment>
           <source>option '%0' cannot be specified on this target</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="51" name="err_opt_not_valid_with_opt">
-        <segment state="initial">
+      <unit id="err_opt_not_valid_with_opt">
+        <segment>
           <source>option '%0' cannot be specified with '%1'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="52" name="err_opt_not_valid_with_opt_on_target">
-        <segment state="initial">
+      <unit id="err_opt_not_valid_with_opt_on_target">
+        <segment>
           <source>option '%0' cannot be specified with '%1' for the %2 sub-architecture</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="53" name="err_opt_not_valid_without_opt">
-        <segment state="initial">
+      <unit id="err_opt_not_valid_without_opt">
+        <segment>
           <source>option '%0' cannot be specified without '%1'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="54" name="err_param_redefinition">
-        <segment state="initial">
+      <unit id="err_param_redefinition">
+        <segment>
           <source>redefinition of parameter %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="55" name="err_ppc_impossible_musttail">
-        <segment state="initial">
+      <unit id="err_ppc_impossible_musttail">
+        <segment>
           <source>'musttail' attribute for this call is impossible because %select{long calls cannot be tail called on PPC|indirect calls cannot be tail called on PPC|external calls cannot be tail called on PPC}0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="56" name="err_requires_positive_value">
-        <segment state="initial">
+      <unit id="err_requires_positive_value">
+        <segment>
           <source>%select{invalid value '%0'; must be positive|value '%0' is too large}1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="57" name="err_seh___except_block">
-        <segment state="initial">
+      <unit id="err_seh___except_block">
+        <segment>
           <source>%0 only allowed in __except block or filter expression</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="58" name="err_seh___except_filter">
-        <segment state="initial">
+      <unit id="err_seh___except_filter">
+        <segment>
           <source>%0 only allowed in __except filter expression</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="59" name="err_seh___finally_block">
-        <segment state="initial">
+      <unit id="err_seh___finally_block">
+        <segment>
           <source>%0 only allowed in __finally block</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="60" name="err_seh_expected_handler">
-        <segment state="initial">
+      <unit id="err_seh_expected_handler">
+        <segment>
           <source>expected '__except' or '__finally' block</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="61" name="err_size_t_literal_too_large">
-        <segment state="initial">
+      <unit id="err_size_t_literal_too_large">
+        <segment>
           <source>%select{signed |}0'size_t' literal is out of range of possible %select{signed |}0'size_t' values</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="62" name="err_sloc_space_too_large">
-        <segment state="initial">
+      <unit id="err_sloc_space_too_large">
+        <segment>
           <source>translation unit is too large for Clang to process: ran out of source locations</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="63" name="err_target_unknown_abi">
-        <segment state="initial">
+      <unit id="err_target_unknown_abi">
+        <segment>
           <source>unknown target ABI '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="64" name="err_target_unknown_cpu">
-        <segment state="initial">
+      <unit id="err_target_unknown_cpu">
+        <segment>
           <source>unknown target CPU '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="65" name="err_target_unknown_fpmath">
-        <segment state="initial">
+      <unit id="err_target_unknown_fpmath">
+        <segment>
           <source>unknown FP unit '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="66" name="err_target_unknown_triple">
-        <segment state="initial">
+      <unit id="err_target_unknown_triple">
+        <segment>
           <source>unknown target triple '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="67" name="err_target_unsupported_abi">
-        <segment state="initial">
+      <unit id="err_target_unsupported_abi">
+        <segment>
           <source>ABI '%0' is not supported on CPU '%1'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="68" name="err_target_unsupported_abi_for_triple">
-        <segment state="initial">
+      <unit id="err_target_unsupported_abi_for_triple">
+        <segment>
           <source>ABI '%0' is not supported for '%1'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="69" name="err_target_unsupported_abi_with_fpu">
-        <segment state="initial">
+      <unit id="err_target_unsupported_abi_with_fpu">
+        <segment>
           <source>'%0' ABI is not supported with FPU</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="70" name="err_target_unsupported_cpu_for_micromips">
-        <segment state="initial">
+      <unit id="err_target_unsupported_cpu_for_micromips">
+        <segment>
           <source>micromips is not supported for target CPU '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="71" name="err_target_unsupported_execute_only">
-        <segment state="initial">
+      <unit id="err_target_unsupported_execute_only">
+        <segment>
           <source>execute only is not supported for the %0 sub-architecture</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="72" name="err_target_unsupported_fpmath">
-        <segment state="initial">
+      <unit id="err_target_unsupported_fpmath">
+        <segment>
           <source>the '%0' unit is not supported with this instruction set</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="73" name="err_target_unsupported_mcmse">
-        <segment state="initial">
+      <unit id="err_target_unsupported_mcmse">
+        <segment>
           <source>-mcmse is not supported for %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="74" name="err_target_unsupported_tp_hard">
-        <segment state="initial">
+      <unit id="err_target_unsupported_tp_hard">
+        <segment>
           <source>hardware TLS register is not supported for the %0 sub-architecture</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="75" name="err_target_unsupported_unaligned">
-        <segment state="initial">
+      <unit id="err_target_unsupported_unaligned">
+        <segment>
           <source>the %0 sub-architecture does not support unaligned accesses</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="76" name="err_too_large_for_fixed_point">
-        <segment state="initial">
+      <unit id="err_too_large_for_fixed_point">
+        <segment>
           <source>this value is too large for this fixed point type</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="77" name="err_unable_to_make_temp">
-        <segment state="initial">
+      <unit id="err_unable_to_make_temp">
+        <segment>
           <source>unable to make temporary file: %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="78" name="err_unable_to_rename_temp">
-        <segment state="initial">
+      <unit id="err_unable_to_rename_temp">
+        <segment>
           <source>unable to rename temporary '%0' to output file '%1': '%2'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="79" name="err_unimplemented_conversion_with_fixed_point_type">
-        <segment state="initial">
+      <unit id="err_unimplemented_conversion_with_fixed_point_type">
+        <segment>
           <source>conversion between fixed point and %0 is not yet supported</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="80" name="err_unknown_analyzer_checker_or_package">
-        <segment state="initial">
+      <unit id="err_unknown_analyzer_checker_or_package">
+        <segment>
           <source>no analyzer checkers or packages are associated with '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="81" name="err_unsupported_abi_for_opt">
-        <segment state="initial">
+      <unit id="err_unsupported_abi_for_opt">
+        <segment>
           <source>'%0' can only be used with the '%1' ABI</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="82" name="err_unsupported_bom">
-        <segment state="initial">
+      <unit id="err_unsupported_bom">
+        <segment>
           <source>%0 byte order mark detected in '%1', but encoding is not supported</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="83" name="err_use_of_tag_name_without_tag">
-        <segment state="initial">
+      <unit id="err_use_of_tag_name_without_tag">
+        <segment>
           <source>must use '%1' tag to refer to type %0%select{| in this scope}2</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="84" name="ext_c23_bitint_suffix">
-        <segment state="initial">
+      <unit id="ext_c23_bitint_suffix">
+        <segment>
           <source>'_BitInt' suffix for literals is a C23 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="85" name="ext_c99_longlong">
-        <segment state="initial">
+      <unit id="ext_c99_longlong">
+        <segment>
           <source>'long long' is an extension when C99 mode is not enabled</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="86" name="ext_c_empty_initializer">
-        <segment state="initial">
+      <unit id="ext_c_empty_initializer">
+        <segment>
           <source>use of an empty initializer is a C23 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="87" name="ext_clang_diagnose_if">
-        <segment state="initial">
+      <unit id="ext_clang_diagnose_if">
+        <segment>
           <source>'diagnose_if' is a clang extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="88" name="ext_clang_enable_if">
-        <segment state="initial">
+      <unit id="ext_clang_enable_if">
+        <segment>
           <source>'enable_if' is a clang extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="89" name="ext_cxx11_longlong">
-        <segment state="initial">
+      <unit id="ext_cxx11_longlong">
+        <segment>
           <source>'long long' is a C++11 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="90" name="ext_cxx23_size_t_suffix">
-        <segment state="initial">
+      <unit id="ext_cxx23_size_t_suffix">
+        <segment>
           <source>'size_t' suffix for literals is a C++23 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="91" name="ext_cxx_bitint_suffix">
-        <segment state="initial">
+      <unit id="ext_cxx_bitint_suffix">
+        <segment>
           <source>'_BitInt' suffix for literals is a Clang extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="92" name="ext_duplicate_declspec">
-        <segment state="initial">
-          <source>duplicate '%0' declaration specifier</source>
+      <unit id="ext_duplicate_declspec">
+        <segment>
+          <source>%sub{duplicate_declspec}0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="93" name="ext_integer_literal_too_large_for_signed">
-        <segment state="initial">
+      <unit id="ext_integer_literal_too_large_for_signed">
+        <segment>
           <source>integer literal is too large to be represented in a signed integer type, interpreting as unsigned</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="94" name="ext_old_implicitly_unsigned_long_cxx">
-        <segment state="initial">
+      <unit id="ext_old_implicitly_unsigned_long_cxx">
+        <segment>
           <source>integer literal is too large to be represented in type 'long' and is subject to undefined behavior under C++98, interpreting as 'unsigned long'; this literal will %select{have type 'long long'|be ill-formed}0 in C++11 onwards</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="95" name="ext_variadic_templates">
-        <segment state="initial">
+      <unit id="ext_variadic_templates">
+        <segment>
           <source>variadic templates are a C++11 extension</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="96" name="ext_warn_duplicate_declspec">
-        <segment state="initial">
-          <source>duplicate '%0' declaration specifier</source>
+      <unit id="ext_warn_duplicate_declspec">
+        <segment>
+          <source>%sub{duplicate_declspec}0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="97" name="fatal_too_many_errors">
-        <segment state="initial">
+      <unit id="fatal_too_many_errors">
+        <segment>
           <source>too many errors emitted, stopping now</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="98" name="note_also_found">
-        <segment state="initial">
+      <unit id="note_also_found">
+        <segment>
           <source>also found</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="99" name="note_apinotes_message">
-        <segment state="initial">
+      <unit id="note_apinotes_message">
+        <segment>
           <source>%0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="100" name="note_constexpr_invalid_template_arg">
-        <segment state="initial">
+      <unit id="note_constexpr_invalid_template_arg">
+        <segment>
           <source>%select{pointer|reference}0 to %select{|subobject of }1%select{type_info object|string literal|temporary object|predefined '%3' variable}2 is not allowed in a template argument</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="101" name="note_decl_hiding_tag_type">
-        <segment state="initial">
+      <unit id="note_decl_hiding_tag_type">
+        <segment>
           <source>%1 %0 is hidden by a non-type declaration of %0 here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="102" name="note_declared_at">
-        <segment state="initial">
+      <unit id="note_declared_at">
+        <segment>
           <source>declared here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="103" name="note_duplicate_case_prev">
-        <segment state="initial">
+      <unit id="note_duplicate_case_prev">
+        <segment>
           <source>previous case defined here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="104" name="note_file_misc_sloc_usage">
-        <segment state="initial">
+      <unit id="note_file_misc_sloc_usage">
+        <segment>
           <source>%0 additional files entered using a total of %1B (%human1B) of space</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="105" name="note_file_sloc_usage">
-        <segment state="initial">
+      <unit id="note_file_sloc_usage">
+        <segment>
           <source>file entered %0 time%s0 using %1B (%human1B) of space%plural{0:|: plus %2B (%human2B) for macro expansions}2</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="106" name="note_forward_declaration">
-        <segment state="initial">
+      <unit id="note_forward_declaration">
+        <segment>
           <source>forward declaration of %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="107" name="note_invalid_subexpr_in_const_expr">
-        <segment state="initial">
+      <unit id="note_invalid_subexpr_in_const_expr">
+        <segment>
           <source>subexpression not valid in a constant expression</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="108" name="note_matching">
-        <segment state="initial">
+      <unit id="note_matching">
+        <segment>
           <source>to match this %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="109" name="note_possibility">
-        <segment state="initial">
+      <unit id="note_possibility">
+        <segment>
           <source>one possibility</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="110" name="note_pragma_entered_here">
-        <segment state="initial">
+      <unit id="note_pragma_entered_here">
+        <segment>
           <source>#pragma entered here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="111" name="note_previous_declaration">
-        <segment state="initial">
+      <unit id="note_previous_declaration">
+        <segment>
           <source>previous declaration is here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="112" name="note_previous_definition">
-        <segment state="initial">
+      <unit id="note_previous_definition">
+        <segment>
           <source>previous definition is here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="113" name="note_previous_implicit_declaration">
-        <segment state="initial">
+      <unit id="note_previous_implicit_declaration">
+        <segment>
           <source>previous implicit declaration is here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="114" name="note_previous_use">
-        <segment state="initial">
+      <unit id="note_previous_use">
+        <segment>
           <source>previous use is here</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="115" name="note_suggest_disabling_all_checkers">
-        <segment state="initial">
+      <unit id="note_suggest_disabling_all_checkers">
+        <segment>
           <source>use -analyzer-disable-all-checks to disable all static analyzer checkers</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="116" name="note_total_sloc_usage">
-        <segment state="initial">
+      <unit id="note_total_sloc_usage">
+        <segment>
           <source>%0B (%human0B) in local locations, %1B (%human1B) in locations loaded from AST files, for a total of %2B (%human2B) (%3%% of available space)</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="117" name="note_type_being_defined">
-        <segment state="initial">
+      <unit id="note_type_being_defined">
+        <segment>
           <source>definition of %0 is not complete until the closing '}'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="118" name="note_using">
-        <segment state="initial">
+      <unit id="note_using">
+        <segment>
           <source>using</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="119" name="note_valid_options">
-        <segment state="initial">
+      <unit id="note_valid_options">
+        <segment>
           <source>valid target CPU values are: %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="120" name="remark_module_lock_failure">
-        <segment state="initial">
+      <unit id="remark_module_lock_failure">
+        <segment>
           <source>could not acquire lock file for module '%0': %1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="121" name="remark_module_lock_timeout">
-        <segment state="initial">
+      <unit id="remark_module_lock_timeout">
+        <segment>
           <source>timed out waiting to acquire lock file for module '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="122" name="remark_sloc_usage">
-        <segment state="initial">
+      <unit id="remark_sloc_usage">
+        <segment>
           <source>source manager location address space usage:</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="123" name="warn_apinotes_message">
-        <segment state="initial">
+      <unit id="warn_apinotes_message">
+        <segment>
           <source>%0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="124" name="warn_apinotes_private_case">
-        <segment state="initial">
+      <unit id="warn_apinotes_private_case">
+        <segment>
           <source>private API notes file for module '%0' should be named '%0_private.apinotes', not '%1'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="125" name="warn_apinotes_private_case_system">
-        <segment state="initial">
+      <unit id="warn_apinotes_private_case_system">
+        <segment>
           <source>private API notes file for module '%0' should be named '%0_private.apinotes', not '%1'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="126" name="warn_attribute_ignored">
-        <segment state="initial">
+      <unit id="warn_attribute_ignored">
+        <segment>
           <source>%0 attribute ignored</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="127" name="warn_c23_compat_bitint_suffix">
-        <segment state="initial">
+      <unit id="warn_c23_compat_bitint_suffix">
+        <segment>
           <source>'_BitInt' suffix for literals is incompatible with C standards before C23</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="128" name="warn_c23_compat_empty_initializer">
-        <segment state="initial">
+      <unit id="warn_c23_compat_empty_initializer">
+        <segment>
           <source>use of an empty initializer is incompatible with C standards before C23</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="129" name="warn_conflicting_nullability_attr_overriding_param_types">
-        <segment state="initial">
+      <unit id="warn_conflicting_nullability_attr_overriding_param_types">
+        <segment>
           <source>conflicting nullability specifier on parameter types, %0 conflicts with existing specifier %1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="130" name="warn_conflicting_nullability_attr_overriding_ret_types">
-        <segment state="initial">
+      <unit id="warn_conflicting_nullability_attr_overriding_ret_types">
+        <segment>
           <source>conflicting nullability specifier on return types, %0 conflicts with existing specifier %1</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="131" name="warn_cxx20_compat_consteval">
-        <segment state="initial">
+      <unit id="warn_cxx20_compat_consteval">
+        <segment>
           <source>'consteval' specifier is incompatible with C++ standards before C++20</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="132" name="warn_cxx20_compat_size_t_suffix">
-        <segment state="initial">
+      <unit id="warn_cxx20_compat_size_t_suffix">
+        <segment>
           <source>'size_t' suffix for literals is incompatible with C++ standards before C++23</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="133" name="warn_cxx98_compat_longlong">
-        <segment state="initial">
+      <unit id="warn_cxx98_compat_longlong">
+        <segment>
           <source>'long long' is incompatible with C++98</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="134" name="warn_cxx98_compat_variadic_templates">
-        <segment state="initial">
+      <unit id="warn_cxx98_compat_variadic_templates">
+        <segment>
           <source>variadic templates are incompatible with C++98</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="135" name="warn_dup_category_def">
-        <segment state="initial">
+      <unit id="warn_dup_category_def">
+        <segment>
           <source>duplicate definition of category %1 on interface %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="136" name="warn_duplicate_declspec">
-        <segment state="initial">
-          <source>duplicate '%0' declaration specifier</source>
+      <unit id="warn_duplicate_declspec">
+        <segment>
+          <source>%sub{duplicate_declspec}0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="137" name="warn_fp_nan_inf_when_disabled">
-        <segment state="initial">
+      <unit id="warn_fp_nan_inf_when_disabled">
+        <segment>
           <source>use of %select{infinity|NaN}0%select{| via a macro}1 is undefined behavior due to the currently enabled floating-point options</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="138" name="warn_ignored_hip_only_option">
-        <segment state="initial">
+      <unit id="warn_ignored_hip_only_option">
+        <segment>
           <source>'%0' is ignored since it is only supported for HIP</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="139" name="warn_incompatible_branch_protection_option">
-        <segment state="initial">
+      <unit id="warn_incompatible_branch_protection_option">
+        <segment>
           <source>'-mbranch-protection=' option is incompatible with the '%0' architecture</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="140" name="warn_invalid_feature_combination">
-        <segment state="initial">
+      <unit id="warn_invalid_feature_combination">
+        <segment>
           <source>invalid feature combination: %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="141" name="warn_method_param_declaration">
-        <segment state="initial">
+      <unit id="warn_method_param_declaration">
+        <segment>
           <source>redeclaration of method parameter %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="142" name="warn_method_param_redefinition">
-        <segment state="initial">
+      <unit id="warn_method_param_redefinition">
+        <segment>
           <source>redefinition of method parameter %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="143" name="warn_missing_type_specifier">
-        <segment state="initial">
+      <unit id="warn_missing_type_specifier">
+        <segment>
           <source>type specifier missing, defaults to 'int'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="144" name="warn_nullability_duplicate">
-        <segment state="initial">
+      <unit id="warn_nullability_duplicate">
+        <segment>
           <source>duplicate nullability specifier %0</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="145" name="warn_old_implicitly_unsigned_long">
-        <segment state="initial">
+      <unit id="warn_old_implicitly_unsigned_long">
+        <segment>
           <source>integer literal is too large to be represented in type 'long', interpreting as 'unsigned long' per C89; this literal will %select{have type 'long long'|be ill-formed}0 in C99 onwards</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="146" name="warn_old_implicitly_unsigned_long_cxx">
-        <segment state="initial">
+      <unit id="warn_old_implicitly_unsigned_long_cxx">
+        <segment>
           <source>integer literal is too large to be represented in type 'long', interpreting as 'unsigned long' per C++98; this literal will %select{have type 'long long'|be ill-formed}0 in C++11 onwards</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="147" name="warn_opencl_unsupported_core_feature">
-        <segment state="initial">
+      <unit id="warn_opencl_unsupported_core_feature">
+        <segment>
           <source>%0 is a core feature in %select{OpenCL C|C++ for OpenCL}1 version %2 but not supported on this target</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="148" name="warn_poison_system_directories">
-        <segment state="initial">
+      <unit id="warn_poison_system_directories">
+        <segment>
           <source>include location '%0' is unsafe for cross-compilation</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="149" name="warn_pragma_debug_missing_argument">
-        <segment state="initial">
+      <unit id="warn_pragma_debug_missing_argument">
+        <segment>
           <source>missing argument to debug command '%0'</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="150" name="warn_pragma_debug_unexpected_argument">
-        <segment state="initial">
+      <unit id="warn_pragma_debug_unexpected_argument">
+        <segment>
           <source>unexpected argument to debug command</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="151" name="warn_slh_does_not_support_asm_goto">
-        <segment state="initial">
+      <unit id="warn_slh_does_not_support_asm_goto">
+        <segment>
           <source>speculative load hardening does not protect functions with asm goto</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="152" name="warn_stack_clash_protection_inline_asm">
-        <segment state="initial">
+      <unit id="warn_stack_clash_protection_inline_asm">
+        <segment>
           <source>unable to protect inline asm that clobbers stack pointer against stack clash</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="153" name="warn_stack_exhausted">
-        <segment state="initial">
+      <unit id="warn_stack_exhausted">
+        <segment>
           <source>stack nearly exhausted; compilation time may suffer, and crashes due to stack overflow are likely</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="154" name="warn_target_unrecognized_env">
-        <segment state="initial">
+      <unit id="warn_target_unrecognized_env">
+        <segment>
           <source>mismatch between architecture and environment in target triple '%0'; did you mean '%1'?</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="155" name="warn_target_unsupported_branch_protection_attribute">
-        <segment state="initial">
+      <unit id="warn_target_unsupported_branch_protection_attribute">
+        <segment>
           <source>ignoring the 'branch-protection' attribute because the '%0' architecture does not support it</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="156" name="warn_throw_not_valid_on_target">
-        <segment state="initial">
+      <unit id="warn_throw_not_valid_on_target">
+        <segment>
           <source>target '%0' does not support exception handling; 'throw' is assumed to be never reached</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="157" name="warn_try_not_valid_on_target">
-        <segment state="initial">
+      <unit id="warn_try_not_valid_on_target">
+        <segment>
           <source>target '%0' does not support exception handling; 'catch' block is ignored</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="158" name="warn_unknown_attribute_ignored">
-        <segment state="initial">
+      <unit id="warn_unknown_attribute_ignored">
+        <segment>
           <source>unknown attribute %0 ignored</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="warn_zero_size_struct_union_in_extern_c">
+        <segment>
+          <source>%select{|empty }0%select{struct|union}1 has size 0 in C, %select{size 1|non-zero size}2 in C++</source>
           <target></target>
         </segment>
       </unit>

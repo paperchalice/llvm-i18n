@@ -1,43 +1,48 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" srcLang="en-US" trgLang="zh-Hans-CN" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.1.xsd">
-  <file id="DiagnosticRefactoring" original="clang/Basic/DiagnosticRefactoringKinds.inc">
-    <notes>
-      <note appliesTo="source">Automatically generated file, do not edit directly!</note>
-    </notes>
-    <group id="Refactoring">
-      <unit id="7921" name="err_refactor_code_outside_of_function">
-        <segment state="initial">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd" trgLang="zh-Hans-CN">
+  <!--his file is automatically generated. Do not update this file directly by hand! Use `update-xliff.py`.-->
+  <file id="DiagnosticRefactoring" original="clang/Basic/DiagnosticRefactoringKinds.td">
+    <group id="TextSubstitution"></group>
+    <group id="Diagnostic">
+      <unit id="err_refactor_code_outside_of_function">
+        <segment>
           <source>the selected code is not a part of a function's / method's body</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="7922" name="err_refactor_extract_prohibited_expression">
-        <segment state="initial">
+      <unit id="err_refactor_extract_prohibited_expression">
+        <segment>
           <source>the selected expression cannot be extracted</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="7923" name="err_refactor_extract_simple_expression">
-        <segment state="initial">
+      <unit id="err_refactor_extract_simple_expression">
+        <segment>
           <source>the selected expression is too simple to extract</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="7924" name="err_refactor_no_selection">
-        <segment state="initial">
+      <unit id="err_refactor_no_selection">
+        <segment>
           <source>refactoring action cannot be initiated without a selection</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="7925" name="err_refactor_selection_invalid_ast">
-        <segment state="initial">
+      <unit id="err_refactor_selection_invalid_ast">
+        <segment>
           <source>the provided selection does not overlap with the AST nodes of interest</source>
           <target></target>
         </segment>
       </unit>
-      <unit id="7926" name="err_refactor_selection_no_symbol">
-        <segment state="initial">
+      <unit id="err_refactor_selection_no_symbol">
+        <segment>
           <source>there is no symbol at the given location</source>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="warn_zero_size_struct_union_in_extern_c">
+        <segment>
+          <source>%select{|empty }0%select{struct|union}1 has size 0 in C, %select{size 1|non-zero size}2 in C++</source>
           <target></target>
         </segment>
       </unit>

@@ -1,32 +1,37 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" srcLang="en-US" xsi:schemaLocation="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/xliff_core_2.1.xsd" trgLang="root">
-  <file id="DiagnosticCrossTU" original="clang/Basic/DiagnosticCrossTUKinds.inc">
-    <notes>
-      <note appliesTo="source">Automatically generated file, do not edit directly!</note>
-    </notes>
-    <group id="CrossTU">
-      <unit id="2721" name="err_ctu_error_opening">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/schemas/xliff_core_2.0.xsd" trgLang="en-US">
+  <!--his file is automatically generated. Do not update this file directly by hand! Use `update-xliff.py`.-->
+  <file id="DiagnosticCrossTU" original="clang/Basic/DiagnosticCrossTUKinds.td">
+    <group id="TextSubstitution"></group>
+    <group id="Diagnostic">
+      <unit id="err_ctu_error_opening">
         <segment>
           <source>error opening '%0': required by the CrossTU functionality</source>
-          <target>error opening '{$arg0}': required by the CrossTU functionality</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="2722" name="err_extdefmap_parsing">
+      <unit id="err_extdefmap_parsing">
         <segment>
           <source>error parsing index file: '%0' line: %1 '&lt;USR-Length&gt;:&lt;USR&gt; &lt;File-Path&gt;' format expected</source>
-          <target>error parsing index file: '{$arg0}' line: {$arg1} '&lt;USR-Length&gt;:&lt;USR&gt; &lt;File-Path&gt;' format expected</target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="2723" name="err_multiple_def_index">
+      <unit id="err_multiple_def_index">
         <segment>
           <source>multiple definitions are found for the same key in index </source>
-          <target>multiple definitions are found for the same key in index </target>
+          <target></target>
         </segment>
       </unit>
-      <unit id="2724" name="warn_ctu_incompat_triple">
+      <unit id="warn_ctu_incompat_triple">
         <segment>
           <source>imported AST from '%0' had been generated for a different target, current: %1, imported: %2</source>
-          <target>imported AST from '{$arg0}' had been generated for a different target, current: {$arg1}, imported: {$arg2}</target>
+          <target></target>
+        </segment>
+      </unit>
+      <unit id="warn_zero_size_struct_union_in_extern_c">
+        <segment>
+          <source>%select{|empty }0%select{struct|union}1 has size 0 in C, %select{size 1|non-zero size}2 in C++</source>
+          <target></target>
         </segment>
       </unit>
     </group>
