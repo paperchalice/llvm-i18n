@@ -1,102 +1,100 @@
 #! /usr/bin/env python3
 
-from extractor import Extractor
 import argparse
 from pathlib import Path
 import os
 import time
 import xml.etree.ElementTree as ET
 import pathlib
-import common
+from common import *
 import copy
 
-parser = argparse.ArgumentParser(description='Example argparse script.')
-parser.add_argument('-I', type=pathlib.Path, action='append', help='clang source prefix directory')
-parser.add_argument('--trg-lang', required=True, type=str, nargs='+', help='target language')
-parser.add_argument('--inreplace', '-i', action='store_true', help='Inreplace mode, without backup.')
+parser = argparse.ArgumentParser(description="Example argparse script.")
+parser.add_argument(
+    "--trg-lang", required=True, type=str, nargs="+", help="target language"
+)
+parser.add_argument(
+    "--inreplace", "-i", action="store_true", help="Inreplace mode, without backup."
+)
 args = parser.parse_args()
 
+
 class Updater:
-  def __init__(self, extractor:Extractor, trg_lang:str):
-    self._extractor = extractor
-    self._extract_result = self._extractor.get_result()
-    input_dir = Path(trg_lang.replace('_', '/'))
-    self._file_names = {}
-    self.trg_lang = trg_lang
-    self._xlfs = {}
-    if not ('xliff'/input_dir).exists():
-      return
-    elif not list(('xliff'/input_dir).glob('*.xlf')):
-      return
-    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.1')
-    for c in self._extract_result:
-      file_name = 'xliff'/input_dir/f'Diagnostic{c}Kinds.xlf'
-      self._file_names[c] = file_name
-      self._xlfs[c] = ET.parse(file_name)
-  
-  def _update_for_component(self, component):
-    if len(self._xlfs) == 0:
-      return
-    xlf_copy = copy.deepcopy(self._xlfs[component])
-    ns = {
-      'xliff': 'urn:oasis:names:tc:xliff:document:2.1'
-    }
-    group = xlf_copy.find('./xliff:file/xliff:group', ns)
-    units = group.findall('./xliff:unit', ns)
-    for unit in units:
-      group.remove(unit)
-    for e in self._extract_result[component]:
-      tu = [u for u in units if u.attrib['name'] == e.spelling]
-      if len(tu) == 1:
-        unit = tu[0]
-        unit.attrib['id'] = str(e.value)
-        source = unit.find('./xliff:segment/xliff:source', ns)
-        if source.text != e.desc:
-          source.text = e.desc
-          source.attrib['state'] = 'initial'
-        group.append(unit)
-      elif len(tu) == 0:
-        unit_attr = {
-          'id': str(e.value),
-          'name': e.spelling
-        }
-        unit = ET.SubElement(group, 'unit', **unit_attr)
-        segment = ET.SubElement(unit, 'segment')
-        source = ET.SubElement(segment, 'source')
-        source.text = e.desc
-        ET.SubElement(segment, 'target')
-    file_name = self._file_names[component]
-    if not args.inreplace:
-      os.rename(file_name, f'{file_name}-{int(time.time())}.bak')
-    with open(file_name, "wb") as xml_file:
-        ET.indent(xlf_copy)
-        xlf_copy.write(xml_file, encoding="UTF-8", xml_declaration=True, short_empty_elements=False)
-        print(f'update done for {self.trg_lang}')
-    return
-  
-  def update(self):
-    for c in self._extract_result:
-      self._update_for_component(c)
-      
-  
+    def __init__(self, trg_lang: str):
+        self.trg_lang = trg_lang
+
+    def _update_for_component(self, template_path):
+        ns = {"": "urn:oasis:names:tc:xliff:document:2.0"}
+        template_xlf = ET.parse(template_path)
+        xliff_dir = PROJECT_ROOT / "xliff" / self.trg_lang.replace("-", "/")
+        target_xlf = ET.parse(xliff_dir / template_path.name)
+        final_xlf = copy.deepcopy(target_xlf)
+        for g in final_xlf.findall("./file/group", ns):
+            final_xlf.find("file", ns).remove(g)
+        # Handle TextSubstitution
+        group_ids = ["TextSubstitution", "Diagnostic"]
+        for group_id in group_ids:
+            template_group = template_xlf.find(f'./file/group[@id="{group_id}"]', ns)
+            target_group = target_xlf.find(f'./file/group[@id="{group_id}"]', ns)
+            final_group = copy.deepcopy(target_group)
+            final_group.clear()
+            final_group.attrib = target_group.attrib
+            for unit in template_group.findall("unit", ns):
+                unit_id = unit.get("id")
+                target_unit = target_group.find(f'./unit[@id="{unit_id}"]', ns)
+                if target_unit is None:
+                    final_group.append(unit)
+                    continue
+
+                if (
+                    target_unit.find("segment/source", ns).text
+                    != unit.find("segment/source", ns).text
+                ):
+                    target_unit.find("segment/source", ns).text = unit.find(
+                        "segment/source", ns
+                    ).text
+                    target_unit.attrib.pop("state", "")
+                final_group.append(target_unit)
+            final_xlf.find("./file", ns).append(final_group)
+        final_xlf.getroot().insert(
+            0,
+            ET.Comment(
+                "This file is automatically generated. Do not update this file directly by hand! Use `update-xliff.py`."
+            ),
+        )
+        file_name = template_path.name
+        out_file = xliff_dir / file_name
+        if not args.inreplace:
+            os.rename(
+                xliff_dir / file_name,
+                f"{xliff_dir/template_path.stem}-{int(time.time())}.bak",
+            )
+        with open(out_file, "wb") as xml_file:
+            ET.indent(final_xlf)
+            final_xlf.write(
+                xml_file,
+                encoding="UTF-8",
+                xml_declaration=True,
+                short_empty_elements=False,
+            )
+            print(f"update done for xlf {file_name}")
+
+    def update(self):
+        for c in TEMPLATE_XLIFF_LIST:
+            self._update_for_component(c)
+
 
 def main():
-  clang_args = ['-std=c++17']
-  if args.I:
-    for i in args.I:
-      clang_args.append(f'-I{i}')
-  extractor = Extractor()
-  extractor.extract(clang_args)
-  all_langs = args.trg_lang
-  if args.trg_lang[0].upper() == 'ALL':
-    all_langs = common.ICU_LOCALES
+    if args.trg_lang[0].upper() == "ALL":
+        all_langs = BCP47_LOCALES
+    else:
+        all_langs = map(get_bcp47_locale, args.trg_lang)
 
-  for l in all_langs:
-    print(f'update for language {l}')
-    updater = Updater(extractor, l)
-    updater.update()
-  
+    for l in all_langs:
+        print(f"update for language {l}")
+        updater = Updater(l)
+        updater.update()
+
 
 if __name__ == "__main__":
-  main()
-
+    main()

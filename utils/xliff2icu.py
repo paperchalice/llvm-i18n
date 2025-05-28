@@ -6,92 +6,98 @@ from pathlib import Path
 from common import *
 import itertools
 
-parser = argparse.ArgumentParser(description='Example argparse script.')
-parser.add_argument('--trg-lang', required=True, type=str, nargs='+', help='target language')
-parser.add_argument('--lang-dir', type=Path, help='Dir contains language, default is pwd')
-parser.add_argument('--out-dir', default='icures', help='Dir contains output txt')
+parser = argparse.ArgumentParser(description="Example argparse script.")
+parser.add_argument(
+    "--trg-lang", required=True, type=str, nargs="+", help="target language"
+)
+parser.add_argument(
+    "--lang-dir", type=Path, help="Dir contains language, default is pwd"
+)
+parser.add_argument("--out-dir", default="icures", help="Dir contains output txt")
 args = parser.parse_args()
 
 _project_dir = Path(__file__).parent.parent
 
-TXT_TEMPLATE = '''// Automatically generated file, do not edit directly!
+TXT_TEMPLATE = """// Automatically generated file, do not edit directly!
 {lang}:table {{
   Basic:table {{
-    DiagInfoDescriptionStringTable:table {{
-      {strings}
+    SubstString:table {{
+      {subst_strings}
+    }}
+    DiagString:table {{
+      {diag_strings}
     }}
   }}
 }}
-'''
+"""
 
-EMPTY_TEMPLATE = '''// Automatically generated file, do not edit directly!
+EMPTY_TEMPLATE = """// Automatically generated file, do not edit directly!
 {lang}:table {{}}
-'''
+"""
+
 
 def to_icu_bin(name, txt):
-  if txt is None:
-    return f'{name}:string {{ "" }}'
-  def unicode_escape(s):
-    return "".join(map(lambda c: rf"\U{ord(c):08x}", s))
-  return f'{name}:string {{ {unicode_escape(txt)} }}'
+    if txt is None:
+        return f"{name}:bin {{ 00 }}"
+    return f'{name}:bin {{ {txt.encode("utf-8").hex()}00 }}'
+
 
 class Converter:
-  def __init__(self, lang):
-    self.lang = lang
-    input_dir = f'{_project_dir}/xliff'/Path(lang.replace('-', '/'))
-    self.input_dir = input_dir
-    self.xlfs = []
-    if not input_dir.exists():
-      return
-    if len(list(input_dir.glob('*.xlf'))) == 0:
-      return
+    def __init__(self, lang: str):
+        self.lang = lang
+        self.xlfs = (PROJECT_ROOT / f"xliff/{lang.replace('-', '/')}").glob("*.xlf")
 
-    ET.register_namespace('', 'urn:oasis:names:tc:xliff:document:2.1')
-    for c in COMPONENT_LIST:
-      xlf = Path(f'{input_dir}/Diagnostic{c}Kinds.xlf')
-      self.xlfs.append(ET.parse(xlf))
+    def generate(self):
+        under_score_lang = get_icu_locale(self.lang)
+        if not self.xlfs:
+            out_file = Path(f"{args.out_dir}/{under_score_lang}.txt")
+            with open(out_file, "w+", encoding="utf-8-sig") as f:
+                f.write(EMPTY_TEMPLATE.format(lang=under_score_lang))
+            return
+        ns = {"": "urn:oasis:names:tc:xliff:document:2.0"}
+        subst_string_list = []
+        diag_string_list = []
+        for xlf_file in self.xlfs:
+            xlf = ET.parse(xlf_file)
+            for unit in xlf.findall('./file/group[@id="TextSubstitution"]/unit', ns):
+                tgt = unit.find("./segment/target", ns)
+                name = unit.get("id")
+                subst_string_list.append(to_icu_bin(name, tgt.text))
+            for unit in xlf.findall('./file/group[@id="Diagnostic"]/unit', ns):
+                tgt = unit.find("./segment/target", ns)
+                name = unit.get("id")
+                diag_string_list.append(to_icu_bin(name, tgt.text))
 
-  def generate(self):
-    under_score_lang = get_icu_locale(self.lang)
-    if len(self.xlfs) == 0:
-      out_file = Path(f'{args.out_dir}/{under_score_lang}.txt')
-      with open(out_file, 'w+', encoding='utf-8-sig') as f:
-        f.write(EMPTY_TEMPLATE.format(lang=under_score_lang))
-      return
-    ns = {
-      'xliff': 'urn:oasis:names:tc:xliff:document:2.1'
-    }
-    string_list = []
-    for xlf in self.xlfs:
-      units = xlf.findall('./xliff:file/xliff:group/xliff:unit', ns)
-      for unit in units:
-        tgt = unit.find('./xliff:segment/xliff:target', ns)
-        name = unit.get("name")
-        string_list.append(to_icu_bin(name, tgt.text))
+        subst_strings = "\n      ".join(subst_string_list)
+        diag_strings = "\n      ".join(diag_string_list)
+        out_txt = TXT_TEMPLATE.format(
+            lang=under_score_lang,
+            subst_strings=subst_strings,
+            diag_strings=diag_strings,
+        )
+        # With BOM so genrb can recognize it.
+        out_file = Path(f"{args.out_dir}/{under_score_lang}.txt")
+        with open(out_file, "w+", encoding="utf-8-sig") as f:
+            f.write(out_txt)
 
-    strings = '\n      '.join(string_list)
-    out_txt = TXT_TEMPLATE.format(lang=under_score_lang, strings=strings)
-    # With BOM so genrb can recognize it.
-    out_file = Path(f'{args.out_dir}/{under_score_lang}.txt')
-    with open(out_file, 'w+', encoding='utf-8-sig') as f:
-      f.write(out_txt)
 
-def gen_for_lang(lang:str):
-  lang_list = itertools.accumulate(lang.split('-'), lambda a, b: a + '-' + b )
-  for lang in lang_list:
-    converter = Converter(lang)
-    converter.generate()
+def gen_for_lang(lang: str):
+    lang_list = itertools.accumulate(lang.split("-"), lambda a, b: a + "-" + b)
+    for lang in lang_list:
+        converter = Converter(lang)
+        converter.generate()
 
 
 def main():
-  if args.trg_lang[0] == 'all':
-    langs = BCP47_LOCALES
-  else:
-    langs = map(get_bcp47_locale, args.trg_lang)
+    if args.trg_lang[0] == "all":
+        langs = BCP47_LOCALES
+    else:
+        langs = map(get_bcp47_locale, args.trg_lang)
 
-  Path(args.out_dir).mkdir(exist_ok=True)
-  for lang in langs:
-    gen_for_lang(lang)
+    Path(args.out_dir).mkdir(exist_ok=True)
+    for lang in langs:
+        gen_for_lang(lang)
+
 
 if __name__ == "__main__":
-  main()
+    main()
