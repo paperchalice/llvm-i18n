@@ -817,7 +817,7 @@
       <unit id="err_drv_no_input_files">
         <segment>
           <source>no input files</source>
-          <target></target>
+          <target>没有输入文件</target>
         </segment>
       </unit>
       <unit id="err_drv_no_linker_llvm_support">
