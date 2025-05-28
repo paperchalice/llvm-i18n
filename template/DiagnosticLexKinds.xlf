@@ -2441,12 +2441,7 @@
           <target></target>
         </segment>
       </unit>
-      <unit id="warn_zero_size_struct_union_in_extern_c">
-        <segment>
-          <source>%select{|empty }0%select{struct|union}1 has size 0 in C, %select{size 1|non-zero size}2 in C++</source>
-          <target></target>
-        </segment>
-      </unit>
+
     </group>
   </file>
 </xliff>

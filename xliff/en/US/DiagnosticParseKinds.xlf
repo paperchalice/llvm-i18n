@@ -4241,12 +4241,6 @@
           <target>'__clang__' is a predefined macro name, not an attribute scope specifier; did you mean '_Clang' instead?</target>
         </segment>
       </unit>
-      <unit id="warn_zero_size_struct_union_in_extern_c">
-        <segment>
-          <source>%select{|empty }0%select{struct|union}1 has size 0 in C, %select{size 1|non-zero size}2 in C++</source>
-          <target>{$arg0 :select s0=|| s1=|empty |}{$arg1 :select s0=|struct| s1=|union|} has size 0 in C, {$arg2 :select s0=|size 1| s1=|non-zero size|} in C++</target>
-        </segment>
-      </unit>
     </group>
   </file>
 </xliff>
