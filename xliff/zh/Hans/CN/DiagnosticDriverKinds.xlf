@@ -1369,7 +1369,7 @@
       <unit id="warn_O4_is_O3">
         <segment>
           <source>-O4 is equivalent to -O3</source>
-          <target></target>
+          <target>-O4与-O3等价</target>
         </segment>
       </unit>
       <unit id="warn_android_unversioned_fallback">

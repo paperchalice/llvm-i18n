@@ -86,7 +86,7 @@
       <unit id="err_duplicate_declspec">
         <segment>
           <source>%sub{duplicate_declspec}0</source>
-          <target>%sub{duplicate_declspec}0</target>
+          <target>{:format id=duplicate_declspec arg0=$arg0}</target>
         </segment>
       </unit>
       <unit id="err_enum_template">
@@ -572,7 +572,7 @@
       <unit id="ext_duplicate_declspec">
         <segment>
           <source>%sub{duplicate_declspec}0</source>
-          <target>%sub{duplicate_declspec}0</target>
+          <target>{:format id=duplicate_declspec arg0=$arg0}</target>
         </segment>
       </unit>
       <unit id="ext_integer_literal_too_large_for_signed">
@@ -596,7 +596,7 @@
       <unit id="ext_warn_duplicate_declspec">
         <segment>
           <source>%sub{duplicate_declspec}0</source>
-          <target>%sub{duplicate_declspec}0</target>
+          <target>{:format id=duplicate_declspec arg0=$arg0}</target>
         </segment>
       </unit>
       <unit id="fatal_too_many_errors">
@@ -836,7 +836,7 @@
       <unit id="warn_duplicate_declspec">
         <segment>
           <source>%sub{duplicate_declspec}0</source>
-          <target>%sub{duplicate_declspec}0</target>
+          <target>{:format id=duplicate_declspec arg0=$arg0}</target>
         </segment>
       </unit>
       <unit id="warn_fp_nan_inf_when_disabled">

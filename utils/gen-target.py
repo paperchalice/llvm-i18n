@@ -86,6 +86,19 @@ def translate_brackets(s: str):
     result = s.replace("'{'", "'\\{'")
     return result.replace("'}'", "'\\}'")
 
+def translate_sub(s:str):
+    pattern = r'%sub{([a-zA-z]\w*)}(\d(,\d)*)'
+    for m in re.finditer(pattern, s):
+        id = m.string[m.start(1): m.end(1)]
+        args = m.string[m.start(2): m.end(2)].split(',')
+        arg_str = ''
+        for i, a in enumerate(args):
+            arg_str += f' arg{i}=$arg{a}'
+        new_fmt = f'{{:format id={id}{arg_str}}}'
+        result = m.string[m.start(): m.end()]
+        s = s.replace(result, new_fmt)
+    return s
+
 
 def translate(s):
     result = translate_backslash(s)
@@ -95,6 +108,7 @@ def translate(s):
     result = translate_q(result)
     result = translate_percent(result)
     result = translate_human(result)
+    result = translate_sub(result)
     return result
 
 

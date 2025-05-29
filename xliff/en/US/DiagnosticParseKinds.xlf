@@ -2306,7 +2306,7 @@
       <unit id="err_typename_invalid_constexpr">
         <segment>
           <source>type name does not allow %sub{select_constexpr_spec_kind}0 specifier to be specified</source>
-          <target>type name does not allow %sub{select_constexpr_spec_kind}0 specifier to be specified</target>
+          <target>type name does not allow {:format id=select_constexpr_spec_kind arg0=$arg0} specifier to be specified</target>
         </segment>
       </unit>
       <unit id="err_typename_invalid_functionspec">
@@ -3326,13 +3326,13 @@
       <unit id="warn_compound_token_split_by_macro">
         <segment>
           <source>%sub{subst_compound_token_kind}0,1,2,3 appear in different macro expansion contexts</source>
-          <target>%sub{subst_compound_token_kind}0,1,2,3 appear in different macro expansion contexts</target>
+          <target>{:format id=subst_compound_token_kind arg0=$arg0 arg1=$arg1 arg2=$arg2 arg3=$arg3} appear in different macro expansion contexts</target>
         </segment>
       </unit>
       <unit id="warn_compound_token_split_by_whitespace">
         <segment>
           <source>%sub{subst_compound_token_kind}0,1,2,3 are separated by whitespace</source>
-          <target>%sub{subst_compound_token_kind}0,1,2,3 are separated by whitespace</target>
+          <target>{:format id=subst_compound_token_kind arg0=$arg0 arg1=$arg1 arg2=$arg2 arg3=$arg3} are separated by whitespace</target>
         </segment>
       </unit>
       <unit id="warn_cstyle_param">

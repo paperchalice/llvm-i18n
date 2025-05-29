@@ -37,8 +37,6 @@ EMPTY_TEMPLATE = """// Automatically generated file, do not edit directly!
 
 
 def to_icu_bin(name, txt):
-    if txt is None:
-        return f"{name}:bin {{ 00 }}"
     return f'{name}:bin {{ {txt.encode("utf-8").hex()}00 }}'
 
 
@@ -62,11 +60,13 @@ class Converter:
             for unit in xlf.findall('./file/group[@id="TextSubstitution"]/unit', ns):
                 tgt = unit.find("./segment/target", ns)
                 name = unit.get("id")
-                subst_string_list.append(to_icu_bin(name, tgt.text))
+                if tgt.text:
+                    subst_string_list.append(to_icu_bin(name, tgt.text))
             for unit in xlf.findall('./file/group[@id="Diagnostic"]/unit', ns):
                 tgt = unit.find("./segment/target", ns)
                 name = unit.get("id")
-                diag_string_list.append(to_icu_bin(name, tgt.text))
+                if tgt.text:
+                    diag_string_list.append(to_icu_bin(name, tgt.text))
 
         subst_strings = "\n      ".join(subst_string_list)
         diag_strings = "\n      ".join(diag_string_list)

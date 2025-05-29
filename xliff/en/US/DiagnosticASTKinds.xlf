@@ -290,7 +290,7 @@
       <unit id="note_constexpr_access_deleted_object">
         <segment>
           <source>%sub{access_kind}0 heap allocated object that has been deleted</source>
-          <target>%sub{access_kind}0 heap allocated object that has been deleted</target>
+          <target>{:format id=access_kind arg0=$arg0} heap allocated object that has been deleted</target>
         </segment>
       </unit>
       <unit id="note_constexpr_access_inactive_union_member">
@@ -302,43 +302,43 @@
       <unit id="note_constexpr_access_mutable">
         <segment>
           <source>%sub{access_kind}0 mutable member %1 is not allowed in a constant expression</source>
-          <target>%sub{access_kind}0 mutable member {$arg1} is not allowed in a constant expression</target>
+          <target>{:format id=access_kind arg0=$arg0} mutable member {$arg1} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="note_constexpr_access_null">
         <segment>
           <source>%sub{access_kind}0 dereferenced null pointer is not allowed in a constant expression</source>
-          <target>%sub{access_kind}0 dereferenced null pointer is not allowed in a constant expression</target>
+          <target>{:format id=access_kind arg0=$arg0} dereferenced null pointer is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="note_constexpr_access_past_end">
         <segment>
           <source>%sub{access_kind}0 dereferenced one-past-the-end pointer is not allowed in a constant expression</source>
-          <target>%sub{access_kind}0 dereferenced one-past-the-end pointer is not allowed in a constant expression</target>
+          <target>{:format id=access_kind arg0=$arg0} dereferenced one-past-the-end pointer is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="note_constexpr_access_static_temporary">
         <segment>
           <source>%sub{access_kind}0 temporary is not allowed in a constant expression outside the expression that created the temporary</source>
-          <target>%sub{access_kind}0 temporary is not allowed in a constant expression outside the expression that created the temporary</target>
+          <target>{:format id=access_kind arg0=$arg0} temporary is not allowed in a constant expression outside the expression that created the temporary</target>
         </segment>
       </unit>
       <unit id="note_constexpr_access_uninit">
         <segment>
           <source>%sub{access_kind_subobject}0 %select{object outside its lifetime|uninitialized object}1 is not allowed in a constant expression</source>
-          <target>%sub{access_kind_subobject}0 {$arg1 :select s0=|object outside its lifetime| s1=|uninitialized object|} is not allowed in a constant expression</target>
+          <target>{:format id=access_kind_subobject arg0=$arg0} {$arg1 :select s0=|object outside its lifetime| s1=|uninitialized object|} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="note_constexpr_access_unreadable_object">
         <segment>
           <source>%sub{access_kind}0 object '%1' whose value is not known</source>
-          <target>%sub{access_kind}0 object '{$arg1}' whose value is not known</target>
+          <target>{:format id=access_kind arg0=$arg0} object '{$arg1}' whose value is not known</target>
         </segment>
       </unit>
       <unit id="note_constexpr_access_unsized_array">
         <segment>
           <source>%sub{access_kind}0 element of array without known bound is not allowed in a constant expression</source>
-          <target>%sub{access_kind}0 element of array without known bound is not allowed in a constant expression</target>
+          <target>{:format id=access_kind arg0=$arg0} element of array without known bound is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="note_constexpr_access_volatile_obj">
@@ -350,7 +350,7 @@
       <unit id="note_constexpr_access_volatile_type">
         <segment>
           <source>%sub{access_kind_volatile}0 volatile-qualified type %1 is not allowed in a constant expression</source>
-          <target>%sub{access_kind_volatile}0 volatile-qualified type {$arg1} is not allowed in a constant expression</target>
+          <target>{:format id=access_kind_volatile arg0=$arg0} volatile-qualified type {$arg1} is not allowed in a constant expression</target>
         </segment>
       </unit>
       <unit id="note_constexpr_alignment_adjust">
@@ -626,7 +626,7 @@
       <unit id="note_constexpr_lifetime_ended">
         <segment>
           <source>%sub{access_kind}0 %select{temporary|variable}1 whose %plural{8:storage duration|:lifetime}0 has ended</source>
-          <target>%sub{access_kind}0 {$arg1 :select s0=|temporary| s1=|variable|} whose %plural{8:storage duration|:lifetime}0 has ended</target>
+          <target>{:format id=access_kind arg0=$arg0} {$arg1 :select s0=|temporary| s1=|variable|} whose %plural{8:storage duration|:lifetime}0 has ended</target>
         </segment>
       </unit>
       <unit id="note_constexpr_literal_arith">
