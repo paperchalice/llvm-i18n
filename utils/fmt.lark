@@ -1,0 +1,32 @@
+?message : (LITERAL|modifier)+
+LITERAL : /[^%]+/
+
+modifier : PLACEHOLDER
+         | S_FORMAT
+         | select_format
+         | enum_select_format
+         | plural_format
+         | ORDINAL_FORMAT
+         | HUMAN_FORMAT
+         | OBJCCLASS_FORMAT
+         | OBJCINSTANCE_FORMAT
+         | Q_FORMAT
+         | diff_format
+         | sub_format
+         | QUOTED_FORMAT
+
+PLACEHOLDER : /%\d/
+S_FORMAT : /%s\d/
+ID : /[a-zA-Z]\w*/
+select_format : "%select{" message ("|" message)+ /}\d/
+enum_select_format : "%enum_select<" ID ">{" enum_selection ("|" enum_selection)+ /}\d/
+plural_format : "%plural{" /}\d/
+ORDINAL_FORMAT : /%ordinal\d/
+HUMAN_FORMAT : /%human\d/
+OBJCCLASS_FORMAT : /%objcclass\d/
+OBJCINSTANCE_FORMAT : /%objcinstance\d/
+Q_FORMAT : /%q\d/
+diff_format : "%diff{" message "|" message /}\d,\d/
+sub_format : "%sub{" ID "}" /\d(,\d)*/
+QUOTED_FORMAT : /%quoted\d/
+enum_selection : "%" ID "{" message "}"
