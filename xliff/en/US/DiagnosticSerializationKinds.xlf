@@ -7,314 +7,381 @@
       <unit id="err_ast_file_diagopt_mismatch">
         <segment>
           <source>%0 is currently enabled, but was not in the AST file '%1'</source>
-          <target></target>
+          <target>{$arg0} is currently enabled, but was not in the AST file '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="err_ast_file_different_branch">
         <segment>
           <source>%select{PCH|module|AST}0 file '%1' built from a different branch (%2) than the compiler (%3)</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{PCH}}
+1 {{module|AST}}| :format arg0=$arg0} file '{$arg1}' built from a different branch ({$arg2}) than the compiler ({$arg3})</target>
         </segment>
       </unit>
       <unit id="err_ast_file_invalid">
         <segment>
           <source>file '%1' is not a valid precompiled %select{PCH|module|AST}0 file: %2</source>
-          <target></target>
+          <target>file '{$arg1}' is not a valid precompiled {|.match {$arg0 :integer}
+0 {{PCH}}
+1 {{module|AST}}| :format arg0=$arg0} file: {$arg2}</target>
         </segment>
       </unit>
       <unit id="err_ast_file_langopt_mismatch">
         <segment>
           <source>%0 was %select{disabled|enabled}1 in AST file '%3' but is currently %select{disabled|enabled}2</source>
-          <target></target>
+          <target>{$arg0} was {|.match {$arg1 :integer}
+0 {{disabled}}
+1 {{enabled}}| :format arg1=$arg1} in AST file '{$arg3}' but is currently {|.match {$arg2 :integer}
+0 {{disabled}}
+1 {{enabled}}| :format arg2=$arg2}</target>
         </segment>
       </unit>
       <unit id="err_ast_file_langopt_value_mismatch">
         <segment>
           <source>%0 differs in AST file '%1' vs. current file</source>
-          <target></target>
+          <target>{$arg0} differs in AST file '{$arg1}' vs. current file</target>
         </segment>
       </unit>
       <unit id="err_ast_file_macro_def_conflict">
         <segment>
           <source>definition of macro '%0' differs between the AST file '%3' ('%1') and the command line ('%2')</source>
-          <target></target>
+          <target>definition of macro '{$arg0}' differs between the AST file '{$arg3}' ('{$arg1}') and the command line ('{$arg2}')</target>
         </segment>
       </unit>
       <unit id="err_ast_file_macro_def_undef">
         <segment>
           <source>macro '%0' was %select{defined|undef'd}1 in the AST file '%2' but %select{undef'd|defined}1 on the command line</source>
-          <target></target>
+          <target>macro '{$arg0}' was {|.match {$arg1 :integer}
+0 {{defined}}
+1 {{undef'd}}| :format arg1=$arg1} in the AST file '{$arg2}' but {|.match {$arg1 :integer}
+0 {{undef'd}}
+1 {{defined}}| :format arg1=$arg1} on the command line</target>
         </segment>
       </unit>
       <unit id="err_ast_file_modulecache_mismatch">
         <segment>
           <source>AST file '%2' was compiled with module cache path '%0', but the path is currently '%1'</source>
-          <target></target>
+          <target>AST file '{$arg2}' was compiled with module cache path '{$arg0}', but the path is currently '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="err_ast_file_not_found">
         <segment>
           <source>%select{PCH|module|AST}0 file '%1' not found%select{|: %3}2</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{PCH}}
+1 {{module|AST}}| :format arg0=$arg0} file '{$arg1}' not found{|.match {$arg2 :integer}
+0 {{}}
+1 {{: {$arg3}}}| :format arg2=$arg2 arg3=$arg3}</target>
         </segment>
       </unit>
       <unit id="err_ast_file_out_of_date">
         <segment>
           <source>%select{PCH|module|AST}0 file '%1' is out of date and needs to be rebuilt%select{|: %3}2</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{PCH}}
+1 {{module|AST}}| :format arg0=$arg0} file '{$arg1}' is out of date and needs to be rebuilt{|.match {$arg2 :integer}
+0 {{}}
+1 {{: {$arg3}}}| :format arg2=$arg2 arg3=$arg3}</target>
         </segment>
       </unit>
       <unit id="err_ast_file_pp_detailed_record">
         <segment>
           <source>%select{command line contains|AST file '%1' was built with}0 '-detailed-preprocessing-record' but %select{AST file '%1' was not built with it|it is not present on the command line}0</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{command line contains}}
+1 {{AST file '{$arg1}' was built with}}| :format arg0=$arg0 arg1=$arg1} '-detailed-preprocessing-record' but {|.match {$arg0 :integer}
+0 {{AST file '{$arg1}' was not built with it}}
+1 {{it is not present on the command line}}| :format arg0=$arg0 arg1=$arg1}</target>
         </segment>
       </unit>
       <unit id="err_ast_file_targetopt_feature_mismatch">
         <segment>
           <source>%select{AST file '%1' was|current translation unit is}0 compiled with the target feature '%2' but the %select{current translation unit is|AST file '%1' was}0 not</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{AST file '{$arg1}' was}}
+1 {{current translation unit is}}| :format arg0=$arg0 arg1=$arg1} compiled with the target feature '{$arg2}' but the {|.match {$arg0 :integer}
+0 {{current translation unit is}}
+1 {{AST file '{$arg1}' was}}| :format arg0=$arg0 arg1=$arg1} not</target>
         </segment>
       </unit>
       <unit id="err_ast_file_targetopt_mismatch">
         <segment>
           <source>AST file '%0' was compiled for the %1 '%2' but the current translation unit is being compiled for target '%3'</source>
-          <target></target>
+          <target>AST file '{$arg0}' was compiled for the {$arg1} '{$arg2}' but the current translation unit is being compiled for target '{$arg3}'</target>
         </segment>
       </unit>
       <unit id="err_ast_file_undef">
         <segment>
           <source>%select{command line contains|AST file '%1' was built with}0 '-undef' but %select{AST file '%1' was not built with it|it is not present on the command line}0</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{command line contains}}
+1 {{AST file '{$arg1}' was built with}}| :format arg0=$arg0 arg1=$arg1} '-undef' but {|.match {$arg0 :integer}
+0 {{AST file '{$arg1}' was not built with it}}
+1 {{it is not present on the command line}}| :format arg0=$arg0 arg1=$arg1}</target>
         </segment>
       </unit>
       <unit id="err_ast_file_version_too_new">
         <segment>
           <source>%select{PCH|module|AST}0 file '%1' uses a newer format that cannot be read</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{PCH}}
+1 {{module|AST}}| :format arg0=$arg0} file '{$arg1}' uses a newer format that cannot be read</target>
         </segment>
       </unit>
       <unit id="err_ast_file_version_too_old">
         <segment>
           <source>%select{PCH|module|AST}0 file '%1' uses an older format that is no longer supported</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{PCH}}
+1 {{module|AST}}| :format arg0=$arg0} file '{$arg1}' uses an older format that is no longer supported</target>
         </segment>
       </unit>
       <unit id="err_ast_file_with_compiler_errors">
         <segment>
           <source>%select{PCH|module|AST}0 file '%1' contains compiler errors</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{PCH}}
+1 {{module|AST}}| :format arg0=$arg0} file '{$arg1}' contains compiler errors</target>
         </segment>
       </unit>
       <unit id="err_failed_to_find_module_file">
         <segment>
           <source>failed to find module file for module '%0'</source>
-          <target></target>
+          <target>failed to find module file for module '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="err_fe_ast_file_modified">
         <segment>
           <source>file '%0' has been modified since the %select{precompiled header|module file|AST file}1 '%2' was built: %select{size|mtime|content}3 changed%select{| (was %5, now %6)}4</source>
-          <target></target>
+          <target>file '{$arg0}' has been modified since the {|.match {$arg1 :integer}
+0 {{precompiled header}}
+1 {{module file|AST file}}| :format arg1=$arg1} '{$arg2}' was built: {|.match {$arg3 :integer}
+0 {{size}}
+1 {{mtime|content}}| :format arg3=$arg3} changed{|.match {$arg4 :integer}
+0 {{}}
+1 {{ (was {$arg5}, now {$arg6})}}| :format arg4=$arg4 arg5=$arg5 arg6=$arg6}</target>
         </segment>
       </unit>
       <unit id="err_fe_not_a_pch_file">
         <segment>
           <source>input is not a PCH file: '%0'</source>
-          <target></target>
+          <target>input is not a PCH file: '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="err_fe_pch_file_overridden">
         <segment>
           <source>file '%0' from the precompiled header has been overridden</source>
-          <target></target>
+          <target>file '{$arg0}' from the precompiled header has been overridden</target>
         </segment>
       </unit>
       <unit id="err_fe_pch_malformed">
         <segment>
           <source>malformed or corrupted AST file: '%0'</source>
-          <target></target>
+          <target>malformed or corrupted AST file: '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="err_fe_pch_malformed_block">
         <segment>
           <source>malformed block record in PCH file: '%0'</source>
-          <target></target>
+          <target>malformed block record in PCH file: '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="err_fe_unable_to_read_pch_file">
         <segment>
           <source>unable to read PCH file %0: '%1'</source>
-          <target></target>
+          <target>unable to read PCH file {$arg0}: '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="err_imported_module_modmap_changed">
         <segment>
           <source>module '%0' %select{in|imported by}4 AST file '%1' found in a different module map file (%2) than when the importing AST file was built (%3)</source>
-          <target></target>
+          <target>module '{$arg0}' {|.match {$arg4 :integer}
+0 {{in}}
+1 {{imported by}}| :format arg4=$arg4} AST file '{$arg1}' found in a different module map file ({$arg2}) than when the importing AST file was built ({$arg3})</target>
         </segment>
       </unit>
       <unit id="err_imported_module_not_found">
         <segment>
           <source>module '%0' in AST file '%1' %select{(imported by AST file '%2') |}4is not defined in any loaded module map file; maybe you need to load '%3'?</source>
-          <target></target>
+          <target>module '{$arg0}' in AST file '{$arg1}' {|.match {$arg4 :integer}
+0 {{(imported by AST file '{$arg2}') }}
+1 {{}}| :format arg4=$arg4 arg2=$arg2}is not defined in any loaded module map file; maybe you need to load '{$arg3}'?</target>
         </segment>
       </unit>
       <unit id="err_imported_module_relocated">
         <segment>
           <source>module '%0' was built in directory '%1' but now resides in directory '%2'</source>
-          <target></target>
+          <target>module '{$arg0}' was built in directory '{$arg1}' but now resides in directory '{$arg2}'</target>
         </segment>
       </unit>
       <unit id="err_module_different_modmap">
         <segment>
           <source>module '%0' %select{uses|does not use}1 additional module map '%2'%select{| not}1 used when the module was built</source>
-          <target></target>
+          <target>module '{$arg0}' {|.match {$arg1 :integer}
+0 {{uses}}
+1 {{does not use}}| :format arg1=$arg1} additional module map '{$arg2}'{|.match {$arg1 :integer}
+0 {{}}
+1 {{ not}}| :format arg1=$arg1} used when the module was built</target>
         </segment>
       </unit>
       <unit id="err_module_file_conflict">
         <segment>
           <source>module '%0' is defined in both '%1' and '%2'</source>
-          <target></target>
+          <target>module '{$arg0}' is defined in both '{$arg1}' and '{$arg2}'</target>
         </segment>
       </unit>
       <unit id="err_module_file_missing_top_level_submodule">
         <segment>
           <source>module file '%0' is missing its top-level submodule</source>
-          <target></target>
+          <target>module file '{$arg0}' is missing its top-level submodule</target>
         </segment>
       </unit>
       <unit id="err_module_file_not_module">
         <segment>
           <source>AST file '%0' was not built as a module</source>
-          <target></target>
+          <target>AST file '{$arg0}' was not built as a module</target>
         </segment>
       </unit>
       <unit id="err_module_no_size_mtime_for_header">
         <segment>
           <source>cannot emit module %0: %select{size|mtime}1 must be explicitly specified for missing header file "%2"</source>
-          <target></target>
+          <target>cannot emit module {$arg0}: {|.match {$arg1 :integer}
+0 {{size}}
+1 {{mtime}}| :format arg1=$arg1} must be explicitly specified for missing header file "{$arg2}"</target>
         </segment>
       </unit>
       <unit id="err_module_odr_violation_different_instantiations">
         <segment>
           <source>instantiation of %q0 is different in different modules</source>
-          <target></target>
+          <target>instantiation of {$arg0 :q} is different in different modules</target>
         </segment>
       </unit>
       <unit id="err_module_odr_violation_missing_decl">
         <segment>
           <source>%q0 from module '%1' is not present in definition of %q2%select{ in module '%4'| provided earlier}3</source>
-          <target></target>
+          <target>{$arg0 :q} from module '{$arg1}' is not present in definition of {$arg2 :q}{|.match {$arg3 :integer}
+0 {{ in module '{$arg4}'}}
+1 {{ provided earlier}}| :format arg3=$arg3 arg4=$arg4}</target>
         </segment>
       </unit>
       <unit id="err_module_unable_to_hash_content">
         <segment>
           <source>failed to hash content for '%0' because memory buffer cannot be retrieved</source>
-          <target></target>
+          <target>failed to hash content for '{$arg0}' because memory buffer cannot be retrieved</target>
         </segment>
       </unit>
       <unit id="note_imported_by_pch_module_not_found">
         <segment>
           <source>consider adding '%0' to the header search path</source>
-          <target></target>
+          <target>consider adding '{$arg0}' to the header search path</target>
         </segment>
       </unit>
       <unit id="note_module_cache_path">
         <segment>
           <source>after modifying system headers, please delete the module cache at '%0'</source>
-          <target></target>
+          <target>after modifying system headers, please delete the module cache at '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="note_module_file_conflict">
         <segment>
           <source>compiled from '%0' and '%1'</source>
-          <target></target>
+          <target>compiled from '{$arg0}' and '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="note_module_file_imported_by">
         <segment>
           <source>imported by %select{|module '%2' in }1'%0'</source>
-          <target></target>
+          <target>imported by {|.match {$arg1 :integer}
+0 {{}}
+1 {{module '{$arg2}' in }}| :format arg1=$arg1 arg2=$arg2}'{$arg0}'</target>
         </segment>
       </unit>
       <unit id="note_module_odr_violation_no_possible_decls">
         <segment>
           <source>definition has no member %0</source>
-          <target></target>
+          <target>definition has no member {$arg0}</target>
         </segment>
       </unit>
       <unit id="note_module_odr_violation_possible_decl">
         <segment>
           <source>declaration of %0 does not match</source>
-          <target></target>
+          <target>declaration of {$arg0} does not match</target>
         </segment>
       </unit>
       <unit id="note_pch_rebuild_required">
         <segment>
           <source>please rebuild precompiled header '%0'</source>
-          <target></target>
+          <target>please rebuild precompiled header '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="note_pch_required_by">
         <segment>
           <source>'%0' required by '%1'</source>
-          <target></target>
+          <target>'{$arg0}' required by '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="note_pch_vfsoverlay_empty">
         <segment>
           <source>%select{PCH|current translation unit}0 has no VFS overlays</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{PCH}}
+1 {{current translation unit}}| :format arg0=$arg0} has no VFS overlays</target>
         </segment>
       </unit>
       <unit id="note_pch_vfsoverlay_files">
         <segment>
           <source>%select{PCH|current translation unit}0 has the following VFS overlays:
 %1</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{PCH}}
+1 {{current translation unit}}| :format arg0=$arg0} has the following VFS overlays:
+{$arg1}</target>
         </segment>
       </unit>
       <unit id="remark_module_import">
         <segment>
           <source>importing module '%0'%select{| into '%3'}2 from '%1'</source>
-          <target></target>
+          <target>importing module '{$arg0}'{|.match {$arg2 :integer}
+0 {{}}
+1 {{ into '{$arg3}'}}| :format arg2=$arg2 arg3=$arg3} from '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="warn_decls_in_multiple_modules">
         <segment>
           <source>declaration %0 is detected to be defined in multiple module units, first is from '%1' and second is from '%2'; the compiler may not be good at merging the definitions. </source>
-          <target></target>
+          <target>declaration {$arg0} is detected to be defined in multiple module units, first is from '{$arg1}' and second is from '{$arg2}'; the compiler may not be good at merging the definitions. </target>
         </segment>
       </unit>
       <unit id="warn_duplicate_module_file_extension">
         <segment>
           <source>duplicate module file extension block name '%0'</source>
-          <target></target>
+          <target>duplicate module file extension block name '{$arg0}'</target>
         </segment>
       </unit>
       <unit id="warn_module_file_mapping_mismatch">
         <segment>
           <source>loaded module file '%0' conflicts with imported file '%1'</source>
-          <target></target>
+          <target>loaded module file '{$arg0}' conflicts with imported file '{$arg1}'</target>
         </segment>
       </unit>
       <unit id="warn_module_system_bit_conflict">
         <segment>
           <source>module file '%0' was validated as a system module and is now being imported as a non-system module; any difference in diagnostic options will be ignored</source>
-          <target></target>
+          <target>module file '{$arg0}' was validated as a system module and is now being imported as a non-system module; any difference in diagnostic options will be ignored</target>
         </segment>
       </unit>
       <unit id="warn_module_uses_date_time">
         <segment>
           <source>%select{precompiled header|module}0 uses __DATE__ or __TIME__</source>
-          <target></target>
+          <target>{|.match {$arg0 :integer}
+0 {{precompiled header}}
+1 {{module}}| :format arg0=$arg0} uses __DATE__ or __TIME__</target>
         </segment>
       </unit>
       <unit id="warn_pch_vfsoverlay_mismatch">
         <segment>
           <source>PCH was compiled with different VFS overlay files than are currently in use</source>
-          <target></target>
+          <target>PCH was compiled with different VFS overlay files than are currently in use</target>
         </segment>
       </unit>
     </group>

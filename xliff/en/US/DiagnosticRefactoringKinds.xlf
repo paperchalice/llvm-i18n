@@ -7,37 +7,37 @@
       <unit id="err_refactor_code_outside_of_function">
         <segment>
           <source>the selected code is not a part of a function's / method's body</source>
-          <target></target>
+          <target>the selected code is not a part of a function's / method's body</target>
         </segment>
       </unit>
       <unit id="err_refactor_extract_prohibited_expression">
         <segment>
           <source>the selected expression cannot be extracted</source>
-          <target></target>
+          <target>the selected expression cannot be extracted</target>
         </segment>
       </unit>
       <unit id="err_refactor_extract_simple_expression">
         <segment>
           <source>the selected expression is too simple to extract</source>
-          <target></target>
+          <target>the selected expression is too simple to extract</target>
         </segment>
       </unit>
       <unit id="err_refactor_no_selection">
         <segment>
           <source>refactoring action cannot be initiated without a selection</source>
-          <target></target>
+          <target>refactoring action cannot be initiated without a selection</target>
         </segment>
       </unit>
       <unit id="err_refactor_selection_invalid_ast">
         <segment>
           <source>the provided selection does not overlap with the AST nodes of interest</source>
-          <target></target>
+          <target>the provided selection does not overlap with the AST nodes of interest</target>
         </segment>
       </unit>
       <unit id="err_refactor_selection_no_symbol">
         <segment>
           <source>there is no symbol at the given location</source>
-          <target></target>
+          <target>there is no symbol at the given location</target>
         </segment>
       </unit>
     </group>
