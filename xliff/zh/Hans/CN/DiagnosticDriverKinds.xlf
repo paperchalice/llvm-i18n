@@ -427,7 +427,7 @@
       <unit id="err_drv_invalid_arch_name">
         <segment>
           <source>invalid arch name '%0'</source>
-          <target></target>
+          <target>无效的架构名称“{$arg0}”</target>
         </segment>
       </unit>
       <unit id="err_drv_invalid_argument_to_option">
@@ -691,7 +691,7 @@
       <unit id="err_drv_mg_requires_m_or_mm">
         <segment>
           <source>option '-MG' requires '-M' or '-MM'</source>
-          <target></target>
+          <target>选项“-MG”需要搭配“-M”或“-MM”使用</target>
         </segment>
       </unit>
       <unit id="err_drv_missing_arg_mtp">
@@ -721,7 +721,7 @@
       <unit id="err_drv_mix_cuda_hip">
         <segment>
           <source>mixed CUDA and HIP compilation is not supported</source>
-          <target></target>
+          <target>不支持CUDA与HIP混合编译</target>
         </segment>
       </unit>
       <unit id="err_drv_module_header_wrong_kind">
@@ -847,13 +847,13 @@
       <unit id="err_drv_no_such_file">
         <segment>
           <source>no such file or directory: '%0'</source>
-          <target></target>
+          <target>没有该文件或目录：“{$arg0}”</target>
         </segment>
       </unit>
       <unit id="err_drv_no_such_file_with_suggestion">
         <segment>
           <source>no such file or directory: '%0'; did you mean '%1'?</source>
-          <target></target>
+          <target>没有该文件或目录：“{$arg0}”；您是否是指：“{$arg1}”</target>
         </segment>
       </unit>
       <unit id="err_drv_offload_bad_gpu_arch">
@@ -1051,13 +1051,13 @@
       <unit id="err_drv_unable_to_remove_file">
         <segment>
           <source>unable to remove file: %0</source>
-          <target></target>
+          <target>无法删除文件：“{#arg0}”</target>
         </segment>
       </unit>
       <unit id="err_drv_unable_to_set_working_directory">
         <segment>
           <source>unable to set working directory: %0</source>
-          <target></target>
+          <target>无法设置工作目录：“{$arg0}”</target>
         </segment>
       </unit>
       <unit id="err_drv_undetermined_gpu_arch">
@@ -1075,7 +1075,7 @@
       <unit id="err_drv_unknown_argument">
         <segment>
           <source>unknown argument: '%0'</source>
-          <target></target>
+          <target>未知参数：“{$arg0}”</target>
         </segment>
       </unit>
       <unit id="err_drv_unknown_argument_with_suggestion">
@@ -1099,13 +1099,13 @@
       <unit id="err_drv_unknown_objc_runtime">
         <segment>
           <source>unknown or ill-formed Objective-C runtime '%0'</source>
-          <target></target>
+          <target>未知或病式的Objective-C运行时：“{$arg0}”</target>
         </segment>
       </unit>
       <unit id="err_drv_unknown_stdin_type">
         <segment>
           <source>-E or -x required when input is from standard input</source>
-          <target></target>
+          <target>当输入为标准输入时需指定-E或-x</target>
         </segment>
       </unit>
       <unit id="err_drv_unknown_stdin_type_clang_cl">
@@ -1147,7 +1147,7 @@
       <unit id="err_drv_unsupported_opt">
         <segment>
           <source>unsupported option '%0'</source>
-          <target></target>
+          <target>不受支持的选项“{$arg0}”</target>
         </segment>
       </unit>
       <unit id="err_drv_unsupported_opt_for_language_mode">
@@ -1225,7 +1225,7 @@
       <unit id="err_no_external_assembler">
         <segment>
           <source>there is no external assembler that can be used on this platform</source>
-          <target></target>
+          <target>找不到可用于该平台的外部汇编器</target>
         </segment>
       </unit>
       <unit id="err_objc_weak_unsupported">
@@ -1441,7 +1441,7 @@
       <unit id="warn_drv_delayed_template_parsing_after_cxx20">
         <segment>
           <source>-fdelayed-template-parsing is deprecated after C++20</source>
-          <target></target>
+          <target>“-fdelayed-template-parsing”在C++20后被视为弃用选项</target>
         </segment>
       </unit>
       <unit id="warn_drv_deprecated_arg">
@@ -1453,7 +1453,7 @@
       <unit id="warn_drv_deprecated_arg_ofast">
         <segment>
           <source>argument '-Ofast' is deprecated; use '-O3 -ffast-math' for the same behavior, or '-O3' to enable only conforming optimizations</source>
-          <target></target>
+          <target>选项</target>
         </segment>
       </unit>
       <unit id="warn_drv_deprecated_arg_ofast_for_flang">
