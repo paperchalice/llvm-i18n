@@ -7,409 +7,409 @@
       <unit id="err_alias_to_common">
         <segment>
           <source>alias to a variable in a common section is not allowed</source>
-          <target>alias to a variable in a common section is not allowed</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_alias_to_undefined">
         <segment>
           <source>%select{alias|ifunc}0 must point to a defined %select{variable or |}1function</source>
-          <target>{$arg0 :select s0=|alias| s1=|ifunc|} must point to a defined {$arg1 :select s0=|variable or | s1=||}function</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_ast_action_on_llvm_ir">
         <segment>
           <source>cannot apply AST actions to LLVM IR file '%0'</source>
-          <target>cannot apply AST actions to LLVM IR file '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_avx_calling_convention">
         <segment>
           <source>AVX vector %select{return|argument}0 of type %1 without '%2' enabled changes the ABI</source>
-          <target>AVX vector {$arg0 :select s0=|return| s1=|argument|} of type {$arg1} without '{$arg2}' enabled changes the ABI</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_builtin_needs_feature">
         <segment>
           <source>%0 needs target feature %1</source>
-          <target>{$arg0} needs target feature {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_cir_to_cir_transform_failed">
         <segment>
           <source>CIR-to-CIR transformation failed</source>
-          <target>CIR-to-CIR transformation failed</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_cir_verification_failed_pre_passes">
         <segment>
           <source>CIR module verification error before running CIR-to-CIR passes</source>
-          <target>CIR module verification error before running CIR-to-CIR passes</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_cyclic_alias">
         <segment>
           <source>%select{alias|ifunc}0 definition is part of a cycle</source>
-          <target>{$arg0 :select s0=|alias| s1=|ifunc|} definition is part of a cycle</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_duplicate_mangled_name">
         <segment>
           <source>definition with same mangled name '%0' as another definition</source>
-          <target>definition with same mangled name '{$arg0}' as another definition</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_extract_api_ignores_file_not_found">
         <segment>
           <source>file '%0' specified by '--extract-api-ignores=' not found</source>
-          <target>file '{$arg0}' specified by '--extract-api-ignores=' not found</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_action_not_available">
         <segment>
           <source>action %0 not compiled in</source>
-          <target>action {$arg0} not compiled in</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_backend_error_attr">
         <segment>
           <source>call to '%0' declared with 'error' attribute: %1</source>
-          <target>call to '{$arg0}' declared with 'error' attribute: {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_backend_frame_larger_than">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_backend_plugin">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_backend_resource_limit">
         <segment>
           <source>%0 (%1) exceeds limit (%2) in '%3'</source>
-          <target>{$arg0} ({$arg1}) exceeds limit ({$arg2}) in '{$arg3}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_backend_unsupported">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_dependency_file_requires_MT">
         <segment>
           <source>-dependency-file requires at least one -MT or -MQ option</source>
-          <target>-dependency-file requires at least one -MT or -MQ option</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_error_backend">
         <segment>
           <source>error in backend: %0</source>
-          <target>error in backend: {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_error_opening">
         <segment>
           <source>error opening '%0': %1</source>
-          <target>error opening '{$arg0}': {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_error_reading">
         <segment>
           <source>error reading '%0': %1</source>
-          <target>error reading '{$arg0}': {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_error_reading_stdin">
         <segment>
           <source>error reading stdin: %0</source>
-          <target>error reading stdin: {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_expected_clang_command">
         <segment>
           <source>expected a clang compiler command</source>
-          <target>expected a clang compiler command</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_expected_compiler_job">
         <segment>
           <source>unable to handle compilation, expected exactly one compiler job in '%0'</source>
-          <target>unable to handle compilation, expected exactly one compiler job in '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_inline_asm">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_invalid_alignment">
         <segment>
           <source>invalid value '%1' in '%0'; alignment must be a power of 2</source>
-          <target>invalid value '{$arg1}' in '{$arg0}'; alignment must be a power of 2</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_invalid_code_complete_file">
         <segment>
           <source>cannot locate code-completion file %0</source>
-          <target>cannot locate code-completion file {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_invalid_exception_model">
         <segment>
           <source>invalid exception model '%select{none|sjlj|seh|dwarf|wasm}0' for target '%1'</source>
-          <target>invalid exception model '{$arg0 :select s0=|none| s1=|sjlj| s2=|seh| s3=|dwarf| s4=|wasm|}' for target '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_invalid_multiple_actions">
         <segment>
           <source>'%0' action ignored; '%1' action specified previously</source>
-          <target>'{$arg0}' action ignored; '{$arg1}' action specified previously</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_invalid_plugin_name">
         <segment>
           <source>unable to find plugin '%0'</source>
-          <target>unable to find plugin '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_invalid_source_date_epoch">
         <segment>
           <source>environment variable 'SOURCE_DATE_EPOCH' ('%0') must be a non-negative decimal integer &lt;= %1</source>
-          <target>environment variable 'SOURCE_DATE_EPOCH' ('{$arg0}') must be a non-negative decimal integer &lt;= {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_linking_module">
         <segment>
           <source>cannot link module '%0': %1</source>
-          <target>cannot link module '{$arg0}': {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_no_pch_in_dir">
         <segment>
           <source>no suitable precompiled header file found in directory '%0'</source>
-          <target>no suitable precompiled header file found in directory '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_remap_missing_to_file">
         <segment>
           <source>could not remap file '%0' to the contents of file '%1'</source>
-          <target>could not remap file '{$arg0}' to the contents of file '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_source_mgr">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_unable_to_create_target">
         <segment>
           <source>unable to create target: '%0'</source>
-          <target>unable to create target: '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_unable_to_interface_with_target">
         <segment>
           <source>unable to interface with target machine</source>
-          <target>unable to interface with target machine</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_unable_to_load_basic_block_sections_file">
         <segment>
           <source>unable to load basic block sections function list: '%0'</source>
-          <target>unable to load basic block sections function list: '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_unable_to_load_pch">
         <segment>
           <source>unable to load PCH file</source>
-          <target>unable to load PCH file</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_unable_to_load_plugin">
         <segment>
           <source>unable to load plugin '%0': '%1'</source>
-          <target>unable to load plugin '{$arg0}': '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_fe_unable_to_open_output">
         <segment>
           <source>unable to open output file '%0': '%1'</source>
-          <target>unable to open output file '{$arg0}': '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_file_is_not_module">
         <segment>
           <source>file '%0' is not a module file</source>
-          <target>file '{$arg0}' is not a module file</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_frontend_action_unsupported_input_format">
         <segment>
           <source>%0 does not support input file format of file '%1': '%select{Source|ModuleMap|Precompiled|Unknown}2'</source>
-          <target>{$arg0} does not support input file format of file '{$arg1}': '{$arg2 :select s0=|Source| s1=|ModuleMap| s2=|Precompiled| s3=|Unknown|}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_function_always_inline_attribute_mismatch">
         <segment>
           <source>always_inline function %1 and its caller %0 have mismatching %2 attributes</source>
-          <target>always_inline function {$arg1} and its caller {$arg0} have mismatching {$arg2} attributes</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_function_always_inline_new_za">
         <segment>
           <source>always_inline function %0 has new za state</source>
-          <target>always_inline function {$arg0} has new za state</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_function_always_inline_new_zt0">
         <segment>
           <source>always_inline function %0 has new zt0 state</source>
-          <target>always_inline function {$arg0} has new zt0 state</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_function_needs_feature">
         <segment>
           <source>always_inline function %1 requires target feature '%2', but would be inlined into function %0 that is compiled without support for '%2'</source>
-          <target>always_inline function {$arg1} requires target feature '{$arg2}', but would be inlined into function {$arg0} that is compiled without support for '{$arg2}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_hidden_visibility_dllexport">
         <segment>
           <source>hidden visibility cannot be applied to 'dllexport' declaration</source>
-          <target>hidden visibility cannot be applied to 'dllexport' declaration</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_ifunc_resolver_return">
         <segment>
           <source>ifunc resolver function must return a pointer</source>
-          <target>ifunc resolver function must return a pointer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_incompatible_fp_eval_method_options">
         <segment>
           <source>option 'ffp-eval-method' cannot be used with option %select{'fapprox-func'|'mreassociate'|'freciprocal'}0</source>
-          <target>option 'ffp-eval-method' cannot be used with option {$arg0 :select s0=|'fapprox-func'| s1=|'mreassociate'| s2=|'freciprocal'|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_invalid_llvm_ir">
         <segment>
           <source>invalid LLVM IR input: %0</source>
-          <target>invalid LLVM IR input: {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_invalid_vfs_overlay">
         <segment>
           <source>invalid virtual filesystem overlay file '%0'</source>
-          <target>invalid virtual filesystem overlay file '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_missing_module">
         <segment>
           <source>no module named '%0' declared in module map file '%1'</source>
-          <target>no module named '{$arg0}' declared in module map file '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_missing_module_name">
         <segment>
           <source>no module name provided; specify one with -fmodule-name=</source>
-          <target>no module name provided; specify one with -fmodule-name=</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_missing_vfs_overlay_file">
         <segment>
           <source>virtual filesystem overlay file '%0' not found</source>
-          <target>virtual filesystem overlay file '{$arg0}' not found</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_module_build_requires_fmodules">
         <segment>
           <source>module compilation requires '-fmodules'</source>
-          <target>module compilation requires '-fmodules'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_module_cannot_create_includes">
         <segment>
           <source>cannot create includes file for module %0: %1</source>
-          <target>cannot create includes file for module {$arg0}: {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_module_header_file_not_found">
         <segment>
           <source>module header file '%0' not found</source>
-          <target>module header file '{$arg0}' not found</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_module_interface_requires_cpp_modules">
         <segment>
           <source>module interface compilation requires '-std=c++20'</source>
-          <target>module interface compilation requires '-std=c++20'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_module_map_not_found">
         <segment>
           <source>module map file '%0' not found</source>
-          <target>module map file '{$arg0}' not found</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_modules_embed_file_not_found">
         <segment>
           <source>file '%0' specified by '-fmodules-embed-file=' not found</source>
-          <target>file '{$arg0}' specified by '-fmodules-embed-file=' not found</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_no_submodule">
         <segment>
           <source>no submodule named %0 in module '%1'</source>
-          <target>no submodule named {$arg0} in module '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_no_submodule_suggest">
         <segment>
           <source>no submodule named %0 in module '%1'; did you mean '%2'?</source>
-          <target>no submodule named {$arg0} in module '{$arg1}'; did you mean '{$arg2}'?</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_non_default_visibility_dllimport">
         <segment>
           <source>non-default visibility cannot be applied to 'dllimport' declaration</source>
-          <target>non-default visibility cannot be applied to 'dllimport' declaration</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_os_unsupport_riscv_fmv">
         <segment>
           <source>function multiversioning is currently only supported on Linux</source>
-          <target>function multiversioning is currently only supported on Linux</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_relocatable_without_isysroot">
         <segment>
           <source>must specify system root with -isysroot when building a relocatable PCH file</source>
-          <target>must specify system root with -isysroot when building a relocatable PCH file</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_target_unsupported_type_for_abi">
         <segment>
           <source>%0 requires %1 type support, but ABI '%2' does not support it</source>
-          <target>{$arg0} requires {$arg1} type support, but ABI '{$arg2}' does not support it</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_test_module_file_extension_version">
         <segment>
           <source>test module file extension '%0' has different version (%1.%2) than expected (%3.%4)</source>
-          <target>test module file extension '{$arg0}' has different version ({$arg1}.{$arg2}) than expected ({$arg3}.{$arg4})</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_ambiguous_marker">
         <segment>
           <source>reference to marker '%0' is ambiguous</source>
-          <target>reference to marker '{$arg0}' is ambiguous</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_inconsistent_diags">
@@ -421,7 +421,7 @@
       <unit id="err_verify_invalid_content">
         <segment>
           <source>invalid expected %0: %1</source>
-          <target>invalid expected {$arg0}: {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_invalid_no_diags">
@@ -433,427 +433,427 @@
       <unit id="err_verify_invalid_range">
         <segment>
           <source>invalid range following '-' in expected %0</source>
-          <target>invalid range following '-' in expected {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_missing_end">
         <segment>
           <source>cannot find end ('%1') of expected %0</source>
-          <target>cannot find end ('{$arg1}') of expected {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_missing_file">
         <segment>
           <source>file '%0' could not be located in expected %1</source>
-          <target>file '{$arg0}' could not be located in expected {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_missing_line">
         <segment>
           <source>missing or invalid line number following '@' in expected %0</source>
-          <target>missing or invalid line number following '@' in expected {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_missing_regex">
         <segment>
           <source>cannot find start of regex ('{{') in %0</source>
-          <target>cannot find start of regex ('{{') in {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_missing_start">
         <segment>
           <source>cannot find start ('{{') of expected %0</source>
-          <target>cannot find start ('{{') of expected {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_no_directives">
         <segment>
           <source>no expected directives found: consider use of '%0-no-diagnostics'</source>
-          <target>no expected directives found: consider use of '{$arg0}-no-diagnostics'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_no_such_marker">
         <segment>
           <source>use of undefined marker '%0'</source>
-          <target>use of undefined marker '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="err_verify_nonconst_addrspace">
         <segment>
           <source>qualifier 'const' is needed for variables in address space '%0'</source>
-          <target>qualifier 'const' is needed for variables in address space '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_alias_mangled_name_alternative">
         <segment>
           <source>function by that name is mangled as "%0"</source>
-          <target>function by that name is mangled as "{$arg0}"</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_alias_requires_mangled_name">
         <segment>
           <source>the %select{function or variable|function}0 specified in an %select{alias|ifunc}1 must refer to its mangled name</source>
-          <target>the {$arg0 :select s0=|function or variable| s1=|function|} specified in an {$arg1 :select s0=|alias| s1=|ifunc|} must refer to its mangled name</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fe_backend_frame_larger_than">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fe_backend_invalid_loc">
         <segment>
           <source>could not determine the original source location for %0:%1:%2</source>
-          <target>could not determine the original source location for {$arg0}:{$arg1}:{$arg2}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fe_backend_plugin">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fe_backend_resource_limit">
         <segment>
           <source>%0 (%1) exceeds limit (%2) in '%3'</source>
-          <target>{$arg0} ({$arg1}) exceeds limit ({$arg2}) in '{$arg3}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fe_inline_asm">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fe_inline_asm_here">
         <segment>
           <source>instantiated into assembly here</source>
-          <target>instantiated into assembly here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fe_linking_module">
         <segment>
           <source>linking module '%0': %1</source>
-          <target>linking module '{$arg0}': {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fe_source_mgr">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fixit_applied">
         <segment>
           <source>FIX-IT applied suggested code changes</source>
-          <target>FIX-IT applied suggested code changes</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fixit_failed">
         <segment>
           <source>FIX-IT unable to apply suggested code changes</source>
-          <target>FIX-IT unable to apply suggested code changes</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fixit_in_macro">
         <segment>
           <source>FIX-IT unable to apply suggested code changes in a macro</source>
-          <target>FIX-IT unable to apply suggested code changes in a macro</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_fixit_unfixed_error">
         <segment>
           <source>FIX-IT detected an error it cannot fix</source>
-          <target>FIX-IT detected an error it cannot fix</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_incompatible_analyzer_plugin_api">
         <segment>
           <source>current API version is '%0', but plugin was compiled with version '%1'</source>
-          <target>current API version is '{$arg0}', but plugin was compiled with version '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_module_def_undef_here">
         <segment>
           <source>macro was %select{defined|#undef'd}0 here</source>
-          <target>macro was {$arg0 :select s0=|defined| s1=|#undef'd|} here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_module_import_here">
         <segment>
           <source>module imported here</source>
-          <target>module imported here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_private_top_level_defined">
         <segment>
           <source>module defined here</source>
-          <target>module defined here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="note_verify_ambiguous_marker">
         <segment>
           <source>ambiguous marker '%0' is defined here</source>
-          <target>ambiguous marker '{$arg0}' is defined here</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="remark_fe_backend_optimization_remark">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="remark_fe_backend_optimization_remark_analysis">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="remark_fe_backend_optimization_remark_analysis_aliasing">
         <segment>
           <source>%0; allow reordering by specifying '#pragma clang loop vectorize(enable)' before the loop; if the arrays will always be independent, specify '#pragma clang loop vectorize(assume_safety)' before the loop or provide the '__restrict__' qualifier with the independent array arguments -- erroneous results will occur if these options are incorrectly applied</source>
-          <target>{$arg0}; allow reordering by specifying '#pragma clang loop vectorize(enable)' before the loop; if the arrays will always be independent, specify '#pragma clang loop vectorize(assume_safety)' before the loop or provide the '__restrict__' qualifier with the independent array arguments -- erroneous results will occur if these options are incorrectly applied</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="remark_fe_backend_optimization_remark_analysis_fpcommute">
         <segment>
           <source>%0; allow reordering by specifying '#pragma clang loop vectorize(enable)' before the loop or by providing the compiler option '-ffast-math'</source>
-          <target>{$arg0}; allow reordering by specifying '#pragma clang loop vectorize(enable)' before the loop or by providing the compiler option '-ffast-math'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="remark_fe_backend_optimization_remark_missed">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="remark_fe_backend_plugin">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="remark_module_build">
         <segment>
           <source>building module '%0' as '%1'</source>
-          <target>building module '{$arg0}' as '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="remark_module_build_done">
         <segment>
           <source>finished building module '%0'</source>
-          <target>finished building module '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="remark_module_lock">
         <segment>
           <source>locking '%0' to build module '%1'</source>
-          <target>locking '{$arg0}' to build module '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_alias_to_weak_alias">
         <segment>
           <source>%select{alias|ifunc}2 will always resolve to %0 even if weak definition of %1 is overridden</source>
-          <target>{$arg2 :select s0=|alias| s1=|ifunc|} will always resolve to {$arg0} even if weak definition of {$arg1} is overridden</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_alias_with_section">
         <segment>
           <source>%select{alias|ifunc}1 will not be in section '%0' but in the same section as the %select{aliasee|resolver}2</source>
-          <target>{$arg1 :select s0=|alias| s1=|ifunc|} will not be in section '{$arg0}' but in the same section as the {$arg2 :select s0=|aliasee| s1=|resolver|}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_atomic_op_misaligned">
         <segment>
           <source>misaligned atomic operation may incur significant performance penalty; the expected alignment (%0 bytes) exceeds the actual alignment (%1 bytes)</source>
-          <target>misaligned atomic operation may incur significant performance penalty; the expected alignment ({$arg0} bytes) exceeds the actual alignment ({$arg1} bytes)</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_atomic_op_oversized">
         <segment>
           <source>large atomic operation may incur significant performance penalty; the access size (%0 bytes) exceeds the max lock-free size (%1 bytes)</source>
-          <target>large atomic operation may incur significant performance penalty; the access size ({$arg0} bytes) exceeds the max lock-free size ({$arg1} bytes)</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_avx_calling_convention">
         <segment>
           <source>AVX vector %select{return|argument}0 of type %1 without '%2' enabled changes the ABI</source>
-          <target>AVX vector {$arg0 :select s0=|return| s1=|argument|} of type {$arg1} without '{$arg2}' enabled changes the ABI</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_eagerly_load_for_standard_cplusplus_modules">
         <segment>
           <source>the form '-fmodule-file=&lt;BMI-path&gt;' is deprecated for standard C++ named modules; consider to use '-fmodule-file=&lt;module-name&gt;=&lt;BMI-path&gt;' instead</source>
-          <target>the form '-fmodule-file=&lt;BMI-path&gt;' is deprecated for standard C++ named modules; consider to use '-fmodule-file=&lt;module-name&gt;=&lt;BMI-path&gt;' instead</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_frame_larger_than">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_invalid_feature_flag">
         <segment>
           <source>feature flag '%0' must start with either '+' to enable the feature or '-' to disable it; flag ignored</source>
-          <target>feature flag '{$arg0}' must start with either '+' to enable the feature or '-' to disable it; flag ignored</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_optimization_failure">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_plugin">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_readonly_feature_flag">
         <segment>
           <source>feature flag '%0' is ignored since the feature is read only</source>
-          <target>feature flag '{$arg0}' is ignored since the feature is read only</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_resource_limit">
         <segment>
           <source>%0 (%1) exceeds limit (%2) in '%3'</source>
-          <target>{$arg0} ({$arg1}) exceeds limit ({$arg2}) in '{$arg3}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_unsupported">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_unsupported_fp_exceptions">
         <segment>
           <source>overriding currently unsupported use of floating point exceptions on this target</source>
-          <target>overriding currently unsupported use of floating point exceptions on this target</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_unsupported_fp_rounding">
         <segment>
           <source>overriding currently unsupported rounding mode on this target</source>
-          <target>overriding currently unsupported rounding mode on this target</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_backend_warning_attr">
         <segment>
           <source>call to '%0' declared with 'warning' attribute: %1</source>
-          <target>call to '{$arg0}' declared with 'warning' attribute: {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_cc_log_diagnostics_failure">
         <segment>
           <source>unable to open CC_LOG_DIAGNOSTICS file: %0 (using stderr)</source>
-          <target>unable to open CC_LOG_DIAGNOSTICS file: {$arg0} (using stderr)</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_cc_print_header_failure">
         <segment>
           <source>unable to open CC_PRINT_HEADERS file: %0 (using stderr)</source>
-          <target>unable to open CC_PRINT_HEADERS file: {$arg0} (using stderr)</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_frame_larger_than">
         <segment>
           <source>stack frame size (%0) exceeds limit (%1) in '%2'</source>
-          <target>stack frame size ({$arg0}) exceeds limit ({$arg1}) in '{$arg2}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_inline_asm">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_linking_module">
         <segment>
           <source>linking module '%0': %1</source>
-          <target>linking module '{$arg0}': {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_macro_contains_embedded_newline">
         <segment>
           <source>macro '%0' contains embedded newline; text after the newline is ignored</source>
-          <target>macro '{$arg0}' contains embedded newline; text after the newline is ignored</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_override_module">
         <segment>
           <source>overriding the module target triple with %0</source>
-          <target>overriding the module target triple with {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_serialized_diag_failure">
         <segment>
           <source>unable to open file %0 for serializing diagnostics (%1)</source>
-          <target>unable to open file {$arg0} for serializing diagnostics ({$arg1})</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_serialized_diag_failure_during_finalization">
         <segment>
           <source>received warning after diagnostic serialization teardown was underway: %0</source>
-          <target>received warning after diagnostic serialization teardown was underway: {$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_serialized_diag_merge_failure">
         <segment>
           <source>unable to merge a subprocess's serialized diagnostics</source>
-          <target>unable to merge a subprocess's serialized diagnostics</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_source_mgr">
         <segment>
           <source>%0</source>
-          <target>{$arg0}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fe_unable_to_open_stats_file">
         <segment>
           <source>unable to open statistics output file '%0': '%1'</source>
-          <target>unable to open statistics output file '{$arg0}': '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_fixit_no_changes">
         <segment>
           <source>FIX-IT detected errors it could not fix; no output will be generated</source>
-          <target>FIX-IT detected errors it could not fix; no output will be generated</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_function_always_inline_attribute_mismatch">
         <segment>
           <source>always_inline function %1 and its caller %0 have mismatching %2 attributes, inlining may change runtime behaviour</source>
-          <target>always_inline function {$arg1} and its caller {$arg0} have mismatching {$arg2} attributes, inlining may change runtime behaviour</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_hlsl_langstd_minimal">
         <segment>
           <source>support for HLSL language version %0 is incomplete, recommend using %1 instead</source>
-          <target>support for HLSL language version {$arg0} is incomplete, recommend using {$arg1} instead</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_incompatible_analyzer_plugin_api">
         <segment>
           <source>checker plugin '%0' is not compatible with this version of the analyzer</source>
-          <target>checker plugin '{$arg0}' is not compatible with this version of the analyzer</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_missing_submodule">
         <segment>
           <source>missing submodule '%0'</source>
-          <target>missing submodule '{$arg0}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_missing_symbol_graph_dir">
         <segment>
           <source>missing symbol graph output directory, defaulting to working directory</source>
-          <target>missing symbol graph output directory, defaulting to working directory</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_module_config_macro_undef">
@@ -865,55 +865,55 @@
       <unit id="warn_module_config_mismatch">
         <segment>
           <source>module file %0 cannot be loaded due to a configuration mismatch with the current compilation</source>
-          <target>module file {$arg0} cannot be loaded due to a configuration mismatch with the current compilation</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_no_priv_submodule_use_toplevel">
         <segment>
           <source>no submodule named %0 in module '%1'; using top level '%2'</source>
-          <target>no submodule named {$arg0} in module '{$arg1}'; using top level '{$arg2}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_option_invalid_ocl_version">
         <segment>
           <source>%0 does not support the option '%1'</source>
-          <target>{$arg0} does not support the option '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_profile_data_misexpect">
         <segment>
           <source>potential performance regression from use of __builtin_expect(): annotation was correct on %0 of profiled executions</source>
-          <target>potential performance regression from use of __builtin_expect(): annotation was correct on {$arg0} of profiled executions</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_profile_data_missing">
         <segment>
           <source>profile data may be incomplete: of %0 function%s0, %1 %plural{1:has|:have}1 no data</source>
-          <target>profile data may be incomplete: of {$arg0} function%s0, {$arg1} %plural{1:has|:have}1 no data</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_profile_data_out_of_date">
         <segment>
           <source>profile data may be out of date: of %0 function%s0, %1 %plural{1:has|:have}1 mismatched data that will be ignored</source>
-          <target>profile data may be out of date: of {$arg0} function%s0, {$arg1} %plural{1:has|:have}1 mismatched data that will be ignored</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_profile_data_unprofiled">
         <segment>
           <source>no profile data available for file "%0"</source>
-          <target>no profile data available for file "{$arg0}"</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_sync_op_misaligned">
         <segment>
           <source>__sync builtin operation must have natural alignment (consider using __atomic)</source>
-          <target>__sync builtin operation must have natural alignment (consider using __atomic)</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_toc_unsupported_type">
         <segment>
           <source>-mtocdata option is ignored for %0 because %1</source>
-          <target>-mtocdata option is ignored for {$arg0} because {$arg1}</target>
+          <target></target>
         </segment>
       </unit>
       <unit id="warn_unknown_diag_option">
@@ -925,7 +925,7 @@
       <unit id="warn_unknown_warning_specifier">
         <segment>
           <source>unknown %0 warning specifier: '%1'</source>
-          <target>unknown {$arg0} warning specifier: '{$arg1}'</target>
+          <target></target>
         </segment>
       </unit>
     </group>
