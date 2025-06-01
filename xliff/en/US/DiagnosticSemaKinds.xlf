@@ -20029,7 +20029,7 @@
       </unit>
       <unit id="note_omp_atomic_update">
         <segment>
-          <source>%select{expected an expression statement|expected built-in binary or unary operator|expected unary decrement/increment operation|expected expression of scalar type|expected assignment expression|expected built-in binary operator|expected one of '+', '*', '-', '/', '&amp;', '^', '%|', '&lt;&lt;', or '&gt;&gt;' built-in operations|expected in right hand side of expression}0</source>
+          <source>%select{expected an expression statement|expected built-in binary or unary operator|expected unary decrement/increment operation|expected expression of scalar type|expected assignment expression|expected built-in binary operator|expected one of '+', '*', '-', '/', '&amp;', '^', '%%|', '&lt;&lt;', or '&gt;&gt;' built-in operations|expected in right hand side of expression}0</source>
           <target></target>
         </segment>
       </unit>
