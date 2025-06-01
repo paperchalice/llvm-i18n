@@ -1,32 +1,44 @@
-?message : (LITERAL|modifier)+
-LITERAL : /[^%]+/
+?message : (literal?|format)+
+literal : LITERAL | BRA | CES | VBAR |PERCENT
+PERCENT : "%%"
+VBAR.-1 : "|" 
+BRA : "{"
+CES : "}"
+LITERAL.1 : /[^%{}\|]+/
 
-modifier : PLACEHOLDER
-         | S_FORMAT
+?format : placeholder
+         | s_format
          | select_format
          | enum_select_format
          | plural_format
-         | ORDINAL_FORMAT
-         | HUMAN_FORMAT
-         | OBJCCLASS_FORMAT
-         | OBJCINSTANCE_FORMAT
-         | Q_FORMAT
+         | ordinal_format
+         | human_format
+         | objcclass_format
+         | objcinstance_format
+         | q_format
          | diff_format
          | sub_format
-         | QUOTED_FORMAT
+         | quoted_format
 
-PLACEHOLDER : /%\d/
-S_FORMAT : /%s\d/
+ARG_NO.1 : /\d/
+NUM : /\d/+
+placeholder : "%" ARG_NO
+s_format : "%s" ARG_NO
 ID : /[a-zA-Z]\w*/
-select_format : "%select{" message ("|" message)+ /}\d/
-enum_select_format : "%enum_select<" ID ">{" enum_selection ("|" enum_selection)+ /}\d/
-plural_format : "%plural{" /}\d/
-ORDINAL_FORMAT : /%ordinal\d/
-HUMAN_FORMAT : /%human\d/
-OBJCCLASS_FORMAT : /%objcclass\d/
-OBJCINSTANCE_FORMAT : /%objcinstance\d/
-Q_FORMAT : /%q\d/
-diff_format : "%diff{" message "|" message /}\d,\d/
-sub_format : "%sub{" ID "}" /\d(,\d)*/
-QUOTED_FORMAT : /%quoted\d/
+select_format : "%select{" message ("|" message)+ "}"  ARG_NO
+enum_select_format : "%enum_select<" ID ">{" enum_selection ("|" enum_selection)+ "}"  ARG_NO
+plural_choice : (plural_cond ":" message)| (":" message)
+range : "[" NUM "," NUM "]"
+plural_cond : NUM
+            | range
+            | "%" NUM "=" (NUM | range)
+plural_format : "%plural{" plural_choice ("|" plural_choice)+ "}" ARG_NO
+ordinal_format : "%ordinal" ARG_NO
+human_format : "%human" ARG_NO
+objcclass_format : "%objcclass" ARG_NO
+objcinstance_format : "%objcinstance"  ARG_NO
+q_format : "%q" ARG_NO
+diff_format : "%diff{" message "|" message "}" ARG_NO "," ARG_NO
+sub_format : "%sub{" ID "}" ARG_NO ("," ARG_NO)*
+quoted_format : "%quoted" ARG_NO
 enum_selection : "%" ID "{" message "}"
