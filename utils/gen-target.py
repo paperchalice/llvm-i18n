@@ -281,19 +281,21 @@ other {{{{{{$arg{n.n}}}th}}}}{self.vbar} :format arg{n.n}=$arg{n.n}}}'''
             match_str +=f' arg{i}=$arg{i}'
         match_str += '}'
         return match_str
+    # {|{:diff tree=\|\| normal=\|\| from=$arg0 to=$arg1}| :format arg0=$arg0}
     def visit_diff(self, n:DiffFormat):
         self.vars.update({n.a, n.b})
         vars = {n.a, n.b}
-        s = '{' f'{self.vbar}.match {{$arg{n.a} :diff with=$arg{n.b}}}'
-        for k, v in {'normal' : n.msg, '*' : n.tree_msg}.items():
+        s = '{' f'{self.vbar}' '{:diff from=$arg' f'{n.a}' f' to=$arg{n.b}'
+        
+        for k, v in {'normal' : n.msg, 'tree' : n.tree_msg}.items():
             cvt = ToMF2(self.nest_level+1)
             cvt.visit_ast(v)
             vars.update(cvt.vars)
-            p = r'\$(?!arg)'
-            r = re.sub(p, f'{{$arg{n.a}}}', cvt.result, count=1)
-            r = re.sub(p, f'{{$arg{n.b}}}', r, count=2)
-            s+= f'\n{k} ' '{{' + r + '}}'
-        s += f'{self.vbar} :format'
+            p = r'\$(?!arg|from|to)'
+            r = re.sub(p, f'{{$from}}', cvt.result, count=1)
+            r = re.sub(p, f'{{$to}}', r, count=2)
+            s+= f' {k}={cvt.vbar}{r}{cvt.vbar}'
+        s += '}' f'{self.vbar} :format'
         for i in vars:
             s+=f' arg{i}=$arg{i}'
         s+='}'
